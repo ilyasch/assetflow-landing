@@ -57,13 +57,68 @@ the page to right-to-left), the monthly/annual pricing toggle, and that both
 - Privacy/terms links point at the real app pages (`myassetsflow.app/privacy`,
   `myassetsflow.app/terms`) instead of duplicating legal text here.
 
-## Deploying for free (recommended: Cloudflare Pages)
+## Deployed: GitHub Pages (already set up)
 
-GoDaddy's own hosting requires a paid plan for a static site, so the
-recommended path is to keep the **domain and DNS at GoDaddy** but host the
-static files for free on **Cloudflare Pages** (the same platform already
-used for the real `myassetsflow.app` product domain, per
-`AssetFlow/documentation/technology/solution-architecture.md`).
+The site is deployed and live-building on **GitHub Pages**, for free, at:
+
+- Repository: <https://github.com/ilyasch/assetflow-landing> (public — required
+  for free GitHub Pages; contains only this static marketing site, no
+  secrets)
+- Default URL: <https://ilyasch.github.io/assetflow-landing/> (redirects to
+  the custom domain once DNS is configured, because of the `CNAME` file at
+  the repo root)
+- Pages source: `main` branch, root folder — GitHub Pages serves the static
+  files directly, no build step
+
+### What's already done
+
+1. Code pushed to `main` on the `ilyasch/assetflow-landing` GitHub repo.
+2. A `CNAME` file containing `myassetsflow.com` was added at the repo root,
+   which tells GitHub Pages the intended custom domain.
+3. GitHub Pages was enabled via the repo's Pages API (source: `main` / `/`)
+   and the first build completed successfully (`status: "built"`).
+
+### What you still need to do: point GoDaddy DNS at GitHub Pages
+
+In **GoDaddy → Domain → DNS → Manage DNS** for `myassetsflow.com`, add:
+
+| Type | Name | Value |
+|---|---|---|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `ilyasch.github.io` |
+
+These are GitHub's standard, stable Pages IPs for apex/root domains. Remove
+any existing GoDaddy "parked domain" A record or forwarding rule for
+`myassetsflow.com` first — it will conflict with these.
+
+Then, in the GitHub repo's **Settings → Pages**, confirm the custom domain
+shows `myassetsflow.com` with a green "DNS check successful" (this can take
+a few minutes to a few hours after adding the records), and enable
+**Enforce HTTPS** once it becomes available (GitHub issues a free
+Let's Encrypt certificate automatically after DNS is verified).
+
+### Verify
+
+- `https://myassetsflow.com` loads over HTTPS with a valid certificate.
+- Every language in the selector renders correctly, Arabic switches to RTL.
+- The header, hero, pricing, and closing "Go to AssetFlow" buttons all link
+  to `https://myassetsflow.app`.
+
+### Redeploying after future changes
+
+Any push to `main` on `ilyasch/assetflow-landing` automatically rebuilds and
+republishes the Pages site — no manual redeploy step needed.
+
+## Alternative: Cloudflare Pages
+
+GoDaddy's own hosting requires a paid plan for a static site. If you'd
+rather use Cloudflare Pages instead of GitHub Pages (for example, to later
+share the same CDN/WAF setup as the real `myassetsflow.app` product domain,
+per `AssetFlow/documentation/technology/solution-architecture.md`), here is
+that path:
 
 ### 1. Deploy the site to Cloudflare Pages (no Git or CLI required)
 
@@ -79,9 +134,10 @@ used for the real `myassetsflow.app` product domain, per
    loads, every language works, and both CTA buttons go to
    `https://myassetsflow.app`.
 
-(If you prefer Git-based deploys later, connect this folder as a GitHub repo
-and use **Workers & Pages → Create → Pages → Connect to Git** instead — no
-build command is needed since this is plain static HTML/CSS/JS.)
+(You can also connect the `ilyasch/assetflow-landing` GitHub repo directly
+via **Workers & Pages → Create → Pages → Connect to Git** instead of
+uploading manually — no build command is needed since this is plain static
+HTML/CSS/JS.)
 
 ### 2. Point myassetsflow.com at the Cloudflare Pages project
 
