@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "languageLabel": "Idioma"
+  },
+  "hero": {
+    "headline": "Deja de improvisar con el cuidado de lo que posees.",
+    "sub": "Un solo lugar para tus cosas, sus documentos y lo que toca a continuación.",
+    "ctaPrimary": "Ir a AssetFlow",
+    "ctaSecondary": "Ver ejemplos reales",
+    "previewLabel": "Ejemplo ilustrativo — no son datos reales",
+    "preview": {
+      "item1Title": "Utilitario de 2019",
+      "item1Sub": "Revisión en 12 días",
+      "item2Title": "Lavadora",
+      "item2Sub": "Garantía registrada, vence el próximo año",
+      "item3Title": "Bicicleta de carretera",
+      "item3Sub": "Último mantenimiento hace 7 meses",
+      "item4Title": "Caldera",
+      "item4Sub": "Revisión anual sugerida — confirma para añadirla"
+    },
+    "eyebrow": "Para todo lo que posees, también si vives de alquiler",
+    "trust": {
+      "encrypted": "Conexiones cifradas",
+      "control": "Mantienes el control de tus datos",
+      "europe": "Pensado para el contexto europeo",
+      "review": "Sugerencias de IA que siempre revisas primero"
+    },
+    "flow": {
+      "step1": "Añade lo que posees",
+      "step2": "Recibe recordatorios a tiempo",
+      "step3": "Decide con confianza"
+    }
+  },
+  "examples": {
+    "title": "Situaciones que quizá reconozcas",
+    "lead": "AssetFlow no diagnostica averías, ni garantiza coberturas, ni promete ahorros, pero mantiene juntos los documentos, las fechas y los próximos pasos para que puedas actuar.",
+    "item1": {
+      "quote": "“Acabo de comprar un coche de segunda mano. ¿Qué revisión toca y cuándo se renueva el seguro?”",
+      "help": "Añade el coche una vez, adjunta los documentos que tengas y confirma la revisión y la renovación sugeridas para que aparezcan cuando importen."
+    },
+    "item2": {
+      "quote": "“El electrodoméstico hace ruido. ¿Puedo encontrar el recibo y la garantía?”",
+      "help": "Mantén recibos, manuales y garantías vinculados al electrodoméstico, sin buscar en cajones ni correos antiguos."
+    },
+    "item3": {
+      "quote": "“¿Ya reservamos el mantenimiento de la caldera, o fue el año pasado?”",
+      "help": "Un historial compartido de trabajos realizados permite a la familia comprobar qué se hizo realmente y cuándo, en lugar de fiarse de la memoria."
+    },
+    "item4": {
+      "quote": "“La bici necesita atención, pero no recuerdo su último mantenimiento.”",
+      "help": "Registra los trabajos a medida que los haces, para que la próxima tarea sugerida parta siempre de un historial preciso."
+    },
+    "item5": {
+      "quote": "“¿Reparo este aparato o lo sustituyo? ¿Cuánto he gastado ya?”",
+      "help": "Revisa juntos los costes y el historial registrados como punto de partida para la decisión — la elección y el resultado siguen siendo tuyos."
+    }
+  },
+  "how": {
+    "title": "Cómo funciona",
+    "step1": {
+      "title": "Añade un bien",
+      "body": "Registra lo que posees: un coche, un electrodoméstico, una herramienta o cualquier otra cosa que cuides."
+    },
+    "step2": {
+      "title": "Mantén juntos sus documentos y detalles",
+      "body": "Adjunta recibos, manuales, garantías y seguros para que queden ligados al bien."
+    },
+    "step3": {
+      "title": "Revisa las tareas y fechas sugeridas, y confirma",
+      "body": "Las sugerencias son borradores que revisas y apruebas — nada se añade automáticamente."
+    },
+    "step4": {
+      "title": "Registra el trabajo realizado y usa el historial",
+      "body": "El trabajo registrado se convierte en el historial en el que te apoyas para la próxima decisión."
+    }
+  },
+  "categories": {
+    "title": "Qué puedes organizar",
+    "vehicles": "Vehículos",
+    "appliances": "Electrodomésticos",
+    "electronics": "Electrónica",
+    "bicycles": "Bicicletas",
+    "tools": "Herramientas",
+    "boats": "Embarcaciones",
+    "home": "Instalaciones del hogar",
+    "note": "Las garantías, los seguros y los contratos de mantenimiento son registros vinculados con sus propias fechas, no bienes físicos en sí mismos."
+  },
+  "pricing": {
+    "title": "Precios",
+    "lead": "Todos los planes se facturan en EUR. Los planes difieren en el número de bienes activos, los créditos de IA compartidos y los colaboradores adicionales.",
+    "toggleMonthly": "Mensual",
+    "toggleAnnual": "Anual",
+    "perMonth": "/mes",
+    "perYear": "/año",
+    "popular": "Popular",
+    "cta": "Ir a AssetFlow",
+    "free": {
+      "name": "Free",
+      "tagline": "Registro básico y recordatorios útiles.",
+      "assets": "1 bien activo",
+      "credits": "2 créditos de IA al mes",
+      "seats": "Sin colaboradores adicionales"
+    },
+    "plus": {
+      "name": "Plus",
+      "tagline": "Más margen y algo de colaboración.",
+      "assets": "5 bienes activos",
+      "credits": "10 créditos de IA al mes",
+      "seats": "+1 colaborador adicional"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "Más capacidad para un hogar en crecimiento.",
+      "assets": "15 bienes activos",
+      "credits": "25 créditos de IA al mes",
+      "seats": "+2 colaboradores adicionales"
+    },
+    "max": {
+      "name": "Max",
+      "tagline": "La máxima capacidad y colaboración.",
+      "assets": "40 bienes activos",
+      "credits": "50 créditos de IA al mes",
+      "seats": "+4 colaboradores adicionales"
+    },
+    "note": "Los bienes activos son los que se rastrean simultáneamente; los archivados no cuentan para el límite. Los créditos de IA se comparten entre chat, sugerencias de mantenimiento y decisiones, y no se acumulan de un mes a otro."
+  },
+  "security": {
+    "title": "Seguridad, privacidad y Europa",
+    "body2": "Estamos desarrollando nuestras prácticas de seguridad y privacidad conforme al RGPD y a estándares de seguridad de la información reconocidos. [Insertar detalles verificados de seguridad y privacidad — las certificaciones, las medidas de alojamiento y las prácticas de tratamiento de datos se indicarán aquí una vez confirmadas.] No afirmamos certificaciones ni garantías que no hayan sido verificadas.",
+    "privacyLink": "Política de privacidad",
+    "termsLink": "Términos de servicio",
+    "lead": "La confianza importa tanto como la comodidad. Esto es lo que puedes dar por hecho hoy, y en qué somos transparentes sobre lo que aún se está verificando.",
+    "pillar1": {
+      "title": "Cifrado por defecto",
+      "body": "Toda conexión a AssetFlow utiliza cifrado HTTPS en tránsito."
+    },
+    "pillar2": {
+      "title": "Siempre tienes el control",
+      "body": "Las sugerencias de IA son borradores. Nada se añade ni se modifica hasta que lo revisas y confirmas."
+    },
+    "pillar3": {
+      "title": "Pensado para Europa",
+      "body": "AssetFlow está diseñado pensando en un contexto europeo. Los detalles sobre la región de alojamiento están [confirmar región de alojamiento] y se publicarán aquí una vez verificados."
+    }
+  },
+  "languages": {
+    "title": "Idiomas",
+    "body": "AssetFlow está disponible actualmente en inglés, italiano, alemán, español, francés y árabe."
+  },
+  "closing": {
+    "title": "¿Listo para controlar lo que posees?",
+    "body": "Empieza sencillo: añade un bien y comprueba cómo te resulta. Sin presión y sin ventas agresivas — solo una visión más clara de lo que necesita atención.",
+    "cta": "Ir a AssetFlow"
+  }
+}

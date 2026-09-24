@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "languageLabel": "Lingua"
+  },
+  "hero": {
+    "headline": "Non lasciare più nulla al caso su ciò che possiedi.",
+    "sub": "Un solo posto per le tue cose, i loro documenti e le prossime scadenze.",
+    "ctaPrimary": "Vai su AssetFlow",
+    "ctaSecondary": "Guarda esempi reali",
+    "previewLabel": "Esempio illustrativo — non sono dati reali",
+    "preview": {
+      "item1Title": "Utilitaria del 2019",
+      "item1Sub": "Tagliando previsto tra 12 giorni",
+      "item2Title": "Lavatrice",
+      "item2Sub": "Garanzia registrata, scade il prossimo anno",
+      "item3Title": "Bici da corsa",
+      "item3Sub": "Ultima revisione 7 mesi fa",
+      "item4Title": "Caldaia",
+      "item4Sub": "Controllo annuale suggerito — conferma per aggiungerlo"
+    },
+    "eyebrow": "Per tutto ciò che possiedi e per chi vive in affitto",
+    "trust": {
+      "encrypted": "Connessioni cifrate",
+      "control": "Mantieni il controllo dei tuoi dati",
+      "europe": "Pensato per il contesto europeo",
+      "review": "Suggerimenti IA che rivedi sempre tu per primo"
+    },
+    "flow": {
+      "step1": "Aggiungi ciò che possiedi",
+      "step2": "Ricevi promemoria puntuali",
+      "step3": "Decidi con sicurezza"
+    }
+  },
+  "examples": {
+    "title": "Situazioni che potresti riconoscere",
+    "lead": "AssetFlow non diagnostica un guasto, non garantisce coperture né promette risparmi — ma tiene insieme documenti, scadenze e prossimi passi così puoi agire.",
+    "item1": {
+      "quote": "“Ho appena comprato un'auto usata. Quale tagliando è previsto e quando scade l'assicurazione?”",
+      "help": "Aggiungi l'auto una sola volta, allega i documenti che hai e conferma il tagliando e la scadenza suggeriti, così compariranno al momento giusto."
+    },
+    "item2": {
+      "quote": "“L'elettrodomestico fa rumore. Riesco a trovare scontrino e garanzia?”",
+      "help": "Tieni scontrini, manuali e garanzie collegati all'elettrodomestico, senza dover frugare in cassetti o vecchie email."
+    },
+    "item3": {
+      "quote": "“Abbiamo già prenotato la revisione della caldaia, o era l'anno scorso?”",
+      "help": "Una cronologia condivisa dei lavori svolti permette alla famiglia di verificare cosa è stato fatto davvero e quando, senza affidarsi alla memoria."
+    },
+    "item4": {
+      "quote": "“La bici avrebbe bisogno di manutenzione, ma non ricordo l'ultima revisione.”",
+      "help": "Registra i lavori man mano che li fai, così il prossimo intervento suggerito parte sempre da una cronologia accurata."
+    },
+    "item5": {
+      "quote": "“Conviene riparare questo dispositivo o sostituirlo? Quanto ho già speso?”",
+      "help": "Rivedi insieme costi e cronologia registrati come punto di partenza per la decisione — la scelta, e il risultato, restano tuoi."
+    }
+  },
+  "how": {
+    "title": "Come funziona",
+    "step1": {
+      "title": "Aggiungi un bene",
+      "body": "Registra ciò che possiedi — un'auto, un elettrodomestico, un attrezzo o qualsiasi altra cosa di cui ti prendi cura."
+    },
+    "step2": {
+      "title": "Tieni insieme documenti e dettagli",
+      "body": "Allega scontrini, manuali, garanzie e assicurazioni, così restano legati al bene."
+    },
+    "step3": {
+      "title": "Rivedi attività e scadenze suggerite, poi conferma",
+      "body": "I suggerimenti sono bozze da rivedere e approvare — nulla viene aggiunto automaticamente."
+    },
+    "step4": {
+      "title": "Registra i lavori svolti e usa la cronologia",
+      "body": "I lavori registrati diventano la cronologia su cui ti basi per la prossima decisione."
+    }
+  },
+  "categories": {
+    "title": "Cosa puoi organizzare",
+    "vehicles": "Veicoli",
+    "appliances": "Elettrodomestici",
+    "electronics": "Elettronica",
+    "bicycles": "Biciclette",
+    "tools": "Attrezzi",
+    "boats": "Barche",
+    "home": "Impianti domestici",
+    "note": "Garanzie, polizze assicurative e contratti di assistenza sono documenti collegati con proprie scadenze — non beni fisici a sé stanti."
+  },
+  "pricing": {
+    "title": "Prezzi",
+    "lead": "Tutti i piani sono fatturati in EUR. I piani differiscono per numero di beni attivi, crediti AI condivisi e collaboratori aggiuntivi.",
+    "toggleMonthly": "Mensile",
+    "toggleAnnual": "Annuale",
+    "perMonth": "/mese",
+    "perYear": "/anno",
+    "popular": "Popolare",
+    "cta": "Vai su AssetFlow",
+    "free": {
+      "name": "Free",
+      "tagline": "Registrazione di base e promemoria utili.",
+      "assets": "1 bene attivo",
+      "credits": "2 crediti AI al mese",
+      "seats": "Nessun collaboratore aggiuntivo"
+    },
+    "plus": {
+      "name": "Plus",
+      "tagline": "Più spazio e un po' di collaborazione.",
+      "assets": "5 beni attivi",
+      "credits": "10 crediti AI al mese",
+      "seats": "+1 collaboratore aggiuntivo"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "Più capacità per una famiglia in crescita.",
+      "assets": "15 beni attivi",
+      "credits": "25 crediti AI al mese",
+      "seats": "+2 collaboratori aggiuntivi"
+    },
+    "max": {
+      "name": "Max",
+      "tagline": "La massima capacità e collaborazione.",
+      "assets": "40 beni attivi",
+      "credits": "50 crediti AI al mese",
+      "seats": "+4 collaboratori aggiuntivi"
+    },
+    "note": "I beni attivi sono quelli tracciati contemporaneamente; i beni archiviati non contano nel limite. I crediti AI sono condivisi tra chat, suggerimenti di manutenzione e decisioni, e non si accumulano da un mese all'altro."
+  },
+  "security": {
+    "title": "Sicurezza, privacy ed Europa",
+    "body2": "Stiamo costruendo le nostre pratiche di sicurezza e privacy in linea con il GDPR e con standard di sicurezza informatica riconosciuti. [Inserire dettagli verificati su sicurezza e privacy — certificazioni, misure di hosting e trattamento dei dati saranno elencati qui una volta confermati.] Non dichiariamo certificazioni o garanzie non verificate.",
+    "privacyLink": "Informativa sulla privacy",
+    "termsLink": "Termini di servizio",
+    "lead": "La fiducia conta quanto la comodità. Ecco su cosa puoi contare oggi, e dove siamo trasparenti su ciò che è ancora in fase di verifica.",
+    "pillar1": {
+      "title": "Cifratura predefinita",
+      "body": "Ogni connessione ad AssetFlow utilizza la cifratura HTTPS in transito."
+    },
+    "pillar2": {
+      "title": "Il controllo resta sempre tuo",
+      "body": "I suggerimenti IA sono bozze. Nulla viene aggiunto o modificato finché non lo rivedi e confermi."
+    },
+    "pillar3": {
+      "title": "Pensato per l'Europa",
+      "body": "AssetFlow è pensato per un contesto europeo. I dettagli sulla regione di hosting sono [da confermare la regione di hosting] e saranno pubblicati qui una volta verificati."
+    }
+  },
+  "languages": {
+    "title": "Lingue",
+    "body": "AssetFlow è attualmente disponibile in inglese, italiano, tedesco, spagnolo, francese e arabo."
+  },
+  "closing": {
+    "title": "Pronto a mettere ordine tra ciò che possiedi?",
+    "body": "Inizia in modo semplice: aggiungi un bene e valuta come ti trovi. Nessuna pressione, nessuna vendita forzata — solo una visione più chiara di ciò che richiede attenzione.",
+    "cta": "Vai su AssetFlow"
+  }
+}

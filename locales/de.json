@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "languageLabel": "Sprache"
+  },
+  "hero": {
+    "headline": "Kein Rätselraten mehr bei der Pflege dessen, was dir gehört.",
+    "sub": "Alles an einem Ort: deine Dinge, ihre Dokumente und was als Nächstes ansteht.",
+    "ctaPrimary": "Zu AssetFlow",
+    "ctaSecondary": "Praxisbeispiele ansehen",
+    "previewLabel": "Beispielhafte Darstellung — keine echten Daten",
+    "preview": {
+      "item1Title": "Kompaktwagen, Baujahr 2019",
+      "item1Sub": "Service in 12 Tagen fällig",
+      "item2Title": "Waschmaschine",
+      "item2Sub": "Garantie hinterlegt, läuft nächstes Jahr ab",
+      "item3Title": "Rennrad",
+      "item3Sub": "Zuletzt vor 7 Monaten gewartet",
+      "item4Title": "Heizkessel",
+      "item4Sub": "Jährliche Prüfung empfohlen — zum Hinzufügen bestätigen"
+    },
+    "eyebrow": "Für alles, was dir gehört, und für Mieter genauso",
+    "trust": {
+      "encrypted": "Verschlüsselte Verbindungen",
+      "control": "Du behältst die Kontrolle über deine Daten",
+      "europe": "Für den europäischen Kontext konzipiert",
+      "review": "KI-Vorschläge, die du immer zuerst prüfst"
+    },
+    "flow": {
+      "step1": "Füge hinzu, was dir gehört",
+      "step2": "Erhalte rechtzeitige Erinnerungen",
+      "step3": "Entscheide mit Zuversicht"
+    }
+  },
+  "examples": {
+    "title": "Situationen, die dir bekannt vorkommen könnten",
+    "lead": "AssetFlow stellt keine Diagnosen, garantiert keinen Versicherungsschutz und verspricht keine Ersparnisse — aber es hält Unterlagen, Termine und nächste Schritte zusammen, damit du handeln kannst.",
+    "item1": {
+      "quote": "“Ich habe gerade ein gebrauchtes Auto gekauft. Welcher Service steht an, und wann läuft die Versicherung ab?”",
+      "help": "Trage das Auto einmal ein, hänge vorhandene Unterlagen an und bestätige die vorgeschlagenen Service- und Verlängerungstermine, damit sie rechtzeitig angezeigt werden."
+    },
+    "item2": {
+      "quote": "“Das Gerät macht Geräusche. Finde ich Kaufbeleg und Garantie?”",
+      "help": "Bewahre Belege, Anleitungen und Garantiedetails direkt beim Gerät auf, statt in Schubladen oder alten E-Mails zu suchen."
+    },
+    "item3": {
+      "quote": "“Haben wir den Heizungsservice schon gebucht — oder war das letztes Jahr?”",
+      "help": "Eine gemeinsame Historie erledigter Arbeiten zeigt dem Haushalt, was tatsächlich wann gemacht wurde, statt sich auf die Erinnerung zu verlassen."
+    },
+    "item4": {
+      "quote": "“Das Rad bräuchte Pflege, aber ich weiß nicht mehr, wann es zuletzt gewartet wurde.”",
+      "help": "Erledigte Arbeiten laufend protokollieren, damit die nächste Empfehlung immer auf einer genauen Historie basiert."
+    },
+    "item5": {
+      "quote": "“Reparieren oder ersetzen? Was habe ich bisher schon ausgegeben?”",
+      "help": "Erfasste Kosten und Historie gemeinsam als Ausgangspunkt für die Entscheidung betrachten — die Wahl und das Ergebnis bleiben bei dir."
+    }
+  },
+  "how": {
+    "title": "So funktioniert es",
+    "step1": {
+      "title": "Ein Objekt hinzufügen",
+      "body": "Erfasse, was dir gehört — ein Auto, ein Gerät, ein Werkzeug oder alles andere, um das du dich kümmerst."
+    },
+    "step2": {
+      "title": "Dokumente und Details zusammenhalten",
+      "body": "Hänge Belege, Anleitungen, Garantien und Versicherungen an, damit sie beim Objekt bleiben."
+    },
+    "step3": {
+      "title": "Vorgeschlagene Aufgaben und Termine prüfen und bestätigen",
+      "body": "Vorschläge sind Entwürfe, die du prüfst und bestätigst — nichts wird automatisch hinzugefügt."
+    },
+    "step4": {
+      "title": "Erledigte Arbeiten protokollieren und die Historie nutzen",
+      "body": "Erfasste Arbeiten werden zur Historie, auf die du dich bei der nächsten Entscheidung stützt."
+    }
+  },
+  "categories": {
+    "title": "Was du organisieren kannst",
+    "vehicles": "Fahrzeuge",
+    "appliances": "Haushaltsgeräte",
+    "electronics": "Elektronik",
+    "bicycles": "Fahrräder",
+    "tools": "Werkzeuge",
+    "boats": "Boote",
+    "home": "Haustechnik",
+    "note": "Garantien, Versicherungen und Wartungsverträge sind verknüpfte Datensätze mit eigenen Terminen — keine eigenständigen physischen Objekte."
+  },
+  "pricing": {
+    "title": "Preise",
+    "lead": "Alle Pläne werden in EUR abgerechnet. Die Pläne unterscheiden sich in der Anzahl aktiver Objekte, den gemeinsamen KI-Guthaben und zusätzlichen Mitwirkenden.",
+    "toggleMonthly": "Monatlich",
+    "toggleAnnual": "Jährlich",
+    "perMonth": "/Monat",
+    "perYear": "/Jahr",
+    "popular": "Beliebt",
+    "cta": "Zu AssetFlow",
+    "free": {
+      "name": "Free",
+      "tagline": "Nützliche Basis-Erfassung und Erinnerungen.",
+      "assets": "1 aktives Objekt",
+      "credits": "2 KI-Guthaben pro Monat",
+      "seats": "Keine zusätzlichen Mitwirkenden"
+    },
+    "plus": {
+      "name": "Plus",
+      "tagline": "Mehr Spielraum und etwas Zusammenarbeit.",
+      "assets": "5 aktive Objekte",
+      "credits": "10 KI-Guthaben pro Monat",
+      "seats": "+1 zusätzlicher Mitwirkender"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "Mehr Kapazität für einen wachsenden Haushalt.",
+      "assets": "15 aktive Objekte",
+      "credits": "25 KI-Guthaben pro Monat",
+      "seats": "+2 zusätzliche Mitwirkende"
+    },
+    "max": {
+      "name": "Max",
+      "tagline": "Die größte Kapazität und Zusammenarbeit.",
+      "assets": "40 aktive Objekte",
+      "credits": "50 KI-Guthaben pro Monat",
+      "seats": "+4 zusätzliche Mitwirkende"
+    },
+    "note": "Aktive Objekte sind gleichzeitig verfolgte Objekte; archivierte Objekte zählen nicht zum Limit. KI-Guthaben werden von Chat, Wartungsvorschlägen und Entscheidungen gemeinsam genutzt und werden nicht in den nächsten Monat übertragen."
+  },
+  "security": {
+    "title": "Sicherheit, Datenschutz und Europa",
+    "body2": "Wir bauen unsere Sicherheits- und Datenschutzpraxis im Einklang mit der DSGVO und anerkannten Informationssicherheitsstandards auf. [Verifizierte Sicherheits- und Datenschutzdetails einfügen — Zertifizierungen, Hosting-Schutzmaßnahmen und Datenverarbeitungspraktiken werden hier aufgeführt, sobald sie bestätigt sind.] Wir behaupten keine nicht verifizierten Zertifizierungen oder Garantien.",
+    "privacyLink": "Datenschutzerklärung",
+    "termsLink": "Nutzungsbedingungen",
+    "lead": "Vertrauen zählt genauso wie Komfort. Hier ist, worauf du dich heute verlassen kannst, und wo wir offen sagen, was noch überprüft wird.",
+    "pillar1": {
+      "title": "Standardmäßig verschlüsselt",
+      "body": "Jede Verbindung zu AssetFlow nutzt HTTPS-Verschlüsselung bei der Übertragung."
+    },
+    "pillar2": {
+      "title": "Du behältst stets die Kontrolle",
+      "body": "KI-Vorschläge sind Entwürfe. Nichts wird hinzugefügt oder geändert, bevor du es prüfst und bestätigst."
+    },
+    "pillar3": {
+      "title": "Für Europa konzipiert",
+      "body": "AssetFlow ist für einen europäischen Kontext konzipiert. Details zur Hosting-Region sind [Hosting-Region noch zu bestätigen] und werden hier veröffentlicht, sobald sie verifiziert sind."
+    }
+  },
+  "languages": {
+    "title": "Sprachen",
+    "body": "AssetFlow ist derzeit auf Englisch, Italienisch, Deutsch, Spanisch, Französisch und Arabisch verfügbar."
+  },
+  "closing": {
+    "title": "Bereit, den Überblick über dein Eigentum zu behalten?",
+    "body": "Fang einfach an: Füge ein Objekt hinzu und probiere es aus. Kein Druck, kein hartes Verkaufen — nur ein klarerer Blick darauf, was Aufmerksamkeit braucht.",
+    "cta": "Zu AssetFlow"
+  }
+}

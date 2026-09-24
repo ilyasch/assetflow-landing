@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "languageLabel": "Language"
+  },
+  "hero": {
+    "headline": "Take the guesswork out of looking after what you own.",
+    "sub": "One place for your things, their documents, and what's due next.",
+    "ctaPrimary": "Go to AssetFlow",
+    "ctaSecondary": "See real-life examples",
+    "previewLabel": "Illustrative example — not real data",
+    "preview": {
+      "item1Title": "2019 hatchback",
+      "item1Sub": "Service due in 12 days",
+      "item2Title": "Washing machine",
+      "item2Sub": "Warranty on file, expires next year",
+      "item3Title": "Road bike",
+      "item3Sub": "Last serviced 7 months ago",
+      "item4Title": "Boiler",
+      "item4Sub": "Annual check suggested — confirm to add"
+    },
+    "eyebrow": "For everything you own and everyone who rents",
+    "trust": {
+      "encrypted": "Encrypted connections",
+      "control": "You stay in control of your data",
+      "europe": "Designed with Europe in mind",
+      "review": "AI suggestions you always review first"
+    },
+    "flow": {
+      "step1": "Add what you own",
+      "step2": "Get timely reminders",
+      "step3": "Decide with confidence"
+    }
+  },
+  "examples": {
+    "title": "Situations you might recognize",
+    "lead": "AssetFlow won't diagnose a fault, guarantee coverage, or promise savings — but it keeps the records, dates, and next steps together so you can act on them.",
+    "item1": {
+      "quote": "“I just bought a used car. What service is due, and when does the insurance renew?”",
+      "help": "Add the car once, attach the documents you have, and confirm the suggested service and renewal dates so they show up when they matter."
+    },
+    "item2": {
+      "quote": "“The appliance is making a noise. Can I find the receipt and warranty?”",
+      "help": "Keep receipts, manuals, and warranty details linked to the appliance, so you're not searching through drawers or old emails."
+    },
+    "item3": {
+      "quote": "“Did we already book the boiler service — or was that last year?”",
+      "help": "A shared history of completed work means the household can check what was actually done, and when, instead of relying on memory."
+    },
+    "item4": {
+      "quote": "“The bike needs attention, but I can't remember its last service.”",
+      "help": "Log completed work as you go, so the next suggested task always starts from an accurate history."
+    },
+    "item5": {
+      "quote": "“Should I repair this device or replace it? What have I already spent?”",
+      "help": "Review recorded costs and history together as a starting point for the decision — the choice, and the outcome, stay yours."
+    }
+  },
+  "how": {
+    "title": "How it works",
+    "step1": {
+      "title": "Add an asset",
+      "body": "Register what you own — a car, appliance, tool, or anything else you look after."
+    },
+    "step2": {
+      "title": "Keep its documents and details together",
+      "body": "Attach receipts, manuals, warranties, and insurance so they live with the asset."
+    },
+    "step3": {
+      "title": "Review suggested tasks and dates, then confirm",
+      "body": "Suggestions are drafts you review and approve — nothing is added automatically."
+    },
+    "step4": {
+      "title": "Log completed work and use the history",
+      "body": "Recorded work becomes the history you rely on for the next decision."
+    }
+  },
+  "categories": {
+    "title": "What you can organize",
+    "vehicles": "Vehicles",
+    "appliances": "Appliances",
+    "electronics": "Electronics",
+    "bicycles": "Bicycles",
+    "tools": "Tools",
+    "boats": "Boats",
+    "home": "Home systems",
+    "note": "Warranties, insurance policies, and service contracts are linked records with their own dates — not physical assets by themselves."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "lead": "All plans are billed in EUR. Plans differ by active asset allowance, shared AI credits, and additional collaborators.",
+    "toggleMonthly": "Monthly",
+    "toggleAnnual": "Annual",
+    "perMonth": "/mo",
+    "perYear": "/yr",
+    "popular": "Popular",
+    "cta": "Go to AssetFlow",
+    "free": {
+      "name": "Free",
+      "tagline": "Useful basic registration and reminders.",
+      "assets": "1 active asset",
+      "credits": "2 AI credits / month",
+      "seats": "No additional collaborators"
+    },
+    "plus": {
+      "name": "Plus",
+      "tagline": "More room and a bit of collaboration.",
+      "assets": "5 active assets",
+      "credits": "10 AI credits / month",
+      "seats": "+1 additional collaborator"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "More capacity for a growing household.",
+      "assets": "15 active assets",
+      "credits": "25 AI credits / month",
+      "seats": "+2 additional collaborators"
+    },
+    "max": {
+      "name": "Max",
+      "tagline": "The most capacity and collaboration.",
+      "assets": "40 active assets",
+      "credits": "50 AI credits / month",
+      "seats": "+4 additional collaborators"
+    },
+    "note": "Active assets are concurrently tracked assets; archived assets don't count toward the limit. AI credits are shared across chat, maintenance suggestions, and decisions, and don't roll over month to month."
+  },
+  "security": {
+    "title": "Security, privacy, and Europe",
+    "body2": "We are building our security and privacy practices in line with GDPR and recognized information-security standards. [Insert verified security and privacy details — certifications, hosting safeguards, and data-handling practices will be listed here once confirmed.] We do not claim certifications or guarantees that have not been verified.",
+    "privacyLink": "Privacy policy",
+    "termsLink": "Terms of service",
+    "lead": "Confidence matters as much as convenience. Here is what you can rely on today, and where we're being upfront about what's still being verified.",
+    "pillar1": {
+      "title": "Encrypted by default",
+      "body": "Every connection to AssetFlow uses HTTPS encryption in transit."
+    },
+    "pillar2": {
+      "title": "You're always in control",
+      "body": "AI suggestions are drafts. Nothing is added or changed until you review and confirm it."
+    },
+    "pillar3": {
+      "title": "Built with Europe in mind",
+      "body": "AssetFlow is designed for a European context. Hosting region details are [confirm hosting region] and will be published here once verified."
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "body": "AssetFlow is currently available in English, Italian, German, Spanish, French, and Arabic."
+  },
+  "closing": {
+    "title": "Ready to get a handle on what you own?",
+    "body": "Start simple: add one asset and see how it feels. There's no pressure and no hard sell — just a clearer view of what needs attention.",
+    "cta": "Go to AssetFlow"
+  }
+}

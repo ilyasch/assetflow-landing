@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AssetFlow — Know what needs attention, when, and where the records are</title>
+    <meta
+      name="description"
+      content="AssetFlow brings your asset records, care tasks, reminders, and documents together in one place."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top">
+          <img class="brand-mark" src="assets/logo.svg" alt="" width="28" height="28" />
+          <span>AssetFlow</span>
+        </a>
+        <div class="header-actions">
+          <div class="lang-select">
+            <label class="visually-hidden" for="lang-picker" data-i18n="nav.languageLabel">Language</label>
+            <select id="lang-picker" aria-label="Choose language">
+              <option value="en">English</option>
+              <option value="it">Italiano</option>
+              <option value="de">Deutsch</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="ar">العربية</option>
+            </select>
+          </div>
+          <a class="btn btn-primary btn-header" href="https://myassetsflow.app" data-i18n="hero.ctaPrimary"
+            >Go to AssetFlow</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="top" class="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">For everything you own and everyone who rents</p>
+            <h1 data-i18n="hero.headline">Take the guesswork out of looking after what you own.</h1>
+            <p class="hero-sub" data-i18n="hero.sub">
+              One place for your things, their documents, and what's due next.
+            </p>
+
+            <div class="flow-strip" aria-hidden="false">
+              <div class="flow-step">
+                <span class="flow-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </span>
+                <span data-i18n="hero.flow.step1">Add what you own</span>
+              </div>
+              <svg class="flow-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="flow-step">
+                <span class="flow-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3.5 4.5 7v6.2c0 4.4 3.1 7.3 7.5 9.8 4.4-2.5 7.5-5.4 7.5-9.8V7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 8v4.5l3 1.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span data-i18n="hero.flow.step2">Get timely reminders</span>
+              </div>
+              <svg class="flow-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="flow-step">
+                <span class="flow-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m4 13 5 5 11-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span data-i18n="hero.flow.step3">Decide with confidence</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-primary btn-large" href="https://myassetsflow.app" data-i18n="hero.ctaPrimary"
+                >Go to AssetFlow</a
+              >
+              <a class="btn btn-link" href="#examples" data-i18n="hero.ctaSecondary"
+                >See real-life examples</a
+              >
+            </div>
+            <ul class="trust-row">
+              <li>
+                <svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="hero.trust.encrypted">Encrypted connections</span>
+              </li>
+              <li>
+                <svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c1.2-4 4-5.8 7-5.8s5.8 1.8 7 5.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <span data-i18n="hero.trust.control">You stay in control of your data</span>
+              </li>
+              <li>
+                <svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5c2.2 2.3 3.4 5.4 3.4 8.5s-1.2 6.2-3.4 8.5c-2.2-2.3-3.4-5.4-3.4-8.5S9.8 5.8 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                <span data-i18n="hero.trust.europe">Designed with Europe in mind</span>
+              </li>
+              <li>
+                <svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 1 3 6.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 12v5h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="hero.trust.review">AI suggestions you always review first</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-preview" aria-hidden="false">
+            <p class="preview-label" data-i18n="hero.previewLabel">Illustrative example — not real data</p>
+            <div class="preview-card">
+              <div class="preview-titlebar" aria-hidden="true">
+                <span class="preview-dot preview-dot-red"></span>
+                <span class="preview-dot preview-dot-yellow"></span>
+                <span class="preview-dot preview-dot-green"></span>
+              </div>
+              <ul class="preview-list">
+                <li>
+                  <span class="preview-emoji" aria-hidden="true">🚗</span>
+                  <span>
+                    <strong data-i18n="hero.preview.item1Title">2019 hatchback</strong><br />
+                    <span data-i18n="hero.preview.item1Sub">Service due in 12 days</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="preview-emoji" aria-hidden="true">🧺</span>
+                  <span>
+                    <strong data-i18n="hero.preview.item2Title">Washing machine</strong><br />
+                    <span data-i18n="hero.preview.item2Sub">Warranty on file, expires next year</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="preview-emoji" aria-hidden="true">🚲</span>
+                  <span>
+                    <strong data-i18n="hero.preview.item3Title">Road bike</strong><br />
+                    <span data-i18n="hero.preview.item3Sub">Last serviced 7 months ago</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="preview-emoji" aria-hidden="true">🔥</span>
+                  <span>
+                    <strong data-i18n="hero.preview.item4Title">Boiler</strong><br />
+                    <span data-i18n="hero.preview.item4Sub">Annual check suggested — confirm to add</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Real-life situations -->
+      <section id="examples" class="section examples">
+        <div class="wrap">
+          <h2 data-i18n="examples.title">Situations you might recognize</h2>
+          <p class="section-lead" data-i18n="examples.lead">
+            AssetFlow won't diagnose a fault, guarantee coverage, or promise savings — but it keeps
+            the records, dates, and next steps together so you can act on them.
+          </p>
+          <div class="card-grid">
+            <article class="card reveal">
+              <p class="quote" data-i18n="examples.item1.quote">
+                “I just bought a used car. What service is due, and when does the insurance renew?”
+              </p>
+              <p class="card-body" data-i18n="examples.item1.help">
+                Add the car once, attach the documents you have, and confirm the suggested service
+                and renewal dates so they show up when they matter.
+              </p>
+            </article>
+            <article class="card reveal">
+              <p class="quote" data-i18n="examples.item2.quote">
+                “The appliance is making a noise. Can I find the receipt and warranty?”
+              </p>
+              <p class="card-body" data-i18n="examples.item2.help">
+                Keep receipts, manuals, and warranty details linked to the appliance, so you're not
+                searching through drawers or old emails.
+              </p>
+            </article>
+            <article class="card reveal">
+              <p class="quote" data-i18n="examples.item3.quote">
+                “Did we already book the boiler service — or was that last year?”
+              </p>
+              <p class="card-body" data-i18n="examples.item3.help">
+                A shared history of completed work means the household can check what was actually
+                done, and when, instead of relying on memory.
+              </p>
+            </article>
+            <article class="card reveal">
+              <p class="quote" data-i18n="examples.item4.quote">
+                “The bike needs attention, but I can't remember its last service.”
+              </p>
+              <p class="card-body" data-i18n="examples.item4.help">
+                Log completed work as you go, so the next suggested task always starts from an
+                accurate history.
+              </p>
+            </article>
+            <article class="card reveal">
+              <p class="quote" data-i18n="examples.item5.quote">
+                “Should I repair this device or replace it? What have I already spent?”
+              </p>
+              <p class="card-body" data-i18n="examples.item5.help">
+                Review recorded costs and history together as a starting point for the decision —
+                the choice, and the outcome, stay yours.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section how-it-works alt-bg">
+        <div class="wrap">
+          <h2 data-i18n="how.title">How it works</h2>
+          <ol class="steps">
+            <li class="reveal">
+              <span class="step-num">1</span>
+              <div>
+                <h3 data-i18n="how.step1.title">Add an asset</h3>
+                <p data-i18n="how.step1.body">Register what you own — a car, appliance, tool, or anything else you look after.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="step-num">2</span>
+              <div>
+                <h3 data-i18n="how.step2.title">Keep its documents and details together</h3>
+                <p data-i18n="how.step2.body">Attach receipts, manuals, warranties, and insurance so they live with the asset.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="step-num">3</span>
+              <div>
+                <h3 data-i18n="how.step3.title">Review suggested tasks and dates, then confirm</h3>
+                <p data-i18n="how.step3.body">Suggestions are drafts you review and approve — nothing is added automatically.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="step-num">4</span>
+              <div>
+                <h3 data-i18n="how.step4.title">Log completed work and use the history</h3>
+                <p data-i18n="how.step4.body">Recorded work becomes the history you rely on for the next decision.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- What you can organize -->
+      <section class="section categories">
+        <div class="wrap">
+          <h2 data-i18n="categories.title">What you can organize</h2>
+          <ul class="category-grid">
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🚗</span><span data-i18n="categories.vehicles">Vehicles</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🧺</span><span data-i18n="categories.appliances">Appliances</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">💻</span><span data-i18n="categories.electronics">Electronics</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🚲</span><span data-i18n="categories.bicycles">Bicycles</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🛠️</span><span data-i18n="categories.tools">Tools</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">⛵</span><span data-i18n="categories.boats">Boats</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🏠</span><span data-i18n="categories.home">Home systems</span></li>
+          </ul>
+          <p class="section-note" data-i18n="categories.note">
+            Warranties, insurance policies, and service contracts are linked records with their own
+            dates — not physical assets by themselves.
+          </p>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="section pricing alt-bg">
+        <div class="wrap">
+          <h2 data-i18n="pricing.title">Pricing</h2>
+          <p class="section-lead" data-i18n="pricing.lead">
+            All plans are billed in EUR. Plans differ by active asset allowance, shared AI credits,
+            and additional collaborators.
+          </p>
+
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" class="toggle-btn is-active" data-period="monthly" data-i18n="pricing.toggleMonthly">
+              Monthly
+            </button>
+            <button type="button" class="toggle-btn" data-period="annual" data-i18n="pricing.toggleAnnual">
+              Annual
+            </button>
+          </div>
+
+          <div class="plan-grid">
+            <article class="plan-card reveal">
+              <h3 data-i18n="pricing.free.name">Free</h3>
+              <p class="price"><span class="price-monthly">€0</span><span class="price-annual is-hidden">€0</span></p>
+              <p class="plan-tagline" data-i18n="pricing.free.tagline">Useful basic registration and reminders.</p>
+              <ul>
+                <li data-i18n="pricing.free.assets">1 active asset</li>
+                <li data-i18n="pricing.free.credits">2 AI credits / month</li>
+                <li data-i18n="pricing.free.seats">No additional collaborators</li>
+              </ul>
+              <a class="btn btn-outline" href="https://myassetsflow.app" data-i18n="pricing.cta">Go to AssetFlow</a>
+            </article>
+
+            <article class="plan-card reveal">
+              <h3 data-i18n="pricing.plus.name">Plus</h3>
+              <p class="price">
+                <span class="price-monthly">€2.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
+                <span class="price-annual is-hidden">€29<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
+              </p>
+              <p class="plan-tagline" data-i18n="pricing.plus.tagline">More room and a bit of collaboration.</p>
+              <ul>
+                <li data-i18n="pricing.plus.assets">5 active assets</li>
+                <li data-i18n="pricing.plus.credits">10 AI credits / month</li>
+                <li data-i18n="pricing.plus.seats">+1 additional collaborator</li>
+              </ul>
+              <a class="btn btn-outline" href="https://myassetsflow.app" data-i18n="pricing.cta">Go to AssetFlow</a>
+            </article>
+
+            <article class="plan-card is-featured reveal">
+              <p class="plan-badge" data-i18n="pricing.popular">Popular</p>
+              <h3 data-i18n="pricing.pro.name">Pro</h3>
+              <p class="price">
+                <span class="price-monthly">€6.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
+                <span class="price-annual is-hidden">€69<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
+              </p>
+              <p class="plan-tagline" data-i18n="pricing.pro.tagline">More capacity for a growing household.</p>
+              <ul>
+                <li data-i18n="pricing.pro.assets">15 active assets</li>
+                <li data-i18n="pricing.pro.credits">25 AI credits / month</li>
+                <li data-i18n="pricing.pro.seats">+2 additional collaborators</li>
+              </ul>
+              <a class="btn btn-primary" href="https://myassetsflow.app" data-i18n="pricing.cta">Go to AssetFlow</a>
+            </article>
+
+            <article class="plan-card reveal">
+              <h3 data-i18n="pricing.max.name">Max</h3>
+              <p class="price">
+                <span class="price-monthly">€12.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
+                <span class="price-annual is-hidden">€129<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
+              </p>
+              <p class="plan-tagline" data-i18n="pricing.max.tagline">The most capacity and collaboration.</p>
+              <ul>
+                <li data-i18n="pricing.max.assets">40 active assets</li>
+                <li data-i18n="pricing.max.credits">50 AI credits / month</li>
+                <li data-i18n="pricing.max.seats">+4 additional collaborators</li>
+              </ul>
+              <a class="btn btn-outline" href="https://myassetsflow.app" data-i18n="pricing.cta">Go to AssetFlow</a>
+            </article>
+          </div>
+          <p class="section-note" data-i18n="pricing.note">
+            Active assets are concurrently tracked assets; archived assets don't count toward the
+            limit. AI credits are shared across chat, maintenance suggestions, and decisions, and
+            don't roll over month to month.
+          </p>
+        </div>
+      </section>
+
+      <!-- Security, privacy & Europe -->
+      <section class="section security">
+        <div class="wrap">
+          <h2 data-i18n="security.title">Security, privacy, and Europe</h2>
+          <p class="section-lead" data-i18n="security.lead">
+            Confidence matters as much as convenience. Here is what you can rely on today, and
+            where we're being upfront about what's still being verified.
+          </p>
+
+          <div class="trust-grid">
+            <div class="trust-card reveal">
+              <span class="trust-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <h3 data-i18n="security.pillar1.title">Encrypted by default</h3>
+              <p data-i18n="security.pillar1.body">Every connection to AssetFlow uses HTTPS encryption in transit.</p>
+            </div>
+            <div class="trust-card reveal">
+              <span class="trust-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3 6.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 12v5h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <h3 data-i18n="security.pillar2.title">You're always in control</h3>
+              <p data-i18n="security.pillar2.body">AI suggestions are drafts. Nothing is added or changed until you review and confirm it.</p>
+            </div>
+            <div class="trust-card reveal">
+              <span class="trust-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5c2.2 2.3 3.4 5.4 3.4 8.5s-1.2 6.2-3.4 8.5c-2.2-2.3-3.4-5.4-3.4-8.5S9.8 5.8 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+              </span>
+              <h3 data-i18n="security.pillar3.title">Built with Europe in mind</h3>
+              <p data-i18n="security.pillar3.body">
+                AssetFlow is designed for a European context. Hosting region details are
+                [confirm hosting region] and will be published here once verified.
+              </p>
+            </div>
+          </div>
+
+          <p class="section-note security-note" data-i18n="security.body2">
+            We are building our security and privacy practices in line with GDPR and recognized
+            information-security standards. [Insert verified security and privacy details —
+            certifications, hosting safeguards, and data-handling practices will be listed here once
+            confirmed.] We do not claim certifications or guarantees that have not been verified.
+          </p>
+          <p class="legal-links">
+            <a href="https://myassetsflow.app/privacy" data-i18n="security.privacyLink">Privacy policy</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://myassetsflow.app/terms" data-i18n="security.termsLink">Terms of service</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section class="section languages alt-bg">
+        <div class="wrap">
+          <h2 data-i18n="languages.title">Languages</h2>
+          <p data-i18n="languages.body">
+            AssetFlow is currently available in English, Italian, German, Spanish, French, and
+            Arabic.
+          </p>
+          <div class="lang-select lang-select-inline">
+            <label class="visually-hidden" for="lang-picker-2" data-i18n="nav.languageLabel">Language</label>
+            <select id="lang-picker-2" aria-label="Choose language">
+              <option value="en">English</option>
+              <option value="it">Italiano</option>
+              <option value="de">Deutsch</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="ar">العربية</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="section closing-cta">
+        <div class="wrap">
+          <h2 data-i18n="closing.title">Ready to get a handle on what you own?</h2>
+          <p data-i18n="closing.body">
+            Start simple: add one asset and see how it feels. There's no pressure and no hard sell —
+            just a clearer view of what needs attention.
+          </p>
+          <a class="btn btn-primary btn-large" href="https://myassetsflow.app" data-i18n="closing.cta"
+            >Go to AssetFlow</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>&copy; <span id="year"></span> AssetFlow</p>
+        <p class="legal-links">
+          <a href="https://myassetsflow.app/privacy" data-i18n="security.privacyLink">Privacy policy</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://myassetsflow.app/terms" data-i18n="security.termsLink">Terms of service</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
