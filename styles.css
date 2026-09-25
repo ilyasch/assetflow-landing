@@ -122,6 +122,7 @@ select {
   font-family: inherit;
   font-size: 0.92rem;
   font-weight: 500;
+  min-height: 44px;
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid var(--color-border);
@@ -143,6 +144,7 @@ select:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  min-height: 44px;
   padding: 13px 26px;
   border-radius: 999px;
   font-weight: 700;
@@ -536,6 +538,7 @@ html[dir="rtl"] .flow-arrow {
 .toggle-btn {
   border: none;
   background: transparent;
+  min-height: 44px;
   padding: 9px 20px;
   border-radius: 999px;
   cursor: pointer;
@@ -748,11 +751,45 @@ html[dir="rtl"] .preview-card {
 }
 
 @media (max-width: 520px) {
+  .wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-actions .btn-header {
+    flex: 1;
+  }
+
   .section {
     padding: 48px 0;
   }
   .hero {
     padding: 48px 0 40px;
+  }
+  .flow-strip {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+  }
+  .flow-step {
+    width: 100%;
+  }
+  .flow-arrow {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+  .preview-card {
+    transform: none;
   }
   .trust-row {
     grid-template-columns: 1fr;
@@ -763,6 +800,22 @@ html[dir="rtl"] .preview-card {
   .btn-header {
     padding: 9px 14px;
     font-size: 0.82rem;
+  }
+  .cta-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .cta-row .btn {
+    width: 100%;
+  }
+  .billing-toggle {
+    display: flex;
+    width: 100%;
+  }
+  .toggle-btn {
+    flex: 1;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .flow-step span:last-child {
     font-size: 0.8rem;
@@ -777,5 +830,27 @@ html[dir="rtl"] .preview-card {
   .flow-icon svg {
     width: 14px;
     height: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand {
+    font-size: 1.05rem;
+  }
+
+  .brand-mark {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-actions select {
+    flex: 0 1 auto;
+    max-width: 42%;
+  }
+
+  .header-actions .btn-header {
+    min-width: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
