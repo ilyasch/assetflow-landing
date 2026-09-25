@@ -3,79 +3,153 @@
     "languageLabel": "Lingua"
   },
   "hero": {
-    "headline": "Non lasciare più nulla al caso su ciò che possiedi.",
-    "sub": "Un solo posto per le tue cose, i loro documenti e le prossime scadenze.",
+    "headline": "Sii la persona che sa sempre cosa richiede attenzione.",
+    "sub": "Organizza i tuoi beni, crea un piano di manutenzione intelligente e tieni a portata di mano ogni dettaglio importante.",
     "ctaPrimary": "Vai su AssetFlow",
-    "ctaSecondary": "Guarda esempi reali",
-    "previewLabel": "Esempio illustrativo — non sono dati reali",
+    "ctaSecondary": "Scopri come aiuta",
+    "previewLabel": "Una visione più chiara di ciò che richiede attenzione",
     "preview": {
-      "item1Title": "Utilitaria del 2019",
-      "item1Sub": "Tagliando previsto tra 12 giorni",
+      "item1Title": "Toyota Corolla 2020",
+      "item1Sub": "Cambio olio e filtro aria tra 12 giorni",
+      "item1Status": "Acquista olio e filtro aria",
       "item2Title": "Lavatrice",
-      "item2Sub": "Garanzia registrata, scade il prossimo anno",
-      "item3Title": "Bici da corsa",
-      "item3Sub": "Ultima revisione 7 mesi fa",
-      "item4Title": "Caldaia",
-      "item4Sub": "Controllo annuale suggerito — conferma per aggiungerlo"
+      "item2Sub": "Anticalcare da fare questo mese",
+      "item2Status": "Acquista l'anticalcare per la lavatrice",
+      "item3Title": "Casa di famiglia",
+      "item3Sub": "Rinnovo dell'assicurazione casa tra 28 giorni",
+      "item3Status": "Documenti assicurativi pronti",
+      "item4Title": "Pompa di calore aria-acqua",
+      "item4Sub": "Manutenzione annuale suggerita — rivedi per aggiungerla",
+      "item4Status": "Filtro di ricambio pronto"
     },
-    "eyebrow": "Per tutto ciò che possiedi e per chi vive in affitto",
     "trust": {
       "encrypted": "Connessioni cifrate",
       "control": "Mantieni il controllo dei tuoi dati",
-      "europe": "Pensato per il contesto europeo",
+      "europe": "Hosting europeo per l'ambiente attuale",
       "review": "Suggerimenti IA che rivedi sempre tu per primo"
     },
     "flow": {
-      "step1": "Aggiungi ciò che possiedi",
-      "step2": "Ricevi promemoria puntuali",
-      "step3": "Decidi con sicurezza"
+      "title": "Il tuo percorso di gestione",
+      "subtitle": "Quattro mosse semplici da «Dovrei ricordarmelo» a «So cosa succede dopo».",
+      "connector": "poi",
+      "step1": "Aggiungi un bene",
+      "step1Hint": "Parti dalle informazioni base",
+      "step2": "Crea un piano intelligente",
+      "step2Hint": "Ottieni attività suggerite",
+      "step3": "Conferma e resta al passo",
+      "step3Hint": "Controlla cosa si adatta alla tua vita",
+      "step4": "Tieni insieme i documenti",
+      "step4Hint": "Trova le prove quando servono"
     }
   },
   "examples": {
-    "title": "Situazioni che potresti riconoscere",
-    "lead": "AssetFlow non diagnostica un guasto, non garantisce coperture né promette risparmi — ma tiene insieme documenti, scadenze e prossimi passi così puoi agire.",
+    "title": "Domande quotidiane. Prossimi passi chiari.",
+    "lead": "Sei tu a decidere. AssetFlow trasforma i dettagli che hai già in un piano pratico da rivedere, confermare e mantenere aggiornato.",
     "item1": {
-      "quote": "“Ho appena comprato un'auto usata. Quale tagliando è previsto e quando scade l'assicurazione?”",
-      "help": "Aggiungi l'auto una sola volta, allega i documenti che hai e conferma il tagliando e la scadenza suggeriti, così compariranno al momento giusto."
+      "quote": "“Dov'è lo scontrino e cosa devo fare adesso?”",
+      "help": "Collega il documento al bene giusto e trova il prossimo intervento confermato senza cercare tra cassetti, email o ricordi."
     },
     "item2": {
-      "quote": "“L'elettrodomestico fa rumore. Riesco a trovare scontrino e garanzia?”",
-      "help": "Tieni scontrini, manuali e garanzie collegati all'elettrodomestico, senza dover frugare in cassetti o vecchie email."
+      "quote": "“Ce ne siamo già occupati?”",
+      "help": "Registra i lavori conclusi mentre li fai, così tutti in famiglia sanno cosa è stato fatto e quando."
     },
     "item3": {
-      "quote": "“Abbiamo già prenotato la revisione della caldaia, o era l'anno scorso?”",
-      "help": "Una cronologia condivisa dei lavori svolti permette alla famiglia di verificare cosa è stato fatto davvero e quando, senza affidarsi alla memoria."
+      "quote": "“Ho comprato un'auto usata. Da dove comincio?”",
+      "help": "Aggiungi l'auto, allega la cronologia degli interventi e rivedi un piano di manutenzione intelligente prima di confermare le date che contano per te."
     },
     "item4": {
-      "quote": "“La bici avrebbe bisogno di manutenzione, ma non ricordo l'ultima revisione.”",
-      "help": "Registra i lavori man mano che li fai, così il prossimo intervento suggerito parte sempre da una cronologia accurata."
+      "quote": "“La lavatrice dà problemi. Riesco a trovare la garanzia?”",
+      "help": "Collega scontrino, garanzia e note all'elettrodomestico, così le prove sono pronte quando servono."
     },
     "item5": {
-      "quote": "“Conviene riparare questo dispositivo o sostituirlo? Quanto ho già speso?”",
-      "help": "Rivedi insieme costi e cronologia registrati come punto di partenza per la decisione — la scelta, e il risultato, restano tuoi."
+      "quote": "“Cosa dobbiamo preparare prima dell'inverno?”",
+      "help": "Crea un piano per caldaia, pompa di calore, bici o impianto di casa, poi scegli cosa confermare e quando."
+    },
+    "item6": {
+      "quote": "“Dove sono i documenti dei pannelli solari e quando dovremmo controllarli?”",
+      "help": "Tieni i documenti di installazione e le note di assistenza insieme alla casa, poi segui il prossimo controllo senza affidarti a una cartella o alla memoria."
+    }
+  },
+  "library": {
+    "eyebrow": "Parte del percorso di gestione",
+    "title": "Una libreria per la storia di ogni bene",
+    "lead": "Tieni i documenti che spiegano la gestione dei tuoi beni vicino al bene e ai momenti che contano. AssetFlow è pensato per riunire la documentazione nello stesso posto del piano e della cronologia.",
+    "item1": {
+      "title": "Documenti del bene",
+      "body": "Allega manuali, garanzie, assicurazioni e contratti di assistenza al bene a cui appartengono."
+    },
+    "item2": {
+      "title": "Documenti degli eventi",
+      "body": "Conserva scontrini, fatture, rapporti di assistenza e foto insieme all'intervento o all'evento a cui si riferiscono."
+    },
+    "item3": {
+      "title": "Trova ciò che serve dopo",
+      "body": "Rivedi le prove dietro la cronologia, individua i dettagli mancanti e usa ciò che impari per migliorare il piano successivo."
+    },
+    "note": "Tieni i documenti collegati al bene o all'evento a cui si riferiscono, così le prove sono pronte quando servono.",
+    "tree": {
+      "label": "Esempio di libreria del bene",
+      "title": "Toyota Corolla 2020",
+      "root": "Toyota Corolla 2020",
+      "folder1": "Acquisto e garanzia",
+      "folder2": "Manutenzione · 12 ago 2025",
+      "folder3": "Assicurazione",
+      "caption": "I documenti del bene e le prove degli eventi restano insieme, mantenendo i formati originali."
+    }
+  },
+  "smartPlan": {
+    "eyebrow": "Il valore, subito",
+    "title": "Un piano di manutenzione intelligente in pochi secondi",
+    "lead": "Fornisci ad AssetFlow il contesto che hai già. Lo trasforma in una bozza pratica che puoi rivedere, modificare e approvare.",
+    "preview": {
+      "brand": "Bozza del piano intelligente",
+      "status": "Bozza consigliata",
+      "asset": "Toyota Corolla 2020",
+      "context": "Creata dai dettagli del tuo bene",
+      "item1Title": "Compra l'olio motore",
+      "item1Meta": "Prima del tagliando olio · tra 12 giorni",
+      "item2Title": "Compra il filtro dell'aria",
+      "item2Meta": "Prima del cambio filtro · tra 12 giorni",
+      "item3Title": "Controlla l'assicurazione",
+      "item3Meta": "Verifica del rinnovo · tra 28 giorni",
+      "buy": "Compra",
+      "sourcesLabel": "Fonti usate per questa bozza",
+      "source1": "Manuale del proprietario · PDF",
+      "source2": "Ricerca Google · intervallo di assistenza",
+      "note": "Decidi tu cosa entra nel tuo piano."
+    },
+    "calendar": {
+      "kicker": "Tutti sulla stessa pagina",
+      "title": "Tieni sincronizzato il tuo piano di manutenzione",
+      "body": "Porta la manutenzione approvata nel calendario che usi già, così tutti vedono cosa c'è da fare e la persona giusta può occuparsene. La sincronizzazione con i calendari collegati è in preparazione.",
+      "benefit1": "Vedi subito cosa è in programma",
+      "benefit2": "Mantieni la famiglia allineata",
+      "benefit3": "Agisci al momento giusto",
+      "personal": "Il tuo calendario",
+      "household": "Vista familiare condivisa"
     }
   },
   "how": {
-    "title": "Come funziona",
+    "title": "Decidi tu. AssetFlow ti aiuta nel resto.",
     "step1": {
-      "title": "Aggiungi un bene",
-      "body": "Registra ciò che possiedi — un'auto, un elettrodomestico, un attrezzo o qualsiasi altra cosa di cui ti prendi cura."
+      "title": "Inizia da un bene",
+      "body": "Aggiungi un'auto, un elettrodomestico, una bici, un impianto di casa, un attrezzo o qualsiasi altra cosa tu segua."
     },
     "step2": {
-      "title": "Tieni insieme documenti e dettagli",
-      "body": "Allega scontrini, manuali, garanzie e assicurazioni, così restano legati al bene."
+      "title": "Crea un piano di manutenzione intelligente",
+      "body": "AssetFlow usa i dettagli che fornisci per preparare attività, date e promemoria suggeriti."
     },
     "step3": {
-      "title": "Rivedi attività e scadenze suggerite, poi conferma",
-      "body": "I suggerimenti sono bozze da rivedere e approvare — nulla viene aggiunto automaticamente."
+      "title": "Rivedi e rendilo tuo",
+      "body": "Modifica, elimina o conferma ogni suggerimento. Nulla viene aggiunto o cambiato finché non lo approvi."
     },
     "step4": {
-      "title": "Registra i lavori svolti e usa la cronologia",
-      "body": "I lavori registrati diventano la cronologia su cui ti basi per la prossima decisione."
+      "title": "Resta al passo con una cronologia viva",
+      "body": "Registra ciò che completi e costruisci la cronologia che ti aiuta a decidere con sicurezza la prossima volta."
     }
   },
   "categories": {
-    "title": "Cosa puoi organizzare",
+    "title": "Inizia da una cosa. Sentiti più in controllo di tutto.",
     "vehicles": "Veicoli",
     "appliances": "Elettrodomestici",
     "electronics": "Elettronica",
@@ -83,17 +157,16 @@
     "tools": "Attrezzi",
     "boats": "Barche",
     "home": "Impianti domestici",
-    "note": "Garanzie, polizze assicurative e contratti di assistenza sono documenti collegati con proprie scadenze — non beni fisici a sé stanti."
+    "note": "Garanzie, polizze e contratti di assistenza restano collegati al bene a cui appartengono, con date e promemoria propri."
   },
   "pricing": {
-    "title": "Prezzi",
-    "lead": "Tutti i piani sono fatturati in EUR. I piani differiscono per numero di beni attivi, crediti AI condivisi e collaboratori aggiuntivi.",
+    "title": "Scegli lo spazio adatto alla tua vita",
+    "lead": "Inizia gratis, poi scegli più beni, crediti per i piani intelligenti o collaborazione familiare quando ti servono. Tutti i piani sono fatturati in EUR.",
     "toggleMonthly": "Mensile",
     "toggleAnnual": "Annuale",
     "perMonth": "/mese",
     "perYear": "/anno",
     "popular": "Popolare",
-    "cta": "Vai su AssetFlow",
     "free": {
       "name": "Free",
       "tagline": "Registrazione di base e promemoria utili.",
@@ -122,34 +195,24 @@
       "credits": "50 crediti AI al mese",
       "seats": "+4 collaboratori aggiuntivi"
     },
-    "note": "I beni attivi sono quelli tracciati contemporaneamente; i beni archiviati non contano nel limite. I crediti AI sono condivisi tra chat, suggerimenti di manutenzione e decisioni, e non si accumulano da un mese all'altro."
+    "note": "I beni attivi sono quelli che segui contemporaneamente; quelli archiviati non contano nel limite. I crediti AI sono condivisi tra chat, piani di manutenzione intelligenti e decisioni, e non si accumulano."
   },
   "security": {
-    "title": "Sicurezza, privacy ed Europa",
-    "body2": "Stiamo costruendo le nostre pratiche di sicurezza e privacy in linea con il GDPR e con standard di sicurezza informatica riconosciuti. [Inserire dettagli verificati su sicurezza e privacy — certificazioni, misure di hosting e trattamento dei dati saranno elencati qui una volta confermati.] Non dichiariamo certificazioni o garanzie non verificate.",
+    "title": "I tuoi dati restano protetti e sotto il tuo controllo",
     "privacyLink": "Informativa sulla privacy",
     "termsLink": "Termini di servizio",
-    "lead": "La fiducia conta quanto la comodità. Ecco su cosa puoi contare oggi, e dove siamo trasparenti su ciò che è ancora in fase di verifica.",
+    "lead": "Le informazioni sulla tua casa e sui tuoi beni sono personali. AssetFlow ti aiuta a organizzarle con controlli chiari, IA rivedibile e hosting europeo per l'ambiente attuale.",
     "pillar1": {
-      "title": "Cifratura predefinita",
+      "title": "Connessioni cifrate",
       "body": "Ogni connessione ad AssetFlow utilizza la cifratura HTTPS in transito."
     },
     "pillar2": {
-      "title": "Il controllo resta sempre tuo",
+      "title": "Decidi tu cosa cambia",
       "body": "I suggerimenti IA sono bozze. Nulla viene aggiunto o modificato finché non lo rivedi e confermi."
     },
     "pillar3": {
-      "title": "Pensato per l'Europa",
-      "body": "AssetFlow è pensato per un contesto europeo. I dettagli sulla regione di hosting sono [da confermare la regione di hosting] e saranno pubblicati qui una volta verificati."
+      "title": "Hosting europeo",
+      "body": "L'ambiente attuale di AssetFlow utilizza infrastruttura europea. Non dichiariamo certificazioni o garanzie di conformità più ampie senza verifica."
     }
-  },
-  "languages": {
-    "title": "Lingue",
-    "body": "AssetFlow è attualmente disponibile in inglese, italiano, tedesco, spagnolo, francese e arabo."
-  },
-  "closing": {
-    "title": "Pronto a mettere ordine tra ciò che possiedi?",
-    "body": "Inizia in modo semplice: aggiungi un bene e valuta come ti trovi. Nessuna pressione, nessuna vendita forzata — solo una visione più chiara di ciò che richiede attenzione.",
-    "cta": "Vai su AssetFlow"
   }
 }

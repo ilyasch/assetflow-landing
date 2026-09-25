@@ -3,79 +3,153 @@
     "languageLabel": "Language"
   },
   "hero": {
-    "headline": "Take the guesswork out of looking after what you own.",
-    "sub": "One place for your things, their documents, and what's due next.",
+    "headline": "Be the person who always knows what your things need next.",
+    "sub": "Organize your assets, build a smart maintenance plan, and keep every important detail ready when you need it.",
     "ctaPrimary": "Go to AssetFlow",
-    "ctaSecondary": "See real-life examples",
-    "previewLabel": "Illustrative example — not real data",
+    "ctaSecondary": "See how it helps",
+    "previewLabel": "A clearer view of what needs attention",
     "preview": {
-      "item1Title": "2019 hatchback",
-      "item1Sub": "Service due in 12 days",
+      "item1Title": "2020 Toyota Corolla",
+      "item1Sub": "Oil and air-filter service in 12 days",
+      "item1Status": "Buy oil and air filter",
       "item2Title": "Washing machine",
-      "item2Sub": "Warranty on file, expires next year",
-      "item3Title": "Road bike",
-      "item3Sub": "Last serviced 7 months ago",
-      "item4Title": "Boiler",
-      "item4Sub": "Annual check suggested — confirm to add"
+      "item2Sub": "Limescale clean due this month",
+      "item2Status": "Buy washing-machine descaler",
+      "item3Title": "Family home",
+      "item3Sub": "Home insurance renewal in 28 days",
+      "item3Status": "Insurance documents ready",
+      "item4Title": "Air-source heat pump",
+      "item4Sub": "Annual service suggested — review to add",
+      "item4Status": "Replacement filter ready"
     },
-    "eyebrow": "For everything you own and everyone who rents",
     "trust": {
       "encrypted": "Encrypted connections",
       "control": "You stay in control of your data",
-      "europe": "Designed with Europe in mind",
+      "europe": "European hosting for the current deployment",
       "review": "AI suggestions you always review first"
     },
     "flow": {
-      "step1": "Add what you own",
-      "step2": "Get timely reminders",
-      "step3": "Decide with confidence"
+      "title": "Your ownership loop",
+      "subtitle": "Four simple moves from “I should remember this” to “I know what happens next.”",
+      "connector": "then",
+      "step1": "Add an asset",
+      "step1Hint": "Start with the basics",
+      "step2": "Build a smart plan",
+      "step2Hint": "Get suggested tasks",
+      "step3": "Confirm and stay ahead",
+      "step3Hint": "Review what fits your life",
+      "step4": "Keep documents together",
+      "step4Hint": "Find proof when it matters"
     }
   },
   "examples": {
-    "title": "Situations you might recognize",
-    "lead": "AssetFlow won't diagnose a fault, guarantee coverage, or promise savings — but it keeps the records, dates, and next steps together so you can act on them.",
+    "title": "Everyday questions. Clear next steps.",
+    "lead": "You stay in charge. AssetFlow turns the details you already have into a practical plan you can review, confirm, and keep up to date.",
     "item1": {
-      "quote": "“I just bought a used car. What service is due, and when does the insurance renew?”",
-      "help": "Add the car once, attach the documents you have, and confirm the suggested service and renewal dates so they show up when they matter."
+      "quote": "“Where is the receipt, and what needs doing next?”",
+      "help": "Keep the document with the right asset, then see the next confirmed task without searching through drawers, inboxes, or memory."
     },
     "item2": {
-      "quote": "“The appliance is making a noise. Can I find the receipt and warranty?”",
-      "help": "Keep receipts, manuals, and warranty details linked to the appliance, so you're not searching through drawers or old emails."
+      "quote": "“Did we already take care of this?”",
+      "help": "Record completed work as it happens, so everyone in the household can see what was done and when."
     },
     "item3": {
-      "quote": "“Did we already book the boiler service — or was that last year?”",
-      "help": "A shared history of completed work means the household can check what was actually done, and when, instead of relying on memory."
+      "quote": "“I bought a used car. What should I check first?”",
+      "help": "Add the car, attach its service history, and review a smart maintenance plan before confirming the dates that matter to you."
     },
     "item4": {
-      "quote": "“The bike needs attention, but I can't remember its last service.”",
-      "help": "Log completed work as you go, so the next suggested task always starts from an accurate history."
+      "quote": "“The washing machine is acting up. Can I find the warranty?”",
+      "help": "Link the receipt, warranty, and notes to the appliance so the evidence is ready when you need it."
     },
     "item5": {
-      "quote": "“Should I repair this device or replace it? What have I already spent?”",
-      "help": "Review recorded costs and history together as a starting point for the decision — the choice, and the outcome, stay yours."
+      "quote": "“What should we prepare before winter?”",
+      "help": "Build a plan for the boiler, heat pump, bike, or home system, then choose what to confirm and when."
+    },
+    "item6": {
+      "quote": "“Where are the solar-panel documents, and when should we check them?”",
+      "help": "Keep the installation records and service notes with the home, then track the next review without relying on a folder or a reminder in your head."
+    }
+  },
+  "library": {
+    "eyebrow": "Built into the ownership journey",
+    "title": "One library for the story of every asset",
+    "lead": "Keep the documents that explain ownership close to the asset and the moments that matter. AssetFlow is designed to bring the paper trail into the same place as your plan and history.",
+    "item1": {
+      "title": "Asset documents",
+      "body": "Attach manuals, warranties, insurance, and service contracts to the asset they belong to."
+    },
+    "item2": {
+      "title": "Event documents",
+      "body": "Keep receipts, invoices, service reports, and photos with the maintenance or ownership event they support."
+    },
+    "item3": {
+      "title": "Find what helps next",
+      "body": "See the evidence behind your history, spot missing details, and use what you learn to improve the next plan."
+    },
+    "note": "Keep documents connected to the asset or event they support, so the evidence stays ready when you need it.",
+    "tree": {
+      "label": "Example asset library",
+      "title": "2020 Toyota Corolla",
+      "root": "2020 Toyota Corolla",
+      "folder1": "Purchase & warranty",
+      "folder2": "Maintenance · 12 Aug 2025",
+      "folder3": "Insurance",
+      "caption": "Asset documents and event evidence stay together, with the original file types intact."
+    }
+  },
+  "smartPlan": {
+    "eyebrow": "The value, quickly",
+    "title": "A smart maintenance plan in seconds",
+    "lead": "Give AssetFlow the context you already have. It turns that information into a practical draft you can review, adjust, and approve.",
+    "preview": {
+      "brand": "Smart plan draft",
+      "status": "Recommended draft",
+      "asset": "2020 Toyota Corolla",
+      "context": "Built from your asset details",
+      "item1Title": "Buy engine oil",
+      "item1Meta": "Before oil service · in 12 days",
+      "item2Title": "Buy air filter",
+      "item2Meta": "Before filter service · in 12 days",
+      "item3Title": "Review insurance",
+      "item3Meta": "Renewal check · in 28 days",
+      "buy": "Buy",
+      "sourcesLabel": "Sources used for this draft",
+      "source1": "Owner's manual · PDF",
+      "source2": "Google search · service interval",
+      "note": "You decide what becomes part of your plan."
+    },
+    "calendar": {
+      "kicker": "Always on the same page",
+      "title": "Keep your maintenance schedule in sync",
+      "body": "Bring approved maintenance into the calendar you already use, so everyone sees what is due and the right person can act. Connected calendar sync is being prepared.",
+      "benefit1": "See what is due at a glance",
+      "benefit2": "Keep the household aligned",
+      "benefit3": "Act at the right moment",
+      "personal": "Your calendar",
+      "household": "Shared household view"
     }
   },
   "how": {
-    "title": "How it works",
+    "title": "You stay in control. AssetFlow helps with the rest.",
     "step1": {
-      "title": "Add an asset",
-      "body": "Register what you own — a car, appliance, tool, or anything else you look after."
+      "title": "Start with one asset",
+      "body": "Add a car, appliance, bike, home system, tool, or anything else you look after."
     },
     "step2": {
-      "title": "Keep its documents and details together",
-      "body": "Attach receipts, manuals, warranties, and insurance so they live with the asset."
+      "title": "Get a smart maintenance plan",
+      "body": "AssetFlow uses the details you provide to prepare suggested tasks, dates, and reminders."
     },
     "step3": {
-      "title": "Review suggested tasks and dates, then confirm",
-      "body": "Suggestions are drafts you review and approve — nothing is added automatically."
+      "title": "Review and make it yours",
+      "body": "Edit, remove, or confirm each suggestion. Nothing is added or changed until you approve it."
     },
     "step4": {
-      "title": "Log completed work and use the history",
-      "body": "Recorded work becomes the history you rely on for the next decision."
+      "title": "Stay ahead with a living history",
+      "body": "Record what you complete and build the history that helps you make the next decision with confidence."
     }
   },
   "categories": {
-    "title": "What you can organize",
+    "title": "Start with one thing. Feel more in control of everything.",
     "vehicles": "Vehicles",
     "appliances": "Appliances",
     "electronics": "Electronics",
@@ -83,17 +157,16 @@
     "tools": "Tools",
     "boats": "Boats",
     "home": "Home systems",
-    "note": "Warranties, insurance policies, and service contracts are linked records with their own dates — not physical assets by themselves."
+    "note": "Warranties, insurance policies, and service contracts stay linked to the asset they belong to, with their own dates and reminders."
   },
   "pricing": {
-    "title": "Pricing",
-    "lead": "All plans are billed in EUR. Plans differ by active asset allowance, shared AI credits, and additional collaborators.",
+    "title": "Choose the space that fits your life",
+    "lead": "Start free, then choose more assets, smart-plan credits, or household collaboration when you need them. All plans are billed in EUR.",
     "toggleMonthly": "Monthly",
     "toggleAnnual": "Annual",
     "perMonth": "/mo",
     "perYear": "/yr",
     "popular": "Popular",
-    "cta": "Go to AssetFlow",
     "free": {
       "name": "Free",
       "tagline": "Useful basic registration and reminders.",
@@ -122,34 +195,24 @@
       "credits": "50 AI credits / month",
       "seats": "+4 additional collaborators"
     },
-    "note": "Active assets are concurrently tracked assets; archived assets don't count toward the limit. AI credits are shared across chat, maintenance suggestions, and decisions, and don't roll over month to month."
+    "note": "Active assets are the assets you track at the same time; archived assets do not count toward the limit. AI credits are shared across chat, smart maintenance plans, and decisions, and do not roll over month to month."
   },
   "security": {
-    "title": "Security, privacy, and Europe",
-    "body2": "We are building our security and privacy practices in line with GDPR and recognized information-security standards. [Insert verified security and privacy details — certifications, hosting safeguards, and data-handling practices will be listed here once confirmed.] We do not claim certifications or guarantees that have not been verified.",
+    "title": "Your records stay protected and under your control",
     "privacyLink": "Privacy policy",
     "termsLink": "Terms of service",
-    "lead": "Confidence matters as much as convenience. Here is what you can rely on today, and where we're being upfront about what's still being verified.",
+    "lead": "Ownership information is personal. AssetFlow is built to help you organize it with clear controls, reviewable AI, and European hosting for the current deployment.",
     "pillar1": {
-      "title": "Encrypted by default",
+      "title": "Encrypted connections",
       "body": "Every connection to AssetFlow uses HTTPS encryption in transit."
     },
     "pillar2": {
-      "title": "You're always in control",
+      "title": "You decide what changes",
       "body": "AI suggestions are drafts. Nothing is added or changed until you review and confirm it."
     },
     "pillar3": {
-      "title": "Built with Europe in mind",
-      "body": "AssetFlow is designed for a European context. Hosting region details are [confirm hosting region] and will be published here once verified."
+      "title": "European hosting",
+      "body": "The current AssetFlow deployment runs on European infrastructure. We do not claim certifications or broader compliance guarantees that have not been verified."
     }
-  },
-  "languages": {
-    "title": "Languages",
-    "body": "AssetFlow is currently available in English, Italian, German, Spanish, French, and Arabic."
-  },
-  "closing": {
-    "title": "Ready to get a handle on what you own?",
-    "body": "Start simple: add one asset and see how it feels. There's no pressure and no hard sell — just a clearer view of what needs attention.",
-    "cta": "Go to AssetFlow"
   }
 }

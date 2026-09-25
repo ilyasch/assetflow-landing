@@ -3,79 +3,153 @@
     "languageLabel": "Langue"
   },
   "hero": {
-    "headline": "Ne devinez plus rien dans l'entretien de ce que vous possédez.",
-    "sub": "Un seul endroit pour vos biens, leurs documents et ce qui arrive ensuite.",
+    "headline": "Soyez la personne qui sait toujours ce qui doit être fait ensuite.",
+    "sub": "Organisez vos biens, créez un plan d'entretien intelligent et gardez chaque détail important à portée de main.",
     "ctaPrimary": "Accéder à AssetFlow",
-    "ctaSecondary": "Voir des exemples concrets",
-    "previewLabel": "Exemple illustratif — pas des données réelles",
+    "ctaSecondary": "Voir comment cela aide",
+    "previewLabel": "Une vision plus claire de ce qui demande votre attention",
     "preview": {
-      "item1Title": "Citadine de 2019",
-      "item1Sub": "Entretien prévu dans 12 jours",
+      "item1Title": "Toyota Corolla 2020",
+      "item1Sub": "Vidange et filtre à air dans 12 jours",
+      "item1Status": "Achetez l'huile et le filtre à air",
       "item2Title": "Lave-linge",
-      "item2Sub": "Garantie enregistrée, expire l'an prochain",
-      "item3Title": "Vélo de route",
-      "item3Sub": "Dernier entretien il y a 7 mois",
-      "item4Title": "Chaudière",
-      "item4Sub": "Contrôle annuel suggéré — confirmez pour l'ajouter"
+      "item2Sub": "Détartrage prévu ce mois-ci",
+      "item2Status": "Achetez le détartrant pour lave-linge",
+      "item3Title": "Maison familiale",
+      "item3Sub": "Renouvellement de l'assurance habitation dans 28 jours",
+      "item3Status": "Documents d'assurance prêts",
+      "item4Title": "Pompe à chaleur air-eau",
+      "item4Sub": "Entretien annuel suggéré — vérifiez avant d'ajouter",
+      "item4Status": "Filtre de rechange prêt"
     },
-    "eyebrow": "Pour tout ce que vous possédez, locataires compris",
     "trust": {
       "encrypted": "Connexions chiffrées",
       "control": "Vous gardez le contrôle de vos données",
-      "europe": "Conçu pour le contexte européen",
+      "europe": "Hébergement européen dans l'environnement actuel",
       "review": "Des suggestions IA que vous validez toujours en premier"
     },
     "flow": {
-      "step1": "Ajoutez ce que vous possédez",
-      "step2": "Recevez des rappels à temps",
-      "step3": "Décidez en toute confiance"
+      "title": "Votre parcours de propriétaire",
+      "subtitle": "Quatre gestes simples pour passer de « Je devrais m'en souvenir » à « Je sais ce qui vient ensuite ».",
+      "connector": "puis",
+      "step1": "Ajoutez un bien",
+      "step1Hint": "Commencez par l'essentiel",
+      "step2": "Créez un plan intelligent",
+      "step2Hint": "Obtenez des tâches suggérées",
+      "step3": "Confirmez et gardez une longueur d'avance",
+      "step3Hint": "Vérifiez ce qui vous convient",
+      "step4": "Gardez les documents ensemble",
+      "step4Hint": "Retrouvez les justificatifs au bon moment"
     }
   },
   "examples": {
-    "title": "Des situations qui vous parlent peut-être",
-    "lead": "AssetFlow ne diagnostique pas une panne, ne garantit pas une couverture et ne promet pas d'économies — mais rassemble documents, échéances et prochaines étapes pour que vous puissiez agir.",
+    "title": "Questions du quotidien. Prochaines étapes claires.",
+    "lead": "Vous gardez la main. AssetFlow transforme les informations que vous avez déjà en un plan pratique que vous pouvez vérifier, confirmer et tenir à jour.",
     "item1": {
-      "quote": "«Je viens d'acheter une voiture d'occasion. Quel entretien est prévu, et quand l'assurance se renouvelle-t-elle ?»",
-      "help": "Ajoutez la voiture une fois, joignez les documents dont vous disposez, puis confirmez l'entretien et le renouvellement suggérés pour qu'ils apparaissent au bon moment."
+      "quote": "«Où est le justificatif, et que faut-il faire maintenant ?»",
+      "help": "Associez le document au bon bien et retrouvez la prochaine tâche confirmée sans fouiller dans les tiroirs, les e-mails ou vos souvenirs."
     },
     "item2": {
-      "quote": "«L'appareil fait du bruit. Puis-je retrouver le ticket de caisse et la garantie ?»",
-      "help": "Gardez tickets, notices et garanties liés à l'appareil, sans fouiller dans des tiroirs ou de vieux e-mails."
+      "quote": "«Est-ce qu'on s'en est déjà occupé ?»",
+      "help": "Enregistrez les travaux au moment où ils sont faits, afin que chacun au foyer sache ce qui a été fait et quand."
     },
     "item3": {
-      "quote": "«A-t-on déjà réservé l'entretien de la chaudière, ou était-ce l'an dernier ?»",
-      "help": "Un historique partagé des travaux effectués permet au foyer de vérifier ce qui a vraiment été fait, et quand, plutôt que de se fier à sa mémoire."
+      "quote": "«J'ai acheté une voiture d'occasion. Que dois-je vérifier en premier ?»",
+      "help": "Ajoutez la voiture, joignez son historique d'entretien et examinez un plan d'entretien intelligent avant de confirmer les dates importantes."
     },
     "item4": {
-      "quote": "«Le vélo aurait besoin d'entretien, mais je ne me souviens plus de la dernière révision.»",
-      "help": "Enregistrez les travaux au fur et à mesure, pour que la prochaine tâche suggérée parte toujours d'un historique fiable."
+      "quote": "«Le lave-linge a un problème. Puis-je retrouver la garantie ?»",
+      "help": "Liez reçu, garantie et notes à l'appareil pour que les justificatifs soient prêts quand vous en avez besoin."
     },
     "item5": {
-      "quote": "«Faut-il réparer cet appareil ou le remplacer ? Qu'ai-je déjà dépensé ?»",
-      "help": "Consultez ensemble les coûts et l'historique enregistrés comme point de départ de la décision — le choix, et le résultat, restent les vôtres."
+      "quote": "«Que devons-nous préparer avant l'hiver ?»",
+      "help": "Créez un plan pour la chaudière, la pompe à chaleur, le vélo ou les équipements du logement, puis choisissez quoi confirmer et quand."
+    },
+    "item6": {
+      "quote": "«Où sont les documents des panneaux solaires et quand devons-nous les vérifier ?»",
+      "help": "Gardez les documents d'installation et les notes d'entretien avec la maison, puis suivez la prochaine vérification sans dépendre d'un dossier ou de votre mémoire."
+    }
+  },
+  "library": {
+    "eyebrow": "Au cœur du parcours de propriété",
+    "title": "Une bibliothèque pour l'histoire de chaque bien",
+    "lead": "Gardez les documents qui expliquent la propriété près du bien et des moments importants. AssetFlow est conçu pour réunir les justificatifs, le plan et l'historique au même endroit.",
+    "item1": {
+      "title": "Documents du bien",
+      "body": "Joignez notices, garanties, assurances et contrats d'entretien au bien auquel ils appartiennent."
+    },
+    "item2": {
+      "title": "Documents liés aux événements",
+      "body": "Conservez reçus, factures, rapports d'intervention et photos avec l'entretien ou l'événement qu'ils justifient."
+    },
+    "item3": {
+      "title": "Trouvez ce qui aidera ensuite",
+      "body": "Consultez les preuves derrière votre historique, repérez les informations manquantes et utilisez-les pour améliorer le prochain plan."
+    },
+    "note": "Gardez les documents liés au bien ou à l'événement qu'ils justifient, pour retrouver les preuves quand vous en avez besoin.",
+    "tree": {
+      "label": "Exemple de bibliothèque d'un bien",
+      "title": "Toyota Corolla 2020",
+      "root": "Toyota Corolla 2020",
+      "folder1": "Achat et garantie",
+      "folder2": "Entretien · 12 août 2025",
+      "folder3": "Assurance",
+      "caption": "Les documents du bien et les justificatifs des événements restent ensemble, dans leurs formats d'origine."
+    }
+  },
+  "smartPlan": {
+    "eyebrow": "La valeur, tout de suite",
+    "title": "Un plan d'entretien intelligent en quelques secondes",
+    "lead": "Donnez à AssetFlow le contexte que vous avez déjà. Il le transforme en brouillon pratique que vous pouvez vérifier, ajuster et valider.",
+    "preview": {
+      "brand": "Brouillon de plan intelligent",
+      "status": "Brouillon recommandé",
+      "asset": "Toyota Corolla 2020",
+      "context": "Créé à partir des détails de votre bien",
+      "item1Title": "Acheter l'huile moteur",
+      "item1Meta": "Avant l'entretien de l'huile · dans 12 jours",
+      "item2Title": "Acheter le filtre à air",
+      "item2Meta": "Avant l'entretien du filtre · dans 12 jours",
+      "item3Title": "Vérifier l'assurance",
+      "item3Meta": "Contrôle du renouvellement · dans 28 jours",
+      "buy": "Acheter",
+      "sourcesLabel": "Sources utilisées pour ce brouillon",
+      "source1": "Notice du propriétaire · PDF",
+      "source2": "Recherche Google · intervalle d'entretien",
+      "note": "Vous décidez de ce qui entre dans votre plan."
+    },
+    "calendar": {
+      "kicker": "Tous sur la même longueur d'onde",
+      "title": "Gardez votre plan d'entretien synchronisé",
+      "body": "Retrouvez les entretiens approuvés dans le calendrier que vous utilisez déjà, pour que chacun voie ce qui arrive et que la bonne personne puisse agir. La synchronisation avec les calendriers connectés est en préparation.",
+      "benefit1": "Voyez les échéances en un coup d'œil",
+      "benefit2": "Gardez le foyer aligné",
+      "benefit3": "Agissez au bon moment",
+      "personal": "Votre calendrier",
+      "household": "Vue foyer partagée"
     }
   },
   "how": {
-    "title": "Comment ça marche",
+    "title": "Vous décidez. AssetFlow vous aide pour le reste.",
     "step1": {
-      "title": "Ajoutez un bien",
-      "body": "Enregistrez ce que vous possédez — une voiture, un appareil, un outil ou tout autre bien dont vous vous occupez."
+      "title": "Commencez par un bien",
+      "body": "Ajoutez une voiture, un appareil, un vélo, un équipement du logement, un outil ou tout autre bien dont vous vous occupez."
     },
     "step2": {
-      "title": "Rassemblez ses documents et détails",
-      "body": "Joignez tickets de caisse, notices, garanties et assurances pour qu'ils restent liés au bien."
+      "title": "Créez un plan d'entretien intelligent",
+      "body": "AssetFlow utilise les informations que vous fournissez pour préparer des tâches, des dates et des rappels suggérés."
     },
     "step3": {
-      "title": "Passez en revue les tâches et échéances suggérées, puis confirmez",
-      "body": "Les suggestions sont des brouillons que vous validez — rien n'est ajouté automatiquement."
+      "title": "Vérifiez-le et faites-le vôtre",
+      "body": "Modifiez, supprimez ou confirmez chaque suggestion. Rien n'est ajouté ni modifié avant votre validation."
     },
     "step4": {
-      "title": "Enregistrez les travaux effectués et exploitez l'historique",
-      "body": "Les travaux enregistrés deviennent l'historique sur lequel vous vous appuyez pour la prochaine décision."
+      "title": "Gardez une longueur d'avance grâce à l'historique",
+      "body": "Enregistrez ce que vous faites et construisez l'historique qui vous aide à prendre la prochaine décision en confiance."
     }
   },
   "categories": {
-    "title": "Ce que vous pouvez organiser",
+    "title": "Commencez par une chose. Gardez le contrôle de tout.",
     "vehicles": "Véhicules",
     "appliances": "Électroménager",
     "electronics": "Électronique",
@@ -83,17 +157,16 @@
     "tools": "Outils",
     "boats": "Bateaux",
     "home": "Équipements du logement",
-    "note": "Garanties, assurances et contrats d'entretien sont des documents liés avec leurs propres échéances — pas des biens physiques à part entière."
+    "note": "Garanties, assurances et contrats d'entretien restent liés au bien concerné, avec leurs propres dates et rappels."
   },
   "pricing": {
-    "title": "Tarifs",
-    "lead": "Tous les forfaits sont facturés en EUR. Ils diffèrent par le nombre de biens actifs, les crédits IA partagés et les collaborateurs supplémentaires.",
+    "title": "Choisissez l'espace adapté à votre vie",
+    "lead": "Commencez gratuitement, puis choisissez plus de biens, de crédits pour les plans intelligents ou de collaboration au foyer quand vous en avez besoin. Tous les forfaits sont facturés en EUR.",
     "toggleMonthly": "Mensuel",
     "toggleAnnual": "Annuel",
     "perMonth": "/mois",
     "perYear": "/an",
     "popular": "Populaire",
-    "cta": "Accéder à AssetFlow",
     "free": {
       "name": "Free",
       "tagline": "Un enregistrement de base et des rappels utiles.",
@@ -122,34 +195,24 @@
       "credits": "50 crédits IA par mois",
       "seats": "+4 collaborateurs supplémentaires"
     },
-    "note": "Les biens actifs sont ceux suivis simultanément ; les biens archivés ne comptent pas dans la limite. Les crédits IA sont partagés entre le chat, les suggestions d'entretien et les décisions, et ne se reportent pas d'un mois sur l'autre."
+    "note": "Les biens actifs sont ceux que vous suivez en même temps ; les biens archivés ne comptent pas dans la limite. Les crédits IA sont partagés entre le chat, les plans d'entretien intelligents et les décisions, sans report d'un mois sur l'autre."
   },
   "security": {
-    "title": "Sécurité, confidentialité et Europe",
-    "body2": "Nous construisons nos pratiques de sécurité et de confidentialité conformément au RGPD et aux normes reconnues en sécurité de l'information. [Insérer les détails vérifiés de sécurité et de confidentialité — certifications, mesures d'hébergement et pratiques de traitement des données seront listées ici une fois confirmées.] Nous n'affirmons aucune certification ni garantie non vérifiée.",
+    "title": "Vos données restent protégées et sous votre contrôle",
     "privacyLink": "Politique de confidentialité",
     "termsLink": "Conditions d'utilisation",
-    "lead": "La confiance compte autant que la commodité. Voici ce sur quoi vous pouvez compter dès aujourd'hui, et où nous sommes transparents sur ce qui reste à vérifier.",
+    "lead": "Les informations sur vos biens sont personnelles. AssetFlow vous aide à les organiser avec des contrôles clairs, une IA vérifiable et un hébergement européen dans l'environnement actuel.",
     "pillar1": {
-      "title": "Chiffré par défaut",
+      "title": "Connexions chiffrées",
       "body": "Chaque connexion à AssetFlow utilise le chiffrement HTTPS en transit."
     },
     "pillar2": {
-      "title": "Vous gardez toujours la main",
+      "title": "Vous décidez ce qui change",
       "body": "Les suggestions de l'IA sont des brouillons. Rien n'est ajouté ni modifié avant que vous ne le vérifiiez et le confirmiez."
     },
     "pillar3": {
-      "title": "Conçu pour l'Europe",
-      "body": "AssetFlow est conçu dans un contexte européen. Les détails sur la région d'hébergement sont [région d'hébergement à confirmer] et seront publiés ici une fois vérifiés."
+      "title": "Hébergement européen",
+      "body": "L'environnement actuel d'AssetFlow utilise une infrastructure européenne. Nous ne revendiquons aucune certification ni garantie de conformité plus large sans vérification."
     }
-  },
-  "languages": {
-    "title": "Langues",
-    "body": "AssetFlow est actuellement disponible en anglais, italien, allemand, espagnol, français et arabe."
-  },
-  "closing": {
-    "title": "Prêt à reprendre la main sur ce que vous possédez ?",
-    "body": "Commencez simplement : ajoutez un bien et voyez comment ça se passe. Aucune pression, aucune vente forcée — juste une vision plus claire de ce qui demande de l'attention.",
-    "cta": "Accéder à AssetFlow"
   }
 }

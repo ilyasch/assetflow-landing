@@ -43,17 +43,27 @@ the page to right-to-left), the monthly/annual pricing toggle, and that both
 - Pricing figures come from `AssetFlow/documentation/product/payments-and-pricing.md`.
   If the catalog changes, update `locales/en.json` (`pricing.*`) first, then
   mirror the change into every other locale file.
+- The page positions the customer as the hero: the visitor adds an asset,
+  reviews a smart maintenance plan, confirms what fits their life, and builds
+  a useful ownership history. Keep examples grounded in familiar household
+  moments and specific assets rather than generic feature claims.
+- The document-library section presents asset documents, event-linked evidence,
+  receipts, and service records as part of the ownership workflow. Keep the
+  wording aligned with the product's actual document and attachment behavior.
+- The smart-plan section should emphasize reviewable AI drafts generated from
+  the user's asset context. Calendar copy must distinguish the current
+  iCalendar (`.ics`) download from connected-calendar synchronization, which is
+  planned rather than currently connected.
 - Supported languages mirror the app's confirmed locales (`en, it, de, es,
   fr, ar`) per the same document and
   `AssetFlow/documentation/product/capabilities-and-roadmap.md`. Do not add a
   language here until the app has actually shipped it.
-- Security/privacy copy intentionally uses bracketed placeholders
-  (`[confirm hosting region]`, `[insert verified security and privacy
-  details]`) because hosting region and formal certifications are not yet
-  verified (see
-  `AssetFlow/documentation/governance/security-and-compliance-roadmap.md`).
-  Replace the placeholders only once those facts are confirmed — do not
-  invent certifications, regions, or guarantees.
+- Security/privacy copy may describe the current development deployment as
+  using European infrastructure, based on
+  `AssetFlow/documentation/technology/solution-architecture.md`. Do not turn
+  that into a certification, a GDPR/compliance guarantee, or a production
+  hosting promise without verifying the target deployment and privacy
+  documentation.
 - Privacy/terms links point at the real app pages (`myassetsflow.app/privacy`,
   `myassetsflow.app/terms`) instead of duplicating legal text here.
 
