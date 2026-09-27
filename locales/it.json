@@ -30,16 +30,18 @@
     },
     "flow": {
       "title": "Il tuo percorso di gestione",
-      "subtitle": "Quattro mosse semplici da «Dovrei ricordarmelo» a «So cosa succede dopo».",
+      "subtitle": "Cinque passaggi per passare da «Dovrei ricordarmelo» a «So cosa fare dopo».",
       "connector": "poi",
       "step1": "Aggiungi un bene",
       "step1Hint": "Parti dalle informazioni base",
-      "step2": "Crea un piano intelligente",
-      "step2Hint": "Ottieni attività suggerite",
+      "step2": "Crea un piano di manutenzione intelligente in pochi secondi",
+      "step2Hint": "Con attività suggerite e promemoria",
       "step3": "Conferma e resta al passo",
       "step3Hint": "Controlla cosa si adatta alla tua vita",
       "step4": "Tieni insieme i documenti",
-      "step4Hint": "Trova le prove quando servono"
+      "step4Hint": "Trova le prove quando servono",
+      "step5": "Fai domande ai tuoi dati e crea un’analisi",
+      "step5Hint": "Trasforma i tuoi registri in informazioni utili"
     }
   },
   "examples": {
@@ -73,7 +75,7 @@
   "library": {
     "eyebrow": "Parte del percorso di gestione",
     "title": "Una libreria per la storia di ogni bene",
-    "lead": "Tieni i documenti che spiegano la gestione dei tuoi beni vicino al bene e ai momenti che contano. AssetFlow è pensato per riunire la documentazione nello stesso posto del piano e della cronologia.",
+    "lead": "Riunisci documenti, registri di assistenza e lavori completati per ogni bene. Formano una base di conoscenza IA a cui puoi fare domande per trovare informazioni, comprendere lo storico e preparare il prossimo piano di manutenzione.",
     "item1": {
       "title": "Documenti del bene",
       "body": "Allega manuali, garanzie, assicurazioni e contratti di assistenza al bene a cui appartengono."
@@ -127,25 +129,6 @@
       "benefit3": "Agisci al momento giusto",
       "personal": "Il tuo calendario",
       "household": "Vista familiare condivisa"
-    }
-  },
-  "how": {
-    "title": "Decidi tu. AssetFlow ti aiuta nel resto.",
-    "step1": {
-      "title": "Inizia da un bene",
-      "body": "Aggiungi un'auto, un elettrodomestico, una bici, un impianto di casa, un attrezzo o qualsiasi altra cosa tu segua."
-    },
-    "step2": {
-      "title": "Crea un piano di manutenzione intelligente",
-      "body": "AssetFlow usa i dettagli che fornisci per preparare attività, date e promemoria suggeriti."
-    },
-    "step3": {
-      "title": "Rivedi e rendilo tuo",
-      "body": "Modifica, elimina o conferma ogni suggerimento. Nulla viene aggiunto o cambiato finché non lo approvi."
-    },
-    "step4": {
-      "title": "Resta al passo con una cronologia viva",
-      "body": "Registra ciò che completi e costruisci la cronologia che ti aiuta a decidere con sicurezza la prossima volta."
     }
   },
   "categories": {
@@ -213,6 +196,33 @@
     "pillar3": {
       "title": "Hosting europeo",
       "body": "L'ambiente attuale di AssetFlow utilizza infrastruttura europea. Non dichiariamo certificazioni o garanzie di conformità più ampie senza verifica."
+    }
+  },
+  "household": {
+    "eyebrow": "Condividi il lavoro",
+    "title": "Tieni tutta la famiglia aggiornata",
+    "lead": "Invita le persone con cui vivi. Ognuno accede con il proprio account allo stesso spazio familiare e può vedere beni, manutenzioni in programma e lavori già svolti.",
+    "item1": {
+      "title": "Una cronologia condivisa",
+      "body": "I membri della famiglia possono vedere i beni condivisi, lo storico degli interventi e le prossime attività di manutenzione."
+    },
+    "item2": {
+      "title": "Sai chi se ne occupa",
+      "body": "Riunisci promemoria e incarichi, così tutti sanno cosa fare e chi ne è responsabile."
+    },
+    "item3": {
+      "title": "Un unico piano familiare",
+      "body": "Il titolare gestisce inviti e pagamenti. I membri condividono i limiti dei beni e i crediti IA mensili del piano familiare."
+    },
+    "note": "Il titolare è incluso. Plus consente 1 membro aggiuntivo, Pro 2 e Max 4. Free non include posti aggiuntivi.",
+    "board": {
+      "members": "La tua famiglia, insieme",
+      "title": "Esempio di vista famiglia",
+      "subtitle": "Attività condivise, progressi chiari",
+      "done": "Manutenzione auto registrata",
+      "doneDetail": "Tutti vedono il lavoro svolto",
+      "next": "Filtro di casa in scadenza",
+      "nextDetail": "Assegnato e pronto da seguire"
     }
   }
 }

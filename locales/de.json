@@ -30,16 +30,18 @@
     },
     "flow": {
       "title": "Dein Besitz-Workflow",
-      "subtitle": "Vier einfache Schritte von „Das sollte ich mir merken“ zu „Ich weiß, was als Nächstes passiert.“",
+      "subtitle": "Fünf einfache Schritte von „Das sollte ich mir merken“ zu „Ich weiß, was als Nächstes ansteht.“",
       "connector": "dann",
       "step1": "Objekt hinzufügen",
       "step1Hint": "Mit den Grundlagen beginnen",
-      "step2": "Smarten Plan erstellen",
-      "step2Hint": "Aufgaben vorschlagen lassen",
+      "step2": "Erstelle in Sekunden einen smarten Wartungsplan",
+      "step2Hint": "Mit vorgeschlagenen Aufgaben und Erinnerungen",
       "step3": "Bestätigen und vorausdenken",
       "step3Hint": "Prüfen, was zu deinem Alltag passt",
       "step4": "Dokumente zusammenhalten",
-      "step4Hint": "Belege finden, wenn sie wichtig sind"
+      "step4Hint": "Belege finden, wenn sie wichtig sind",
+      "step5": "Stelle Fragen zu deinen Daten und erstelle eine Analyse",
+      "step5Hint": "Gewinne hilfreiche Erkenntnisse aus deinen Unterlagen"
     }
   },
   "examples": {
@@ -73,7 +75,7 @@
   "library": {
     "eyebrow": "Teil des Besitz-Workflows",
     "title": "Eine Bibliothek für die Geschichte jedes Objekts",
-    "lead": "Bewahre die Dokumente, die den Besitz erklären, beim jeweiligen Objekt und bei den wichtigen Ereignissen auf. AssetFlow soll Belege, Plan und Historie an einem Ort zusammenführen.",
+    "lead": "Bewahre Dokumente, Serviceberichte und erledigte Arbeiten zu jedem Objekt zusammen auf. Sie bilden eine KI-Wissensdatenbank, zu der du Fragen stellen kannst, um Details zu finden, die Historie zu verstehen und den nächsten Wartungsplan vorzubereiten.",
     "item1": {
       "title": "Objektdokumente",
       "body": "Hänge Anleitungen, Garantien, Versicherungen und Wartungsverträge an das Objekt, zu dem sie gehören."
@@ -127,25 +129,6 @@
       "benefit3": "Im richtigen Moment handeln",
       "personal": "Dein Kalender",
       "household": "Geteilte Haushaltsansicht"
-    }
-  },
-  "how": {
-    "title": "Du entscheidest. AssetFlow hilft beim Rest.",
-    "step1": {
-      "title": "Mit einem Objekt starten",
-      "body": "Füge ein Auto, Gerät, Fahrrad, Haustechnik, Werkzeug oder alles andere hinzu, um das du dich kümmerst."
-    },
-    "step2": {
-      "title": "Einen smarten Wartungsplan erstellen",
-      "body": "AssetFlow bereitet anhand deiner Angaben vorgeschlagene Aufgaben, Termine und Erinnerungen vor."
-    },
-    "step3": {
-      "title": "Prüfen und zu deinem Plan machen",
-      "body": "Bearbeite, entferne oder bestätige jeden Vorschlag. Nichts wird hinzugefügt oder geändert, bevor du es freigibst."
-    },
-    "step4": {
-      "title": "Mit einer lebendigen Historie vorausdenken",
-      "body": "Halte Erledigtes fest und baue die Historie auf, die dir bei der nächsten Entscheidung Sicherheit gibt."
     }
   },
   "categories": {
@@ -213,6 +196,33 @@
     "pillar3": {
       "title": "Europäisches Hosting",
       "body": "Die aktuelle AssetFlow-Umgebung nutzt europäische Infrastruktur. Nicht verifizierte Zertifizierungen oder weitergehende Compliance-Garantien behaupten wir nicht."
+    }
+  },
+  "household": {
+    "eyebrow": "Aufgaben teilen",
+    "title": "Alle im Haushalt bleiben auf dem Laufenden",
+    "lead": "Lade die Menschen ein, mit denen du zusammenlebst. Alle melden sich mit einem eigenen Konto im gemeinsamen Haushaltsbereich an und sehen Gegenstände, anstehende Wartungen und erledigte Arbeiten.",
+    "item1": {
+      "title": "Eine gemeinsame Historie",
+      "body": "Haushaltsmitglieder sehen gemeinsame Gegenstände, deren Servicehistorie und die nächsten Wartungsaufgaben."
+    },
+    "item2": {
+      "title": "Klar, wer sich darum kümmert",
+      "body": "Erinnerungen und Zuständigkeiten bleiben zusammen, damit alle wissen, was ansteht und wer verantwortlich ist."
+    },
+    "item3": {
+      "title": "Ein gemeinsamer Haushaltstarif",
+      "body": "Der Eigentümer verwaltet Einladungen und Abrechnung. Mitglieder teilen die Gegenstandsgrenzen und monatlichen KI-Credits des Haushaltstarifs."
+    },
+    "note": "Der Eigentümer ist enthalten. Plus erlaubt 1 zusätzliches Haushaltsmitglied, Pro 2 und Max 4. Free enthält keine zusätzlichen Plätze.",
+    "board": {
+      "members": "Dein Haushalt, gemeinsam",
+      "title": "Beispiel einer Haushaltsübersicht",
+      "subtitle": "Gemeinsame Aufgaben, klarer Fortschritt",
+      "done": "Autoservice dokumentiert",
+      "doneDetail": "Alle sehen, was erledigt wurde",
+      "next": "Hausfilter bald fällig",
+      "nextDetail": "Zugewiesen und zur Erledigung bereit"
     }
   }
 }

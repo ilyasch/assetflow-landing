@@ -30,16 +30,18 @@
     },
     "flow": {
       "title": "Your ownership loop",
-      "subtitle": "Four simple moves from “I should remember this” to “I know what happens next.”",
+      "subtitle": "Five simple moves from “I should remember this” to “I know what happens next.”",
       "connector": "then",
       "step1": "Add an asset",
       "step1Hint": "Start with the basics",
-      "step2": "Build a smart plan",
-      "step2Hint": "Get suggested tasks",
+      "step2": "Create a smart maintenance plan in seconds",
+      "step2Hint": "With suggested tasks and reminders",
       "step3": "Confirm and stay ahead",
       "step3Hint": "Review what fits your life",
       "step4": "Keep documents together",
-      "step4Hint": "Find proof when it matters"
+      "step4Hint": "Find proof when it matters",
+      "step5": "Chat with your data and create an analysis",
+      "step5Hint": "Turn your records into useful insights"
     }
   },
   "examples": {
@@ -73,7 +75,7 @@
   "library": {
     "eyebrow": "Built into the ownership journey",
     "title": "One library for the story of every asset",
-    "lead": "Keep the documents that explain ownership close to the asset and the moments that matter. AssetFlow is designed to bring the paper trail into the same place as your plan and history.",
+    "lead": "Keep each asset’s documents, service records, and completed work together. They form an AI knowledge base you can ask about to find details, understand history, and prepare your next maintenance plan.",
     "item1": {
       "title": "Asset documents",
       "body": "Attach manuals, warranties, insurance, and service contracts to the asset they belong to."
@@ -127,25 +129,6 @@
       "benefit3": "Act at the right moment",
       "personal": "Your calendar",
       "household": "Shared household view"
-    }
-  },
-  "how": {
-    "title": "You stay in control. AssetFlow helps with the rest.",
-    "step1": {
-      "title": "Start with one asset",
-      "body": "Add a car, appliance, bike, home system, tool, or anything else you look after."
-    },
-    "step2": {
-      "title": "Get a smart maintenance plan",
-      "body": "AssetFlow uses the details you provide to prepare suggested tasks, dates, and reminders."
-    },
-    "step3": {
-      "title": "Review and make it yours",
-      "body": "Edit, remove, or confirm each suggestion. Nothing is added or changed until you approve it."
-    },
-    "step4": {
-      "title": "Stay ahead with a living history",
-      "body": "Record what you complete and build the history that helps you make the next decision with confidence."
     }
   },
   "categories": {
@@ -213,6 +196,33 @@
     "pillar3": {
       "title": "European hosting",
       "body": "The current AssetFlow deployment runs on European infrastructure. We do not claim certifications or broader compliance guarantees that have not been verified."
+    }
+  },
+  "household": {
+    "eyebrow": "Share the work",
+    "title": "Keep your household on the same page",
+    "lead": "Invite the people you share a home with. Each person signs in to the same household workspace, so everyone can see the assets, upcoming maintenance, and work already done.",
+    "item1": {
+      "title": "Share one clear history",
+      "body": "Household members can see shared assets, their service history, and the next maintenance tasks."
+    },
+    "item2": {
+      "title": "Know who is handling it",
+      "body": "Keep reminders and assignments together, so everyone knows what is due and who is responsible."
+    },
+    "item3": {
+      "title": "Use one household plan",
+      "body": "The owner manages invitations and billing. Members share the household plan’s asset limits and monthly AI credits."
+    },
+    "note": "The owner is included. Plus allows 1 additional household member, Pro 2, and Max 4. Free has no additional member seats.",
+    "board": {
+      "members": "Your household, together",
+      "title": "Example household view",
+      "subtitle": "Shared work, clear progress",
+      "done": "Car service recorded",
+      "doneDetail": "Everyone can see what was done",
+      "next": "Home filter due soon",
+      "nextDetail": "Assigned and ready to follow up"
     }
   }
 }

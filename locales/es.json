@@ -30,16 +30,18 @@
     },
     "flow": {
       "title": "Tu recorrido de propiedad",
-      "subtitle": "Cuatro pasos sencillos de «Debería acordarme» a «Sé qué viene después».",
+      "subtitle": "Cinco pasos sencillos para pasar de «Debería acordarme» a «Sé qué viene después».",
       "connector": "después",
       "step1": "Añade un bien",
       "step1Hint": "Empieza por lo básico",
-      "step2": "Crea un plan inteligente",
-      "step2Hint": "Recibe tareas sugeridas",
+      "step2": "Crea un plan de mantenimiento inteligente en segundos",
+      "step2Hint": "Con tareas sugeridas y recordatorios",
       "step3": "Confirma y ve por delante",
       "step3Hint": "Revisa qué encaja en tu vida",
       "step4": "Mantén los documentos juntos",
-      "step4Hint": "Encuentra las pruebas cuando importan"
+      "step4Hint": "Encuentra las pruebas cuando importan",
+      "step5": "Consulta tus datos y crea un análisis",
+      "step5Hint": "Convierte tus registros en información útil"
     }
   },
   "examples": {
@@ -73,7 +75,7 @@
   "library": {
     "eyebrow": "Parte del recorrido de propiedad",
     "title": "Una biblioteca para la historia de cada bien",
-    "lead": "Mantén los documentos que explican la propiedad cerca del bien y de los momentos importantes. AssetFlow está pensado para reunir la documentación, el plan y el historial en un mismo lugar.",
+    "lead": "Reúne los documentos, registros de servicio y trabajos realizados de cada bien. Forman una base de conocimiento con IA a la que puedes hacer preguntas para encontrar detalles, entender el historial y preparar el próximo plan de mantenimiento.",
     "item1": {
       "title": "Documentos del bien",
       "body": "Adjunta manuales, garantías, seguros y contratos de mantenimiento al bien al que pertenecen."
@@ -127,25 +129,6 @@
       "benefit3": "Actúa en el momento adecuado",
       "personal": "Tu calendario",
       "household": "Vista familiar compartida"
-    }
-  },
-  "how": {
-    "title": "Tú decides. AssetFlow te ayuda con el resto.",
-    "step1": {
-      "title": "Empieza con un bien",
-      "body": "Añade un coche, electrodoméstico, bici, sistema del hogar, herramienta o cualquier otra cosa que cuides."
-    },
-    "step2": {
-      "title": "Crea un plan de mantenimiento inteligente",
-      "body": "AssetFlow usa los detalles que proporcionas para preparar tareas, fechas y recordatorios sugeridos."
-    },
-    "step3": {
-      "title": "Revísalo y hazlo tuyo",
-      "body": "Edita, elimina o confirma cada sugerencia. Nada se añade ni cambia hasta que lo apruebas."
-    },
-    "step4": {
-      "title": "Ve por delante con un historial vivo",
-      "body": "Registra lo que completas y crea el historial que te ayuda a tomar la próxima decisión con confianza."
     }
   },
   "categories": {
@@ -213,6 +196,33 @@
     "pillar3": {
       "title": "Alojamiento europeo",
       "body": "El entorno actual de AssetFlow utiliza infraestructura europea. No afirmamos certificaciones ni garantías de cumplimiento más amplias sin verificarlo."
+    }
+  },
+  "household": {
+    "eyebrow": "Compartid las tareas",
+    "title": "Toda la casa, al tanto",
+    "lead": "Invita a las personas con las que vives. Cada una accede con su propia cuenta al mismo espacio del hogar y puede ver los bienes, el mantenimiento pendiente y el trabajo realizado.",
+    "item1": {
+      "title": "Un historial compartido",
+      "body": "Los miembros del hogar pueden ver los bienes compartidos, su historial de servicio y las próximas tareas de mantenimiento."
+    },
+    "item2": {
+      "title": "Sabed quién se encarga",
+      "body": "Reúne recordatorios y tareas asignadas para que todos sepan qué hay que hacer y quién es responsable."
+    },
+    "item3": {
+      "title": "Un plan para el hogar",
+      "body": "El titular gestiona las invitaciones y la facturación. Los miembros comparten los límites de bienes y los créditos mensuales de IA del plan."
+    },
+    "note": "El titular está incluido. Plus permite 1 miembro adicional, Pro 2 y Max 4. Free no incluye plazas adicionales.",
+    "board": {
+      "members": "Tu hogar, unido",
+      "title": "Ejemplo de vista del hogar",
+      "subtitle": "Tareas compartidas, avances claros",
+      "done": "Servicio del coche registrado",
+      "doneDetail": "Todos ven el trabajo realizado",
+      "next": "Filtro de casa próximo a vencer",
+      "nextDetail": "Asignado y listo para atender"
     }
   }
 }

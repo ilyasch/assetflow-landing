@@ -30,16 +30,18 @@
     },
     "flow": {
       "title": "Votre parcours de propriétaire",
-      "subtitle": "Quatre gestes simples pour passer de « Je devrais m'en souvenir » à « Je sais ce qui vient ensuite ».",
+      "subtitle": "Cinq étapes simples pour passer de « Je devrais m’en souvenir » à « Je sais quoi faire ensuite ».",
       "connector": "puis",
       "step1": "Ajoutez un bien",
       "step1Hint": "Commencez par l'essentiel",
-      "step2": "Créez un plan intelligent",
-      "step2Hint": "Obtenez des tâches suggérées",
+      "step2": "Créez un plan d’entretien intelligent en quelques secondes",
+      "step2Hint": "Avec des tâches suggérées et des rappels",
       "step3": "Confirmez et gardez une longueur d'avance",
       "step3Hint": "Vérifiez ce qui vous convient",
       "step4": "Gardez les documents ensemble",
-      "step4Hint": "Retrouvez les justificatifs au bon moment"
+      "step4Hint": "Retrouvez les justificatifs au bon moment",
+      "step5": "Interrogez vos données et créez une analyse",
+      "step5Hint": "Transformez vos documents en informations utiles"
     }
   },
   "examples": {
@@ -73,7 +75,7 @@
   "library": {
     "eyebrow": "Au cœur du parcours de propriété",
     "title": "Une bibliothèque pour l'histoire de chaque bien",
-    "lead": "Gardez les documents qui expliquent la propriété près du bien et des moments importants. AssetFlow est conçu pour réunir les justificatifs, le plan et l'historique au même endroit.",
+    "lead": "Rassemblez les documents, rapports d’entretien et travaux effectués pour chaque bien. Ils forment une base de connaissances IA que vous pouvez interroger pour retrouver des informations, comprendre l’historique et préparer le prochain plan d’entretien.",
     "item1": {
       "title": "Documents du bien",
       "body": "Joignez notices, garanties, assurances et contrats d'entretien au bien auquel ils appartiennent."
@@ -127,25 +129,6 @@
       "benefit3": "Agissez au bon moment",
       "personal": "Votre calendrier",
       "household": "Vue foyer partagée"
-    }
-  },
-  "how": {
-    "title": "Vous décidez. AssetFlow vous aide pour le reste.",
-    "step1": {
-      "title": "Commencez par un bien",
-      "body": "Ajoutez une voiture, un appareil, un vélo, un équipement du logement, un outil ou tout autre bien dont vous vous occupez."
-    },
-    "step2": {
-      "title": "Créez un plan d'entretien intelligent",
-      "body": "AssetFlow utilise les informations que vous fournissez pour préparer des tâches, des dates et des rappels suggérés."
-    },
-    "step3": {
-      "title": "Vérifiez-le et faites-le vôtre",
-      "body": "Modifiez, supprimez ou confirmez chaque suggestion. Rien n'est ajouté ni modifié avant votre validation."
-    },
-    "step4": {
-      "title": "Gardez une longueur d'avance grâce à l'historique",
-      "body": "Enregistrez ce que vous faites et construisez l'historique qui vous aide à prendre la prochaine décision en confiance."
     }
   },
   "categories": {
@@ -213,6 +196,33 @@
     "pillar3": {
       "title": "Hébergement européen",
       "body": "L'environnement actuel d'AssetFlow utilise une infrastructure européenne. Nous ne revendiquons aucune certification ni garantie de conformité plus large sans vérification."
+    }
+  },
+  "household": {
+    "eyebrow": "Partagez les tâches",
+    "title": "Toute la maison reste informée",
+    "lead": "Invitez les personnes avec qui vous vivez. Chacune se connecte avec son propre compte au même espace familial et voit les biens, les entretiens à venir et les travaux déjà effectués.",
+    "item1": {
+      "title": "Un historique partagé",
+      "body": "Les membres du foyer voient les biens partagés, leur historique d’entretien et les prochaines tâches."
+    },
+    "item2": {
+      "title": "Chacun connaît son rôle",
+      "body": "Regroupez rappels et tâches attribuées pour que chacun sache ce qui est prévu et qui en est responsable."
+    },
+    "item3": {
+      "title": "Une offre pour le foyer",
+      "body": "Le titulaire gère les invitations et la facturation. Les membres partagent les limites de biens et les crédits IA mensuels de l’offre familiale."
+    },
+    "note": "Le titulaire est inclus. Plus permet 1 membre supplémentaire, Pro 2 et Max 4. Free ne comprend aucune place supplémentaire.",
+    "board": {
+      "members": "Votre foyer, ensemble",
+      "title": "Exemple de vue du foyer",
+      "subtitle": "Tâches partagées, progrès visibles",
+      "done": "Entretien de la voiture enregistré",
+      "doneDetail": "Tout le monde voit ce qui est fait",
+      "next": "Filtre de la maison bientôt à changer",
+      "nextDetail": "Attribué et prêt à être suivi"
     }
   }
 }
