@@ -1,12 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <circle cx="16" cy="16" r="16" fill="#2f6b4f" />
-  <path
-    d="M9 18.5 14 12l4 5 5-7"
-    fill="none"
-    stroke="#ffffff"
-    stroke-width="2.4"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <circle cx="23" cy="10" r="2.1" fill="#d98c3f" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AssetFlow icon</title>
+  <desc id="desc">Abstract A-shaped AssetFlow logo in green and gold.</desc>
+
+  <!-- Dark green rear ribbon -->
+  <path fill="#173C33" d="
+    M276 118
+    C310 118 335 136 354 169
+    L459 356
+    C477 389 465 431 432 450
+    C398 469 357 457 338 424
+    L254 274
+    C243 255 226 245 207 245
+    L276 118Z"/>
+
+  <!-- Teal upper ribbon -->
+  <path fill="#186B5B" d="
+    M54 292
+    L188 70
+    C203 45 229 30 258 30
+    C287 30 313 45 328 70
+    L405 199
+    C380 174 349 155 315 147
+    C286 140 265 147 248 175
+    L157 326
+    C138 358 97 368 65 349
+    C34 330 35 323 54 292Z"/>
+
+  <!-- Gold flowing cross ribbon -->
+  <path fill="#F1C975" d="
+    M39 330
+    C76 373 119 384 163 363
+    C206 343 239 306 282 278
+    C327 249 369 234 411 248
+    C438 257 459 276 476 301
+    C445 279 415 271 385 276
+    C345 282 312 309 277 334
+    C236 363 196 397 151 418
+    C107 439 63 428 39 397
+    C21 374 21 351 39 330Z"/>
 </svg>
