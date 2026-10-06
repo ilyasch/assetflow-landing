@@ -1,9 +1,13 @@
 # AssetFlow landing page (myassetsflow.com)
 
 A single, static, dependency-free marketing page for `myassetsflow.com`. It
-explains AssetFlow, shows real pricing, and sends visitors to the actual
-product at `https://myassetsflow.app`. It contains **no app screens, sign-up
-forms, or dashboards** — those live in the separate `AssetFlow` app repo.
+acts as the portfolio hub for the AssetFlow platform across its four editions:
+- **AssetFlow Home**: Personal / household assets (appliances, electronics, vehicles, equipment, home systems). Active and links to the live app at `https://myassetsflow.app`.
+- **AssetFlow Business**: General organizational assets (restaurants, bakeries, offices, retail stores, workshops, factories) in a multi-tenant B2B architecture (Coming Soon).
+- **AssetFlow Hospitality**: Specialized hotel and resort operations (hotels, resorts, aparthotels, accommodations) with multi-property oversight (Coming Soon).
+- **AssetFlow Fleet**: Specialized vehicle and equipment operations (car rentals, delivery vans, corporate cars, trucks, machinery fleets) with interval tracking (Coming Soon).
+
+It contains **no app screens, sign-up forms, or dashboards** — those live in the separate `AssetFlow` app repo.
 
 This repository is intentionally independent from the other AssetFlow repos
 (`AssetFlow`, `assetflow-worker`, `assetflow-infrastructure`,
@@ -13,9 +17,9 @@ infrastructure.
 ## Structure
 
 ```
-index.html        Single-page markup, all sections, data-i18n keys
+index.html        Single-page markup, portfolio hub, all sections, data-i18n keys
 styles.css        All styling (mobile-first, no build step)
-main.js           Locale loading/switching, RTL toggle, pricing toggle
+main.js           Locale loading/switching, RTL toggle, pricing edition & period toggle
 locales/*.json    Translated copy for en, it, de, es, fr, ar (ar = RTL)
 assets/           Logo/favicon (SVG, no external images)
 ```

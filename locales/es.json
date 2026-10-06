@@ -1,12 +1,15 @@
 {
   "nav": {
-    "languageLabel": "Idioma"
+    "languageLabel": "Idioma",
+    "editions": "Ediciones",
+    "homeFeatures": "Funciones Home",
+    "pricing": "Precios"
   },
   "hero": {
     "headline": "Sé la persona que siempre sabe qué necesita atención.",
     "sub": "Organiza tus bienes, crea un plan de mantenimiento inteligente y ten a mano cada detalle importante.",
-    "ctaPrimary": "Ir a AssetFlow",
-    "ctaSecondary": "Descubre cómo ayuda",
+    "ctaPrimary": "Ir a AssetFlow Home",
+    "ctaSecondary": "Explorar ediciones",
     "previewLabel": "Una visión más clara de lo que necesita atención",
     "preview": {
       "item1Title": "Toyota Corolla 2020",
@@ -42,6 +45,43 @@
       "step4Hint": "Encuentra las pruebas cuando importan",
       "step5": "Consulta tus datos y crea un análisis",
       "step5Hint": "Convierte tus registros en información útil"
+    }
+  },
+  "editions": {
+    "eyebrow": "Una sola plataforma, adaptada a tu escala",
+    "title": "Ediciones a medida para cada tipo de activo",
+    "lead": "Desde electrodomésticos del hogar hasta empresas multi-sede, hoteles y flotas de vehículos: elija la edición diseñada para sus necesidades operativas.",
+    "availableNow": "Disponible ahora",
+    "comingSoon": "Próximamente",
+    "b2bMultiTenant": "B2B Multi-Tenant",
+    "examplesLabel": "Diseñado para:",
+    "home": {
+      "title": "AssetFlow Home",
+      "subtitle": "Activos personales y del hogar",
+      "desc": "Organice electrodomésticos, electrónica, vehículos personales y herramientas con planes de mantenimiento inteligentes y gestión del hogar compartida.",
+      "examples": "Electrodomésticos, electrónica, vehículos familiares, herramientas, climatización",
+      "cta": "Explorar Home"
+    },
+    "business": {
+      "title": "AssetFlow Business",
+      "subtitle": "Activos empresariales y corporativos",
+      "desc": "Ciclo de vida centralizado de activos, mantenimiento preventivo, registros de cumplimiento y control de equipo en una arquitectura multi-tenant aislada.",
+      "examples": "Restaurantes, panaderías, oficinas, tiendas, talleres, fábricas",
+      "cta": "Próximamente"
+    },
+    "hospitality": {
+      "title": "AssetFlow Hospitality",
+      "subtitle": "Operaciones hoteleras especializadas",
+      "desc": "Mantenga habitaciones, instalaciones públicas, cocinas industriales y equipamiento en óptimas condiciones con gestión multi-propiedad.",
+      "examples": "Hoteles, complejos turísticos, apartahoteles, alojamientos",
+      "cta": "Próximamente"
+    },
+    "fleet": {
+      "title": "AssetFlow Fleet",
+      "subtitle": "Operaciones especializadas de flotas y vehículos",
+      "desc": "Controle revisiones periódicas, kilometraje, horas de motor, inspecciones y cumplimiento normativo para flotas de cualquier escala.",
+      "examples": "Alquiler de vehículos, furgonetas, coches de empresa, camiones, maquinaria",
+      "cta": "Próximamente"
     }
   },
   "examples": {
@@ -143,8 +183,10 @@
     "note": "Las garantías, los seguros y los contratos de mantenimiento permanecen vinculados al bien correspondiente, con sus propias fechas y recordatorios."
   },
   "pricing": {
-    "title": "Elige el espacio que encaja con tu vida",
-    "lead": "Empieza gratis y elige más bienes, créditos para planes inteligentes o colaboración en casa cuando los necesites. Todos los planes se facturan en EUR.",
+    "title": "Elija el plan que mejor se adapte a sus necesidades",
+    "lead": "Empiece con AssetFlow Home o elija software vertical especializado para su empresa.",
+    "tabHome": "AssetFlow Home",
+    "tabB2B": "Ediciones B2B",
     "toggleMonthly": "Mensual",
     "toggleAnnual": "Anual",
     "perMonth": "/mes",
@@ -178,7 +220,37 @@
       "credits": "50 créditos de IA al mes",
       "seats": "+4 colaboradores adicionales"
     },
-    "note": "Los bienes activos son los que sigues al mismo tiempo; los archivados no cuentan para el límite. Los créditos de IA se comparten entre chat, planes de mantenimiento inteligentes y decisiones, y no se acumulan."
+    "note": "Los bienes activos son los que sigues al mismo tiempo; los archivados no cuentan para el límite. Los créditos de IA se comparten entre chat, planes de mantenimiento inteligentes y decisiones, y no se acumulan.",
+    "b2bArchitecture": "Arquitectura multi-tenant · Tenant corporativo dedicado · Seguridad empresarial",
+    "b2bLead": "Software vertical especializado desplegado en una arquitectura multi-tenant segura. Precios y prestaciones a medida para cada sector.",
+    "b2bBusiness": {
+      "name": "AssetFlow Business",
+      "tagline": "Para tiendas, oficinas, panaderías, restaurantes, talleres y fábricas.",
+      "badge": "Vertical B2B",
+      "feature1": "Jerarquía de activos del lugar de trabajo y mapeo de equipos",
+      "feature2": "Roles de equipo, asignaciones y flujos para técnicos",
+      "feature3": "Trazabilidad de auditoría de cumplimiento e historial de servicio",
+      "feature4": "Aislamiento de datos multi-tenant y acceso seguro"
+    },
+    "b2bHospitality": {
+      "name": "AssetFlow Hospitality",
+      "tagline": "Para hoteles, complejos turísticos, apartahoteles y alojamientos.",
+      "badge": "Vertical B2B",
+      "feature1": "Seguimiento de activos por habitación y áreas públicas",
+      "feature2": "Mantenimiento preventivo y preparación para huéspedes",
+      "feature3": "Reporte rápido de incidencias para el personal",
+      "feature4": "Panel centralizado multi-propiedad"
+    },
+    "b2bFleet": {
+      "name": "AssetFlow Fleet",
+      "tagline": "Para empresas de alquiler, flotas de entrega y maquinaria.",
+      "badge": "Vertical B2B",
+      "feature1": "Activadores por kilometraje, fecha y horas de motor",
+      "feature2": "Listas de inspección vehicular y control de daños",
+      "feature3": "Alertas de renovación de seguros y trámites legales",
+      "feature4": "Gestión de flotas multi-tenant lista para telemática"
+    },
+    "b2bNote": "Las ediciones B2B de AssetFlow están actualmente en vista previa privada y contarán con modelos de precios verticales dedicados."
   },
   "security": {
     "title": "Tus registros quedan protegidos y bajo tu control",

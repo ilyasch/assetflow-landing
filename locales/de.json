@@ -1,12 +1,15 @@
 {
   "nav": {
-    "languageLabel": "Sprache"
+    "languageLabel": "Sprache",
+    "editions": "Editionen",
+    "homeFeatures": "Home-Funktionen",
+    "pricing": "Preise"
   },
   "hero": {
     "headline": "Sei die Person, die immer weiß, was als Nächstes ansteht.",
     "sub": "Organisiere deine Objekte, erstelle einen smarten Wartungsplan und halte wichtige Details bereit.",
-    "ctaPrimary": "Zu AssetFlow",
-    "ctaSecondary": "So hilft es dir",
+    "ctaPrimary": "Zu AssetFlow Home",
+    "ctaSecondary": "Editionen entdecken",
     "previewLabel": "Ein klarerer Blick auf das, was Aufmerksamkeit braucht",
     "preview": {
       "item1Title": "Toyota Corolla, Baujahr 2020",
@@ -42,6 +45,43 @@
       "step4Hint": "Belege finden, wenn sie wichtig sind",
       "step5": "Stelle Fragen zu deinen Daten und erstelle eine Analyse",
       "step5Hint": "Gewinne hilfreiche Erkenntnisse aus deinen Unterlagen"
+    }
+  },
+  "editions": {
+    "eyebrow": "Eine Plattform, passend für Ihre Anforderungen",
+    "title": "Maßgeschneiderte Editionen für jeden Asset-Typ",
+    "lead": "Von Haushaltsgeräten bis hin zu Unternehmen mit mehreren Standorten, Hotels und Fahrzeugflotten – wählen Sie die passende Edition für Ihren Betrieb.",
+    "availableNow": "Jetzt verfügbar",
+    "comingSoon": "Demnächst",
+    "b2bMultiTenant": "B2B Multi-Tenant",
+    "examplesLabel": "Optimal für:",
+    "home": {
+      "title": "AssetFlow Home",
+      "subtitle": "Private und Haushaltsgegenstände",
+      "desc": "Organisieren Sie Haushaltsgeräte, Elektronik, Privatfahrzeuge und Werkzeuge mit intelligenten Wartungsplänen und Haushaltsverwaltung.",
+      "examples": "Haushaltsgeräte, Unterhaltungselektronik, Familienfahrzeuge, Haustechnik",
+      "cta": "Home entdecken"
+    },
+    "business": {
+      "title": "AssetFlow Business",
+      "subtitle": "Betriebliche und gewerbliche Assets",
+      "desc": "Zentraler Asset-Lebenszyklus, präventive Wartung, Compliance-Protokolle und Teamkoordination in einer isolierten Multi-Tenant-Architektur.",
+      "examples": "Restaurants, Bäckereien, Büros, Einzelhandel, Werkstätten, Betriebe",
+      "cta": "Demnächst"
+    },
+    "hospitality": {
+      "title": "AssetFlow Hospitality",
+      "subtitle": "Spezialisierter Hotel- und Beherbergungsbetrieb",
+      "desc": "Halten Sie Gästezimmer, öffentliche Bereiche, Großküchen und Anlagen in einwandfreiem Zustand mit standortübergreifender Übersicht.",
+      "examples": "Hotels, Resorts, Aparthotels, Unterkünfte",
+      "cta": "Demnächst"
+    },
+    "fleet": {
+      "title": "AssetFlow Fleet",
+      "subtitle": "Spezialisierte Fahrzeug- und Flottenverwaltung",
+      "desc": "Verfolgen Sie geplante Wartungsintervalle, Kilometerstände, Betriebsstunden, Inspektionen und gesetzliche Fristen für Flotten jeder Größe.",
+      "examples": "Autovermietung, Lieferwagen, Firmenwagen, LKW, Maschinenflotten",
+      "cta": "Demnächst"
     }
   },
   "examples": {
@@ -143,8 +183,10 @@
     "note": "Garantien, Versicherungen und Wartungsverträge bleiben mit dem jeweiligen Objekt verbunden und haben eigene Termine und Erinnerungen."
   },
   "pricing": {
-    "title": "Wähle den passenden Umfang für dein Leben",
-    "lead": "Starte kostenlos und wähle bei Bedarf mehr Objekte, Guthaben für smarte Pläne oder Zusammenarbeit im Haushalt. Alle Pläne werden in EUR abgerechnet.",
+    "title": "Wählen Sie das passende Modell für Ihre Anforderungen",
+    "lead": "Starten Sie mit AssetFlow Home oder wählen Sie spezialisierte vertikale Branchensoftware für Ihr Unternehmen.",
+    "tabHome": "AssetFlow Home",
+    "tabB2B": "B2B-Editionen",
     "toggleMonthly": "Monatlich",
     "toggleAnnual": "Jährlich",
     "perMonth": "/Monat",
@@ -178,7 +220,37 @@
       "credits": "50 KI-Guthaben pro Monat",
       "seats": "+4 zusätzliche Mitwirkende"
     },
-    "note": "Aktive Objekte sind die Objekte, die du gleichzeitig verfolgst; archivierte Objekte zählen nicht zum Limit. KI-Guthaben werden für Chat, smarte Wartungspläne und Entscheidungen gemeinsam genutzt und nicht übertragen."
+    "note": "Aktive Objekte sind die Objekte, die du gleichzeitig verfolgst; archivierte Objekte zählen nicht zum Limit. KI-Guthaben werden für Chat, smarte Wartungspläne und Entscheidungen gemeinsam genutzt und nicht übertragen.",
+    "b2bArchitecture": "Multi-Tenant-Architektur · Eigener Unternehmens-Tenant · Enterprise-Sicherheit",
+    "b2bLead": "Spezifische Branchensoftware in sicherer Multi-Tenant-Architektur. Individuelle Preismodelle und Funktionen für jeden Unternehmenstyp.",
+    "b2bBusiness": {
+      "name": "AssetFlow Business",
+      "tagline": "Für Einzelhandel, Büros, Bäckereien, Restaurants, Werkstätten und Betriebe.",
+      "badge": "B2B Vertikal",
+      "feature1": "Asset-Hierarchien und Gerätemapping am Arbeitsplatz",
+      "feature2": "Teamrollen, Aufgabenzuweisungen und Techniker-Workflows",
+      "feature3": "Compliance-Audit-Trails und Wartungshistorie",
+      "feature4": "Multi-Tenant-Datenisolation und sicherer Zugriff"
+    },
+    "b2bHospitality": {
+      "name": "AssetFlow Hospitality",
+      "tagline": "Für Hotels, Resorts, Aparthotels und Unterkünfte.",
+      "badge": "B2B Vertikal",
+      "feature1": "Asset-Tracking für Zimmer und öffentliche Bereiche",
+      "feature2": "Präventive Wartung und Vorbereitung für Gäste",
+      "feature3": "Schnelle Störungsmeldung für das Betriebspersonal",
+      "feature4": "Zentrales Dashboard für mehrere Standorte"
+    },
+    "b2bFleet": {
+      "name": "AssetFlow Fleet",
+      "tagline": "Für Autovermieter, Lieferflotten und Maschinenparks.",
+      "badge": "B2B Vertikal",
+      "feature1": "Wartungsauslöser nach Kilometern, Datum und Betriebsstunden",
+      "feature2": "Fahrzeug-Inspektionslisten und Schadensprotokolle",
+      "feature3": "Erinnerungen an Versicherungen, Prüfungen und Fristen",
+      "feature4": "Multi-Tenant-Flottenmanagement bereit für Telematik"
+    },
+    "b2bNote": "Die AssetFlow B2B-Editionen befinden sich derzeit in der Preview-Phase und bieten vertikale Preismodelle mit separaten Mandanten."
   },
   "security": {
     "title": "Deine Aufzeichnungen bleiben geschützt und unter deiner Kontrolle",

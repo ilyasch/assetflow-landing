@@ -25,6 +25,11 @@
         <a class="brand" href="#top">
           <img class="brand-wordmark" src="assets/assetflow-wordmark.png" alt="AssetFlow" width="217" height="72" />
         </a>
+        <nav class="header-nav" aria-label="Main navigation">
+          <a href="#editions" data-i18n="nav.editions">Editions</a>
+          <a href="#examples" data-i18n="nav.homeFeatures">Home Edition</a>
+          <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        </nav>
         <div class="header-actions">
           <div class="lang-select">
             <label class="visually-hidden" for="lang-picker" data-i18n="nav.languageLabel">Language</label>
@@ -38,7 +43,7 @@
             </select>
           </div>
           <a class="btn btn-primary btn-header" href="https://myassetsflow.app" data-i18n="hero.ctaPrimary"
-            >Go to AssetFlow</a
+            >Go to AssetFlow Home</a
           >
         </div>
       </div>
@@ -135,10 +140,10 @@
 
             <div class="cta-row">
               <a class="btn btn-primary btn-large" href="https://myassetsflow.app" data-i18n="hero.ctaPrimary"
-                >Go to AssetFlow</a
+                >Go to AssetFlow Home</a
               >
-              <a class="btn btn-link" href="#examples" data-i18n="hero.ctaSecondary"
-                >See how it helps</a
+              <a class="btn btn-outline btn-large" href="#editions" data-i18n="hero.ctaSecondary"
+                >Explore Editions</a
               >
             </div>
             <ul class="trust-row">
@@ -223,6 +228,102 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Hub: 4 Editions -->
+      <section id="editions" class="section editions alt-bg">
+        <div class="wrap">
+          <p class="eyebrow" data-i18n="editions.eyebrow">One platform, built for your scale</p>
+          <h2 data-i18n="editions.title">Tailored editions for every type of asset</h2>
+          <p class="section-lead" data-i18n="editions.lead">
+            From household appliances to multi-site businesses, hotels, and vehicle fleets — choose the edition built for your exact operational needs.
+          </p>
+
+          <div class="editions-grid">
+            <!-- AssetFlow Home -->
+            <article class="edition-card edition-card-home reveal">
+              <div class="edition-badge-row">
+                <span class="edition-status-badge badge-active" data-i18n="editions.availableNow">Available Now</span>
+              </div>
+              <div class="edition-icon" aria-hidden="true">🏠</div>
+              <h3 data-i18n="editions.home.title">AssetFlow Home</h3>
+              <p class="edition-subtitle" data-i18n="editions.home.subtitle">Personal &amp; household assets</p>
+              <p class="edition-desc" data-i18n="editions.home.desc">
+                Organize appliances, electronics, personal vehicles, and equipment with smart maintenance plans and shared household management.
+              </p>
+              <div class="edition-examples">
+                <span class="edition-examples-label" data-i18n="editions.examplesLabel">Designed for:</span>
+                <span data-i18n="editions.home.examples">Home appliances, electronics, family vehicles, tools, heating &amp; solar</span>
+              </div>
+              <div class="edition-footer">
+                <a class="btn btn-primary btn-block" href="https://myassetsflow.app" data-i18n="editions.home.cta">Explore Home</a>
+              </div>
+            </article>
+
+            <!-- AssetFlow Business -->
+            <article class="edition-card edition-card-b2b reveal">
+              <div class="edition-badge-row">
+                <span class="edition-status-badge badge-coming" data-i18n="editions.comingSoon">Coming Soon</span>
+                <span class="edition-tech-badge" data-i18n="editions.b2bMultiTenant">B2B Multi-Tenant</span>
+              </div>
+              <div class="edition-icon" aria-hidden="true">🏢</div>
+              <h3 data-i18n="editions.business.title">AssetFlow Business</h3>
+              <p class="edition-subtitle" data-i18n="editions.business.subtitle">General organizational assets</p>
+              <p class="edition-desc" data-i18n="editions.business.desc">
+                Centralized asset lifecycle, preventive maintenance, compliance logs, and team accountability across workplaces in an isolated multi-tenant architecture.
+              </p>
+              <div class="edition-examples">
+                <span class="edition-examples-label" data-i18n="editions.examplesLabel">Designed for:</span>
+                <span data-i18n="editions.business.examples">Restaurants, bakeries, offices, stores, retail, workshops, factories</span>
+              </div>
+              <div class="edition-footer">
+                <button type="button" class="btn btn-secondary btn-block" disabled data-i18n="editions.business.cta">Coming Soon</button>
+              </div>
+            </article>
+
+            <!-- AssetFlow Hospitality -->
+            <article class="edition-card edition-card-b2b reveal">
+              <div class="edition-badge-row">
+                <span class="edition-status-badge badge-coming" data-i18n="editions.comingSoon">Coming Soon</span>
+                <span class="edition-tech-badge" data-i18n="editions.b2bMultiTenant">B2B Multi-Tenant</span>
+              </div>
+              <div class="edition-icon" aria-hidden="true">🛎️</div>
+              <h3 data-i18n="editions.hospitality.title">AssetFlow Hospitality</h3>
+              <p class="edition-subtitle" data-i18n="editions.hospitality.subtitle">Specialized hotel operations</p>
+              <p class="edition-desc" data-i18n="editions.hospitality.desc">
+                Keep guest rooms, public facilities, commercial kitchens, and amenities in peak condition with multi-property oversight and fast incident resolution.
+              </p>
+              <div class="edition-examples">
+                <span class="edition-examples-label" data-i18n="editions.examplesLabel">Designed for:</span>
+                <span data-i18n="editions.hospitality.examples">Hotels, resorts, aparthotels, boutique lodges</span>
+              </div>
+              <div class="edition-footer">
+                <button type="button" class="btn btn-secondary btn-block" disabled data-i18n="editions.hospitality.cta">Coming Soon</button>
+              </div>
+            </article>
+
+            <!-- AssetFlow Fleet -->
+            <article class="edition-card edition-card-b2b reveal">
+              <div class="edition-badge-row">
+                <span class="edition-status-badge badge-coming" data-i18n="editions.comingSoon">Coming Soon</span>
+                <span class="edition-tech-badge" data-i18n="editions.b2bMultiTenant">B2B Multi-Tenant</span>
+              </div>
+              <div class="edition-icon" aria-hidden="true">🚚</div>
+              <h3 data-i18n="editions.fleet.title">AssetFlow Fleet</h3>
+              <p class="edition-subtitle" data-i18n="editions.fleet.subtitle">Specialized vehicle operations</p>
+              <p class="edition-desc" data-i18n="editions.fleet.desc">
+                Track scheduled servicing, mileage and engine-hour intervals, vehicle inspections, and regulatory compliance for fleets of any size.
+              </p>
+              <div class="edition-examples">
+                <span class="edition-examples-label" data-i18n="editions.examplesLabel">Designed for:</span>
+                <span data-i18n="editions.fleet.examples">Car rentals, delivery vans, corporate cars, trucks, machinery fleets</span>
+              </div>
+              <div class="edition-footer">
+                <button type="button" class="btn btn-secondary btn-block" disabled data-i18n="editions.fleet.cta">Coming Soon</button>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -554,81 +655,147 @@
       <!-- Pricing -->
       <section id="pricing" class="section pricing">
         <div class="wrap">
-          <h2 data-i18n="pricing.title">Choose the space that fits your life</h2>
+          <h2 data-i18n="pricing.title">Choose the plan that fits your needs</h2>
           <p class="section-lead" data-i18n="pricing.lead">
-            Start free, then choose more assets, smart-plan credits, or household collaboration when
-            you need them. All plans are billed in EUR.
+            Start with AssetFlow Home or choose specialized vertical software for your business.
           </p>
 
-          <div class="billing-toggle" role="group" aria-label="Billing period">
-            <button type="button" class="toggle-btn is-active" data-period="monthly" data-i18n="pricing.toggleMonthly">
-              Monthly
+          <div class="pricing-edition-tabs" role="tablist" aria-label="Select edition pricing">
+            <button type="button" class="edition-tab-btn is-active" data-edition-tab="home" role="tab" aria-selected="true" data-i18n="pricing.tabHome">
+              AssetFlow Home
             </button>
-            <button type="button" class="toggle-btn" data-period="annual" data-i18n="pricing.toggleAnnual">
-              Annual
+            <button type="button" class="edition-tab-btn" data-edition-tab="b2b" role="tab" aria-selected="false" data-i18n="pricing.tabB2B">
+              B2B Editions
             </button>
           </div>
 
-          <div class="plan-grid">
-            <article class="plan-card reveal">
-              <h3 data-i18n="pricing.free.name">Free</h3>
-              <p class="price"><span class="price-monthly">€0</span><span class="price-annual is-hidden">€0</span></p>
-              <p class="plan-tagline" data-i18n="pricing.free.tagline">Useful basic registration and reminders.</p>
-              <ul>
-                <li data-i18n="pricing.free.assets">1 active asset</li>
-                <li data-i18n="pricing.free.credits">2 AI credits / month</li>
-                <li data-i18n="pricing.free.seats">No additional collaborators</li>
-              </ul>
-            </article>
+          <!-- Home Pricing Panel -->
+          <div id="pricing-panel-home" class="pricing-panel is-active" role="tabpanel">
+            <div class="billing-toggle" role="group" aria-label="Billing period">
+              <button type="button" class="toggle-btn is-active" data-period="monthly" data-i18n="pricing.toggleMonthly">
+                Monthly
+              </button>
+              <button type="button" class="toggle-btn" data-period="annual" data-i18n="pricing.toggleAnnual">
+                Annual
+              </button>
+            </div>
 
-            <article class="plan-card reveal">
-              <h3 data-i18n="pricing.plus.name">Plus</h3>
-              <p class="price">
-                <span class="price-monthly">€2.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
-                <span class="price-annual is-hidden">€29<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
-              </p>
-              <p class="plan-tagline" data-i18n="pricing.plus.tagline">More room and a bit of collaboration.</p>
-              <ul>
-                <li data-i18n="pricing.plus.assets">5 active assets</li>
-                <li data-i18n="pricing.plus.credits">10 AI credits / month</li>
-                <li data-i18n="pricing.plus.seats">+1 additional collaborator</li>
-              </ul>
-            </article>
+            <div class="plan-grid">
+              <article class="plan-card reveal">
+                <h3 data-i18n="pricing.free.name">Free</h3>
+                <p class="price"><span class="price-monthly">€0</span><span class="price-annual is-hidden">€0</span></p>
+                <p class="plan-tagline" data-i18n="pricing.free.tagline">Useful basic registration and reminders.</p>
+                <ul>
+                  <li data-i18n="pricing.free.assets">1 active asset</li>
+                  <li data-i18n="pricing.free.credits">2 AI credits / month</li>
+                  <li data-i18n="pricing.free.seats">No additional collaborators</li>
+                </ul>
+              </article>
 
-            <article class="plan-card is-featured reveal">
-              <p class="plan-badge" data-i18n="pricing.popular">Popular</p>
-              <h3 data-i18n="pricing.pro.name">Pro</h3>
-              <p class="price">
-                <span class="price-monthly">€6.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
-                <span class="price-annual is-hidden">€69<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
-              </p>
-              <p class="plan-tagline" data-i18n="pricing.pro.tagline">More capacity for a growing household.</p>
-              <ul>
-                <li data-i18n="pricing.pro.assets">15 active assets</li>
-                <li data-i18n="pricing.pro.credits">25 AI credits / month</li>
-                <li data-i18n="pricing.pro.seats">+2 additional collaborators</li>
-              </ul>
-            </article>
+              <article class="plan-card reveal">
+                <h3 data-i18n="pricing.plus.name">Plus</h3>
+                <p class="price">
+                  <span class="price-monthly">€2.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
+                  <span class="price-annual is-hidden">€29<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
+                </p>
+                <p class="plan-tagline" data-i18n="pricing.plus.tagline">More room and a bit of collaboration.</p>
+                <ul>
+                  <li data-i18n="pricing.plus.assets">5 active assets</li>
+                  <li data-i18n="pricing.plus.credits">10 AI credits / month</li>
+                  <li data-i18n="pricing.plus.seats">+1 additional collaborator</li>
+                </ul>
+              </article>
 
-            <article class="plan-card reveal">
-              <h3 data-i18n="pricing.max.name">Max</h3>
-              <p class="price">
-                <span class="price-monthly">€12.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
-                <span class="price-annual is-hidden">€129<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
-              </p>
-              <p class="plan-tagline" data-i18n="pricing.max.tagline">The most capacity and collaboration.</p>
-              <ul>
-                <li data-i18n="pricing.max.assets">40 active assets</li>
-                <li data-i18n="pricing.max.credits">50 AI credits / month</li>
-                <li data-i18n="pricing.max.seats">+4 additional collaborators</li>
-              </ul>
-            </article>
+              <article class="plan-card is-featured reveal">
+                <p class="plan-badge" data-i18n="pricing.popular">Popular</p>
+                <h3 data-i18n="pricing.pro.name">Pro</h3>
+                <p class="price">
+                  <span class="price-monthly">€6.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
+                  <span class="price-annual is-hidden">€69<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
+                </p>
+                <p class="plan-tagline" data-i18n="pricing.pro.tagline">More capacity for a growing household.</p>
+                <ul>
+                  <li data-i18n="pricing.pro.assets">15 active assets</li>
+                  <li data-i18n="pricing.pro.credits">25 AI credits / month</li>
+                  <li data-i18n="pricing.pro.seats">+2 additional collaborators</li>
+                </ul>
+              </article>
+
+              <article class="plan-card reveal">
+                <h3 data-i18n="pricing.max.name">Max</h3>
+                <p class="price">
+                  <span class="price-monthly">€12.99<span class="price-period" data-i18n="pricing.perMonth">/mo</span></span>
+                  <span class="price-annual is-hidden">€129<span class="price-period" data-i18n="pricing.perYear">/yr</span></span>
+                </p>
+                <p class="plan-tagline" data-i18n="pricing.max.tagline">The most capacity and collaboration.</p>
+                <ul>
+                  <li data-i18n="pricing.max.assets">40 active assets</li>
+                  <li data-i18n="pricing.max.credits">50 AI credits / month</li>
+                  <li data-i18n="pricing.max.seats">+4 additional collaborators</li>
+                </ul>
+              </article>
+            </div>
+            <p class="section-note" data-i18n="pricing.note">
+              Active assets are the assets you track at the same time; archived assets do not count
+              toward the limit. AI credits are shared across chat, smart maintenance plans, and
+              decisions, and do not roll over month to month.
+            </p>
           </div>
-          <p class="section-note" data-i18n="pricing.note">
-            Active assets are the assets you track at the same time; archived assets do not count
-            toward the limit. AI credits are shared across chat, smart maintenance plans, and
-            decisions, and do not roll over month to month.
-          </p>
+
+          <!-- B2B Pricing Panel -->
+          <div id="pricing-panel-b2b" class="pricing-panel is-hidden" role="tabpanel">
+            <div class="b2b-pricing-banner">
+              <span class="b2b-arch-badge" data-i18n="pricing.b2bArchitecture">Multi-tenant architecture · Dedicated organization tenant · Enterprise security</span>
+              <p class="b2b-lead" data-i18n="pricing.b2bLead">Purpose-built vertical software deployed in secure multi-tenant architecture. Tailored pricing and features for each business type.</p>
+            </div>
+
+            <div class="plan-grid b2b-plan-grid">
+              <article class="plan-card reveal">
+                <span class="plan-badge" data-i18n="pricing.b2bBusiness.badge">B2B Vertical</span>
+                <h3 data-i18n="pricing.b2bBusiness.name">AssetFlow Business</h3>
+                <p class="price"><span class="price-coming" data-i18n="editions.comingSoon">Coming Soon</span></p>
+                <p class="plan-tagline" data-i18n="pricing.b2bBusiness.tagline">For stores, offices, bakeries, restaurants, workshops, and factories.</p>
+                <ul>
+                  <li data-i18n="pricing.b2bBusiness.feature1">Workplace asset hierarchies &amp; equipment mapping</li>
+                  <li data-i18n="pricing.b2bBusiness.feature2">Team roles, assignments &amp; technician workflows</li>
+                  <li data-i18n="pricing.b2bBusiness.feature3">Compliance audit trails &amp; maintenance history</li>
+                  <li data-i18n="pricing.b2bBusiness.feature4">Multi-tenant data isolation &amp; secure access</li>
+                </ul>
+                <button type="button" class="btn btn-secondary" disabled data-i18n="editions.comingSoon">Coming Soon</button>
+              </article>
+
+              <article class="plan-card reveal">
+                <span class="plan-badge" data-i18n="pricing.b2bHospitality.badge">B2B Vertical</span>
+                <h3 data-i18n="pricing.b2bHospitality.name">AssetFlow Hospitality</h3>
+                <p class="price"><span class="price-coming" data-i18n="editions.comingSoon">Coming Soon</span></p>
+                <p class="plan-tagline" data-i18n="pricing.b2bHospitality.tagline">For hotels, resorts, aparthotels, and accommodations.</p>
+                <ul>
+                  <li data-i18n="pricing.b2bHospitality.feature1">Room-level &amp; public facility asset tracking</li>
+                  <li data-i18n="pricing.b2bHospitality.feature2">Preventive maintenance &amp; guest-readiness checks</li>
+                  <li data-i18n="pricing.b2bHospitality.feature3">Rapid incident reporting for operations staff</li>
+                  <li data-i18n="pricing.b2bHospitality.feature4">Multi-property centralized dashboard</li>
+                </ul>
+                <button type="button" class="btn btn-secondary" disabled data-i18n="editions.comingSoon">Coming Soon</button>
+              </article>
+
+              <article class="plan-card reveal">
+                <span class="plan-badge" data-i18n="pricing.b2bFleet.badge">B2B Vertical</span>
+                <h3 data-i18n="pricing.b2bFleet.name">AssetFlow Fleet</h3>
+                <p class="price"><span class="price-coming" data-i18n="editions.comingSoon">Coming Soon</span></p>
+                <p class="plan-tagline" data-i18n="pricing.b2bFleet.tagline">For car rental companies, delivery fleets, and machinery.</p>
+                <ul>
+                  <li data-i18n="pricing.b2bFleet.feature1">Mileage, date &amp; engine-hour maintenance triggers</li>
+                  <li data-i18n="pricing.b2bFleet.feature2">Vehicle inspection checklists &amp; damage tracking</li>
+                  <li data-i18n="pricing.b2bFleet.feature3">Insurance, permits &amp; regulatory renewal alerts</li>
+                  <li data-i18n="pricing.b2bFleet.feature4">Multi-tenant fleet management &amp; telematics ready</li>
+                </ul>
+                <button type="button" class="btn btn-secondary" disabled data-i18n="editions.comingSoon">Coming Soon</button>
+              </article>
+            </div>
+            <p class="section-note" data-i18n="pricing.b2bNote">
+              AssetFlow B2B editions are currently in private preview and will feature separate vertical pricing models and dedicated tenant provisioning.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -1,12 +1,15 @@
 {
   "nav": {
-    "languageLabel": "Language"
+    "languageLabel": "Language",
+    "editions": "Editions",
+    "homeFeatures": "Home Edition",
+    "pricing": "Pricing"
   },
   "hero": {
     "headline": "Be the person who always knows what your things need next.",
     "sub": "Organize your assets, build a smart maintenance plan, and keep every important detail ready when you need it.",
-    "ctaPrimary": "Go to AssetFlow",
-    "ctaSecondary": "See how it helps",
+    "ctaPrimary": "Go to AssetFlow Home",
+    "ctaSecondary": "Explore Editions",
     "previewLabel": "A clearer view of what needs attention",
     "preview": {
       "item1Title": "2020 Toyota Corolla",
@@ -42,6 +45,43 @@
       "step4Hint": "Find proof when it matters",
       "step5": "Chat with your data and create an analysis",
       "step5Hint": "Turn your records into useful insights"
+    }
+  },
+  "editions": {
+    "eyebrow": "One platform, built for your scale",
+    "title": "Tailored editions for every type of asset",
+    "lead": "From household appliances to multi-site businesses, hotels, and vehicle fleets — choose the edition built for your exact operational needs.",
+    "availableNow": "Available Now",
+    "comingSoon": "Coming Soon",
+    "b2bMultiTenant": "B2B Multi-Tenant",
+    "examplesLabel": "Designed for:",
+    "home": {
+      "title": "AssetFlow Home",
+      "subtitle": "Personal & household assets",
+      "desc": "Organize appliances, electronics, personal vehicles, and equipment with smart maintenance plans and shared household management.",
+      "examples": "Home appliances, electronics, family vehicles, tools, heating & solar",
+      "cta": "Explore Home"
+    },
+    "business": {
+      "title": "AssetFlow Business",
+      "subtitle": "General organizational assets",
+      "desc": "Centralized asset lifecycle, preventive maintenance, compliance logs, and team accountability across workplaces in an isolated multi-tenant architecture.",
+      "examples": "Restaurants, bakeries, offices, stores, retail, workshops, factories",
+      "cta": "Coming Soon"
+    },
+    "hospitality": {
+      "title": "AssetFlow Hospitality",
+      "subtitle": "Specialized hotel operations",
+      "desc": "Keep guest rooms, public facilities, commercial kitchens, and amenities in peak condition with multi-property oversight and fast incident resolution.",
+      "examples": "Hotels, resorts, aparthotels, boutique lodges",
+      "cta": "Coming Soon"
+    },
+    "fleet": {
+      "title": "AssetFlow Fleet",
+      "subtitle": "Specialized vehicle operations",
+      "desc": "Track scheduled servicing, mileage and engine-hour intervals, vehicle inspections, and regulatory compliance for fleets of any size.",
+      "examples": "Car rentals, delivery vans, corporate cars, trucks, machinery fleets",
+      "cta": "Coming Soon"
     }
   },
   "examples": {
@@ -143,8 +183,10 @@
     "note": "Warranties, insurance policies, and service contracts stay linked to the asset they belong to, with their own dates and reminders."
   },
   "pricing": {
-    "title": "Choose the space that fits your life",
-    "lead": "Start free, then choose more assets, smart-plan credits, or household collaboration when you need them. All plans are billed in EUR.",
+    "title": "Choose the plan that fits your needs",
+    "lead": "Start with AssetFlow Home or choose specialized vertical software for your business.",
+    "tabHome": "AssetFlow Home",
+    "tabB2B": "B2B Editions",
     "toggleMonthly": "Monthly",
     "toggleAnnual": "Annual",
     "perMonth": "/mo",
@@ -178,7 +220,37 @@
       "credits": "50 AI credits / month",
       "seats": "+4 additional collaborators"
     },
-    "note": "Active assets are the assets you track at the same time; archived assets do not count toward the limit. AI credits are shared across chat, smart maintenance plans, and decisions, and do not roll over month to month."
+    "note": "Active assets are the assets you track at the same time; archived assets do not count toward the limit. AI credits are shared across chat, smart maintenance plans, and decisions, and do not roll over month to month.",
+    "b2bArchitecture": "Multi-tenant architecture · Dedicated organization tenant · Enterprise security",
+    "b2bLead": "Purpose-built vertical software deployed in secure multi-tenant architecture. Tailored pricing and features for each business type.",
+    "b2bBusiness": {
+      "name": "AssetFlow Business",
+      "tagline": "For stores, offices, bakeries, restaurants, workshops, and factories.",
+      "badge": "B2B Vertical",
+      "feature1": "Workplace asset hierarchies & equipment mapping",
+      "feature2": "Team roles, assignments & technician workflows",
+      "feature3": "Compliance audit trails & maintenance history",
+      "feature4": "Multi-tenant data isolation & secure access"
+    },
+    "b2bHospitality": {
+      "name": "AssetFlow Hospitality",
+      "tagline": "For hotels, resorts, aparthotels, and accommodations.",
+      "badge": "B2B Vertical",
+      "feature1": "Room-level & public facility asset tracking",
+      "feature2": "Preventive maintenance & guest-readiness checks",
+      "feature3": "Rapid incident reporting for operations staff",
+      "feature4": "Multi-property centralized dashboard"
+    },
+    "b2bFleet": {
+      "name": "AssetFlow Fleet",
+      "tagline": "For car rental companies, delivery fleets, and machinery.",
+      "badge": "B2B Vertical",
+      "feature1": "Mileage, date & engine-hour maintenance triggers",
+      "feature2": "Vehicle inspection checklists & damage tracking",
+      "feature3": "Insurance, permits & regulatory renewal alerts",
+      "feature4": "Multi-tenant fleet management & telematics ready"
+    },
+    "b2bNote": "AssetFlow B2B editions are currently in private preview and will feature separate vertical pricing models and dedicated tenant provisioning."
   },
   "security": {
     "title": "Your records stay protected and under your control",

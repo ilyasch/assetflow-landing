@@ -117,6 +117,38 @@
     });
   }
 
+  function initPricingTabs() {
+    var tabs = document.querySelectorAll("[data-edition-tab]");
+    var homePanel = document.getElementById("pricing-panel-home");
+    var b2bPanel = document.getElementById("pricing-panel-b2b");
+
+    if (!tabs.length || !homePanel || !b2bPanel) {
+      return;
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var target = tab.getAttribute("data-edition-tab");
+        tabs.forEach(function (t) {
+          var isActive = t === tab;
+          t.classList.toggle("is-active", isActive);
+          t.setAttribute("aria-selected", isActive ? "true" : "false");
+        });
+        if (target === "home") {
+          homePanel.classList.remove("is-hidden");
+          homePanel.classList.add("is-active");
+          b2bPanel.classList.add("is-hidden");
+          b2bPanel.classList.remove("is-active");
+        } else {
+          homePanel.classList.add("is-hidden");
+          homePanel.classList.remove("is-active");
+          b2bPanel.classList.remove("is-hidden");
+          b2bPanel.classList.add("is-active");
+        }
+      });
+    });
+  }
+
   function initLanguagePickers() {
     var pickers = document.querySelectorAll("#lang-picker, #lang-picker-2");
     pickers.forEach(function (picker) {
@@ -162,6 +194,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initPricingToggle();
+    initPricingTabs();
     initLanguagePickers();
     initFooterYear();
     initScrollReveal();
