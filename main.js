@@ -79,6 +79,14 @@
     loadLocale(locale)
       .then(function (dict) {
         applyTranslations(dict);
+        if (dict.seo) {
+          document.title = dict.seo.title;
+          document.querySelector('meta[name="description"]').setAttribute("content", dict.seo.description);
+          document.querySelector('meta[property="og:title"]').setAttribute("content", dict.seo.title);
+          document.querySelector('meta[property="og:description"]').setAttribute("content", dict.seo.description);
+          document.querySelector('meta[name="twitter:title"]').setAttribute("content", dict.seo.title);
+          document.querySelector('meta[name="twitter:description"]').setAttribute("content", dict.seo.description);
+        }
         setDocumentDirection(locale);
         syncPickers(locale);
         try {

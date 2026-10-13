@@ -297,5 +297,9 @@
       "next": "Hausfilter bald fällig",
       "nextDetail": "Zugewiesen und zur Erledigung bereit"
     }
+  },
+  "seo": {
+    "title": "AssetFlow | Haushaltsinventar und Wartungserinnerungen",
+    "description": "Organisiere Haushaltsgegenstände, bewahre Belege und Handbücher auf und erstelle Wartungspläne mit Erinnerungen. Teile die Historie mit AssetFlow Home."
   }
 }

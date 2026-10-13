@@ -297,5 +297,9 @@
       "next": "Filtro di casa in scadenza",
       "nextDetail": "Assegnato e pronto da seguire"
     }
+  },
+  "seo": {
+    "title": "AssetFlow | Gestione dei beni di casa e manutenzione",
+    "description": "Organizza i beni di casa, conserva ricevute e manuali e crea piani di manutenzione con promemoria. Condividi lo storico con la famiglia grazie ad AssetFlow Home."
   }
 }

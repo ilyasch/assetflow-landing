@@ -297,5 +297,9 @@
       "next": "Filtre de la maison bientôt à changer",
       "nextDetail": "Attribué et prêt à être suivi"
     }
+  },
+  "seo": {
+    "title": "AssetFlow | Gestion des biens du foyer et entretien",
+    "description": "Organisez les biens du foyer, conservez reçus et manuels et créez des plans d’entretien avec rappels. Partagez leur historique avec AssetFlow Home."
   }
 }

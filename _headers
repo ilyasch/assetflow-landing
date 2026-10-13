@@ -1,0 +1,11 @@
+/assets/*
+  Cache-Control: public, max-age=86400
+
+/styles.css
+  Cache-Control: public, max-age=3600
+
+/main.js
+  Cache-Control: public, max-age=3600
+
+/locales/*
+  Cache-Control: public, max-age=3600

@@ -297,5 +297,9 @@
       "next": "Filtro de casa próximo a vencer",
       "nextDetail": "Asignado y listo para atender"
     }
+  },
+  "seo": {
+    "title": "AssetFlow | Gestión de bienes del hogar y mantenimiento",
+    "description": "Organiza los bienes del hogar, guarda recibos y manuales y crea planes de mantenimiento con recordatorios. Comparte su historial con AssetFlow Home."
   }
 }

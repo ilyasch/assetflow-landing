@@ -297,5 +297,9 @@
       "next": "Home filter due soon",
       "nextDetail": "Assigned and ready to follow up"
     }
+  },
+  "seo": {
+    "title": "AssetFlow | Home Asset Management & Maintenance Reminders",
+    "description": "Organize household assets, keep receipts and manuals together, and create smart maintenance plans with reminders. Share ownership history with AssetFlow Home."
   }
 }
