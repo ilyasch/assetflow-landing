@@ -5,7 +5,7 @@ set -euo pipefail
 mkdir -p dist
 cp index.html styles.css main.js dist/
 cp -R assets locales dist/
-for file in robots.txt sitemap.xml llms.txt _headers _redirects 404.html; do
+for file in robots.txt sitemap.xml llms.txt index.md _headers _redirects 404.html; do
   if [[ -f "$file" ]]; then
     cp "$file" dist/
   fi

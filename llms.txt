@@ -1,0 +1,28 @@
+# AssetFlow
+
+> AssetFlow Home helps people organize household assets, plan maintenance,
+> keep documents and service history together, and collaborate with their household.
+
+The public website is https://myassetsflow.com/. The application is at
+https://myassetsflow.app/. Home is the active edition; Business, Hospitality,
+and Fleet are coming soon. AI maintenance plans are drafts for people to review.
+Connected calendar synchronization is planned; the current calendar workflow
+uses an iCalendar (.ics) download. English, Italian, German, Spanish, French,
+and Arabic are supported through the website's language selector.
+
+## Product information
+
+- [Product overview](https://myassetsflow.com/index.md): Plain Markdown summary of the public landing page for AI assistants.
+- [Landing page](https://myassetsflow.com/): Current public features, edition availability, and pricing.
+- [Pricing](https://myassetsflow.com/#pricing): Current plan details and allowances; check this page rather than assuming prices.
+
+## Application and policies
+
+- [AssetFlow Home](https://myassetsflow.app/): Access the application; personal household data requires authentication.
+- [Privacy policy](https://myassetsflow.app/privacy): Published privacy information.
+- [Terms of service](https://myassetsflow.app/terms): Published terms.
+
+## Optional
+
+- [LinkedIn](https://www.linkedin.com/company/myassetsflow): Public company profile.
+- [Sitemap](https://myassetsflow.com/sitemap.xml): Public indexable website URLs.

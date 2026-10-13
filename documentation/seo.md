@@ -40,7 +40,14 @@ then develop useful maintenance content and relevant external mentions.
 Analytics needs a chosen provider/configuration. Business contact details and
 LocalBusiness markup need real, applicable business information. No marketing
 pixels or fictitious reviews, addresses, prices or certifications are included.
-`llms.txt` is deferred: Google Search does not use it for visibility or rankings.
+`llms.txt` provides public product context and links for AI assistants, with a
+Markdown overview at `/index.md`. HTML discovery links point to both files.
+The existing wildcard robots.txt rule permits crawlers, including search and
+assistant bots; Cloudflare's bot policies can independently restrict them.
+No special agent service or privileged integration is needed for this public
+landing page. Keep Cloudflare Search/Agent blocking disabled for accessibility.
+These discovery files do not grant access to private application data.
+Google Search does not use llms.txt for visibility or rankings.
 
 References:
 - https://developers.google.com/search/docs/appearance/structured-data/organization
