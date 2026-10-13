@@ -37,7 +37,9 @@
       var key = node.getAttribute("data-i18n");
       var value = getByPath(dict, key);
       if (typeof value === "string") {
-        node.textContent = value;
+        if (node.textContent !== value) {
+          node.textContent = value;
+        }
       }
     });
   }

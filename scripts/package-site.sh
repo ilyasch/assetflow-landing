@@ -19,3 +19,4 @@ for locale in ('en', 'it', 'de', 'es', 'fr', 'ar'):
     json.loads(Path(f'dist/locales/{locale}.json').read_text())
 print('Public site packaged; JavaScript syntax and six locale JSON files validated.')
 PY
+python3 scripts/version-assets.py

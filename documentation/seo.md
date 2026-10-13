@@ -58,3 +58,13 @@ References:
 - https://developers.google.com/search/docs/appearance/structured-data/organization
 - https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
 - https://developers.cloudflare.com/pages/configuration/redirects/
+
+## Performance asset delivery
+
+The deployment package writes content-hashed CSS, JavaScript, font and logo
+files under `/static/` and updates the HTML/CSS references. Those immutable
+URLs receive a one-year cache lifetime; editable source URLs keep shorter
+lifetimes. Fonts are self-hosted WOFF2 subsets covering the current Latin
+translations, with the existing Arabic fallback behavior. Licenses are stored
+under `assets/fonts/`. Responsive logo candidates cover 1x, 2x and 3x displays.
+The visible design and supported languages stay the same.

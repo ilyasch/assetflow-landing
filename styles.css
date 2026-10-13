@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("assets/fonts/inter-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600 800;
+  font-display: swap;
+  src: url("assets/fonts/manrope-latin.woff2") format("woff2");
+}
+
 :root {
   --color-bg: #fbfaf6;
   --color-bg-alt: #f3f1e9;
@@ -63,8 +78,9 @@ img {
 
 .skip-link {
   position: absolute;
-  left: -999px;
+  left: 0;
   top: 0;
+  transform: translateY(-100%);
   background: var(--color-primary);
   color: #fff;
   padding: 10px 16px;
@@ -72,8 +88,7 @@ img {
   border-radius: 0 0 8px 0;
 }
 .skip-link:focus {
-  left: 0;
-  top: 0;
+  transform: translateY(0);
 }
 
 /* Header */
