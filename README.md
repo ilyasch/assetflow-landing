@@ -126,65 +126,15 @@ Let's Encrypt certificate automatically after DNS is verified).
 Any push to `main` on `ilyasch/assetflow-landing` automatically rebuilds and
 republishes the Pages site — no manual redeploy step needed.
 
-## Alternative: Cloudflare Pages
+## Cloudflare Pages migration (prepared)
 
-GoDaddy's own hosting requires a paid plan for a static site. If you'd
-rather use Cloudflare Pages instead of GitHub Pages (for example, to later
-share the same CDN/WAF setup as the real `myassetsflow.app` product domain,
-per `AssetFlow/documentation/technology/solution-architecture.md`), here is
-that path:
+A GitHub Actions pipeline is prepared in `.github/workflows/cloudflare-pages.yml`.
+Pull requests validate/package the site; pushes to `main` deploy the public
+artifact after Cloudflare credentials and the Pages project are configured.
+GitHub Pages remains the current host until the migration is verified.
 
-### 1. Deploy the site to Cloudflare Pages (no Git or CLI required)
-
-1. Create a free Cloudflare account at <https://dash.cloudflare.com/sign-up>
-   if you don't have one.
-2. In the dashboard, go to **Workers & Pages → Create → Pages → Upload
-   assets**.
-3. Give the project a name (e.g. `assetflow-landing`) and drag-and-drop the
-   contents of this folder (`index.html`, `styles.css`, `main.js`,
-   `assets/`, `locales/`) — keep the folder structure intact.
-4. Click **Deploy site**. Cloudflare gives you a working URL like
-   `https://assetflow-landing.pages.dev` — open it and confirm the page
-   loads, every language works, and both CTA buttons go to
-   `https://myassetsflow.app`.
-
-(You can also connect the `ilyasch/assetflow-landing` GitHub repo directly
-via **Workers & Pages → Create → Pages → Connect to Git** instead of
-uploading manually — no build command is needed since this is plain static
-HTML/CSS/JS.)
-
-### 2. Point myassetsflow.com at the Cloudflare Pages project
-
-You can do this two ways:
-
-**Option A — keep DNS at GoDaddy (simplest, no nameserver change):**
-In the Pages project, go to **Custom domains → Set up a custom domain**,
-enter `myassetsflow.com` (and `www.myassetsflow.com` if wanted). Cloudflare
-will show you a DNS record to add (usually a `CNAME` for `www` pointing at
-`assetflow-landing.pages.dev`, and for the bare/apex domain either a CNAME
-flattening record or an A record with an IP Cloudflare provides). Add that
-exact record in **GoDaddy → Domain → DNS → Manage DNS** for
-`myassetsflow.com`.
-
-**Option B — move DNS to Cloudflare (full CDN/SSL, matches myassetsflow.app):**
-Add `myassetsflow.com` as a site in Cloudflare, which gives you two
-Cloudflare nameservers. In GoDaddy → **Domain → Manage → Nameservers**,
-switch to those Cloudflare nameservers. Once propagated (can take a few
-hours), attach the custom domain to the Pages project from the Cloudflare
-dashboard — Cloudflare manages DNS and SSL automatically from then on.
-
-Either way, Cloudflare issues free HTTPS automatically once the domain is
-verified — no separate SSL purchase needed.
-
-### 3. Verify
-
-After DNS propagates (check with `dig myassetsflow.com` or just reload in a
-browser — can take minutes to a few hours):
-
-- `https://myassetsflow.com` loads over HTTPS with a valid certificate.
-- Every language in the selector renders correctly, Arabic switches to RTL.
-- The header, hero, pricing, and closing "Go to AssetFlow" buttons all link
-  to `https://myassetsflow.app`.
+Follow [Cloudflare Pages setup and domain cutover](documentation/cloudflare-pages.md).
+The apex domain requires Cloudflare nameservers; GoDaddy can remain the registrar.
 
 ## Alternative: paying for GoDaddy's own static hosting
 
