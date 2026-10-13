@@ -49,6 +49,11 @@ landing page. Keep Cloudflare Search/Agent blocking disabled for accessibility.
 These discovery files do not grant access to private application data.
 Google Search does not use llms.txt for visibility or rankings.
 
+A root `404.html` disables Pages' default single-page-app fallback. Missing
+discovery manifests such as `/.well-known/ai-catalog.json` should return 404,
+not the homepage with status 200. This site does not publish an MCP/A2A service
+catalog; its public product information is available through llms.txt/index.md.
+
 References:
 - https://developers.google.com/search/docs/appearance/structured-data/organization
 - https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
