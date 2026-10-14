@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-10-14T09:40:12.767Z",
+        "reason": "Agent: landing page CSS establishes Inter for body copy with Manrope for display; preserve the existing type system during spacing refinement"
+      }
+    ]
+  }
+}

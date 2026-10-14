@@ -232,54 +232,47 @@
           <div class="hero-preview" aria-hidden="false">
             <p class="preview-label" data-i18n="hero.previewLabel">A clearer view of what needs attention</p>
             <div class="preview-card">
-              <div class="preview-titlebar" aria-hidden="true">
-                <span class="preview-dot preview-dot-red"></span>
-                <span class="preview-dot preview-dot-yellow"></span>
-                <span class="preview-dot preview-dot-green"></span>
+              <div class="preview-titlebar">
+                <span class="preview-dot preview-dot-red" aria-hidden="true"></span>
+                <span class="preview-dot preview-dot-yellow" aria-hidden="true"></span>
+                <span class="preview-dot preview-dot-green" aria-hidden="true"></span>
+                <span class="preview-example-label" data-i18n="hero.preview.example">Example overview</span>
               </div>
+              <ul class="preview-priority-summary">
+                <li><strong>3</strong><span data-i18n="hero.preview.upcomingCount">Coming up</span></li>
+                <li><strong>1</strong><span data-i18n="hero.preview.reviewCount">Needs review</span></li>
+              </ul>
               <ul class="preview-list">
                 <li>
                   <span class="preview-emoji" aria-hidden="true">🚗</span>
                   <span class="preview-copy">
                     <strong data-i18n="hero.preview.item1Title">2020 Toyota Corolla</strong><br />
-                    <span data-i18n="hero.preview.item1Sub">Oil and air-filter service in 12 days</span>
-                    <span class="preview-status" aria-hidden="true">
-                      <span class="preview-checkbox"></span>
-                      <span data-i18n="hero.preview.item1Status">Buy oil and air filter</span>
-                    </span>
+                    <span data-i18n="hero.preview.item1Sub">Oil and air-filter service</span>
+                    <span class="preview-status preview-status-upcoming" data-i18n="hero.preview.item1Status">Due in 12 days</span>
                   </span>
                 </li>
                 <li>
                   <span class="preview-emoji" aria-hidden="true">🧺</span>
                   <span class="preview-copy">
                     <strong data-i18n="hero.preview.item2Title">Washing machine</strong><br />
-                    <span data-i18n="hero.preview.item2Sub">Limescale clean due this month</span>
-                    <span class="preview-status" aria-hidden="true">
-                      <span class="preview-checkbox"></span>
-                      <span data-i18n="hero.preview.item2Status">Buy washing-machine descaler</span>
-                    </span>
+                    <span data-i18n="hero.preview.item2Sub">Limescale clean</span>
+                    <span class="preview-status preview-status-upcoming" data-i18n="hero.preview.item2Status">Due this month</span>
                   </span>
                 </li>
                 <li>
                   <span class="preview-emoji" aria-hidden="true">🏠</span>
                   <span class="preview-copy">
                     <strong data-i18n="hero.preview.item3Title">Family home</strong><br />
-                    <span data-i18n="hero.preview.item3Sub">Home insurance renewal in 28 days</span>
-                    <span class="preview-status preview-status-done" aria-hidden="true">
-                      <span class="preview-checkbox">✓</span>
-                      <span data-i18n="hero.preview.item3Status">Insurance documents ready</span>
-                    </span>
+                    <span data-i18n="hero.preview.item3Sub">Home insurance renewal</span>
+                    <span class="preview-status preview-status-upcoming" data-i18n="hero.preview.item3Status">In 28 days</span>
                   </span>
                 </li>
                 <li>
                   <span class="preview-emoji" aria-hidden="true">♨️</span>
                   <span class="preview-copy">
                     <strong data-i18n="hero.preview.item4Title">Air-source heat pump</strong><br />
-                    <span data-i18n="hero.preview.item4Sub">Annual service suggested — review to add</span>
-                    <span class="preview-status preview-status-done" aria-hidden="true">
-                      <span class="preview-checkbox">✓</span>
-                      <span data-i18n="hero.preview.item4Status">Replacement filter ready</span>
-                    </span>
+                    <span data-i18n="hero.preview.item4Sub">Annual service suggested</span>
+                    <span class="preview-status preview-status-review" data-i18n="hero.preview.item4Status">Review before adding</span>
                   </span>
                 </li>
               </ul>
@@ -693,13 +686,12 @@
         <div class="wrap">
           <h2 data-i18n="categories.title">Start with one thing. Feel more in control of everything.</h2>
           <ul class="category-grid">
-            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🚗</span><span data-i18n="categories.vehicles">Vehicles</span></li>
-            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🧺</span><span data-i18n="categories.appliances">Appliances</span></li>
-            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">💻</span><span data-i18n="categories.electronics">Electronics</span></li>
-            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🚲</span><span data-i18n="categories.bicycles">Bicycles</span></li>
-            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🛠️</span><span data-i18n="categories.tools">Tools</span></li>
-            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">⛵</span><span data-i18n="categories.boats">Boats</span></li>
-            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true">🏠</span><span data-i18n="categories.home">Home systems</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3.5 10 8.5-6.5 8.5 6.5v9a1.5 1.5 0 0 1-1.5 1.5h-14a1.5 1.5 0 0 1-1.5-1.5v-9Z"/><path d="M9 20.5V13h6v7.5"/></svg></span><span data-i18n="categories.homeProperty">Home &amp; property</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4.5" y="4" width="15" height="12.5" rx="1.5"/><path d="M2.5 20h19l-2-3.5h-15L2.5 20Z"/></svg></span><span data-i18n="categories.electronics">Electronics</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 13 1.5-5h13L20 13l1 2.5V19h-2v-2H5v2H3v-3.5L4 13Z"/><path d="M5.5 13h13M7 8l1-2h8l1 2"/><circle cx="7" cy="15" r="1"/><circle cx="17" cy="15" r="1"/></svg></span><span data-i18n="categories.vehicles">Vehicles</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4.5h10.5a2 2 0 0 1 2 2V13H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2Z"/><path d="M6 13v6.5M16 13v6.5M4 20h14.5M18.5 8.5h2v6h-2"/></svg></span><span data-i18n="categories.furniture">Furniture</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M5.5 8h13M8 5.8h.1M11 5.8h.1"/><circle cx="12" cy="14" r="4"/><path d="M12 10v8M8 14h8"/></svg></span><span data-i18n="categories.appliances">Appliances</span></li>
+            <li class="category-card reveal"><span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 8 8-4 8 4-8 4-8-4Z"/><path d="M4 8v8l8 4 8-4V8M12 12v8M8 6l8 4"/></svg></span><span data-i18n="categories.other">Other</span></li>
           </ul>
           <p class="section-note" data-i18n="categories.note">
             Warranties, insurance policies, and service contracts stay linked to the asset they

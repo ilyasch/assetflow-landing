@@ -12,18 +12,21 @@
     "ctaSecondary": "Esplora le edizioni",
     "previewLabel": "Una visione più chiara di ciò che richiede attenzione",
     "preview": {
+      "example": "Esempio di panoramica",
+      "upcomingCount": "In arrivo",
+      "reviewCount": "Da rivedere",
       "item1Title": "Toyota Corolla 2020",
-      "item1Sub": "Cambio olio e filtro aria tra 12 giorni",
-      "item1Status": "Acquista olio e filtro aria",
+      "item1Sub": "Manutenzione di olio e filtro dell'aria",
+      "item1Status": "Tra 12 giorni",
       "item2Title": "Lavatrice",
-      "item2Sub": "Anticalcare da fare questo mese",
-      "item2Status": "Acquista l'anticalcare per la lavatrice",
+      "item2Sub": "Pulizia anticalcare",
+      "item2Status": "Entro questo mese",
       "item3Title": "Casa di famiglia",
-      "item3Sub": "Rinnovo dell'assicurazione casa tra 28 giorni",
-      "item3Status": "Documenti assicurativi pronti",
+      "item3Sub": "Rinnovo dell'assicurazione casa",
+      "item3Status": "Tra 28 giorni",
       "item4Title": "Pompa di calore aria-acqua",
-      "item4Sub": "Manutenzione annuale suggerita — rivedi per aggiungerla",
-      "item4Status": "Filtro di ricambio pronto"
+      "item4Sub": "Manutenzione annuale suggerita",
+      "item4Status": "Rivedi prima di aggiungere"
     },
     "trust": {
       "encrypted": "Connessioni cifrate",
@@ -173,13 +176,12 @@
   },
   "categories": {
     "title": "Inizia da una cosa. Sentiti più in controllo di tutto.",
-    "vehicles": "Veicoli",
-    "appliances": "Elettrodomestici",
+    "homeProperty": "Casa e proprietà",
     "electronics": "Elettronica",
-    "bicycles": "Biciclette",
-    "tools": "Attrezzi",
-    "boats": "Barche",
-    "home": "Impianti domestici",
+    "vehicles": "Veicoli",
+    "furniture": "Arredamento",
+    "appliances": "Elettrodomestici",
+    "other": "Altro",
     "note": "Garanzie, polizze e contratti di assistenza restano collegati al bene a cui appartengono, con date e promemoria propri."
   },
   "pricing": {

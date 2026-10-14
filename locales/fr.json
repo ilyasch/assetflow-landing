@@ -12,18 +12,21 @@
     "ctaSecondary": "Découvrir les éditions",
     "previewLabel": "Une vision plus claire de ce qui demande votre attention",
     "preview": {
+      "example": "Aperçu d’exemple",
+      "upcomingCount": "À venir",
+      "reviewCount": "À examiner",
       "item1Title": "Toyota Corolla 2020",
-      "item1Sub": "Vidange et filtre à air dans 12 jours",
-      "item1Status": "Achetez l'huile et le filtre à air",
+      "item1Sub": "Vidange et filtre à air",
+      "item1Status": "Dans 12 jours",
       "item2Title": "Lave-linge",
-      "item2Sub": "Détartrage prévu ce mois-ci",
-      "item2Status": "Achetez le détartrant pour lave-linge",
+      "item2Sub": "Détartrage",
+      "item2Status": "Prévu ce mois-ci",
       "item3Title": "Maison familiale",
-      "item3Sub": "Renouvellement de l'assurance habitation dans 28 jours",
-      "item3Status": "Documents d'assurance prêts",
+      "item3Sub": "Renouvellement de l'assurance habitation",
+      "item3Status": "Dans 28 jours",
       "item4Title": "Pompe à chaleur air-eau",
-      "item4Sub": "Entretien annuel suggéré — vérifiez avant d'ajouter",
-      "item4Status": "Filtre de rechange prêt"
+      "item4Sub": "Entretien annuel suggéré",
+      "item4Status": "À vérifier avant l'ajout"
     },
     "trust": {
       "encrypted": "Connexions chiffrées",
@@ -173,13 +176,12 @@
   },
   "categories": {
     "title": "Commencez par une chose. Gardez le contrôle de tout.",
-    "vehicles": "Véhicules",
-    "appliances": "Électroménager",
+    "homeProperty": "Logement et propriété",
     "electronics": "Électronique",
-    "bicycles": "Vélos",
-    "tools": "Outils",
-    "boats": "Bateaux",
-    "home": "Équipements du logement",
+    "vehicles": "Véhicules",
+    "furniture": "Mobilier",
+    "appliances": "Appareils",
+    "other": "Autre",
     "note": "Garanties, assurances et contrats d'entretien restent liés au bien concerné, avec leurs propres dates et rappels."
   },
   "pricing": {

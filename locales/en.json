@@ -12,18 +12,21 @@
     "ctaSecondary": "Explore Editions",
     "previewLabel": "A clearer view of what needs attention",
     "preview": {
+      "example": "Example overview",
+      "upcomingCount": "Coming up",
+      "reviewCount": "Needs review",
       "item1Title": "2020 Toyota Corolla",
-      "item1Sub": "Oil and air-filter service in 12 days",
-      "item1Status": "Buy oil and air filter",
+      "item1Sub": "Oil and air-filter service",
+      "item1Status": "Due in 12 days",
       "item2Title": "Washing machine",
-      "item2Sub": "Limescale clean due this month",
-      "item2Status": "Buy washing-machine descaler",
+      "item2Sub": "Limescale clean",
+      "item2Status": "Due this month",
       "item3Title": "Family home",
-      "item3Sub": "Home insurance renewal in 28 days",
-      "item3Status": "Insurance documents ready",
+      "item3Sub": "Home insurance renewal",
+      "item3Status": "In 28 days",
       "item4Title": "Air-source heat pump",
-      "item4Sub": "Annual service suggested — review to add",
-      "item4Status": "Replacement filter ready"
+      "item4Sub": "Annual service suggested",
+      "item4Status": "Review before adding"
     },
     "trust": {
       "encrypted": "Encrypted connections",
@@ -173,13 +176,12 @@
   },
   "categories": {
     "title": "Start with one thing. Feel more in control of everything.",
-    "vehicles": "Vehicles",
-    "appliances": "Appliances",
+    "homeProperty": "Home & property",
     "electronics": "Electronics",
-    "bicycles": "Bicycles",
-    "tools": "Tools",
-    "boats": "Boats",
-    "home": "Home systems",
+    "vehicles": "Vehicles",
+    "furniture": "Furniture",
+    "appliances": "Appliances",
+    "other": "Other",
     "note": "Warranties, insurance policies, and service contracts stay linked to the asset they belong to, with their own dates and reminders."
   },
   "pricing": {

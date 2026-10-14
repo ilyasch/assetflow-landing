@@ -44,6 +44,26 @@
     });
   }
 
+  function localizeDigits(locale) {
+    var westernDigits = "0123456789";
+    var arabicIndicDigits = "٠١٢٣٤٥٦٧٨٩";
+    var toArabicIndic = locale === "ar";
+    var digitMap = toArabicIndic ? westernDigits : arabicIndicDigits;
+    var replacementDigits = toArabicIndic ? arabicIndicDigits : westernDigits;
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    var node;
+
+    while ((node = walker.nextNode())) {
+      if (!node.nodeValue || !/[0-9٠-٩]/.test(node.nodeValue)) {
+        continue;
+      }
+      node.nodeValue = node.nodeValue.replace(/[0-9٠-٩]/g, function (digit) {
+        var index = digitMap.indexOf(digit);
+        return index === -1 ? digit : replacementDigits.charAt(index);
+      });
+    }
+  }
+
   function setDocumentDirection(locale) {
     var isRtl = RTL_LOCALES.indexOf(locale) !== -1;
     document.documentElement.setAttribute("lang", locale);
@@ -90,6 +110,7 @@
           document.querySelector('meta[name="twitter:description"]').setAttribute("content", dict.seo.description);
         }
         setDocumentDirection(locale);
+        localizeDigits(locale);
         syncPickers(locale);
         try {
           window.localStorage.setItem(STORAGE_KEY, locale);

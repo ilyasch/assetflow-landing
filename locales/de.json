@@ -12,18 +12,21 @@
     "ctaSecondary": "Editionen entdecken",
     "previewLabel": "Ein klarerer Blick auf das, was Aufmerksamkeit braucht",
     "preview": {
+      "example": "Beispielübersicht",
+      "upcomingCount": "Demnächst",
+      "reviewCount": "Zu prüfen",
       "item1Title": "Toyota Corolla, Baujahr 2020",
-      "item1Sub": "Öl- und Luftfilterservice in 12 Tagen",
-      "item1Status": "Öl und Luftfilter kaufen",
+      "item1Sub": "Öl- und Luftfilterservice",
+      "item1Status": "In 12 Tagen fällig",
       "item2Title": "Waschmaschine",
-      "item2Sub": "Entkalkung in diesem Monat fällig",
-      "item2Status": "Entkalker für die Waschmaschine kaufen",
+      "item2Sub": "Entkalkung",
+      "item2Status": "Diesen Monat fällig",
       "item3Title": "Familienhaus",
-      "item3Sub": "Wohngebäudeversicherung in 28 Tagen fällig",
-      "item3Status": "Versicherungsdokumente bereit",
+      "item3Sub": "Verlängerung der Wohngebäudeversicherung",
+      "item3Status": "In 28 Tagen",
       "item4Title": "Luft-Wärmepumpe",
-      "item4Sub": "Jahreswartung vorgeschlagen — zum Hinzufügen prüfen",
-      "item4Status": "Ersatzfilter bereit"
+      "item4Sub": "Jahreswartung vorgeschlagen",
+      "item4Status": "Vor dem Hinzufügen prüfen"
     },
     "trust": {
       "encrypted": "Verschlüsselte Verbindungen",
@@ -173,13 +176,12 @@
   },
   "categories": {
     "title": "Mit einer Sache beginnen. Bei allem mehr Überblick haben.",
-    "vehicles": "Fahrzeuge",
-    "appliances": "Haushaltsgeräte",
+    "homeProperty": "Haus und Eigentum",
     "electronics": "Elektronik",
-    "bicycles": "Fahrräder",
-    "tools": "Werkzeuge",
-    "boats": "Boote",
-    "home": "Haustechnik",
+    "vehicles": "Fahrzeuge",
+    "furniture": "Möbel",
+    "appliances": "Haushaltsgeräte",
+    "other": "Sonstiges",
     "note": "Garantien, Versicherungen und Wartungsverträge bleiben mit dem jeweiligen Objekt verbunden und haben eigene Termine und Erinnerungen."
   },
   "pricing": {

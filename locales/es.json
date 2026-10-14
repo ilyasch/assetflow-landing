@@ -12,18 +12,21 @@
     "ctaSecondary": "Explorar ediciones",
     "previewLabel": "Una visión más clara de lo que necesita atención",
     "preview": {
+      "example": "Vista de ejemplo",
+      "upcomingCount": "Próximamente",
+      "reviewCount": "Por revisar",
       "item1Title": "Toyota Corolla 2020",
-      "item1Sub": "Cambio de aceite y filtro de aire en 12 días",
-      "item1Status": "Compra aceite y filtro de aire",
+      "item1Sub": "Cambio de aceite y filtro de aire",
+      "item1Status": "Vence en 12 días",
       "item2Title": "Lavadora",
-      "item2Sub": "Limpieza antical este mes",
-      "item2Status": "Compra antical para la lavadora",
+      "item2Sub": "Limpieza antical",
+      "item2Status": "Vence este mes",
       "item3Title": "Casa familiar",
-      "item3Sub": "Renovación del seguro del hogar en 28 días",
-      "item3Status": "Documentos del seguro listos",
+      "item3Sub": "Renovación del seguro del hogar",
+      "item3Status": "En 28 días",
       "item4Title": "Bomba de calor aire-agua",
-      "item4Sub": "Mantenimiento anual sugerido — revísalo para añadirlo",
-      "item4Status": "Filtro de repuesto listo"
+      "item4Sub": "Mantenimiento anual sugerido",
+      "item4Status": "Revisar antes de añadir"
     },
     "trust": {
       "encrypted": "Conexiones cifradas",
@@ -173,13 +176,12 @@
   },
   "categories": {
     "title": "Empieza con una cosa. Siéntete más en control de todo.",
-    "vehicles": "Vehículos",
-    "appliances": "Electrodomésticos",
+    "homeProperty": "Hogar y propiedad",
     "electronics": "Electrónica",
-    "bicycles": "Bicicletas",
-    "tools": "Herramientas",
-    "boats": "Embarcaciones",
-    "home": "Instalaciones del hogar",
+    "vehicles": "Vehículos",
+    "furniture": "Mobiliario",
+    "appliances": "Electrodomésticos",
+    "other": "Otro",
     "note": "Las garantías, los seguros y los contratos de mantenimiento permanecen vinculados al bien correspondiente, con sus propias fechas y recordatorios."
   },
   "pricing": {

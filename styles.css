@@ -485,6 +485,7 @@ html[dir="rtl"] .flow-connector {
   font-size: 0.85rem;
   color: var(--color-muted);
   margin: 0 0 10px;
+  margin-inline-start: 40px;
   font-style: italic;
 }
 .preview-card {
@@ -501,6 +502,39 @@ html[dir="rtl"] .flow-connector {
   gap: 7px;
   padding: 16px 0 14px;
 }
+.preview-priority-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+}
+.preview-priority-summary li {
+  align-items: center;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-sm);
+  display: flex;
+  gap: 9px;
+  min-width: 0;
+  padding: 10px 12px;
+}
+.preview-priority-summary li:last-child {
+  background: #fbf4df;
+}
+.preview-priority-summary strong {
+  color: var(--color-primary-dark);
+  flex: 0 0 auto;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.preview-priority-summary span {
+  color: var(--color-text);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
 .preview-dot {
   width: 10px;
   height: 10px;
@@ -515,6 +549,12 @@ html[dir="rtl"] .flow-connector {
 }
 .preview-dot-green {
   background: #59c48a;
+}
+.preview-example-label {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-inline-start: 4px;
 }
 .preview-list {
   list-style: none;
@@ -541,27 +581,19 @@ html[dir="rtl"] .flow-connector {
 .preview-status {
   display: flex;
   align-items: center;
-  gap: 6px;
+  width: fit-content;
   margin-top: 8px;
   color: var(--color-primary-dark);
   font-size: 0.8rem;
   font-weight: 700;
+  background: #eaf2ed;
+  border-radius: 999px;
+  line-height: 1.3;
+  padding: 4px 9px;
 }
-.preview-checkbox {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
-  border: 1.5px solid var(--color-primary);
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 0.7rem;
-  line-height: 1;
-}
-.preview-status-done .preview-checkbox {
-  background: var(--color-primary);
+.preview-status-review {
+  background: #fbf4df;
+  color: #664912;
 }
 .preview-emoji {
   font-size: 1.5rem;
@@ -1452,7 +1484,23 @@ html[dir="rtl"] .flow-connector {
   border-color: var(--color-primary);
 }
 .cat-icon {
-  font-size: 1.7rem;
+  align-items: center;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-primary-dark);
+  display: inline-flex;
+  height: 46px;
+  justify-content: center;
+  width: 46px;
+}
+.cat-icon svg {
+  fill: none;
+  height: 24px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+  width: 24px;
 }
 
 /* Pricing */
@@ -1750,6 +1798,9 @@ html[dir="rtl"] .tree-file-row {
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;
+  }
+  .preview-label {
+    margin-inline-start: 16px;
   }
   .trust-row {
     max-width: none;
