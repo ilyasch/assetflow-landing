@@ -259,16 +259,16 @@
     "linkedinLink": "Follow us on LinkedIn",
     "lead": "Ownership information is personal. AssetFlow is built to help you organize it with clear controls, reviewable AI, and European hosting for the current deployment.",
     "pillar1": {
-      "title": "Encrypted connections",
-      "body": "Every connection to AssetFlow uses HTTPS encryption in transit."
+      "title": "Encrypted by default",
+      "body": "Every connection to AssetFlow uses encryption."
     },
     "pillar2": {
-      "title": "You decide what changes",
-      "body": "AI suggestions are drafts. Nothing is added or changed until you review and confirm it."
+      "title": "You're always in control",
+      "body": "AI does not use your sensitive data."
     },
     "pillar3": {
-      "title": "European hosting",
-      "body": "The current AssetFlow deployment runs on European infrastructure. We do not claim certifications or broader compliance guarantees that have not been verified."
+      "title": "Built with Europe in mind.",
+      "body": "The current AssetFlow deployment runs on European infrastructure."
     }
   },
   "household": {

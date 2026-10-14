@@ -259,16 +259,16 @@
     "linkedinLink": "Seguici su LinkedIn",
     "lead": "Le informazioni sulla tua casa e sui tuoi beni sono personali. AssetFlow ti aiuta a organizzarle con controlli chiari, IA rivedibile e hosting europeo per l'ambiente attuale.",
     "pillar1": {
-      "title": "Connessioni cifrate",
-      "body": "Ogni connessione ad AssetFlow utilizza la cifratura HTTPS in transito."
+      "title": "Cifratura predefinita",
+      "body": "Ogni connessione ad AssetFlow utilizza la cifratura."
     },
     "pillar2": {
-      "title": "Decidi tu cosa cambia",
-      "body": "I suggerimenti IA sono bozze. Nulla viene aggiunto o modificato finché non lo rivedi e confermi."
+      "title": "Hai sempre il controllo",
+      "body": "L'IA non utilizza i tuoi dati sensibili."
     },
     "pillar3": {
-      "title": "Hosting europeo",
-      "body": "L'ambiente attuale di AssetFlow utilizza infrastruttura europea. Non dichiariamo certificazioni o garanzie di conformità più ampie senza verifica."
+      "title": "Pensato per l'Europa.",
+      "body": "L'ambiente attuale di AssetFlow utilizza infrastrutture europee."
     }
   },
   "household": {

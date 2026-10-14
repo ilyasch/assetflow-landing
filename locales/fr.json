@@ -259,16 +259,16 @@
     "linkedinLink": "Suivez-nous sur LinkedIn",
     "lead": "Les informations sur vos biens sont personnelles. AssetFlow vous aide à les organiser avec des contrôles clairs, une IA vérifiable et un hébergement européen dans l'environnement actuel.",
     "pillar1": {
-      "title": "Connexions chiffrées",
-      "body": "Chaque connexion à AssetFlow utilise le chiffrement HTTPS en transit."
+      "title": "Chiffrement par défaut",
+      "body": "Chaque connexion à AssetFlow est chiffrée."
     },
     "pillar2": {
-      "title": "Vous décidez ce qui change",
-      "body": "Les suggestions de l'IA sont des brouillons. Rien n'est ajouté ni modifié avant que vous ne le vérifiiez et le confirmiez."
+      "title": "Vous gardez toujours le contrôle",
+      "body": "L'IA n'utilise pas vos données sensibles."
     },
     "pillar3": {
-      "title": "Hébergement européen",
-      "body": "L'environnement actuel d'AssetFlow utilise une infrastructure européenne. Nous ne revendiquons aucune certification ni garantie de conformité plus large sans vérification."
+      "title": "Pensé pour l'Europe.",
+      "body": "Le déploiement actuel d'AssetFlow utilise une infrastructure européenne."
     }
   },
   "household": {

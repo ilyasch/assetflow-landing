@@ -259,16 +259,16 @@
     "linkedinLink": "Folge uns auf LinkedIn",
     "lead": "Informationen über deine Dinge sind persönlich. AssetFlow hilft dir mit klaren Kontrollen, prüfbarer KI und europäischem Hosting in der aktuellen Umgebung, Ordnung zu schaffen.",
     "pillar1": {
-      "title": "Verschlüsselte Verbindungen",
-      "body": "Jede Verbindung zu AssetFlow nutzt HTTPS-Verschlüsselung bei der Übertragung."
+      "title": "Standardmäßig verschlüsselt",
+      "body": "Jede Verbindung zu AssetFlow ist verschlüsselt."
     },
     "pillar2": {
-      "title": "Du entscheidest, was sich ändert",
-      "body": "KI-Vorschläge sind Entwürfe. Nichts wird hinzugefügt oder geändert, bevor du es prüfst und bestätigst."
+      "title": "Du hast immer die Kontrolle",
+      "body": "KI verwendet deine sensiblen Daten nicht."
     },
     "pillar3": {
-      "title": "Europäisches Hosting",
-      "body": "Die aktuelle AssetFlow-Umgebung nutzt europäische Infrastruktur. Nicht verifizierte Zertifizierungen oder weitergehende Compliance-Garantien behaupten wir nicht."
+      "title": "Mit Blick auf Europa entwickelt.",
+      "body": "Die aktuelle AssetFlow-Bereitstellung nutzt eine europäische Infrastruktur."
     }
   },
   "household": {
