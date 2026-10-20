@@ -1,0 +1,607 @@
+{
+  "ui": {
+    "blogs": "Blog",
+    "sectionTitle": "Des situations réelles. Des étapes plus claires.",
+    "sectionLead": "D’un historique d’entretien manquant à tout un bâtiment d’équipements : des guides pratiques pour prendre soin de ce qui compte au quotidien.",
+    "available": "Disponible maintenant",
+    "preview": "Bientôt · Aperçu",
+    "read": "Lire le guide",
+    "example": "Exemple illustratif · pas une capture du produit",
+    "skip": "Aller au contenu",
+    "back": "Tous les guides",
+    "language": "Langue de l’article",
+    "breadcrumb": "Fil d’Ariane",
+    "contents": "Dans ce guide",
+    "questions": "D’autres questions utiles",
+    "sources": "Sources utiles",
+    "sourceAA": "The AA : comprendre l’historique d’un véhicule",
+    "sourceFord": "Ford : trouver le manuel de votre véhicule",
+    "sourceNote": "Consultez les indications du constructeur pour le modèle, le moteur, l’année et le marché exacts. Ces sources donnent un contexte, pas un programme d’entretien universel.",
+    "previewNotice": "Aperçu des éditions : Business, Fleet et Hospitality arrivent prochainement. Les étiquettes QR et les parcours professionnels présentés sont des fonctionnalités prévues.",
+    "illustrativeNotice": "Un scénario illustratif, pas un témoignage client. Les exemples ne constituent pas un avis mécanique.",
+    "related": "Une autre situation qui vous ressemble peut-être",
+    "homeCta": "Commencer avec AssetFlow Home",
+    "previewCta": "Découvrir AssetFlow Home aujourd’hui",
+    "previewCtaNote": "Cette édition professionnelle arrive prochainement. Découvrez dès aujourd’hui l’approche de gestion et d’entretien avec AssetFlow Home, pour vos biens personnels et domestiques.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation"
+  },
+  "articles": [
+    {
+      "id": "used-car-no-service-history",
+      "title": "Voiture d’occasion sans historique d’entretien : que faire maintenant ?",
+      "description": "Une facture, un carnet vide et aucune prochaine échéance ? Construisez un point de départ concret pour l’entretien de votre voiture d’occasion.",
+      "lead": "Le vendeur affirme que l’entretien a été fait. Vous avez les clés, une facture et une question : que faut-il réellement prévoir ? Vous ne pouvez pas recréer les preuves absentes, mais vous pouvez transformer les incertitudes en vérifications et commencer un historique fiable dès aujourd’hui.",
+      "sections": [
+        {
+          "title": "Commencez par ce que vous pouvez prouver",
+          "paragraphs": [
+            "Imaginez une compacte familiale achetée d’occasion. Dans la boîte à gants : un ancien rapport de contrôle et une facture pour deux pneus. Rien ne dit quand le moteur a été entretenu. Avant de réserver des travaux ou de noter des dates, rassemblez factures, pages tamponnées, courriels, documents de remise et photos. Demandez au vendeur ou aux ateliers cités s’ils disposent d’autres justificatifs. Le constructeur ou un concessionnaire peut avoir des entrées numériques, mais leur accès et leur couverture varient. Gardez une question ouverte plutôt que de transformer le souvenir du vendeur en intervention confirmée."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Une facture est une preuve. Un souvenir reste une question.",
+            "items": [
+              [
+                "Ce que je sais",
+                "Facture des pneus : date, kilométrage et travaux facturés."
+              ],
+              [
+                "Ce que je dois vérifier",
+                "Dernier entretien moteur : aucun justificatif pour le moment."
+              ],
+              [
+                "Ma prochaine action",
+                "Demander les documents et en parler à un atelier."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Trouvez le bon programme, pas un intervalle générique",
+          "paragraphs": [
+            "Il n’existe pas un intervalle d’entretien valable pour toutes les voitures d’occasion. Consultez les indications du constructeur pour le modèle, le moteur, l’année et le marché exacts. Notez le kilométrage et l’utilisation, puis apportez programme et justificatifs à un atelier qualifié. Expliquez ce qui est connu, ce qui manque et les symptômes observés. Demandez une évaluation et convenez des priorités. Une ancienne facture ne démontre pas l’état actuel ; une voiture propre ne prouve pas que les travaux prévus ont été réalisés. Une liste générée par IA ne permet pas de décider si le véhicule peut rouler en sécurité."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "D’un passé incertain à un point de départ convenu",
+            "items": [
+              [
+                "Rassembler",
+                "Documents, kilométrage et questions ouvertes."
+              ],
+              [
+                "Vérifier",
+                "Programme exact et évaluation de l’atelier."
+              ],
+              [
+                "Convenir",
+                "Travaux prioritaires et prochaine vérification."
+              ],
+              [
+                "Consigner",
+                "Preuves datées des interventions réalisées."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Demandez un compte rendu exploitable",
+          "paragraphs": [
+            "Un rendez-vous utile se termine avec plus qu’un « tout est réglé ». Demandez le détail des interventions, leur date, le kilométrage et les recommandations encore ouvertes. Séparez les travaux proposés des travaux terminés. Si une pièce a été inspectée et non remplacée, conservez cette distinction. Demandez quelles prochaines tâches dépendent du temps, de la distance ou du programme constructeur, et lesquelles nécessitent une nouvelle évaluation. Vous disposez ainsi d’un point de départ documenté sans prétendre avoir reconstitué les années précédentes. Les autres membres du foyer peuvent comprendre la situation sans refaire votre conversation avec le technicien."
+          ]
+        },
+        {
+          "title": "Donnez une place à chaque preuve",
+          "paragraphs": [
+            "Dans AssetFlow Home, ajoutez la voiture et joignez les documents rassemblés. Conservez manuel et assurances avec le bien ; rattachez facture et photos à l’événement correspondant. Utilisez le contexte connu pour demander une ébauche d’entretien, puis vérifiez-la avec les indications du constructeur et de l’atelier avant de confirmer les tâches. Programmez les rappels aux dates convenues et consignez interventions et coûts réels. Lorsque vous interrogez vos documents, vérifiez les sources : l’application organise et aide à comprendre les informations fournies, mais ne peut découvrir une réparation qui n’a jamais été documentée."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "L’historique que vous pouvez commencer aujourd’hui",
+            "items": [
+              [
+                "Bien",
+                "Voiture familiale · identification exacte."
+              ],
+              [
+                "Travaux réalisés",
+                "Rapport, facture et kilométrage consigné."
+              ],
+              [
+                "Prochaine action",
+                "Tâche confirmée, date et personne responsable."
+              ],
+              [
+                "Toujours inconnu",
+                "Anciennes interventions sans justificatif."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Facilitez la prochaine transmission",
+          "paragraphs": [
+            "Le résultat n’est pas un historique restauré par magie. C’est une réponse appuyée par un document plutôt qu’une supposition. Un proche peut voir les travaux réalisés, retrouver la facture et comprendre la suite. Avant un autre rendez-vous, revoyez les questions ouvertes et les documents récents. Avant de vendre la voiture, rassemblez les preuves de votre période de propriété sans laisser entendre qu’elles couvrent les années antérieures. Commencez simplement : un véhicule, un dossier de justificatifs et une action confirmée sont plus utiles qu’une longue liste de dates incertaines."
+          ]
+        }
+      ],
+      "checklistTitle": "La liste à emporter à l’atelier",
+      "checklist": [
+        "Modèle, moteur, année, kilométrage actuel et utilisation.",
+        "Factures, rapports de contrôle et entrées numériques disponibles.",
+        "Liste séparée des informations manquantes ou incertaines.",
+        "Questions sur les travaux prioritaires et la prochaine échéance.",
+        "Demande d’un compte rendu détaillé et daté."
+      ],
+      "faq": [
+        [
+          "Peut-on retrouver des justificatifs manquants ?",
+          "Le vendeur, un ancien atelier ou un système numérique du constructeur peuvent parfois aider. L’accès et la disponibilité varient : ne supposez pas que l’historique sera complet."
+        ],
+        [
+          "Un rapport d’historique inclut-il tous les entretiens ?",
+          "Ne considérez pas un rapport sur le passé du véhicule comme un historique complet d’entretien. Vérifiez son contenu exact et examinez séparément les documents de maintenance."
+        ],
+        [
+          "AssetFlow peut-il confirmer la sécurité mécanique ?",
+          "Non. AssetFlow aide à organiser les documents et à examiner les tâches. Un professionnel qualifié doit évaluer l’état du véhicule."
+        ]
+      ],
+      "ctaTitle": "Commencez un nouveau chapitre avec un historique plus clair",
+      "ctaText": "Ajoutez votre voiture, rassemblez les preuves disponibles et confirmez une prochaine étape utile."
+    },
+    {
+      "id": "family-car-maintenance",
+      "title": "Votre voiture familiale : savoir quoi prévoir avant le prochain trajet",
+      "description": "Un exemple concret pour transformer les documents éparpillés et les « on l’a déjà fait ? » en un plan d’entretien partagé.",
+      "lead": "Trajets scolaires, courses, week-ends : vous comptez sur la voiture. Pourtant le manuel est dans la boîte à gants, l’assurance dans une messagerie et une seule personne se souvient du dernier entretien. Un plan commence par réunir ces éléments.",
+      "sections": [
+        {
+          "title": "Partez de la voiture que vous possédez",
+          "paragraphs": [
+            "Une famille prépare un voyage d’été. L’un pense que l’entretien est récent ; l’autre se souvient des pneus, sans retrouver la facture. Ajoutez le véhicule dans AssetFlow Home avec les informations connues. Joignez reçu d’achat, manuel et justificatifs d’entretien. Conservez garantie, assurance et contrat de service avec la voiture plutôt que dans un dossier général. Une fiche précise donne un point de départ aux questions suivantes : quel véhicule, quelles preuves, quelles dates ? Inutile de tout documenter en une soirée. Commencez par les documents utiles au prochain rendez-vous."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Une voiture, des informations reliées",
+            "items": [
+              [
+                "Véhicule",
+                "Modèle, année et informations de propriété."
+              ],
+              [
+                "Documents",
+                "Manuel, reçu, garantie et assurance."
+              ],
+              [
+                "Historique",
+                "Travaux terminés, justificatifs et coûts."
+              ],
+              [
+                "Plan",
+                "Tâches, dates et responsabilités confirmées."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Transformez le contexte en un plan que vous approuvez",
+          "paragraphs": [
+            "Demandez une ébauche d’entretien à partir du véhicule et des documents fournis. Sa valeur est un point de départ structuré, pas une invitation à tout accepter. Comparez les suggestions au programme constructeur du véhicule exact et aux conseils de l’atelier. Ajustez les tâches et les dates avant de confirmer. Distinguez un contrôle proposé d’une réparation réalisée. Si les preuves manquent, laissez la question ouverte. Un plan soigné fondé sur de mauvaises hypothèses reste inadapté. Vous décidez quelles suggestions deviennent des travaux suivis par votre foyer."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Une suggestion devient une tâche après votre vérification",
+            "items": [
+              [
+                "Contexte",
+                "Détails du véhicule et justificatifs."
+              ],
+              [
+                "Ébauche",
+                "L’IA propose un point de départ."
+              ],
+              [
+                "Vérification",
+                "Contrôler, ajuster et confirmer."
+              ],
+              [
+                "Suivi",
+                "Suivre la tâche et consigner le résultat."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Partagez la responsabilité, pas seulement le rappel",
+          "paragraphs": [
+            "Une entrée « voiture » dans le calendrier n’explique pas quoi faire. Des tâches et attributions claires permettent de savoir ce qui arrive et qui s’en occupe. Un membre du foyer peut consulter l’historique partagé au lieu de demander si le garage a déjà été appelé. Les rappels rendent visibles les dates confirmées ; l’export du calendrier permet de retrouver les tâches dans votre calendrier habituel. La synchronisation connectée est prévue : le fichier exporté est un instantané, pas une connexion permanente. La collaboration dépend du nombre de membres inclus dans votre formule. Commencez avec une responsabilité partagée, comme organiser le prochain entretien convenu."
+          ]
+        },
+        {
+          "title": "Conservez les preuves une fois le travail terminé",
+          "paragraphs": [
+            "Après le rendez-vous, consignez le travail réalisé et son coût. Joignez facture, rapport ou photos à l’événement qu’ils justifient. Distinguez manuel et assurance des preuves d’une réparation précise. Au prochain rendez-vous, vous retrouverez les documents généraux comme les travaux enregistrés. Assurance et garantie font aussi partie de cette histoire : rendez leurs documents et dates accessibles, puis vérifiez ce qui doit être actualisé. Le coût d’un entretien est une dépense enregistrée, pas une prévision de toutes les factures futures. L’historique devient utile parce qu’il reflète des événements réels et non une liste abandonnée."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Un entretien terminé raconte une histoire utile",
+            "items": [
+              [
+                "Événement",
+                "Intervention réalisée par l’atelier."
+              ],
+              [
+                "Preuves",
+                "Facture détaillée et rapport d’entretien."
+              ],
+              [
+                "Coût",
+                "Montant réel enregistré pour cet événement."
+              ],
+              [
+                "Suite",
+                "Examiner la prochaine recommandation de l’atelier."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Utilisez l’historique pour la prochaine question",
+          "paragraphs": [
+            "Avant le voyage, demandez ce que vos documents disent du dernier entretien et consultez les preuves. La base documentaire aide à retrouver des détails et préparer des questions ; l’absence d’un document ne prouve pas qu’une intervention était inutile. Le foyer dispose d’une boucle répétable : ajouter le contexte, examiner une ébauche, confirmer, consigner et apprendre de l’historique. Cette habitude peut s’étendre à un autre bien domestique. AssetFlow ne remplace pas le technicien et ne décide pas pour vous. Il vous aide à aborder la prochaine décision avec les documents, le contexte et la compréhension partagée qui manquaient auparavant."
+          ]
+        }
+      ],
+      "checklistTitle": "Votre première boucle de gestion utile",
+      "checklist": [
+        "Ajouter la voiture et les documents importants.",
+        "Vérifier l’ébauche IA avec des indications fiables.",
+        "Confirmer une tâche, une date et un responsable.",
+        "Consigner l’intervention, le coût et les preuves.",
+        "Relire l’historique avant le prochain rendez-vous."
+      ],
+      "ctaTitle": "Simplifiez la prochaine discussion sur la voiture",
+      "ctaText": "Commencez avec votre véhicule, les documents disponibles et une tâche d’entretien confirmée."
+    },
+    {
+      "id": "factory-maintenance",
+      "title": "Coordonner la production avec un plan d’entretien plus clair",
+      "description": "Une usine alimentaire illustre le lien entre fiches d’équipement, accès QR et transmissions de maintenance.",
+      "lead": "Un mélangeur s’arrête en plein lot. L’opérateur envoie un message, le technicien cherche le manuel et le responsable demande quand la production reprendra. Le problème dépasse la machine : les informations sont dispersées. Voici un aperçu d’AssetFlow Business.",
+      "sections": [
+        {
+          "title": "Donnez une identité et une place à chaque machine",
+          "paragraphs": [
+            "Prenons une petite usine alimentaire avec mélangeurs, fours, convoyeurs et machines d’emballage. « Le grand mélangeur » devient ambigu entre équipes ou ateliers. Le parcours Business prévu donnerait à chaque équipement une fiche reconnaissable avec localisation, documents et historique. Les équipes relieraient la bonne machine à la bonne tâche avant de commencer. Manuels, références du fournisseur et rapports précédents resteraient avec cette fiche. Il s’agit d’un modèle illustratif, pas d’une édition disponible aujourd’hui. Le but est simple : la personne devant la machine doit pouvoir trouver les informations qui lui correspondent."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Un atelier devient une carte d’équipements",
+            "items": [
+              [
+                "Préparation",
+                "Mélangeur · manuel et rapports."
+              ],
+              [
+                "Cuisson",
+                "Four · entretien prévu et comptes rendus."
+              ],
+              [
+                "Transfert",
+                "Convoyeur · contrôles et tâches ouvertes."
+              ],
+              [
+                "Emballage",
+                "Machine d’emballage · preuves et historique."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Utilisez un QR pour atteindre la bonne fiche",
+          "paragraphs": [
+            "Dans le parcours proposé, AssetFlow générerait une étiquette QR liée à la machine. Un opérateur autorisé pourrait la scanner pour accéder à la fiche exacte sans parcourir une liste ni retaper un nom. Contrôle opérateur, intervention technique et revue du responsable se rapporteraient au même équipement, avec un accès régi par les rôles professionnels. L’étiquette serait un point d’entrée, pas un remplacement de l’autorisation ni une commande de machine. La séquence illustre une capacité prévue : ce n’est pas une étiquette opérationnelle ni une démonstration de fonctionnalités disponibles."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Une machine, plusieurs responsabilités",
+            "items": [
+              [
+                "Étiquette QR",
+                "Identifier la machine et ouvrir sa fiche."
+              ],
+              [
+                "Opérateur",
+                "Consigner une observation ou un contrôle."
+              ],
+              [
+                "Technicien",
+                "Assurer le suivi et documenter le travail."
+              ],
+              [
+                "Responsable",
+                "Examiner avancement, responsabilité et historique."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Planifiez selon l’équipement et la journée de travail",
+          "paragraphs": [
+            "Un plan doit refléter les exigences du constructeur, l’usage et les personnes compétentes. Dans une usine, il doit aussi s’insérer dans la production. L’expérience Business envisagée réunirait récurrences et responsabilités pour discuter du calendrier avant l’urgence. Des ébauches IA vérifiables offriraient un point de départ si le contexte est suffisant ; l’équipe confirmerait le plan. Une tâche comme examiner les exigences d’inspection du mélangeur nécessite ses propres preuves et un délai convenu. Elle ne devrait pas hériter d’un intervalle générique simplement parce qu’une autre machine porte un nom similaire."
+          ]
+        },
+        {
+          "title": "Clôturez avec des preuves, pas un message vague",
+          "paragraphs": [
+            "Supposons que le technicien résolve le problème. « Réparé » laisse trop de questions à l’équipe suivante. La fiche prévue décrirait les contrôles, les travaux terminés, l’auteur et les documents à l’appui. Toute recommandation non résolue resterait distincte des travaux achevés. Le responsable pourrait consulter l’historique lors d’une récidive au lieu de rechercher des messages privés. Cet historique facilite la transmission ; il ne certifie pas l’équipement, ne démontre pas la conformité réglementaire et n’autorise pas le redémarrage. Ces décisions restent soumises aux personnes qualifiées et aux procédures de l’usine."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Une transmission de maintenance exploitable",
+            "items": [
+              [
+                "Observation",
+                "Problème associé à la machine identifiée."
+              ],
+              [
+                "Travaux",
+                "Intervention et preuves consignées par le technicien."
+              ],
+              [
+                "Question ouverte",
+                "Tout contrôle supplémentaire reste visible."
+              ],
+              [
+                "Revue",
+                "L’équipe applique sa procédure de remise en service."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Gardez un historique utile au-delà du prochain poste",
+          "paragraphs": [
+            "L’intérêt durable est un dossier qui reste avec la machine lorsque personnes et équipes changent. Les problèmes récurrents deviennent plus faciles à discuter en comparant observations et interventions. Les responsables voient les travaux prévus à côté des travaux consignés ; les techniciens se préparent avec les bons documents. Commencez par un atelier, des noms partagés et des responsabilités de signalement, d’intervention et de revue. Ces habitudes comptent avant tout logiciel. AssetFlow Business est conçu autour de ce parcours relié, avec accès QR et rôles professionnels prévus, et non disponibles pour un usage général aujourd’hui."
+          ]
+        }
+      ],
+      "checklistTitle": "Préparer un atelier à une transmission plus claire",
+      "checklist": [
+        "Lister les machines avec des noms et lieux reconnus.",
+        "Rassembler manuels, rapports et questions ouvertes.",
+        "Définir les responsabilités de chaque rôle.",
+        "Convenir des preuves nécessaires pour clôturer une tâche.",
+        "Conserver les procédures qualifiées de remise en service."
+      ],
+      "ctaTitle": "Une histoire d’équipement plus claire commence par un bien",
+      "ctaText": ""
+    },
+    {
+      "id": "fleet-maintenance",
+      "title": "De nombreuses voitures, une vision claire de l’entretien",
+      "description": "Une équipe de location coordonne contrôles, entretiens et transmissions sans perdre le contexte de chaque véhicule.",
+      "lead": "Une voiture revient avec une observation, une autre a un rendez-vous et une troisième attend sa facture. Une liste d’immatriculations n’explique pas ces situations. Voici un aperçu du parcours connecté prévu pour AssetFlow Fleet.",
+      "sections": [
+        {
+          "title": "Retrouvez chaque véhicule derrière la flotte",
+          "paragraphs": [
+            "Imaginez une agence de location avant un week-end chargé. Les voitures ont des kilométrages, des historiques et des observations différents. Le parcours Fleet prévu organiserait les documents, exigences et interventions dans l’historique propre à chaque véhicule. Le responsable partirait de la voiture précise plutôt que d’un rappel générique. Une distinction devient visible : un rendez-vous d’entretien futur n’est pas une observation non résolue. Les cas ci-dessous sont illustratifs, pas des états opérationnels en temps réel. Fleet arrive prochainement et les parcours professionnels présentés restent un aperçu."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Trois véhicules, trois prochaines actions",
+            "items": [
+              [
+                "Véhicule A",
+                "Rendez-vous convenu · préparer les documents."
+              ],
+              [
+                "Véhicule B",
+                "Observation reçue · évaluation nécessaire."
+              ],
+              [
+                "Véhicule C",
+                "Entretien terminé · joindre la facture."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Reliez l’observation au bon véhicule",
+          "paragraphs": [
+            "Le parcours QR proposé permettrait au personnel autorisé d’ouvrir la fiche du véhicule identifié. Le conducteur ou l’équipe de réception pourrait consigner une observation avec son contexte et, si utile, des justificatifs. Le technicien suivrait le même bien et le responsable examinerait attribution et progression. Scanner une étiquette ne diagnostiquerait pas une panne, ne confirmerait pas l’aptitude à circuler et ne rendrait pas une voiture prête à louer. Ces décisions nécessitent les personnes et procédures appropriées. Le changement utile serait de conserver identité et observation d’origine à chaque transmission, sans dépendre d’une chaîne de messages."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Une transmission qui garde le contexte",
+            "items": [
+              [
+                "Identifier",
+                "Entrée QR vers la bonne fiche véhicule."
+              ],
+              [
+                "Observer",
+                "Le personnel consigne le problème."
+              ],
+              [
+                "Intervenir",
+                "Le technicien documente évaluation et travaux."
+              ],
+              [
+                "Revoir",
+                "Le responsable applique la procédure opérationnelle."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Planifiez avec le temps et l’utilisation",
+          "paragraphs": [
+            "L’entretien d’une flotte dépend rarement d’une date seule. L’édition prévue couvrirait les entretiens programmés et intervalles kilométriques, avec des heures moteur pertinentes pour certaines flottes d’équipements. L’équipe choisirait toujours les exigences selon le constructeur du véhicule exact et son usage. Il faut savoir quelle mesure a été relevée, quand et ce qui reste à confirmer. Cet article ne promet ni télématique, ni remontée automatique du compteur, ni diagnostic prédictif. Un relevé clair et une tâche examinée sont plus utiles qu’une échéance apparemment précise fondée sur un kilométrage périmé. Considérez aussi la disponibilité opérationnelle réelle."
+          ]
+        },
+        {
+          "title": "Conservez le compte rendu avec le véhicule",
+          "paragraphs": [
+            "Au retour de l’atelier, le parcours prévu relierait intervention, coût et facture à la bonne voiture. Assurance et autres documents resteraient accessibles avec l’historique plutôt que dans une boîte mail d’agence. Une recommandation future resterait distincte du travail terminé. Face à une observation récurrente, le responsable pourrait suivre les preuves, y compris les lacunes. Cela coordonne les informations ; ce n’est ni un certificat de conformité ni un substitut aux inspections. Si un document manque, rendez l’absence visible et attribuez un suivi au lieu de considérer l’entretien comme entièrement documenté."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Ce dont le prochain collègue a besoin",
+            "items": [
+              [
+                "Véhicule",
+                "Identité sans ambiguïté et contexte d’usage."
+              ],
+              [
+                "Terminé",
+                "Travaux datés, coût et justificatifs."
+              ],
+              [
+                "En attente",
+                "Document manquant ou nouvelle évaluation."
+              ],
+              [
+                "Responsable",
+                "Qui suit le dossier et quelle est la suite."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Commencez avec une routine d’agence reproductible",
+          "paragraphs": [
+            "Choisissez une routine comprise à chaque poste : identifier la voiture, consigner l’observation, convenir de la suite et conserver le résultat. Définissez qui signale, qui réalise ou enregistre les travaux et qui prend la décision opérationnelle. Rassemblez les documents avant le départ des clés. Avec la croissance de la flotte, cet historique partagé peut limiter le travail de reconstruction du contexte, sans promettre un résultat financier précis. AssetFlow Fleet est prévu pour relier ces responsabilités autour du véhicule. AssetFlow Home propose déjà cette approche de propriété pour les biens personnels et domestiques."
+          ]
+        }
+      ],
+      "checklistTitle": "Une liste pour mieux transmettre un véhicule",
+      "checklist": [
+        "Identifier le véhicule et son usage actuel.",
+        "Séparer entretien régulier et observations non résolues.",
+        "Nommer le responsable de la prochaine action.",
+        "Joindre le compte rendu et la facture.",
+        "Appliquer les contrôles qualifiés avant remise en service."
+      ],
+      "ctaTitle": "Gardez le contexte de votre prochaine décision véhicule",
+      "ctaText": ""
+    },
+    {
+      "id": "hotel-maintenance",
+      "title": "Un entretien hôtelier qui garde le fil en coulisses",
+      "description": "Un hôtel illustre comment relier équipements des chambres, signalements et interventions à un historique plus clair.",
+      "lead": "Un client signale une climatisation bruyante. L’étage transmet, la réception attend une réponse et le technicien cherche quelle unité a déjà été réparée. La fiche du bien devrait relier ces questions. Voici un aperçu d’AssetFlow Hospitality.",
+      "sections": [
+        {
+          "title": "Organisez les équipements selon leur emplacement réel",
+          "paragraphs": [
+            "Prenons un hôtel avec climatisation dans les chambres, lingerie, cuisine et équipements des espaces communs. « Le climatiseur » n’identifie rien lorsque des dizaines d’unités se ressemblent. Le parcours Hospitality prévu associerait chaque équipement à un lieu reconnaissable et conserverait documents et historique. Le personnel distinguerait une unité de chambre d’un appareil de cuisine ou de lingerie avant de signaler un travail. La carte ci-dessous est illustrative : ni client réel ni écran de produit disponible. Hospitality arrive prochainement ; les parcours par chambre et les rôles professionnels sont prévus."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "L’hôtel vu à travers ses équipements",
+            "items": [
+              [
+                "Chambres",
+                "Climatiseurs identifiés par chambre."
+              ],
+              [
+                "Lingerie",
+                "Lave-linge et sèche-linge aux historiques distincts."
+              ],
+              [
+                "Cuisine",
+                "Fours, froid et documents associés."
+              ],
+              [
+                "Espaces communs",
+                "Équipements situés sans ambiguïté."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Rendez le premier signalement utile au suivant",
+          "paragraphs": [
+            "Dans le parcours proposé, une personne autorisée de l’équipe d’étage scannerait l’étiquette QR générée pour ouvrir la bonne fiche. « Bruit inhabituel pendant l’utilisation » resterait associé à l’unité et au lieu. Le technicien consulterait le contexte et documenterait le suivi ; le responsable examinerait travaux ouverts et responsabilités. Le QR aiderait à identifier le dossier, sans accorder un accès illimité ni prouver la résolution. Un signalement utile décrit l’observation sans inventer de diagnostic. Les urgences continueraient de suivre les procédures de sécurité et d’escalade de l’hôtel."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Du constat en chambre à une transmission documentée",
+            "items": [
+              [
+                "Équipe d’étage",
+                "Identifier l’unité et consigner l’observation."
+              ],
+              [
+                "Technicien",
+                "Évaluer et documenter l’intervention."
+              ],
+              [
+                "Responsable",
+                "Revoir les travaux ouverts et leur attribution."
+              ],
+              [
+                "Exploitation",
+                "Appliquer les procédures de préparation de la chambre."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Planifiez avant que la chambre en ait besoin",
+          "paragraphs": [
+            "La maintenance doit cohabiter avec l’occupation, la lingerie et les repas. L’édition prévue réunirait prévention et contrôles de préparation pour coordonner les moments d’intervention. Une unité de chambre et un séchoir professionnel nécessitent des plans fondés sur leurs documents et leur usage, pas une liste générique copiée. Des suggestions vérifiables pourraient aider à préparer une ébauche depuis le contexte fourni ; le personnel compétent confirmerait les choix. Programmer n’est qu’une partie du travail : une personne doit suivre la tâche, et le dossier doit distinguer projets et interventions réalisées."
+          ]
+        },
+        {
+          "title": "Gardez le récit de la réparation après le départ du client",
+          "paragraphs": [
+            "Après l’intervention sur la climatisation, la fiche prévue décrirait évaluation et travaux, joindrait rapport ou facture et garderait les recommandations ouvertes visibles. Si le bruit revient, le prochain technicien aurait un point de départ. Un coût serait relié à l’événement correspondant ; garantie et contrat de service resteraient avec l’équipement plutôt que dans la messagerie d’un employé. Ce dossier faciliterait la coordination, sans certifier la sécurité, autoriser la remise de la chambre ou garantir sa préparation. Ces décisions appartiennent aux personnes et procédures de l’hôtel."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Un historique qui traverse les changements d’équipe",
+            "items": [
+              [
+                "Où",
+                "Unité identifiée et chambre ou zone."
+              ],
+              [
+                "Quoi",
+                "Observation, évaluation et travaux réalisés."
+              ],
+              [
+                "Preuves",
+                "Rapport, facture ou photos pertinentes."
+              ],
+              [
+                "Suite",
+                "Recommandation ouverte et collègue responsable."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Créez une routine pour tout l’hôtel",
+          "paragraphs": [
+            "Commencez par une zone, comme la climatisation ou la lingerie. Convenez des noms, d’un signalement utile et des rôles de signalement, d’intervention et de revue. Rassemblez les manuels et anciens rapports avant de couvrir toutes les chambres. L’expérience Hospitality envisagée relierait ces routines, avec une supervision multi-établissements dans la direction future. L’objectif immédiat n’est pas de compliquer les signalements : c’est fournir au prochain collègue un dossier utilisable sans tout raconter à nouveau. AssetFlow Hospitality est prévu pour ce besoin ; AssetFlow Home est disponible aujourd’hui pour les biens personnels et domestiques."
+          ]
+        }
+      ],
+      "checklistTitle": "Commencez par une zone de l’hôtel",
+      "checklist": [
+        "Nommer chaque bien et sa chambre ou zone.",
+        "Rassembler manuels, contrats et rapports.",
+        "Convenir du signalement par l’équipe d’étage.",
+        "Définir le suivi technique et la revue du responsable.",
+        "Garder les décisions de préparation dans les procédures de l’hôtel."
+      ],
+      "ctaTitle": "Donnez un historique utile à chaque transmission",
+      "ctaText": ""
+    }
+  ]
+}

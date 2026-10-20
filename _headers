@@ -10,5 +10,8 @@
 /main.js
   Cache-Control: public, max-age=3600
 
+/blog.css
+  Cache-Control: public, max-age=3600
+
 /locales/*
   Cache-Control: public, max-age=3600

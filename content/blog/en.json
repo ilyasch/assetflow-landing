@@ -1,0 +1,607 @@
+{
+  "ui": {
+    "blogs": "Blog",
+    "sectionTitle": "Real life. Clearer next steps.",
+    "sectionLead": "From a missing service record to a whole building of equipment: practical guides to keeping the things you rely on ready for what comes next.",
+    "available": "Available now",
+    "preview": "Coming Soon · Preview",
+    "read": "Read the guide",
+    "example": "Illustrative example · not a product screenshot",
+    "skip": "Skip to content",
+    "back": "All guides",
+    "language": "Article language",
+    "breadcrumb": "Breadcrumb",
+    "contents": "In this guide",
+    "questions": "Questions you might still have",
+    "sources": "Useful sources",
+    "sourceAA": "The AA: understanding vehicle history",
+    "sourceFord": "Ford: find the manual for your vehicle",
+    "sourceNote": "Use the manufacturer’s information for your exact model, engine, year and market. These sources provide background, not a universal service schedule.",
+    "previewNotice": "Edition preview: Business, Fleet and Hospitality are Coming Soon. QR labels and professional team workflows shown here are planned capabilities.",
+    "illustrativeNotice": "An illustrative ownership story, not a customer testimonial. Example records are not mechanical advice.",
+    "related": "Another situation that might sound familiar",
+    "homeCta": "Start with AssetFlow Home",
+    "previewCta": "Explore AssetFlow Home today",
+    "previewCtaNote": "This professional edition is Coming Soon. You can explore the ownership and maintenance approach today with AssetFlow Home for personal and household assets.",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service"
+  },
+  "articles": [
+    {
+      "id": "used-car-no-service-history",
+      "title": "Bought a used car with no service history? Here’s what to do next",
+      "description": "One invoice, an empty service book, and no clear next date? Build a practical starting point for your used car’s maintenance.",
+      "lead": "The seller said it was serviced. You have the keys, one invoice and a question: what actually needs doing next? You cannot recreate missing evidence, but you can turn uncertainty into a clear list of checks and a reliable record from today.",
+      "sections": [
+        {
+          "title": "Start with what you can prove",
+          "paragraphs": [
+            "Imagine buying a used family hatchback. The glovebox contains an old inspection report and a receipt for two tyres. Neither tells you when the engine was last serviced. Before booking work or entering dates in a calendar, collect what you have: invoices, stamped pages, emails, handover documents and photographs. Ask the seller or the workshops named on the paperwork whether they can supply relevant records. A manufacturer or dealer may hold digital entries, but access and coverage vary. Keep an unanswered question visible rather than turning a seller’s recollection into a confirmed service."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "A receipt is evidence. A memory is a question.",
+            "items": [
+              [
+                "What I know",
+                "Tyre invoice: a date, mileage and the work invoiced."
+              ],
+              [
+                "What I need to check",
+                "Last engine service: no supporting record yet."
+              ],
+              [
+                "What I do next",
+                "Ask for records and discuss the gap with a workshop."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Find the right schedule, not a generic interval",
+          "paragraphs": [
+            "There is no single maintenance interval that fits every used car. Find the manufacturer’s information for the exact model, engine, year and market. Note the current mileage and how the car is used. Then take both the schedule and your evidence to a qualified workshop. Explain what is known, what is missing and any symptoms you have noticed. Ask them to assess the car and agree what needs attention. An old invoice does not establish its present condition; a clean-looking car does not prove that scheduled work happened. Do not use an AI-generated checklist to decide whether a vehicle is safe to drive."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "From an unknown history to an agreed starting point",
+            "items": [
+              [
+                "Gather",
+                "Documents, mileage and unanswered questions."
+              ],
+              [
+                "Check",
+                "Exact manufacturer schedule and workshop assessment."
+              ],
+              [
+                "Agree",
+                "Work to do now and the next review."
+              ],
+              [
+                "Record",
+                "Dated evidence of what was actually completed."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Ask the workshop for a usable record",
+          "paragraphs": [
+            "A useful appointment ends with more than “all sorted.” Request an itemized description of completed work, the date and mileage, and any recommendations that remain open. Keep proposed work separate from completed work. If a part is inspected rather than replaced, record that distinction. Ask which next tasks are based on time, distance or the manufacturer’s guidance, and which need another assessment. You now have a documented starting point without pretending the earlier years are complete. That clarity also helps the next person in your household understand the car without having to reconstruct your conversation with the technician."
+          ]
+        },
+        {
+          "title": "Give the evidence one home",
+          "paragraphs": [
+            "In AssetFlow Home, add the car and attach the records you have gathered. Keep the manual and policy documents with the asset; keep a service invoice or photograph with the event it supports. Use the known context to request a smart maintenance draft, then review its suggestions against manufacturer guidance and the workshop’s advice before confirming tasks. Set reminders for the dates you have agreed. Record completed work and costs as it happens. When you ask questions about your documents, check the supporting evidence: the app can organize and help explain supplied information, but cannot discover an unrecorded repair."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "The record you can start building today",
+            "items": [
+              [
+                "Asset",
+                "Family hatchback · exact vehicle details."
+              ],
+              [
+                "Completed work",
+                "Workshop report + invoice + recorded mileage."
+              ],
+              [
+                "Next action",
+                "Confirmed task with a date and responsible person."
+              ],
+              [
+                "Still unknown",
+                "Earlier work without supporting evidence."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Make the next handover easier",
+          "paragraphs": [
+            "The practical win is not a magically restored service history. It is being able to answer the next question with a record instead of a guess. A household member can see what was completed, find the invoice and understand what is due next. Before a future appointment, review your open questions and bring the latest documents. Before selling the car, you can gather the evidence created during your ownership without promising that it covers the years before you bought it. Start small: one vehicle, one folder of evidence and one confirmed next action are more useful than a long list of uncertain dates."
+          ]
+        }
+      ],
+      "checklistTitle": "Take this checklist to the workshop",
+      "checklist": [
+        "Exact model, engine, year, current mileage and usage.",
+        "Available invoices, inspection reports and digital entries.",
+        "A separate list of missing or uncertain maintenance records.",
+        "Questions about immediate work and the next service basis.",
+        "A request for dated, itemized evidence after the appointment."
+      ],
+      "faq": [
+        [
+          "Can I recover missing service records?",
+          "Sometimes the seller, a previous servicing workshop or a manufacturer’s digital system can help. Availability and access vary; do not assume the record will be complete."
+        ],
+        [
+          "Does a vehicle history check include every service?",
+          "Do not treat a vehicle history report as a complete maintenance record. Check what the provider actually includes and examine service documents separately."
+        ],
+        [
+          "Can AssetFlow tell whether the car is mechanically safe?",
+          "No. AssetFlow helps organize records and review maintenance tasks. A qualified professional must assess the vehicle’s condition."
+        ]
+      ],
+      "ctaTitle": "Start your next chapter with a clearer record",
+      "ctaText": "Add your car, collect the evidence you have, and confirm one useful next step."
+    },
+    {
+      "id": "family-car-maintenance",
+      "title": "Your family car: know what needs attention before the next journey",
+      "description": "A practical ownership story: turn scattered car documents and “did we do that?” conversations into a shared maintenance plan.",
+      "lead": "You rely on the car for school runs, shopping and weekends away. But its manual is in the glovebox, the insurance is in an inbox, and only one person remembers the last service. A maintenance plan starts by bringing those pieces together.",
+      "sections": [
+        {
+          "title": "Start with the car you actually own",
+          "paragraphs": [
+            "Picture a household preparing for a summer trip. One person thinks the car was serviced recently; another remembers buying tyres but cannot find the invoice. Add the vehicle to AssetFlow Home with the details you know. Attach the purchase receipt, manual and available service records. Keep warranty, insurance and service-contract documents with the car rather than in a general folder. An accurate asset record gives every later question a starting point: which vehicle, which evidence and which dates? You do not need to document everything in an evening. Start with the car and the papers that will matter at the next appointment."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "One car, connected information",
+            "items": [
+              [
+                "Vehicle",
+                "Model, year and ownership details."
+              ],
+              [
+                "Documents",
+                "Manual, purchase receipt, warranty and insurance."
+              ],
+              [
+                "History",
+                "Completed services, evidence and costs."
+              ],
+              [
+                "Plan",
+                "Confirmed tasks, dates and responsibility."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Turn context into a plan you approve",
+          "paragraphs": [
+            "Ask for a smart maintenance draft using the vehicle context and documents you have supplied. The value is a structured starting point, not an instruction to accept every suggestion. Compare the draft with the manufacturer’s schedule for your exact vehicle and any advice from the workshop. Adjust tasks and dates before confirming them. Separate a proposed inspection from a completed repair. If the evidence is incomplete, keep the question open. This review step matters because a neat plan built on the wrong assumptions is still the wrong plan. You decide which suggestions become work that your household follows."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "A suggestion becomes a task only after your review",
+            "items": [
+              [
+                "Context",
+                "Vehicle details and supporting documents."
+              ],
+              [
+                "Draft",
+                "AI suggests a maintenance starting point."
+              ],
+              [
+                "Review",
+                "Check, adjust and confirm what fits."
+              ],
+              [
+                "Follow up",
+                "Track the task and record the outcome."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Share the responsibility, not just the reminder",
+          "paragraphs": [
+            "A calendar entry reading “car” does not tell the other person what to do. Use clear tasks and assignments so the household knows what is due and who is handling it. A member can check the shared history instead of asking whether you already called the garage. Reminders keep confirmed dates visible; calendar export lets you bring scheduled work into a calendar you use. Connected-calendar synchronization is planned, so treat an exported calendar file as a snapshot rather than a live connection. Household collaboration depends on your plan’s member allowance. Start with one shared responsibility, such as arranging the next agreed service."
+          ]
+        },
+        {
+          "title": "Keep the proof when the work is done",
+          "paragraphs": [
+            "After the appointment, record the completed work and its cost. Attach the invoice, service report or useful photographs to the event they support. Keep the asset’s manual and insurance documents distinct from evidence of a specific repair. At the next appointment, you can find both the overall vehicle documents and the work already recorded. Insurance and warranty information also belong in this ownership picture: keep relevant documents and dates accessible and review what needs updating. A service cost is a recorded expense, not a forecast of every future bill. The record becomes useful because it reflects actual events rather than a list that nobody updates."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "A completed service tells a useful story",
+            "items": [
+              [
+                "What happened",
+                "Service completed by the workshop."
+              ],
+              [
+                "Evidence",
+                "Itemized invoice and service report."
+              ],
+              [
+                "Cost",
+                "The actual amount recorded for this event."
+              ],
+              [
+                "Next step",
+                "Review the workshop’s next recommendation."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Use your history to answer the next question",
+          "paragraphs": [
+            "Before the summer trip, ask what your documents say about the most recent service and review the supporting records. Use the knowledge base to locate details and prepare questions, rather than assuming that an absent document means work was never needed. The household now has a repeatable loop: add context, review a draft, confirm tasks, record completion and learn from the history. It can extend to another household asset without changing that habit. AssetFlow does not replace a technician or make maintenance decisions for you. It helps you arrive at the next decision with the documents, context and shared understanding you previously had to search for."
+          ]
+        }
+      ],
+      "checklistTitle": "Your first useful ownership loop",
+      "checklist": [
+        "Add the car and its most useful documents.",
+        "Review an AI draft against reliable vehicle guidance.",
+        "Confirm a task, date and responsible household member.",
+        "Record completed work, cost and evidence.",
+        "Review the history before the next appointment."
+      ],
+      "ctaTitle": "Make your next car conversation easier",
+      "ctaText": "Start with your vehicle, the documents you have, and one confirmed maintenance task."
+    },
+    {
+      "id": "factory-maintenance",
+      "title": "Keep production moving with a clearer maintenance plan",
+      "description": "A food-production factory shows why equipment records, QR access and clear maintenance handovers belong in the same workflow.",
+      "lead": "A mixer stops halfway through a batch. The operator reports it in a message, the technician looks for the manual, and the production manager asks when it can run again. The problem is not just the machine: it is the information scattered around it. This is a preview of AssetFlow Business.",
+      "sections": [
+        {
+          "title": "Give every machine an identifiable place",
+          "paragraphs": [
+            "Consider a small food-production factory with mixing, baking, conveying and packing equipment. A description such as “the large mixer” becomes ambiguous across shifts or production areas. The planned Business workflow gives each asset a recognizable record with its location, documentation and maintenance history. Teams would connect the correct machine to the correct task before work begins. Manuals, supplier details and previous reports would stay with that record. This is an illustrative operating model, not a claim that the edition is available today. The goal is straightforward: the person looking at a machine should be able to find the information that actually belongs to it."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "A production area becomes a navigable asset map",
+            "items": [
+              [
+                "Preparation",
+                "Mixer · manual and service records."
+              ],
+              [
+                "Baking",
+                "Oven · planned maintenance and reports."
+              ],
+              [
+                "Transfer",
+                "Conveyor · checks and open tasks."
+              ],
+              [
+                "Packing",
+                "Packaging machine · evidence and history."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Use a QR label to reach the right record",
+          "paragraphs": [
+            "In the proposed workflow, AssetFlow would generate a QR label linked to a machine. An authorized operator could scan it to reach the right asset rather than search a list or retype an equipment name. An operator’s check, a technician’s update and a manager’s review would relate to the same record, with access governed by the professional role model. The label would be an entry point, not a replacement for authorization or a machine-control interface. The scan-to-record sequence below illustrates that planned capability; it is not a working product QR label or a demonstration of live functionality."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "One machine, several responsibilities",
+            "items": [
+              [
+                "QR label",
+                "Identify the machine and open its record."
+              ],
+              [
+                "Operator",
+                "Record the observation or required check."
+              ],
+              [
+                "Technician",
+                "Follow up and document the work."
+              ],
+              [
+                "Manager",
+                "Review progress, responsibility and history."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Plan around the equipment and the working day",
+          "paragraphs": [
+            "A maintenance plan should reflect the manufacturer’s requirements, usage and the people who can do the work. For a factory, it must also fit the production day. The intended Business experience would bring recurring work and responsibilities into a shared picture so a manager can discuss timing before a task becomes urgent. Reviewable AI drafts would provide a starting point when sufficient context is available; the team would still confirm the plan. An illustrative task such as reviewing a mixer’s inspection requirements needs its own evidence and agreed timing. It should not inherit a generic interval just because another machine has a similar name."
+          ]
+        },
+        {
+          "title": "Close the task with evidence, not a vague message",
+          "paragraphs": [
+            "Imagine the technician identifies and resolves the mixer issue. A short message saying “fixed” leaves the next shift with questions. The intended record would describe what was checked, what work was completed, who recorded it and which documents support the update. Any unresolved recommendation would remain distinguishable from completed work. A manager could review the history when a similar problem returns, rather than scroll through personal messages. That history supports a better handover; it does not by itself certify the equipment, establish regulatory compliance or authorize a restart. Those operational decisions remain subject to the factory’s qualified people and procedures."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "A useful maintenance handover",
+            "items": [
+              [
+                "Observation",
+                "Mixer issue reported against the identified asset."
+              ],
+              [
+                "Work",
+                "Technician records the intervention and evidence."
+              ],
+              [
+                "Open question",
+                "Any further check remains visible."
+              ],
+              [
+                "Review",
+                "Responsible team follows its own return-to-use procedure."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Make the history useful beyond this shift",
+          "paragraphs": [
+            "The longer-term benefit is a record that stays with the equipment as people and shifts change. Repeated issues become easier to discuss when the team can compare observations and previous interventions. Managers can see the intended next work alongside what was recorded, and technicians can prepare using the right documentation. Start by mapping one production area, agreeing recognizable asset names and defining who reports, performs and reviews each kind of work. Those habits matter before any software rollout. AssetFlow Business is being shaped around that connected workflow, with QR access and professional team roles planned rather than currently available for general use."
+          ]
+        }
+      ],
+      "checklistTitle": "Prepare one production area for a clearer handover",
+      "checklist": [
+        "List machines with names and locations the whole team recognizes.",
+        "Gather manuals, service reports and open questions.",
+        "Define operator, technician and manager responsibilities.",
+        "Agree what evidence closes a maintenance task.",
+        "Keep return-to-use decisions within qualified procedures."
+      ],
+      "ctaTitle": "A clearer equipment story starts with one asset",
+      "ctaText": ""
+    },
+    {
+      "id": "fleet-maintenance",
+      "title": "Many cars, one clear maintenance picture",
+      "description": "Follow a car-rental team coordinating vehicle checks, service records and handovers without losing track of individual cars.",
+      "lead": "A returning car has a driver’s note, another has a service appointment, and a third is missing its latest invoice. A list of registration numbers cannot explain all three. Here is how a connected vehicle-maintenance workflow could help, in a preview of AssetFlow Fleet.",
+      "sections": [
+        {
+          "title": "See the individual vehicle behind the fleet",
+          "paragraphs": [
+            "Imagine a car-rental branch preparing for a busy weekend. Cars arrive with different mileage, service histories and open observations. The intended Fleet workflow would organize each vehicle’s documents, maintenance requirements and recorded work in its own asset history. A manager would begin with the specific car rather than a generic fleet reminder. This makes an important distinction visible: a vehicle with a future service appointment is different from one with an unresolved observation. The example below uses illustrative situations, not live availability states. The Fleet edition is Coming Soon, and its professional vehicle workflows are presented here as a preview."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Three vehicles, three different next actions",
+            "items": [
+              [
+                "Vehicle A",
+                "Service appointment agreed · prepare records."
+              ],
+              [
+                "Vehicle B",
+                "Driver observation recorded · needs assessment."
+              ],
+              [
+                "Vehicle C",
+                "Recent service completed · attach the invoice."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Connect the driver’s observation to the right car",
+          "paragraphs": [
+            "The proposed QR workflow would let authorized staff open the identified vehicle record from a generated label. A driver or receiving team member could record an observation in context, with supporting evidence when appropriate. A technician would follow up against the same asset, and a manager would review the responsibility and progress. Scanning a label would not diagnose a fault, confirm roadworthiness or make a car ready for rental. Those decisions require the appropriate people and operating procedures. The useful change is that each handover would retain the vehicle identity and the original observation instead of depending on a chain of messages."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "A handover that keeps the vehicle in context",
+            "items": [
+              [
+                "Identify",
+                "QR entry to the correct vehicle record."
+              ],
+              [
+                "Observe",
+                "Driver or receiving staff records the issue."
+              ],
+              [
+                "Follow up",
+                "Technician documents assessment and work."
+              ],
+              [
+                "Review",
+                "Manager follows the operational release procedure."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Plan for time and usage together",
+          "paragraphs": [
+            "Fleet maintenance is rarely just a date on a calendar. The intended edition would support scheduled servicing and mileage-based intervals, with engine-hour tracking relevant to suitable equipment fleets. Teams would still choose requirements from the exact vehicle’s manufacturer guidance and operating context. A planner should know which reading was recorded, when it was recorded and what still needs confirmation. This article does not imply live telematics, automatic odometer feeds or predictive diagnosis. A clear usage record and a reviewed next task are more useful than an apparently precise deadline built on stale mileage. Review planning alongside actual operational availability."
+          ]
+        },
+        {
+          "title": "Keep the service record with the vehicle",
+          "paragraphs": [
+            "When a car returns from the workshop, the intended workflow would connect the completed intervention, its cost and supporting invoice to the right vehicle. Insurance and other ownership documents would remain accessible alongside the history rather than disappear into a branch inbox. A technician’s recommendation for future work should remain distinct from work already completed. The manager reviewing a recurring observation could then follow the supporting record, including gaps. This helps coordinate the fleet’s information; it does not provide a compliance certificate or replace vehicle inspections. If a document is missing, keep that absence visible and assign a follow-up instead of assuming the service is fully documented."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "What the next colleague needs to see",
+            "items": [
+              [
+                "Vehicle",
+                "Unambiguous asset identity and usage context."
+              ],
+              [
+                "Completed",
+                "Dated work, cost and workshop evidence."
+              ],
+              [
+                "Outstanding",
+                "Missing document or further assessment."
+              ],
+              [
+                "Responsible",
+                "Who follows up and what happens next."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Start with a repeatable branch routine",
+          "paragraphs": [
+            "The best starting point is a routine that every shift understands: identify the car, record the observation, agree the next action and retain the outcome. Define who can report an issue, who performs or records technical work and who makes the operational decision. Gather the documents needed for the next appointment before the keys leave the branch. As the fleet grows, that shared record can reduce the effort of reconstructing context at each handover without promising a particular financial outcome. AssetFlow Fleet is planned to connect those responsibilities around the vehicle. Today, AssetFlow Home offers the ownership approach for personal and household assets."
+          ]
+        }
+      ],
+      "checklistTitle": "A clearer vehicle handover checklist",
+      "checklist": [
+        "Identify the vehicle and record current usage context.",
+        "Separate routine servicing from unresolved observations.",
+        "Name the person responsible for the next action.",
+        "Attach the completed work record and invoice.",
+        "Apply qualified checks before operational release."
+      ],
+      "ctaTitle": "Keep the next vehicle decision in context",
+      "ctaText": ""
+    },
+    {
+      "id": "hotel-maintenance",
+      "title": "Keep hotel maintenance behind the scenes",
+      "description": "A hotel example connects room equipment, housekeeping reports and technician handovers to a clearer maintenance history.",
+      "lead": "A guest reports noisy air conditioning. Housekeeping passes the message on, reception asks for an update, and the technician needs to know which unit was repaired last time. The asset record should connect those questions. This story previews AssetFlow Hospitality.",
+      "sections": [
+        {
+          "title": "Organize the equipment around its real location",
+          "paragraphs": [
+            "Consider a hotel with guest-room air conditioning, a busy laundry, kitchen equipment and systems in shared areas. “The air conditioner” is not a useful identity when dozens of rooms have similar units. The intended Hospitality workflow would associate equipment with recognizable locations and retain its documents and history. Staff could distinguish a room unit from an appliance in the kitchen or a machine in the laundry before reporting work. The asset map below is an illustrative explanation, not an existing hotel customer or a shipped application screen. AssetFlow Hospitality is Coming Soon; room-level and professional team workflows remain planned capabilities."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "The hotel, seen through its equipment",
+            "items": [
+              [
+                "Guest rooms",
+                "Room-specific air-conditioning units."
+              ],
+              [
+                "Laundry",
+                "Washers and dryers with separate histories."
+              ],
+              [
+                "Kitchen",
+                "Ovens, refrigeration and supporting records."
+              ],
+              [
+                "Shared spaces",
+                "Equipment located where the team can identify it."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Make the first report useful to the next person",
+          "paragraphs": [
+            "In the proposed workflow, an authorized housekeeping team member would scan a generated QR label to open the correct asset record. An observation such as “unusual noise during use” could then stay connected to that unit and location. A technician would see the context and record the follow-up; a manager could review outstanding work and responsibility. The QR label would help identify the record, not grant unrestricted access or prove that a problem is resolved. A useful report describes what was observed without inventing a diagnosis. Urgent issues would still follow the hotel’s established escalation and safety procedures."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "From a room observation to a documented handover",
+            "items": [
+              [
+                "Housekeeping",
+                "Identify the unit and report the observation."
+              ],
+              [
+                "Technician",
+                "Assess and record the intervention."
+              ],
+              [
+                "Manager",
+                "Review open work and responsibility."
+              ],
+              [
+                "Operations",
+                "Apply the hotel’s guest-readiness procedures."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Plan work before the room needs it",
+          "paragraphs": [
+            "Hotel maintenance competes with occupancy, laundry demand and meal service. The intended edition would bring preventive work and guest-readiness checks into a shared maintenance picture so teams can coordinate timing. A room unit and a commercial dryer should have plans based on their own documentation and usage, not a copied generic checklist. Reviewable suggestions could help assemble a starting point from the context supplied, but qualified staff would confirm what is appropriate. Scheduling a task is only one part of the process: someone needs to own the follow-up, and the record needs to distinguish planned work from completed interventions."
+          ]
+        },
+        {
+          "title": "Keep the repair story after the guest checks out",
+          "paragraphs": [
+            "Suppose the technician attends the air-conditioning unit. The intended record would describe the assessment and completed work, attach any useful report or invoice, and leave further recommendations visible. If a similar observation appears next month, the next technician would have a place to begin. A recorded cost could be reviewed with the event it belongs to. Warranty or service-contract documents would stay with the equipment rather than depend on one employee’s inbox. This record would support coordination; it would not itself certify safety, authorize room release or guarantee guest readiness. The hotel’s people and procedures retain those decisions."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "A history that survives a shift change",
+            "items": [
+              [
+                "Where",
+                "The identified unit and its room or area."
+              ],
+              [
+                "What",
+                "Observation, assessment and completed work."
+              ],
+              [
+                "Evidence",
+                "Service report, invoice or relevant photographs."
+              ],
+              [
+                "Next",
+                "Open recommendation and responsible colleague."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Build a routine the whole hotel can follow",
+          "paragraphs": [
+            "Start with one area, such as guest-room air conditioning or the laundry. Agree how assets are named, what makes a useful report, and which team members report, perform and review work. Gather manuals and previous reports before expanding to every room. The intended Hospitality experience would help connect those routines, with multi-property oversight part of the future edition’s direction. The immediate goal is not a more complicated reporting system; it is a record that the next colleague can use without retelling the story. AssetFlow Hospitality is planned around that need, while AssetFlow Home is available today for personal and household ownership."
+          ]
+        }
+      ],
+      "checklistTitle": "Start with one hotel area",
+      "checklist": [
+        "Name each asset and its room or working area.",
+        "Collect manuals, service contracts and previous reports.",
+        "Agree how housekeeping reports observations.",
+        "Define technician follow-up and manager review.",
+        "Keep guest-readiness decisions within hotel procedures."
+      ],
+      "ctaTitle": "Give every maintenance handover a useful history",
+      "ctaText": ""
+    }
+  ]
+}

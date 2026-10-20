@@ -16,19 +16,22 @@ def publish(path, data=None):
     return '/static/' + name
 
 
-html = (root / 'index.html').read_text()
+pages = {path: path.read_text() for path in root.rglob('*.html')}
 css = (root / 'styles.css').read_text()
 assets = sorted((root / 'assets').glob('assetflow-wordmark*.webp'))
 assets += sorted((root / 'assets/fonts').glob('*.woff2'))
 for path in assets:
     old = path.relative_to(root).as_posix()
     new = publish(path)
-    html = html.replace(old, new)
+    pages = {path: text.replace('/' + old, new).replace(old, new) for path, text in pages.items()}
     css = css.replace(old, new)
 
 css_url = publish(root / 'styles.css', css.encode())
 js_url = publish(root / 'main.js')
-html = re.sub(r'styles\.css\?v=\d+', css_url, html)
-html = re.sub(r'main\.js\?v=\d+', js_url, html)
-(root / 'index.html').write_text(html)
-print('Content-hashed CSS, JavaScript, fonts and logo images published.')
+blog_url = publish(root / 'blog.css')
+for path, text in pages.items():
+    text = re.sub(r'/?styles\.css\?v=\d+', css_url, text)
+    text = re.sub(r'/?main\.js\?v=\d+', js_url, text)
+    text = re.sub(r'/?blog\.css\?v=\d+', blog_url, text)
+    path.write_text(text)
+print('Content-hashed CSS, JavaScript, fonts and logos published across all HTML pages.')

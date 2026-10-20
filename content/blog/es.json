@@ -1,0 +1,607 @@
+{
+  "ui": {
+    "blogs": "Blog",
+    "sectionTitle": "Situaciones reales. Próximos pasos más claros.",
+    "sectionLead": "Desde un historial de mantenimiento perdido hasta un edificio lleno de equipos: guías prácticas para cuidar aquello de lo que dependes.",
+    "available": "Disponible ahora",
+    "preview": "Próximamente · Vista previa",
+    "read": "Leer la guía",
+    "example": "Ejemplo ilustrativo · no es una captura del producto",
+    "skip": "Ir al contenido",
+    "back": "Todas las guías",
+    "language": "Idioma del artículo",
+    "breadcrumb": "Ruta de navegación",
+    "contents": "En esta guía",
+    "questions": "Otras preguntas útiles",
+    "sources": "Fuentes útiles",
+    "sourceAA": "The AA: comprender el historial de un vehículo",
+    "sourceFord": "Ford: encuentra el manual de tu vehículo",
+    "sourceNote": "Consulta la información del fabricante para el modelo, motor, año y mercado exactos. Estas fuentes aportan contexto, no un programa de mantenimiento universal.",
+    "previewNotice": "Vista previa: Business, Fleet y Hospitality llegarán próximamente. Las etiquetas QR y los flujos profesionales de equipo mostrados son funciones previstas.",
+    "illustrativeNotice": "Una historia ilustrativa, no el testimonio de un cliente. Los registros de ejemplo no son asesoramiento mecánico.",
+    "related": "Otra situación que quizá reconozcas",
+    "homeCta": "Empieza con AssetFlow Home",
+    "previewCta": "Explora AssetFlow Home hoy",
+    "previewCtaNote": "Esta edición profesional llegará próximamente. Ya puedes explorar este enfoque de organización y mantenimiento con AssetFlow Home, para bienes personales y del hogar.",
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones de servicio"
+  },
+  "articles": [
+    {
+      "id": "used-car-no-service-history",
+      "title": "¿Compraste un coche usado sin historial de mantenimiento? Qué hacer ahora",
+      "description": "¿Una factura, un libro vacío y ninguna próxima fecha? Crea un punto de partida práctico para el mantenimiento de tu coche usado.",
+      "lead": "El vendedor dice que pasó la revisión. Tienes las llaves, una factura y una pregunta: ¿qué necesita realmente el coche? No puedes recrear pruebas ausentes, pero sí convertir las dudas en comprobaciones y empezar hoy un historial fiable.",
+      "sections": [
+        {
+          "title": "Empieza por lo que puedes demostrar",
+          "paragraphs": [
+            "Imagina que compras un compacto familiar usado. En la guantera hay un informe antiguo y una factura de dos neumáticos. Ninguno indica cuándo se hizo el último mantenimiento del motor. Antes de reservar trabajos o poner fechas, reúne facturas, páginas selladas, correos, documentos de entrega y fotos. Pregunta al vendedor o a los talleres citados si conservan más registros. El fabricante o un concesionario podrían tener entradas digitales, pero el acceso y la cobertura varían. Mantén visible la pregunta sin respuesta en vez de convertir el recuerdo del vendedor en un servicio confirmado."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Una factura es una prueba. Un recuerdo es una pregunta.",
+            "items": [
+              [
+                "Lo que sé",
+                "Factura de neumáticos: fecha, kilometraje y trabajo facturado."
+              ],
+              [
+                "Lo que debo comprobar",
+                "Último mantenimiento del motor: sin justificante."
+              ],
+              [
+                "Mi próximo paso",
+                "Pedir registros y consultar la laguna con un taller."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Busca el programa correcto, no un intervalo genérico",
+          "paragraphs": [
+            "No existe un intervalo de mantenimiento válido para todos los coches usados. Busca la información del fabricante para el modelo, motor, año y mercado exactos. Anota kilometraje y uso, y lleva programa y pruebas a un taller cualificado. Explica qué sabes, qué falta y qué síntomas has observado. Pide una evaluación y acuerda las prioridades. Una factura antigua no establece el estado actual; un coche limpio no demuestra que se haya mantenido. No utilices una lista generada por IA para decidir si el vehículo es seguro para circular."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "De un pasado incierto a un punto de partida acordado",
+            "items": [
+              [
+                "Reunir",
+                "Documentos, kilometraje y preguntas abiertas."
+              ],
+              [
+                "Comprobar",
+                "Programa exacto y evaluación del taller."
+              ],
+              [
+                "Acordar",
+                "Trabajo prioritario y siguiente revisión."
+              ],
+              [
+                "Registrar",
+                "Pruebas fechadas de lo realmente realizado."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Pide al taller un registro útil",
+          "paragraphs": [
+            "Una cita útil termina con algo más que «todo arreglado». Solicita un detalle de los trabajos, fecha, kilometraje y recomendaciones pendientes. Separa lo propuesto de lo terminado. Si una pieza se inspeccionó en lugar de sustituirse, registra esa diferencia. Pregunta qué tareas dependen del tiempo, la distancia o las instrucciones del fabricante, y cuáles necesitan otra evaluación. Así tendrás un punto de partida documentado sin fingir que los años anteriores están completos. Los demás miembros del hogar podrán entender el coche sin reconstruir tu conversación con el técnico."
+          ]
+        },
+        {
+          "title": "Dale un lugar a cada prueba",
+          "paragraphs": [
+            "En AssetFlow Home añade el coche y adjunta los documentos reunidos. Conserva manual y pólizas con el bien; vincula la factura o las fotos con el evento correspondiente. Usa el contexto conocido para solicitar un borrador de mantenimiento y contrástalo con el fabricante y el taller antes de confirmar tareas. Programa recordatorios para las fechas acordadas y registra los trabajos y costes reales. Al hacer preguntas sobre documentos, revisa las pruebas: la aplicación organiza y ayuda a comprender la información aportada, pero no puede descubrir una reparación que nunca se registró."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "El historial que puedes empezar hoy",
+            "items": [
+              [
+                "Bien",
+                "Coche familiar · datos exactos del vehículo."
+              ],
+              [
+                "Trabajo completado",
+                "Informe, factura y kilometraje registrado."
+              ],
+              [
+                "Próxima acción",
+                "Tarea confirmada con fecha y responsable."
+              ],
+              [
+                "Aún desconocido",
+                "Trabajos anteriores sin documentación."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Facilita la próxima entrega",
+          "paragraphs": [
+            "El resultado no es un historial recuperado por arte de magia. Es poder responder con un registro en vez de una suposición. Un familiar puede ver lo realizado, encontrar la factura y entender lo siguiente. Antes de otra cita, revisa preguntas abiertas y documentos recientes. Si vendes el coche, reúne las pruebas de tu periodo de propiedad sin afirmar que cubren los años anteriores. Empieza por algo pequeño: un vehículo, una carpeta de pruebas y una próxima acción confirmada son más útiles que una larga lista de fechas inciertas."
+          ]
+        }
+      ],
+      "checklistTitle": "Lleva esta lista al taller",
+      "checklist": [
+        "Modelo, motor, año, kilometraje actual y uso.",
+        "Facturas, informes y registros digitales disponibles.",
+        "Lista separada de información ausente o incierta.",
+        "Preguntas sobre trabajo prioritario y próxima revisión.",
+        "Solicitud de un informe detallado y fechado."
+      ],
+      "faq": [
+        [
+          "¿Puedo recuperar registros de mantenimiento perdidos?",
+          "A veces pueden ayudar el vendedor, un taller anterior o un sistema digital del fabricante. Disponibilidad y acceso varían: no des por hecho que el historial será completo."
+        ],
+        [
+          "¿Un informe del historial incluye todos los servicios?",
+          "No lo trates como un registro completo de mantenimiento. Comprueba qué incluye el proveedor y revisa los documentos de servicio por separado."
+        ],
+        [
+          "¿Puede AssetFlow confirmar la seguridad mecánica?",
+          "No. AssetFlow ayuda a organizar registros y revisar tareas. Un profesional cualificado debe evaluar el estado del vehículo."
+        ]
+      ],
+      "ctaTitle": "Empieza una nueva etapa con un historial más claro",
+      "ctaText": "Añade tu coche, reúne las pruebas disponibles y confirma un próximo paso útil."
+    },
+    {
+      "id": "family-car-maintenance",
+      "title": "Tu coche familiar: qué necesita antes del próximo viaje",
+      "description": "Una historia práctica para convertir papeles dispersos y conversaciones de «¿ya lo hicimos?» en un plan compartido.",
+      "lead": "Colegio, compras y escapadas: cuentas con el coche. Pero el manual está en la guantera, el seguro en un correo y solo una persona recuerda la última revisión. Un plan de mantenimiento empieza reuniendo esas piezas.",
+      "sections": [
+        {
+          "title": "Empieza con el coche que realmente tienes",
+          "paragraphs": [
+            "Una familia prepara un viaje de verano. Alguien cree que la revisión fue reciente; otra persona recuerda los neumáticos, pero no encuentra la factura. Añade el vehículo a AssetFlow Home con los datos conocidos. Adjunta justificante de compra, manual y registros disponibles. Conserva garantía, seguro y contratos de servicio con el coche, no en una carpeta general. Una ficha precisa da contexto a las preguntas siguientes: qué vehículo, qué pruebas y qué fechas. No hace falta documentarlo todo en una tarde. Empieza por lo útil para la próxima cita."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Un coche, información conectada",
+            "items": [
+              [
+                "Vehículo",
+                "Modelo, año y datos de propiedad."
+              ],
+              [
+                "Documentos",
+                "Manual, recibo, garantía y seguro."
+              ],
+              [
+                "Historial",
+                "Trabajos terminados, pruebas y costes."
+              ],
+              [
+                "Plan",
+                "Tareas, fechas y responsables confirmados."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Convierte el contexto en un plan que tú apruebas",
+          "paragraphs": [
+            "Solicita un borrador inteligente con los datos y documentos aportados. Su valor es un punto de partida estructurado, no una orden de aceptar todo. Compara las sugerencias con el programa del fabricante para tu vehículo y los consejos del taller. Ajusta tareas y fechas antes de confirmar. Distingue una inspección propuesta de una reparación realizada. Si faltan pruebas, deja abierta la pregunta. Un plan ordenado basado en suposiciones incorrectas sigue siendo incorrecto. Tú decides qué sugerencias se convierten en trabajo que seguirá tu hogar."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Una sugerencia se convierte en tarea después de revisarla",
+            "items": [
+              [
+                "Contexto",
+                "Datos del vehículo y documentos de apoyo."
+              ],
+              [
+                "Borrador",
+                "La IA propone un punto de partida."
+              ],
+              [
+                "Revisión",
+                "Comprobar, ajustar y confirmar."
+              ],
+              [
+                "Seguimiento",
+                "Seguir la tarea y registrar el resultado."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Comparte la responsabilidad, no solo el recordatorio",
+          "paragraphs": [
+            "Una entrada «coche» en el calendario no explica qué hacer. Usa tareas y asignaciones claras para que se sepa qué vence y quién lo gestiona. Un familiar puede consultar el historial compartido en lugar de preguntar si ya llamaste al taller. Los recordatorios mantienen visibles las fechas confirmadas; la exportación permite llevar las tareas a tu calendario habitual. La sincronización conectada está prevista: un archivo exportado es una instantánea, no una conexión continua. La colaboración depende de los miembros incluidos en tu plan. Empieza por una responsabilidad compartida, como organizar la revisión acordada."
+          ]
+        },
+        {
+          "title": "Conserva las pruebas al terminar",
+          "paragraphs": [
+            "Después de la cita registra el trabajo completado y su coste. Adjunta factura, informe o fotos al evento que respaldan. Distingue manual y seguro de las pruebas de una reparación concreta. En la siguiente cita encontrarás tanto los documentos generales como los trabajos registrados. Seguro y garantía también forman parte de la propiedad: conserva documentos y fechas accesibles y revisa qué actualizar. El coste de una revisión es un gasto registrado, no una previsión de todas las facturas futuras. El historial resulta útil porque refleja eventos reales, no una lista que nadie actualiza."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Una revisión terminada cuenta una historia útil",
+            "items": [
+              [
+                "Qué pasó",
+                "Trabajo completado por el taller."
+              ],
+              [
+                "Pruebas",
+                "Factura detallada e informe de servicio."
+              ],
+              [
+                "Coste",
+                "Importe real registrado para el evento."
+              ],
+              [
+                "Siguiente paso",
+                "Revisar la próxima recomendación del taller."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Usa el historial para la próxima pregunta",
+          "paragraphs": [
+            "Antes del viaje, pregunta qué dicen tus documentos sobre la última revisión y consulta los registros. La base documental ayuda a localizar detalles y preparar preguntas; que falte un documento no demuestra que un trabajo no fuera necesario. El hogar dispone ahora de un ciclo repetible: añadir contexto, revisar borrador, confirmar tareas, registrar y aprender del historial. Puedes extenderlo a otro bien doméstico. AssetFlow no sustituye al técnico ni decide por ti. Te ayuda a llegar a la próxima decisión con documentos, contexto y comprensión compartida que antes tenías que buscar."
+          ]
+        }
+      ],
+      "checklistTitle": "Tu primer ciclo útil de gestión",
+      "checklist": [
+        "Añade el coche y sus documentos importantes.",
+        "Contrasta el borrador IA con indicaciones fiables.",
+        "Confirma tarea, fecha y familiar responsable.",
+        "Registra trabajo, coste y pruebas.",
+        "Revisa el historial antes de la siguiente cita."
+      ],
+      "ctaTitle": "Facilita la próxima conversación sobre el coche",
+      "ctaText": "Empieza con tu vehículo, los documentos disponibles y una tarea de mantenimiento confirmada."
+    },
+    {
+      "id": "factory-maintenance",
+      "title": "Coordina la producción con un plan de mantenimiento más claro",
+      "description": "Una fábrica alimentaria muestra por qué registros, acceso QR y relevos de mantenimiento pertenecen al mismo flujo.",
+      "lead": "Una mezcladora se para a mitad de lote. El operario envía un mensaje, el técnico busca el manual y el responsable pregunta cuándo volverá a funcionar. El problema no es solo la máquina: es la información dispersa. Una vista previa de AssetFlow Business.",
+      "sections": [
+        {
+          "title": "Dale a cada máquina una identidad y un lugar",
+          "paragraphs": [
+            "Piensa en una fábrica alimentaria con mezcladoras, hornos, cintas y envasadoras. «La mezcladora grande» resulta ambiguo entre turnos o zonas. El flujo Business previsto daría a cada equipo una ficha reconocible con ubicación, documentos e historial. El equipo relacionaría la máquina correcta con la tarea correcta antes de empezar. Manuales, datos del proveedor e informes anteriores permanecerían con la ficha. Es un modelo ilustrativo, no una afirmación de disponibilidad actual. El objetivo es sencillo: quien está delante de una máquina debería encontrar la información que le corresponde."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Una zona de producción se convierte en un mapa de activos",
+            "items": [
+              [
+                "Preparación",
+                "Mezcladora · manual e informes."
+              ],
+              [
+                "Horneado",
+                "Horno · mantenimiento previsto y registros."
+              ],
+              [
+                "Traslado",
+                "Cinta · comprobaciones y tareas pendientes."
+              ],
+              [
+                "Envasado",
+                "Envasadora · pruebas e historial."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Usa una etiqueta QR para llegar al registro correcto",
+          "paragraphs": [
+            "En el flujo propuesto, AssetFlow generaría una etiqueta QR vinculada a la máquina. Un operario autorizado podría escanearla para llegar a la ficha exacta sin buscar en listas ni escribir nombres. Comprobaciones del operario, actualizaciones del técnico y revisión del responsable se referirían al mismo equipo, con acceso regido por roles profesionales. La etiqueta sería una entrada al registro, no un sustituto de la autorización ni un control de la máquina. Esta secuencia explica una capacidad prevista: no es un QR operativo ni una demostración de funciones disponibles."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Una máquina, varias responsabilidades",
+            "items": [
+              [
+                "Etiqueta QR",
+                "Identificar la máquina y abrir su ficha."
+              ],
+              [
+                "Operario",
+                "Registrar observación o comprobación."
+              ],
+              [
+                "Técnico",
+                "Dar seguimiento y documentar el trabajo."
+              ],
+              [
+                "Responsable",
+                "Revisar progreso, responsabilidad e historial."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Planifica según el equipo y la jornada",
+          "paragraphs": [
+            "Un plan debe reflejar requisitos del fabricante, uso y personas capacitadas. En una fábrica también debe encajar en la producción. La experiencia Business prevista reuniría trabajos recurrentes y responsabilidades para acordar tiempos antes de una urgencia. Los borradores IA revisables ofrecerían un punto de partida cuando haya contexto suficiente; el equipo confirmaría el plan. Revisar los requisitos de inspección de una mezcladora exige sus propias pruebas y plazos acordados. No debería heredar un intervalo genérico porque otra máquina tenga un nombre parecido."
+          ]
+        },
+        {
+          "title": "Cierra con pruebas, no con un mensaje impreciso",
+          "paragraphs": [
+            "Imagina que el técnico resuelve el problema. «Arreglado» deja preguntas al siguiente turno. El registro previsto describiría comprobaciones, trabajos completados, autor de la actualización y documentos de apoyo. Una recomendación pendiente seguiría diferenciándose del trabajo finalizado. El responsable podría consultar el historial si el problema vuelve, sin recorrer mensajes personales. Ese historial facilita el relevo; no certifica el equipo, no establece cumplimiento normativo ni autoriza el arranque. Esas decisiones siguen sujetas a las personas cualificadas y los procedimientos de la fábrica."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Un relevo de mantenimiento útil",
+            "items": [
+              [
+                "Observación",
+                "Problema asociado al equipo identificado."
+              ],
+              [
+                "Trabajo",
+                "El técnico registra intervención y pruebas."
+              ],
+              [
+                "Pregunta abierta",
+                "Las comprobaciones adicionales siguen visibles."
+              ],
+              [
+                "Revisión",
+                "El equipo aplica su procedimiento de retorno al uso."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Haz útil el historial más allá del turno",
+          "paragraphs": [
+            "La ventaja duradera es un registro que permanece con el equipo cuando cambian personas y turnos. Comparar observaciones e intervenciones facilita hablar de problemas recurrentes. Los responsables pueden ver el siguiente trabajo junto al realizado, y los técnicos prepararse con los documentos adecuados. Empieza por una zona, nombres reconocibles y responsables de informar, intervenir y revisar. Esas prácticas importan antes de implantar software. AssetFlow Business se está diseñando en torno a este flujo conectado, con acceso QR y roles profesionales previstos, todavía no disponibles para uso general."
+          ]
+        }
+      ],
+      "checklistTitle": "Prepara una zona para un relevo más claro",
+      "checklist": [
+        "Enumera máquinas con nombres y ubicaciones reconocibles.",
+        "Reúne manuales, informes y preguntas abiertas.",
+        "Define responsabilidades de operarios, técnicos y responsables.",
+        "Acuerda qué pruebas cierran una tarea.",
+        "Mantén el retorno al uso dentro de procedimientos cualificados."
+      ],
+      "ctaTitle": "Una historia más clara empieza por un equipo",
+      "ctaText": ""
+    },
+    {
+      "id": "fleet-maintenance",
+      "title": "Muchos coches, una visión clara del mantenimiento",
+      "description": "Un equipo de alquiler coordina controles, servicios y relevos sin perder el contexto de cada vehículo.",
+      "lead": "Un coche vuelve con una observación, otro tiene cita y a un tercero le falta la factura. Una lista de matrículas no explica esas diferencias. Así sería el flujo conectado previsto para AssetFlow Fleet.",
+      "sections": [
+        {
+          "title": "Ve el vehículo individual detrás de la flota",
+          "paragraphs": [
+            "Imagina una sucursal antes de un fin de semana intenso. Los coches tienen kilometrajes, historiales y observaciones distintos. El flujo Fleet previsto organizaría documentos, requisitos e intervenciones en la historia de cada vehículo. El responsable empezaría por el coche concreto y no por un recordatorio genérico. Aparece una distinción importante: una cita futura no es lo mismo que una observación sin resolver. Los casos siguientes son ilustrativos, no estados operativos en tiempo real. Fleet llegará próximamente y los flujos profesionales se presentan como vista previa."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Tres vehículos, tres próximas acciones",
+            "items": [
+              [
+                "Vehículo A",
+                "Cita acordada · preparar documentos."
+              ],
+              [
+                "Vehículo B",
+                "Observación registrada · necesita evaluación."
+              ],
+              [
+                "Vehículo C",
+                "Servicio completado · adjuntar factura."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Vincula la observación con el coche correcto",
+          "paragraphs": [
+            "El QR propuesto permitiría al personal autorizado abrir la ficha del vehículo identificado. El conductor o el personal de recepción podría registrar una observación con contexto y pruebas cuando proceda. El técnico seguiría el mismo activo y el responsable revisaría asignación y progreso. Escanear no diagnosticaría averías, confirmaría aptitud para circular ni dejaría el coche listo para alquilar. Esas decisiones requieren personas y procedimientos adecuados. El cambio útil sería mantener identidad y observación original en cada relevo en lugar de depender de una cadena de mensajes."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Un relevo que conserva el contexto",
+            "items": [
+              [
+                "Identificar",
+                "Entrada QR a la ficha correcta."
+              ],
+              [
+                "Observar",
+                "El personal registra el problema."
+              ],
+              [
+                "Intervenir",
+                "El técnico documenta evaluación y trabajo."
+              ],
+              [
+                "Revisar",
+                "El responsable aplica el procedimiento operativo."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Planifica con tiempo y uso a la vez",
+          "paragraphs": [
+            "El mantenimiento de flota rara vez es solo una fecha. La edición prevista contemplaría servicios programados e intervalos por kilometraje, con horas de motor relevantes para flotas de equipos adecuados. El equipo elegiría los requisitos según fabricante y uso del vehículo exacto. Quien planifica debe conocer qué lectura se registró, cuándo y qué falta confirmar. Este artículo no implica telemática, lecturas automáticas del cuentakilómetros ni diagnóstico predictivo. Un dato claro y una tarea revisada valen más que un plazo aparentemente preciso basado en kilometraje antiguo. Considera también la disponibilidad operativa real."
+          ]
+        },
+        {
+          "title": "Conserva el registro con el vehículo",
+          "paragraphs": [
+            "Al volver del taller, el flujo previsto vincularía intervención, coste y factura al coche correcto. Seguro y documentos permanecerían accesibles con el historial, no perdidos en el correo de la sucursal. Una recomendación futura debe distinguirse del trabajo completado. El responsable que revise un problema recurrente podría seguir las pruebas y sus lagunas. Esto coordina información; no ofrece certificados de cumplimiento ni sustituye inspecciones. Si falta un documento, mantén visible la ausencia y asigna seguimiento en lugar de asumir que todo está documentado."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Lo que necesita el siguiente compañero",
+            "items": [
+              [
+                "Vehículo",
+                "Identidad inequívoca y contexto de uso."
+              ],
+              [
+                "Completado",
+                "Trabajo fechado, coste y pruebas."
+              ],
+              [
+                "Pendiente",
+                "Documento ausente o nueva evaluación."
+              ],
+              [
+                "Responsable",
+                "Quién continúa y cuál es el siguiente paso."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Empieza con una rutina repetible en la sucursal",
+          "paragraphs": [
+            "Establece una rutina que comprenda cada turno: identificar, registrar, acordar la acción y conservar el resultado. Define quién informa, quién realiza o registra trabajos técnicos y quién toma la decisión operativa. Reúne los documentos antes de que salgan las llaves. Al crecer la flota, un historial compartido puede reducir el esfuerzo de reconstruir contexto sin prometer resultados económicos concretos. AssetFlow Fleet está previsto para conectar responsabilidades alrededor del vehículo. Hoy AssetFlow Home ofrece este enfoque para bienes personales y domésticos."
+          ]
+        }
+      ],
+      "checklistTitle": "Una lista para entregar vehículos con claridad",
+      "checklist": [
+        "Identifica el vehículo y su contexto de uso actual.",
+        "Separa servicio rutinario y observaciones sin resolver.",
+        "Nombra al responsable de la próxima acción.",
+        "Adjunta informe del trabajo y factura.",
+        "Aplica controles cualificados antes de la salida operativa."
+      ],
+      "ctaTitle": "Conserva el contexto de la próxima decisión",
+      "ctaText": ""
+    },
+    {
+      "id": "hotel-maintenance",
+      "title": "El mantenimiento del hotel, sin perder el hilo",
+      "description": "Un hotel conecta equipos de habitaciones, avisos y relevos técnicos con un historial más claro.",
+      "lead": "Un huésped informa de ruido en el aire acondicionado. Pisos transmite el aviso, recepción espera respuesta y el técnico necesita saber qué unidad se reparó antes. La ficha del activo debería conectar esas preguntas. Una vista previa de AssetFlow Hospitality.",
+      "sections": [
+        {
+          "title": "Organiza los equipos según su ubicación real",
+          "paragraphs": [
+            "Piensa en un hotel con aire acondicionado en habitaciones, lavandería, cocina y equipos en zonas comunes. «El aire acondicionado» no identifica nada si decenas de unidades son similares. El flujo Hospitality previsto asociaría equipos a lugares reconocibles y conservaría documentos e historial. El personal distinguiría una unidad de habitación de una máquina de cocina o lavandería antes de informar. El mapa es ilustrativo, no corresponde a un cliente real ni a una pantalla disponible. Hospitality llegará próximamente: los flujos por habitación y los roles profesionales son capacidades previstas."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "El hotel visto a través de sus equipos",
+            "items": [
+              [
+                "Habitaciones",
+                "Unidades identificadas por habitación."
+              ],
+              [
+                "Lavandería",
+                "Lavadoras y secadoras con historiales separados."
+              ],
+              [
+                "Cocina",
+                "Hornos, refrigeración y documentación."
+              ],
+              [
+                "Zonas comunes",
+                "Equipos ubicados de forma reconocible."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Haz útil el primer aviso para la siguiente persona",
+          "paragraphs": [
+            "En el flujo propuesto, una persona autorizada de pisos escanearía una etiqueta QR generada para abrir la ficha correcta. Una observación como «ruido inusual durante el uso» permanecería vinculada a unidad y lugar. El técnico vería el contexto y documentaría la intervención; el responsable revisaría tareas abiertas y responsabilidades. El QR ayudaría a identificar, sin dar acceso ilimitado ni demostrar la resolución. Un aviso útil describe lo observado sin inventar un diagnóstico. Los problemas urgentes seguirían los procedimientos de seguridad y escalado del hotel."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "De la observación al relevo documentado",
+            "items": [
+              [
+                "Pisos",
+                "Identificar la unidad y registrar la observación."
+              ],
+              [
+                "Técnico",
+                "Evaluar y documentar la intervención."
+              ],
+              [
+                "Responsable",
+                "Revisar trabajo abierto y asignación."
+              ],
+              [
+                "Operaciones",
+                "Aplicar los procedimientos de preparación de la habitación."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Planifica antes de que la habitación lo necesite",
+          "paragraphs": [
+            "El mantenimiento convive con ocupación, lavandería y comidas. La edición prevista reuniría prevención y comprobaciones de preparación para coordinar los tiempos. Una unidad de habitación y una secadora industrial necesitan planes propios según documentos y uso, no una lista genérica copiada. Las sugerencias revisables podrían ayudar a crear un borrador con el contexto aportado, pero el personal cualificado confirmaría lo apropiado. Programar es solo una parte: alguien debe hacerse cargo del seguimiento y el registro debe distinguir trabajo previsto e intervención completada."
+          ]
+        },
+        {
+          "title": "Conserva la historia después de la salida del huésped",
+          "paragraphs": [
+            "Tras atender el aire acondicionado, la ficha prevista describiría evaluación y trabajo, adjuntaría informes o facturas y mantendría recomendaciones abiertas. Si el ruido vuelve el mes siguiente, el siguiente técnico tendría un punto de partida. El coste estaría relacionado con su evento; garantía y contrato de servicio permanecerían con el equipo, no en el correo de un empleado. El registro apoyaría la coordinación, pero no certificaría seguridad, autorizaría la entrega de la habitación ni garantizaría que esté lista. Esas decisiones pertenecen a personas y procedimientos del hotel."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Un historial que supera el cambio de turno",
+            "items": [
+              [
+                "Dónde",
+                "Unidad identificada y habitación o zona."
+              ],
+              [
+                "Qué",
+                "Observación, evaluación y trabajo realizado."
+              ],
+              [
+                "Pruebas",
+                "Informe, factura o fotos pertinentes."
+              ],
+              [
+                "Después",
+                "Recomendación abierta y compañero responsable."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Crea una rutina para todo el hotel",
+          "paragraphs": [
+            "Empieza por una zona: climatización o lavandería. Acuerda los nombres, qué hace útil un aviso y quién informa, interviene y revisa. Reúne manuales e informes antes de ampliar a todas las habitaciones. Hospitality pretende conectar esas rutinas, con supervisión de varias propiedades en su dirección futura. El objetivo inmediato no es complicar los avisos: es dejar un registro que el siguiente compañero pueda usar sin escuchar la historia de nuevo. AssetFlow Hospitality está previsto para esa necesidad; AssetFlow Home ya está disponible para bienes personales y del hogar."
+          ]
+        }
+      ],
+      "checklistTitle": "Empieza por una zona del hotel",
+      "checklist": [
+        "Identifica cada activo y su habitación o área.",
+        "Reúne manuales, contratos e informes previos.",
+        "Acuerda cómo pisos registra observaciones.",
+        "Define seguimiento técnico y revisión del responsable.",
+        "Mantén la preparación de habitaciones en los procedimientos del hotel."
+      ],
+      "ctaTitle": "Dale un historial útil a cada relevo",
+      "ctaText": ""
+    }
+  ]
+}

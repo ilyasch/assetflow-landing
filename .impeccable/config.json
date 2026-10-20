@@ -10,5 +10,6 @@
         "reason": "Agent: landing page CSS establishes Inter for body copy with Manrope for display; preserve the existing type system during spacing refinement"
       }
     ]
-  }
+  },
+  "buildPath": "code"
 }

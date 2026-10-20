@@ -1,0 +1,607 @@
+{
+  "ui": {
+    "blogs": "Blog",
+    "sectionTitle": "Situazioni reali. Prossimi passi più chiari.",
+    "sectionLead": "Dallo storico dei tagliandi mancante a un intero edificio di impianti: guide pratiche per prenderti cura di ciò su cui fai affidamento.",
+    "available": "Disponibile ora",
+    "preview": "In arrivo · Anteprima",
+    "read": "Leggi la guida",
+    "example": "Esempio illustrativo · non è una schermata del prodotto",
+    "skip": "Vai al contenuto",
+    "back": "Tutte le guide",
+    "language": "Lingua dell’articolo",
+    "breadcrumb": "Percorso di navigazione",
+    "contents": "In questa guida",
+    "questions": "Altre domande utili",
+    "sources": "Fonti utili",
+    "sourceAA": "The AA: comprendere lo storico di un veicolo",
+    "sourceFord": "Ford: trova il manuale del tuo veicolo",
+    "sourceNote": "Consulta le indicazioni del costruttore per modello, motore, anno e mercato esatti. Queste fonti offrono un contesto, non un programma di manutenzione universale.",
+    "previewNotice": "Anteprima delle edizioni: Business, Fleet e Hospitality sono in arrivo. Le etichette QR e i flussi professionali per i team qui illustrati sono funzionalità pianificate.",
+    "illustrativeNotice": "Una storia di utilizzo illustrativa, non una testimonianza di un cliente. I dati di esempio non sono consigli meccanici.",
+    "related": "Un’altra situazione che potresti riconoscere",
+    "homeCta": "Inizia con AssetFlow Home",
+    "previewCta": "Esplora AssetFlow Home oggi",
+    "previewCtaNote": "Questa edizione professionale è in arrivo. Puoi già esplorare l’approccio alla gestione e alla manutenzione con AssetFlow Home, per beni personali e domestici.",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di servizio"
+  },
+  "articles": [
+    {
+      "id": "used-car-no-service-history",
+      "title": "Auto usata senza storico dei tagliandi? Ecco cosa fare",
+      "description": "Una fattura, un libretto vuoto e nessuna prossima scadenza? Crea un punto di partenza concreto per la manutenzione della tua auto usata.",
+      "lead": "Il venditore dice che è stata tagliandata. Tu hai le chiavi, una fattura e una domanda: che cosa serve davvero fare adesso? Non puoi ricreare prove mancanti, ma puoi trasformare i dubbi in verifiche concrete e costruire uno storico affidabile da oggi.",
+      "sections": [
+        {
+          "title": "Parti da ciò che puoi dimostrare",
+          "paragraphs": [
+            "Immagina di acquistare una berlina usata per la famiglia. Nel vano portaoggetti trovi un vecchio rapporto di controllo e una ricevuta per due pneumatici. Nessuno dei due indica quando sia stato effettuato l’ultimo tagliando del motore. Prima di prenotare lavori o inserire scadenze, raccogli fatture, timbri, email, documenti di consegna e fotografie. Chiedi al venditore o alle officine indicate nei documenti se possono fornire altri riscontri. Il costruttore o la concessionaria potrebbero avere registrazioni digitali, ma accesso e copertura variano. Mantieni visibile ciò che non sai: il ricordo del venditore non equivale a un intervento documentato."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Una ricevuta è una prova. Un ricordo è una domanda.",
+            "items": [
+              [
+                "Cosa so",
+                "Fattura pneumatici: data, chilometraggio e lavoro fatturato."
+              ],
+              [
+                "Cosa devo verificare",
+                "Ultimo tagliando motore: nessun documento disponibile."
+              ],
+              [
+                "Prossimo passo",
+                "Richiedere i documenti e discuterne con un’officina."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Cerca il programma giusto, non un intervallo generico",
+          "paragraphs": [
+            "Non esiste un intervallo valido per tutte le auto usate. Cerca le indicazioni del costruttore per modello, motore, anno e mercato esatti. Annota chilometraggio e utilizzo del veicolo, poi porta programma e documenti a un’officina qualificata. Spiega cosa è noto, cosa manca e quali sintomi hai osservato. Chiedi una valutazione e concorda le priorità. Una vecchia fattura non stabilisce le condizioni attuali; un’auto pulita non dimostra che la manutenzione prevista sia stata eseguita. Non usare una lista generata dall’IA per decidere se il veicolo sia sicuro da guidare."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Dallo storico incerto a un punto di partenza concordato",
+            "items": [
+              [
+                "Raccogli",
+                "Documenti, chilometraggio e domande aperte."
+              ],
+              [
+                "Verifica",
+                "Programma esatto e valutazione dell’officina."
+              ],
+              [
+                "Concorda",
+                "Lavori da fare e prossima verifica."
+              ],
+              [
+                "Registra",
+                "Prove datate degli interventi effettivamente eseguiti."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Chiedi all’officina un resoconto utile",
+          "paragraphs": [
+            "Un appuntamento utile termina con qualcosa di più di «tutto a posto». Richiedi una descrizione dettagliata dei lavori, con data e chilometraggio, e delle raccomandazioni ancora aperte. Separa il lavoro proposto da quello completato. Se un componente è stato controllato anziché sostituito, registra la differenza. Chiedi quali attività dipendono dal tempo, dalla distanza o dalle indicazioni del costruttore e quali richiedono una nuova valutazione. Avrai così un punto di partenza documentato senza fingere che gli anni precedenti siano ricostruiti. Anche gli altri familiari potranno capire la situazione senza dover ricostruire la tua conversazione con il tecnico."
+          ]
+        },
+        {
+          "title": "Dai alle prove un unico posto",
+          "paragraphs": [
+            "In AssetFlow Home aggiungi l’auto e allega i documenti raccolti. Conserva manuale e polizze con il bene; collega fattura e fotografie dell’intervento all’evento corrispondente. Usa il contesto noto per richiedere una bozza di manutenzione, poi confrontala con le indicazioni del costruttore e dell’officina prima di confermare le attività. Imposta promemoria per le date concordate e registra interventi e costi reali. Quando fai domande sui documenti, controlla le prove a supporto: l’app può organizzare e aiutarti a comprendere le informazioni fornite, ma non può scoprire una riparazione mai registrata."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Lo storico che puoi iniziare a costruire oggi",
+            "items": [
+              [
+                "Bene",
+                "Auto di famiglia · dati esatti del veicolo."
+              ],
+              [
+                "Lavoro completato",
+                "Rapporto, fattura e chilometraggio registrato."
+              ],
+              [
+                "Prossima azione",
+                "Attività confermata con data e responsabile."
+              ],
+              [
+                "Ancora sconosciuto",
+                "Interventi precedenti senza documentazione."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Rendi più semplice il prossimo passaggio",
+          "paragraphs": [
+            "Il risultato concreto non è uno storico ricostruito per magia. È poter rispondere alla prossima domanda con un documento anziché con un’ipotesi. Un familiare può vedere il lavoro svolto, trovare la fattura e capire cosa serve fare. Prima di un altro appuntamento, rivedi domande aperte e documenti recenti. Se venderai l’auto, potrai raccogliere le prove del tuo periodo di proprietà senza attribuirle agli anni precedenti. Parti da poco: un veicolo, una raccolta di documenti e una prossima azione confermata sono più utili di un lungo elenco di date incerte."
+          ]
+        }
+      ],
+      "checklistTitle": "Porta questa lista in officina",
+      "checklist": [
+        "Modello, motore, anno, chilometraggio attuale e utilizzo.",
+        "Fatture, rapporti di controllo e registrazioni digitali disponibili.",
+        "Elenco separato dei documenti mancanti o incerti.",
+        "Domande sui lavori prioritari e sul prossimo tagliando.",
+        "Richiesta di un resoconto dettagliato e datato."
+      ],
+      "faq": [
+        [
+          "Posso recuperare i documenti dei tagliandi mancanti?",
+          "A volte il venditore, l’officina precedente o un sistema digitale del costruttore possono aiutare. Accesso e disponibilità variano: non presumere che lo storico sia completo."
+        ],
+        [
+          "Un controllo dello storico include ogni tagliando?",
+          "Non considerare il rapporto sul passato del veicolo come uno storico completo della manutenzione. Verifica cosa include il servizio e controlla separatamente i documenti degli interventi."
+        ],
+        [
+          "AssetFlow può dire se l’auto è meccanicamente sicura?",
+          "No. AssetFlow aiuta a organizzare i documenti e rivedere le attività. Le condizioni del veicolo devono essere valutate da un professionista qualificato."
+        ]
+      ],
+      "ctaTitle": "Inizia un nuovo capitolo con uno storico più chiaro",
+      "ctaText": "Aggiungi l’auto, raccogli le prove disponibili e conferma un prossimo passo utile."
+    },
+    {
+      "id": "family-car-maintenance",
+      "title": "La tua auto di famiglia: sai cosa serve prima del prossimo viaggio",
+      "description": "Una storia concreta: trasforma documenti sparsi e «lo abbiamo già fatto?» in un piano di manutenzione condiviso.",
+      "lead": "Usi l’auto per scuola, spesa e fine settimana. Ma il manuale è nel cruscotto, l’assicurazione in una casella email e una sola persona ricorda l’ultimo tagliando. Un piano di manutenzione comincia riunendo questi pezzi.",
+      "sections": [
+        {
+          "title": "Parti dall’auto che possiedi davvero",
+          "paragraphs": [
+            "Una famiglia prepara un viaggio estivo. Una persona pensa che il tagliando sia recente; un’altra ricorda i pneumatici, ma non trova la fattura. Aggiungi il veicolo in AssetFlow Home con i dati che conosci. Allega ricevuta d’acquisto, manuale e documentazione dei tagliandi. Conserva garanzia, assicurazione e contratti di assistenza con l’auto anziché in una cartella generica. Una scheda accurata dà un punto di partenza alle domande successive: quale veicolo, quali prove, quali date? Non serve documentare tutto in una sera. Inizia dai documenti che saranno utili al prossimo appuntamento."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Un’auto, informazioni collegate",
+            "items": [
+              [
+                "Veicolo",
+                "Modello, anno e dati di proprietà."
+              ],
+              [
+                "Documenti",
+                "Manuale, ricevuta, garanzia e assicurazione."
+              ],
+              [
+                "Storico",
+                "Interventi completati, prove e costi."
+              ],
+              [
+                "Piano",
+                "Attività, date e responsabilità confermate."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Trasforma il contesto in un piano che approvi tu",
+          "paragraphs": [
+            "Richiedi una bozza di manutenzione usando dati del veicolo e documenti forniti. Il valore è un punto di partenza strutturato, non un invito ad accettare ogni suggerimento. Confronta la bozza con il programma del costruttore per il tuo veicolo e con i consigli dell’officina. Modifica attività e date prima di confermarle. Distingui un controllo proposto da una riparazione eseguita. Se mancano prove, lascia aperta la domanda. Un piano ordinato basato su ipotesi sbagliate resta sbagliato: decidi tu quali suggerimenti diventeranno attività da seguire in famiglia."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Un suggerimento diventa attività solo dopo la tua revisione",
+            "items": [
+              [
+                "Contesto",
+                "Dati del veicolo e documenti a supporto."
+              ],
+              [
+                "Bozza",
+                "L’IA propone un punto di partenza."
+              ],
+              [
+                "Revisione",
+                "Verifica, modifica e conferma ciò che serve."
+              ],
+              [
+                "Seguito",
+                "Segui l’attività e registra il risultato."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Condividi la responsabilità, non solo il promemoria",
+          "paragraphs": [
+            "Una voce «auto» sul calendario non spiega cosa fare. Usa attività chiare e assegnazioni affinché la famiglia sappia cosa scade e chi se ne occupa. Un membro può consultare lo storico condiviso invece di chiedere se hai già chiamato l’officina. I promemoria rendono visibili le date confermate; l’esportazione del calendario permette di portare le attività nel calendario che usi. La sincronizzazione con calendari collegati è pianificata: il file esportato è una fotografia del programma, non una connessione continua. La collaborazione dipende dai membri inclusi nel piano. Inizia da una responsabilità condivisa, come organizzare il prossimo tagliando concordato."
+          ]
+        },
+        {
+          "title": "Conserva le prove quando il lavoro è finito",
+          "paragraphs": [
+            "Dopo l’appuntamento registra il lavoro completato e il suo costo. Allega fattura, rapporto o fotografie all’evento corrispondente. Mantieni distinti manuale e polizza dalle prove di una specifica riparazione. Al prossimo appuntamento troverai sia i documenti generali sia gli interventi già registrati. Anche assicurazione e garanzia fanno parte della proprietà: rendi accessibili documenti e date e verifica cosa aggiornare. Il costo di un tagliando è una spesa registrata, non una previsione di tutte le fatture future. Lo storico è utile perché riflette eventi reali anziché una lista che nessuno aggiorna."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Un tagliando completato racconta una storia utile",
+            "items": [
+              [
+                "Cosa è successo",
+                "Intervento eseguito dall’officina."
+              ],
+              [
+                "Prove",
+                "Fattura dettagliata e rapporto di servizio."
+              ],
+              [
+                "Costo",
+                "Importo reale registrato per l’evento."
+              ],
+              [
+                "Prossimo passo",
+                "Rivedere la raccomandazione dell’officina."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Usa lo storico per rispondere alla prossima domanda",
+          "paragraphs": [
+            "Prima del viaggio estivo chiedi cosa dicono i documenti sull’ultimo tagliando e consulta i riscontri. Usa la base documentale per trovare dettagli e preparare domande, senza dedurre che l’assenza di un documento significhi che un lavoro non fosse necessario. La famiglia ha ora un ciclo ripetibile: aggiungere contesto, rivedere la bozza, confermare attività, registrare il risultato e imparare dallo storico. Può estenderlo a un altro bene domestico. AssetFlow non sostituisce il tecnico e non decide al posto tuo: ti aiuta ad arrivare alla prossima scelta con documenti, contesto e comprensione condivisa."
+          ]
+        }
+      ],
+      "checklistTitle": "Il tuo primo ciclo di gestione utile",
+      "checklist": [
+        "Aggiungi l’auto e i documenti più importanti.",
+        "Confronta la bozza IA con indicazioni affidabili.",
+        "Conferma attività, data e familiare responsabile.",
+        "Registra intervento completato, costo e prove.",
+        "Rivedi lo storico prima dell’appuntamento successivo."
+      ],
+      "ctaTitle": "Rendi più semplice la prossima conversazione sull’auto",
+      "ctaText": "Inizia dal veicolo, dai documenti disponibili e da un’attività di manutenzione confermata."
+    },
+    {
+      "id": "factory-maintenance",
+      "title": "Produzione più coordinata con un piano di manutenzione chiaro",
+      "description": "Una fabbrica alimentare mostra perché documenti, accesso QR e passaggi di consegne devono appartenere allo stesso flusso.",
+      "lead": "Un’impastatrice si ferma a metà lotto. L’operatore invia un messaggio, il tecnico cerca il manuale e il responsabile chiede quando ripartirà. Il problema non è solo la macchina: sono le informazioni sparse. Questa è un’anteprima di AssetFlow Business.",
+      "sections": [
+        {
+          "title": "Dai a ogni macchina un’identità e una posizione",
+          "paragraphs": [
+            "Pensa a una piccola fabbrica alimentare con impastatrici, forni, nastri e confezionatrici. «L’impastatrice grande» diventa ambiguo tra turni e reparti. Il flusso Business previsto assegna a ogni bene una scheda riconoscibile con posizione, documenti e storico. Prima del lavoro, il team collegherebbe la macchina corretta all’attività corretta. Manuali, riferimenti del fornitore e rapporti precedenti resterebbero con quella scheda. È un modello operativo illustrativo, non la dichiarazione di un’edizione già disponibile. L’obiettivo è semplice: chi si trova davanti alla macchina deve poter trovare le informazioni che le appartengono."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Un reparto diventa una mappa di beni consultabile",
+            "items": [
+              [
+                "Preparazione",
+                "Impastatrice · manuale e rapporti."
+              ],
+              [
+                "Cottura",
+                "Forno · manutenzione prevista e resoconti."
+              ],
+              [
+                "Trasferimento",
+                "Nastro · controlli e attività aperte."
+              ],
+              [
+                "Confezionamento",
+                "Confezionatrice · prove e storico."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Usa un’etichetta QR per trovare la scheda giusta",
+          "paragraphs": [
+            "Nel flusso proposto AssetFlow genererebbe un’etichetta QR collegata alla macchina. Un operatore autorizzato potrebbe scansionarla per raggiungere la scheda corretta senza cercare in un elenco o riscrivere il nome. Controlli dell’operatore, aggiornamenti del tecnico e revisione del responsabile si riferirebbero allo stesso bene, con accesso regolato dai ruoli professionali. L’etichetta sarebbe un punto di accesso, non un sostituto dell’autorizzazione o un comando della macchina. La sequenza qui sotto spiega la funzionalità pianificata: non è un QR operativo né una dimostrazione di funzioni già disponibili."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Una macchina, responsabilità diverse",
+            "items": [
+              [
+                "Etichetta QR",
+                "Identificare la macchina e aprire la scheda."
+              ],
+              [
+                "Operatore",
+                "Registrare osservazione o controllo richiesto."
+              ],
+              [
+                "Tecnico",
+                "Seguire il caso e documentare il lavoro."
+              ],
+              [
+                "Responsabile",
+                "Rivedere avanzamento, responsabilità e storico."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Pianifica per la macchina e per la giornata di lavoro",
+          "paragraphs": [
+            "Il piano deve riflettere indicazioni del costruttore, utilizzo e persone qualificate. In fabbrica deve anche adattarsi alla giornata produttiva. L’esperienza Business prevista riunirebbe attività ricorrenti e responsabilità per permettere al responsabile di discutere i tempi prima dell’urgenza. Bozze IA rivedibili darebbero un punto di partenza quando il contesto è sufficiente; la conferma resterebbe al team. Un’attività come rivedere i requisiti di controllo dell’impastatrice richiede prove e tempi propri. Non dovrebbe ereditare un intervallo generico solo perché un’altra macchina ha un nome simile."
+          ]
+        },
+        {
+          "title": "Chiudi l’attività con prove, non con un messaggio vago",
+          "paragraphs": [
+            "Immagina che il tecnico risolva il problema. Scrivere «sistemata» lascia domande al turno successivo. La scheda prevista descriverebbe controlli, lavoro eseguito, autore della registrazione e documenti a supporto. Le raccomandazioni ancora aperte resterebbero distinguibili dalle attività completate. Il responsabile potrebbe consultare lo storico se il problema torna, invece di scorrere messaggi personali. Lo storico aiuta il passaggio di consegne, ma non certifica la macchina, non stabilisce la conformità normativa e non autorizza la ripartenza. Queste decisioni restano alle persone qualificate e alle procedure dello stabilimento."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Un passaggio di consegne utile",
+            "items": [
+              [
+                "Osservazione",
+                "Problema collegato alla macchina identificata."
+              ],
+              [
+                "Intervento",
+                "Il tecnico registra lavoro e documenti."
+              ],
+              [
+                "Domanda aperta",
+                "Gli ulteriori controlli rimangono visibili."
+              ],
+              [
+                "Revisione",
+                "Il team segue la propria procedura di rimessa in uso."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Rendi lo storico utile oltre il turno",
+          "paragraphs": [
+            "Il beneficio nel tempo è un documento che resta con l’attrezzatura anche quando cambiano persone e turni. Confrontare osservazioni e interventi precedenti rende più concreta la discussione sui problemi ricorrenti. I responsabili possono vedere il prossimo lavoro accanto a quello registrato; i tecnici possono prepararsi con i documenti giusti. Parti da un reparto, concorda nomi riconoscibili e definisci chi segnala, interviene e verifica. Sono abitudini importanti prima di introdurre qualsiasi software. AssetFlow Business viene progettato attorno a questo flusso collegato, con accesso QR e ruoli professionali pianificati, non ancora disponibili per l’uso generale."
+          ]
+        }
+      ],
+      "checklistTitle": "Prepara un reparto a un passaggio di consegne più chiaro",
+      "checklist": [
+        "Elenca macchine con nomi e posizioni riconoscibili.",
+        "Raccogli manuali, rapporti e domande aperte.",
+        "Definisci responsabilità di operatori, tecnici e responsabili.",
+        "Concorda le prove necessarie per chiudere un’attività.",
+        "Mantieni la rimessa in uso nelle procedure qualificate."
+      ],
+      "ctaTitle": "Una storia più chiara comincia da una macchina",
+      "ctaText": ""
+    },
+    {
+      "id": "fleet-maintenance",
+      "title": "Molte auto, una visione chiara della manutenzione",
+      "description": "Un autonoleggio coordina controlli, tagliandi e consegne senza perdere il contesto di ogni singolo veicolo.",
+      "lead": "Un’auto rientra con una segnalazione, una seconda ha un tagliando prenotato e a una terza manca la fattura. Un elenco di targhe non spiega queste differenze. Ecco un flusso collegato, in anteprima per AssetFlow Fleet.",
+      "sections": [
+        {
+          "title": "Vedi il singolo veicolo dietro la flotta",
+          "paragraphs": [
+            "Immagina una sede di autonoleggio prima di un fine settimana intenso. Le auto rientrano con chilometraggi, storici e osservazioni differenti. Il flusso Fleet previsto organizzerebbe documenti, requisiti di manutenzione e lavori registrati nella storia di ogni veicolo. Il responsabile partirebbe dall’auto specifica, non da un promemoria generico. Diventerebbe visibile una distinzione essenziale: avere un tagliando prenotato è diverso da avere una segnalazione irrisolta. Le situazioni qui sotto sono illustrative, non stati operativi dal vivo. Fleet è in arrivo e i flussi professionali descritti sono un’anteprima."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Tre veicoli, tre prossime azioni",
+            "items": [
+              [
+                "Veicolo A",
+                "Tagliando concordato · preparare i documenti."
+              ],
+              [
+                "Veicolo B",
+                "Segnalazione registrata · serve valutazione."
+              ],
+              [
+                "Veicolo C",
+                "Tagliando completato · allegare la fattura."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Collega la segnalazione all’auto corretta",
+          "paragraphs": [
+            "Il QR previsto permetterebbe al personale autorizzato di aprire la scheda del veicolo identificato dall’etichetta. Un conducente o un addetto al rientro potrebbe registrare l’osservazione nel contesto, con prove quando utili. Il tecnico seguirebbe lo stesso bene e il responsabile rivedrebbe incarico e avanzamento. La scansione non diagnosticherebbe guasti, non confermerebbe l’idoneità alla circolazione e non renderebbe l’auto pronta al noleggio. Servono persone e procedure adeguate. Il cambiamento utile è conservare identità del veicolo e segnalazione originale a ogni passaggio, senza dipendere da una catena di messaggi."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Una consegna che conserva il contesto",
+            "items": [
+              [
+                "Identifica",
+                "Accesso QR alla scheda del veicolo corretto."
+              ],
+              [
+                "Osserva",
+                "Il personale registra la segnalazione."
+              ],
+              [
+                "Intervieni",
+                "Il tecnico documenta valutazione e lavoro."
+              ],
+              [
+                "Verifica",
+                "Il responsabile applica la procedura operativa."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Pianifica con tempo e utilizzo insieme",
+          "paragraphs": [
+            "La manutenzione di flotta raramente dipende solo da una data. L’edizione prevista supporterebbe tagliandi programmati e intervalli chilometrici, con ore motore pertinenti alle flotte di attrezzature adatte. Il team sceglierebbe i requisiti dalle indicazioni del costruttore del veicolo esatto e dal suo utilizzo. Chi pianifica deve conoscere lettura, data della registrazione e informazioni ancora da confermare. L’articolo non promette telematica, letture automatiche del contachilometri o diagnosi predittive. Un dato d’uso chiaro e un’attività rivista sono più utili di una scadenza apparentemente precisa basata su chilometri obsoleti. Considera anche l’effettiva disponibilità operativa."
+          ]
+        },
+        {
+          "title": "Conserva il resoconto con il veicolo",
+          "paragraphs": [
+            "Quando l’auto rientra dall’officina, il flusso previsto collegherebbe intervento, costo e fattura al veicolo corretto. Assicurazione e altri documenti resterebbero accessibili insieme allo storico invece di sparire nella posta della sede. Una raccomandazione per lavori futuri deve rimanere distinta da quanto già completato. Il responsabile potrebbe seguire le prove di una segnalazione ricorrente, inclusi i vuoti documentali. Questo coordina le informazioni, ma non fornisce certificazioni né sostituisce controlli del veicolo. Se manca un documento, rendi visibile l’assenza e assegna un seguito anziché considerare il tagliando completamente documentato."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Cosa serve al prossimo collega",
+            "items": [
+              [
+                "Veicolo",
+                "Identità chiara e contesto d’uso."
+              ],
+              [
+                "Completato",
+                "Intervento datato, costo e documenti."
+              ],
+              [
+                "In sospeso",
+                "Documento mancante o ulteriore valutazione."
+              ],
+              [
+                "Responsabile",
+                "Chi segue il caso e quale passo farà."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Inizia da una routine ripetibile in sede",
+          "paragraphs": [
+            "Il punto di partenza è una routine comprensibile a ogni turno: identificare l’auto, registrare l’osservazione, concordare l’azione e conservare il risultato. Definisci chi segnala, chi esegue o registra il lavoro tecnico e chi prende la decisione operativa. Raccogli i documenti prima che le chiavi lascino la sede. Con la crescita della flotta, questo storico condiviso può ridurre lo sforzo di ricostruire il contesto senza promettere risultati economici specifici. AssetFlow Fleet è pianificato per collegare le responsabilità attorno al veicolo. AssetFlow Home offre già questo approccio alla proprietà per beni personali e domestici."
+          ]
+        }
+      ],
+      "checklistTitle": "Una lista per consegne più chiare",
+      "checklist": [
+        "Identifica il veicolo e registra il contesto d’uso.",
+        "Distingui manutenzione ordinaria e segnalazioni irrisolte.",
+        "Assegna un responsabile alla prossima azione.",
+        "Allega resoconto dell’intervento e fattura.",
+        "Applica controlli qualificati prima del rilascio operativo."
+      ],
+      "ctaTitle": "Mantieni il contesto della prossima decisione sul veicolo",
+      "ctaText": ""
+    },
+    {
+      "id": "hotel-maintenance",
+      "title": "La manutenzione dell’hotel, senza perdere il filo",
+      "description": "Un esempio alberghiero collega impianti delle camere, segnalazioni e interventi tecnici a uno storico più chiaro.",
+      "lead": "Un ospite segnala un climatizzatore rumoroso. Il personale ai piani passa il messaggio, la reception chiede aggiornamenti e il tecnico cerca quale unità fosse stata riparata. La scheda del bene dovrebbe collegare queste domande: un’anteprima di AssetFlow Hospitality.",
+      "sections": [
+        {
+          "title": "Organizza le attrezzature nella loro posizione reale",
+          "paragraphs": [
+            "Considera un hotel con climatizzatori nelle camere, lavanderia, cucina e impianti delle aree comuni. «Il climatizzatore» non identifica nulla se decine di camere hanno unità simili. Il flusso Hospitality previsto assocerebbe ogni attrezzatura a una posizione riconoscibile, conservandone documenti e storico. Prima di segnalare un lavoro, il personale distinguerebbe l’unità della camera da una macchina della cucina o della lavanderia. La mappa è illustrativa: non rappresenta un cliente reale né una schermata del prodotto. AssetFlow Hospitality è in arrivo; gestione per camera e flussi professionali restano funzionalità pianificate."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "L’hotel visto attraverso le sue attrezzature",
+            "items": [
+              [
+                "Camere",
+                "Climatizzatori identificati per camera."
+              ],
+              [
+                "Lavanderia",
+                "Lavatrici e asciugatrici con storici distinti."
+              ],
+              [
+                "Cucina",
+                "Forni, refrigerazione e documentazione."
+              ],
+              [
+                "Spazi comuni",
+                "Attrezzature con posizioni riconoscibili."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Rendi la prima segnalazione utile al collega successivo",
+          "paragraphs": [
+            "Nel flusso proposto un membro autorizzato del personale ai piani scansionerebbe l’etichetta QR generata per aprire la scheda corretta. Un’osservazione come «rumore insolito durante l’uso» resterebbe collegata all’unità e alla posizione. Il tecnico vedrebbe il contesto e registrerebbe il seguito; il responsabile rivedrebbe lavoro aperto e responsabilità. Il QR aiuterebbe a identificare il bene, senza dare accesso illimitato o dimostrare la risoluzione. Una buona segnalazione descrive ciò che si osserva senza inventare una diagnosi. Le urgenze continuerebbero a seguire le procedure di sicurezza ed escalation dell’hotel."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Dall’osservazione in camera al passaggio documentato",
+            "items": [
+              [
+                "Personale ai piani",
+                "Identifica l’unità e descrive l’osservazione."
+              ],
+              [
+                "Tecnico",
+                "Valuta e registra l’intervento."
+              ],
+              [
+                "Responsabile",
+                "Rivede attività aperte e responsabilità."
+              ],
+              [
+                "Operazioni",
+                "Applica le procedure di preparazione della camera."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Pianifica prima che la camera ne abbia bisogno",
+          "paragraphs": [
+            "La manutenzione compete con occupazione, carichi della lavanderia e servizio pasti. L’edizione prevista riunirebbe prevenzione e verifiche di preparazione per coordinare i tempi. Il climatizzatore di una camera e un’asciugatrice professionale richiedono piani basati sui propri documenti e utilizzi, non copie di una lista generica. Suggerimenti rivedibili potrebbero aiutare a costruire una bozza dal contesto disponibile, mentre il personale qualificato confermerebbe ciò che è appropriato. Programmare è solo una parte del processo: qualcuno deve seguire l’attività e lo storico deve distinguere lavori pianificati e interventi completati."
+          ]
+        },
+        {
+          "title": "Conserva la storia della riparazione dopo il soggiorno",
+          "paragraphs": [
+            "Dopo l’intervento al climatizzatore, la scheda prevista descriverebbe valutazione e lavoro eseguito, allegherebbe rapporti o fatture e lascerebbe visibili le raccomandazioni aperte. Se il problema torna il mese successivo, il prossimo tecnico avrebbe da dove cominciare. Un costo registrato sarebbe collegato al suo evento; garanzia e contratto di assistenza resterebbero con l’attrezzatura anziché nella posta di un dipendente. Lo storico coordinerebbe il lavoro, ma non certificherebbe la sicurezza, non autorizzerebbe il rilascio della camera e non garantirebbe la sua preparazione. Queste scelte restano alle persone e alle procedure dell’hotel."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Uno storico che supera il cambio di turno",
+            "items": [
+              [
+                "Dove",
+                "Unità identificata e camera o area."
+              ],
+              [
+                "Cosa",
+                "Osservazione, valutazione e lavoro eseguito."
+              ],
+              [
+                "Prove",
+                "Rapporto, fattura o fotografie pertinenti."
+              ],
+              [
+                "Poi",
+                "Raccomandazione aperta e collega responsabile."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Crea una routine che tutto l’hotel possa seguire",
+          "paragraphs": [
+            "Inizia da un’area, come climatizzazione delle camere o lavanderia. Concorda nomi dei beni, caratteristiche di una buona segnalazione e chi segnala, interviene e verifica. Raccogli manuali e vecchi rapporti prima di estendere il metodo a tutte le camere. Hospitality intende collegare queste routine, con supervisione multi-struttura nella direzione futura dell’edizione. L’obiettivo immediato non è complicare le segnalazioni: è dare al prossimo collega uno storico utile senza raccontare tutto da capo. AssetFlow Hospitality è progettato attorno a questa esigenza, mentre AssetFlow Home è già disponibile per beni personali e domestici."
+          ]
+        }
+      ],
+      "checklistTitle": "Inizia da un’area dell’hotel",
+      "checklist": [
+        "Identifica ogni bene e la sua camera o area.",
+        "Raccogli manuali, contratti di assistenza e rapporti.",
+        "Concorda come il personale ai piani segnala le osservazioni.",
+        "Definisci seguito tecnico e revisione del responsabile.",
+        "Mantieni la preparazione delle camere nelle procedure dell’hotel."
+      ],
+      "ctaTitle": "Dai a ogni passaggio di consegne uno storico utile",
+      "ctaText": ""
+    }
+  ]
+}

@@ -9,6 +9,10 @@
   var cache = {};
 
   function getInitialLocale() {
+    var requested = new URLSearchParams(window.location.search).get("lang");
+    if (SUPPORTED_LOCALES.indexOf(requested) !== -1) {
+      return requested;
+    }
     try {
       var stored = window.localStorage.getItem(STORAGE_KEY);
       if (stored && SUPPORTED_LOCALES.indexOf(stored) !== -1) {
@@ -101,6 +105,9 @@
     loadLocale(locale)
       .then(function (dict) {
         applyTranslations(dict);
+        document.querySelectorAll("[data-blog-index]").forEach(function (link) {
+          link.href = "/blog/" + locale + "/";
+        });
         if (dict.seo) {
           document.title = dict.seo.title;
           document.querySelector('meta[name="description"]').setAttribute("content", dict.seo.description);

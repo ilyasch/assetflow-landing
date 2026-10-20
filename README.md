@@ -27,6 +27,38 @@ assets/           Logo/favicon (SVG, no external images)
 No build tooling, package manager, or framework is required — this is plain
 HTML/CSS/JS so it can be uploaded directly to static hosting.
 
+## Visual blog guides
+
+The header’s Blog link opens a separate article index, with five guides in
+all six supported languages (30 static article pages and six localized
+indexes). The homepage contains no article-preview section. The four edition stories cover a family car, a
+food-production factory, a rental fleet, and a hotel. The featured practical
+guide addresses a used car with missing service records. All records and
+diagrams are illustrative; Business, Fleet, Hospitality, professional roles,
+and QR workflows remain clearly labeled previews.
+
+Article sources live in `content/blog/{en,it,de,es,fr,ar}.json`. Each article
+has five sections and three semantic visual explanations. Keep evidence-based
+guidance, translated labels, examples, related links, and availability notices
+consistent across languages. Do not present examples as customer testimonials
+or product screenshots.
+
+After editing article content, run:
+
+```bash
+python3 scripts/build-blog.py --update-landing
+bash scripts/package-site.sh
+```
+
+The first command refreshes the six landing navigation labels, local blog
+indexes, article previews, and sitemap. Generated `/blog/` HTML is ignored
+by Git. Packaging generates the full articles into `dist/`, versions shared
+assets across all pages, and verifies links, localized indexes, article
+structure, canonical URLs, language alternates, JSON-LD, and sitemap coverage.
+CI runs the same package command. Publish the complete `dist/` artifact rather
+than copying the source root. Article pages are readable without JavaScript;
+their language links navigate directly to equivalent translated pages.
+
 ## Local preview
 
 Because `main.js` fetches locale JSON files, open it through a local static

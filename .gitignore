@@ -5,3 +5,6 @@ node_modules/
 .env.*
 .dev.vars
 .dev.vars.*
+/blog/
+__pycache__/
+.impeccable/review/

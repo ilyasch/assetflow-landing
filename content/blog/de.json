@@ -1,0 +1,607 @@
+{
+  "ui": {
+    "blogs": "Blog",
+    "sectionTitle": "Echte Situationen. Klarere nächste Schritte.",
+    "sectionLead": "Von fehlenden Wartungsbelegen bis zu einem Gebäude voller Geräte: praktische Leitfäden für alles, worauf du dich verlässt.",
+    "available": "Jetzt verfügbar",
+    "preview": "Demnächst · Vorschau",
+    "read": "Leitfaden lesen",
+    "example": "Illustratives Beispiel · kein Produkt-Screenshot",
+    "skip": "Zum Inhalt",
+    "back": "Alle Leitfäden",
+    "language": "Artikelsprache",
+    "breadcrumb": "Brotkrumennavigation",
+    "contents": "In diesem Leitfaden",
+    "questions": "Weitere hilfreiche Fragen",
+    "sources": "Hilfreiche Quellen",
+    "sourceAA": "The AA: Fahrzeughistorie verstehen",
+    "sourceFord": "Ford: die Betriebsanleitung deines Fahrzeugs finden",
+    "sourceNote": "Nutze die Herstellerangaben für das genaue Modell, den Motor, das Baujahr und den Markt. Diese Quellen liefern Hintergrundwissen, keinen allgemeinen Wartungsplan.",
+    "previewNotice": "Editionsvorschau: Business, Fleet und Hospitality erscheinen demnächst. QR-Etiketten und professionelle Teamabläufe sind geplante Funktionen.",
+    "illustrativeNotice": "Eine illustrative Nutzungsgeschichte, kein Kundenbericht. Die Beispieldaten sind keine technische Fahrzeugberatung.",
+    "related": "Eine weitere Situation, die du vielleicht kennst",
+    "homeCta": "Mit AssetFlow Home starten",
+    "previewCta": "AssetFlow Home heute entdecken",
+    "previewCtaNote": "Diese professionelle Edition erscheint demnächst. Mit AssetFlow Home kannst du den Ansatz für persönliche Gegenstände und Haushaltswerte bereits heute kennenlernen.",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen"
+  },
+  "articles": [
+    {
+      "id": "used-car-no-service-history",
+      "title": "Gebrauchtwagen ohne Wartungshistorie gekauft? Das kannst du jetzt tun",
+      "description": "Eine Rechnung, ein leeres Serviceheft und kein nächster Termin? Schaffe einen sinnvollen Ausgangspunkt für die Wartung deines Gebrauchtwagens.",
+      "lead": "Der Verkäufer sagt, der Service sei erledigt. Du hast die Schlüssel, eine Rechnung und eine Frage: Was ist wirklich als Nächstes nötig? Fehlende Nachweise lassen sich nicht erfinden. Aus Unsicherheit können aber konkrete Prüfungen und ab heute eine verlässliche Dokumentation werden.",
+      "sections": [
+        {
+          "title": "Beginne mit dem, was du belegen kannst",
+          "paragraphs": [
+            "Stell dir einen gebrauchten Familienwagen vor. Im Handschuhfach liegen ein alter Prüfbericht und eine Rechnung für zwei Reifen. Beides sagt nicht, wann der Motor zuletzt gewartet wurde. Sammle Rechnungen, Stempel, E-Mails, Übergabeunterlagen und Fotos, bevor du Arbeiten buchst oder Termine einträgst. Frage den Verkäufer oder genannte Werkstätten nach weiteren Belegen. Beim Hersteller oder Händler können digitale Einträge vorliegen; Zugang und Umfang unterscheiden sich jedoch. Lass eine unbeantwortete Frage sichtbar, statt eine Erinnerung des Verkäufers in einen bestätigten Service umzudeuten."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Eine Rechnung ist ein Beleg. Eine Erinnerung bleibt eine Frage.",
+            "items": [
+              [
+                "Was ich weiß",
+                "Reifenrechnung: Datum, Kilometerstand und berechnete Arbeit."
+              ],
+              [
+                "Was ich prüfen muss",
+                "Letzte Motorwartung: bisher kein Beleg."
+              ],
+              [
+                "Mein nächster Schritt",
+                "Unterlagen anfordern und die Lücke mit einer Werkstatt besprechen."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Suche den richtigen Plan statt eines pauschalen Intervalls",
+          "paragraphs": [
+            "Es gibt kein Wartungsintervall für alle Gebrauchtwagen. Suche die Herstellerinformationen für das genaue Modell, den Motor, das Baujahr und den Markt. Notiere Kilometerstand und Nutzung und bringe Plan und Nachweise zu einer qualifizierten Werkstatt. Erkläre, was bekannt ist, was fehlt und welche Auffälligkeiten du beobachtet hast. Bitte um eine Einschätzung und vereinbare Prioritäten. Eine alte Rechnung belegt nicht den heutigen Zustand; ein sauberes Auto beweist keine durchgeführte Wartung. Eine KI-Checkliste eignet sich nicht zur Entscheidung, ob ein Fahrzeug sicher gefahren werden kann."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Von einer unklaren Historie zu einem vereinbarten Ausgangspunkt",
+            "items": [
+              [
+                "Sammeln",
+                "Unterlagen, Kilometerstand und offene Fragen."
+              ],
+              [
+                "Prüfen",
+                "Genauen Herstellerplan und Werkstattbewertung."
+              ],
+              [
+                "Vereinbaren",
+                "Nötige Arbeiten und nächste Überprüfung."
+              ],
+              [
+                "Dokumentieren",
+                "Datierte Belege tatsächlich erledigter Arbeiten."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Bitte die Werkstatt um einen brauchbaren Bericht",
+          "paragraphs": [
+            "Ein hilfreicher Termin endet mit mehr als „alles erledigt“. Bitte um eine Aufstellung der Arbeiten mit Datum und Kilometerstand sowie verbleibenden Empfehlungen. Trenne vorgeschlagene von abgeschlossenen Arbeiten. Wurde ein Teil geprüft statt ersetzt, halte diesen Unterschied fest. Frage, welche nächsten Aufgaben von Zeit, Strecke oder Herstellerangaben abhängen und welche erneut bewertet werden müssen. So entsteht ein dokumentierter Ausgangspunkt, ohne frühere Jahre als vollständig darzustellen. Andere Haushaltsmitglieder können den Stand verstehen, ohne dein Gespräch mit dem Techniker rekonstruieren zu müssen."
+          ]
+        },
+        {
+          "title": "Gib den Nachweisen einen gemeinsamen Platz",
+          "paragraphs": [
+            "Lege das Auto in AssetFlow Home an und hänge die gesammelten Unterlagen an. Anleitung und Versicherungsdokumente gehören zum Fahrzeug; eine Rechnung oder ein Foto zum jeweiligen Ereignis. Fordere mit dem bekannten Kontext einen Wartungsentwurf an und prüfe ihn anhand von Hersteller- und Werkstattangaben, bevor du Aufgaben bestätigst. Setze Erinnerungen für vereinbarte Termine und erfasse erledigte Arbeiten und tatsächliche Kosten. Prüfe bei Fragen an deine Dokumente die Belege: Die App kann bereitgestellte Informationen ordnen und erklären helfen, aber keine nie dokumentierte Reparatur entdecken."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Die Historie, die du heute beginnen kannst",
+            "items": [
+              [
+                "Gegenstand",
+                "Familienwagen · genaue Fahrzeugdaten."
+              ],
+              [
+                "Erledigt",
+                "Werkstattbericht, Rechnung und Kilometerstand."
+              ],
+              [
+                "Nächste Aktion",
+                "Bestätigte Aufgabe mit Termin und Zuständigkeit."
+              ],
+              [
+                "Weiterhin unbekannt",
+                "Frühere Arbeiten ohne Nachweis."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Erleichtere die nächste Übergabe",
+          "paragraphs": [
+            "Das Ergebnis ist keine auf magische Weise wiederhergestellte Historie. Es ist eine Antwort mit Beleg statt Vermutung. Ein Haushaltsmitglied sieht, was erledigt wurde, findet die Rechnung und versteht den nächsten Schritt. Prüfe vor dem nächsten Termin offene Fragen und aktuelle Unterlagen. Bei einem späteren Verkauf kannst du die Nachweise deiner Besitzzeit zusammenstellen, ohne damit frühere Jahre abzudecken. Fang klein an: Ein Fahrzeug, eine Sammlung von Nachweisen und eine bestätigte nächste Aktion sind hilfreicher als eine lange Liste unsicherer Termine."
+          ]
+        }
+      ],
+      "checklistTitle": "Diese Checkliste kommt mit in die Werkstatt",
+      "checklist": [
+        "Genaues Modell, Motor, Baujahr, Kilometerstand und Nutzung.",
+        "Vorhandene Rechnungen, Prüfberichte und digitale Einträge.",
+        "Separate Liste fehlender oder unsicherer Angaben.",
+        "Fragen zu dringenden Arbeiten und nächster Wartung.",
+        "Bitte um einen datierten, detaillierten Arbeitsnachweis."
+      ],
+      "faq": [
+        [
+          "Kann ich fehlende Wartungsbelege wiederfinden?",
+          "Manchmal helfen Verkäufer, frühere Werkstätten oder ein digitales Herstellersystem. Zugang und Verfügbarkeit variieren; gehe nicht von einer vollständigen Historie aus."
+        ],
+        [
+          "Enthält ein Fahrzeugbericht jeden Service?",
+          "Behandle einen Fahrzeughistorienbericht nicht als vollständigen Wartungsnachweis. Prüfe den Leistungsumfang des Anbieters und die Serviceunterlagen separat."
+        ],
+        [
+          "Kann AssetFlow den technischen Zustand bestätigen?",
+          "Nein. AssetFlow hilft bei Unterlagen und Wartungsaufgaben. Den Fahrzeugzustand muss eine qualifizierte Fachperson beurteilen."
+        ]
+      ],
+      "ctaTitle": "Beginne dein nächstes Kapitel mit einer klareren Historie",
+      "ctaText": "Lege das Auto an, sammle vorhandene Nachweise und bestätige einen hilfreichen nächsten Schritt."
+    },
+    {
+      "id": "family-car-maintenance",
+      "title": "Dein Familienauto: wissen, was vor der nächsten Fahrt ansteht",
+      "description": "Eine praktische Geschichte: Aus verstreuten Unterlagen und „Haben wir das schon gemacht?“ wird ein gemeinsamer Wartungsplan.",
+      "lead": "Schule, Einkäufe, Wochenendausflüge: Auf das Auto ist der Haushalt angewiesen. Die Anleitung liegt im Handschuhfach, die Versicherung im Postfach, und nur eine Person erinnert sich an den letzten Service. Ein Wartungsplan beginnt damit, diese Teile zusammenzubringen.",
+      "sections": [
+        {
+          "title": "Beginne mit deinem tatsächlichen Fahrzeug",
+          "paragraphs": [
+            "Eine Familie plant die Sommerreise. Jemand hält den Service für aktuell; eine andere Person erinnert sich an neue Reifen, findet aber die Rechnung nicht. Lege das Fahrzeug mit bekannten Daten in AssetFlow Home an. Ergänze Kaufbeleg, Anleitung und vorhandene Serviceunterlagen. Garantie, Versicherung und Servicevertrag bleiben beim Auto statt in einem allgemeinen Ordner. Ein genauer Datensatz gibt späteren Fragen einen Ausgangspunkt: welches Fahrzeug, welche Belege, welche Termine? Du musst nicht an einem Abend alles erfassen. Beginne mit den Unterlagen, die beim nächsten Termin wichtig sind."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Ein Auto, verbundene Informationen",
+            "items": [
+              [
+                "Fahrzeug",
+                "Modell, Baujahr und Besitzangaben."
+              ],
+              [
+                "Unterlagen",
+                "Anleitung, Kaufbeleg, Garantie und Versicherung."
+              ],
+              [
+                "Historie",
+                "Erledigte Arbeiten, Nachweise und Kosten."
+              ],
+              [
+                "Plan",
+                "Bestätigte Aufgaben, Termine und Zuständigkeiten."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Mache aus Kontext einen Plan, den du bestätigst",
+          "paragraphs": [
+            "Fordere aus Fahrzeugdaten und Unterlagen einen intelligenten Wartungsentwurf an. Sein Wert ist ein strukturierter Ausgangspunkt, keine Aufforderung, alles zu übernehmen. Vergleiche die Vorschläge mit dem Herstellerplan für dein genaues Fahrzeug und den Hinweisen der Werkstatt. Passe Aufgaben und Termine an, bevor du bestätigst. Unterscheide eine vorgeschlagene Prüfung von einer erledigten Reparatur. Fehlen Belege, bleibt die Frage offen. Ein ordentlicher Plan mit falschen Annahmen ist weiterhin falsch. Du entscheidest, welche Vorschläge zu Aufgaben werden, die dein Haushalt tatsächlich verfolgt."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Erst nach deiner Prüfung wird ein Vorschlag zur Aufgabe",
+            "items": [
+              [
+                "Kontext",
+                "Fahrzeugdaten und unterstützende Unterlagen."
+              ],
+              [
+                "Entwurf",
+                "Die KI schlägt einen Ausgangspunkt vor."
+              ],
+              [
+                "Prüfung",
+                "Kontrollieren, anpassen und bestätigen."
+              ],
+              [
+                "Nachhalten",
+                "Aufgabe verfolgen und Ergebnis erfassen."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Teile die Verantwortung, nicht nur die Erinnerung",
+          "paragraphs": [
+            "Ein Kalendereintrag „Auto“ sagt nicht, was zu tun ist. Klare Aufgaben und Zuweisungen zeigen, was ansteht und wer sich kümmert. Haushaltsmitglieder können die gemeinsame Historie ansehen, statt nach dem Anruf in der Werkstatt zu fragen. Erinnerungen halten bestätigte Termine sichtbar; der Kalenderexport bringt Aufgaben in den gewohnten Kalender. Eine verbundene Kalendersynchronisierung ist geplant: Eine exportierte Datei ist eine Momentaufnahme, keine laufende Verbindung. Zusammenarbeit richtet sich nach den Mitgliederplätzen deines Tarifs. Beginne mit einer gemeinsamen Verantwortung, etwa der Organisation des vereinbarten nächsten Service."
+          ]
+        },
+        {
+          "title": "Bewahre nach der Arbeit die Nachweise auf",
+          "paragraphs": [
+            "Erfasse nach dem Termin die erledigte Arbeit und ihre Kosten. Hänge Rechnung, Bericht oder Fotos an das unterstützte Ereignis an. Halte Anleitung und Versicherung von Belegen einzelner Reparaturen getrennt. Beim nächsten Termin findest du sowohl allgemeine Fahrzeugdokumente als auch erfasste Arbeiten. Versicherung und Garantie gehören ebenfalls zur Besitzgeschichte: Dokumente und Termine bleiben erreichbar und werden auf Aktualisierungsbedarf geprüft. Ein Servicepreis ist eine erfasste Ausgabe, keine Vorhersage aller künftigen Rechnungen. Die Historie hilft, weil sie tatsächliche Ereignisse widerspiegelt statt einer Liste, die niemand aktualisiert."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Ein abgeschlossener Service erzählt eine hilfreiche Geschichte",
+            "items": [
+              [
+                "Ereignis",
+                "Arbeit durch die Werkstatt abgeschlossen."
+              ],
+              [
+                "Nachweise",
+                "Detaillierte Rechnung und Servicebericht."
+              ],
+              [
+                "Kosten",
+                "Tatsächlich erfasster Betrag dieses Ereignisses."
+              ],
+              [
+                "Danach",
+                "Nächste Werkstattempfehlung prüfen."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Nutze die Historie für die nächste Frage",
+          "paragraphs": [
+            "Frage vor der Reise, was deine Dokumente über den letzten Service sagen, und prüfe die Belege. Die Wissensbasis hilft beim Finden von Details und Vorbereiten von Fragen. Ein fehlender Beleg beweist nicht, dass eine Arbeit unnötig war. Der Haushalt hat nun einen wiederholbaren Ablauf: Kontext ergänzen, Entwurf prüfen, Aufgaben bestätigen, Abschluss erfassen und aus der Historie lernen. Dieselbe Gewohnheit passt zu weiteren Haushaltsgegenständen. AssetFlow ersetzt keine Fachperson und entscheidet nicht für dich. Es hilft dir, die nächste Entscheidung mit Unterlagen, Kontext und gemeinsamem Verständnis anzugehen."
+          ]
+        }
+      ],
+      "checklistTitle": "Dein erster hilfreicher Besitzkreislauf",
+      "checklist": [
+        "Auto und wichtige Unterlagen hinzufügen.",
+        "KI-Entwurf mit verlässlichen Angaben prüfen.",
+        "Aufgabe, Termin und verantwortliches Mitglied bestätigen.",
+        "Abschluss, Kosten und Nachweise erfassen.",
+        "Historie vor dem nächsten Termin ansehen."
+      ],
+      "ctaTitle": "Vereinfache das nächste Gespräch über dein Auto",
+      "ctaText": "Beginne mit dem Fahrzeug, vorhandenen Unterlagen und einer bestätigten Wartungsaufgabe."
+    },
+    {
+      "id": "factory-maintenance",
+      "title": "Produktion mit einem klareren Wartungsplan koordinieren",
+      "description": "Eine Lebensmittelproduktion zeigt, warum Gerätedaten, QR-Zugang und klare Wartungsübergaben zusammengehören.",
+      "lead": "Ein Mischer stoppt mitten in der Charge. Der Bediener schickt eine Nachricht, der Techniker sucht die Anleitung, und die Produktionsleitung fragt nach dem Neustart. Nicht nur die Maschine ist das Problem: Informationen sind verstreut. Eine Vorschau auf AssetFlow Business.",
+      "sections": [
+        {
+          "title": "Gib jeder Maschine eine erkennbare Identität",
+          "paragraphs": [
+            "Denke an einen kleinen Lebensmittelbetrieb mit Mischern, Öfen, Förderbändern und Verpackungsmaschinen. „Der große Mischer“ wird zwischen Schichten und Bereichen mehrdeutig. Der geplante Business-Ablauf gäbe jedem Gerät einen erkennbaren Datensatz mit Standort, Dokumentation und Wartungshistorie. Teams würden vor Arbeitsbeginn die richtige Maschine mit der richtigen Aufgabe verbinden. Anleitungen, Lieferantendaten und frühere Berichte blieben beim Datensatz. Das ist ein illustratives Betriebsmodell, keine heute verfügbare Edition. Wer vor einer Maschine steht, soll die tatsächlich zugehörigen Informationen finden können."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Ein Produktionsbereich wird zur Anlagenübersicht",
+            "items": [
+              [
+                "Vorbereitung",
+                "Mischer · Anleitung und Serviceberichte."
+              ],
+              [
+                "Backen",
+                "Ofen · geplante Wartung und Berichte."
+              ],
+              [
+                "Transport",
+                "Förderband · Prüfungen und offene Aufgaben."
+              ],
+              [
+                "Verpackung",
+                "Verpackungsmaschine · Nachweise und Historie."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Erreiche mit einem QR-Etikett den richtigen Datensatz",
+          "paragraphs": [
+            "Im vorgeschlagenen Ablauf würde AssetFlow ein maschinenbezogenes QR-Etikett erzeugen. Berechtigte Bediener könnten es scannen, statt eine Liste zu durchsuchen oder Namen abzutippen. Bedienerprüfung, Technikeraktualisierung und Leitungsreview würden dieselbe Maschine betreffen, mit rollenabhängigem Zugang. Das Etikett wäre ein Einstieg in Informationen, kein Ersatz für Berechtigungen und keine Maschinensteuerung. Die Folge erklärt eine geplante Fähigkeit. Sie ist weder ein funktionierendes Produktetikett noch eine Demonstration bereits verfügbarer Funktionen."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Eine Maschine, mehrere Verantwortlichkeiten",
+            "items": [
+              [
+                "QR-Etikett",
+                "Maschine identifizieren und Datensatz öffnen."
+              ],
+              [
+                "Bediener",
+                "Beobachtung oder Prüfung dokumentieren."
+              ],
+              [
+                "Techniker",
+                "Nachverfolgen und Arbeit festhalten."
+              ],
+              [
+                "Leitung",
+                "Fortschritt, Zuständigkeit und Historie prüfen."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Plane nach Anlage und Arbeitstag",
+          "paragraphs": [
+            "Ein Plan muss Herstelleranforderungen, Nutzung und qualifizierte Personen berücksichtigen. In der Fabrik muss er außerdem zur Produktion passen. Die vorgesehene Business-Erfahrung würde wiederkehrende Arbeiten und Verantwortlichkeiten gemeinsam darstellen, damit Termine vor der Dringlichkeit besprochen werden. Prüfbare KI-Entwürfe könnten bei ausreichendem Kontext einen Ausgangspunkt liefern; das Team würde bestätigen. Eine Aufgabe wie das Prüfen der Inspektionsanforderungen eines Mischers braucht eigene Nachweise und abgestimmte Termine. Sie sollte kein pauschales Intervall übernehmen, nur weil eine andere Maschine ähnlich heißt."
+          ]
+        },
+        {
+          "title": "Schließe mit Nachweisen statt einer vagen Nachricht ab",
+          "paragraphs": [
+            "Angenommen, der Techniker behebt das Problem. „Repariert“ lässt Fragen für die nächste Schicht offen. Der vorgesehene Datensatz würde Prüfungen, erledigte Arbeiten, erfassende Person und Belege beschreiben. Offene Empfehlungen blieben vom Abschluss unterscheidbar. Bei Wiederholung könnte die Leitung die Historie prüfen, statt private Nachrichten zu durchsuchen. Diese Dokumentation unterstützt die Übergabe; sie zertifiziert keine Anlage, weist keine Rechtskonformität nach und erlaubt keinen Neustart. Solche Entscheidungen bleiben bei qualifizierten Personen und den Betriebsverfahren."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Eine hilfreiche Wartungsübergabe",
+            "items": [
+              [
+                "Beobachtung",
+                "Problem der identifizierten Maschine zugeordnet."
+              ],
+              [
+                "Arbeit",
+                "Techniker dokumentiert Eingriff und Belege."
+              ],
+              [
+                "Offene Frage",
+                "Zusätzliche Prüfung bleibt sichtbar."
+              ],
+              [
+                "Review",
+                "Das Team folgt seinem Wiederinbetriebnahmeverfahren."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Mache die Historie über die Schicht hinaus nützlich",
+          "paragraphs": [
+            "Der dauerhafte Nutzen ist eine Dokumentation, die bei der Anlage bleibt, wenn Personen und Schichten wechseln. Wiederkehrende Probleme lassen sich anhand früherer Beobachtungen und Eingriffe besprechen. Die Leitung sieht nächste Arbeiten neben dem dokumentierten Stand; Techniker bereiten sich mit passenden Unterlagen vor. Beginne mit einem Bereich, eindeutigen Namen und definierten Rollen fürs Melden, Durchführen und Prüfen. Diese Gewohnheiten zählen vor jeder Softwareeinführung. AssetFlow Business wird um diesen verbundenen Ablauf entwickelt. QR-Zugang und professionelle Rollen sind geplant, nicht heute allgemein verfügbar."
+          ]
+        }
+      ],
+      "checklistTitle": "Bereite einen Bereich auf klarere Übergaben vor",
+      "checklist": [
+        "Maschinen mit gemeinsam erkennbaren Namen und Orten auflisten.",
+        "Anleitungen, Berichte und offene Fragen sammeln.",
+        "Verantwortung für Bedienung, Technik und Leitung definieren.",
+        "Nachweise zum Aufgabenabschluss vereinbaren.",
+        "Wiederinbetriebnahme in qualifizierten Verfahren belassen."
+      ],
+      "ctaTitle": "Eine klarere Anlagengeschichte beginnt mit einem Gerät",
+      "ctaText": ""
+    },
+    {
+      "id": "fleet-maintenance",
+      "title": "Viele Autos, ein klarer Wartungsüberblick",
+      "description": "Ein Mietwagenteam koordiniert Kontrollen, Servicebelege und Übergaben, ohne einzelne Fahrzeuge aus dem Blick zu verlieren.",
+      "lead": "Ein Auto kommt mit einer Beobachtung zurück, ein anderes hat einen Termin, beim dritten fehlt die Rechnung. Eine Kennzeichenliste erklärt diese Unterschiede nicht. So könnte der verbundene Ablauf von AssetFlow Fleet helfen.",
+      "sections": [
+        {
+          "title": "Sieh das einzelne Fahrzeug hinter der Flotte",
+          "paragraphs": [
+            "Stell dir eine Mietwagenstation vor einem vollen Wochenende vor. Autos haben unterschiedliche Laufleistungen, Historien und offene Beobachtungen. Der geplante Fleet-Ablauf würde Unterlagen, Wartungsbedarf und erfasste Arbeiten in der jeweiligen Fahrzeughistorie ordnen. Die Leitung würde beim konkreten Auto beginnen, nicht bei einer allgemeinen Flottenerinnerung. Ein wesentlicher Unterschied wird sichtbar: Ein künftiger Servicetermin ist keine ungelöste Beobachtung. Die Beispiele zeigen illustrative Situationen, keine Live-Betriebszustände. Fleet erscheint demnächst; professionelle Fahrzeugabläufe werden als Vorschau dargestellt."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Drei Fahrzeuge, drei nächste Aktionen",
+            "items": [
+              [
+                "Fahrzeug A",
+                "Servicetermin vereinbart · Unterlagen vorbereiten."
+              ],
+              [
+                "Fahrzeug B",
+                "Beobachtung erfasst · Bewertung erforderlich."
+              ],
+              [
+                "Fahrzeug C",
+                "Service erledigt · Rechnung anhängen."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Verbinde die Beobachtung mit dem richtigen Auto",
+          "paragraphs": [
+            "Der vorgeschlagene QR-Ablauf würde berechtigtem Personal den Datensatz des identifizierten Fahrzeugs öffnen. Fahrende oder Annahmepersonal könnten Beobachtungen mit Kontext und gegebenenfalls Belegen erfassen. Die Technik würde am selben Fahrzeug weiterarbeiten; die Leitung Zuständigkeit und Fortschritt prüfen. Ein Scan diagnostiziert keine Störung, bestätigt keine Verkehrssicherheit und macht kein Auto vermietbereit. Dafür braucht es geeignete Personen und Betriebsverfahren. Hilfreich ist, dass jede Übergabe Fahrzeugidentität und ursprüngliche Beobachtung erhält, statt sich auf eine Nachrichtenkette zu verlassen."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Eine Übergabe mit Fahrzeugkontext",
+            "items": [
+              [
+                "Identifizieren",
+                "QR-Einstieg in den richtigen Datensatz."
+              ],
+              [
+                "Beobachten",
+                "Personal erfasst die Auffälligkeit."
+              ],
+              [
+                "Nachverfolgen",
+                "Technik dokumentiert Bewertung und Arbeit."
+              ],
+              [
+                "Prüfen",
+                "Leitung folgt dem betrieblichen Freigabeverfahren."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Plane nach Zeit und Nutzung gemeinsam",
+          "paragraphs": [
+            "Flottenwartung ist selten nur ein Kalendertag. Die geplante Edition würde zeit- und kilometerabhängige Wartung unterstützen, bei passenden Geräteflotten auch Motorstunden. Das Team würde Anforderungen weiterhin nach Hersteller und Nutzung des genauen Fahrzeugs bestimmen. Planende müssen wissen, welcher Wert wann erfasst wurde und was noch zu bestätigen ist. Dieser Artikel verspricht keine Telematik, automatischen Kilometerdaten oder vorausschauende Diagnose. Ein klarer Nutzungswert und eine geprüfte nächste Aufgabe sind hilfreicher als scheinbar präzise Termine mit veralteten Kilometern. Berücksichtige auch die tatsächliche betriebliche Verfügbarkeit."
+          ]
+        },
+        {
+          "title": "Behalte den Servicebericht beim Fahrzeug",
+          "paragraphs": [
+            "Nach der Werkstatt würde der vorgesehene Ablauf Eingriff, Kosten und Rechnung dem richtigen Auto zuordnen. Versicherung und Besitzunterlagen blieben neben der Historie erreichbar statt in einem Stationspostfach zu verschwinden. Empfehlungen für künftige Arbeiten müssen von abgeschlossenen Arbeiten unterscheidbar bleiben. Die Leitung könnte bei Wiederholungen den Belegen einschließlich Lücken folgen. Das koordiniert Informationen; es bietet kein Konformitätszertifikat und ersetzt keine Fahrzeugprüfung. Fehlt ein Beleg, halte das sichtbar und weise die Nachverfolgung zu, statt die Wartung für vollständig dokumentiert zu halten."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Was die nächste Person wissen muss",
+            "items": [
+              [
+                "Fahrzeug",
+                "Eindeutige Identität und Nutzungskontext."
+              ],
+              [
+                "Abgeschlossen",
+                "Datierte Arbeit, Kosten und Werkstattbeleg."
+              ],
+              [
+                "Ausstehend",
+                "Fehlender Beleg oder weitere Bewertung."
+              ],
+              [
+                "Zuständig",
+                "Wer folgt nach und was passiert als Nächstes."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Beginne mit einer wiederholbaren Stationsroutine",
+          "paragraphs": [
+            "Wähle einen Ablauf für jede Schicht: Auto identifizieren, Beobachtung erfassen, Aktion vereinbaren und Ergebnis behalten. Definiere, wer meldet, wer technische Arbeit ausführt oder dokumentiert und wer die betriebliche Entscheidung trifft. Sammle Unterlagen, bevor die Schlüssel die Station verlassen. Bei wachsender Flotte kann die gemeinsame Historie die Rekonstruktion von Kontext erleichtern, ohne ein bestimmtes Finanzergebnis zu versprechen. AssetFlow Fleet soll Verantwortlichkeiten am Fahrzeug verbinden. AssetFlow Home bietet den Besitzansatz heute für persönliche Gegenstände und Haushaltswerte."
+          ]
+        }
+      ],
+      "checklistTitle": "Checkliste für eine klarere Fahrzeugübergabe",
+      "checklist": [
+        "Fahrzeug identifizieren und aktuellen Nutzungskontext erfassen.",
+        "Regelservice von offenen Beobachtungen trennen.",
+        "Verantwortliche Person für die nächste Aktion nennen.",
+        "Arbeitsbericht und Rechnung anhängen.",
+        "Qualifizierte Prüfungen vor betrieblicher Freigabe anwenden."
+      ],
+      "ctaTitle": "Behalte bei der nächsten Fahrzeugentscheidung den Kontext",
+      "ctaText": ""
+    },
+    {
+      "id": "hotel-maintenance",
+      "title": "Hotelwartung, die hinter den Kulissen den Überblick behält",
+      "description": "Ein Hotelbeispiel verbindet Zimmertechnik, Housekeeping-Meldungen und technische Übergaben mit einer klareren Historie.",
+      "lead": "Ein Gast meldet eine laute Klimaanlage. Housekeeping gibt es weiter, die Rezeption fragt nach, und die Technik sucht die zuletzt reparierte Einheit. Der Anlagendatensatz sollte diese Fragen verbinden. Eine Vorschau auf AssetFlow Hospitality.",
+      "sections": [
+        {
+          "title": "Ordne Technik ihrem tatsächlichen Standort zu",
+          "paragraphs": [
+            "Denke an ein Hotel mit Zimmerklimaanlagen, Wäscherei, Küche und Geräten in Gemeinschaftsbereichen. „Die Klimaanlage“ ist keine brauchbare Identität bei Dutzenden ähnlicher Einheiten. Der geplante Hospitality-Ablauf würde Geräte erkennbaren Orten zuordnen und Unterlagen sowie Historie behalten. Mitarbeitende könnten Zimmertechnik von Küchen- oder Wäschereigeräten unterscheiden, bevor sie Arbeit melden. Die Übersicht ist illustrativ, kein echter Hotelkunde und keine verfügbare App-Ansicht. Hospitality erscheint demnächst; zimmerbezogene Abläufe und professionelle Rollen sind geplant."
+          ],
+          "visual": {
+            "type": "map",
+            "title": "Das Hotel aus Sicht seiner Geräte",
+            "items": [
+              [
+                "Gästezimmer",
+                "Zimmerbezogene Klimaanlagen."
+              ],
+              [
+                "Wäscherei",
+                "Waschmaschinen und Trockner mit eigener Historie."
+              ],
+              [
+                "Küche",
+                "Öfen, Kühlung und zugehörige Unterlagen."
+              ],
+              [
+                "Gemeinschaftsbereiche",
+                "Geräte an eindeutig erkennbaren Orten."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Mache die erste Meldung für die nächste Person nützlich",
+          "paragraphs": [
+            "Im vorgesehenen Ablauf würde ein berechtigtes Housekeeping-Mitglied ein erzeugtes QR-Etikett scannen und den richtigen Datensatz öffnen. „Ungewöhnliches Geräusch im Betrieb“ bliebe mit Einheit und Ort verbunden. Die Technik sähe den Kontext und dokumentierte den Eingriff; die Leitung prüfte offene Arbeit und Zuständigkeit. QR würde die Identifizierung erleichtern, keinen unbeschränkten Zugang gewähren und keine Lösung beweisen. Eine gute Meldung beschreibt eine Beobachtung statt einer erfundenen Diagnose. Dringende Fälle würden weiter den Sicherheits- und Eskalationsverfahren des Hotels folgen."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Von der Zimmerbeobachtung zur dokumentierten Übergabe",
+            "items": [
+              [
+                "Housekeeping",
+                "Einheit identifizieren und Beobachtung melden."
+              ],
+              [
+                "Technik",
+                "Bewerten und Eingriff dokumentieren."
+              ],
+              [
+                "Leitung",
+                "Offene Arbeit und Verantwortung prüfen."
+              ],
+              [
+                "Betrieb",
+                "Verfahren zur Zimmerbereitschaft anwenden."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Plane, bevor das Zimmer die Arbeit braucht",
+          "paragraphs": [
+            "Wartung konkurriert mit Belegung, Wäschebedarf und Essensservice. Die geplante Edition würde vorbeugende Arbeiten und Bereitschaftsprüfungen zusammenbringen, um Termine abzustimmen. Eine Zimmeranlage und ein Gewerbetrockner brauchen eigene Pläne nach Unterlagen und Nutzung, keine kopierte Allgemeinliste. Prüfbare Vorschläge könnten aus bereitgestelltem Kontext einen Entwurf unterstützen; qualifiziertes Personal würde die Eignung bestätigen. Ein Termin ist nur ein Teil: Eine Person muss nachhalten, und der Datensatz muss geplante Arbeiten von abgeschlossenen Eingriffen unterscheiden."
+          ]
+        },
+        {
+          "title": "Behalte die Reparaturgeschichte nach der Abreise",
+          "paragraphs": [
+            "Nach der Arbeit an der Klimaanlage würde der vorgesehene Datensatz Bewertung und Eingriff beschreiben, Bericht oder Rechnung anhängen und Empfehlungen sichtbar lassen. Kommt das Geräusch zurück, hat die nächste Fachperson einen Ausgangspunkt. Kosten wären mit ihrem Ereignis verbunden; Garantie oder Servicevertrag blieben beim Gerät statt im Postfach einer Person. Die Dokumentation unterstützt Koordination, zertifiziert aber keine Sicherheit, erlaubt keine Zimmerfreigabe und garantiert keine Gästebereitschaft. Diese Entscheidungen verbleiben bei den Personen und Verfahren des Hotels."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Eine Historie über den Schichtwechsel hinaus",
+            "items": [
+              [
+                "Wo",
+                "Identifizierte Einheit und Zimmer oder Bereich."
+              ],
+              [
+                "Was",
+                "Beobachtung, Bewertung und erledigte Arbeit."
+              ],
+              [
+                "Nachweise",
+                "Bericht, Rechnung oder relevante Fotos."
+              ],
+              [
+                "Danach",
+                "Offene Empfehlung und verantwortliche Person."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Schaffe eine Routine für das ganze Hotel",
+          "paragraphs": [
+            "Beginne mit einem Bereich wie Klimaanlagen oder Wäscherei. Vereinbare Namen, hilfreiche Meldungen und Rollen für Berichten, Ausführen und Prüfen. Sammle Anleitungen und frühere Berichte vor der Ausweitung auf alle Zimmer. Hospitality soll diese Routinen verbinden; mehrere Standorte zu überblicken gehört zur künftigen Richtung. Das unmittelbare Ziel ist kein komplizierteres Meldesystem. Es ist ein Datensatz, den der nächste Kollege nutzen kann, ohne die Geschichte neu zu erzählen. AssetFlow Hospitality wird dafür geplant, während Home heute für persönliche Gegenstände und Haushaltswerte verfügbar ist."
+          ]
+        }
+      ],
+      "checklistTitle": "Beginne mit einem Hotelbereich",
+      "checklist": [
+        "Jedes Gerät mit Zimmer oder Bereich benennen.",
+        "Anleitungen, Serviceverträge und Berichte sammeln.",
+        "Beobachtungsmeldungen durch Housekeeping vereinbaren.",
+        "Technische Nachverfolgung und Leitungsreview definieren.",
+        "Zimmerbereitschaft in den Hotelverfahren belassen."
+      ],
+      "ctaTitle": "Gib jeder Übergabe eine brauchbare Historie",
+      "ctaText": ""
+    }
+  ]
+}
