@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Verify the deployed artifact, including nested pages and locale navigation."""
 import json
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -55,6 +56,22 @@ for path, page in pages.items():
                 assert target.fragment in pages[dest].ids, f'Missing fragment: {attrs[attr]} from {path}'
             checked += 1
 
+# Check assets referenced by the active stylesheets, including hashed font URLs.
+stylesheets = set()
+for page in pages.values():
+    for tag, attrs in page.nodes:
+        if tag == 'link' and attrs.get('rel') == 'stylesheet':
+            target = urlsplit(attrs['href'])
+            stylesheets.add(SITE / target.path.lstrip('/') if target.path.startswith('/') else page.path.parent / target.path)
+for stylesheet in stylesheets:
+    for reference in re.findall(r'url\([\"\']?([^\)\"\']+)', stylesheet.read_text()):
+        target = urlsplit(reference)
+        if target.scheme == 'data':
+            continue
+        assert not target.netloc and not target.scheme, f'Unexpected external CSS asset: {reference}'
+        asset = SITE / target.path.lstrip('/') if target.path.startswith('/') else stylesheet.parent / target.path
+        assert asset.is_file(), f'Missing CSS asset {reference} from {stylesheet}'
+
 canonical_urls = set()
 for path in articles:
     p = pages[path]
@@ -81,7 +98,14 @@ urls = {x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sit
 index_urls = {f'https://myassetsflow.com/blog/{loc}/' for loc in LOCALES}
 assert urls == canonical_urls | index_urls | {'https://myassetsflow.com/'}, 'Sitemap and canonical pages differ'
 home = pages[SITE / 'index.html']
-keys = [a['data-i18n'] for t,a in home.nodes if 'data-i18n' in a and a['data-i18n'].startswith(('blog.','nav.blogs'))]
+keys = [a[attr] for _, a in home.nodes for attr in ('data-i18n', 'data-i18n-aria') if attr in a]
+# Confirmed/reset states are translated dynamically, so check them as well.
+keys += ['site.confirmation', 'site.confirmed', 'site.draft']
+# The market comparison needs real row/column semantics and explicit availability.
+assert sum(t == 'th' and a.get('scope') == 'col' for t,a in home.nodes) == 5, 'Expected four market columns plus row labels'
+assert sum(t == 'th' and a.get('scope') == 'row' for t,a in home.nodes) == 5, 'Expected five market comparison rows'
+assert any(a.get('class') == 'matrix-region' and a.get('tabindex') == '0' and a.get('role') == 'region' and a.get('aria-labelledby') for _,a in home.nodes), 'Market matrix must support keyboard scrolling and have a name'
+
 for loc in LOCALES:
     catalog = json.loads((SITE / f'locales/{loc}.json').read_text())
     for key in keys:
