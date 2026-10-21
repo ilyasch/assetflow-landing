@@ -490,73 +490,104 @@ p {
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
+  background: linear-gradient(112deg, transparent 20%, #f1c97542 43%, #8fbdb459 67%, #a7cbd866 84%, transparent 100%);
+  background-size: 190% 100%;
+  background-position: 0% 50%;
+  animation: hero-wash-flow 10s cubic-bezier(.37, 0, .63, 1) infinite alternate;
   mask-image: linear-gradient(to bottom, #000 55%, transparent);
 }
-.hero-color::before,
-.hero-color::after {
-  content: "";
+.hero-constellation {
   position: absolute;
   z-index: -1;
-  inset-inline-end: -10%;
-  top: -30%;
-  width: 66%;
-  height: 165%;
-  pointer-events: none;
-  filter: blur(38px);
-  mask-image: linear-gradient(to right, transparent, #000 32%);
-}
-.hero-color::before {
-  background:
-    radial-gradient(ellipse at 58% 24%, #e9c881 0%, transparent 53%),
-    radial-gradient(ellipse at 78% 62%, #a7cbd8 0%, transparent 49%),
-    radial-gradient(ellipse at 35% 74%, #bed1ab 0%, transparent 47%);
-  opacity: .8;
-  animation: hero-color-drift 9s cubic-bezier(.37, 0, .63, 1) infinite alternate;
-}
-.hero-color::after {
-  inset-inline-end: -17%;
-  top: -12%;
-  width: 58%;
-  height: 130%;
-  background:
-    radial-gradient(ellipse at 60% 36%, #8fbdb4 0%, transparent 48%),
-    radial-gradient(ellipse at 35% 72%, #f1c975 0%, transparent 48%);
-  opacity: .55;
-  animation: hero-color-drift 12s cubic-bezier(.37, 0, .63, 1) -4s infinite alternate-reverse;
-}
-.hero-waves {
-  position: absolute;
-  z-index: -1;
-  inset-inline-end: -7%;
-  top: -2%;
-  width: min(78%, 940px);
-  height: 108%;
+  inset-inline-end: clamp(28px, 6vw, 96px);
+  top: 10px;
+  width: min(42vw, 560px);
+  height: auto;
   overflow: visible;
   pointer-events: none;
   opacity: .9;
-  mask-image: linear-gradient(to right, transparent 28%, #000 50%, #000 90%, transparent);
 }
-.hero-waves path {
+.orbit-ring {
   fill: none;
-  stroke: url(#hero-wave-gradient);
-  stroke-width: 3.8;
+  stroke: #6d9f913f;
+  stroke-width: 1.5;
+  stroke-dasharray: 2 10;
+}
+.orbit-link {
+  fill: none;
+  stroke: #8fbdb47a;
+  stroke-width: 2;
   stroke-linecap: round;
-  vector-effect: non-scaling-stroke;
-  filter: drop-shadow(0 0 9px #6ea99b66);
+  stroke-dasharray: 3 8;
+}
+.orbit-node rect,
+.asset-hub rect:first-child {
+  stroke: #dce3db;
+  stroke-width: 1.5;
+}
+.orbit-node {
+  filter: drop-shadow(0 10px 16px #173c331b);
   transform-box: fill-box;
   transform-origin: center;
-  animation: hero-wave-flow 6s cubic-bezier(.37, 0, .63, 1) infinite alternate;
+  animation: hero-node-drift 5.5s cubic-bezier(.37, 0, .63, 1) infinite alternate;
 }
-.hero-waves path:nth-of-type(2) { animation-delay: -2s; }
-.hero-waves path:nth-of-type(3) { animation-delay: -4s; }
-.hero-waves path:nth-of-type(4) { animation-delay: -1s; }
-.hero-waves path:nth-of-type(5) { animation-delay: -3s; }
-[dir="rtl"] .hero-color::before,
-[dir="rtl"] .hero-color::after {
-  mask-image: linear-gradient(to left, transparent, #000 32%);
+.orbit-node--care { animation-delay: -2s; }
+.orbit-node--history { animation-delay: -3.5s; }
+.orbit-node path,
+.asset-hub path {
+  fill: none;
+  stroke: #186b5b;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
-[dir="rtl"] .hero-waves {
-  mask-image: linear-gradient(to left, transparent 28%, #000 50%, #000 90%, transparent);
+.orbit-node--history circle {
+  fill: none;
+  stroke: #186b5b;
+  stroke-width: 3;
+}
+.orbit-node .node-check,
+.asset-hub .hub-check {
+  stroke: #fffdf9;
+  stroke-width: 3.2;
+}
+.asset-hub {
+  filter: drop-shadow(0 20px 30px #173c3322);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hero-hub-breathe 7s ease-in-out infinite alternate;
+}
+.asset-hub .hub-line {
+  stroke: #90a49b;
+  stroke-width: 2;
+}
+/* SVG cards above form a calm, connected asset and care record. */
+.hero-constellation ellipse {
+  vector-effect: non-scaling-stroke;
+}
+.hero-constellation {
+  color: var(--color-primary);
+}
+.hero-constellation .orbit-node--record {
+  animation-delay: -1s;
+}
+.hero-constellation .orbit-node--care {
+  animation-delay: -2.8s;
+}
+.hero-constellation .orbit-node--history {
+  animation-delay: -4.2s;
+}
+[dir="rtl"] .hero-constellation {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .hero-constellation .orbit-node path,
+[dir="rtl"] .hero-constellation .asset-hub path {
+  transform: scaleX(-1);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+[dir="rtl"] .hero-color {
+  animation-direction: alternate-reverse;
 }
 .hero-copy {
   max-width: 920px;
@@ -1577,15 +1608,17 @@ p {
     transform: translateY(0);
   }
 }
-@keyframes hero-color-drift {
-  0% { transform: translate3d(8%, -12%, 0) scale(1.04) rotate(-8deg); }
-  45% { transform: translate3d(-14%, 18%, 0) scale(1.16) rotate(12deg); }
-  100% { transform: translate3d(5%, -8%, 0) scale(1.1) rotate(-4deg); }
+@keyframes hero-wash-flow {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
 }
-@keyframes hero-wave-flow {
-  0% { transform: translate3d(0, -28px, 0) rotate(-1.5deg); }
-  50% { transform: translate3d(24px, 12px, 0) rotate(1.5deg); }
-  100% { transform: translate3d(-18px, 34px, 0) rotate(-.8deg); }
+@keyframes hero-node-drift {
+  from { transform: translate3d(0, 12px, 0) rotate(-2deg); }
+  to { transform: translate3d(0, -12px, 0) rotate(2deg); }
+}
+@keyframes hero-hub-breathe {
+  from { transform: scale(.98); }
+  to { transform: scale(1.025); }
 }
 @media (max-width: 1439px) {
   .section-rail { display: none; }
@@ -1596,6 +1629,7 @@ p {
   }
 }
 @media (max-width: 1100px) {
+  .hero-constellation { display: none; }
   .wrap {
     width: calc(100% - 64px);
   }
@@ -1753,31 +1787,11 @@ p {
   .hero {
     padding-block: 54px 46px;
   }
-  .hero-color::before {
-    width: 90%;
-    inset-inline-end: -30%;
-    filter: blur(28px);
-    opacity: .6;
+  .hero-color {
+    background-size: 250% 100%;
   }
-  .hero-color::after {
-    width: 78%;
-    inset-inline-end: -35%;
-    filter: blur(28px);
-    opacity: .45;
-  }
-  .hero-waves {
-    inset-inline-end: -20%;
-    top: 0;
-    width: 104%;
-    height: 96%;
-    opacity: .76;
-    mask-image: linear-gradient(to right, transparent 38%, #000 64%, #000 90%, transparent);
-  }
-  .hero-waves path {
-    stroke-width: 2.8;
-  }
-  [dir="rtl"] .hero-waves {
-    mask-image: linear-gradient(to left, transparent 38%, #000 64%, #000 90%, transparent);
+  .hero-constellation {
+    display: none;
   }
   .hero h1 {
     font-size: clamp(2.8rem, 10vw, 3.8rem);

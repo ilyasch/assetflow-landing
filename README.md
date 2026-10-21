@@ -24,7 +24,7 @@ infrastructure.
 
 The homepage pairs a bold headline and color wash with a colorful, explicitly illustrative AssetFlow Home interface, followed by ownership chapters, household sharing, pricing and a solutions-by-market comparison. Home is available; Business, Fleet and Hospitality are Coming Soon. The market matrix describes planned capabilities explicitly. Selecting an edition shows its full five-row profile beside the row labels, with no horizontal scrolling on mobile. The available/planned status and relevant start/enquiry action remain explicit. Without JavaScript, the complete semantic comparison table stays readable in a labeled scroll region with a sticky first column.
 
-The hero’s decorative color cloud uses two CSS layers and five moving parabolic wave ribbons on the right of the heading, mirrored in RTL. It extends behind the top-right navigation and tracks the header height to avoid a blank band, softens on mobile and stops for reduced-motion preferences, with no image, video or animation-library download.
+The hero pairs a slow color wash behind the top-right navigation with a small animated asset-care constellation: a tracked asset card connected to document, upcoming-care and service-history icons. The decorative inline SVG mirrors in RTL, hides on narrow screens to keep the copy clear, and all motion stops for reduced-motion preferences. No image, video or animation-library download is added.
 
 The example has Asset, Maintenance plan and Records tabs. The maintenance tab lets visitors review, confirm and reset a sample task; nothing is sent to a server or saved. With JavaScript disabled, all three panels remain readable and inert controls are hidden. Pricing defaults to monthly. No package manager or framework is required.
 

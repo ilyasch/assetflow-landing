@@ -55,13 +55,13 @@
         "reason": "Agent: Maintenance plan and Records label the existing demo navigation and separate tab/context panels; JavaScript hides inactive panels while the no-JavaScript fallback keeps the examples readable"
       },
       {
-        "rule": "radial-halo",
+        "rule": "marquee",
         "value": "*",
         "files": [
-          "styles.css"
+          "index.html"
         ],
-        "createdAt": "2026-10-21T21:18:26.406Z",
-        "reason": "User requested the animated color cloud beside the hero headline; these moving radial color fields are intentional artwork on the warm white hero, not halos on a dark page"
+        "createdAt": "2026-10-21T21:37:14.868Z",
+        "reason": "The hero contains no auto-scrolling text or hidden content; its decorative SVG cards for an asset, records, care and history gently float in place."
       }
     ]
   },
