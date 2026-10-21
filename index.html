@@ -97,8 +97,8 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="styles.css?v=2" />
-    <script defer src="main.js?v=3"></script>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <script defer src="main.js?v=4"></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
@@ -155,36 +155,53 @@
         </details>
       </div>
     </header>
-    <main id="main">
+    <main id="main" class="has-section-rail">
+      <nav
+        class="section-rail"
+        aria-label="Main navigation"
+        data-i18n-aria="site.navigation"
+        data-section-nav
+      >
+        <a href="#product" aria-current="location" data-section-link
+          ><span data-i18n="site.product">Product</span></a
+        ><a href="#how-it-works" data-section-link
+          ><span data-i18n="site.how">How it works</span></a
+        ><a href="#pricing" data-section-link
+          ><span data-i18n="nav.pricing">Pricing</span></a
+        ><a href="#editions" data-section-link
+          ><span data-i18n="site.solutions">Solutions</span></a>
+      </nav>
       <section class="hero">
         <div class="wrap">
-          <h1>
-            <span data-i18n="site.hero">Less to remember.</span><br /><em
-              data-i18n="site.heroAccent"
-              >More peace of mind.</em
-            >
-          </h1>
-          <p class="hero-lead">
-            <span data-i18n="site.lead"
-              >Your things, their documents, and what needs doing next. Keep it
-              all together with AssetFlow Home.</span
-            >
-          </p>
-          <div class="hero-actions">
-            <a
-              data-i18n="site.start"
-              class="btn btn-primary"
-              href="https://myassetsflow.app"
-              >Start free</a
-            ><a data-i18n="site.see" class="btn btn-outline" href="#product"
-              >See how it works</a
-            >
+          <div class="hero-copy">
+            <h1>
+              <span data-i18n="site.hero">Less to remember.</span><br /><em
+                data-i18n="site.heroAccent"
+                >More peace of mind.</em
+              >
+            </h1>
+            <p class="hero-lead">
+              <span data-i18n="site.lead"
+                >Your things, their documents, and what needs doing next. Keep it
+                all together with AssetFlow Home.</span
+              >
+            </p>
+            <div class="hero-actions">
+              <a
+                data-i18n="site.start"
+                class="btn btn-primary"
+                href="https://myassetsflow.app"
+                >Start free</a
+              ><a data-i18n="site.see" class="btn btn-outline" href="#product"
+                >See how it works</a
+              >
+            </div>
+            <p class="hero-note">
+              <span data-i18n="site.freeNote"
+                >Start with one asset. No payment needed.</span
+              >
+            </p>
           </div>
-          <p class="hero-note">
-            <span data-i18n="site.freeNote"
-              >Start with one asset. No payment needed.</span
-            >
-          </p>
         </div>
       </section>
       <section id="product" class="product-section">
@@ -240,54 +257,14 @@
                 class="demo-panel"
                 aria-labelledby="demo-tab-asset"
               >
-                <div class="vehicle-art">
-                  <svg viewBox="0 0 440 180" fill="none" aria-hidden="true">
-                    <path
-                      d="m82 106 35-48h152l56 48 32 7c15 3 23 13 23 27v9H62v-26c0-10 8-17 20-17Z"
-                      fill="currentColor"
-                      opacity=".14"
-                    />
-                    <path
-                      d="m82 106 35-48h152l56 48 32 7c15 3 23 13 23 27v9H62v-26c0-10 8-17 20-17Zm36-3h173l-37-33H139l-21 33Z"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    />
-                    <circle
-                      cx="122"
-                      cy="145"
-                      r="23"
-                      fill="var(--color-surface)"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    />
-                    <circle
-                      cx="122"
-                      cy="145"
-                      r="8"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    />
-                    <circle
-                      cx="315"
-                      cy="145"
-                      r="23"
-                      fill="var(--color-surface)"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    />
-                    <circle
-                      cx="315"
-                      cy="145"
-                      r="8"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M205 70v33m12 16h15M63 121h22m271 4h22M20 170h400"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    />
-                  </svg>
+                <div class="vehicle-photo">
+                  <img
+                    src="/assets/vehicle-photo.jpg"
+                    width="1448"
+                    height="1088"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <h3>
                   <span data-i18n="site.vehicle">2020 Toyota Corolla</span>
@@ -455,62 +432,32 @@
             </div>
             <figure class="chapter-visual">
               <div class="chapter-asset">
-                <svg viewBox="0 0 440 180" fill="none" aria-hidden="true">
-                  <path
-                    d="m82 106 35-48h152l56 48 32 7c15 3 23 13 23 27v9H62v-26c0-10 8-17 20-17Z"
-                    fill="currentColor"
-                    opacity=".14"
-                  />
-                  <path
-                    d="m82 106 35-48h152l56 48 32 7c15 3 23 13 23 27v9H62v-26c0-10 8-17 20-17Zm36-3h173l-37-33H139l-21 33Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <circle
-                    cx="122"
-                    cy="145"
-                    r="23"
-                    fill="var(--color-surface)"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <circle
-                    cx="122"
-                    cy="145"
-                    r="8"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <circle
-                    cx="315"
-                    cy="145"
-                    r="23"
-                    fill="var(--color-surface)"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <circle
-                    cx="315"
-                    cy="145"
-                    r="8"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M205 70v33m12 16h15M63 121h22m271 4h22M20 170h400"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  /></svg
-                ><strong
-                  ><span data-i18n="site.vehicle"
-                    >2020 Toyota Corolla</span
-                  ></strong
+                <strong
+                  ><span data-i18n="site.vehicle">2020 Toyota Corolla</span></strong
                 >
                 <p>
                   <span data-i18n="site.vehicleMeta"
                     >Family car · shared household</span
                   >
                 </p>
+                <dl class="asset-details">
+                  <div>
+                    <dt><span data-i18n="site.detailYear">Year</span></dt>
+                    <dd>2020</dd>
+                  </div>
+                  <div>
+                    <dt
+                      ><span data-i18n="site.detailMileage">Mileage</span></dt
+                    >
+                    <dd><bdi>64,200 km</bdi></dd>
+                  </div>
+                  <div>
+                    <dt
+                      ><span data-i18n="site.detailDocs">Documents</span></dt
+                    >
+                    <dd>3</dd>
+                  </div>
+                </dl>
               </div>
               <figcaption>
                 <span data-i18n="site.example"
@@ -1124,7 +1071,7 @@
     </main>
     <footer class="site-footer">
       <div class="wrap footer-main">
-        <div>
+        <div class="footer-brand">
           <a class="brand" href="/#top"
             ><img
               class="brand-wordmark"
@@ -1139,22 +1086,41 @@
             >
           </p>
         </div>
-        <nav>
-          <a data-i18n="nav.blogs" href="/blog/en/" data-blog-index>Blog</a
-          ><a
-            data-i18n="security.privacyLink"
-            href="https://myassetsflow.app/privacy"
-            >Privacy policy</a
-          ><a
-            data-i18n="security.termsLink"
-            href="https://myassetsflow.app/terms"
-            >Terms of service</a
-          ><a
-            data-i18n="security.linkedinLink"
-            href="https://www.linkedin.com/company/myassetsflow"
-            >Follow us on LinkedIn</a
-          >
-        </nav>
+        <section class="footer-group">
+          <h2 data-i18n="site.product">Product</h2>
+          <nav aria-label="Product" data-i18n-aria="site.product">
+            <a href="#product" data-i18n="site.product">Product</a>
+            <a href="#how-it-works" data-i18n="site.how">How it works</a>
+            <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+          </nav>
+        </section>
+        <section class="footer-group">
+          <h2 data-i18n="site.solutions">Solutions</h2>
+          <nav aria-label="Solutions" data-i18n-aria="site.solutions">
+            <a href="#editions" data-i18n="site.solutions">Solutions</a>
+          </nav>
+        </section>
+        <section class="footer-group">
+          <h2 data-i18n="site.footerResources">Resources</h2>
+          <nav aria-label="Resources" data-i18n-aria="site.footerResources">
+            <a data-i18n="nav.blogs" href="/blog/en/" data-blog-index>Blog</a>
+            <a
+              data-i18n="security.privacyLink"
+              href="https://myassetsflow.app/privacy"
+              >Privacy policy</a
+            >
+            <a
+              data-i18n="security.termsLink"
+              href="https://myassetsflow.app/terms"
+              >Terms of service</a
+            >
+            <a
+              data-i18n="security.linkedinLink"
+              href="https://www.linkedin.com/company/myassetsflow"
+              >Follow us on LinkedIn</a
+            >
+          </nav>
+        </section>
       </div>
       <div class="wrap footer-bottom">
         © <span id="year">2026</span> AssetFlow

@@ -138,6 +138,42 @@
     });
   }
 
+  function initSectionRail() {
+    var links = Array.from(document.querySelectorAll("[data-section-link]"));
+    var sections = links
+      .map(function (link) {
+        return document.querySelector(link.getAttribute("href"));
+      })
+      .filter(Boolean);
+    if (!links.length) return;
+    var updateCurrent = function () {
+      var anchor = window.innerHeight * 0.36;
+      var currentSection = sections[0];
+      sections.forEach(function (section) {
+        if (section.getBoundingClientRect().top <= anchor)
+          currentSection = section;
+      });
+      var current = "#" + currentSection.id;
+      links.forEach(function (link) {
+        if (link.getAttribute("href") === current)
+          link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    };
+    var scheduled = false;
+    function scheduleUpdate() {
+      if (scheduled) return;
+      scheduled = true;
+      window.requestAnimationFrame(function () {
+        scheduled = false;
+        updateCurrent();
+      });
+    }
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    updateCurrent();
+  }
+
   function initDemo() {
     var demo = document.querySelector(".ownership-demo");
     var tabs = Array.from(demo.querySelectorAll("[data-demo]"));
@@ -253,6 +289,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     initPricing();
     initDemo();
+    initSectionRail();
     document
       .getElementById("lang-picker")
       .addEventListener("change", function (event) {

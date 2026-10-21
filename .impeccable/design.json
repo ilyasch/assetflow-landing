@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T21:02:26.701945+00:00",
+  "generatedAt": "2026-10-21T10:25:00+02:00",
   "title": "Design System: AssetFlow landing",
   "extensions": {
     "typographyMeta": {
@@ -20,12 +20,12 @@
     "shadows": [
       {
         "name": "demo",
-        "value": "0 28px 70px -24px #173c3338",
+        "value": "0 28px 70px -24px #2028222b",
         "purpose": "Ownership demonstration only."
       },
       {
         "name": "mobile-menu",
-        "value": "0 12px 30px -12px #173c3333",
+        "value": "0 12px 30px -12px #20282224",
         "purpose": "Disclosure menu over page content."
       }
     ],
@@ -202,6 +202,31 @@
           "oklch(95% 0.1125 84.58)"
         ]
       },
+      "terracotta": {
+        "role": "secondary",
+        "displayName": "Terracotta",
+        "hex": "#a34a32"
+      },
+      "terracotta-soft": {
+        "role": "surface",
+        "displayName": "Soft terracotta",
+        "hex": "#f2dfd2"
+      },
+      "sky": {
+        "role": "surface",
+        "displayName": "Pale sky",
+        "hex": "#dcebf0"
+      },
+      "sage": {
+        "role": "surface",
+        "displayName": "Sage",
+        "hex": "#dce8d6"
+      },
+      "cobalt": {
+        "role": "secondary",
+        "displayName": "Cobalt",
+        "hex": "#416d92"
+      },
       "border": {
         "role": "neutral",
         "displayName": "Pale green-gray",
@@ -246,7 +271,7 @@
     {
       "name": "Header navigation",
       "kind": "nav",
-      "description": "Fine, understated editorial navigation.",
+      "description": "Floating top navigation with compact pill framing.",
       "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#home\">Home</a><a href=\"#blog\">Blog</a></nav>",
       "css": ".ds-nav{display:flex;gap:28px;align-items:center;font-family:var(--font-body,Inter,system-ui,sans-serif)}.ds-nav a{color:var(--color-text,#173c33);font-size:.85rem;text-decoration:none}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid var(--color-primary,#186b5b);outline-offset:5px}"
     },
@@ -275,13 +300,16 @@
     }
   ],
   "narrative": {
-    "northStar": "Spacious ownership stories",
-    "overview": "The approved website system pairs warm paper, forest green and restrained gold with generous space and a quiet editorial rhythm. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. Existing AssetFlow logos and raster imagery remain unchanged.\n\nFine rules and tonal fields organize most content. A single elevated ownership demonstration provides the homepage’s concentrated product detail; articles use semantic diagrams and open reading columns. Surface strategy remains in `.impeccable/surfaces/home.md` and `.impeccable/surfaces/blog.md`.",
+    "northStar": "A vivid picture of what you own",
+    "overview": "The website combines AssetFlow's forest green and warm gold with terracotta, sky blue and sage. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. The product interface leads; one realistic vehicle photograph replaces the line-art drawing inside its illustrative asset view. Existing AssetFlow logos remain unchanged.\n\nFine rules and tonal fields organize most content. The ownership demonstration uses a deep-green rail, flexible data stage and colorful contextual panel; articles use semantic diagrams and open reading columns. Generated vehicle image provenance is recorded in `assets/IMAGE-SOURCES.md`. Surface strategy remains in `.impeccable/surfaces/home.md` and `.impeccable/surfaces/blog.md`.\n\nThe homepage uses a compact floating top bar, a sticky left section rail on wide screens, and a multi-column footer. A slow, restrained multicolor wash animates behind the opening section; the prefers-reduced-motion setting disables it.",
     "keyCharacteristics": [
-      "Warm white and forest green with restrained gold.",
+      "Warm white, forest green and gold balanced with terracotta, sky blue and sage.",
       "Georgia display and Inter body; native Arabic typography.",
-      "Solid pill actions, fine dividers and open sections.",
-      "One elevated ownership example; flat editorial reading surfaces."
+      "A clear product interface with realistic vehicle photography in its illustrative asset view.",
+      "Solid pill actions, fine dividers and open sections with color fields.",
+      "Floating top navigation and a left section rail on wide screens.",
+      "Animated, restrained color wash behind the hero with reduced-motion support.",
+      "Multi-column footer organized by product, solutions and resources."
     ],
     "rules": [
       {

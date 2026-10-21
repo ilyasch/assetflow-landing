@@ -20,9 +20,9 @@ infrastructure.
 - `blog.css`, `scripts/build-blog.py`: editorial layout and static generation.
 - `locales/*.json`: homepage copy in English, Italian, German, Spanish, French and Arabic.
 - `content/blog/*.json`: unchanged article content and editorial UI translations.
-- `assets/`: existing branding and local fonts.
+- `assets/`: existing branding and local fonts, plus generated illustrative vehicle photography whose provenance is recorded in `assets/IMAGE-SOURCES.md`.
 
-The homepage leads with AssetFlow Home, followed by ownership chapters, household sharing, pricing and a solutions-by-market comparison. Home is available; Business, Fleet and Hospitality are Coming Soon. The market matrix describes planned capabilities explicitly. On small screens it is a labeled, keyboard-focusable horizontal scroll region.
+The homepage pairs a bold headline and color wash with a colorful, explicitly illustrative AssetFlow Home interface, followed by ownership chapters, household sharing, pricing and a solutions-by-market comparison. Home is available; Business, Fleet and Hospitality are Coming Soon. The market matrix describes planned capabilities explicitly. On small screens it is a labeled, keyboard-focusable horizontal scroll region.
 
 The example has Asset, Maintenance plan and Records tabs. The maintenance tab lets visitors review, confirm and reset a sample task; nothing is sent to a server or saved. With JavaScript disabled, all three panels remain readable and inert controls are hidden. Pricing defaults to monthly. No package manager or framework is required.
 

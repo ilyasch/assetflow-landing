@@ -1,6 +1,6 @@
 ---
 name: AssetFlow landing
-description: Spacious ownership stories in warm white, forest green and serif type.
+description: Colorful ownership stories with an expressive product interface, forest green and serif type.
 colors:
   bg: "#fcfcf9"
   bg-alt: "#f0f3ed"
@@ -10,11 +10,16 @@ colors:
   primary: "#186b5b"
   primary-dark: "#173c33"
   accent: "#f1c975"
+  terracotta: "#a34a32"
+  terracotta-soft: "#f2dfd2"
+  sky: "#dcebf0"
+  sage: "#dce8d6"
+  cobalt: "#416d92"
   border: "#dce3db"
 typography:
   display:
     fontFamily: 'Georgia, "Times New Roman", serif'
-    fontSize: "clamp(3.5rem, 6.3vw, 6rem)"
+    fontSize: "clamp(3.5rem, 4.7vw, 5rem)"
     fontWeight: 400
     lineHeight: 1.08
     letterSpacing: "-0.035em"
@@ -76,28 +81,32 @@ components:
 
 ## Overview
 
-**Creative North Star: "Spacious ownership stories"**
+**Creative North Star: "A vivid picture of what you own"**
 
-The approved website system pairs warm paper, forest green and restrained gold with generous space and a quiet editorial rhythm. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. Existing AssetFlow logos and raster imagery remain unchanged.
+The website combines AssetFlow's forest green and warm gold with terracotta, sky blue and sage. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. The product interface leads; one realistic asset photograph replaces the line-art vehicle drawing inside the sample view. Existing AssetFlow logos remain unchanged.
 
 Fine rules and tonal fields organize most content. A single elevated ownership demonstration provides the homepage’s concentrated product detail; articles use semantic diagrams and open reading columns. Surface strategy remains in `.impeccable/surfaces/home.md` and `.impeccable/surfaces/blog.md`.
 
 **Key Characteristics:**
-- Warm white and forest green with restrained gold.
+- Warm white, forest green and gold, balanced with terracotta, sky blue and sage.
 - Georgia display and Inter body; native Arabic typography.
-- Solid pill actions, fine dividers and open sections.
-- One elevated ownership example; flat editorial reading surfaces.
+- A clear product interface with one realistic asset photograph inside its sample view.
+- Solid pill actions, fine dividers and open sections with color fields.
 
 ## Colors
 
-Warm white establishes the canvas; forest green carries text and action, while gold marks small highlights and selected states.
+Warm white establishes the canvas; forest green carries text and action. Terracotta and sage split the hero; gold frames the photograph. Sky blue and terracotta distinguish story panels and market headings.
 
 ### Primary
 - **Forest green:** links, emphasized headline words, hover actions and focus outlines.
 - **Deep forest:** body text, primary action fills, the demo rail and household section. Text and primary-dark intentionally share one source value.
 
 ### Secondary
-- **Warm gold:** selection, small state accents and the article CTA against deep forest.
+- **Warm gold:** selection, small state accents and the offset hero frame.
+- **Terracotta:** emphasized hero phrase, one story surface and closing call to action.
+- **Sky blue:** a cool story surface and Hospitality matrix heading.
+- **Sage:** the hero media field and first story surface.
+- **Cobalt:** the Fleet matrix heading.
 
 ### Neutral
 - **Warm white:** page canvas.
@@ -123,17 +132,17 @@ Arabic switches both font roles to Tahoma, Arial, sans-serif, removes heading tr
 
 The centered wrapper is `min(100% - 112px, 1240px)`, expanding at `1500px` to `min(100% - 144px, 1360px)`. Insets become `32px` at `1100px`, `20px` at `620px`, and `16px` at `360px`. Sections use `108px` block padding, reducing to `80px` and then `65px`. These are observed layout values, not an invented global spacing scale.
 
-The homepage opens with a wide left-aligned headline and actions. The ownership demonstration has a dark rail, flexible stage and contextual third column. At `900px` the contextual column hides; at `620px` the rail becomes horizontal tabs above the stage. Alternating two-column chapters become a single reading sequence on mobile. Pricing is a divider-led four-column grid, becoming two columns at `900px`.
+The homepage opens with a floating pill navigation and a clear left-aligned headline over a slow terracotta, sky and sage color wash. On wide screens, a fixed left section rail tracks Product, How it works, Pricing and Solutions; the content shifts to leave room. Below `1440px`, the rail gives way to the full-width layout. The wide product interface follows directly, with a deep-green rail, flexible stage, sky-blue context panel and a realistic vehicle photo inside the illustrative asset view. At `900px` the contextual column hides; at `620px` the demo rail becomes horizontal tabs above the stage and the header switches to its menu disclosure. Color-backed two-column chapters become a single reading sequence on mobile. Pricing is a divider-led four-column grid, becoming two columns at `900px`.
 
 The market matrix preserves its semantic table and `950px` minimum width in an overflow region. Its labeled, keyboard-focusable region and scroll instruction support narrow screens; the instruction appears below `1014px`. Home receives a pale-green column and an available label. Business, Fleet and Hospitality retain explicit Coming Soon labels and planned capability wording.
 
 The blog index pairs a featured story and large semantic document illustration before a two-column story list. It stacks at `760px`. Articles pair a `220px` contents rail and flexible reading column with `64px` gap; at `1000px` these become `175px` and `36px`, and at `760px` the layout becomes one column with a native contents disclosure. Article body measure is `70ch`. At `460px`, body size becomes `1rem`, figures stack and article wrapper padding is removed inside the shared mobile wrapper.
 
-Logical inline/block properties support RTL. Homepage locale selection prioritizes a valid `?lang=`, saved preference, browser language, then English. Switching locale updates text, accessibility labels, metadata, blog links, document direction and visible numerals; storage is optional. Generated blog indexes and articles have six explicit locale routes, matching language links and RTL Arabic markup. Arabic flow counters use Arabic-Indic numerals.
+The footer groups brand, Product, Solutions and Resources into clear link columns, stacking at narrower widths. Logical inline/block properties support RTL, including the fixed section rail. Homepage locale selection prioritizes a valid `?lang=`, saved preference, browser language, then English. Switching locale updates text, accessibility labels, metadata, blog links, document direction and visible numerals; storage is optional. Generated blog indexes and articles have six explicit locale routes, matching language links and RTL Arabic markup. Arabic flow counters use Arabic-Indic numerals.
 
 ## Elevation & Depth
 
-Most surfaces remain flat, using spacing, thin rules and soft background changes. The ownership example carries the source demo shadow (`0 28px 70px -24px #173c3338`); the mobile menu uses a smaller diffuse shadow. Primary actions are solid and have no lift or shadow. Soft radial color fields behind the hero and closing section provide atmosphere without adding image assets.
+Most surfaces remain flat, using spacing, thin rules and soft background changes. The ownership example carries a neutral demo shadow (`0 28px 70px -24px #2028222b`); the mobile menu and section rail use smaller neutral shadows. Primary actions are solid and have no lift or shadow. Soft radial color fields behind the hero provide atmosphere, moving slowly and stopping for reduced-motion preferences.
 
 **The Concentrated Depth Rule.** Reserve the large ambient shadow for the ownership demonstration; use rules and tonal fields for editorial structure.
 
@@ -167,7 +176,7 @@ A pill billing switch updates monthly/annual price visibility and pressed states
 
 ### Editorial figures and reading controls
 
-Article figures are semantic explanations: step sequences, maps, evidence rows and comparison worksheets. Their captions use the body family, while article headings use display type. Figures rest on soft fields with fine separators; they contain no simulated app controls. FAQ and contents use native details/summary. Related links follow the reading body. Print hides navigation, contents, CTAs and related links while keeping figures together where possible. Existing logo and social rasters are retained; this redesign adds no raster assets.
+Article figures are semantic explanations: step sequences, maps, evidence rows and comparison worksheets. Their captions use the body family, while article headings use display type. Figures rest on soft fields with fine separators; they contain no simulated app controls. FAQ and contents use native details/summary. Related links follow the reading body. Print hides navigation, contents, CTAs and related links while keeping figures together where possible. Existing logo and social rasters are retained; the generated vehicle photo and its provenance are recorded in `assets/IMAGE-SOURCES.md`.
 
 ## Do's and Don'ts
 

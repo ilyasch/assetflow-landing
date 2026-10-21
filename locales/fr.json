@@ -360,7 +360,8 @@
     "footer": "Un peu plus d’ordre pour tout ce qui vous appartient.",
     "navigation": "Navigation principale",
     "billing": "Période de facturation",
-    "solutions": "Solutions"
+    "solutions": "Solutions",
+    "footerResources": "Ressources"
   },
   "a11y": {
     "skip": "Aller au contenu"

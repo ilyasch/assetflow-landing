@@ -360,7 +360,8 @@
     "footer": "Ein bisschen mehr Ordnung für alles, was dir gehört.",
     "navigation": "Hauptnavigation",
     "billing": "Abrechnungszeitraum",
-    "solutions": "Lösungen"
+    "solutions": "Lösungen",
+    "footerResources": "Ressourcen"
   },
   "a11y": {
     "skip": "Zum Inhalt springen"

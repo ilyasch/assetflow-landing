@@ -360,7 +360,8 @@
     "footer": "A little more order for everything you own.",
     "navigation": "Main navigation",
     "billing": "Billing period",
-    "solutions": "Solutions"
+    "solutions": "Solutions",
+    "footerResources": "Resources"
   },
   "a11y": {
     "skip": "Skip to content"
