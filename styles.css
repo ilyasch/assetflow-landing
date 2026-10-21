@@ -511,7 +511,7 @@ p {
     radial-gradient(ellipse at 78% 62%, #a7cbd8 0%, transparent 49%),
     radial-gradient(ellipse at 35% 74%, #bed1ab 0%, transparent 47%);
   opacity: .8;
-  animation: hero-color-drift 16s cubic-bezier(.37, 0, .63, 1) infinite alternate;
+  animation: hero-color-drift 9s cubic-bezier(.37, 0, .63, 1) infinite alternate;
 }
 .hero-color::after {
   inset-inline-end: -17%;
@@ -522,7 +522,7 @@ p {
     radial-gradient(ellipse at 60% 36%, #8fbdb4 0%, transparent 48%),
     radial-gradient(ellipse at 35% 72%, #f1c975 0%, transparent 48%);
   opacity: .55;
-  animation: hero-color-drift 22s cubic-bezier(.37, 0, .63, 1) -7s infinite alternate-reverse;
+  animation: hero-color-drift 12s cubic-bezier(.37, 0, .63, 1) -4s infinite alternate-reverse;
 }
 [dir="rtl"] .hero-color::before,
 [dir="rtl"] .hero-color::after {
@@ -1548,9 +1548,9 @@ p {
   }
 }
 @keyframes hero-color-drift {
-  0% { transform: translate3d(4%, -5%, 0) scale(1.04) rotate(-9deg); }
-  45% { transform: translate3d(-8%, 12%, 0) scale(1.13) rotate(6deg); }
-  100% { transform: translate3d(0, -2%, 0) scale(1.08) rotate(14deg); }
+  0% { transform: translate3d(8%, -12%, 0) scale(1.04) rotate(-8deg); }
+  45% { transform: translate3d(-14%, 18%, 0) scale(1.16) rotate(12deg); }
+  100% { transform: translate3d(5%, -8%, 0) scale(1.1) rotate(-4deg); }
 }
 @media (max-width: 1439px) {
   .section-rail { display: none; }
