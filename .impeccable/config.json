@@ -26,6 +26,33 @@
         ],
         "createdAt": "2026-10-21T21:00:16.685Z",
         "reason": "User confirmed faster loading only; retain existing compact labels in the illustrative product examples during this performance refinement"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T21:11:21.023Z",
+        "reason": "Agent: these existing full-bleed section shells use constrained wrap margins for horizontal insets and section block padding; child panels own their padding, as verified in desktop and mobile previews"
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T21:11:21.160Z",
+        "reason": "Agent: the existing 42-character Flow AI figure caption is an illustrative sample-data label, not a body paragraph; preserve its intentional metadata styling"
+      },
+      {
+        "rule": "repeated-container-text",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T21:11:21.312Z",
+        "reason": "Agent: Maintenance plan and Records label the existing demo navigation and separate tab/context panels; JavaScript hides inactive panels while the no-JavaScript fallback keeps the examples readable"
       }
     ]
   },
