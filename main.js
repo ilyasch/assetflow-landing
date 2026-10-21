@@ -150,7 +150,7 @@
     var links = Array.from(document.querySelectorAll("[data-section-link]"));
     var main = document.getElementById("main");
     var header = document.querySelector(".site-header");
-    var desktopRail = window.matchMedia("(min-width: 1440px)");
+    var desktopRail = window.matchMedia("(min-width: 1200px)");
     var sections = links
       .map(function (link) {
         return document.querySelector(link.getAttribute("href"));

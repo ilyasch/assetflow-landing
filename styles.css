@@ -571,17 +571,17 @@ p {
 .section-rail {
   display: none;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .section-rail {
     position: fixed;
     z-index: 20;
-    inset-inline-start: 22px;
+    inset-inline-start: 16px;
     top: 50%;
     transform: translateY(-50%);
     display: grid;
     gap: 5px;
-    width: 150px;
-    padding: 12px;
+    width: 164px;
+    padding: 10px;
     border: 1px solid var(--color-border);
     border-radius: 16px;
     background: #fff;
@@ -617,8 +617,8 @@ p {
   }
   .section-rail a[aria-current="location"] { font-weight: 650; }
   main.has-section-rail.is-section-rail-active > section > .wrap {
-    width: min(calc(100% - 280px), 1360px);
-    margin-inline-start: 210px;
+    width: min(calc(100% - 230px), 1280px);
+    margin-inline-start: 198px;
     margin-inline-end: auto;
   }
 }
@@ -1056,14 +1056,14 @@ p {
 }
 .chapter {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 110px;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(28px, 4vw, 56px);
   align-items: center;
-  padding-block: 72px;
+  padding-block: 40px;
 }
 .feature-rows {
   display: grid;
-  gap: 12px;
+  gap: 0;
 }
 .feature-row {
   border-block-end: 1px solid var(--color-border);
@@ -1098,17 +1098,17 @@ p {
 }
 .feature-slide-detail {
   display: flex;
-  min-height: 350px;
+  min-height: 280px;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(28px, 5vw, 56px);
+  padding: clamp(22px, 3vw, 36px);
   background: linear-gradient(135deg, #e8f1e5 0%, #f4efe0 52%, #e2edf2 100%);
 }
 .feature-slide-detail h3 {
   max-width: 15ch;
-  margin-block: 22px 12px;
+  margin-block: 16px 10px;
   font-family: var(--font-display);
-  font-size: clamp(1.55rem, 2.5vw, 2.25rem);
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
   font-weight: 400;
   line-height: 1.15;
 }
@@ -1285,7 +1285,7 @@ p {
   margin: 0;
   min-width: 0;
   background: var(--color-sage);
-  padding: 32px;
+  padding: 24px;
   border-radius: var(--radius);
 }
 .chapter-visual figcaption {
@@ -2020,7 +2020,7 @@ p {
     margin-block-start: 18px;
   }
   .feature-carousel-controls { justify-content: center; }
-  .feature-slide-detail { min-height: 300px; }
+  .feature-slide-detail { min-height: 260px; }
   .chapter-plan h3,
   .chapter-record h3 {
     font-size: 1.6rem;
