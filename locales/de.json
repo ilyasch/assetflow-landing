@@ -116,6 +116,30 @@
       "help": "Bewahre Installationsunterlagen und Servicehinweise beim Haus auf und verfolge die nächste Prüfung, ohne dich auf einen Ordner oder dein Gedächtnis zu verlassen."
     }
   },
+  "flowAI": {
+    "title": "Lerne Flow AI kennen – deinen Assistenten für Asset-Unterlagen",
+    "lead": "Flow AI versteht die Unterlagen und abgeschlossenen Arbeiten, die du einem Asset hinzufügst. Stelle Fragen, entdecke hilfreiche Erkenntnisse und mache daraus vorgeschlagene Maßnahmen, Aufgaben oder einen intelligenten Wartungsplan, den du prüfen kannst.",
+    "step1Title": "Frage deine Unterlagen",
+    "step1Body": "Erhalte Antworten aus Handbüchern, Rechnungen, Notizen und abgeschlossenen Arbeiten, die du bei einem Asset gespeichert hast.",
+    "step2Title": "Erkenne, was wichtig ist",
+    "step2Body": "Flow AI kann relevante Details und mögliche Lücken in deinen Unterlagen hervorheben.",
+    "step3Title": "Mach aus Erkenntnissen konkrete Schritte",
+    "step3Body": "Nutze einen Fund, um eine Aufgabe oder einen intelligenten Wartungsplan zu entwerfen. Prüfe und ändere den Entwurf, bevor du ihn übernimmst.",
+    "exampleLabel": "Beispielgespräch · Beispieldokumente",
+    "questionLabel": "Deine Frage",
+    "question": "Was sollte ich vor dem nächsten Service prüfen?",
+    "assistantName": "Flow AI",
+    "answer": "Ich habe in den Unterlagen dieses Assets ein Handbuch und eine Service-Rechnung gefunden. Daraus kann ich einen Wartungsplan erstellen, den du prüfen kannst.",
+    "sourcesLabel": "Verwendete Unterlagen",
+    "insightLabel": "Erkenntnis aus den Unterlagen",
+    "insight": "Handbuch und Service-Rechnung können dir bei deinem nächsten Schritt helfen.",
+    "source1": "Handbuch · PDF",
+    "source2": "Service-Rechnung · PDF",
+    "nextLabel": "Aus einer Erkenntnis wird",
+    "nextTitle": "Eine Folgeaufgabe oder ein intelligenter Wartungsplan",
+    "nextBody": "Prüfe den Vorschlag, passe die Details an und entscheide, was du übernimmst.",
+    "note": "Flow-AI-Vorschläge beruhen auf den Informationen in deinen Unterlagen. Du behältst die Kontrolle über jede Maßnahme."
+  },
   "library": {
     "eyebrow": "Teil des Besitz-Workflows",
     "title": "Eine Bibliothek für die Geschichte jedes Objekts",
@@ -146,7 +170,7 @@
   "smartPlan": {
     "eyebrow": "Der Wert, sofort",
     "title": "Ein smarter Wartungsplan in Sekunden",
-    "lead": "Gib AssetFlow die Informationen, die du bereits hast. Daraus entsteht ein praktischer Entwurf, den du prüfen, anpassen und freigeben kannst.",
+    "lead": "Flow AI nutzt die gespeicherten Asset-Details und Unterlagen, um einen praktischen Entwurf vorzubereiten. Prüfe, ändere und bestätige jeden Vorschlag.",
     "preview": {
       "brand": "Entwurf für smarten Plan",
       "status": "Empfohlener Entwurf",

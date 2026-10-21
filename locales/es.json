@@ -116,6 +116,30 @@
       "help": "Guarda los documentos de instalación y las notas de servicio junto a la casa y sigue la próxima revisión sin depender de una carpeta o de la memoria."
     }
   },
+  "flowAI": {
+    "title": "Conoce Flow AI, tu asistente para los registros de tus bienes",
+    "lead": "Flow AI entiende los documentos y trabajos completados que añades a cada bien. Haz preguntas, descubre información útil y convierte lo que encuentre en acciones sugeridas, tareas o un plan de mantenimiento inteligente que puedes revisar.",
+    "step1Title": "Pregunta sobre tus registros",
+    "step1Body": "Obtén respuestas basadas en manuales, facturas, notas y trabajos completados que hayas guardado con un bien.",
+    "step2Title": "Encuentra lo importante",
+    "step2Body": "Flow AI puede destacar detalles relevantes y posibles lagunas en tus registros.",
+    "step3Title": "Convierte la información en acciones",
+    "step3Body": "Usa un hallazgo para preparar una tarea o un plan de mantenimiento inteligente; después revísalo y ajústalo antes de añadirlo.",
+    "exampleLabel": "Conversación ilustrativa · registros de ejemplo",
+    "questionLabel": "Tu pregunta",
+    "question": "¿Qué debería revisar antes del próximo servicio?",
+    "assistantName": "Flow AI",
+    "answer": "He encontrado un manual y una factura de servicio entre los registros de este bien. Puedo usarlos para preparar un plan de mantenimiento que podrás revisar.",
+    "sourcesLabel": "Registros consultados",
+    "insightLabel": "Información de tus registros",
+    "insight": "El manual y la factura de servicio pueden ayudarte a decidir el siguiente paso.",
+    "source1": "Manual del propietario · PDF",
+    "source2": "Factura de servicio · PDF",
+    "nextLabel": "La información puede convertirse en",
+    "nextTitle": "Una tarea de seguimiento o un plan de mantenimiento inteligente",
+    "nextBody": "Revisa la sugerencia, ajusta los detalles y decide qué añadir.",
+    "note": "Las sugerencias de Flow AI se basan en la información disponible en tus registros. Tú mantienes el control de cada acción."
+  },
   "library": {
     "eyebrow": "Parte del recorrido de propiedad",
     "title": "Una biblioteca para la historia de cada bien",
@@ -146,7 +170,7 @@
   "smartPlan": {
     "eyebrow": "El valor, rápido",
     "title": "Un plan de mantenimiento inteligente en segundos",
-    "lead": "Dale a AssetFlow el contexto que ya tienes. Lo convierte en un borrador práctico que puedes revisar, ajustar y aprobar.",
+    "lead": "Flow AI usa los detalles y registros que has guardado para cada bien para preparar un borrador práctico. Revisa, ajusta y aprueba cada sugerencia.",
     "preview": {
       "brand": "Borrador de plan inteligente",
       "status": "Borrador recomendado",

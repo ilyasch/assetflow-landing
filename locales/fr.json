@@ -116,6 +116,30 @@
       "help": "Gardez les documents d'installation et les notes d'entretien avec la maison, puis suivez la prochaine vérification sans dépendre d'un dossier ou de votre mémoire."
     }
   },
+  "flowAI": {
+    "title": "Découvrez Flow AI, votre assistant pour les documents de vos biens",
+    "lead": "Flow AI comprend les documents et les interventions terminées que vous ajoutez à chaque bien. Posez vos questions, découvrez des informations utiles et transformez-les en actions suggérées, tâches ou plan d’entretien intelligent à examiner.",
+    "step1Title": "Interrogez vos documents",
+    "step1Body": "Obtenez des réponses à partir des notices, factures, notes et interventions terminées enregistrées avec un bien.",
+    "step2Title": "Repérez ce qui compte",
+    "step2Body": "Flow AI peut faire ressortir des détails utiles et des informations potentiellement manquantes dans vos documents.",
+    "step3Title": "Transformez une observation en action",
+    "step3Body": "Utilisez une observation pour préparer une tâche ou un plan d’entretien intelligent, puis vérifiez-le et ajustez-le avant de l’ajouter.",
+    "exampleLabel": "Échange illustratif · documents d’exemple",
+    "questionLabel": "Votre question",
+    "question": "Que devrais-je vérifier avant le prochain entretien ?",
+    "assistantName": "Flow AI",
+    "answer": "J’ai trouvé une notice et une facture d’entretien dans les documents de ce bien. Je peux m’en servir pour préparer un plan d’entretien que vous pourrez examiner.",
+    "sourcesLabel": "Documents utilisés",
+    "insightLabel": "Information tirée des documents",
+    "insight": "La notice et la facture d’entretien peuvent vous aider à choisir la prochaine étape.",
+    "source1": "Notice · PDF",
+    "source2": "Facture d’entretien · PDF",
+    "nextLabel": "Une observation peut devenir",
+    "nextTitle": "Une tâche de suivi ou un plan d’entretien intelligent",
+    "nextBody": "Vérifiez la suggestion, ajustez les détails et choisissez ce que vous souhaitez ajouter.",
+    "note": "Les suggestions de Flow AI s’appuient sur les informations présentes dans vos documents. Vous gardez le contrôle de chaque action."
+  },
   "library": {
     "eyebrow": "Au cœur du parcours de propriété",
     "title": "Une bibliothèque pour l'histoire de chaque bien",
@@ -146,7 +170,7 @@
   "smartPlan": {
     "eyebrow": "La valeur, tout de suite",
     "title": "Un plan d'entretien intelligent en quelques secondes",
-    "lead": "Donnez à AssetFlow le contexte que vous avez déjà. Il le transforme en brouillon pratique que vous pouvez vérifier, ajuster et valider.",
+    "lead": "Flow AI utilise les détails et documents enregistrés pour chaque bien afin de préparer un brouillon pratique. Examinez, ajustez et validez chaque suggestion.",
     "preview": {
       "brand": "Brouillon de plan intelligent",
       "status": "Brouillon recommandé",

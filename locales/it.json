@@ -116,6 +116,30 @@
       "help": "Tieni i documenti di installazione e le note di assistenza insieme alla casa, poi segui il prossimo controllo senza affidarti a una cartella o alla memoria."
     }
   },
+  "flowAI": {
+    "title": "Scopri Flow AI, l’assistente per i documenti dei tuoi beni",
+    "lead": "Flow AI comprende i documenti e gli interventi completati che aggiungi a ogni bene. Fai domande, trova informazioni utili e trasforma ciò che emerge in azioni suggerite, attività o un piano di manutenzione intelligente da rivedere.",
+    "step1Title": "Chiedi informazioni sui tuoi documenti",
+    "step1Body": "Ottieni risposte basate su manuali, fatture, note e interventi completati salvati con un bene.",
+    "step2Title": "Individua ciò che conta",
+    "step2Body": "Flow AI può evidenziare dettagli rilevanti e possibili informazioni mancanti nei tuoi documenti.",
+    "step3Title": "Trasforma un’indicazione in un’azione",
+    "step3Body": "Usa ciò che emerge per preparare un’attività o un piano di manutenzione intelligente, poi rivedilo e modificalo prima di aggiungerlo.",
+    "exampleLabel": "Conversazione illustrativa · documenti di esempio",
+    "questionLabel": "La tua domanda",
+    "question": "Cosa dovrei controllare prima del prossimo intervento?",
+    "assistantName": "Flow AI",
+    "answer": "Ho trovato un manuale d’uso e una fattura di manutenzione nei documenti di questo bene. Posso usarli per preparare un piano da rivedere.",
+    "sourcesLabel": "Documenti consultati",
+    "insightLabel": "Informazione emersa dai documenti",
+    "insight": "Il manuale d’uso e la fattura di manutenzione possono aiutarti a decidere il prossimo passo.",
+    "source1": "Manuale d’uso · PDF",
+    "source2": "Fattura di manutenzione · PDF",
+    "nextLabel": "Un’indicazione può diventare",
+    "nextTitle": "Un’attività da seguire o un piano di manutenzione intelligente",
+    "nextBody": "Rivedi il suggerimento, modifica i dettagli e scegli cosa aggiungere.",
+    "note": "I suggerimenti di Flow AI si basano sulle informazioni disponibili nei tuoi documenti. Ogni azione resta sotto il tuo controllo."
+  },
   "library": {
     "eyebrow": "Parte del percorso di gestione",
     "title": "Una libreria per la storia di ogni bene",
@@ -146,7 +170,7 @@
   "smartPlan": {
     "eyebrow": "Il valore, subito",
     "title": "Un piano di manutenzione intelligente in pochi secondi",
-    "lead": "Fornisci ad AssetFlow il contesto che hai già. Lo trasforma in una bozza pratica che puoi rivedere, modificare e approvare.",
+    "lead": "Flow AI usa i dettagli e i documenti salvati per quel bene per preparare una bozza pratica. Rivedi, modifica e approva ogni suggerimento.",
     "preview": {
       "brand": "Bozza del piano intelligente",
       "status": "Bozza consigliata",
