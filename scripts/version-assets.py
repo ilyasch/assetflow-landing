@@ -2,6 +2,7 @@
 import hashlib
 import re
 from pathlib import Path
+from _vendor.rcssmin import cssmin
 
 root = Path('dist')
 output = root / 'static'
@@ -26,9 +27,10 @@ for path in assets:
     pages = {path: text.replace('/' + old, new).replace(old, new) for path, text in pages.items()}
     css = css.replace(old, new)
 
-css_url = publish(root / 'styles.css', css.encode())
+css_url = publish(root / 'styles.css', cssmin(css).encode())
 js_url = publish(root / 'main.js')
-blog_url = publish(root / 'blog.css')
+blog_css = cssmin((root / 'blog.css').read_text()).encode()
+blog_url = publish(root / 'blog.css', blog_css)
 for path, text in pages.items():
     text = re.sub(r'/?styles\.css\?v=\d+', css_url, text)
     text = re.sub(r'/?main\.js\?v=\d+', js_url, text)
