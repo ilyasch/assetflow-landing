@@ -370,6 +370,21 @@
     select(buttons[0]);
   }
 
+  function initHeroColor() {
+    var header = document.querySelector(".site-header");
+    if (!header) return;
+    function updateHeaderHeight() {
+      document.documentElement.style.setProperty(
+        "--site-header-height",
+        header.offsetHeight + "px",
+      );
+    }
+    updateHeaderHeight();
+    if ("ResizeObserver" in window)
+      new ResizeObserver(updateHeaderHeight).observe(header);
+    else window.addEventListener("resize", updateHeaderHeight);
+  }
+
   function initFeatureTracks() {
     var refreshers = [];
     document.querySelectorAll(".feature-chapter").forEach(function (chapter) {
@@ -435,6 +450,7 @@
     initDemo();
     initMarketMatrix();
     initSectionRail();
+    initHeroColor();
     initFeatureTracks();
     document
       .getElementById("lang-picker")

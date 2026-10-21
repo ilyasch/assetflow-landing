@@ -479,12 +479,14 @@ p {
   position: relative;
   isolation: isolate;
   padding-block: 72px 54px;
-  overflow: hidden;
-  background: #fffdf9;
+  overflow: visible;
+  background: transparent;
 }
 .hero-color {
   position: absolute;
-  inset: 0;
+  inset-inline: 0;
+  top: calc(0px - var(--site-header-height, 78px));
+  height: calc(100% + var(--site-header-height, 78px));
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
