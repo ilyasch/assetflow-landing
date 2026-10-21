@@ -266,6 +266,127 @@
       "ctaText": "Inizia dal veicolo, dai documenti disponibili e da un’attività di manutenzione confermata."
     },
     {
+      "title": "Flow AI: dai documenti dei beni ai prossimi passi",
+      "description": "Scopri come Flow AI risponde alle domande sui documenti, evidenzia informazioni utili e aiuta a trasformare i risultati in attività e piani di manutenzione da rivedere.",
+      "lead": "Un manuale da una parte, una fattura di manutenzione dall’altra e un dettaglio che non ricordi bene. Flow AI ti aiuta a capire i documenti che hai aggiunto a ogni bene: fai una domanda, trova le informazioni pertinenti e decidi se trasformare ciò che emerge in un’attività o in una bozza di piano.",
+      "sections": [
+        {
+          "title": "Collega i documenti al bene giusto",
+          "paragraphs": [
+            "Aggiungi i documenti e le note sui lavori completati che vuoi far considerare a Flow AI e collegali al bene o all’evento a cui si riferiscono. Manuali, ricevute, fatture, foto di ispezione e note possono fornire contesto.",
+            "L’assistente può usare solo le informazioni disponibili nei tuoi documenti. Se una data, un dettaglio dell’intervento o una raccomandazione non è registrata, la risposta potrebbe essere incompleta. Apri il documento originale per verificare."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Documenti che danno contesto a una risposta",
+            "items": [
+              [
+                "Documenti del bene",
+                "Manuali, garanzie, polizze e contratti."
+              ],
+              [
+                "Prove degli eventi",
+                "Fatture, ricevute, rapporti e foto."
+              ],
+              [
+                "Lavori completati",
+                "Che cosa è stato fatto, quando e con quale documento."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Fai una domanda con parole semplici",
+          "paragraphs": [
+            "Chiedi informazioni su ciò che hai salvato: quale documento descrive una riparazione, quali lavori risultano registrati o quali dettagli verificare prima del prossimo intervento. Una domanda precisa aiuta a trovare la parte di storico che ti serve.",
+            "Flow AI può riassumere i dettagli pertinenti e indicare da quali documenti provengono. Apri le fonti per controllare date, importi e raccomandazioni prima di agire. La risposta è un punto di partenza, non sostituisce il parere di un professionista."
+          ]
+        },
+        {
+          "title": "Individua dettagli e possibili lacune",
+          "paragraphs": [
+            "Quando i documenti aumentano, è facile non notare un dettaglio utile. Flow AI può mettere in relazione le informazioni e segnalare quando qualcosa sembra mancare o non essere chiaro, così sai cosa conviene verificare.",
+            "Un documento mancante resta tale: l’assistente non ricrea lavori non registrati né dimostra che un’attività sia stata svolta. Considera una possibile lacuna come una domanda da chiarire e aggiungi la prova corretta quando la trovi."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Distingui i fatti registrati dalle domande aperte",
+            "items": [
+              [
+                "Nei documenti",
+                "Informazioni collegate a manuali, fatture, note o lavori completati."
+              ],
+              [
+                "Da verificare",
+                "Dettagli poco chiari o non ancora documentati."
+              ],
+              [
+                "Il tuo prossimo passo",
+                "Verifica la fonte o aggiungi l’informazione mancante."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Trasforma un’informazione utile in un’attività",
+          "paragraphs": [
+            "Se un’indicazione suggerisce un seguito pratico, usala per preparare un’attività o un suggerimento per il piano di manutenzione. Potresti, per esempio, aggiungere un promemoria per controllare un documento o chiedere all’officina informazioni su una raccomandazione in fattura.",
+            "Controlla il testo e i dettagli prima di aggiungerli. Tieni separati i suggerimenti dai lavori conclusi e conferma solo ciò che è corretto e utile. Decidi tu cosa inserire nel programma."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Dall’informazione all’azione, con la tua revisione",
+            "items": [
+              [
+                "Indicazione",
+                "Un dettaglio utile o una domanda aperta nei documenti."
+              ],
+              [
+                "Bozza",
+                "Prepara un’attività o un suggerimento di manutenzione."
+              ],
+              [
+                "Decidi",
+                "Rivedi, modifica e aggiungi solo ciò che approvi."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Prepara un piano di manutenzione intelligente da verificare",
+          "paragraphs": [
+            "Flow AI può usare i dettagli del bene, i manuali e gli interventi registrati per preparare una bozza di piano di manutenzione intelligente. I documenti danno contesto agli interventi suggeriti, così puoi valutare cosa è pertinente.",
+            "Confronta la bozza con le indicazioni del produttore e con il parere di un professionista per il tuo bene specifico. Modifica o rimuovi ciò che non è adatto, poi conferma le attività che vuoi mantenere. Registrando i lavori completati, potrai consultare più facilmente lo storico in futuro."
+          ]
+        }
+      ],
+      "checklistTitle": "Usa Flow AI con attenzione",
+      "checklist": [
+        "Collega manuali, fatture e lavori completati al bene corretto.",
+        "Fai una domanda chiara sullo storico che vuoi capire.",
+        "Controlla i documenti di origine a supporto della risposta.",
+        "Trasforma un’informazione utile in attività o bozza solo quando serve.",
+        "Rivedi ogni suggerimento prima di confermarlo."
+      ],
+      "faq": [
+        [
+          "Flow AI aggiunge attività senza chiedermelo?",
+          "No. Può preparare suggerimenti, ma sei tu a rivederli e decidere cosa aggiungere."
+        ],
+        [
+          "Può rispondere su documenti che non ho aggiunto?",
+          "Usa le informazioni disponibili nei tuoi documenti AssetFlow; quelle mancanti possono limitare la risposta."
+        ],
+        [
+          "Il piano intelligente sostituisce il manuale o il parere di un professionista?",
+          "No. Usa la bozza come punto di partenza e verifica le indicazioni per il tuo bene specifico."
+        ]
+      ],
+      "ctaTitle": "Tieni i dettagli vicini ai beni che possiedi",
+      "ctaText": "Inizia con AssetFlow Home per organizzare beni, documenti e attività di manutenzione da rivedere.",
+      "id": "flow-ai-from-records-to-next-steps"
+    },
+    {
       "id": "factory-maintenance",
       "title": "Produzione più coordinata con un piano di manutenzione chiaro",
       "description": "Una fabbrica alimentare mostra perché documenti, accesso QR e passaggi di consegne devono appartenere allo stesso flusso.",

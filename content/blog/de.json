@@ -266,6 +266,127 @@
       "ctaText": "Beginne mit dem Fahrzeug, vorhandenen Unterlagen und einer bestätigten Wartungsaufgabe."
     },
     {
+      "title": "Flow AI: Von Asset-Unterlagen zu klaren nächsten Schritten",
+      "description": "Erfahre, wie Flow AI Fragen zu Asset-Unterlagen beantwortet, hilfreiche Erkenntnisse hervorhebt und daraus prüfbare Aufgaben und Wartungspläne ableiten kann.",
+      "lead": "Ein Handbuch hier, eine Service-Rechnung dort und ein Detail, an das du dich nicht genau erinnerst. Flow AI hilft dir, die Unterlagen zu verstehen, die du einem Asset hinzugefügt hast: Stelle eine Frage, finde passende Informationen und entscheide, ob daraus eine Aufgabe oder ein Wartungsplan-Entwurf werden soll.",
+      "sections": [
+        {
+          "title": "Ordne Unterlagen dem richtigen Asset zu",
+          "paragraphs": [
+            "Füge die Dokumente und Notizen zu erledigten Arbeiten hinzu, die Flow AI berücksichtigen soll, und verknüpfe sie mit dem Asset oder Ereignis, zu dem sie gehören. Handbücher, Belege, Service-Rechnungen, Prüfungsfotos und Notizen liefern Kontext.",
+            "Der Assistent kann nur verfügbare Informationen aus deinen Unterlagen nutzen. Wenn ein Datum, eine Arbeitsbeschreibung oder eine Empfehlung nicht dokumentiert ist, kann die Antwort unvollständig sein. Öffne bei Bedarf das Originaldokument."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Unterlagen als Grundlage für Antworten",
+            "items": [
+              [
+                "Asset-Dokumente",
+                "Handbücher, Garantien, Policen und Verträge."
+              ],
+              [
+                "Belege zu Ereignissen",
+                "Rechnungen, Belege, Berichte und Fotos."
+              ],
+              [
+                "Erledigte Arbeiten",
+                "Was gemacht wurde, wann es geschah und welcher Beleg dazu gehört."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Frage in deinen eigenen Worten",
+          "paragraphs": [
+            "Frage nach den gespeicherten Informationen: Welches Dokument beschreibt eine Reparatur, welche Arbeiten sind vermerkt oder welche Details solltest du vor dem nächsten Service prüfen? Eine konkrete Frage hilft, den passenden Teil der Historie zu finden.",
+            "Flow AI kann relevante Details zusammenfassen und zeigen, aus welchen Unterlagen sie stammen. Prüfe Daten, Beträge und Empfehlungen anhand der Quelldokumente, bevor du handelst. Die Antwort ist ein hilfreicher Anfang, kein Ersatz für fachlichen Rat."
+          ]
+        },
+        {
+          "title": "Erkenne wichtige Details und mögliche Lücken",
+          "paragraphs": [
+            "Wenn sich Unterlagen ansammeln, übersieht man leicht ein wichtiges Detail. Flow AI kann zusammengehörige Angaben hervorheben und auf mögliche fehlende oder unklare Informationen hinweisen, damit du weißt, was du als Nächstes prüfen kannst.",
+            "Ein fehlendes Dokument bleibt fehlend: Der Assistent rekonstruiert keine undokumentierten Arbeiten und beweist nicht, dass eine Aufgabe erledigt wurde. Behandle eine mögliche Lücke als offene Frage und ergänze den richtigen Beleg, sobald du ihn findest."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Dokumentierte Fakten von offenen Fragen trennen",
+            "items": [
+              [
+                "In deinen Unterlagen",
+                "Angaben aus Handbuch, Rechnung, Notiz oder erledigter Aufgabe."
+              ],
+              [
+                "Noch zu prüfen",
+                "Unklare oder bislang nicht belegte Details."
+              ],
+              [
+                "Dein nächster Schritt",
+                "Quelle prüfen oder fehlende Information ergänzen."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Mach aus einer Erkenntnis eine Aufgabe",
+          "paragraphs": [
+            "Wenn sich aus einer Erkenntnis ein praktischer Folgeschritt ergibt, kannst du damit eine Aufgabe oder einen Wartungsvorschlag vorbereiten. Zum Beispiel kannst du eine Aufgabe zum Prüfen eines Dokuments anlegen oder bei einer Werkstatt eine Empfehlung aus einer Rechnung nachfragen.",
+            "Prüfe Formulierung und Details, bevor du etwas übernimmst. Halte Vorschläge getrennt von erledigten Arbeiten und bestätige nur, was stimmt und für dich hilfreich ist. Du entscheidest, was in deinen Zeitplan kommt."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Mit deiner Prüfung wird aus einer Erkenntnis ein Schritt",
+            "items": [
+              [
+                "Erkenntnis",
+                "Ein hilfreiches Detail oder eine offene Frage aus den Unterlagen."
+              ],
+              [
+                "Entwurf",
+                "Eine Folgeaufgabe oder einen Wartungsvorschlag vorbereiten."
+              ],
+              [
+                "Entscheiden",
+                "Prüfen, anpassen und nur Freigegebenes übernehmen."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Erstelle einen prüfbaren intelligenten Wartungsplan",
+          "paragraphs": [
+            "Flow AI kann Asset-Details, Handbücher und dokumentierte Service-Historie nutzen, um einen intelligenten Wartungsplan als Entwurf vorzubereiten. Die Unterlagen liefern Kontext für vorgeschlagene Arbeiten, damit du ihre Relevanz einschätzen kannst.",
+            "Vergleiche den Entwurf mit den Herstellerangaben und fachlicher Beratung für dein konkretes Asset. Passe an oder entferne, was nicht passt, und bestätige dann nur die Aufgaben, die du übernehmen möchtest. Wenn du erledigte Arbeiten dokumentierst, ist die Historie beim nächsten Mal leichter auffindbar."
+          ]
+        }
+      ],
+      "checklistTitle": "Flow AI sinnvoll nutzen",
+      "checklist": [
+        "Verknüpfe Handbücher, Rechnungen und erledigte Arbeiten mit dem richtigen Asset.",
+        "Stelle eine klare Frage zu dem Teil der Historie, den du verstehen möchtest.",
+        "Prüfe die Quelldokumente hinter der Antwort oder Erkenntnis.",
+        "Mach nur dann eine Aufgabe oder einen Plan-Entwurf daraus, wenn es hilfreich ist.",
+        "Prüfe jeden Vorschlag, bevor du ihn bestätigst."
+      ],
+      "faq": [
+        [
+          "Legt Flow AI Aufgaben ohne meine Zustimmung an?",
+          "Nein. Flow AI kann Vorschläge vorbereiten; du prüfst sie und entscheidest, was du übernimmst."
+        ],
+        [
+          "Kann Flow AI Fragen zu nicht hinzugefügten Unterlagen beantworten?",
+          "Es nutzt verfügbare AssetFlow-Unterlagen. Fehlende Informationen können die Antwort einschränken."
+        ],
+        [
+          "Ersetzt der intelligente Plan das Handbuch oder fachlichen Rat?",
+          "Nein. Nutze den Entwurf als Ausgangspunkt und prüfe die passenden Wartungsangaben für dein Asset."
+        ]
+      ],
+      "ctaTitle": "Halte wichtige Details bei deinen Assets",
+      "ctaText": "Starte mit AssetFlow Home und organisiere Assets, Unterlagen und prüfbare Wartungsaufgaben.",
+      "id": "flow-ai-from-records-to-next-steps"
+    },
+    {
       "id": "factory-maintenance",
       "title": "Produktion mit einem klareren Wartungsplan koordinieren",
       "description": "Eine Lebensmittelproduktion zeigt, warum Gerätedaten, QR-Zugang und klare Wartungsübergaben zusammengehören.",

@@ -266,6 +266,127 @@
       "ctaText": "Empieza con tu vehículo, los documentos disponibles y una tarea de mantenimiento confirmada."
     },
     {
+      "title": "Flow AI: de los registros del bien a los próximos pasos",
+      "description": "Descubre cómo Flow AI responde preguntas sobre tus registros, destaca información útil y ayuda a convertir hallazgos en tareas y planes de mantenimiento revisables.",
+      "lead": "Un manual por un lado, una factura de servicio por otro y un detalle que no recuerdas bien. Flow AI te ayuda a entender los registros que has añadido a cada bien: haz una pregunta, encuentra información relevante y decide si convertir lo que descubra en una tarea o un borrador de mantenimiento.",
+      "sections": [
+        {
+          "title": "Vincula los registros al bien adecuado",
+          "paragraphs": [
+            "Añade los documentos y notas de trabajos realizados que quieres que Flow AI tenga en cuenta, y vincúlalos al bien o al evento que describen. Manuales, recibos, facturas de servicio, fotos de inspección y notas pueden aportar contexto.",
+            "El asistente solo puede trabajar con la información disponible en tus registros. Si no se ha documentado una fecha, un detalle del servicio o una recomendación, la respuesta puede ser incompleta. Abre el documento original cuando necesites comprobarlo."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Registros que dan contexto a una respuesta",
+            "items": [
+              [
+                "Documentos del bien",
+                "Manuales, garantías, pólizas y contratos."
+              ],
+              [
+                "Pruebas de eventos",
+                "Facturas, recibos, informes y fotos."
+              ],
+              [
+                "Trabajo realizado",
+                "Qué se hizo, cuándo ocurrió y qué documento lo respalda."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Pregunta con tus propias palabras",
+          "paragraphs": [
+            "Pregunta sobre la información guardada: qué documento describe una reparación, qué trabajos constan o qué detalles revisar antes del próximo servicio. Una pregunta concreta ayuda a encontrar la parte del historial que necesitas.",
+            "Flow AI puede resumir detalles relevantes e indicar de qué registros proceden. Abre los documentos de origen para confirmar fechas, importes y recomendaciones antes de actuar. La respuesta es un punto de partida útil, no sustituye el asesoramiento profesional."
+          ]
+        },
+        {
+          "title": "Detecta detalles importantes y posibles lagunas",
+          "paragraphs": [
+            "Cuando se acumulan registros, es fácil pasar por alto un detalle útil. Flow AI puede relacionar información y señalar posibles datos que faltan o no están claros, para que sepas qué conviene comprobar.",
+            "Un documento que falta sigue faltando: el asistente no reconstruye trabajos sin registrar ni demuestra que una tarea se haya completado. Trata una posible laguna como algo que debes aclarar y añade la prueba correcta cuando la encuentres."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Distingue los hechos registrados de las preguntas abiertas",
+            "items": [
+              [
+                "En tus registros",
+                "Información vinculada a un manual, factura, nota o tarea completada."
+              ],
+              [
+                "Por comprobar",
+                "Detalles poco claros o que aún no tienen respaldo."
+              ],
+              [
+                "Tu siguiente paso",
+                "Verifica la fuente o añade la información que falta."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Convierte un hallazgo útil en una tarea",
+          "paragraphs": [
+            "Si un hallazgo sugiere un seguimiento práctico, úsalo para preparar una tarea o una sugerencia para el plan de mantenimiento. Por ejemplo, puedes crear una tarea para revisar un documento o preguntar a un taller sobre una recomendación de una factura.",
+            "Revisa el texto y los detalles antes de añadirlos. Separa las sugerencias del trabajo completado y confirma solo lo que sea correcto y útil para ti. Tú decides qué forma parte de tu calendario."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "Del hallazgo a la acción, con tu revisión",
+            "items": [
+              [
+                "Hallazgo",
+                "Un detalle útil o una pregunta abierta en tus registros."
+              ],
+              [
+                "Borrador",
+                "Prepara una tarea de seguimiento o sugerencia de mantenimiento."
+              ],
+              [
+                "Decide",
+                "Revisa, ajusta y añade solo lo que apruebes."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Prepara un plan de mantenimiento inteligente que puedas revisar",
+          "paragraphs": [
+            "Flow AI puede usar los detalles del bien, los manuales y el historial de servicio registrado para preparar un borrador de plan inteligente. Los registros aportan contexto al trabajo sugerido, para que valores qué puede ser relevante.",
+            "Comprueba el borrador con las indicaciones del fabricante y el consejo profesional para tu bien específico. Ajusta o elimina lo que no encaje y confirma solo las tareas que quieras conservar. Al registrar el trabajo completado, el historial será más fácil de consultar la próxima vez."
+          ]
+        }
+      ],
+      "checklistTitle": "Usa Flow AI con criterio",
+      "checklist": [
+        "Vincula manuales, facturas y trabajos completados al bien adecuado.",
+        "Haz una pregunta clara sobre el historial que quieres entender.",
+        "Comprueba los registros originales que respaldan la respuesta.",
+        "Convierte un hallazgo en una tarea o borrador solo cuando resulte útil.",
+        "Revisa cada sugerencia antes de confirmarla."
+      ],
+      "faq": [
+        [
+          "¿Flow AI añade tareas sin preguntarme?",
+          "No. Puede preparar sugerencias, pero tú las revisas y decides qué añadir."
+        ],
+        [
+          "¿Puede responder sobre registros que no he añadido?",
+          "Trabaja con la información disponible en tus registros de AssetFlow; los datos que faltan pueden limitar la respuesta."
+        ],
+        [
+          "¿El plan inteligente sustituye el manual o el consejo profesional?",
+          "No. Usa el borrador como punto de partida y verifica las indicaciones para tu bien concreto."
+        ]
+      ],
+      "ctaTitle": "Mantén los detalles cerca de tus bienes",
+      "ctaText": "Empieza con AssetFlow Home para organizar bienes, registros y tareas de mantenimiento revisables.",
+      "id": "flow-ai-from-records-to-next-steps"
+    },
+    {
       "id": "factory-maintenance",
       "title": "Coordina la producción con un plan de mantenimiento más claro",
       "description": "Una fábrica alimentaria muestra por qué registros, acceso QR y relevos de mantenimiento pertenecen al mismo flujo.",

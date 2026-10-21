@@ -266,6 +266,127 @@
       "ctaText": "Start with your vehicle, the documents you have, and one confirmed maintenance task."
     },
     {
+      "title": "Flow AI: turn asset records into clearer next steps",
+      "description": "Learn how Flow AI can answer questions from your asset records, surface useful insights, and help turn findings into reviewable tasks and maintenance plans.",
+      "lead": "A manual in one place, a service invoice in another, and a detail you cannot quite remember. Flow AI helps you make sense of the records you have added to each asset: ask a question, see relevant information, and decide whether a finding should become a task or a maintenance-plan draft.",
+      "sections": [
+        {
+          "title": "Start with records linked to the right asset",
+          "paragraphs": [
+            "Add the documents and completed-work notes you want Flow AI to consider, and connect them to the asset or event they describe. Manuals, receipts, service invoices, inspection photos, and written notes can all help provide context.",
+            "The assistant can only work with information available in your records. If a date, service detail, or recommendation is not documented, its answer may be incomplete. Open the original record when you need to verify what it says."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Records that can give an answer context",
+            "items": [
+              [
+                "Asset documents",
+                "Manuals, warranties, policies, and contracts."
+              ],
+              [
+                "Event evidence",
+                "Invoices, receipts, reports, and photos."
+              ],
+              [
+                "Completed work",
+                "What was done, when it happened, and its supporting record."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Ask a question in your own words",
+          "paragraphs": [
+            "Ask about the information you have saved: which document describes a repair, what work is recorded, or what details to check before planning the next service. A focused question helps you find the part of the history that matters.",
+            "Flow AI can summarize relevant details from the available records and show you where they came from. Read the supporting document to confirm dates, amounts, and recommendations before you act. The answer is a helpful starting point, not a substitute for professional advice."
+          ]
+        },
+        {
+          "title": "Notice details and possible gaps",
+          "paragraphs": [
+            "As records accumulate, useful details can be hard to spot. Flow AI can bring related information together and point out when something may be missing or unclear, so you know what is worth checking next.",
+            "A missing document stays missing: the assistant does not recreate unrecorded work or prove that a task happened. Treat a possible gap as a question to resolve, then add the correct evidence when you find it."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Separate recorded facts from open questions",
+            "items": [
+              [
+                "In your records",
+                "Information linked to a manual, invoice, note, or completed task."
+              ],
+              [
+                "Worth checking",
+                "Details that are unclear or not supported by a record yet."
+              ],
+              [
+                "Your next move",
+                "Verify the source or add the missing information."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Turn a useful finding into a task",
+          "paragraphs": [
+            "When a finding points to a practical follow-up, use it to prepare a task or a maintenance-plan suggestion. For example, you might create a task to review a document or ask a workshop about a recommendation recorded on an invoice.",
+            "Review the wording and any details before adding it. Keep a suggestion separate from completed work, and confirm only what is accurate and useful for you. You decide what becomes part of your schedule."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "From finding to action, with your review",
+            "items": [
+              [
+                "Finding",
+                "A useful detail or an open question from your records."
+              ],
+              [
+                "Draft",
+                "Prepare a follow-up task or maintenance suggestion."
+              ],
+              [
+                "Decide",
+                "Review, adjust, then add only what you approve."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Build a smart maintenance plan you can check",
+          "paragraphs": [
+            "Flow AI can use asset details, manuals, and recorded service history to prepare a smart maintenance-plan draft. The records provide context for suggested work, so you can see what may be relevant to that asset.",
+            "Check a draft against the manufacturer guidance and qualified advice for your specific item. Adjust or remove anything that does not fit, then confirm the tasks you want to keep. As you record completed work, the history becomes easier to refer back to next time."
+          ]
+        }
+      ],
+      "checklistTitle": "A thoughtful way to use Flow AI",
+      "checklist": [
+        "Link manuals, invoices, and completed work to the right asset.",
+        "Ask one clear question about the history you want to understand.",
+        "Check the source records behind the answer or insight.",
+        "Turn useful findings into a task or plan draft only when it helps.",
+        "Review every suggestion before confirming it."
+      ],
+      "faq": [
+        [
+          "Does Flow AI add tasks without asking me?",
+          "No. It can prepare suggestions, but you review and decide what to add."
+        ],
+        [
+          "Can it answer about records I have not added?",
+          "It works with information available in your AssetFlow records; missing information may limit an answer."
+        ],
+        [
+          "Does a smart plan replace the manual or professional advice?",
+          "No. Use the draft as a starting point and verify maintenance guidance for your specific asset."
+        ]
+      ],
+      "ctaTitle": "Keep the details close to what you own",
+      "ctaText": "Start with AssetFlow Home to organize assets, records, and reviewable maintenance tasks.",
+      "id": "flow-ai-from-records-to-next-steps"
+    },
+    {
       "id": "factory-maintenance",
       "title": "Keep production moving with a clearer maintenance plan",
       "description": "A food-production factory shows why equipment records, QR access and clear maintenance handovers belong in the same workflow.",

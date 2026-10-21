@@ -266,6 +266,127 @@
       "ctaText": "Commencez avec votre véhicule, les documents disponibles et une tâche d’entretien confirmée."
     },
     {
+      "title": "Flow AI : des documents de vos biens aux prochaines étapes",
+      "description": "Découvrez comment Flow AI répond à vos questions sur les documents, fait ressortir des informations utiles et aide à créer des tâches et plans d’entretien à examiner.",
+      "lead": "Une notice ici, une facture d’entretien ailleurs et un détail dont vous ne vous souvenez plus très bien. Flow AI vous aide à comprendre les documents ajoutés à chaque bien : posez une question, retrouvez les informations pertinentes et décidez si une observation doit devenir une tâche ou un brouillon de plan d’entretien.",
+      "sections": [
+        {
+          "title": "Associez les documents au bon bien",
+          "paragraphs": [
+            "Ajoutez les documents et notes de travaux terminés que vous souhaitez faire prendre en compte par Flow AI, puis associez-les au bien ou à l’événement qu’ils décrivent. Notices, reçus, factures d’entretien, photos d’inspection et notes peuvent fournir du contexte.",
+            "L’assistant ne peut utiliser que les informations présentes dans vos documents. Si une date, un détail d’intervention ou une recommandation n’est pas consigné, la réponse peut être incomplète. Ouvrez le document original pour vérifier."
+          ],
+          "visual": {
+            "type": "record",
+            "title": "Des documents pour contextualiser une réponse",
+            "items": [
+              [
+                "Documents du bien",
+                "Notices, garanties, polices et contrats."
+              ],
+              [
+                "Justificatifs d’événement",
+                "Factures, reçus, rapports et photos."
+              ],
+              [
+                "Travaux terminés",
+                "Ce qui a été fait, à quelle date et avec quel justificatif."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Posez une question avec vos propres mots",
+          "paragraphs": [
+            "Interrogez les informations enregistrées : quel document décrit une réparation, quels travaux sont consignés ou quels détails vérifier avant le prochain entretien. Une question précise aide à retrouver la partie de l’historique qui vous intéresse.",
+            "Flow AI peut résumer les informations utiles et indiquer les documents dont elles proviennent. Consultez les sources pour vérifier dates, montants et recommandations avant d’agir. La réponse est un point de départ, pas un remplacement d’un conseil professionnel."
+          ]
+        },
+        {
+          "title": "Repérez les détails utiles et les éventuelles lacunes",
+          "paragraphs": [
+            "Quand les documents s’accumulent, un détail important peut passer inaperçu. Flow AI peut rapprocher des informations et signaler des éléments potentiellement absents ou peu clairs, afin de vous aider à savoir quoi vérifier.",
+            "Un document manquant reste manquant : l’assistant ne reconstitue pas les travaux non consignés et ne prouve pas qu’une tâche a été faite. Considérez une lacune éventuelle comme une question à résoudre, puis ajoutez le justificatif lorsque vous le retrouvez."
+          ],
+          "visual": {
+            "type": "compare",
+            "title": "Distinguer les faits consignés des questions ouvertes",
+            "items": [
+              [
+                "Dans vos documents",
+                "Informations liées à une notice, facture, note ou tâche terminée."
+              ],
+              [
+                "À vérifier",
+                "Détails peu clairs ou sans justificatif pour le moment."
+              ],
+              [
+                "Votre prochaine étape",
+                "Vérifiez la source ou ajoutez l’information manquante."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Transformez une observation utile en tâche",
+          "paragraphs": [
+            "Si une observation appelle une suite concrète, utilisez-la pour préparer une tâche ou une suggestion pour le plan d’entretien. Vous pourriez, par exemple, créer une tâche pour vérifier un document ou demander à un atelier des précisions sur une recommandation de facture.",
+            "Vérifiez le texte et les détails avant de l’ajouter. Distinguez les suggestions des travaux terminés et confirmez uniquement ce qui est exact et utile pour vous. Vous choisissez ce qui rejoint votre planning."
+          ],
+          "visual": {
+            "type": "flow",
+            "title": "De l’observation à l’action, après votre vérification",
+            "items": [
+              [
+                "Observation",
+                "Un détail utile ou une question ouverte dans vos documents."
+              ],
+              [
+                "Brouillon",
+                "Préparez une tâche de suivi ou une suggestion d’entretien."
+              ],
+              [
+                "Décider",
+                "Vérifiez, ajustez, puis ajoutez ce que vous validez."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Préparez un plan d’entretien intelligent à vérifier",
+          "paragraphs": [
+            "Flow AI peut utiliser les détails du bien, les notices et l’historique d’entretien consigné pour préparer un brouillon de plan intelligent. Les documents apportent du contexte aux travaux suggérés, afin que vous puissiez évaluer leur pertinence.",
+            "Vérifiez le brouillon à l’aide des indications du fabricant et des conseils d’un professionnel pour votre bien précis. Ajustez ou retirez ce qui ne convient pas, puis confirmez les tâches à conserver. Enregistrer les travaux terminés facilite la consultation de l’historique la fois suivante."
+          ]
+        }
+      ],
+      "checklistTitle": "Utiliser Flow AI avec discernement",
+      "checklist": [
+        "Associez notices, factures et travaux terminés au bon bien.",
+        "Posez une question claire sur l’historique à comprendre.",
+        "Vérifiez les documents sources derrière la réponse ou l’observation.",
+        "Transformez une observation en tâche ou brouillon uniquement si cela vous aide.",
+        "Examinez chaque suggestion avant de la confirmer."
+      ],
+      "faq": [
+        [
+          "Flow AI ajoute-t-il des tâches sans me demander ?",
+          "Non. Il peut préparer des suggestions, mais vous les examinez et choisissez quoi ajouter."
+        ],
+        [
+          "Peut-il répondre sur des documents que je n’ai pas ajoutés ?",
+          "Il s’appuie sur les informations présentes dans vos documents AssetFlow ; les éléments manquants peuvent limiter la réponse."
+        ],
+        [
+          "Le plan intelligent remplace-t-il la notice ou un avis professionnel ?",
+          "Non. Utilisez le brouillon comme point de départ et vérifiez les consignes pour votre bien."
+        ]
+      ],
+      "ctaTitle": "Gardez les détails près de vos biens",
+      "ctaText": "Commencez avec AssetFlow Home pour organiser vos biens, documents et tâches d’entretien à examiner.",
+      "id": "flow-ai-from-records-to-next-steps"
+    },
+    {
       "id": "factory-maintenance",
       "title": "Coordonner la production avec un plan d’entretien plus clair",
       "description": "Une usine alimentaire illustre le lien entre fiches d’équipement, accès QR et transmissions de maintenance.",

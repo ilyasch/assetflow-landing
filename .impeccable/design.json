@@ -1,172 +1,378 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T14:48:23.656207+00:00",
+  "generatedAt": "2026-10-21T10:25:00+02:00",
   "title": "Design System: AssetFlow landing",
   "extensions": {
+    "typographyMeta": {
+      "display": {
+        "displayName": "Georgia display",
+        "purpose": "Homepage hero; responsive and Arabic overrides remain in source."
+      },
+      "article-body": {
+        "displayName": "Article reading",
+        "purpose": "Sustained prose with a 70ch maximum measure."
+      },
+      "arabic": {
+        "displayName": "Native Arabic",
+        "purpose": "Replaces both display and body families in Arabic."
+      }
+    },
     "shadows": [
       {
-        "name": "sm",
-        "value": "0 2px 8px rgba(28, 35, 32, 0.06)",
-        "purpose": "Small existing landing surfaces."
+        "name": "demo",
+        "value": "0 28px 70px -24px #2028222b",
+        "purpose": "Ownership demonstration only."
       },
       {
-        "name": "md",
-        "value": "0 12px 30px rgba(28, 35, 32, 0.09)",
-        "purpose": "Medium existing landing elevation."
-      },
-      {
-        "name": "lg",
-        "value": "0 24px 60px rgba(28, 35, 32, 0.14)",
-        "purpose": "Large existing landing elevation."
-      },
-      {
-        "name": "primary-rest",
-        "value": "0 10px 24px rgba(31, 122, 92, 0.32)",
-        "purpose": "Primary button resting elevation."
-      },
-      {
-        "name": "primary-hover",
-        "value": "0 16px 32px rgba(31, 122, 92, 0.4)",
-        "purpose": "Primary button hover elevation."
+        "name": "mobile-menu",
+        "value": "0 12px 30px -12px #20282224",
+        "purpose": "Disclosure menu over page content."
       }
     ],
     "motion": [
       {
         "name": "ease",
-        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Incumbent action and reveal easing."
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Blur-to-clear demo panel easing."
       },
       {
-        "name": "action-duration",
+        "name": "action",
         "value": "0.2s",
-        "purpose": "Button, navigation and selector transitions."
+        "purpose": "Action color and border transitions."
       },
       {
-        "name": "card-duration",
+        "name": "tab-background",
         "value": "0.25s",
-        "purpose": "Landing card hover transitions."
+        "purpose": "Tab hover background."
       },
       {
-        "name": "reveal-duration",
-        "value": "0.6s",
-        "purpose": "Landing reveal; disabled by its reduced-motion override."
+        "name": "panel-in",
+        "value": "0.4s",
+        "purpose": "Opacity .7 to 1, blur 2px to 0, translateY 6px to 0; reduced motion disables it."
       }
     ],
     "breakpoints": [
       {
+        "name": "wide-wrapper",
+        "value": "1500px"
+      },
+      {
+        "name": "landing-insets",
+        "value": "1100px"
+      },
+      {
+        "name": "matrix-scroll-hint",
+        "value": "1014px"
+      },
+      {
+        "name": "article-rail",
+        "value": "1000px"
+      },
+      {
         "name": "landing-navigation",
         "value": "900px"
-      },
-      {
-        "name": "landing-editions",
-        "value": "640px"
-      },
-      {
-        "name": "landing-small",
-        "value": "520px"
-      },
-      {
-        "name": "editorial-rail",
-        "value": "1000px"
       },
       {
         "name": "editorial-stack",
         "value": "760px"
       },
       {
+        "name": "landing-stack",
+        "value": "620px"
+      },
+      {
         "name": "editorial-small",
         "value": "460px"
+      },
+      {
+        "name": "landing-small",
+        "value": "360px"
       }
-    ]
+    ],
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Warm white",
+        "tonalRamp": [
+          "oklch(15% 0.0039 106.47)",
+          "oklch(26% 0.0039 106.47)",
+          "oklch(38% 0.0039 106.47)",
+          "oklch(49% 0.0039 106.47)",
+          "oklch(61% 0.0039 106.47)",
+          "oklch(72% 0.0039 106.47)",
+          "oklch(84% 0.0039 106.47)",
+          "oklch(95% 0.0039 106.47)"
+        ]
+      },
+      "bg-alt": {
+        "role": "neutral",
+        "displayName": "Soft sage paper",
+        "tonalRamp": [
+          "oklch(15% 0.0085 128.56)",
+          "oklch(26% 0.0085 128.56)",
+          "oklch(38% 0.0085 128.56)",
+          "oklch(49% 0.0085 128.56)",
+          "oklch(61% 0.0085 128.56)",
+          "oklch(72% 0.0085 128.56)",
+          "oklch(84% 0.0085 128.56)",
+          "oklch(95% 0.0085 128.56)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(49% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(72% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Deep forest text",
+        "tonalRamp": [
+          "oklch(15% 0.0456 175.07)",
+          "oklch(26% 0.0456 175.07)",
+          "oklch(38% 0.0456 175.07)",
+          "oklch(49% 0.0456 175.07)",
+          "oklch(61% 0.0456 175.07)",
+          "oklch(72% 0.0456 175.07)",
+          "oklch(84% 0.0456 175.07)",
+          "oklch(95% 0.0456 175.07)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted green-gray",
+        "tonalRamp": [
+          "oklch(15% 0.0242 165.31)",
+          "oklch(26% 0.0242 165.31)",
+          "oklch(38% 0.0242 165.31)",
+          "oklch(49% 0.0242 165.31)",
+          "oklch(61% 0.0242 165.31)",
+          "oklch(72% 0.0242 165.31)",
+          "oklch(84% 0.0242 165.31)",
+          "oklch(95% 0.0242 165.31)"
+        ]
+      },
+      "primary": {
+        "role": "primary",
+        "displayName": "Forest green",
+        "tonalRamp": [
+          "oklch(15% 0.0807 176.46)",
+          "oklch(26% 0.0807 176.46)",
+          "oklch(38% 0.0807 176.46)",
+          "oklch(49% 0.0807 176.46)",
+          "oklch(61% 0.0807 176.46)",
+          "oklch(72% 0.0807 176.46)",
+          "oklch(84% 0.0807 176.46)",
+          "oklch(95% 0.0807 176.46)"
+        ]
+      },
+      "primary-dark": {
+        "role": "primary",
+        "displayName": "Deep forest",
+        "tonalRamp": [
+          "oklch(15% 0.0456 175.07)",
+          "oklch(26% 0.0456 175.07)",
+          "oklch(38% 0.0456 175.07)",
+          "oklch(49% 0.0456 175.07)",
+          "oklch(61% 0.0456 175.07)",
+          "oklch(72% 0.0456 175.07)",
+          "oklch(84% 0.0456 175.07)",
+          "oklch(95% 0.0456 175.07)"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Warm gold",
+        "tonalRamp": [
+          "oklch(15% 0.1125 84.58)",
+          "oklch(26% 0.1125 84.58)",
+          "oklch(38% 0.1125 84.58)",
+          "oklch(49% 0.1125 84.58)",
+          "oklch(61% 0.1125 84.58)",
+          "oklch(72% 0.1125 84.58)",
+          "oklch(84% 0.1125 84.58)",
+          "oklch(95% 0.1125 84.58)"
+        ]
+      },
+      "sky": {
+        "role": "surface",
+        "displayName": "Pale sky",
+        "hex": "#dcebf0"
+      },
+      "sage": {
+        "role": "surface",
+        "displayName": "Sage",
+        "hex": "#dce8d6"
+      },
+      "cobalt": {
+        "role": "secondary",
+        "displayName": "Cobalt",
+        "hex": "#416d92"
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Pale green-gray",
+        "tonalRamp": [
+          "oklch(15% 0.0131 141.81)",
+          "oklch(26% 0.0131 141.81)",
+          "oklch(38% 0.0131 141.81)",
+          "oklch(49% 0.0131 141.81)",
+          "oklch(61% 0.0131 141.81)",
+          "oklch(72% 0.0131 141.81)",
+          "oklch(84% 0.0131 141.81)",
+          "oklch(95% 0.0131 141.81)"
+        ]
+      },
+      "gold-soft": {
+        "role": "surface",
+        "displayName": "Pale gold",
+        "hex": "#fbf2d9"
+      },
+      "market-home": {
+        "role": "surface",
+        "displayName": "Home market",
+        "hex": "#e5eddf"
+      },
+      "market-business": {
+        "role": "surface",
+        "displayName": "Business market",
+        "hex": "#edf3f6"
+      },
+      "market-fleet": {
+        "role": "surface",
+        "displayName": "Fleet market",
+        "hex": "#f7f0d8"
+      },
+      "market-hospitality": {
+        "role": "surface",
+        "displayName": "Hospitality market",
+        "hex": "#edf1e9"
+      },
+      "market-home-selected": {
+        "role": "surface",
+        "displayName": "Selected home market",
+        "hex": "#d4e3cf"
+      },
+      "market-business-selected": {
+        "role": "surface",
+        "displayName": "Selected business market",
+        "hex": "#dcebf0"
+      },
+      "market-fleet-selected": {
+        "role": "surface",
+        "displayName": "Selected fleet market",
+        "hex": "#f1e4b9"
+      },
+      "market-hospitality-selected": {
+        "role": "surface",
+        "displayName": "Selected hospitality market",
+        "hex": "#dce8d6"
+      }
+    }
   },
   "components": [
     {
       "name": "Primary button",
       "kind": "button",
-      "refersTo": "button-primary",
-      "description": "Incumbent gradient action.",
-      "html": "<a class=\"ds-btn ds-primary\" href=\"#\">Explore AssetFlow Home</a>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:13px 26px;border-radius:999px;font:700 1rem var(--font-sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease)}.ds-primary{background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-primary-dark) 100%);color:#fff;box-shadow:0 10px 24px rgba(31,122,92,.32)}.ds-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(31,122,92,.4)}.ds-primary:active{transform:translateY(0)}.ds-primary:focus-visible{outline:3px solid var(--color-primary);outline-offset:5px}"
+      "description": "Solid main action.",
+      "html": "<button class=\"ds-btn ds-primary\">Start free</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:11px 24px;border-radius:999px;border:1px solid transparent;text-decoration:none;font-family:var(--font-body,Inter,system-ui,sans-serif);font-size:.88rem;font-weight:550;line-height:1.5;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.ds-btn:focus-visible{outline:3px solid var(--color-primary,#186b5b);outline-offset:5px}.ds-btn:disabled{opacity:.6;cursor:default}@media(prefers-reduced-motion:reduce){.ds-btn{transition:none}}.ds-primary{background:var(--color-text,#173c33);color:var(--color-surface,#fff)}.ds-primary:hover{background:var(--color-primary,#186b5b)}",
+      "refersTo": "button-primary"
     },
     {
       "name": "Outline button",
       "kind": "button",
-      "refersTo": "button-outline",
-      "description": "Transparent secondary action.",
-      "html": "<a class=\"ds-btn ds-outline\" href=\"#\">Learn more</a>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:13px 26px;border-radius:999px;font:700 1rem var(--font-sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease)}.ds-outline{background:transparent;border-color:var(--color-border);color:var(--color-primary-dark)}.ds-outline:hover{border-color:var(--color-primary);background:var(--color-primary-light)}.ds-outline:focus-visible{outline:3px solid var(--color-primary);outline-offset:5px}"
-    },
-    {
-      "name": "Secondary button",
-      "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "White secondary action.",
-      "html": "<button class=\"ds-btn ds-secondary\">Learn more</button>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:13px 26px;border-radius:999px;font:700 1rem var(--font-sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease)}.ds-secondary{background:var(--color-surface);border-color:var(--color-border);color:var(--color-text)}.ds-secondary:hover:not(:disabled){border-color:var(--color-primary);background:var(--color-primary-light)}.ds-secondary:focus-visible{outline:3px solid var(--color-primary);outline-offset:5px}"
+      "description": "Quiet secondary action.",
+      "html": "<a class=\"ds-btn ds-outline\" href=\"#example\">Explore the example</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:11px 24px;border-radius:999px;border:1px solid transparent;text-decoration:none;font-family:var(--font-body,Inter,system-ui,sans-serif);font-size:.88rem;font-weight:550;line-height:1.5;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.ds-btn:focus-visible{outline:3px solid var(--color-primary,#186b5b);outline-offset:5px}.ds-btn:disabled{opacity:.6;cursor:default}@media(prefers-reduced-motion:reduce){.ds-btn{transition:none}}.ds-outline{background:transparent;color:var(--color-text,#173c33);border-color:#a4b7ac}.ds-outline:hover{background:var(--color-bg-alt,#f0f3ed);border-color:var(--color-primary,#186b5b)}",
+      "refersTo": "button-outline"
     },
     {
       "name": "Language selector",
       "kind": "input",
-      "refersTo": "language-select",
-      "description": "Native landing language control.",
+      "description": "Native homepage locale control.",
       "html": "<select class=\"ds-select\" aria-label=\"Language\"><option>English</option><option>العربية</option></select>",
-      "css": ".ds-select{font:500 .92rem var(--font-sans);min-height:44px;padding:8px 12px;border-radius:999px;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);cursor:pointer;transition:border-color .2s var(--ease),box-shadow .2s var(--ease)}.ds-select:hover,.ds-select:focus-visible{border-color:var(--color-primary);outline:none;box-shadow:0 0 0 3px var(--color-primary-light)}"
+      "css": ".ds-select{font-family:var(--font-body,Inter,system-ui,sans-serif);color:var(--color-text,#173c33);font-size:.8rem;min-height:44px;max-width:112px;border:0;background:transparent;padding:8px;cursor:pointer}.ds-select:focus-visible{outline:3px solid var(--color-primary,#186b5b);outline-offset:5px}",
+      "refersTo": "language-select"
     },
     {
       "name": "Header navigation",
       "kind": "nav",
-      "description": "Shared inline landing navigation.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\">Home</a><a href=\"#\">Blog</a></nav>",
-      "css": ".ds-nav{display:flex;align-items:center;gap:22px;font-family:var(--font-sans)}.ds-nav a{text-decoration:none;color:var(--color-text);font-weight:600;font-size:.94rem;transition:color .2s var(--ease)}.ds-nav a:hover{color:var(--color-primary)}.ds-nav a:focus-visible{outline:3px solid var(--color-primary);outline-offset:5px}"
+      "description": "Floating top navigation with compact pill framing.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#home\">Home</a><a href=\"#blog\">Blog</a></nav>",
+      "css": ".ds-nav{display:flex;gap:28px;align-items:center;font-family:var(--font-body,Inter,system-ui,sans-serif)}.ds-nav a{color:var(--color-text,#173c33);font-size:.85rem;text-decoration:none}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid var(--color-primary,#186b5b);outline-offset:5px}"
     },
     {
-      "name": "Landing card",
+      "name": "Draft status",
+      "kind": "chip",
+      "description": "Readable local example state.",
+      "html": "<span class=\"ds-status\">Suggested task · review first</span>",
+      "css": ".ds-status{display:inline-flex;padding:5px 10px;background:#f8edcf;color:#634e20;border-radius:5px;font-family:var(--font-body,Inter,system-ui,sans-serif);font-size:.8rem;font-weight:550}"
+    },
+    {
+      "name": "Ownership example",
       "kind": "card",
-      "refersTo": "card",
-      "description": "Existing elevated white landing container.",
-      "html": "<div class=\"ds-card\"><p class=\"ds-quote\">Keep records together</p><p class=\"ds-copy\">Useful ownership history in one place.</p></div>",
-      "css": ".ds-card{background:var(--color-surface);color:var(--color-text);font-family:var(--font-sans);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:26px;box-shadow:0 8px 24px rgba(28,35,32,.045);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}.ds-card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(28,35,32,.09)}.ds-quote{font-weight:700;margin:0 0 12px;font-size:1.02rem}.ds-copy{color:var(--color-muted);margin:0;font-size:.95rem}"
+      "description": "The elevated example stage, shown here as an illustrative record.",
+      "html": "<section class=\"ds-demo\"><div class=\"ds-rail\">AssetFlow Home</div><div class=\"ds-stage\"><h3>Your asset</h3><p>Illustrative ownership example</p></div></section>",
+      "css": ".ds-demo{display:grid;grid-template-columns:185px minmax(0,1fr);background:var(--color-surface,#fff);color:var(--color-text,#173c33);border-radius:var(--radius,14px);box-shadow:var(--shadow-demo,0 28px 70px -24px #173c3338);overflow:hidden;font-family:var(--font-body,Inter,system-ui,sans-serif)}.ds-rail{background:var(--color-text,#173c33);color:#fff;padding:30px 18px;font-size:1.05rem;font-weight:650}.ds-stage{padding:30px 40px}.ds-stage h3{margin:0;font-size:1.25rem;font-weight:550}.ds-stage p{font-size:.8rem;color:var(--color-muted,#56675f)}@media(max-width:620px){.ds-demo{grid-template-columns:1fr}.ds-stage{padding:22px}}",
+      "refersTo": "ownership-demo"
     },
     {
       "name": "Editorial figure",
       "kind": "custom",
-      "refersTo": "story-visual",
-      "description": "Semantic record figure; illustrative sample text.",
+      "description": "A semantic evidence row, without app controls.",
       "html": "<figure class=\"ds-figure\"><figcaption>Illustrative record</figcaption><ul><li><strong>Evidence</strong><span>Documented work</span></li></ul></figure>",
-      "css": ".ds-figure{margin:30px 0 0;padding:28px;background:var(--color-bg-alt);color:var(--color-text);border-radius:12px;line-height:1.5;font-family:var(--font-sans)}.ds-figure figcaption{font-family:var(--font-display);font-weight:750;font-size:1.12rem;margin-block-end:24px}.ds-figure ul{list-style:none;padding:0;margin:0}.ds-figure li{display:grid;grid-template-columns:145px minmax(0,1fr);gap:20px;padding-block:15px;border-block-start:1px solid var(--color-border)}.ds-figure strong{display:block;font-size:.94rem}.ds-figure span{display:block;font-size:.9rem;color:var(--color-muted)}@media(max-width:460px){.ds-figure{padding:22px}.ds-figure li{grid-template-columns:1fr;gap:7px}}"
+      "css": ".ds-figure{margin:0;padding:32px;background:var(--color-bg-alt,#f0f3ed);color:var(--color-text,#173c33);border-radius:12px;line-height:1.5;font-family:var(--font-body,Inter,system-ui,sans-serif)}.ds-figure figcaption{font-size:1rem;font-weight:550;margin-block-end:24px}.ds-figure ul{list-style:none;padding:0;margin:0}.ds-figure li{display:grid;grid-template-columns:145px minmax(0,1fr);gap:20px;padding-block:15px;border-block-start:1px solid var(--color-border,#dce3db)}.ds-figure strong{font-size:.94rem}.ds-figure span{font-size:.9rem;color:var(--color-muted,#56675f)}@media(max-width:460px){.ds-figure{padding:24px}.ds-figure li{grid-template-columns:1fr;gap:7px}}",
+      "refersTo": "story-visual"
     }
   ],
   "narrative": {
-    "northStar": "The incumbent AssetFlow identity",
-    "overview": "This is a descriptive record of the built landing system, not a replacement identity. Warm off-white surfaces, forest green, restrained gold, Inter text and Manrope headings are confirmed brand commitments in PRODUCT.md. The composition is spacious and practical, with rounded interactive controls and lightly elevated landing cards.\n\nThe blog extends that system with reading columns, editorial dividers and semantic figures. Its page-specific story and composition remain in `.impeccable/surfaces/blog.md`.",
+    "northStar": "A vivid picture of what you own",
+    "overview": "The website combines AssetFlow's forest green and warm gold with sky blue and sage. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. The product interface leads; one realistic vehicle photograph replaces the line-art drawing inside its illustrative asset view. Existing AssetFlow logos remain unchanged.\n\nFine rules and tonal fields organize most content. The ownership demonstration uses a deep-green rail, flexible data stage and colorful contextual panel; articles use semantic diagrams and open reading columns. Generated vehicle image provenance is recorded in `assets/IMAGE-SOURCES.md`. Surface strategy remains in `.impeccable/surfaces/home.md` and `.impeccable/surfaces/blog.md`.\n\nThe homepage uses a compact floating top bar, a sticky left section rail on wide screens, and a multi-column footer. A slow, restrained multicolor wash animates behind the opening section; the prefers-reduced-motion setting disables it.",
     "keyCharacteristics": [
-      "Warm neutral surfaces and forest-green text.",
-      "Manrope headings with Inter reading text.",
-      "Pill buttons, rounded panels and restrained gold accents.",
-      "Flat editorial lists and explanatory figures alongside the landing page's lifted cards."
+      "Warm white, forest green and gold balanced with sky blue and sage.",
+      "Georgia display and Inter body; native Arabic typography.",
+      "A clear product interface with realistic vehicle photography in its illustrative asset view.",
+      "Solid pill actions, fine dividers and open sections with color fields.",
+      "Floating top navigation and a left section rail on wide screens.",
+      "Animated, restrained color wash behind the hero with reduced-motion support.",
+      "Multi-column footer organized by product, solutions and resources."
     ],
     "rules": [
       {
-        "name": "The Inheritance Rule",
-        "body": "New surfaces use the incumbent palette and existing type families; the editorial extension does not establish a second brand.",
+        "name": "The Shared World Rule",
+        "body": "Homepage, blog index and articles share the same palette and type roles.",
         "section": "colors"
       },
       {
         "name": "The Reading Measure Rule",
-        "body": "Keep explanatory prose within the implemented article measure and preserve the wider line spacing used for sustained reading.",
+        "body": "Keep sustained article text within the implemented reading column and preserve its generous line spacing.",
         "section": "typography"
+      },
+      {
+        "name": "The Concentrated Depth Rule",
+        "body": "Reserve the large ambient shadow for the ownership demonstration; use rules and tonal fields for editorial structure.",
+        "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** inherit the existing warm palette, type families and rounded controls.",
-      "**Do** preserve readable article measures, semantic figures and keyboard-visible focus.",
-      "**Do** keep RTL layout, direction indicators and localized numbering meaningful.",
-      "**Do** distinguish live Home workflows from future-edition previews."
+      "Do use the approved serif/sans pairing and native Arabic override.",
+      "Do preserve semantic figures, visible focus, readable measures and reduced-motion behavior.",
+      "Do keep Home availability and planned-edition notices visible.",
+      "Do label the ownership example as illustrative and keep confirmation local."
     ],
     "donts": [
-      "**Don't** replace the incumbent identity when extending an established surface.",
-      "**Don't** turn editorial figures into invented product screenshots.",
-      "**Don't** treat the landing's pre-existing decorative eyebrows, glyph icons or detector findings as reusable rules. They were outside this extension's repair scope and are not canonized here."
+      "Don't reinstate Manrope headings, gradient action buttons or the former floating-card layout.",
+      "Don't present illustrative diagrams or local demo state as live product records.",
+      "Don't hide matrix columns on small screens; preserve the named scroll region and its scroll hint."
     ]
   }
 }
