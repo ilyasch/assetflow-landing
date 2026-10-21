@@ -222,7 +222,7 @@
       function select(index) {
         var oldIndex = activeIndex;
         activeIndex = (index + slides.length) % slides.length;
-        slides.forEach(function (slide) {
+        slides.forEach(function (slide, slideIndex) {
           var selected = slideIndex === activeIndex;
           slide.hidden = !selected;
           slide.classList.remove("is-entering", "is-forward", "is-backward");
