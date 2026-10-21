@@ -52,8 +52,8 @@
     }
   },
   "how": {
-    "title": "De votre bien à la prochaine étape claire",
-    "lead": "Découvrez le parcours : organisez un bien, préparez son entretien, conservez les documents et demandez à Flow AI ce qu’ils révèlent.",
+    "title": "Comment fonctionne AssetFlow",
+    "lead": "Vos biens, leurs documents et une prochaine étape plus claire. Découvrez ce que vous pouvez faire avec AssetFlow Home.",
     "chooseStep": "Choisir une étape du produit",
     "previous": "Étape précédente",
     "next": "Étape suivante",
@@ -64,22 +64,41 @@
     "guideLink": "Lire le guide",
     "assetLink": "Explorer la vue du bien",
     "planLink": "Explorer les plans intelligents",
-    "recordsLink": "Explorer la bibliothèque de documents",
+    "recordsLink": "Explorer la base de connaissances",
     "assistantLink": "Explorer Flow AI",
-    "assistantTitle": "Interrogez Flow AI sur vos documents.",
-    "assistantBody": "Posez une question avec vos propres mots. Flow AI repère les détails utiles dans les documents du bien, fait ressortir des informations utiles et peut transformer une observation en tâche ou en brouillon de plan d’entretien à examiner.",
+    "assistantTitle": "Interrogez Flow AI",
+    "assistantBody": "Posez des questions sur vos documents enregistrés. Flow AI peut trouver des détails utiles et préparer une prochaine étape à vérifier.",
     "assistantSample": "Réponse illustrative de Flow AI",
     "assistantQuestion": "Que devrais-je vérifier avant le prochain entretien ?",
     "assistantResponse": "J’ai trouvé la notice et une facture d’entretien dans les documents de ce bien. Je peux les utiliser pour préparer des prochaines étapes suggérées, que vous pourrez examiner.",
     "assistantTask": "Vérifier les tâches d’entretien suggérées",
-    "assetDetailTitle": "Les détails de l’actif restent liés",
-    "assetDetailBody": "Réunissez les informations pratiques, les documents et le contexte de propriété au fil du temps.",
-    "planDetailTitle": "Un plan à vérifier étape par étape",
-    "planDetailBody": "Consultez les tâches suggérées, leur durée et les pièces estimées avant de confirmer.",
-    "recordsDetailTitle": "Une trace pour chaque fichier utile",
-    "recordsDetailBody": "Reliez PDF, images et documents bureautiques à l’actif ou à l’intervention concernée.",
-    "assistantDetailTitle": "De la question à une action réfléchie",
-    "assistantDetailBody": "Flow AI utilise vos dossiers pour trouver les informations utiles et préparer des réponses ou brouillons à vérifier."
+    "assetDetailTitle": "Relié à ses documents",
+    "assetDetailBody": "Les documents et les travaux réalisés restent liés au bien.",
+    "planDetailTitle": "Vous décidez quoi confirmer",
+    "planDetailBody": "Consultez les documents, ajustez le brouillon et confirmez ce qui vous convient.",
+    "recordsDetailTitle": "Prochaine étape suggérée",
+    "recordsDetailBody": "Consultez les documents et ajustez la suggestion avant d’ajouter une tâche.",
+    "assistantDetailTitle": "Des documents à la prochaine étape",
+    "assistantDetailBody": "Consultez les sources d’une réponse et vérifiez toute action suggérée.",
+    "assetTitle": "Ajoutez un bien",
+    "recordsTitle": "Construisez sa base de connaissances",
+    "planTitle": "Planifiez son entretien",
+    "assetBody": "Commencez par un bien que vous possédez. Regroupez ses informations clés pour les retrouver au bon moment.",
+    "recordsBody": "Reliez les documents et les travaux réalisés à votre bien. Utilisez ces connaissances pour comprendre son historique et vérifier les prochaines étapes suggérées.",
+    "planBody": "Préparez un brouillon d’entretien à partir des informations disponibles. Vérifiez les suggestions et choisissez quoi confirmer.",
+    "assetExampleTitle": "Votre bien en un coup d’œil",
+    "assetExampleBody": "Les informations essentielles réunies, de l’année au kilométrage.",
+    "recordsExampleTitle": "Des documents faciles à retrouver",
+    "recordsExampleBody": "Conservez le manuel, le reçu et l’assurance avec le bon bien.",
+    "planExampleTitle": "Consultez les travaux suggérés",
+    "planExampleBody": "Vérifiez ensemble les tâches, les durées et les estimations des pièces.",
+    "assistantExampleTitle": "Posez votre question simplement",
+    "assistantExampleBody": "Commencez par une question pratique sur votre bien.",
+    "reviewRecords": "Consultez les documents",
+    "adjustDraft": "Ajustez le brouillon",
+    "confirmPlan": "Confirmez votre plan",
+    "overviewLabel": "Découvrez ces fonctionnalités",
+    "adjustDraftBody": "Choisissez les tâches et les détails adaptés à votre bien."
   },
   "editions": {
     "eyebrow": "Une seule plateforme, adaptée à votre échelle",
@@ -172,21 +191,21 @@
   },
   "library": {
     "eyebrow": "Au cœur du parcours de propriété",
-    "title": "Une bibliothèque pour l'histoire de chaque bien",
-    "lead": "Rassemblez les documents, rapports d’entretien et travaux effectués pour chaque bien. Ils forment une base de connaissances IA que vous pouvez interroger pour retrouver des informations, comprendre l’historique et préparer le prochain plan d’entretien.",
+    "title": "Une base de connaissances pour chaque bien",
+    "lead": "Réunissez documents, historique d’entretien et travaux réalisés. Avec Flow AI, utilisez ces connaissances pour comprendre votre bien, trouver des détails utiles et préparer des actions à vérifier.",
     "item1": {
-      "title": "Documents du bien",
-      "body": "Joignez notices, garanties, assurances et contrats d'entretien au bien auquel ils appartiennent."
+      "title": "Reliez les sources",
+      "body": "Associez manuels, garanties, factures et travaux réalisés au bien ou à l’événement concerné."
     },
     "item2": {
-      "title": "Documents liés aux événements",
-      "body": "Conservez reçus, factures, rapports d'intervention et photos avec l'entretien ou l'événement qu'ils justifient."
+      "title": "Comprenez les informations",
+      "body": "Explorez vos documents avec Flow AI pour comprendre l’historique, trouver des détails pertinents et repérer les informations à vérifier."
     },
     "item3": {
-      "title": "Trouvez ce qui aidera ensuite",
-      "body": "Consultez les preuves derrière votre historique, repérez les informations manquantes et utilisez-les pour améliorer le prochain plan."
+      "title": "Des connaissances à l’action",
+      "body": "Utilisez vos découvertes pour préparer une tâche ou un plan d’entretien. Vérifiez les sources, ajustez la suggestion et choisissez quoi confirmer."
     },
-    "note": "Gardez les documents liés au bien ou à l'événement qu'ils justifient, pour retrouver les preuves quand vous en avez besoin.",
+    "note": "Vos documents fournissent le contexte. Les suggestions de l’IA restent distinctes des faits et actions confirmés jusqu’à votre vérification.",
     "tree": {
       "label": "Exemple de bibliothèque d'un bien",
       "title": "Véhicule personnel",
@@ -195,6 +214,15 @@
       "folder2": "Entretien · 12 août 2025",
       "folder3": "Assurance",
       "caption": "Les documents du bien et les justificatifs des événements restent ensemble, dans leurs formats d'origine."
+    },
+    "knowledge": {
+      "label": "Base de connaissances illustrative · exemples de documents",
+      "sources": "Documents reliés",
+      "understanding": "Comprendre l’historique",
+      "insight": "Le manuel et l’entretien enregistré fournissent le contexte de la prochaine vérification d’entretien.",
+      "action": "Prochaine étape suggérée",
+      "task": "Vérifier le prochain plan d’entretien",
+      "review": "Consultez les documents et ajustez la suggestion avant d’ajouter une tâche."
     }
   },
   "smartPlan": {
@@ -237,7 +265,17 @@
     "furniture": "Mobilier",
     "appliances": "Appareils",
     "other": "Autre",
-    "note": "Garanties, assurances et contrats d'entretien restent liés au bien concerné, avec leurs propres dates et rappels."
+    "note": "Garanties, assurances et contrats d'entretien restent liés au bien concerné, avec leurs propres dates et rappels.",
+    "differentTitle": "Des biens différents. Des soins adaptés.",
+    "lead": "Votre logement, votre voiture et votre ordinateur demandent des informations et des soins différents. AssetFlow utilise la catégorie et le type de chaque bien pour vous aider à constituer un dossier pertinent et vérifier un plan adapté.",
+    "focus": {
+      "homeProperty": "Informations sur le logement, assurance et responsabilités du foyer, avec les documents qui les expliquent.",
+      "electronics": "Détails de l’appareil, garantie et vérification des sauvegardes pour les appareils qui contiennent vos données.",
+      "vehicles": "Le kilométrage, le type d’énergie et l’historique d’entretien donnent le contexte du prochain plan.",
+      "furniture": "Le matériau, l’état et l’usage intérieur ou extérieur vous aident à choisir les soins adaptés.",
+      "appliances": "Le type d’appareil, le modèle et la garantie donnent le contexte du nettoyage, de l’entretien et des soins réguliers.",
+      "other": "Décrivez ce que vous possédez, conservez les documents utiles et choisissez les soins à suivre."
+    }
   },
   "pricing": {
     "title": "Les offres Home, avec des éditions Enterprise à venir",

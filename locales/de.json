@@ -52,8 +52,8 @@
     }
   },
   "how": {
-    "title": "Vom Asset zum nächsten klaren Schritt",
-    "lead": "Entdecke den Ablauf: Asset-Details ordnen, Wartung planen, Unterlagen aufbewahren und Flow AI nach ihrer Bedeutung fragen.",
+    "title": "So funktioniert AssetFlow",
+    "lead": "Deine Gegenstände, ihre Unterlagen und ein klarer nächster Schritt. Entdecke die Möglichkeiten von AssetFlow Home.",
     "chooseStep": "Produktschritt auswählen",
     "previous": "Vorheriger Schritt",
     "next": "Nächster Schritt",
@@ -64,22 +64,41 @@
     "guideLink": "Zum Ratgeber",
     "assetLink": "Asset-Übersicht ansehen",
     "planLink": "Intelligente Pläne ansehen",
-    "recordsLink": "Unterlagenbibliothek ansehen",
+    "recordsLink": "Wissensbasis entdecken",
     "assistantLink": "Flow AI ansehen",
-    "assistantTitle": "Frage Flow AI zu deinen Unterlagen.",
-    "assistantBody": "Stelle eine Frage in deinen eigenen Worten. Flow AI findet wichtige Details in den Asset-Unterlagen, hebt hilfreiche Erkenntnisse hervor und kann daraus eine Aufgabe oder einen Wartungsplan-Entwurf erstellen, den du prüfst.",
+    "assistantTitle": "Flow AI fragen",
+    "assistantBody": "Stelle Fragen zu deinen gespeicherten Unterlagen. Flow AI kann relevante Angaben finden und einen nächsten Schritt zur Prüfung vorbereiten.",
     "assistantSample": "Beispielantwort von Flow AI",
     "assistantQuestion": "Was sollte ich vor dem nächsten Service prüfen?",
     "assistantResponse": "Ich habe das Handbuch und eine Service-Rechnung in den Unterlagen dieses Assets gefunden. Daraus kann ich nächste Schritte entwerfen, die du prüfen kannst.",
     "assistantTask": "Vorgeschlagene Wartungsaufgaben prüfen",
-    "assetDetailTitle": "Assetdetails an einem Ort",
-    "assetDetailBody": "Praktische Angaben, Dokumente und Besitzkontext bleiben zusammen, wenn der Assetverlauf wächst.",
-    "planDetailTitle": "Ein Plan, den Sie Schritt für Schritt prüfen",
-    "planDetailBody": "Sehen Sie Aufgaben, Zeitaufwand und Teilekosten, bevor Sie etwas bestätigen.",
-    "recordsDetailTitle": "Ein Nachweis für jede wichtige Datei",
-    "recordsDetailBody": "Verknüpfen Sie PDFs, Bilder und Office-Dateien mit dem passenden Asset oder Vorgang.",
-    "assistantDetailTitle": "Von einer Frage zur überlegten Aktion",
-    "assistantDetailBody": "Flow AI nutzt Ihre Einträge, findet relevante Details und erstellt Antworten oder Entwürfe zur Prüfung."
+    "assetDetailTitle": "Mit seinen Unterlagen verbunden",
+    "assetDetailBody": "Dokumente und erledigte Arbeiten bleiben dem Gegenstand zugeordnet.",
+    "planDetailTitle": "Du entscheidest, was du bestätigst",
+    "planDetailBody": "Prüfe die Unterlagen, passe den Entwurf an und bestätige, was für dich passt.",
+    "recordsDetailTitle": "Vorgeschlagener nächster Schritt",
+    "recordsDetailBody": "Prüfe die Unterlagen und passe den Vorschlag an, bevor du eine Aufgabe hinzufügst.",
+    "assistantDetailTitle": "Von Unterlagen zum nächsten Schritt",
+    "assistantDetailBody": "Sieh die Quellen einer Antwort und prüfe vorgeschlagene Aktionen.",
+    "assetTitle": "Gegenstand hinzufügen",
+    "recordsTitle": "Eine Wissensbasis aufbauen",
+    "planTitle": "Wartung planen",
+    "assetBody": "Beginne mit etwas, das dir gehört. Halte die wichtigsten Angaben zusammen, damit du sie bei Bedarf wiederfindest.",
+    "recordsBody": "Verknüpfe Unterlagen und erledigte Arbeiten mit deinem Gegenstand. Nutze dieses Wissen, um seinen Verlauf zu verstehen und vorgeschlagene nächste Schritte zu prüfen.",
+    "planBody": "Erstelle mit den vorhandenen Informationen einen Wartungsentwurf. Prüfe die Vorschläge und entscheide, was du bestätigst.",
+    "assetExampleTitle": "Dein Gegenstand auf einen Blick",
+    "assetExampleBody": "Die wichtigsten Angaben an einem Ort, vom Baujahr bis zum Kilometerstand.",
+    "recordsExampleTitle": "Unterlagen schnell wiederfinden",
+    "recordsExampleBody": "Bewahre Handbuch, Beleg und Versicherung beim richtigen Gegenstand auf.",
+    "planExampleTitle": "Vorgeschlagene Arbeiten ansehen",
+    "planExampleBody": "Prüfe Aufgaben, Zeitaufwand und geschätzte Teilekosten gemeinsam.",
+    "assistantExampleTitle": "Frage mit deinen eigenen Worten",
+    "assistantExampleBody": "Beginne mit einer praktischen Frage zu deinem Gegenstand.",
+    "reviewRecords": "Unterlagen prüfen",
+    "adjustDraft": "Entwurf anpassen",
+    "confirmPlan": "Plan bestätigen",
+    "overviewLabel": "Diese Funktionen entdecken",
+    "adjustDraftBody": "Wähle die Aufgaben und Angaben, die zu deinem Gegenstand passen."
   },
   "editions": {
     "eyebrow": "Eine Plattform, passend für Ihre Anforderungen",
@@ -172,21 +191,21 @@
   },
   "library": {
     "eyebrow": "Teil des Besitz-Workflows",
-    "title": "Eine Bibliothek für die Geschichte jedes Objekts",
-    "lead": "Bewahre Dokumente, Serviceberichte und erledigte Arbeiten zu jedem Objekt zusammen auf. Sie bilden eine KI-Wissensdatenbank, zu der du Fragen stellen kannst, um Details zu finden, die Historie zu verstehen und den nächsten Wartungsplan vorzubereiten.",
+    "title": "Eine Wissensbasis für jeden Gegenstand",
+    "lead": "Führe Dokumente, Wartungsnachweise und erledigte Arbeiten zusammen. Nutze dieses Wissen mit Flow AI, um deinen Gegenstand zu verstehen, hilfreiche Angaben zu finden und Aktionen zur Prüfung vorzubereiten.",
     "item1": {
-      "title": "Objektdokumente",
-      "body": "Hänge Anleitungen, Garantien, Versicherungen und Wartungsverträge an das Objekt, zu dem sie gehören."
+      "title": "Nachweise verknüpfen",
+      "body": "Ordne Handbücher, Garantien, Rechnungen und erledigte Arbeiten dem passenden Gegenstand oder Ereignis zu."
     },
     "item2": {
-      "title": "Dokumente zu Ereignissen",
-      "body": "Bewahre Belege, Rechnungen, Serviceberichte und Fotos bei der Wartung oder dem Ereignis auf, das sie belegen."
+      "title": "Informationen verstehen",
+      "body": "Erkunde deine Unterlagen mit Flow AI, um den Verlauf zu verstehen, relevante Angaben zu finden und prüfenswerte Informationen zu erkennen."
     },
     "item3": {
-      "title": "Finde, was als Nächstes hilft",
-      "body": "Sieh die Nachweise hinter deiner Historie, erkenne fehlende Details und nutze sie, um den nächsten Plan zu verbessern."
+      "title": "Wissen in Handlungen umsetzen",
+      "body": "Erstelle aus deinen Erkenntnissen einen Aufgaben- oder Wartungsentwurf. Prüfe die Nachweise, passe den Vorschlag an und entscheide, was du bestätigst."
     },
-    "note": "Verknüpfe Dokumente mit dem Objekt oder Ereignis, zu dem sie gehören, damit die Nachweise bereitliegen, wenn du sie brauchst.",
+    "note": "Deine Unterlagen liefern den Kontext. KI-Vorschläge bleiben bis zu deiner Prüfung von bestätigten Fakten und Aktionen getrennt.",
     "tree": {
       "label": "Beispiel für eine Objektbibliothek",
       "title": "Privatfahrzeug",
@@ -195,6 +214,15 @@
       "folder2": "Wartung · 12. Aug. 2025",
       "folder3": "Versicherung",
       "caption": "Objektdokumente und Nachweise zu Ereignissen bleiben zusammen, inklusive ihrer ursprünglichen Dateiformate."
+    },
+    "knowledge": {
+      "label": "Beispiel einer Wissensbasis · Beispieldaten",
+      "sources": "Verknüpfte Unterlagen",
+      "understanding": "Den Verlauf verstehen",
+      "insight": "Das Handbuch und die dokumentierte Wartung liefern den Kontext für die nächste Wartungsprüfung.",
+      "action": "Vorgeschlagener nächster Schritt",
+      "task": "Den nächsten Wartungsplan prüfen",
+      "review": "Prüfe die Unterlagen und passe den Vorschlag an, bevor du eine Aufgabe hinzufügst."
     }
   },
   "smartPlan": {
@@ -237,7 +265,17 @@
     "furniture": "Möbel",
     "appliances": "Haushaltsgeräte",
     "other": "Sonstiges",
-    "note": "Garantien, Versicherungen und Wartungsverträge bleiben mit dem jeweiligen Objekt verbunden und haben eigene Termine und Erinnerungen."
+    "note": "Garantien, Versicherungen und Wartungsverträge bleiben mit dem jeweiligen Objekt verbunden und haben eigene Termine und Erinnerungen.",
+    "differentTitle": "Andere Dinge. Andere Pflege.",
+    "lead": "Dein Zuhause, Auto und Laptop brauchen unterschiedliche Angaben und Pflege. AssetFlow nutzt Kategorie und Typ jedes Gegenstands, damit du passende Informationen sammeln und einen geeigneten Plan prüfen kannst.",
+    "focus": {
+      "homeProperty": "Angaben zur Immobilie, Versicherung und Aufgaben rund ums Zuhause, mit den passenden Unterlagen.",
+      "electronics": "Gerätedetails, Garantieangaben und Backup-Prüfungen für Geräte, auf denen deine Daten liegen.",
+      "vehicles": "Kilometerstand, Antriebsart und Wartungsverlauf liefern den Kontext für deinen nächsten Wartungsplan.",
+      "furniture": "Material, Zustand und Nutzung im Innen- oder Außenbereich helfen dir, passende Pflege auszuwählen.",
+      "appliances": "Gerätetyp, Modell und Garantie liefern den Kontext für Reinigung, Service und regelmäßige Pflege.",
+      "other": "Beschreibe, was dir gehört, bewahre nützliche Unterlagen auf und wähle die Pflege, die du verfolgen möchtest."
+    }
   },
   "pricing": {
     "title": "Home-Tarife, Enterprise-Editionen folgen",

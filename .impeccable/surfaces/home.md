@@ -17,3 +17,21 @@ FORM: Build direction refined from the open landing redesign: retain the page st
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 
 The vehicle photograph is generated and its provenance is recorded in `assets/IMAGE-SOURCES.md`. Existing logos and social images retain their sources. Demonstration content is explicitly illustrative. No testimonials, quantified savings, new product claims, or external data writes.
+
+## Feature chapters refinement
+
+The “How AssetFlow works” section explains three capabilities: Add an asset, Build its knowledge base and Plan its care. A compact three-column linked overview leads into three open chapters and becomes one column at 700px and below. Each chapter has an action heading, short explanation, contextual links and a pair of semantic product examples with titles, descriptions and illustrative-data captions. The examples stay side by side on desktop and stack at 700px and below; no carousel hides essential content. Sage, sky and pale gold distinguish the capabilities within the existing visual world.
+
+The same sample vehicle connects asset details, documents, service evidence, maintenance drafts and record-based answers. The maintenance panel explains review, adjustment and confirmation, and links to the local plan demonstration. Every addition ships in all six languages with Arabic RTL and Arabic-Indic numerals. Existing product claims, pricing, availability and AI review boundaries remain binding.
+
+The knowledge-base chapter connects stored evidence to understandable history and suggested next actions. The dedicated library section illustrates sources → understanding → a suggestion for review. Flow AI retains its own later section rather than a duplicate chapter. Chapter actions use a fixed desktop column and a consistent stacked layout on narrow screens. The referenced Overview brainstorming informs the knowledge-to-action direction without presenting proposed extraction or automatic milestone updates as delivered features.
+
+## Household and category refinement
+
+The live site's household membership row, plus symbol and shared-work illustration inform the branch's household section. Keep the branch's “One home. One shared picture.” title and serif typography, using a contained forest feature on a soft-sage section, decorative person/plus SVG icons, a white illustrative work board, three collaboration benefits and explicit plan-seat limits. The plus is illustrative rather than an invitation control.
+
+Asset categories live in their own section after household sharing. Six distinct colored SVG icons accompany category-specific examples of the information and care involved: property responsibilities, electronics backup checks, vehicle mileage/service context, furniture materials/exposure, appliance model/maintenance context and custom Other records. Examples follow the existing app field schema; no automatic category-specific compliance, diagnosis or universal maintenance schedules are promised. The gallery uses three columns on desktop, two at <=1000px and one at <=620px. Household content stacks below 1000px, with benefits stacking below 620px. All new copy ships in all six locales with native Arabic RTL; illustrations never imply actual household members or real tasks.
+
+## Edition matrix refinement
+
+The Home, Business, Fleet and Hospitality options and matrix headers carry matching small SVG product marks with the edition name inside the wordmark treatment. Selecting an edition strengthens that full column's market tint and adds a slim matching edge so the active comparison reads at a glance. Keep the matrix scrollable on narrow screens and preserve explicit available/planned status labels.

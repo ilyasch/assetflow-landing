@@ -52,8 +52,8 @@
     }
   },
   "how": {
-    "title": "From your asset to the next clear step",
-    "lead": "Explore the flow: keep an asset organized, prepare its maintenance, preserve the records, and ask Flow AI what they can tell you.",
+    "title": "How AssetFlow works",
+    "lead": "Your assets, their records, and a clearer next step. Explore what you can do with AssetFlow Home.",
     "chooseStep": "Choose a product step",
     "previous": "Previous step",
     "next": "Next step",
@@ -64,22 +64,41 @@
     "guideLink": "Read the guide",
     "assetLink": "Explore the asset overview",
     "planLink": "Explore smart plans",
-    "recordsLink": "Explore the records library",
+    "recordsLink": "Explore the knowledge base",
     "assistantLink": "Explore Flow AI",
-    "assistantTitle": "Ask Flow AI about your records.",
-    "assistantBody": "Ask a question in plain language. Flow AI finds relevant details in your asset records, surfaces useful insights, and can turn a finding into a task or a maintenance-plan draft for you to review.",
+    "assistantTitle": "Ask Flow AI",
+    "assistantBody": "Ask about the records you have saved. Flow AI can find relevant details and prepare a next step for you to review.",
     "assistantSample": "Illustrative Flow AI answer",
     "assistantQuestion": "What should I check before the next service?",
     "assistantResponse": "I found the owner’s manual and a service invoice in this asset’s records. I can use them to draft suggested next steps for you to review.",
     "assistantTask": "Review suggested maintenance tasks",
-    "assetDetailTitle": "Asset details that stay connected",
-    "assetDetailBody": "Keep practical details, documents and ownership context together as an asset’s record grows.",
-    "planDetailTitle": "A plan you can review line by line",
-    "planDetailBody": "See suggested tasks, effort and parts estimates together before deciding what to confirm.",
-    "recordsDetailTitle": "A record for every useful file",
-    "recordsDetailBody": "Keep PDFs, images and office documents connected to the asset or work they describe.",
-    "assistantDetailTitle": "From a question to a considered action",
-    "assistantDetailBody": "Flow AI uses the records you add to find relevant details and prepare answers or drafts for your review."
+    "assetDetailTitle": "Connected to its records",
+    "assetDetailBody": "Documents and completed work stay connected to the asset.",
+    "planDetailTitle": "You decide what to confirm",
+    "planDetailBody": "Check the records, adjust the draft, then confirm what fits.",
+    "recordsDetailTitle": "Suggested next step",
+    "recordsDetailBody": "Check the records and adjust the suggestion before adding a task.",
+    "assistantDetailTitle": "From records to a next step",
+    "assistantDetailBody": "See the records behind an answer and review any suggested action.",
+    "assetTitle": "Add an asset",
+    "recordsTitle": "Build its knowledge base",
+    "planTitle": "Plan its care",
+    "assetBody": "Start with something you own. Keep its key details together so you can find them when you need them.",
+    "recordsBody": "Connect documents and completed work to your asset. Use that knowledge to understand its history and review suggested next steps.",
+    "planBody": "Prepare a maintenance draft from the context you have. Review the suggestions and choose what to confirm.",
+    "assetExampleTitle": "Your asset at a glance",
+    "assetExampleBody": "The essentials in one place, from its year to its mileage.",
+    "recordsExampleTitle": "Documents you can find",
+    "recordsExampleBody": "Keep the manual, receipt and insurance with the right asset.",
+    "planExampleTitle": "See the suggested work",
+    "planExampleBody": "Review tasks, time and parts estimates together.",
+    "assistantExampleTitle": "Ask in your own words",
+    "assistantExampleBody": "Start with a practical question about your asset.",
+    "reviewRecords": "Check the records",
+    "adjustDraft": "Adjust the draft",
+    "confirmPlan": "Confirm your plan",
+    "overviewLabel": "Explore these features",
+    "adjustDraftBody": "Choose the tasks and details that fit your asset."
   },
   "editions": {
     "eyebrow": "One platform, built for your scale",
@@ -172,21 +191,21 @@
   },
   "library": {
     "eyebrow": "Built into the ownership journey",
-    "title": "One library for the story of every asset",
-    "lead": "Keep each asset’s documents, service records, and completed work together. They form an AI knowledge base you can ask about to find details, understand history, and prepare your next maintenance plan.",
+    "title": "A knowledge base for every asset",
+    "lead": "Bring documents, service records and completed work together. With Flow AI, use that knowledge to understand your asset, find useful details and prepare actions you can review.",
     "item1": {
-      "title": "Asset documents",
-      "body": "Attach manuals, warranties, insurance, and service contracts to the asset they belong to."
+      "title": "Connect the evidence",
+      "body": "Keep manuals, warranties, invoices and completed work linked to the asset or event they describe."
     },
     "item2": {
-      "title": "Event documents",
-      "body": "Keep receipts, invoices, service reports, and photos with the maintenance or ownership event they support."
+      "title": "Understand what it means",
+      "body": "Explore your records with Flow AI to understand history, find relevant details and spot information worth checking."
     },
     "item3": {
-      "title": "Find what helps next",
-      "body": "See the evidence behind your history, spot missing details, and use what you learn to improve the next plan."
+      "title": "Turn knowledge into action",
+      "body": "Use what you learn to draft a follow-up task or maintenance plan. Review the evidence, adjust the suggestion and decide what to confirm."
     },
-    "note": "Keep documents connected to the asset or event they support, so the evidence stays ready when you need it.",
+    "note": "Your records provide the context. AI suggestions stay separate from confirmed facts and actions until you review them.",
     "tree": {
       "label": "Example asset library",
       "title": "Personal vehicle",
@@ -195,6 +214,15 @@
       "folder2": "Maintenance · 12 Aug 2025",
       "folder3": "Insurance",
       "caption": "Asset documents and event evidence stay together, with the original file types intact."
+    },
+    "knowledge": {
+      "label": "Illustrative knowledge base · sample records",
+      "sources": "Connected records",
+      "understanding": "Understand the history",
+      "insight": "The owner’s manual and recorded service provide context for the next maintenance review.",
+      "action": "Suggested next step",
+      "task": "Review the next maintenance plan",
+      "review": "Check the records and adjust the suggestion before adding a task."
     }
   },
   "smartPlan": {
@@ -237,7 +265,17 @@
     "furniture": "Furniture",
     "appliances": "Appliances",
     "other": "Other",
-    "note": "Warranties, insurance policies, and service contracts stay linked to the asset they belong to, with their own dates and reminders."
+    "note": "Warranties, insurance policies, and service contracts stay linked to the asset they belong to, with their own dates and reminders.",
+    "differentTitle": "Different things. Different kinds of care.",
+    "lead": "Your home, car and laptop need different information and different care. AssetFlow uses each asset’s category and type to help you build a relevant record and review a plan that fits.",
+    "focus": {
+      "homeProperty": "Property details, insurance and home responsibilities, with the records that explain them.",
+      "electronics": "Device details, warranty information and backup checks for the devices that hold your data.",
+      "vehicles": "Mileage, energy type and service history give your next maintenance plan the right context.",
+      "furniture": "Material, condition and indoor or outdoor use help you choose relevant care.",
+      "appliances": "The appliance type, model and warranty give context for cleaning, servicing and recurring care.",
+      "other": "Describe what you own, keep its useful records and choose the care you want to track."
+    }
   },
   "pricing": {
     "title": "Home plans, with enterprise editions on the horizon",

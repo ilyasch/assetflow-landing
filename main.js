@@ -5,7 +5,6 @@
   var cache = {};
   var localeRequest = 0;
   var refreshMarketSpotlight = null;
-  var refreshHowCarousel = null;
 
   function initialLocale() {
     var requested = new URLSearchParams(window.location.search).get("lang");
@@ -83,7 +82,6 @@
           link.href =
             "/blog/" + locale + "/" + link.dataset.blogArticle + "/";
         });
-        if (refreshHowCarousel) refreshHowCarousel();
         document.getElementById("lang-picker").value = locale;
         if (dict.seo) {
           document.title = dict.seo.title;
@@ -202,49 +200,6 @@
     window.requestAnimationFrame(updateCurrent);
   }
 
-  function initHowCarousel() {
-    var carousels = Array.from(document.querySelectorAll("[data-feature-carousel]"));
-    if (!carousels.length) return;
-    var refreshers = [];
-    carousels.forEach(function (carousel) {
-      var slides = Array.from(carousel.querySelectorAll("[data-feature-slide]"));
-      var controls = carousel.querySelector("[data-feature-controls]");
-      var previous = carousel.querySelector("[data-feature-previous]");
-      var next = carousel.querySelector("[data-feature-next]");
-      var status = carousel.querySelector("[data-feature-status]");
-      if (slides.length < 2 || !controls || !previous || !next || !status) return;
-      var activeIndex = 0;
-      function updateStatus() {
-        var locale = document.documentElement.lang || "en";
-        var format = new Intl.NumberFormat(locale, { minimumIntegerDigits: 2 });
-        status.textContent = format.format(activeIndex + 1) + " / " + format.format(slides.length);
-      }
-      function select(index) {
-        var oldIndex = activeIndex;
-        activeIndex = (index + slides.length) % slides.length;
-        slides.forEach(function (slide, slideIndex) {
-          var selected = slideIndex === activeIndex;
-          slide.hidden = !selected;
-          slide.classList.remove("is-entering", "is-forward", "is-backward");
-          if (selected && oldIndex !== activeIndex) {
-            slide.classList.add("is-entering", activeIndex > oldIndex ? "is-forward" : "is-backward");
-            slide.addEventListener("animationend", function cleanup() {
-              slide.classList.remove("is-entering", "is-forward", "is-backward");
-            }, { once: true });
-          }
-        });
-        updateStatus();
-      }
-      previous.addEventListener("click", function () { select(activeIndex - 1); });
-      next.addEventListener("click", function () { select(activeIndex + 1); });
-      controls.hidden = false;
-      carousel.classList.add("is-interactive");
-      select(0);
-      refreshers.push(updateStatus);
-    });
-    refreshHowCarousel = function () { refreshers.forEach(function (refresh) { refresh(); }); };
-  }
-
   function initDemo() {
     var demo = document.querySelector(".ownership-demo");
     var tabs = Array.from(demo.querySelectorAll("[data-demo]"));
@@ -300,6 +255,18 @@
         else return;
         event.preventDefault();
         select(tabs[target], true);
+      });
+    });
+    document.querySelectorAll("[data-demo-target]").forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        if (
+          event.defaultPrevented || event.button !== 0 || event.metaKey ||
+          event.ctrlKey || event.shiftKey || event.altKey
+        ) return;
+        var target = tabs.find(function (tab) {
+          return tab.dataset.demo === link.dataset.demoTarget;
+        });
+        if (target) select(target, true);
       });
     });
     panels.forEach(function (panel) {
@@ -378,7 +345,7 @@
         });
       });
       section.querySelector("[data-market-title]").textContent =
-        button.querySelector("span").textContent;
+        button.dataset.productName;
       section.querySelector("[data-market-status]").textContent =
         button.querySelector("small").textContent;
       section.querySelectorAll("[data-market-value]").forEach(function (value) {
@@ -411,7 +378,6 @@
   document.addEventListener("DOMContentLoaded", function () {
     initPricing();
     initDemo();
-    initHowCarousel();
     initMarketMatrix();
     initSectionRail();
     document

@@ -15,10 +15,10 @@ colors:
   market-business: "#edf3f6"
   market-fleet: "#f7f0d8"
   market-hospitality: "#edf1e9"
-  market-home-selected: "#d4e3cf"
-  market-business-selected: "#dcebf0"
-  market-fleet-selected: "#f1e4b9"
-  market-hospitality-selected: "#dce8d6"
+  market-home-selected: "#a5c798"
+  market-business-selected: "#a3c6d8"
+  market-fleet-selected: "#ddbd62"
+  market-hospitality-selected: "#9fbd9f"
   sky: "#dcebf0"
   sage: "#dce8d6"
   cobalt: "#416d92"
@@ -141,7 +141,7 @@ The centered wrapper is `min(100% - 112px, 1240px)`, expanding at `1500px` to `m
 
 The homepage opens with a floating pill navigation and a clear left-aligned headline over a slow gold, sky and sage color wash. On wide screens, the opening hero stays full width; a fixed left section rail fades in when Product reaches the sticky header, then tracks Product, How it works, Pricing and Solutions as the content shifts to make room. Below `1440px`, the rail gives way to the full-width layout and the mobile disclosure menu remains the section navigation. The wide product interface follows directly, with a deep-green rail, flexible stage, sky-blue context panel and a realistic vehicle photo inside the illustrative asset view. At `900px` the contextual column hides; at `620px` the demo rail becomes horizontal tabs above the stage and the header switches to its menu disclosure. Color-backed two-column chapters become a single reading sequence on mobile. Pricing is a divider-led four-column grid, becoming two columns at `900px`.
 
-The market matrix preserves its semantic table and `950px` minimum width in an overflow region. Its labeled, keyboard-focusable region and scroll instruction support narrow screens; the instruction appears below `1014px`. Home receives a pale-green column and an available label. Business, Fleet and Hospitality retain explicit Coming Soon labels and planned capability wording.
+The market matrix preserves its semantic table and `950px` minimum width in an overflow region. Its labeled, keyboard-focusable region and scroll instruction support narrow screens; the instruction appears below `1014px`. Each edition uses a small branded mark with an edition-specific line icon and its AssetFlow product name. Home receives a pale-green column and an available label. Business, Fleet and Hospitality retain explicit Coming Soon labels and planned capability wording. Selecting an edition gives its full column a stronger edition-tinted fill and narrow matching edge, with the same focus also visible in the edition picker.
 
 The blog index pairs a featured story and large semantic document illustration before a two-column story list. It stacks at `760px`. Articles pair a `220px` contents rail and flexible reading column with `64px` gap; at `1000px` these become `175px` and `36px`, and at `760px` the layout becomes one column with a native contents disclosure. Article body measure is `70ch`. At `460px`, body size becomes `1rem`, figures stack and article wrapper padding is removed inside the shared mobile wrapper.
 
@@ -176,6 +176,20 @@ The homepage header is sticky and opaque, with a fine bottom rule. At `900px`, o
 The illustration is explicitly a local example. JavaScript adds tab semantics, roving tab focus, arrow-key navigation, Home/End navigation and responsive tab orientation. Selected panels receive a brief blur-to-clear transition. Review reveals the explanation and focuses Confirm; confirmation updates an `aria-live` status and state label, then focuses Reset. Reset restores the draft and returns focus to Review. No external reminder is created. Without JavaScript, all three panels remain readable and inert review/tab controls are hidden.
 
 Tab motion uses `0.4s` with the source easing; ordinary action color changes use `0.2s`, and tab backgrounds use `0.25s`. Reduced motion disables all animations and transitions and restores automatic scrolling.
+
+### Feature chapters
+
+The homepage's three capability chapters use open, divider-separated sections with serif action headings, short explanations and contextual links. A compact three-column linked overview leads to each chapter and becomes one column at `700px` and below. Each chapter contains two semantic figures in a two-column grid with a `28px` gap; at `700px` and below, the figures stack with a `32px` gap. Both examples stay visible without carousel controls or JavaScript. Each figure pairs a tonal preview with its own title, explanation and illustrative-data caption. Sage, sky and pale gold distinguish the chapters without adding elevation.
+
+Asset and maintenance links select the corresponding ownership-demo tab before following the product anchor; the knowledge-base link leads to the library section, and guide links follow the active locale. Figures preserve logical spacing for Arabic RTL, native Arabic heading metrics and Arabic-Indic review-list counters. Maintenance examples keep review, adjustment and confirmation explicit; the knowledge-base examples connect source evidence, understandable history and suggested next actions. Flow AI retains its separate later section. Chapter actions use a consistent `290px` desktop column and stack below the explanation at `1000px` and below.
+
+The library illustration uses a flat soft-sage figure with distinct source, understanding and suggestion areas. Its captions and human-review language remain localized across all six languages.
+
+### Household sharing and asset categories
+
+The household section uses a soft-sage field around a contained forest feature with the existing serif heading, a decorative person/plus member row and a white illustrative work board. The feature pairs copy and board in two columns, stacking at `1000px` and below. Three divider-led benefits follow in a three-column row, stacking at `620px` and below, with the plan-seat note beneath. Member and task SVGs support the example without implying actual people, tasks or interactive invitation controls; the plus is decorative.
+
+Asset categories occupy their own warm-white section after household sharing and before pricing. Six open, rule-separated entries pair a colored `64px` icon field with a category name and description; each inline SVG is `36px` and decorative. Category-specific record and care context distinguishes the entries rather than repeating generic benefits. The grid uses three columns on desktop, two at `1000px` and below, and one at `620px` and below. Both sections retain localized labels, native Arabic typography and logical spacing for RTL.
 
 ### Pricing and availability
 

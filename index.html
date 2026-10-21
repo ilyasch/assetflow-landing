@@ -192,7 +192,7 @@
                 class="btn btn-primary"
                 href="https://myassetsflow.app"
                 >Start free</a
-              ><a data-i18n="site.see" class="btn btn-outline" href="#product"
+              ><a data-i18n="site.see" class="btn btn-outline" href="#how-it-works"
                 >See how it works</a
               >
             </div>
@@ -492,270 +492,472 @@
           </div>
         </div>
       </section>
-      <section id="how-it-works" class="section chapters">
+      <section id="how-it-works" class="section chapters" aria-labelledby="how-title">
         <div class="wrap">
           <div class="section-heading how-heading">
-            <h2 data-i18n="how.title">How AssetFlow works</h2>
-            <p class="section-lead" data-i18n="how.lead">Move from scattered details to a clear next step: organize an asset, plan its care, keep the evidence, and ask Flow AI what it finds.</p>
+            <h2 data-i18n="how.title" id="how-title">
+              How AssetFlow works
+            </h2>
+            <p data-i18n="how.lead" class="section-lead">
+              Your assets, their records, and a clearer next step. Explore what you can do with AssetFlow Home.
+            </p>
           </div>
-          <div class="feature-rows">
-          <article class="chapter chapter-1 feature-row" data-feature-row>
-            <div class="chapter-copy">
-              <h2>
-                <span data-i18n="site.chapter1">Every thing has a place.</span>
-              </h2>
-              <p>
-                <span data-i18n="site.chapter1body"
-                  >The car. The washing machine. The home itself. Start with an
-                  asset and keep its important details close.</span
-                >
-              </p>
-              <div class="chapter-links">
-                <a href="#product" data-i18n="how.assetLink">Explore the asset overview</a>
-                <a href="/blog/en/family-car-maintenance/" data-blog-article="family-car-maintenance" data-i18n="how.guideLink">Read the guide</a>
-              </div>
-            </div>
-            <div class="feature-carousel" data-feature-carousel>
-              <div class="feature-carousel-track" data-feature-track>
-                <div class="feature-slide" data-feature-slide><figure class="chapter-visual">
-              <div class="chapter-asset">
-                <strong
-                  ><span data-i18n="site.vehicle">Personal vehicle</span></strong
-                >
-                <p>
-                  <span data-i18n="site.vehicleMeta"
-                    >Family car · shared household</span
-                  >
+          <nav class="feature-overview" aria-label="Explore these features" data-i18n-aria="how.overviewLabel">
+            <a href="#how-asset">
+              <span data-i18n="how.assetTitle">
+                Add an asset
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+                <path d="M7 7h10v10M7 17 17 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </a>
+            <a href="#how-records">
+              <span data-i18n="how.recordsTitle">Build its knowledge base</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+                <path d="M7 7h10v10M7 17 17 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </a>
+            <a href="#how-plan">
+              <span data-i18n="how.planTitle">
+                Plan its care
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+                <path d="M7 7h10v10M7 17 17 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </a>
+          </nav>
+          <article id="how-asset" class="feature-chapter feature-asset" aria-labelledby="how-asset-title">
+            <header class="feature-chapter-heading">
+              <div>
+                <h3 data-i18n="how.assetTitle" id="how-asset-title">
+                  Add an asset
+                </h3>
+                <p data-i18n="how.assetBody">
+                  Start with something you own. Keep its key details together so you can find them when you need them.
                 </p>
-                <dl class="asset-details">
-                  <div>
-                    <dt><span data-i18n="site.detailYear">Year</span></dt>
-                    <dd>2020</dd>
-                  </div>
-                  <div>
-                    <dt
-                      ><span data-i18n="site.detailMileage">Mileage</span></dt
-                    >
-                    <dd><bdi>64,200 km</bdi></dd>
-                  </div>
-                  <div>
-                    <dt
-                      ><span data-i18n="site.detailDocs">Documents</span></dt
-                    >
-                    <dd>6</dd>
-                  </div>
-                </dl>
               </div>
-              <figcaption>
-                <span data-i18n="site.example"
-                  >Illustrative example · sample data</span
-                >
-              </figcaption>
-            </figure></div>
-                <article class="feature-slide feature-slide-detail" data-feature-slide>
-                  <div class="feature-detail-art" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
-                  <h3 data-i18n="how.assetDetailTitle">Asset details that stay connected</h3>
-                  <p data-i18n="how.assetDetailBody">Keep practical details, documents and ownership context together as an asset’s record grows.</p>
-                  <p class="feature-example" data-i18n="site.example">Illustrative example · sample data</p>
-                </article>
-              </div>
-              <div class="feature-carousel-controls" data-feature-controls hidden>
-                <button type="button" class="chapter-arrow" data-feature-previous data-i18n-aria="how.previous" aria-label="Previous example"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m0 0 7-7m-7 7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-                <span class="feature-carousel-status" data-feature-status aria-live="polite"></span>
-                <button type="button" class="chapter-arrow" data-feature-next data-i18n-aria="how.next" aria-label="Next example"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-7-7m7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-              </div>
-            </div>
-          </article>
-          <article class="chapter chapter-2 feature-row" data-feature-row>
-            <div class="chapter-copy">
-              <h2>
-                <span data-i18n="site.chapter2">Know what comes next.</span>
-              </h2>
-              <p>
-                <span data-i18n="site.chapter2body"
-                  >Turn the context you have into a maintenance draft. Review
-                  the suggestions, adjust the details, and confirm what works
-                  for you.</span
-                >
-              </p>
-              <p class="section-note">
-                <span data-i18n="site.calendar"
-                  >Export confirmed tasks to your calendar. Connected calendar
-                  synchronization is planned.</span
-                >
-              </p>
               <div class="chapter-links">
-                <a href="#product" data-i18n="how.planLink">Explore smart plans</a>
-                <a href="/blog/en/used-car-no-service-history/" data-blog-article="used-car-no-service-history" data-i18n="how.guideLink">Read the guide</a>
+                <a href="#product" data-demo-target="asset">
+                  <span data-i18n="how.assetLink">
+                    Explore the asset overview
+                  </span>
+                </a>
+                <a href="/blog/en/family-car-maintenance/" data-blog-article="family-car-maintenance">
+                  <span data-i18n="how.guideLink">
+                    Read the guide
+                  </span>
+                </a>
               </div>
-            </div>
-            <div class="feature-carousel" data-feature-carousel>
-              <div class="feature-carousel-track" data-feature-track>
-                <div class="feature-slide" data-feature-slide><figure class="chapter-visual">
-              <div class="chapter-plan">
-                <span class="status-pill"
-                  ><span data-i18n="site.draft"
-                    >Suggested plan · review first</span
-                  ></span
-                >
-                <h3 data-i18n="site.planTasksTitle">Suggested maintenance tasks</h3>
-                <ul class="mini-plan-list">
-                  <li><span data-i18n="site.taskOil">Oil and filter service</span><small data-i18n="site.taskOilTime">About 45 min</small></li>
-                  <li><span data-i18n="site.taskCabin">Replace cabin air filter</span><small data-i18n="site.taskCabinTime">About 20 min</small></li>
-                  <li><span data-i18n="site.taskTires">Check tire pressure and tread</span><small data-i18n="site.taskTiresTime">About 15 min</small></li>
-                </ul>
-                <p class="mini-plan-total"><span data-i18n="site.partsTotalLabel">Estimated parts total</span><bdi data-i18n="site.partsTotal">€78</bdi></p>
-                <p class="mini-plan-note" data-i18n="site.estimateNote">Sample time and parts estimates; actual needs and prices vary.</p>
-                <div class="review-rule">
-                  <span data-i18n="site.reviewNote"
-                    >You review every suggestion. Only you decide what becomes
-                    part of your plan.</span
-                  >
-                </div>
-              </div>
-              <figcaption>
-                <span data-i18n="site.example"
-                  >Illustrative example · sample data</span
-                >
-              </figcaption>
-            </figure></div>
-                <article class="feature-slide feature-slide-detail" data-feature-slide>
-                  <div class="feature-detail-art" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
-                  <h3 data-i18n="how.planDetailTitle">A plan you can review line by line</h3>
-                  <p data-i18n="how.planDetailBody">See suggested tasks, effort and parts estimates together before deciding what to confirm.</p>
-                  <p class="feature-example" data-i18n="site.example">Illustrative example · sample data</p>
-                </article>
-              </div>
-              <div class="feature-carousel-controls" data-feature-controls hidden>
-                <button type="button" class="chapter-arrow" data-feature-previous data-i18n-aria="how.previous" aria-label="Previous example"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m0 0 7-7m-7 7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-                <span class="feature-carousel-status" data-feature-status aria-live="polite"></span>
-                <button type="button" class="chapter-arrow" data-feature-next data-i18n-aria="how.next" aria-label="Next example"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-7-7m7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-              </div>
-            </div>
-          </article>
-          <article class="chapter chapter-3 feature-row" data-feature-row>
-            <div class="chapter-copy">
-              <h2>
-                <span data-i18n="site.chapter3">Keep the whole story.</span>
-              </h2>
-              <p>
-                <span data-i18n="site.chapter3body"
-                  >Receipts, manuals, insurance, and completed work belong with
-                  the asset. Find the evidence when you need it, and ask
-                  questions about your records.</span
-                >
-              </p>
-              <div class="chapter-links">
-                <a href="#records-library" data-i18n="how.recordsLink">Explore the records library</a>
-                <a href="/blog/en/family-car-maintenance/" data-blog-article="family-car-maintenance" data-i18n="how.guideLink">Read the guide</a>
-              </div>
-            </div>
-            <div class="feature-carousel" data-feature-carousel>
-              <div class="feature-carousel-track" data-feature-track>
-                <div class="feature-slide" data-feature-slide><figure class="chapter-visual">
-              <div class="chapter-record">
-                <h3><span data-i18n="site.records">Records</span></h3>
-                <ul class="file-list">
-                  <li>
-                    <span class="file-type" aria-hidden="true">PDF</span
-                    ><span data-i18n="site.receipt">Purchase receipt</span>
-                  </li>
-                  <li>
-                    <span class="file-type" aria-hidden="true">PDF</span
-                    ><span data-i18n="site.manual">Owner’s manual</span>
-                  </li>
-                  <li>
-                    <span class="file-type" aria-hidden="true">PDF</span
-                    ><span data-i18n="site.serviceInvoice">Service invoice</span>
-                  </li>
-                  <li>
-                    <span class="file-type" aria-hidden="true">JPG</span
-                    ><span data-i18n="site.warrantyCard">Warranty card</span>
-                  </li>
-                  <li>
-                    <span class="file-type" aria-hidden="true">DOCX</span
-                    ><span data-i18n="site.insurance">Insurance policy</span>
-                  </li>
-                  <li>
-                    <span class="file-type" aria-hidden="true">PNG</span
-                    ><span data-i18n="site.inspectionPhoto">Inspection photo</span>
-                  </li>
-                </ul>
-                <div class="record-entry">
-                  <span class="record-dot" aria-hidden="true"></span>
-                  <div>
-                    <strong
-                      ><span data-i18n="site.recordTitle"
-                        >Service recorded</span
-                      ></strong
-                    >
+            </header>
+            <div class="feature-grid">
+              <figure class="feature-example">
+                <div class="feature-preview">
+                  <img class="feature-vehicle" src="/assets/vehicle-photo.jpg" width="1448" height="1088" alt="" loading="lazy">
+                  <div class="chapter-asset">
+                    <strong >
+                      <span data-i18n="site.vehicle">
+                        Personal vehicle
+                      </span>
+                    </strong >
                     <p>
-                      <span data-i18n="site.recordMeta"
-                        >12 August 2025 · service invoice</span
-                      >
+                      <span data-i18n="site.vehicleMeta" >
+                        Family car · shared household
+                      </span >
                     </p>
+                    <dl class="asset-details">
+                      <div>
+                        <dt>
+                          <span data-i18n="site.detailYear">
+                            Year
+                          </span>
+                        </dt>
+                        <dd>
+                          2020
+                        </dd>
+                      </div>
+                      <div>
+                        <dt >
+                          <span data-i18n="site.detailMileage">
+                            Mileage
+                          </span>
+                        </dt >
+                        <dd>
+                          <bdi>
+                            64,200 km
+                          </bdi>
+                        </dd>
+                      </div>
+                      <div>
+                        <dt >
+                          <span data-i18n="site.detailDocs">
+                            Documents
+                          </span>
+                        </dt >
+                        <dd>
+                          6
+                        </dd>
+                      </div>
+                    </dl>
                   </div>
                 </div>
-              </div>
-              <figcaption>
-                <span data-i18n="site.example"
-                  >Illustrative example · sample data</span
-                >
-              </figcaption>
-            </figure></div>
-                <article class="feature-slide feature-slide-detail" data-feature-slide>
-                  <div class="feature-detail-art" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
-                  <h3 data-i18n="how.recordsDetailTitle">A record for every useful file</h3>
-                  <p data-i18n="how.recordsDetailBody">Keep PDFs, images and office documents connected to the asset or work they describe.</p>
-                  <p class="feature-example" data-i18n="site.example">Illustrative example · sample data</p>
-                </article>
-              </div>
-              <div class="feature-carousel-controls" data-feature-controls hidden>
-                <button type="button" class="chapter-arrow" data-feature-previous data-i18n-aria="how.previous" aria-label="Previous example"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m0 0 7-7m-7 7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-                <span class="feature-carousel-status" data-feature-status aria-live="polite"></span>
-                <button type="button" class="chapter-arrow" data-feature-next data-i18n-aria="how.next" aria-label="Next example"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-7-7m7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-              </div>
-            </div>
-          </article>
-          <article class="chapter chapter-4 feature-row" data-feature-row>
-            <div class="chapter-copy">
-              <h2 data-i18n="how.assistantTitle">Ask Flow AI about your records.</h2>
-              <p data-i18n="how.assistantBody">Ask a question in plain language. Flow AI finds relevant details in your asset records, surfaces useful insights, and can turn a finding into a task or a maintenance-plan draft for you to review.</p>
-              <div class="chapter-links">
-                <a href="#flow-ai" data-i18n="how.assistantLink">Explore Flow AI</a>
-                <a href="/blog/en/flow-ai-from-records-to-next-steps/" data-blog-article="flow-ai-from-records-to-next-steps" data-i18n="how.guideLink">Read the guide</a>
-              </div>
-            </div>
-            <div class="feature-carousel" data-feature-carousel>
-              <div class="feature-carousel-track" data-feature-track>
-                <div class="feature-slide" data-feature-slide><figure class="chapter-visual chapter-assistant-visual">
-              <div class="chapter-assistant">
-                <p class="assistant-window-label" data-i18n="how.assistantSample">Illustrative Flow AI answer</p>
-                <p class="assistant-prompt" data-i18n="how.assistantQuestion">What should I check before the next service?</p>
-                <div class="assistant-response">
-                  <strong>Flow AI</strong>
-                  <p data-i18n="how.assistantResponse">I found the owner’s manual and a service invoice in this asset’s records. I can use them to draft suggested next steps for you to review.</p>
-                  <div class="assistant-source-row"><span>PDF</span><span data-i18n="site.manual">Owner’s manual</span><span>PDF</span><span data-i18n="site.serviceInvoice">Service invoice</span></div>
+                <figcaption>
+                  <h4 data-i18n="how.assetExampleTitle">
+                    Your asset at a glance
+                  </h4>
+                  <p data-i18n="how.assetExampleBody">
+                    The essentials in one place, from its year to its mileage.
+                  </p>
+                  <p data-i18n="site.example" class="example-caption">
+                    Illustrative example · sample data
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-preview">
+                  <strong data-i18n="site.vehicle" class="preview-title">
+                    Personal vehicle
+                  </strong>
+                  <p data-i18n="site.vehicleMeta">
+                    Family car · shared household
+                  </p>
+                  <div class="feature-connected">
+                    <ul class="file-list">
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PDF
+                        </span>
+                        <span data-i18n="site.receipt">
+                          Purchase receipt
+                        </span>
+                      </li>
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PDF
+                        </span>
+                        <span data-i18n="site.manual">
+                          Owner’s manual
+                        </span>
+                      </li>
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PDF
+                        </span>
+                        <span data-i18n="site.insurance">
+                          Insurance policy
+                        </span>
+                      </li>
+                    </ul>
+                    <div class="record-entry">
+                      <span class="record-dot" aria-hidden="true">
+                      </span>
+                      <div>
+                        <strong data-i18n="site.recordTitle">
+                          Service recorded
+                        </strong>
+                        <p data-i18n="site.recordMeta">
+                          12 August 2025 · service invoice
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="assistant-task-preview"><span class="record-dot pending" aria-hidden="true"></span><span data-i18n="how.assistantTask">Review suggested maintenance tasks</span></div>
-              </div>
-              <figcaption><span data-i18n="site.example">Illustrative example · sample data</span></figcaption>
-            </figure></div>
-                <article class="feature-slide feature-slide-detail" data-feature-slide>
-                  <div class="feature-detail-art" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
-                  <h3 data-i18n="how.assistantDetailTitle">From a question to a considered action</h3>
-                  <p data-i18n="how.assistantDetailBody">Flow AI uses the records you add to find relevant details and prepare answers or drafts for your review.</p>
-                  <p class="feature-example" data-i18n="site.example">Illustrative example · sample data</p>
-                </article>
-              </div>
-              <div class="feature-carousel-controls" data-feature-controls hidden>
-                <button type="button" class="chapter-arrow" data-feature-previous data-i18n-aria="how.previous" aria-label="Previous example"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m0 0 7-7m-7 7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-                <span class="feature-carousel-status" data-feature-status aria-live="polite"></span>
-                <button type="button" class="chapter-arrow" data-feature-next data-i18n-aria="how.next" aria-label="Next example"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-7-7m7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-              </div>
+                <figcaption>
+                  <h4 data-i18n="how.assetDetailTitle">
+                    Connected to its records
+                  </h4>
+                  <p data-i18n="how.assetDetailBody">
+                    Documents and completed work stay connected to the asset.
+                  </p>
+                  <p data-i18n="site.example" class="example-caption">
+                    Illustrative example · sample data
+                  </p>
+                </figcaption>
+              </figure>
             </div>
           </article>
-          </div>
+          <article id="how-records" class="feature-chapter feature-records" aria-labelledby="how-records-title">
+            <header class="feature-chapter-heading">
+              <div>
+                <h3 data-i18n="how.recordsTitle" id="how-records-title">Build its knowledge base</h3>
+                <p data-i18n="how.recordsBody">Connect documents and completed work to your asset. Use that knowledge to understand its history and review suggested next steps.</p>
+              </div>
+              <div class="chapter-links">
+                <a href="#records-library">
+                  <span data-i18n="how.recordsLink">Explore the knowledge base</span>
+                </a>
+                <a href="/blog/en/family-car-maintenance/" data-blog-article="family-car-maintenance">
+                  <span data-i18n="how.guideLink">
+                    Read the guide
+                  </span>
+                </a>
+              </div>
+            </header>
+            <div class="feature-grid">
+              <figure class="feature-example">
+                <div class="feature-preview">
+                  <div class="chapter-record">
+                    <strong class="preview-title">
+                      <span data-i18n="site.records">
+                        Records
+                      </span>
+                    </strong>
+                    <ul class="file-list">
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PDF
+                        </span >
+                        <span data-i18n="site.receipt">
+                          Purchase receipt
+                        </span>
+                      </li>
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PDF
+                        </span >
+                        <span data-i18n="site.manual">
+                          Owner’s manual
+                        </span>
+                      </li>
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PDF
+                        </span >
+                        <span data-i18n="site.serviceInvoice">
+                          Service invoice
+                        </span>
+                      </li>
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          JPG
+                        </span >
+                        <span data-i18n="site.warrantyCard">
+                          Warranty card
+                        </span>
+                      </li>
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          DOCX
+                        </span >
+                        <span data-i18n="site.insurance">
+                          Insurance policy
+                        </span>
+                      </li>
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PNG
+                        </span >
+                        <span data-i18n="site.inspectionPhoto">
+                          Inspection photo
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.recordsExampleTitle">
+                    Documents you can find
+                  </h4>
+                  <p data-i18n="how.recordsExampleBody">
+                    Keep the manual, receipt and insurance with the right asset.
+                  </p>
+                  <p data-i18n="site.example" class="example-caption">
+                    Illustrative example · sample data
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-preview">
+                  <strong data-i18n="site.vehicle" class="preview-title">
+                    Personal vehicle
+                  </strong>
+                  <div class="feature-history">
+                    <div class="record-entry">
+                      <span class="record-dot" aria-hidden="true">
+                      </span>
+                      <div>
+                        <strong data-i18n="site.recordTitle">
+                          Service recorded
+                        </strong>
+                        <p data-i18n="site.recordMeta">
+                          12 August 2025 · service invoice
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="file-list">
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PDF
+                        </span>
+                        <span data-i18n="site.serviceInvoice">
+                          Service invoice
+                        </span>
+                      </li>
+                      <li>
+                        <span class="file-type" aria-hidden="true">
+                          PNG
+                        </span>
+                        <span data-i18n="site.inspectionPhoto">
+                          Inspection photo
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="knowledge-summary">
+<strong data-i18n="library.knowledge.understanding">Understand the history</strong><p data-i18n="library.knowledge.insight">The owner’s manual and recorded service provide context for the next maintenance review.</p></div>
+<div class="knowledge-suggestion"><strong data-i18n="library.knowledge.action">Suggested next step</strong><p data-i18n="library.knowledge.task">Review the next maintenance plan</p></div>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.recordsDetailTitle">Suggested next step</h4>
+                  <p data-i18n="how.recordsDetailBody">Check the records and adjust the suggestion before adding a task.</p>
+                  <p data-i18n="site.example" class="example-caption">
+                    Illustrative example · sample data
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+          <article id="how-plan" class="feature-chapter feature-plan" aria-labelledby="how-plan-title">
+            <header class="feature-chapter-heading">
+              <div>
+                <h3 data-i18n="how.planTitle" id="how-plan-title">
+                  Plan its care
+                </h3>
+                <p data-i18n="how.planBody">
+                  Prepare a maintenance draft from the context you have. Review the suggestions and choose what to confirm.
+                </p>
+              </div>
+              <div class="chapter-links">
+                <a href="#product" data-demo-target="plan">
+                  <span data-i18n="how.planLink">
+                    Explore smart plans
+                  </span>
+                </a>
+                <a href="/blog/en/used-car-no-service-history/" data-blog-article="used-car-no-service-history">
+                  <span data-i18n="how.guideLink">
+                    Read the guide
+                  </span>
+                </a>
+              </div>
+            </header>
+            <div class="feature-grid">
+              <figure class="feature-example">
+                <div class="feature-preview">
+                  <div class="chapter-plan">
+                    <span class="status-pill" >
+                      <span data-i18n="site.draft" >
+                        Suggested plan · review first
+                      </span >
+                    </span >
+                    <strong class="preview-title" data-i18n="site.planTasksTitle">
+                      Suggested maintenance tasks
+                    </strong>
+                    <ul class="mini-plan-list">
+                      <li>
+                        <span data-i18n="site.taskOil">
+                          Oil and filter service
+                        </span>
+                        <small data-i18n="site.taskOilTime">
+                          About 45 min
+                        </small>
+                      </li>
+                      <li>
+                        <span data-i18n="site.taskCabin">
+                          Replace cabin air filter
+                        </span>
+                        <small data-i18n="site.taskCabinTime">
+                          About 20 min
+                        </small>
+                      </li>
+                      <li>
+                        <span data-i18n="site.taskTires">
+                          Check tire pressure and tread
+                        </span>
+                        <small data-i18n="site.taskTiresTime">
+                          About 15 min
+                        </small>
+                      </li>
+                    </ul>
+                    <p class="mini-plan-total">
+                      <span data-i18n="site.partsTotalLabel">
+                        Estimated parts total
+                      </span>
+                      <bdi data-i18n="site.partsTotal">
+                        €78
+                      </bdi>
+                    </p>
+                    <p class="mini-plan-note" data-i18n="site.estimateNote">
+                      Sample time and parts estimates; actual needs and prices vary.
+                    </p>
+                    <div class="review-rule">
+                      <span data-i18n="site.reviewNote" >
+                        You review every suggestion. Only you decide what becomes part of your plan.
+                      </span >
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.planExampleTitle">
+                    See the suggested work
+                  </h4>
+                  <p data-i18n="how.planExampleBody">
+                    Review tasks, time and parts estimates together.
+                  </p>
+                  <p data-i18n="site.example" class="example-caption">
+                    Illustrative example · sample data
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-preview">
+                  <ol class="feature-review-list">
+                    <li>
+                      <strong data-i18n="how.reviewRecords">
+                        Check the records
+                      </strong>
+                      <p data-i18n="site.taskMeta">
+                        Check the manual and service history before choosing a date.
+                      </p>
+                    </li>
+                    <li>
+                      <strong data-i18n="how.adjustDraft">
+                        Adjust the draft
+                      </strong>
+                      <p data-i18n="how.adjustDraftBody">
+                        Choose the tasks and details that fit your asset.
+                      </p>
+                    </li>
+                    <li>
+                      <strong data-i18n="how.confirmPlan">
+                        Confirm your plan
+                      </strong>
+                      <p data-i18n="site.reviewNote">
+                        You review every suggestion. Only you decide what becomes part of your plan.
+                      </p>
+                    </li>
+                  </ol>
+                  <a class="feature-demo-link" href="#product" data-demo-target="plan">
+                    <span data-i18n="site.review">
+                      Review plan
+                    </span>
+                  </a>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.planDetailTitle">
+                    You decide what to confirm
+                  </h4>
+                  <p data-i18n="how.planDetailBody">
+                    Check the records, adjust the draft, then confirm what fits.
+                  </p>
+                  <p data-i18n="site.example" class="example-caption">
+                    Illustrative example · sample data
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <p data-i18n="site.calendar" class="section-note feature-calendar">
+              Export confirmed tasks to your calendar. Connected calendar synchronization is planned.
+            </p>
+          </article>
         </div>
       </section>
       <section id="examples" class="section useful-examples">
@@ -814,104 +1016,282 @@
       <section id="records-library" class="section product-detail-section">
         <div class="wrap">
           <div class="section-heading">
-            <h2 data-i18n="library.title">One library for the story of every asset</h2>
-            <p class="section-lead" data-i18n="library.lead">Keep each asset’s documents, service records, and completed work together. They form an AI knowledge base you can ask about to find details, understand history, and prepare your next maintenance plan.</p>
+            <h2 data-i18n="library.title">A knowledge base for every asset</h2>
+            <p class="section-lead" data-i18n="library.lead">Bring documents, service records and completed work together. With Flow AI, use that knowledge to understand your asset, find useful details and prepare actions you can review.</p>
           </div>
           <div class="detail-showcase">
             <div class="detail-showcase-copy">
-              <h3 data-i18n="library.item1.title">Asset documents</h3>
-              <p data-i18n="library.item1.body">Attach manuals, warranties, insurance, and service contracts to the asset they belong to.</p>
-              <h3 data-i18n="library.item2.title">Event documents</h3>
-              <p data-i18n="library.item2.body">Keep receipts, invoices, service reports, and photos with the maintenance or ownership event they support.</p>
-              <h3 data-i18n="library.item3.title">Find what helps next</h3>
-              <p data-i18n="library.item3.body">See the evidence behind your history, spot missing details, and use what you learn to improve the next plan.</p>
+              <h3 data-i18n="library.item1.title">Connect the evidence</h3>
+              <p data-i18n="library.item1.body">Keep manuals, warranties, invoices and completed work linked to the asset or event they describe.</p>
+              <h3 data-i18n="library.item2.title">Understand what it means</h3>
+              <p data-i18n="library.item2.body">Explore your records with Flow AI to understand history, find relevant details and spot information worth checking.</p>
+              <h3 data-i18n="library.item3.title">Turn knowledge into action</h3>
+              <p data-i18n="library.item3.body">Use what you learn to draft a follow-up task or maintenance plan. Review the evidence, adjust the suggestion and decide what to confirm.</p>
             </div>
-            <div class="library-example" role="group" data-i18n-aria="library.tree.label" aria-label="Example asset library">
-              <p data-i18n="library.tree.label">Example asset library</p>
-              <h3 data-i18n="library.tree.title">Personal vehicle</h3>
-              <div class="library-example-group"><strong data-i18n="library.tree.folder1">Purchase &amp; warranty</strong><span>purchase-receipt.pdf</span><span>owners-manual.pdf</span><span>warranty-card.jpg</span></div>
-              <div class="library-example-group"><strong data-i18n="library.tree.folder2">Maintenance · 12 Aug 2025</strong><span>service-invoice.pdf</span><span>inspection-photo.png</span></div>
-              <div class="library-example-group"><strong data-i18n="library.tree.folder3">Insurance</strong><span>policy-2025-2026.docx</span></div>
-              <p class="library-example-caption" data-i18n="library.tree.caption">Asset documents and event evidence stay together, with the original file types intact.</p>
-            </div>
+            <figure class="library-example" aria-labelledby="knowledge-example-title">
+<figcaption data-i18n="library.knowledge.label" id="knowledge-example-title">Illustrative knowledge base · sample records</figcaption><h3 data-i18n="site.vehicle">Personal vehicle</h3>
+              <div class="knowledge-sources"><h4 data-i18n="library.knowledge.sources">Connected records</h4><ul class="file-list"><li><span class="file-type" aria-hidden="true">PDF</span><span data-i18n="site.manual">Owner’s manual</span></li><li><span class="file-type" aria-hidden="true">PDF</span><span data-i18n="site.serviceInvoice">Service invoice</span></li></ul><p data-i18n="site.recordMeta">12 August 2025 · service invoice</p></div>
+              <div class="knowledge-summary"><h4 data-i18n="library.knowledge.understanding">Understand the history</h4><p data-i18n="library.knowledge.insight">The owner’s manual and recorded service provide context for the next maintenance review.</p></div>
+              <div class="knowledge-suggestion"><h4 data-i18n="library.knowledge.action">Suggested next step</h4><strong data-i18n="library.knowledge.task">Review the next maintenance plan</strong><p data-i18n="library.knowledge.review">Check the records and adjust the suggestion before adding a task.</p></div>
+            </figure>
           </div>
-          <p class="section-note" data-i18n="library.note">Keep documents connected to the asset or event they support, so the evidence stays ready when you need it.</p>
+          <p class="section-note" data-i18n="library.note">Your records provide the context. AI suggestions stay separate from confirmed facts and actions until you review them.</p>
         </div>
       </section>
-      <section class="section household-section">
-        <div class="wrap household-layout">
-          <div>
-            <h2>
-              <span data-i18n="site.houseTitle"
-                >One home. One shared picture.</span
-              >
-            </h2>
-            <p class="section-lead">
-              <span data-i18n="site.houseLead"
-                >Share assets, upcoming tasks, and work already done with the
-                people in your household.</span
-              >
-            </p>
-            <p class="section-note">
-              <span data-i18n="household.note"
-                >The owner is included. Plus allows 1 additional household
-                member, Pro 2, and Max 4. Free has no additional member
-                seats.</span
-              >
-            </p>
-          </div>
-          <div class="household-board">
-            <p>
-              <span data-i18n="household.board.title"
-                >Example household view</span
-              >
-            </p>
-            <div class="record-entry">
-              <span class="record-dot" aria-hidden="true"></span>
-              <div>
-                <strong
-                  ><span data-i18n="household.board.done"
-                    >Car service recorded</span
-                  ></strong
-                >
-                <p>
-                  <span data-i18n="household.board.doneDetail"
-                    >Everyone can see what was done</span
-                  >
-                </p>
+      <section id="household" class="section household-section" aria-labelledby="household-title">
+        <div class="wrap">
+          <div class="household-feature">
+            <div class="household-intro">
+              <h2 data-i18n="site.houseTitle" id="household-title">
+                One home. One shared picture.
+              </h2>
+              <p data-i18n="household.lead" class="section-lead">
+                Invite the people you share a home with. Each person signs in to the same household workspace, so everyone can see the assets, upcoming maintenance, and work already done.
+              </p>
+              <div class="household-members">
+                <div class="household-avatar-group" aria-hidden="true">
+                  <span class="household-avatar avatar-gold" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <circle cx="12" cy="8" r="3"/>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                    </svg>
+                  </span>
+                  <span class="household-avatar avatar-sage" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <circle cx="12" cy="8" r="3"/>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                    </svg>
+                  </span>
+                  <span class="household-avatar avatar-add">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                  </span>
+                </div>
+                <span data-i18n="household.board.members">
+                  Your household, together
+                </span>
               </div>
             </div>
-            <div class="record-entry">
-              <span class="record-dot pending" aria-hidden="true"></span>
-              <div>
-                <strong
-                  ><span data-i18n="household.board.next"
-                    >Home filter due soon</span
-                  ></strong
-                >
-                <p>
-                  <span data-i18n="household.board.nextDetail"
-                    >Assigned and ready to follow up</span
-                  >
-                </p>
-              </div>
+            <div class="household-board">
+              <header class="household-board-header">
+                <span class="household-home-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"/>
+                  </svg>
+                </span>
+                <div>
+                  <h3 data-i18n="household.board.title">
+                    Example household view
+                  </h3>
+                  <p data-i18n="household.board.subtitle">
+                    Shared work, clear progress
+                  </p>
+                </div>
+              </header>
+              <ul class="household-board-list">
+                <li class="household-task">
+                  <span class="household-task-state state-done">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <path d="m5 12 4 4L19 6"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong data-i18n="household.board.done">
+                      Car service recorded
+                    </strong>
+                    <p data-i18n="household.board.doneDetail">
+                      Everyone can see what was done
+                    </p>
+                  </div>
+                  <span class="household-avatar avatar-gold" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <circle cx="12" cy="8" r="3"/>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                    </svg>
+                  </span>
+                </li>
+                <li class="household-task">
+                  <span class="household-task-state state-next">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <path d="M5 12h14m-6-6 6 6-6 6"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong data-i18n="household.board.next">
+                      Home filter due soon
+                    </strong>
+                    <p data-i18n="household.board.nextDetail">
+                      Assigned and ready to follow up
+                    </p>
+                  </div>
+                  <span class="household-avatar avatar-sage" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <circle cx="12" cy="8" r="3"/>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                    </svg>
+                  </span>
+                </li>
+              </ul>
+              <p data-i18n="site.example" class="household-example-label">
+                Illustrative example · sample data
+              </p>
             </div>
           </div>
+          <div class="household-benefits">
+            <article>
+              <span class="household-benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M3 11a9 9 0 1 1 2.5 7M3 4v7h7M12 7v5l3 2"/>
+                </svg>
+              </span>
+              <h3 data-i18n="household.item1.title">
+                Share one clear history
+              </h3>
+              <p data-i18n="household.item1.body">
+                Household members can see shared assets, their service history, and the next maintenance tasks.
+              </p>
+            </article>
+            <article>
+              <span class="household-benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <circle cx="8" cy="8" r="3"/>
+                  <path d="M2 21v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6M18 15a6 6 0 0 1 4 6"/>
+                </svg>
+              </span>
+              <h3 data-i18n="household.item2.title">
+                Know who is handling it
+              </h3>
+              <p data-i18n="household.item2.body">
+                Keep reminders and assignments together, so everyone knows what is due and who is responsible.
+              </p>
+            </article>
+            <article>
+              <span class="household-benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="4" y="5" width="16" height="16" rx="2"/>
+                  <path d="M8 3v4M16 3v4M4 11h16m-11 5 2 2 4-4"/>
+                </svg>
+              </span>
+              <h3 data-i18n="household.item3.title">
+                Use one household plan
+              </h3>
+              <p data-i18n="household.item3.body">
+                The owner manages invitations and billing. Members share the household plan’s asset limits and monthly AI credits.
+              </p>
+            </article>
+          </div>
+          <p data-i18n="household.note" class="section-note household-plan-note">
+            The owner is included. Plus allows 1 additional household member, Pro 2, and Max 4. Free has no additional member seats.
+          </p>
         </div>
-        <div class="wrap categories">
-          <h3>
-            <span data-i18n="categories.title"
-              >Start with one thing. Feel more in control of everything.</span
-            >
-          </h3>
-          <ul class="category-list">
-            <li data-i18n="categories.homeProperty">Home &amp; property</li>
-            <li data-i18n="categories.electronics">Electronics</li>
-            <li data-i18n="categories.vehicles">Vehicles</li>
-            <li data-i18n="categories.furniture">Furniture</li>
-            <li data-i18n="categories.appliances">Appliances</li>
-            <li data-i18n="categories.other">Other</li>
-          </ul>
+      </section>
+      <section id="asset-categories" class="section asset-categories" aria-labelledby="categories-title">
+        <div class="wrap">
+          <div class="section-heading">
+            <h2 data-i18n="categories.differentTitle" id="categories-title">
+              Different things. Different kinds of care.
+            </h2>
+            <p data-i18n="categories.lead" class="section-lead">
+              Your home, car and laptop need different information and different care. AssetFlow uses each asset’s category and type to help you build a relevant record and review a plan that fits.
+            </p>
+          </div>
+          <div class="category-grid">
+            <article class="category-item category-homeProperty">
+              <div class="category-glyph">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"/>
+                </svg>
+              </div>
+              <div>
+                <h3 data-i18n="categories.homeProperty">
+                  Home &amp; property
+                </h3>
+                <p data-i18n="categories.focus.homeProperty">
+                  Property details, insurance and home responsibilities, with the records that explain them.
+                </p>
+              </div>
+            </article>
+            <article class="category-item category-electronics">
+              <div class="category-glyph">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="4" width="18" height="13" rx="2"/>
+                  <path d="M8 21h8M12 17v4M7 8h5"/>
+                </svg>
+              </div>
+              <div>
+                <h3 data-i18n="categories.electronics">
+                  Electronics
+                </h3>
+                <p data-i18n="categories.focus.electronics">
+                  Device details, warranty information and backup checks for the devices that hold your data.
+                </p>
+              </div>
+            </article>
+            <article class="category-item category-vehicles">
+              <div class="category-glyph">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m5 7 2-4h10l2 4 2 3v8H3v-8l2-3ZM5 7h14M6 12h2M16 12h2M3 16h18M5 18v3M19 18v3"/>
+                </svg>
+              </div>
+              <div>
+                <h3 data-i18n="categories.vehicles">
+                  Vehicles
+                </h3>
+                <p data-i18n="categories.focus.vehicles">
+                  Mileage, energy type and service history give your next maintenance plan the right context.
+                </p>
+              </div>
+            </article>
+            <article class="category-item category-furniture">
+              <div class="category-glyph">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M6 11V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6M5 11h14a2 2 0 0 1 2 2v4H3v-4a2 2 0 0 1 2-2ZM6 17v4M18 17v4M3 14h18"/>
+                </svg>
+              </div>
+              <div>
+                <h3 data-i18n="categories.furniture">
+                  Furniture
+                </h3>
+                <p data-i18n="categories.focus.furniture">
+                  Material, condition and indoor or outdoor use help you choose relevant care.
+                </p>
+              </div>
+            </article>
+            <article class="category-item category-appliances">
+              <div class="category-glyph">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="4" y="2" width="16" height="20" rx="2"/>
+                  <path d="M4 7h16M7 4.5h.01M10 4.5h.01"/>
+                  <circle cx="12" cy="14" r="4"/>
+                  <path d="M8 14c2 2 6-2 8 0"/>
+                </svg>
+              </div>
+              <div>
+                <h3 data-i18n="categories.appliances">
+                  Appliances
+                </h3>
+                <p data-i18n="categories.focus.appliances">
+                  The appliance type, model and warranty give context for cleaning, servicing and recurring care.
+                </p>
+              </div>
+            </article>
+            <article class="category-item category-other">
+              <div class="category-glyph">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m3 7 9-4 9 4-9 4-9-4ZM3 7v10l9 4 9-4V7M12 11v10M7 5l10 4"/>
+                </svg>
+              </div>
+              <div>
+                <h3 data-i18n="categories.other">
+                  Other
+                </h3>
+                <p data-i18n="categories.focus.other">
+                  Describe what you own, keep its useful records and choose the care you want to track.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       <section id="pricing" class="section pricing">
@@ -1127,20 +1507,20 @@
               role="group"
               data-i18n-aria="matrix.market"
             >
-              <button type="button" data-market="home" data-column="2" aria-pressed="false">
-                <span>AssetFlow Home</span>
+              <button type="button" data-market="home" data-column="2" data-product-name="AssetFlow Home" aria-pressed="false">
+                <span class="product-logo product-logo-home"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3.5 10 8.5-7 8.5 7v10.5h-6v-7h-5v7h-6z"/></svg><span><b>AssetFlow</b><strong>Home</strong></span></span>
                 <small data-i18n="editions.availableNow">Available Now</small>
               </button>
-              <button type="button" data-market="business" data-column="3" aria-pressed="false">
-                <span>AssetFlow Business</span>
+              <button type="button" data-market="business" data-column="3" data-product-name="AssetFlow Business" aria-pressed="false">
+                <span class="product-logo product-logo-business"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 21V5.5L12 2l8 3.5V21M8 8h1m6 0h1M8 12h1m6 0h1M8 16h1m6 0h1M10 21v-3h4v3"/></svg><span><b>AssetFlow</b><strong>Business</strong></span></span>
                 <small data-i18n="editions.comingSoon">Coming Soon</small>
               </button>
-              <button type="button" data-market="fleet" data-column="4" aria-pressed="false">
-                <span>AssetFlow Fleet</span>
+              <button type="button" data-market="fleet" data-column="4" data-product-name="AssetFlow Fleet" aria-pressed="false">
+                <span class="product-logo product-logo-fleet"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7M7 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg><span><b>AssetFlow</b><strong>Fleet</strong></span></span>
                 <small data-i18n="editions.comingSoon">Coming Soon</small>
               </button>
-              <button type="button" data-market="hospitality" data-column="5" aria-pressed="false">
-                <span>AssetFlow Hospitality</span>
+              <button type="button" data-market="hospitality" data-column="5" data-product-name="AssetFlow Hospitality" aria-pressed="false">
+                <span class="product-logo product-logo-hospitality"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 20V5m0 9h18v6M3 10h6a3 3 0 0 1 3 3v1m0-4h5a4 4 0 0 1 4 4"/></svg><span><b>AssetFlow</b><strong>Hospitality</strong></span></span>
                 <small data-i18n="editions.comingSoon">Coming Soon</small>
               </button>
             </div>
@@ -1184,28 +1564,28 @@
                     <span data-i18n="matrix.market">Market</span>
                   </th>
                   <th scope="col">
-                    AssetFlow Home<small
+                    <span class="product-logo product-logo-home"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3.5 10 8.5-7 8.5 7v10.5h-6v-7h-5v7h-6z"/></svg><span><b>AssetFlow</b><strong>Home</strong></span></span><small
                       ><span data-i18n="editions.availableNow"
                         >Available Now</span
                       ></small
                     >
                   </th>
                   <th scope="col">
-                    AssetFlow Business<small
+                    <span class="product-logo product-logo-business"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 21V5.5L12 2l8 3.5V21M8 8h1m6 0h1M8 12h1m6 0h1M8 16h1m6 0h1M10 21v-3h4v3"/></svg><span><b>AssetFlow</b><strong>Business</strong></span></span><small
                       ><span data-i18n="editions.comingSoon"
                         >Coming Soon</span
                       ></small
                     >
                   </th>
                   <th scope="col">
-                    AssetFlow Fleet<small
+                    <span class="product-logo product-logo-fleet"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7M7 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg><span><b>AssetFlow</b><strong>Fleet</strong></span></span><small
                       ><span data-i18n="editions.comingSoon"
                         >Coming Soon</span
                       ></small
                     >
                   </th>
                   <th scope="col">
-                    AssetFlow Hospitality<small
+                    <span class="product-logo product-logo-hospitality"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 20V5m0 9h18v6M3 10h6a3 3 0 0 1 3 3v1m0-4h5a4 4 0 0 1 4 4"/></svg><span><b>AssetFlow</b><strong>Hospitality</strong></span></span><small
                       ><span data-i18n="editions.comingSoon"
                         >Coming Soon</span
                       ></small
