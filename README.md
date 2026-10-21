@@ -1,13 +1,13 @@
 # AssetFlow landing page (myassetsflow.com)
 
-A single, static, dependency-free marketing page for `myassetsflow.com`. It
+A static, dependency-free marketing website for `myassetsflow.com`. It
 acts as the portfolio hub for the AssetFlow platform across its four editions:
 - **AssetFlow Home**: Personal / household assets (appliances, electronics, vehicles, equipment, home systems). Active and links to the live app at `https://myassetsflow.app`.
 - **AssetFlow Business**: General organizational assets (restaurants, bakeries, offices, retail stores, workshops, factories) in a multi-tenant B2B architecture (Coming Soon).
 - **AssetFlow Hospitality**: Specialized hotel and resort operations (hotels, resorts, aparthotels, accommodations) with multi-property oversight (Coming Soon).
 - **AssetFlow Fleet**: Specialized vehicle and equipment operations (car rentals, delivery vans, corporate cars, trucks, machinery fleets) with interval tracking (Coming Soon).
 
-It contains **no app screens, sign-up forms, or dashboards** — those live in the separate `AssetFlow` app repo.
+It contains an explicitly illustrative, local-only ownership demonstration. It has no real app screens, sign-up forms, dashboards, or authenticated data; those live in the separate `AssetFlow` app repo.
 
 This repository is intentionally independent from the other AssetFlow repos
 (`AssetFlow`, `assetflow-worker`, `assetflow-infrastructure`,
@@ -16,16 +16,15 @@ infrastructure.
 
 ## Structure
 
-```
-index.html        Single-page markup, portfolio hub, all sections, data-i18n keys
-styles.css        All styling (mobile-first, no build step)
-main.js           Locale loading/switching, RTL toggle, pricing edition & period toggle
-locales/*.json    Translated copy for en, it, de, es, fr, ar (ar = RTL)
-assets/           Logo/favicon (SVG, no external images)
-```
+- `index.html`, `styles.css`, `main.js`: homepage, shared visual system, locale switching, accessible demonstration tabs and local review/confirm/reset interaction, monthly/annual pricing.
+- `blog.css`, `scripts/build-blog.py`: editorial layout and static generation.
+- `locales/*.json`: homepage copy in English, Italian, German, Spanish, French and Arabic.
+- `content/blog/*.json`: unchanged article content and editorial UI translations.
+- `assets/`: existing branding and local fonts, plus generated illustrative vehicle photography whose provenance is recorded in `assets/IMAGE-SOURCES.md`.
 
-No build tooling, package manager, or framework is required — this is plain
-HTML/CSS/JS so it can be uploaded directly to static hosting.
+The homepage pairs a bold headline and color wash with a colorful, explicitly illustrative AssetFlow Home interface, followed by ownership chapters, household sharing, pricing and a solutions-by-market comparison. Home is available; Business, Fleet and Hospitality are Coming Soon. The market matrix describes planned capabilities explicitly. On small screens it is a labeled, keyboard-focusable horizontal scroll region.
+
+The example has Asset, Maintenance plan and Records tabs. The maintenance tab lets visitors review, confirm and reset a sample task; nothing is sent to a server or saved. With JavaScript disabled, all three panels remain readable and inert controls are hidden. Pricing defaults to monthly. No package manager or framework is required.
 
 ## Visual blog guides
 
@@ -71,7 +70,7 @@ python3 -m http.server 8080
 ```
 
 Check each language in the selector (including Arabic, which should switch
-the page to right-to-left), the monthly/annual pricing toggle, and that both
+the page to right-to-left), the demo review/confirm/reset flow, keyboard tab navigation, mobile menu, market matrix scrolling, monthly/annual pricing toggle, and that all
 "Go to AssetFlow" buttons link to `https://myassetsflow.app`.
 
 ## Content sources (keep in sync)

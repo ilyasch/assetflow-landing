@@ -10,12 +10,17 @@ from xml.etree import ElementTree as ET
 ROOT = Path(__file__).resolve().parent.parent
 LOCALES = ('en', 'it', 'de', 'es', 'fr', 'ar')
 NAMES = dict(zip(LOCALES, ('English', 'Italiano', 'Deutsch', 'Español', 'Français', 'العربية')))
-SLUGS = ('used-car-no-service-history', 'family-car-maintenance', 'factory-maintenance', 'fleet-maintenance', 'hotel-maintenance')
-EDITIONS = ('Home', 'Home', 'Business', 'Fleet', 'Hospitality')
+SLUGS = ('used-car-no-service-history', 'family-car-maintenance', 'flow-ai-from-records-to-next-steps', 'factory-maintenance', 'fleet-maintenance', 'hotel-maintenance')
+EDITIONS = ('Home', 'Home', 'Home', 'Business', 'Fleet', 'Hospitality')
 SITE = 'https://myassetsflow.com'
+
+def start_link(locale):
+    catalog = json.loads((ROOT / f'locales/{locale}.json').read_text())
+    return f'<a class="btn btn-primary blog-start" href="https://myassetsflow.app">{esc(catalog["site"]["start"])}</a>'
 ICONS = {
     'used-car-no-service-history': '<path d="M8 4h12l5 5v23H8zM20 4v7h5M12 17h9M12 22h9M12 27h5"/><path d="m28 20 3 3 6-7"/>',
     'family-car-maintenance': '<path d="m7 18 4-9h18l4 9M5 18h30v12H5zM10 30v4M30 30v4M10 23h3M27 23h3M15 18h10"/>',
+    'flow-ai-from-records-to-next-steps': '<path d="M6 7h28v20H19l-8 6v-6H6zM12 14h16M12 20h10"/><circle cx="31" cy="25" r="5"/>',
     'factory-maintenance': '<path d="M5 34V16l10 6V12l11 7V6h7v28zM10 28h2M18 28h2M27 28h2M29 6V3"/>',
     'fleet-maintenance': '<path d="M4 16h21v13H4zM25 21h7l4 5v3H25M8 16v-5h16M12 11V6h16"/><circle cx="10" cy="30" r="3"/><circle cx="30" cy="30" r="3"/>',
     'hotel-maintenance': '<path d="M8 35V6h24v29M4 35h32M16 35v-9h8v9M14 12h3M23 12h3M14 19h3M23 19h3"/>',
@@ -44,7 +49,7 @@ def visual(data, ui):
 def preview(article, locale, ui, featured=False):
     slug = article['id']
     index = SLUGS.index(slug)
-    status = ui['available'] if index < 2 else ui['preview']
+    status = ui['available'] if EDITIONS[index] == 'Home' else ui['preview']
     thumb = f'<div class="blog-art art-{index}" aria-hidden="true">{icon(slug)}<span class="art-line"></span><span class="art-dot"></span><span class="art-line art-line-short"></span></div>'
     return f'''<article class="blog-preview{' blog-featured' if featured else ''}">
 {thumb}<div class="blog-preview-copy"><h2><a data-blog-id="{slug}" href="{url(locale, slug)}">{esc(article['title'])}</a></h2>
@@ -65,7 +70,7 @@ def render_index(locale, data):
 <link rel="canonical" href="{SITE}/blog/{locale}/">{alternates}<link rel="alternate" hreflang="x-default" href="{SITE}/blog/en/">
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(ui['sectionLead'])}"><meta property="og:url" content="{SITE}/blog/{locale}/"><meta property="og:image" content="{SITE}/assets/social-preview.png"><meta property="og:image:alt" content="AssetFlow"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(ui['sectionLead'])}"><meta name="twitter:image" content="{SITE}/assets/social-preview.png">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=2"><link rel="stylesheet" href="/blog.css?v=1"></head>
-<body class="article-page blog-index"><a class="skip-link" href="#main">{esc(ui['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><a class="article-back" href="{home}">AssetFlow Home</a><details class="article-language"><summary>{NAMES[locale]}</summary><nav aria-label="{esc(ui['language'])}">{languages}</nav></details></div></header>
+<body class="article-page blog-index"><a class="skip-link" href="#main">{esc(ui['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><a class="article-back" href="{home}">AssetFlow Home</a><details class="article-language"><summary>{NAMES[locale]}</summary><nav aria-label="{esc(ui['language'])}">{languages}</nav></details>{start_link(locale)}</div></header>
 <main id="main"><section class="section blogs" aria-labelledby="blogs-title"><div class="wrap"><div class="blog-section-intro"><h1 id="blogs-title">{esc(ui['sectionTitle'])}</h1><p class="section-lead">{esc(ui['sectionLead'])}</p></div>{cards}</div></section></main>
 <footer class="site-footer"><div class="wrap footer-inner"><p>© AssetFlow</p><p class="legal-links"><a href="https://myassetsflow.app/privacy">{esc(ui['privacy'])}</a><a href="https://myassetsflow.app/terms">{esc(ui['terms'])}</a></p></div></footer></body></html>'''
 
@@ -74,7 +79,7 @@ def render(article, locale, data):
     ui = data['ui']
     slug = article['id']
     index = SLUGS.index(slug)
-    is_preview = index > 1
+    is_preview = EDITIONS[index] != 'Home'
     current_url = SITE + url(locale, slug)
     description = article['description']
     title = article['title'] + ' | AssetFlow'
@@ -102,7 +107,7 @@ def render(article, locale, data):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=2"><link rel="stylesheet" href="/blog.css?v=1">
 <script type="application/ld+json">{json.dumps(schema,ensure_ascii=False).replace('<', chr(92)+'u003c')}</script>
 </head><body class="article-page"><a class="skip-link" href="#main">{esc(ui['skip'])}</a>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><a class="article-back" href="/blog/{locale}/">{esc(ui['back'])}</a><details class="article-language"><summary>{NAMES[locale]}</summary><nav aria-label="{esc(ui['language'])}">{links}</nav></details></div></header>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><a class="article-back" href="/blog/{locale}/">{esc(ui['back'])}</a><details class="article-language"><summary>{NAMES[locale]}</summary><nav aria-label="{esc(ui['language'])}">{links}</nav></details>{start_link(locale)}</div></header>
 <main id="main"><div class="wrap"><nav class="breadcrumbs" aria-label="{esc(ui['breadcrumb'])}"><a href="{home}">AssetFlow</a><span aria-hidden="true">/</span><a href="/blog/{locale}/">{esc(ui['blogs'])}</a><span aria-hidden="true">/</span><span>AssetFlow {EDITIONS[index]}</span></nav>
 <header class="article-hero">{icon(slug)}<h1>{esc(article['title'])}</h1><p class="article-status">AssetFlow {EDITIONS[index]} · {esc(ui['preview'] if is_preview else ui['available'])}</p><p class="article-deck">{esc(article['lead'])}</p><p class="article-notice">{esc(ui['previewNotice'] if is_preview else ui['illustrativeNotice'])}</p></header>
 <div class="article-layout"><aside class="article-toc"><details open><summary>{esc(ui['contents'])}</summary><nav aria-label="{esc(ui['contents'])}"><ol>{toc}</ol></nav></details></aside><article class="article-body">{sections}{checklist}{faq}{sources}<section class="article-cta"><h2>{esc(article['ctaTitle'])}</h2><p>{esc(ui['previewCtaNote'] if is_preview else article['ctaText'])}</p><a class="btn btn-primary" href="https://myassetsflow.app">{esc(ui['previewCta'] if is_preview else ui['homeCta'])}</a>{f'<p class="cta-availability">{esc(ui["previewNotice"])}</p>' if is_preview else ''}</section></article></div>
@@ -145,7 +150,7 @@ def build(output, update_landing):
         ET.SubElement(ET.SubElement(tree,f'{{{namespace}}}url'),f'{{{namespace}}}loc').text = SITE+path
     ET.indent(tree)
     (output/'sitemap.xml').write_bytes(ET.tostring(tree,encoding='utf-8',xml_declaration=True))
-    print('Rendered 30 static articles, six localized indexes, default index and sitemap.')
+    print(f'Rendered {len(SLUGS) * len(LOCALES)} static articles, six localized indexes, default index and sitemap.')
 
 
 if __name__ == '__main__':
