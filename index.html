@@ -273,7 +273,7 @@
                   />
                 </div>
                 <h3>
-                  <span data-i18n="site.vehicle">2020 Toyota Corolla</span>
+                  <span data-i18n="site.vehicle">Personal vehicle</span>
                 </h3>
                 <p>
                   <span data-i18n="site.vehicleMeta"
@@ -291,7 +291,7 @@
                   </div>
                   <div>
                     <dt><span data-i18n="site.detailDocs">Documents</span></dt>
-                    <dd>3</dd>
+                    <dd>6</dd>
                   </div>
                 </dl>
                 <p class="demo-footnote">
@@ -308,25 +308,29 @@
                 <div class="panel-heading">
                   <h3><span data-i18n="site.plan">Maintenance plan</span></h3>
                   <span class="status-pill" data-i18n="site.draft"
-                    >Suggested task · review first</span
+                    >Suggested plan · review first</span
                   >
                 </div>
-                <div class="task-row">
-                  <span class="task-mark" aria-hidden="true"></span>
-                  <div>
-                    <h4>
-                      <span data-i18n="site.task">Review the next service</span>
-                    </h4>
-                    <p>
-                      <span data-i18n="site.taskMeta"
-                        >Check the manual and service history before choosing a
-                        date.</span
-                      >
-                    </p>
-                  </div>
+                <div class="plan-sample-group">
+                  <h4 class="sample-group-title" data-i18n="site.planTasksTitle">Suggested maintenance tasks</h4>
+                  <ul class="plan-task-list">
+                    <li><span class="task-mark" aria-hidden="true"></span><span class="plan-row-copy"><strong data-i18n="site.taskOil">Oil and filter service</strong><small data-i18n="site.taskOilTime">About 45 min</small></span></li>
+                    <li><span class="task-mark" aria-hidden="true"></span><span class="plan-row-copy"><strong data-i18n="site.taskCabin">Replace cabin air filter</strong><small data-i18n="site.taskCabinTime">About 20 min</small></span></li>
+                    <li><span class="task-mark" aria-hidden="true"></span><span class="plan-row-copy"><strong data-i18n="site.taskTires">Check tire pressure and tread</strong><small data-i18n="site.taskTiresTime">About 15 min</small></span></li>
+                  </ul>
+                </div>
+                <div class="plan-sample-group purchase-group">
+                  <h4 class="sample-group-title" data-i18n="site.shoppingListTitle">Example purchase list</h4>
+                  <ul class="purchase-list">
+                    <li><span data-i18n="site.purchaseOil">Engine oil · 5 L</span><bdi data-i18n="site.purchaseOilPrice">€48</bdi></li>
+                    <li><span data-i18n="site.purchaseOilFilter">Oil filter</span><bdi data-i18n="site.purchaseOilFilterPrice">€12</bdi></li>
+                    <li><span data-i18n="site.purchaseCabinFilter">Cabin air filter</span><bdi data-i18n="site.purchaseCabinFilterPrice">€18</bdi></li>
+                  </ul>
+                  <p class="purchase-total"><span data-i18n="site.partsTotalLabel">Estimated parts total</span><bdi data-i18n="site.partsTotal">€78</bdi></p>
+                  <p class="estimate-note" data-i18n="site.estimateNote">Sample time and parts estimates; actual needs and prices vary.</p>
                 </div>
                 <button class="btn btn-primary demo-review" type="button">
-                  <span data-i18n="site.review">Review task</span>
+                  <span data-i18n="site.review">Review plan</span>
                 </button>
                 <div class="review-detail" hidden>
                   <p>
@@ -336,7 +340,7 @@
                     >
                   </p>
                   <button class="btn btn-primary demo-confirm" type="button">
-                    <span data-i18n="site.confirm">Confirm example task</span>
+                    <span data-i18n="site.confirm">Confirm example plan</span>
                   </button>
                 </div>
                 <p class="confirmation" role="status" aria-live="polite"></p>
@@ -380,7 +384,19 @@
                   </li>
                   <li>
                     <span class="file-type" aria-hidden="true">PDF</span
+                    ><span data-i18n="site.serviceInvoice">Service invoice</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">JPG</span
+                    ><span data-i18n="site.warrantyCard">Warranty card</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">DOCX</span
                     ><span data-i18n="site.insurance">Insurance policy</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">PNG</span
+                    ><span data-i18n="site.inspectionPhoto">Inspection photo</span>
                   </li>
                 </ul>
                 <p class="demo-footnote">
@@ -412,7 +428,7 @@
                   </div>
                   <div>
                     <dt data-i18n="site.detailDocs">Documents</dt>
-                    <dd>3</dd>
+                    <dd>6</dd>
                   </div>
                 </dl>
               </section>
@@ -452,7 +468,19 @@
                   </li>
                   <li>
                     <span class="file-type" aria-hidden="true">PDF</span
+                    ><span data-i18n="site.serviceInvoice">Service invoice</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">JPG</span
+                    ><span data-i18n="site.warrantyCard">Warranty card</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">DOCX</span
                     ><span data-i18n="site.insurance">Insurance policy</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">PNG</span
+                    ><span data-i18n="site.inspectionPhoto">Inspection photo</span>
                   </li>
                 </ul>
                 <p class="context-note" data-i18n="site.contextRecordsBody">
@@ -481,7 +509,7 @@
             <figure class="chapter-visual">
               <div class="chapter-asset">
                 <strong
-                  ><span data-i18n="site.vehicle">2020 Toyota Corolla</span></strong
+                  ><span data-i18n="site.vehicle">Personal vehicle</span></strong
                 >
                 <p>
                   <span data-i18n="site.vehicleMeta"
@@ -503,7 +531,7 @@
                     <dt
                       ><span data-i18n="site.detailDocs">Documents</span></dt
                     >
-                    <dd>3</dd>
+                    <dd>6</dd>
                   </div>
                 </dl>
               </div>
@@ -537,18 +565,17 @@
               <div class="chapter-plan">
                 <span class="status-pill"
                   ><span data-i18n="site.draft"
-                    >Suggested task · review first</span
+                    >Suggested plan · review first</span
                   ></span
                 >
-                <h3>
-                  <span data-i18n="site.task">Review the next service</span>
-                </h3>
-                <p>
-                  <span data-i18n="site.taskMeta"
-                    >Check the manual and service history before choosing a
-                    date.</span
-                  >
-                </p>
+                <h3 data-i18n="site.planTasksTitle">Suggested maintenance tasks</h3>
+                <ul class="mini-plan-list">
+                  <li><span data-i18n="site.taskOil">Oil and filter service</span><small data-i18n="site.taskOilTime">About 45 min</small></li>
+                  <li><span data-i18n="site.taskCabin">Replace cabin air filter</span><small data-i18n="site.taskCabinTime">About 20 min</small></li>
+                  <li><span data-i18n="site.taskTires">Check tire pressure and tread</span><small data-i18n="site.taskTiresTime">About 15 min</small></li>
+                </ul>
+                <p class="mini-plan-total"><span data-i18n="site.partsTotalLabel">Estimated parts total</span><bdi data-i18n="site.partsTotal">€78</bdi></p>
+                <p class="mini-plan-note" data-i18n="site.estimateNote">Sample time and parts estimates; actual needs and prices vary.</p>
                 <div class="review-rule">
                   <span data-i18n="site.reviewNote"
                     >You review every suggestion. Only you decide what becomes
@@ -590,7 +617,19 @@
                   </li>
                   <li>
                     <span class="file-type" aria-hidden="true">PDF</span
+                    ><span data-i18n="site.serviceInvoice">Service invoice</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">JPG</span
+                    ><span data-i18n="site.warrantyCard">Warranty card</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">DOCX</span
                     ><span data-i18n="site.insurance">Insurance policy</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">PNG</span
+                    ><span data-i18n="site.inspectionPhoto">Inspection photo</span>
                   </li>
                 </ul>
                 <div class="record-entry">
@@ -653,9 +692,9 @@
             </div>
             <div class="library-example" role="group" data-i18n-aria="library.tree.label" aria-label="Example asset library">
               <p data-i18n="library.tree.label">Example asset library</p>
-              <h3 data-i18n="library.tree.title">2020 Toyota Corolla</h3>
-              <div class="library-example-group"><strong data-i18n="library.tree.folder1">Purchase &amp; warranty</strong><span>purchase-receipt.pdf</span><span>warranty-card.jpg</span></div>
-              <div class="library-example-group"><strong data-i18n="library.tree.folder2">Maintenance · 12 Aug 2025</strong><span>service-invoice.pdf</span><span>oil-filter-change.jpg</span></div>
+              <h3 data-i18n="library.tree.title">Personal vehicle</h3>
+              <div class="library-example-group"><strong data-i18n="library.tree.folder1">Purchase &amp; warranty</strong><span>purchase-receipt.pdf</span><span>owners-manual.pdf</span><span>warranty-card.jpg</span></div>
+              <div class="library-example-group"><strong data-i18n="library.tree.folder2">Maintenance · 12 Aug 2025</strong><span>service-invoice.pdf</span><span>inspection-photo.png</span></div>
               <div class="library-example-group"><strong data-i18n="library.tree.folder3">Insurance</strong><span>policy-2025-2026.docx</span></div>
               <p class="library-example-caption" data-i18n="library.tree.caption">Asset documents and event evidence stay together, with the original file types intact.</p>
             </div>
