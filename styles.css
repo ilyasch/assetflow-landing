@@ -791,24 +791,37 @@ p {
 .asset-record-heading {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-block-end: 18px;
+  gap: 22px;
+  margin-block-end: 24px;
 }
 .asset-record-thumb {
   display: block;
-  width: 76px;
-  height: 56px;
-  border-radius: 10px;
+  width: 132px;
+  height: 96px;
+  flex: 0 0 auto;
+  border-radius: 12px;
   object-fit: cover;
   object-position: center 59%;
 }
+.asset-record-copy {
+  display: grid;
+  justify-items: start;
+  gap: 5px;
+  min-width: 0;
+}
+.asset-record-copy h3,
+.asset-record-copy p {
+  margin: 0;
+}
+.asset-record-copy p {
+  font-size: 0.8rem;
+}
 .asset-record-status {
-  padding: 7px 11px;
+  padding: 4px 9px;
   border: 1px solid var(--color-border);
   border-radius: 999px;
   color: var(--color-primary-dark);
-  font-size: 0.76rem;
+  font-size: 0.7rem;
   font-weight: 550;
 }
 .asset-details {
@@ -1888,7 +1901,8 @@ p {
     padding: 22px;
     min-height: 365px;
   }
-  .asset-record-heading { margin-block-end: 14px; }
+  .asset-record-heading { gap: 14px; margin-block-end: 20px; }
+  .asset-record-thumb { width: 104px; height: 80px; }
   .demo-panel h3 {
     font-size: 1.08rem;
   }
