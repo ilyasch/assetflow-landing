@@ -795,18 +795,13 @@ p {
   gap: 16px;
   margin-block-end: 18px;
 }
-.asset-record-icon {
-  display: grid;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  border-radius: 14px;
-  color: var(--color-primary-dark);
-  background: var(--color-sky);
-}
-.asset-record-icon svg {
-  width: 32px;
-  height: 32px;
+.asset-record-thumb {
+  display: block;
+  width: 76px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center 59%;
 }
 .asset-record-status {
   padding: 7px 11px;
