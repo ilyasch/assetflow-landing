@@ -51,6 +51,28 @@
       "step5Hint": "Convierte tus registros en información útil"
     }
   },
+  "how": {
+    "title": "De tu bien al siguiente paso claro",
+    "lead": "Descubre el proceso: organiza un bien, prepara su mantenimiento, conserva los registros y pregunta a Flow AI qué información contienen.",
+    "chooseStep": "Elige un paso del producto",
+    "previous": "Paso anterior",
+    "next": "Paso siguiente",
+    "tabAsset": "Bien",
+    "tabPlan": "Plan",
+    "tabRecords": "Registros",
+    "tabAssistant": "Flow AI",
+    "guideLink": "Leer la guía",
+    "assetLink": "Explorar el resumen del bien",
+    "planLink": "Explorar los planes inteligentes",
+    "recordsLink": "Explorar la biblioteca de registros",
+    "assistantLink": "Explorar Flow AI",
+    "assistantTitle": "Pregunta a Flow AI sobre tus registros.",
+    "assistantBody": "Haz una pregunta con tus propias palabras. Flow AI encuentra detalles relevantes en los registros del bien, destaca información útil y puede convertir un hallazgo en una tarea o un borrador de mantenimiento para que lo revises.",
+    "assistantSample": "Respuesta ilustrativa de Flow AI",
+    "assistantQuestion": "¿Qué debería revisar antes del próximo servicio?",
+    "assistantResponse": "He encontrado el manual y una factura de servicio entre los registros de este bien. Puedo usarlos para preparar próximos pasos sugeridos que podrás revisar.",
+    "assistantTask": "Revisar las tareas de mantenimiento sugeridas"
+  },
   "editions": {
     "eyebrow": "Una sola plataforma, adaptada a tu escala",
     "title": "Ediciones a medida para cada tipo de activo",
@@ -210,8 +232,13 @@
     "note": "Las garantías, los seguros y los contratos de mantenimiento permanecen vinculados al bien correspondiente, con sus propias fechas y recordatorios."
   },
   "pricing": {
-    "title": "Elija el plan que mejor se adapte a sus necesidades",
-    "lead": "Empiece con AssetFlow Home o elija software vertical especializado para su empresa.",
+    "title": "Planes para el hogar; ediciones empresariales próximamente",
+    "lead": "Elige un plan de AssetFlow Home para tus bienes personales y del hogar. Business, Fleet y Hospitality llegarán con precios empresariales adaptados a cada organización.",
+    "homeTitle": "Planes de AssetFlow Home",
+    "homeLead": "Para bienes personales y necesidades compartidas del hogar.",
+    "enterpriseTitle": "Business, Fleet y Hospitality",
+    "enterpriseBody": "Las ediciones empresariales están previstas con paquetes y precios adaptados a cada tipo de operación.",
+    "compareEditions": "Comparar ediciones previstas",
     "tabHome": "AssetFlow Home",
     "tabB2B": "Ediciones B2B",
     "toggleMonthly": "Mensual",
@@ -277,7 +304,8 @@
       "feature3": "Alertas de renovación de seguros y trámites legales",
       "feature4": "Gestión de flotas multi-tenant lista para telemática"
     },
-    "b2bNote": "Las ediciones B2B de AssetFlow están actualmente en vista previa privada y contarán con modelos de precios verticales dedicados."
+    "b2bNote": "Las ediciones B2B de AssetFlow están actualmente en vista previa privada y contarán con modelos de precios verticales dedicados.",
+    "contactLinkedIn": "Consulta sobre una edición en LinkedIn"
   },
   "security": {
     "title": "Tus registros quedan protegidos y bajo tu control",
@@ -374,7 +402,7 @@
     "calendar": "Exporta las tareas confirmadas a tu calendario. La sincronización directa está prevista.",
     "houseTitle": "Un hogar. Una visión compartida.",
     "houseLead": "Comparte bienes, próximas tareas y trabajos realizados con las personas de tu hogar.",
-    "pricingLead": "Empieza gratis. Elige más espacio cuando lo necesites.",
+    "pricingLead": "Los precios siguientes son para AssetFlow Home. Business, Fleet y Hospitality llegarán con precios adaptados a cada organización.",
     "futureTitle": "Distintas necesidades. La misma claridad.",
     "futureLead": "Home está disponible hoy. Las ediciones especializadas para organizaciones llegarán más adelante.",
     "controlTitle": "Tus documentos. Tus decisiones.",

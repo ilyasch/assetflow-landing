@@ -51,6 +51,28 @@
       "step5Hint": "Gewinne hilfreiche Erkenntnisse aus deinen Unterlagen"
     }
   },
+  "how": {
+    "title": "Vom Asset zum nächsten klaren Schritt",
+    "lead": "Entdecke den Ablauf: Asset-Details ordnen, Wartung planen, Unterlagen aufbewahren und Flow AI nach ihrer Bedeutung fragen.",
+    "chooseStep": "Produktschritt auswählen",
+    "previous": "Vorheriger Schritt",
+    "next": "Nächster Schritt",
+    "tabAsset": "Asset",
+    "tabPlan": "Plan",
+    "tabRecords": "Unterlagen",
+    "tabAssistant": "Flow AI",
+    "guideLink": "Zum Ratgeber",
+    "assetLink": "Asset-Übersicht ansehen",
+    "planLink": "Intelligente Pläne ansehen",
+    "recordsLink": "Unterlagenbibliothek ansehen",
+    "assistantLink": "Flow AI ansehen",
+    "assistantTitle": "Frage Flow AI zu deinen Unterlagen.",
+    "assistantBody": "Stelle eine Frage in deinen eigenen Worten. Flow AI findet wichtige Details in den Asset-Unterlagen, hebt hilfreiche Erkenntnisse hervor und kann daraus eine Aufgabe oder einen Wartungsplan-Entwurf erstellen, den du prüfst.",
+    "assistantSample": "Beispielantwort von Flow AI",
+    "assistantQuestion": "Was sollte ich vor dem nächsten Service prüfen?",
+    "assistantResponse": "Ich habe das Handbuch und eine Service-Rechnung in den Unterlagen dieses Assets gefunden. Daraus kann ich nächste Schritte entwerfen, die du prüfen kannst.",
+    "assistantTask": "Vorgeschlagene Wartungsaufgaben prüfen"
+  },
   "editions": {
     "eyebrow": "Eine Plattform, passend für Ihre Anforderungen",
     "title": "Maßgeschneiderte Editionen für jeden Asset-Typ",
@@ -210,8 +232,13 @@
     "note": "Garantien, Versicherungen und Wartungsverträge bleiben mit dem jeweiligen Objekt verbunden und haben eigene Termine und Erinnerungen."
   },
   "pricing": {
-    "title": "Wählen Sie das passende Modell für Ihre Anforderungen",
-    "lead": "Starten Sie mit AssetFlow Home oder wählen Sie spezialisierte vertikale Branchensoftware für Ihr Unternehmen.",
+    "title": "Home-Tarife, Enterprise-Editionen folgen",
+    "lead": "Wähle einen AssetFlow-Home-Tarif für persönliche und gemeinsam genutzte Haushaltsgegenstände. Business, Fleet und Hospitality folgen mit individuell zugeschnittenen Enterprise-Preisen.",
+    "homeTitle": "AssetFlow-Home-Tarife",
+    "homeLead": "Für persönliche Assets und gemeinsam genutzte Haushaltsgegenstände.",
+    "enterpriseTitle": "Business, Fleet & Hospitality",
+    "enterpriseBody": "Die Enterprise-Editionen sind geplant; Pakete und Preise werden auf die jeweiligen betrieblichen Anforderungen zugeschnitten.",
+    "compareEditions": "Geplante Editionen vergleichen",
     "tabHome": "AssetFlow Home",
     "tabB2B": "B2B-Editionen",
     "toggleMonthly": "Monatlich",
@@ -277,7 +304,8 @@
       "feature3": "Erinnerungen an Versicherungen, Prüfungen und Fristen",
       "feature4": "Multi-Tenant-Flottenmanagement bereit für Telematik"
     },
-    "b2bNote": "Die AssetFlow B2B-Editionen befinden sich derzeit in der Preview-Phase und bieten vertikale Preismodelle mit separaten Mandanten."
+    "b2bNote": "Die AssetFlow B2B-Editionen befinden sich derzeit in der Preview-Phase und bieten vertikale Preismodelle mit separaten Mandanten.",
+    "contactLinkedIn": "Fragen Sie auf LinkedIn nach einer Edition"
   },
   "security": {
     "title": "Deine Aufzeichnungen bleiben geschützt und unter deiner Kontrolle",
@@ -374,7 +402,7 @@
     "calendar": "Exportiere bestätigte Aufgaben in deinen Kalender. Eine direkte Kalendersynchronisierung ist geplant.",
     "houseTitle": "Ein Zuhause. Ein gemeinsamer Überblick.",
     "houseLead": "Teile Gegenstände, anstehende Aufgaben und erledigte Arbeiten mit den Menschen in deinem Haushalt.",
-    "pricingLead": "Kostenlos starten. Mehr Platz wählen, wenn du ihn brauchst.",
+    "pricingLead": "Die Preise unten gelten für AssetFlow Home. Business, Fleet und Hospitality folgen mit Preisen, die auf die jeweilige Organisation zugeschnitten sind.",
     "futureTitle": "Andere Aufgaben. Dieselbe Klarheit.",
     "futureLead": "Home ist heute verfügbar. Spezialisierte Editionen für Organisationen folgen.",
     "controlTitle": "Deine Unterlagen. Deine Entscheidungen.",

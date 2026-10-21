@@ -51,6 +51,28 @@
       "step5Hint": "Turn your records into useful insights"
     }
   },
+  "how": {
+    "title": "From your asset to the next clear step",
+    "lead": "Explore the flow: keep an asset organized, prepare its maintenance, preserve the records, and ask Flow AI what they can tell you.",
+    "chooseStep": "Choose a product step",
+    "previous": "Previous step",
+    "next": "Next step",
+    "tabAsset": "Asset",
+    "tabPlan": "Plan",
+    "tabRecords": "Records",
+    "tabAssistant": "Flow AI",
+    "guideLink": "Read the guide",
+    "assetLink": "Explore the asset overview",
+    "planLink": "Explore smart plans",
+    "recordsLink": "Explore the records library",
+    "assistantLink": "Explore Flow AI",
+    "assistantTitle": "Ask Flow AI about your records.",
+    "assistantBody": "Ask a question in plain language. Flow AI finds relevant details in your asset records, surfaces useful insights, and can turn a finding into a task or a maintenance-plan draft for you to review.",
+    "assistantSample": "Illustrative Flow AI answer",
+    "assistantQuestion": "What should I check before the next service?",
+    "assistantResponse": "I found the owner’s manual and a service invoice in this asset’s records. I can use them to draft suggested next steps for you to review.",
+    "assistantTask": "Review suggested maintenance tasks"
+  },
   "editions": {
     "eyebrow": "One platform, built for your scale",
     "title": "Tailored editions for every type of asset",
@@ -210,8 +232,13 @@
     "note": "Warranties, insurance policies, and service contracts stay linked to the asset they belong to, with their own dates and reminders."
   },
   "pricing": {
-    "title": "Choose the plan that fits your needs",
-    "lead": "Start with AssetFlow Home or choose specialized vertical software for your business.",
+    "title": "Home plans, with enterprise editions on the horizon",
+    "lead": "Choose an AssetFlow Home plan for personal and household assets. Business, Fleet and Hospitality are coming soon with tailored enterprise pricing.",
+    "homeTitle": "AssetFlow Home plans",
+    "homeLead": "For personal assets and shared household needs.",
+    "enterpriseTitle": "Business, Fleet & Hospitality",
+    "enterpriseBody": "Enterprise editions are planned with pricing and packages tailored to each type of operation.",
+    "compareEditions": "Compare planned editions",
     "tabHome": "AssetFlow Home",
     "tabB2B": "B2B Editions",
     "toggleMonthly": "Monthly",
@@ -277,7 +304,8 @@
       "feature3": "Insurance, permits & regulatory renewal alerts",
       "feature4": "Multi-tenant fleet management & telematics ready"
     },
-    "b2bNote": "AssetFlow B2B editions are currently in private preview and will feature separate vertical pricing models and dedicated tenant provisioning."
+    "b2bNote": "AssetFlow B2B editions are currently in private preview and will feature separate vertical pricing models and dedicated tenant provisioning.",
+    "contactLinkedIn": "Ask about an edition on LinkedIn"
   },
   "security": {
     "title": "Your records stay protected and under your control",
@@ -374,7 +402,7 @@
     "calendar": "Export confirmed tasks to your calendar. Connected calendar synchronization is planned.",
     "houseTitle": "One home. One shared picture.",
     "houseLead": "Share assets, upcoming tasks, and work already done with the people in your household.",
-    "pricingLead": "Start free. Choose more room when you need it.",
+    "pricingLead": "Prices below are for AssetFlow Home. Business, Fleet and Hospitality editions are coming soon, with pricing tailored to each organization.",
     "futureTitle": "More kinds of work. The same clarity.",
     "futureLead": "Home is available today. Specialized editions for organizations are coming next.",
     "controlTitle": "Your records. Your decisions.",

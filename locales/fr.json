@@ -51,6 +51,28 @@
       "step5Hint": "Transformez vos documents en informations utiles"
     }
   },
+  "how": {
+    "title": "De votre bien à la prochaine étape claire",
+    "lead": "Découvrez le parcours : organisez un bien, préparez son entretien, conservez les documents et demandez à Flow AI ce qu’ils révèlent.",
+    "chooseStep": "Choisir une étape du produit",
+    "previous": "Étape précédente",
+    "next": "Étape suivante",
+    "tabAsset": "Bien",
+    "tabPlan": "Plan",
+    "tabRecords": "Documents",
+    "tabAssistant": "Flow AI",
+    "guideLink": "Lire le guide",
+    "assetLink": "Explorer la vue du bien",
+    "planLink": "Explorer les plans intelligents",
+    "recordsLink": "Explorer la bibliothèque de documents",
+    "assistantLink": "Explorer Flow AI",
+    "assistantTitle": "Interrogez Flow AI sur vos documents.",
+    "assistantBody": "Posez une question avec vos propres mots. Flow AI repère les détails utiles dans les documents du bien, fait ressortir des informations utiles et peut transformer une observation en tâche ou en brouillon de plan d’entretien à examiner.",
+    "assistantSample": "Réponse illustrative de Flow AI",
+    "assistantQuestion": "Que devrais-je vérifier avant le prochain entretien ?",
+    "assistantResponse": "J’ai trouvé la notice et une facture d’entretien dans les documents de ce bien. Je peux les utiliser pour préparer des prochaines étapes suggérées, que vous pourrez examiner.",
+    "assistantTask": "Vérifier les tâches d’entretien suggérées"
+  },
   "editions": {
     "eyebrow": "Une seule plateforme, adaptée à votre échelle",
     "title": "Des éditions sur mesure pour chaque type de bien",
@@ -210,8 +232,13 @@
     "note": "Garanties, assurances et contrats d'entretien restent liés au bien concerné, avec leurs propres dates et rappels."
   },
   "pricing": {
-    "title": "Choisissez l'offre qui correspond à vos besoins",
-    "lead": "Commencez avec AssetFlow Home ou choisissez une solution logicielle verticale spécialisée pour votre entreprise.",
+    "title": "Les offres Home, avec des éditions Enterprise à venir",
+    "lead": "Choisissez une offre AssetFlow Home pour vos biens personnels et familiaux. Business, Fleet et Hospitality arriveront avec une tarification Enterprise adaptée à chaque organisation.",
+    "homeTitle": "Offres AssetFlow Home",
+    "homeLead": "Pour les biens personnels et les besoins partagés du foyer.",
+    "enterpriseTitle": "Business, Fleet & Hospitality",
+    "enterpriseBody": "Les éditions Enterprise sont prévues avec des offres et des tarifs adaptés à chaque type d’activité.",
+    "compareEditions": "Comparer les éditions prévues",
     "tabHome": "AssetFlow Home",
     "tabB2B": "Éditions B2B",
     "toggleMonthly": "Mensuel",
@@ -277,7 +304,8 @@
       "feature3": "Rappels des assurances, contrôles et obligations légales",
       "feature4": "Gestion de flotte multi-tenant compatible télématique"
     },
-    "b2bNote": "Les éditions B2B d'AssetFlow sont actuellement en aperçu privé et proposeront des grilles tarifaires verticales spécifiques."
+    "b2bNote": "Les éditions B2B d'AssetFlow sont actuellement en aperçu privé et proposeront des grilles tarifaires verticales spécifiques.",
+    "contactLinkedIn": "Renseignez-vous sur une édition sur LinkedIn"
   },
   "security": {
     "title": "Vos données restent protégées et sous votre contrôle",
@@ -374,7 +402,7 @@
     "calendar": "Exportez les tâches confirmées vers votre calendrier. La synchronisation directe est prévue.",
     "houseTitle": "Un foyer. Une vision partagée.",
     "houseLead": "Partagez les biens, les tâches à venir et les travaux réalisés avec les membres de votre foyer.",
-    "pricingLead": "Commencez gratuitement. Choisissez plus de place selon vos besoins.",
+    "pricingLead": "Les tarifs ci-dessous concernent AssetFlow Home. Business, Fleet et Hospitality arriveront avec une tarification adaptée à chaque organisation.",
     "futureTitle": "D’autres besoins. La même clarté.",
     "futureLead": "Home est disponible aujourd’hui. Les éditions spécialisées pour les organisations suivront.",
     "controlTitle": "Vos documents. Vos décisions.",

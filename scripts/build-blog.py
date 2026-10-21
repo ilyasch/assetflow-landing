@@ -10,8 +10,8 @@ from xml.etree import ElementTree as ET
 ROOT = Path(__file__).resolve().parent.parent
 LOCALES = ('en', 'it', 'de', 'es', 'fr', 'ar')
 NAMES = dict(zip(LOCALES, ('English', 'Italiano', 'Deutsch', 'Español', 'Français', 'العربية')))
-SLUGS = ('used-car-no-service-history', 'family-car-maintenance', 'factory-maintenance', 'fleet-maintenance', 'hotel-maintenance')
-EDITIONS = ('Home', 'Home', 'Business', 'Fleet', 'Hospitality')
+SLUGS = ('used-car-no-service-history', 'family-car-maintenance', 'flow-ai-from-records-to-next-steps', 'factory-maintenance', 'fleet-maintenance', 'hotel-maintenance')
+EDITIONS = ('Home', 'Home', 'Home', 'Business', 'Fleet', 'Hospitality')
 SITE = 'https://myassetsflow.com'
 
 def start_link(locale):
@@ -20,6 +20,7 @@ def start_link(locale):
 ICONS = {
     'used-car-no-service-history': '<path d="M8 4h12l5 5v23H8zM20 4v7h5M12 17h9M12 22h9M12 27h5"/><path d="m28 20 3 3 6-7"/>',
     'family-car-maintenance': '<path d="m7 18 4-9h18l4 9M5 18h30v12H5zM10 30v4M30 30v4M10 23h3M27 23h3M15 18h10"/>',
+    'flow-ai-from-records-to-next-steps': '<path d="M6 7h28v20H19l-8 6v-6H6zM12 14h16M12 20h10"/><circle cx="31" cy="25" r="5"/>',
     'factory-maintenance': '<path d="M5 34V16l10 6V12l11 7V6h7v28zM10 28h2M18 28h2M27 28h2M29 6V3"/>',
     'fleet-maintenance': '<path d="M4 16h21v13H4zM25 21h7l4 5v3H25M8 16v-5h16M12 11V6h16"/><circle cx="10" cy="30" r="3"/><circle cx="30" cy="30" r="3"/>',
     'hotel-maintenance': '<path d="M8 35V6h24v29M4 35h32M16 35v-9h8v9M14 12h3M23 12h3M14 19h3M23 19h3"/>',
@@ -48,7 +49,7 @@ def visual(data, ui):
 def preview(article, locale, ui, featured=False):
     slug = article['id']
     index = SLUGS.index(slug)
-    status = ui['available'] if index < 2 else ui['preview']
+    status = ui['available'] if EDITIONS[index] == 'Home' else ui['preview']
     thumb = f'<div class="blog-art art-{index}" aria-hidden="true">{icon(slug)}<span class="art-line"></span><span class="art-dot"></span><span class="art-line art-line-short"></span></div>'
     return f'''<article class="blog-preview{' blog-featured' if featured else ''}">
 {thumb}<div class="blog-preview-copy"><h2><a data-blog-id="{slug}" href="{url(locale, slug)}">{esc(article['title'])}</a></h2>
@@ -78,7 +79,7 @@ def render(article, locale, data):
     ui = data['ui']
     slug = article['id']
     index = SLUGS.index(slug)
-    is_preview = index > 1
+    is_preview = EDITIONS[index] != 'Home'
     current_url = SITE + url(locale, slug)
     description = article['description']
     title = article['title'] + ' | AssetFlow'
@@ -149,7 +150,7 @@ def build(output, update_landing):
         ET.SubElement(ET.SubElement(tree,f'{{{namespace}}}url'),f'{{{namespace}}}loc').text = SITE+path
     ET.indent(tree)
     (output/'sitemap.xml').write_bytes(ET.tostring(tree,encoding='utf-8',xml_declaration=True))
-    print('Rendered 30 static articles, six localized indexes, default index and sitemap.')
+    print(f'Rendered {len(SLUGS) * len(LOCALES)} static articles, six localized indexes, default index and sitemap.')
 
 
 if __name__ == '__main__':

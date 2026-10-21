@@ -51,6 +51,28 @@
       "step5Hint": "Trasforma i tuoi registri in informazioni utili"
     }
   },
+  "how": {
+    "title": "Dal tuo bene al prossimo passo, con chiarezza",
+    "lead": "Scopri il percorso: organizza un bene, prepara la manutenzione, conserva i documenti e chiedi a Flow AI cosa raccontano.",
+    "chooseStep": "Scegli una fase",
+    "previous": "Fase precedente",
+    "next": "Fase successiva",
+    "tabAsset": "Bene",
+    "tabPlan": "Piano",
+    "tabRecords": "Documenti",
+    "tabAssistant": "Flow AI",
+    "guideLink": "Leggi la guida",
+    "assetLink": "Scopri la panoramica del bene",
+    "planLink": "Scopri i piani intelligenti",
+    "recordsLink": "Scopri la raccolta documenti",
+    "assistantLink": "Scopri Flow AI",
+    "assistantTitle": "Chiedi a Flow AI dei tuoi documenti.",
+    "assistantBody": "Fai una domanda con parole semplici. Flow AI individua i dettagli rilevanti nei documenti del bene, evidenzia informazioni utili e può trasformare ciò che emerge in un’attività o in una bozza di piano di manutenzione da rivedere.",
+    "assistantSample": "Risposta illustrativa di Flow AI",
+    "assistantQuestion": "Cosa dovrei controllare prima del prossimo intervento?",
+    "assistantResponse": "Ho trovato il manuale d’uso e una fattura di manutenzione tra i documenti del bene. Posso usarli per preparare i prossimi passi suggeriti, da rivedere.",
+    "assistantTask": "Rivedi le attività di manutenzione suggerite"
+  },
   "editions": {
     "eyebrow": "Una sola piattaforma, costruita per la tua scala",
     "title": "Edizioni su misura per ogni tipologia di bene",
@@ -210,8 +232,13 @@
     "note": "Garanzie, polizze e contratti di assistenza restano collegati al bene a cui appartengono, con date e promemoria propri."
   },
   "pricing": {
-    "title": "Scegli il piano adatto alle tue esigenze",
-    "lead": "Inizia con AssetFlow Home o scegli un software verticale dedicato per la tua azienda.",
+    "title": "Piani Home, con edizioni aziendali in arrivo",
+    "lead": "Scegli un piano AssetFlow Home per i beni personali e familiari. Business, Fleet e Hospitality sono in arrivo con prezzi aziendali su misura.",
+    "homeTitle": "Piani AssetFlow Home",
+    "homeLead": "Per i beni personali e le esigenze condivise della famiglia.",
+    "enterpriseTitle": "Business, Fleet e Hospitality",
+    "enterpriseBody": "Le edizioni aziendali sono in programma, con pacchetti e prezzi su misura per ogni tipo di attività.",
+    "compareEditions": "Confronta le edizioni in programma",
     "tabHome": "AssetFlow Home",
     "tabB2B": "Edizioni B2B",
     "toggleMonthly": "Mensile",
@@ -277,7 +304,8 @@
       "feature3": "Avvisi rinnovo assicurazioni e scadenze di legge",
       "feature4": "Gestione flotta multi-tenant pronta per telematica"
     },
-    "b2bNote": "Le edizioni B2B di AssetFlow sono attualmente in anteprima privata e includeranno modelli di prezzo verticali dedicati."
+    "b2bNote": "Le edizioni B2B di AssetFlow sono attualmente in anteprima privata e includeranno modelli di prezzo verticali dedicati.",
+    "contactLinkedIn": "Chiedi informazioni su LinkedIn"
   },
   "security": {
     "title": "I tuoi dati restano protetti e sotto il tuo controllo",
@@ -374,7 +402,7 @@
     "calendar": "Esporta le attività confermate nel calendario. La sincronizzazione diretta è prevista.",
     "houseTitle": "Una casa. Una visione condivisa.",
     "houseLead": "Condividi beni, attività in arrivo e lavori completati con le persone del tuo nucleo.",
-    "pricingLead": "Inizia gratis. Scegli più spazio quando ti serve.",
+    "pricingLead": "I prezzi qui sotto si riferiscono ad AssetFlow Home. Le edizioni Business, Fleet e Hospitality sono in arrivo, con prezzi su misura per ogni organizzazione.",
     "futureTitle": "Esigenze diverse. La stessa chiarezza.",
     "futureLead": "Home è disponibile oggi. Le edizioni specializzate per le organizzazioni arriveranno in seguito.",
     "controlTitle": "I tuoi documenti. Le tue decisioni.",

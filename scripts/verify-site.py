@@ -34,7 +34,7 @@ class Page(HTMLParser):
 
 pages = {path: Page(path) for path in SITE.rglob('*.html')}
 articles = [p for p in pages if p.is_relative_to(SITE / 'blog') and len(p.relative_to(SITE / 'blog').parts) == 3]
-assert len(articles) == 30, f'Expected 30 articles, found {len(articles)}'
+assert len(articles) == 36, f'Expected 36 articles, found {len(articles)}'
 checked = 0
 for path, page in pages.items():
     for tag, attrs in page.nodes:
@@ -115,7 +115,7 @@ for loc in LOCALES:
         assert isinstance(value,str) and value.strip(), (loc,key)
     index = pages[SITE / f'blog/{loc}/index.html']
     assert sum(t == 'h1' for t,_ in index.nodes) == 1, loc
-    assert sum(t == 'a' and 'data-blog-id' in a for t,a in index.nodes) == 5, loc
+    assert sum(t == 'a' and 'data-blog-id' in a for t,a in index.nodes) == 6, loc
     assert any(t == 'html' and a.get('lang') == loc for t,a in index.nodes), loc
     canonical = [a['href'] for t,a in index.nodes if t == 'link' and a.get('rel') == 'canonical']
     assert canonical == [f'https://myassetsflow.com/blog/{loc}/'], loc
