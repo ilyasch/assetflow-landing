@@ -264,13 +264,27 @@
                 aria-labelledby="demo-tab-asset"
               >
                 <div class="vehicle-photo">
-                  <img
-                    src="/assets/vehicle-photo.jpg"
-                    width="1448"
-                    height="1088"
-                    alt=""
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /assets/vehicle-photo-320.webp 320w,
+                        /assets/vehicle-photo-360.webp 360w,
+                        /assets/vehicle-photo-480.webp 480w,
+                        /assets/vehicle-photo-560.webp 560w,
+                        /assets/vehicle-photo-668.webp 668w,
+                        /assets/vehicle-photo-1000.webp 1000w
+                      "
+                      sizes="(max-width: 620px) calc(100vw - 76px), (max-width: 900px) calc(100vw - 316px), (max-width: 1200px) calc(100vw - 564px), 668px"
+                    />
+                    <img
+                      src="/assets/vehicle-photo.jpg"
+                      width="668"
+                      height="501"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <h3>
                   <span data-i18n="site.vehicle">Personal vehicle</span>
@@ -552,7 +566,28 @@
             <div class="feature-grid">
               <figure class="feature-example">
                 <div class="feature-preview">
-                  <img class="feature-vehicle" src="/assets/vehicle-photo.jpg" width="1448" height="1088" alt="" loading="lazy">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /assets/vehicle-photo-320.webp 320w,
+                        /assets/vehicle-photo-360.webp 360w,
+                        /assets/vehicle-photo-480.webp 480w,
+                        /assets/vehicle-photo-560.webp 560w,
+                        /assets/vehicle-photo-668.webp 668w,
+                        /assets/vehicle-photo-1000.webp 1000w
+                      "
+                      sizes="(max-width: 620px) calc(100vw - 88px), (max-width: 700px) calc(100vw - 160px), 526px"
+                    />
+                    <img
+                      class="feature-vehicle"
+                      src="/assets/vehicle-photo.jpg"
+                      width="668"
+                      height="501"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="chapter-asset">
                     <strong >
                       <span data-i18n="site.vehicle">
