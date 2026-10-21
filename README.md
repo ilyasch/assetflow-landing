@@ -22,7 +22,9 @@ infrastructure.
 - `content/blog/*.json`: unchanged article content and editorial UI translations.
 - `assets/`: existing branding and local fonts, plus generated illustrative vehicle photography whose provenance is recorded in `assets/IMAGE-SOURCES.md`.
 
-The homepage pairs a bold headline and color wash with a colorful, explicitly illustrative AssetFlow Home interface, followed by ownership chapters, household sharing, pricing and a solutions-by-market comparison. Home is available; Business, Fleet and Hospitality are Coming Soon. The market matrix describes planned capabilities explicitly. On small screens it is a labeled, keyboard-focusable horizontal scroll region.
+The homepage pairs a bold headline and color wash with a colorful, explicitly illustrative AssetFlow Home interface, followed by ownership chapters, household sharing, pricing and a solutions-by-market comparison. Home is available; Business, Fleet and Hospitality are Coming Soon. The market matrix describes planned capabilities explicitly. Selecting an edition shows its full five-row profile beside the row labels, with no horizontal scrolling on mobile. The available/planned status and relevant start/enquiry action remain explicit. Without JavaScript, the complete semantic comparison table stays readable in a labeled scroll region with a sticky first column.
+
+The hero pairs a slow color wash behind the top-right navigation with a small animated asset-care constellation: a tracked asset card connected to document, upcoming-care and service-history icons. The decorative inline SVG mirrors in RTL, hides on narrow screens to keep the copy clear, and all motion stops for reduced-motion preferences. No image, video or animation-library download is added.
 
 The example has Asset, Maintenance plan and Records tabs. The maintenance tab lets visitors review, confirm and reset a sample task; nothing is sent to a server or saved. With JavaScript disabled, all three panels remain readable and inert controls are hidden. Pricing defaults to monthly. No package manager or framework is required.
 
@@ -57,6 +59,16 @@ structure, canonical URLs, language alternates, JSON-LD, and sitemap coverage.
 CSS is minified as content-hashed production assets are created. The minifier
 is vendored with its license, so local packaging and CI need no extra package.
 Publish the complete `dist/` artifact rather than copying the source root.
+Vehicle photos use responsive WebP sources and a JPEG fallback under 150 KB.
+The ownership-demo photo loads eagerly because it can appear in the initial
+viewport, decodes asynchronously and keeps its existing reserved space. The
+three capability chapters use compact HTML examples without photography, with
+four examples in each horizontally scrollable row. Previous/next buttons,
+keyboard arrows, Home/End and touch scrolling support navigation, including RTL
+and reduced motion. Without JavaScript the native scroll regions remain usable.
+Packaging gives every photo a content-hashed `/static/` URL with the existing one-year immutable
+cache policy. The verifier checks image dimensions, `srcset` references, asset
+hashes and the JPEG size budget. Keep these guarantees when replacing photos.
 Article pages are readable without JavaScript;
 their language links navigate directly to equivalent translated pages.
 

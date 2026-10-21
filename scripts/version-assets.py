@@ -20,6 +20,7 @@ def publish(path, data=None):
 pages = {path: path.read_text() for path in root.rglob('*.html')}
 css = (root / 'styles.css').read_text()
 assets = sorted((root / 'assets').glob('assetflow-wordmark*.webp'))
+assets += sorted((root / 'assets').glob('vehicle-photo*'))
 assets += sorted((root / 'assets/fonts').glob('*.woff2'))
 for path in assets:
     old = path.relative_to(root).as_posix()
@@ -36,4 +37,4 @@ for path, text in pages.items():
     text = re.sub(r'/?main\.js\?v=\d+', js_url, text)
     text = re.sub(r'/?blog\.css\?v=\d+', blog_url, text)
     path.write_text(text)
-print('Content-hashed CSS, JavaScript, fonts and logos published across all HTML pages.')
+print('Content-hashed CSS, JavaScript, fonts, logos and photos published across all HTML pages.')

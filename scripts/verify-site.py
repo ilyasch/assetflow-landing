@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Verify the deployed artifact, including nested pages and locale navigation."""
+import hashlib
 import json
 import re
 from html.parser import HTMLParser
@@ -38,10 +39,11 @@ assert len(articles) == 36, f'Expected 36 articles, found {len(articles)}'
 checked = 0
 for path, page in pages.items():
     for tag, attrs in page.nodes:
-        for attr in ('href', 'src'):
-            if attr not in attrs:
-                continue
-            target = urlsplit(attrs[attr])
+        references = [attrs[attr] for attr in ('href', 'src') if attr in attrs]
+        if 'srcset' in attrs:
+            references += [candidate.strip().split()[0] for candidate in attrs['srcset'].split(',')]
+        for reference in references:
+            target = urlsplit(reference)
             if target.scheme or target.netloc:
                 continue
             dest = SITE / unquote(target.path).lstrip('/') if target.path.startswith('/') else path.parent / unquote(target.path)
@@ -50,11 +52,16 @@ for path, page in pages.items():
             if dest.is_dir():
                 dest /= 'index.html'
             dest = dest.resolve()
-            assert dest.is_relative_to(SITE.resolve()), f'Escaping link: {attrs[attr]}'
-            assert dest.is_file(), f'Missing {attrs[attr]} from {path}'
+            assert dest.is_relative_to(SITE.resolve()), f'Escaping link: {reference}'
+            assert dest.is_file(), f'Missing {reference} from {path}'
+            if target.path.startswith('/static/'):
+                digest = hashlib.sha256(dest.read_bytes()).hexdigest()[:16]
+                assert dest.stem.endswith('.' + digest), f'Invalid asset hash: {reference}'
             if target.fragment and dest in pages:
-                assert target.fragment in pages[dest].ids, f'Missing fragment: {attrs[attr]} from {path}'
+                assert target.fragment in pages[dest].ids, f'Missing fragment: {reference} from {path}'
             checked += 1
+        if tag == 'img':
+            assert int(attrs.get('width', 0)) > 0 and int(attrs.get('height', 0)) > 0, f'Image space must be reserved: {path}'
 
 # Check assets referenced by the active stylesheets, including hashed font URLs.
 stylesheets = set()
@@ -98,6 +105,13 @@ urls = {x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sit
 index_urls = {f'https://myassetsflow.com/blog/{loc}/' for loc in LOCALES}
 assert urls == canonical_urls | index_urls | {'https://myassetsflow.com/'}, 'Sitemap and canonical pages differ'
 home = pages[SITE / 'index.html']
+photos = [(tag, attrs) for tag, attrs in home.nodes if 'vehicle-photo' in attrs.get('src', '') or 'vehicle-photo' in attrs.get('srcset', '')]
+for tag, attrs in photos:
+    references = attrs['srcset'].split(',') if tag == 'source' else [attrs['src']]
+    assert all(reference.strip().startswith('/static/vehicle-photo') for reference in references), 'Photos must use immutable hashed URLs'
+assert (SITE / 'assets/vehicle-photo.jpg').stat().st_size < 150_000, 'JPEG fallback exceeds the 150 KB budget'
+chapter_source = (SITE / 'index.html').read_text().split('id="how-it-works"', 1)[1].split('id="examples"', 1)[0]
+assert '<img' not in chapter_source, 'Capability chapters must use HTML examples, not photos'
 keys = [a[attr] for _, a in home.nodes for attr in ('data-i18n', 'data-i18n-aria') if attr in a]
 # Confirmed/reset states are translated dynamically, so check them as well.
 keys += ['site.confirmation', 'site.confirmed', 'site.draft']

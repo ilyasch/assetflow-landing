@@ -55,8 +55,8 @@
     "title": "So funktioniert AssetFlow",
     "lead": "Deine Gegenstände, ihre Unterlagen und ein klarer nächster Schritt. Entdecke die Möglichkeiten von AssetFlow Home.",
     "chooseStep": "Produktschritt auswählen",
-    "previous": "Vorheriger Schritt",
-    "next": "Nächster Schritt",
+    "previous": "Vorherige Beispiele",
+    "next": "Nächste Beispiele",
     "tabAsset": "Asset",
     "tabPlan": "Plan",
     "tabRecords": "Unterlagen",
@@ -418,9 +418,9 @@
     "asset": "Gegenstand",
     "plan": "Wartungsplan",
     "records": "Verlauf",
-    "vehicle": "Privatfahrzeug",
-    "vehicleMeta": "Familienauto · gemeinsamer Haushalt",
-    "assetNote": "Die wichtigen Details an einem Ort.",
+    "vehicle": "Familienauto",
+    "vehicleMeta": "Gemeinsamer Haushalt · seit 2020 erfasst",
+    "assetNote": "Alle Besitzdetails, Dokumente und Wartungsverläufe an einem Ort.",
     "detailYear": "Baujahr",
     "detailMileage": "Kilometerstand",
     "detailDocs": "Dokumente",
@@ -485,14 +485,19 @@
     "estimateNote": "Zeit- und Teilekosten sind Beispiele; tatsächlicher Bedarf und Preise können abweichen.",
     "serviceInvoice": "Wartungsrechnung",
     "warrantyCard": "Garantiekarte",
-    "inspectionPhoto": "Inspektionsfoto"
+    "inspectionPhoto": "Inspektionsfoto",
+    "vehiclePowerLabel": "Antrieb",
+    "vehiclePower": "Hybrid",
+    "vehicleServiceLabel": "Letzter Service",
+    "vehicleService": "12. Aug. 2025 · Rechnung gespeichert",
+    "vehicleStatus": "In Nutzung"
   },
   "a11y": {
     "skip": "Zum Inhalt springen"
   },
   "matrix": {
     "title": "Eine Lösung für deine Anforderungen.",
-    "lead": "Vergleiche die AssetFlow-Märkte. Home ist verfügbar; die anderen Spalten beschreiben geplante Editionen.",
+    "lead": "Wähle die Edition, die zu deinen Anforderungen passt. Home ist bereits verfügbar; Business, Fleet und Hospitality beschreiben geplante Funktionen.",
     "market": "Markt",
     "bestFor": "Geeignet für",
     "assets": "Gegenstände",
@@ -519,6 +524,6 @@
     "businessCollaboration": "Geplant: Teamrollen und Zuweisungen",
     "fleetCollaboration": "Geplant: Arbeitsabläufe für Fuhrparkteams",
     "hotelCollaboration": "Geplant: Koordination von Personal und Technikern",
-    "scroll": "Scrollen, um alle Märkte zu vergleichen"
+    "scroll": "Wähle eine Edition, um ihre Details zu sehen."
   }
 }

@@ -4,7 +4,8 @@
   var STORAGE_KEY = "assetflow_landing_locale";
   var cache = {};
   var localeRequest = 0;
-  var refreshMarketSpotlight = null;
+  var refreshMarketMatrix = null;
+  var refreshFeatureTracks = null;
 
   function initialLocale() {
     var requested = new URLSearchParams(window.location.search).get("lang");
@@ -71,10 +72,11 @@
       .then(function (dict) {
         if (request !== localeRequest) return;
         translate(dict);
-        if (refreshMarketSpotlight) refreshMarketSpotlight();
+        if (refreshMarketMatrix) refreshMarketMatrix();
         document.documentElement.lang = locale;
         document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
         localizeDigits(locale);
+        if (refreshFeatureTracks) refreshFeatureTracks();
         document.querySelectorAll("[data-blog-index]").forEach(function (link) {
           link.href = "/blog/" + locale + "/";
         });
@@ -331,9 +333,9 @@
     var section = document.querySelector("[data-market-interaction]");
     if (!section) return;
     var buttons = Array.from(section.querySelectorAll("[data-market]"));
-    var table = document.querySelector(".market-matrix");
+    var table = section.querySelector(".market-matrix");
     var activeButton;
-    function select(button, scroll) {
+    function select(button) {
       activeButton = button;
       var column = Number(button.dataset.column);
       buttons.forEach(function (other) {
@@ -342,37 +344,105 @@
       table.querySelectorAll("tr").forEach(function (row) {
         Array.from(row.cells).forEach(function (cell, index) {
           cell.classList.toggle("is-selected", index === column - 1);
+          cell.hidden = index !== 0 && index !== column - 1;
         });
       });
-      section.querySelector("[data-market-title]").textContent =
-        button.dataset.productName;
-      section.querySelector("[data-market-status]").textContent =
-        button.querySelector("small").textContent;
-      section.querySelectorAll("[data-market-value]").forEach(function (value) {
-        var row = table.tBodies[0].rows[Number(value.dataset.marketValue) - 1];
-        value.textContent = row.cells[column - 1].textContent.trim();
-      });
-      if (scroll && window.matchMedia("(max-width: 1014px)").matches) {
-        var cell = table.tHead.rows[0].cells[column - 1];
-        cell.scrollIntoView({
-          block: "nearest",
-          inline: "center",
-          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-            ? "auto"
-            : "smooth",
-        });
-      }
+      section.dataset.market = button.dataset.market;
+      section.querySelector("[data-market-start]").hidden = button.dataset.market !== "home";
+      section.querySelector("[data-market-contact]").hidden = button.dataset.market === "home";
+      section.querySelector("[data-market-announcement]").textContent =
+        button.dataset.productName + " · " + button.querySelector("small").textContent;
     }
     buttons.forEach(function (button) {
       button.addEventListener("click", function () {
-        select(button, true);
+        select(button);
       });
     });
-    refreshMarketSpotlight = function () {
-      if (activeButton) select(activeButton, false);
+    refreshMarketMatrix = function () {
+      if (activeButton) select(activeButton);
     };
     section.classList.add("is-interactive");
-    select(buttons[0], false);
+    table.classList.add("is-focused");
+    section.querySelector(".market-options").hidden = false;
+    section.querySelector(".market-actions").hidden = false;
+    document.getElementById("matrix-scroll").hidden = false;
+    section.querySelector(".matrix-region").removeAttribute("tabindex");
+    select(buttons[0]);
+  }
+
+  function initHeroColor() {
+    var header = document.querySelector(".site-header");
+    if (!header) return;
+    function updateHeaderHeight() {
+      document.documentElement.style.setProperty(
+        "--site-header-height",
+        header.offsetHeight + "px",
+      );
+    }
+    updateHeaderHeight();
+    if ("ResizeObserver" in window)
+      new ResizeObserver(updateHeaderHeight).observe(header);
+    else window.addEventListener("resize", updateHeaderHeight);
+  }
+
+  function initFeatureTracks() {
+    var refreshers = [];
+    document.querySelectorAll(".feature-chapter").forEach(function (chapter) {
+      var track = chapter.querySelector(".feature-grid");
+      var controls = chapter.querySelector(".feature-controls");
+      var previous = controls.querySelector("[data-feature-prev]");
+      var next = controls.querySelector("[data-feature-next]");
+      function rtl() {
+        return document.documentElement.dir === "rtl";
+      }
+      function update() {
+        var bounds = track.getBoundingClientRect();
+        var first = track.firstElementChild.getBoundingClientRect();
+        var last = track.lastElementChild.getBoundingClientRect();
+        controls.hidden = track.scrollWidth <= track.clientWidth + 2;
+        previous.disabled = rtl()
+          ? first.right <= bounds.right + 5
+          : first.left >= bounds.left - 5;
+        next.disabled = rtl()
+          ? last.left >= bounds.left - 5
+          : last.right <= bounds.right + 5;
+      }
+      function move(direction) {
+        var distance = track.firstElementChild.getBoundingClientRect().width
+          + parseFloat(getComputedStyle(track).columnGap);
+        track.scrollBy({
+          left: distance * direction * (rtl() ? -1 : 1),
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? "auto" : "smooth",
+        });
+      }
+      previous.addEventListener("click", function () { move(-1); });
+      next.addEventListener("click", function () { move(1); });
+      track.addEventListener("scroll", update, { passive: true });
+      track.addEventListener("keydown", function (event) {
+        if (event.target !== track) return;
+        if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+          event.preventDefault();
+          move((event.key === "ArrowRight" ? 1 : -1) * (rtl() ? -1 : 1));
+        } else if (event.key === "Home" || event.key === "End") {
+          event.preventDefault();
+          track.scrollTo({
+            left: event.key === "Home" ? 0 : track.scrollWidth * (rtl() ? -1 : 1),
+            behavior: "auto",
+          });
+        }
+      });
+      window.addEventListener("resize", update);
+      if ("ResizeObserver" in window) new ResizeObserver(update).observe(track);
+      refreshers.push(function () {
+        track.scrollTo({left: 0, behavior: "auto"});
+        window.requestAnimationFrame(update);
+      });
+      update();
+    });
+    refreshFeatureTracks = function () {
+      refreshers.forEach(function (refresh) { refresh(); });
+    };
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -380,6 +450,8 @@
     initDemo();
     initMarketMatrix();
     initSectionRail();
+    initHeroColor();
+    initFeatureTracks();
     document
       .getElementById("lang-picker")
       .addEventListener("change", function (event) {
