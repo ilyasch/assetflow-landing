@@ -701,7 +701,6 @@ p {
 .ownership-demo {
   display: grid;
   grid-template-columns: 185px minmax(0, 1fr) 290px;
-  min-height: 440px;
   border-radius: var(--radius);
   box-shadow: var(--shadow-demo);
   background: var(--color-surface);
@@ -776,6 +775,7 @@ p {
   margin: 0;
 }
 .demo-panel[role="tabpanel"] {
+  margin: 0;
   animation: panel-in 0.4s var(--ease);
 }
 .demo-panel h3 {
@@ -1899,7 +1899,7 @@ p {
   }
   .demo-content {
     padding: 22px;
-    min-height: 365px;
+    min-height: 0;
   }
   .asset-record-heading { gap: 14px; margin-block-end: 20px; }
   .asset-record-thumb { width: 104px; height: 80px; }
