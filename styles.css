@@ -337,6 +337,21 @@ p {
     border-radius: 16px;
     background: #fff;
     box-shadow: 0 12px 32px -26px #20282266;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(calc(-50% + 10px));
+    transition:
+      opacity 220ms var(--ease),
+      transform 220ms var(--ease),
+      visibility 0s linear 220ms;
+  }
+  main.has-section-rail.is-section-rail-active .section-rail {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(-50%);
+    transition-delay: 0s;
   }
   .section-rail a {
     padding: 10px 12px;
@@ -352,7 +367,7 @@ p {
     background: var(--color-sage);
   }
   .section-rail a[aria-current="location"] { font-weight: 650; }
-  main.has-section-rail > section > .wrap {
+  main.has-section-rail.is-section-rail-active > section > .wrap {
     width: min(calc(100% - 280px), 1360px);
     margin-inline-start: 210px;
     margin-inline-end: auto;

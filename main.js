@@ -142,6 +142,9 @@
 
   function initSectionRail() {
     var links = Array.from(document.querySelectorAll("[data-section-link]"));
+    var main = document.getElementById("main");
+    var header = document.querySelector(".site-header");
+    var desktopRail = window.matchMedia("(min-width: 1440px)");
     var sections = links
       .map(function (link) {
         return document.querySelector(link.getAttribute("href"));
@@ -161,6 +164,12 @@
           link.setAttribute("aria-current", "location");
         else link.removeAttribute("aria-current");
       });
+      var nextSectionTop = sections[0].getBoundingClientRect().top;
+      var headerBottom = header.getBoundingClientRect().bottom;
+      main.classList.toggle(
+        "is-section-rail-active",
+        desktopRail.matches && nextSectionTop <= headerBottom + 8,
+      );
     };
     var scheduled = false;
     function scheduleUpdate() {

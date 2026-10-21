@@ -110,10 +110,10 @@ Warm white establishes the canvas; forest green carries text and action. Sage an
 
 ### Secondary
 - **Warm gold:** selection, small state accents and the offset hero frame.
-- **Terracotta:** emphasized hero phrase, one story surface and closing call to action.
-- **Sky blue:** a cool story surface and Hospitality matrix heading.
+- **Pale gold:** a warm story surface and secondary hero color wash.
+- **Sky blue:** a cool story surface and Business matrix heading.
 - **Sage:** the hero media field and first story surface.
-- **Cobalt:** the Fleet matrix heading.
+- **Cobalt:** the Hospitality matrix heading.
 
 ### Neutral
 - **Warm white:** page canvas.
@@ -139,7 +139,7 @@ Arabic switches both font roles to Tahoma, Arial, sans-serif, removes heading tr
 
 The centered wrapper is `min(100% - 112px, 1240px)`, expanding at `1500px` to `min(100% - 144px, 1360px)`. Insets become `32px` at `1100px`, `20px` at `620px`, and `16px` at `360px`. Sections use `108px` block padding, reducing to `80px` and then `65px`. These are observed layout values, not an invented global spacing scale.
 
-The homepage opens with a floating pill navigation and a clear left-aligned headline over a slow gold, sky and sage color wash. On wide screens, a fixed left section rail tracks Product, How it works, Pricing and Solutions; the content shifts to leave room. Below `1440px`, the rail gives way to the full-width layout. The wide product interface follows directly, with a deep-green rail, flexible stage, sky-blue context panel and a realistic vehicle photo inside the illustrative asset view. At `900px` the contextual column hides; at `620px` the demo rail becomes horizontal tabs above the stage and the header switches to its menu disclosure. Color-backed two-column chapters become a single reading sequence on mobile. Pricing is a divider-led four-column grid, becoming two columns at `900px`.
+The homepage opens with a floating pill navigation and a clear left-aligned headline over a slow gold, sky and sage color wash. On wide screens, the opening hero stays full width; a fixed left section rail fades in when Product reaches the sticky header, then tracks Product, How it works, Pricing and Solutions as the content shifts to make room. Below `1440px`, the rail gives way to the full-width layout and the mobile disclosure menu remains the section navigation. The wide product interface follows directly, with a deep-green rail, flexible stage, sky-blue context panel and a realistic vehicle photo inside the illustrative asset view. At `900px` the contextual column hides; at `620px` the demo rail becomes horizontal tabs above the stage and the header switches to its menu disclosure. Color-backed two-column chapters become a single reading sequence on mobile. Pricing is a divider-led four-column grid, becoming two columns at `900px`.
 
 The market matrix preserves its semantic table and `950px` minimum width in an overflow region. Its labeled, keyboard-focusable region and scroll instruction support narrow screens; the instruction appears below `1014px`. Home receives a pale-green column and an available label. Business, Fleet and Hospitality retain explicit Coming Soon labels and planned capability wording.
 
