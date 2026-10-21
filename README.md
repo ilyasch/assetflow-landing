@@ -54,8 +54,10 @@ indexes, article previews, and sitemap. Generated `/blog/` HTML is ignored
 by Git. Packaging generates the full articles into `dist/`, versions shared
 assets across all pages, and verifies links, localized indexes, article
 structure, canonical URLs, language alternates, JSON-LD, and sitemap coverage.
-CI runs the same package command. Publish the complete `dist/` artifact rather
-than copying the source root. Article pages are readable without JavaScript;
+CSS is minified as content-hashed production assets are created. The minifier
+is vendored with its license, so local packaging and CI need no extra package.
+Publish the complete `dist/` artifact rather than copying the source root.
+Article pages are readable without JavaScript;
 their language links navigate directly to equivalent translated pages.
 
 ## Local preview
