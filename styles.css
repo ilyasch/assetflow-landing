@@ -524,9 +524,39 @@ p {
   opacity: .55;
   animation: hero-color-drift 12s cubic-bezier(.37, 0, .63, 1) -4s infinite alternate-reverse;
 }
+.hero-waves {
+  position: absolute;
+  z-index: -1;
+  inset-inline-end: -7%;
+  top: -2%;
+  width: min(78%, 940px);
+  height: 108%;
+  overflow: visible;
+  pointer-events: none;
+  opacity: .9;
+  mask-image: linear-gradient(to right, transparent 28%, #000 50%, #000 90%, transparent);
+}
+.hero-waves path {
+  fill: none;
+  stroke: url(#hero-wave-gradient);
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 0 9px #6ea99b66);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hero-wave-flow 6s cubic-bezier(.37, 0, .63, 1) infinite alternate;
+}
+.hero-waves path:nth-of-type(2) { animation-delay: -2s; }
+.hero-waves path:nth-of-type(3) { animation-delay: -4s; }
+.hero-waves path:nth-of-type(4) { animation-delay: -1s; }
+.hero-waves path:nth-of-type(5) { animation-delay: -3s; }
 [dir="rtl"] .hero-color::before,
 [dir="rtl"] .hero-color::after {
   mask-image: linear-gradient(to left, transparent, #000 32%);
+}
+[dir="rtl"] .hero-waves {
+  mask-image: linear-gradient(to left, transparent 28%, #000 50%, #000 90%, transparent);
 }
 .hero-copy {
   max-width: 920px;
@@ -1552,6 +1582,11 @@ p {
   45% { transform: translate3d(-14%, 18%, 0) scale(1.16) rotate(12deg); }
   100% { transform: translate3d(5%, -8%, 0) scale(1.1) rotate(-4deg); }
 }
+@keyframes hero-wave-flow {
+  0% { transform: translate3d(0, -28px, 0) rotate(-1.5deg); }
+  50% { transform: translate3d(24px, 12px, 0) rotate(1.5deg); }
+  100% { transform: translate3d(-18px, 34px, 0) rotate(-.8deg); }
+}
 @media (max-width: 1439px) {
   .section-rail { display: none; }
 }
@@ -1729,6 +1764,20 @@ p {
     inset-inline-end: -35%;
     filter: blur(28px);
     opacity: .45;
+  }
+  .hero-waves {
+    inset-inline-end: -20%;
+    top: 0;
+    width: 104%;
+    height: 96%;
+    opacity: .76;
+    mask-image: linear-gradient(to right, transparent 38%, #000 64%, #000 90%, transparent);
+  }
+  .hero-waves path {
+    stroke-width: 2.8;
+  }
+  [dir="rtl"] .hero-waves {
+    mask-image: linear-gradient(to left, transparent 38%, #000 64%, #000 90%, transparent);
   }
   .hero h1 {
     font-size: clamp(2.8rem, 10vw, 3.8rem);
