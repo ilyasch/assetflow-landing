@@ -172,6 +172,7 @@
           ><span data-i18n="site.solutions">Solutions</span></a>
       </nav>
       <section class="hero">
+        <div class="hero-color" aria-hidden="true"></div>
         <div class="wrap">
           <div class="hero-copy">
             <h1>
@@ -1616,61 +1617,39 @@
               >
             </h2>
             <p>
-              <span data-i18n="matrix.lead"
-                >Compare the markets AssetFlow serves. Home is available now;
-                the other columns describe planned editions.</span
+              <span data-i18n="matrix.lead">Choose the edition that fits your ownership needs. Home is available now; Business, Fleet and Hospitality describe planned capabilities.</span
               >
             </p>
           </div>
-          <p id="matrix-scroll" class="matrix-scroll">
-            <span data-i18n="matrix.scroll">Scroll to compare all markets</span>
-          </p>
-          <div class="market-interaction" data-market-interaction>
+          <p id="matrix-scroll" class="matrix-scroll" data-i18n="matrix.scroll" hidden>Choose an edition to explore its details.</p>
+          <div class="market-interaction" data-market-interaction data-market="home">
             <div
               class="market-options"
+              hidden
               role="group"
+              aria-label="Market"
               data-i18n-aria="matrix.market"
             >
-              <button type="button" data-market="home" data-column="2" data-product-name="AssetFlow Home" aria-pressed="false">
+              <button type="button" data-market="home" data-column="2" data-product-name="AssetFlow Home" aria-pressed="false" aria-controls="matrix-details">
                 <span class="product-logo product-logo-home"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3.5 10 8.5-7 8.5 7v10.5h-6v-7h-5v7h-6z"/></svg><span><b>AssetFlow</b><strong>Home</strong></span></span>
                 <small data-i18n="editions.availableNow">Available Now</small>
               </button>
-              <button type="button" data-market="business" data-column="3" data-product-name="AssetFlow Business" aria-pressed="false">
+              <button type="button" data-market="business" data-column="3" data-product-name="AssetFlow Business" aria-pressed="false" aria-controls="matrix-details">
                 <span class="product-logo product-logo-business"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 21V5.5L12 2l8 3.5V21M8 8h1m6 0h1M8 12h1m6 0h1M8 16h1m6 0h1M10 21v-3h4v3"/></svg><span><b>AssetFlow</b><strong>Business</strong></span></span>
                 <small data-i18n="editions.comingSoon">Coming Soon</small>
               </button>
-              <button type="button" data-market="fleet" data-column="4" data-product-name="AssetFlow Fleet" aria-pressed="false">
+              <button type="button" data-market="fleet" data-column="4" data-product-name="AssetFlow Fleet" aria-pressed="false" aria-controls="matrix-details">
                 <span class="product-logo product-logo-fleet"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7M7 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg><span><b>AssetFlow</b><strong>Fleet</strong></span></span>
                 <small data-i18n="editions.comingSoon">Coming Soon</small>
               </button>
-              <button type="button" data-market="hospitality" data-column="5" data-product-name="AssetFlow Hospitality" aria-pressed="false">
+              <button type="button" data-market="hospitality" data-column="5" data-product-name="AssetFlow Hospitality" aria-pressed="false" aria-controls="matrix-details">
                 <span class="product-logo product-logo-hospitality"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 20V5m0 9h18v6M3 10h6a3 3 0 0 1 3 3v1m0-4h5a4 4 0 0 1 4 4"/></svg><span><b>AssetFlow</b><strong>Hospitality</strong></span></span>
                 <small data-i18n="editions.comingSoon">Coming Soon</small>
               </button>
             </div>
-            <div class="market-spotlight" aria-live="polite">
-              <div>
-                <p class="market-status" data-market-status></p>
-                <h3 data-market-title></h3>
-              </div>
-              <dl>
-                <div>
-                  <dt data-i18n="matrix.bestFor">Best for</dt>
-                  <dd data-market-value="1"></dd>
-                </div>
-                <div>
-                  <dt data-i18n="matrix.assets">Asset focus</dt>
-                  <dd data-market-value="2"></dd>
-                </div>
-                <div>
-                  <dt data-i18n="matrix.maintenance">Maintenance approach</dt>
-                  <dd data-market-value="3"></dd>
-                </div>
-              </dl>
-            </div>
-          </div>
           <div
             class="matrix-region"
+            id="matrix-details"
             role="region"
             aria-labelledby="matrix-caption"
             aria-describedby="matrix-scroll"
@@ -1855,6 +1834,12 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div class="market-actions" hidden>
+            <a class="btn btn-primary" data-market-start href="https://myassetsflow.app" data-i18n="site.start">Start free</a>
+            <a class="btn btn-primary" data-market-contact href="https://www.linkedin.com/company/myassetsflow" target="_blank" rel="noopener noreferrer" data-i18n="pricing.contactLinkedIn" hidden>Ask about an edition on LinkedIn</a>
+          </div>
+          <p class="visually-hidden" data-market-announcement aria-live="polite" aria-atomic="true"></p>
           </div>
         </div>
       </section>

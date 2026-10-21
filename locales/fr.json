@@ -492,7 +492,7 @@
   },
   "matrix": {
     "title": "Une solution adaptée à vos besoins.",
-    "lead": "Comparez les marchés d’AssetFlow. Home est disponible ; les autres colonnes décrivent des éditions prévues.",
+    "lead": "Choisissez l’édition adaptée à vos besoins. Home est disponible ; Business, Fleet et Hospitality présentent des fonctionnalités prévues.",
     "market": "Marché",
     "bestFor": "Idéal pour",
     "assets": "Biens concernés",
@@ -519,6 +519,6 @@
     "businessCollaboration": "Prévu : rôles et affectations de l’équipe",
     "fleetCollaboration": "Prévu : processus des équipes de flotte",
     "hotelCollaboration": "Prévu : coordination du personnel et des techniciens",
-    "scroll": "Faites défiler pour comparer tous les marchés"
+    "scroll": "Choisissez une édition pour découvrir ses détails."
   }
 }

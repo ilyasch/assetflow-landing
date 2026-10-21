@@ -4,7 +4,7 @@
   var STORAGE_KEY = "assetflow_landing_locale";
   var cache = {};
   var localeRequest = 0;
-  var refreshMarketSpotlight = null;
+  var refreshMarketMatrix = null;
   var refreshFeatureTracks = null;
 
   function initialLocale() {
@@ -72,7 +72,7 @@
       .then(function (dict) {
         if (request !== localeRequest) return;
         translate(dict);
-        if (refreshMarketSpotlight) refreshMarketSpotlight();
+        if (refreshMarketMatrix) refreshMarketMatrix();
         document.documentElement.lang = locale;
         document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
         localizeDigits(locale);
@@ -333,9 +333,9 @@
     var section = document.querySelector("[data-market-interaction]");
     if (!section) return;
     var buttons = Array.from(section.querySelectorAll("[data-market]"));
-    var table = document.querySelector(".market-matrix");
+    var table = section.querySelector(".market-matrix");
     var activeButton;
-    function select(button, scroll) {
+    function select(button) {
       activeButton = button;
       var column = Number(button.dataset.column);
       buttons.forEach(function (other) {
@@ -344,37 +344,30 @@
       table.querySelectorAll("tr").forEach(function (row) {
         Array.from(row.cells).forEach(function (cell, index) {
           cell.classList.toggle("is-selected", index === column - 1);
+          cell.hidden = index !== 0 && index !== column - 1;
         });
       });
-      section.querySelector("[data-market-title]").textContent =
-        button.dataset.productName;
-      section.querySelector("[data-market-status]").textContent =
-        button.querySelector("small").textContent;
-      section.querySelectorAll("[data-market-value]").forEach(function (value) {
-        var row = table.tBodies[0].rows[Number(value.dataset.marketValue) - 1];
-        value.textContent = row.cells[column - 1].textContent.trim();
-      });
-      if (scroll && window.matchMedia("(max-width: 1014px)").matches) {
-        var cell = table.tHead.rows[0].cells[column - 1];
-        cell.scrollIntoView({
-          block: "nearest",
-          inline: "center",
-          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-            ? "auto"
-            : "smooth",
-        });
-      }
+      section.dataset.market = button.dataset.market;
+      section.querySelector("[data-market-start]").hidden = button.dataset.market !== "home";
+      section.querySelector("[data-market-contact]").hidden = button.dataset.market === "home";
+      section.querySelector("[data-market-announcement]").textContent =
+        button.dataset.productName + " · " + button.querySelector("small").textContent;
     }
     buttons.forEach(function (button) {
       button.addEventListener("click", function () {
-        select(button, true);
+        select(button);
       });
     });
-    refreshMarketSpotlight = function () {
-      if (activeButton) select(activeButton, false);
+    refreshMarketMatrix = function () {
+      if (activeButton) select(activeButton);
     };
     section.classList.add("is-interactive");
-    select(buttons[0], false);
+    table.classList.add("is-focused");
+    section.querySelector(".market-options").hidden = false;
+    section.querySelector(".market-actions").hidden = false;
+    document.getElementById("matrix-scroll").hidden = false;
+    section.querySelector(".matrix-region").removeAttribute("tabindex");
+    select(buttons[0]);
   }
 
   function initFeatureTracks() {
