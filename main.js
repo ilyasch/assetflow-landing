@@ -149,7 +149,7 @@
   function initSectionRail() {
     var links = Array.from(document.querySelectorAll("[data-section-link]"));
     var main = document.getElementById("main");
-    var header = document.querySelector(".site-header");
+    var hero = document.querySelector(".hero");
     var desktopRail = window.matchMedia("(min-width: 1200px)");
     var sections = links
       .map(function (link) {
@@ -170,12 +170,15 @@
           link.setAttribute("aria-current", "location");
         else link.removeAttribute("aria-current");
       });
-      var nextSectionTop = sections[0].getBoundingClientRect().top;
-      var headerBottom = header.getBoundingClientRect().bottom;
-      main.classList.toggle(
-        "is-section-rail-active",
-        desktopRail.matches && nextSectionTop <= headerBottom + 8,
-      );
+      var heroHeight = hero ? hero.offsetHeight : 0;
+      var railActive = desktopRail.matches && window.scrollY >= heroHeight - 96;
+      var classNames = main.className
+        .split(/\s+/)
+        .filter(function (name) {
+          return name && name !== "is-section-rail-active";
+        });
+      if (railActive) classNames.push("is-section-rail-active");
+      main.className = classNames.join(" ");
     };
     var scheduled = false;
     function scheduleUpdate() {
@@ -188,7 +191,15 @@
     }
     window.addEventListener("scroll", scheduleUpdate, { passive: true });
     window.addEventListener("resize", scheduleUpdate);
-    updateCurrent();
+    window.addEventListener("hashchange", scheduleUpdate);
+    window.addEventListener("pageshow", scheduleUpdate);
+    if (hero && "IntersectionObserver" in window) {
+      var heroObserver = new IntersectionObserver(scheduleUpdate, {
+        rootMargin: "-96px 0px 0px 0px",
+      });
+      heroObserver.observe(hero);
+    }
+    window.requestAnimationFrame(updateCurrent);
   }
 
   function initHowCarousel() {
