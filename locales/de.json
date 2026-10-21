@@ -71,7 +71,15 @@
     "assistantSample": "Beispielantwort von Flow AI",
     "assistantQuestion": "Was sollte ich vor dem nächsten Service prüfen?",
     "assistantResponse": "Ich habe das Handbuch und eine Service-Rechnung in den Unterlagen dieses Assets gefunden. Daraus kann ich nächste Schritte entwerfen, die du prüfen kannst.",
-    "assistantTask": "Vorgeschlagene Wartungsaufgaben prüfen"
+    "assistantTask": "Vorgeschlagene Wartungsaufgaben prüfen",
+    "assetDetailTitle": "Assetdetails an einem Ort",
+    "assetDetailBody": "Praktische Angaben, Dokumente und Besitzkontext bleiben zusammen, wenn der Assetverlauf wächst.",
+    "planDetailTitle": "Ein Plan, den Sie Schritt für Schritt prüfen",
+    "planDetailBody": "Sehen Sie Aufgaben, Zeitaufwand und Teilekosten, bevor Sie etwas bestätigen.",
+    "recordsDetailTitle": "Ein Nachweis für jede wichtige Datei",
+    "recordsDetailBody": "Verknüpfen Sie PDFs, Bilder und Office-Dateien mit dem passenden Asset oder Vorgang.",
+    "assistantDetailTitle": "Von einer Frage zur überlegten Aktion",
+    "assistantDetailBody": "Flow AI nutzt Ihre Einträge, findet relevante Details und erstellt Antworten oder Entwürfe zur Prüfung."
   },
   "editions": {
     "eyebrow": "Eine Plattform, passend für Ihre Anforderungen",

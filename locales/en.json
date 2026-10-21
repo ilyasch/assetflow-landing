@@ -71,7 +71,15 @@
     "assistantSample": "Illustrative Flow AI answer",
     "assistantQuestion": "What should I check before the next service?",
     "assistantResponse": "I found the owner’s manual and a service invoice in this asset’s records. I can use them to draft suggested next steps for you to review.",
-    "assistantTask": "Review suggested maintenance tasks"
+    "assistantTask": "Review suggested maintenance tasks",
+    "assetDetailTitle": "Asset details that stay connected",
+    "assetDetailBody": "Keep practical details, documents and ownership context together as an asset’s record grows.",
+    "planDetailTitle": "A plan you can review line by line",
+    "planDetailBody": "See suggested tasks, effort and parts estimates together before deciding what to confirm.",
+    "recordsDetailTitle": "A record for every useful file",
+    "recordsDetailBody": "Keep PDFs, images and office documents connected to the asset or work they describe.",
+    "assistantDetailTitle": "From a question to a considered action",
+    "assistantDetailBody": "Flow AI uses the records you add to find relevant details and prepare answers or drafts for your review."
   },
   "editions": {
     "eyebrow": "One platform, built for your scale",

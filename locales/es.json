@@ -71,7 +71,15 @@
     "assistantSample": "Respuesta ilustrativa de Flow AI",
     "assistantQuestion": "¿Qué debería revisar antes del próximo servicio?",
     "assistantResponse": "He encontrado el manual y una factura de servicio entre los registros de este bien. Puedo usarlos para preparar próximos pasos sugeridos que podrás revisar.",
-    "assistantTask": "Revisar las tareas de mantenimiento sugeridas"
+    "assistantTask": "Revisar las tareas de mantenimiento sugeridas",
+    "assetDetailTitle": "Detalles del activo siempre conectados",
+    "assetDetailBody": "Reúne datos prácticos, documentos y contexto de propiedad a medida que crece el historial del activo.",
+    "planDetailTitle": "Un plan que puedes revisar paso a paso",
+    "planDetailBody": "Consulta tareas sugeridas, tiempo y piezas antes de decidir qué confirmar.",
+    "recordsDetailTitle": "Un registro para cada archivo útil",
+    "recordsDetailBody": "Vincula PDF, imágenes y documentos de oficina al activo o trabajo correspondiente.",
+    "assistantDetailTitle": "De una pregunta a una acción meditada",
+    "assistantDetailBody": "Flow AI usa los registros que añades para encontrar detalles y preparar respuestas o borradores que revisar."
   },
   "editions": {
     "eyebrow": "Una sola plataforma, adaptada a tu escala",

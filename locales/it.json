@@ -71,7 +71,15 @@
     "assistantSample": "Risposta illustrativa di Flow AI",
     "assistantQuestion": "Cosa dovrei controllare prima del prossimo intervento?",
     "assistantResponse": "Ho trovato il manuale d’uso e una fattura di manutenzione tra i documenti del bene. Posso usarli per preparare i prossimi passi suggeriti, da rivedere.",
-    "assistantTask": "Rivedi le attività di manutenzione suggerite"
+    "assistantTask": "Rivedi le attività di manutenzione suggerite",
+    "assetDetailTitle": "Dettagli dell’asset sempre collegati",
+    "assetDetailBody": "Riunisci dettagli pratici, documenti e contesto di proprietà man mano che il registro dell’asset cresce.",
+    "planDetailTitle": "Un piano da rivedere riga per riga",
+    "planDetailBody": "Consulta attività suggerite, tempi e stime dei ricambi prima di decidere cosa confermare.",
+    "recordsDetailTitle": "Un record per ogni file utile",
+    "recordsDetailBody": "Collega PDF, immagini e documenti all’asset o all’intervento a cui si riferiscono.",
+    "assistantDetailTitle": "Dalla domanda a un’azione ponderata",
+    "assistantDetailBody": "Flow AI usa i record aggiunti per trovare dettagli pertinenti e preparare risposte o bozze da rivedere."
   },
   "editions": {
     "eyebrow": "Una sola piattaforma, costruita per la tua scala",

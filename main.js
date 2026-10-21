@@ -192,75 +192,46 @@
   }
 
   function initHowCarousel() {
-    var carousel = document.querySelector("[data-how-carousel]");
-    if (!carousel) return;
-    var panels = Array.from(carousel.querySelectorAll("[data-how-panel]"));
-    var tabs = Array.from(carousel.querySelectorAll("[data-how-tab]"));
-    var controls = carousel.querySelector("[data-how-controls]");
-    var previous = carousel.querySelector("[data-how-previous]");
-    var next = carousel.querySelector("[data-how-next]");
-    var status = carousel.querySelector("[data-how-status]");
-    if (panels.length !== tabs.length || !panels.length) return;
-    var activeIndex = 0;
-    function updateStatus() {
-      if (!status) return;
-      var locale = document.documentElement.lang || "en";
-      var format = new Intl.NumberFormat(locale, { minimumIntegerDigits: 2 });
-      status.textContent =
-        format.format(activeIndex + 1) + " / " + format.format(panels.length);
-    }
-    function select(index, focusTab) {
-      var oldIndex = activeIndex;
-      var directionClass = index > oldIndex ? "is-forward" : "is-backward";
-      activeIndex = (index + panels.length) % panels.length;
-      panels.forEach(function (panel, panelIndex) {
-        var selected = panelIndex === activeIndex;
-        panel.hidden = !selected;
-        panel.setAttribute("role", "tabpanel");
-        panel.setAttribute("aria-labelledby", tabs[panelIndex].id);
-        panel.tabIndex = 0;
-        panel.classList.remove("is-entering", "is-forward", "is-backward");
-        if (selected && oldIndex !== activeIndex) {
-          panel.classList.add("is-entering", directionClass);
-          panel.addEventListener("animationend", function cleanEntrance() {
-            panel.classList.remove("is-entering", "is-forward", "is-backward");
-          }, { once: true });
-        }
-      });
-      tabs.forEach(function (tab, tabIndex) {
-        var selected = tabIndex === activeIndex;
-        tab.setAttribute("aria-selected", String(selected));
-        tab.tabIndex = selected ? 0 : -1;
-      });
-      updateStatus();
-      if (focusTab) tabs[activeIndex].focus();
-    }
-    tabs.forEach(function (tab, index) {
-      tab.addEventListener("click", function () {
-        select(index, false);
-      });
-      tab.addEventListener("keydown", function (event) {
-        var direction = document.documentElement.dir === "rtl" ? -1 : 1;
-        var target = null;
-        if (event.key === "ArrowRight") target = index + direction;
-        if (event.key === "ArrowLeft") target = index - direction;
-        if (event.key === "Home") target = 0;
-        if (event.key === "End") target = tabs.length - 1;
-        if (target === null) return;
-        event.preventDefault();
-        select(target, true);
-      });
+    var carousels = Array.from(document.querySelectorAll("[data-feature-carousel]"));
+    if (!carousels.length) return;
+    var refreshers = [];
+    carousels.forEach(function (carousel) {
+      var slides = Array.from(carousel.querySelectorAll("[data-feature-slide]"));
+      var controls = carousel.querySelector("[data-feature-controls]");
+      var previous = carousel.querySelector("[data-feature-previous]");
+      var next = carousel.querySelector("[data-feature-next]");
+      var status = carousel.querySelector("[data-feature-status]");
+      if (slides.length < 2 || !controls || !previous || !next || !status) return;
+      var activeIndex = 0;
+      function updateStatus() {
+        var locale = document.documentElement.lang || "en";
+        var format = new Intl.NumberFormat(locale, { minimumIntegerDigits: 2 });
+        status.textContent = format.format(activeIndex + 1) + " / " + format.format(slides.length);
+      }
+      function select(index) {
+        var oldIndex = activeIndex;
+        activeIndex = (index + slides.length) % slides.length;
+        slides.forEach(function (slide) {
+          var selected = slideIndex === activeIndex;
+          slide.hidden = !selected;
+          slide.classList.remove("is-entering", "is-forward", "is-backward");
+          if (selected && oldIndex !== activeIndex) {
+            slide.classList.add("is-entering", activeIndex > oldIndex ? "is-forward" : "is-backward");
+            slide.addEventListener("animationend", function cleanup() {
+              slide.classList.remove("is-entering", "is-forward", "is-backward");
+            }, { once: true });
+          }
+        });
+        updateStatus();
+      }
+      previous.addEventListener("click", function () { select(activeIndex - 1); });
+      next.addEventListener("click", function () { select(activeIndex + 1); });
+      controls.hidden = false;
+      carousel.classList.add("is-interactive");
+      select(0);
+      refreshers.push(updateStatus);
     });
-    previous.addEventListener("click", function () {
-      select(activeIndex - 1, false);
-    });
-    next.addEventListener("click", function () {
-      select(activeIndex + 1, false);
-    });
-    refreshHowCarousel = updateStatus;
-    carousel.classList.add("is-interactive");
-    controls.hidden = false;
-    select(0, false);
+    refreshHowCarousel = function () { refreshers.forEach(function (refresh) { refresh(); }); };
   }
 
   function initDemo() {

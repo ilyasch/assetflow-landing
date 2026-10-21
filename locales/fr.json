@@ -71,7 +71,15 @@
     "assistantSample": "Réponse illustrative de Flow AI",
     "assistantQuestion": "Que devrais-je vérifier avant le prochain entretien ?",
     "assistantResponse": "J’ai trouvé la notice et une facture d’entretien dans les documents de ce bien. Je peux les utiliser pour préparer des prochaines étapes suggérées, que vous pourrez examiner.",
-    "assistantTask": "Vérifier les tâches d’entretien suggérées"
+    "assistantTask": "Vérifier les tâches d’entretien suggérées",
+    "assetDetailTitle": "Les détails de l’actif restent liés",
+    "assetDetailBody": "Réunissez les informations pratiques, les documents et le contexte de propriété au fil du temps.",
+    "planDetailTitle": "Un plan à vérifier étape par étape",
+    "planDetailBody": "Consultez les tâches suggérées, leur durée et les pièces estimées avant de confirmer.",
+    "recordsDetailTitle": "Une trace pour chaque fichier utile",
+    "recordsDetailBody": "Reliez PDF, images et documents bureautiques à l’actif ou à l’intervention concernée.",
+    "assistantDetailTitle": "De la question à une action réfléchie",
+    "assistantDetailBody": "Flow AI utilise vos dossiers pour trouver les informations utiles et préparer des réponses ou brouillons à vérifier."
   },
   "editions": {
     "eyebrow": "Une seule plateforme, adaptée à votre échelle",
