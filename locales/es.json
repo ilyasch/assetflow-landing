@@ -55,8 +55,8 @@
     "title": "Cómo funciona AssetFlow",
     "lead": "Tus bienes, sus documentos y un próximo paso más claro. Descubre qué puedes hacer con AssetFlow Home.",
     "chooseStep": "Elige un paso del producto",
-    "previous": "Paso anterior",
-    "next": "Paso siguiente",
+    "previous": "Ejemplos anteriores",
+    "next": "Ejemplos siguientes",
     "tabAsset": "Bien",
     "tabPlan": "Plan",
     "tabRecords": "Registros",
@@ -418,9 +418,9 @@
     "asset": "Bien",
     "plan": "Plan de mantenimiento",
     "records": "Historial",
-    "vehicle": "Vehículo personal",
-    "vehicleMeta": "Coche familiar · hogar compartido",
-    "assetNote": "Los detalles que necesitas, en un solo lugar.",
+    "vehicle": "Coche familiar",
+    "vehicleMeta": "Hogar compartido · añadido en 2020",
+    "assetNote": "Reúne los datos de propiedad, los documentos y el historial de mantenimiento.",
     "detailYear": "Año",
     "detailMileage": "Kilometraje",
     "detailDocs": "Documentos",
@@ -485,14 +485,19 @@
     "estimateNote": "Los tiempos y costes son ejemplos; las necesidades y los precios reales pueden variar.",
     "serviceInvoice": "Factura de mantenimiento",
     "warrantyCard": "Tarjeta de garantía",
-    "inspectionPhoto": "Foto de inspección"
+    "inspectionPhoto": "Foto de inspección",
+    "vehiclePowerLabel": "Motorización",
+    "vehiclePower": "Híbrido",
+    "vehicleServiceLabel": "Último mantenimiento",
+    "vehicleService": "12 ago 2025 · factura guardada",
+    "vehicleStatus": "En uso"
   },
   "a11y": {
     "skip": "Saltar al contenido"
   },
   "matrix": {
     "title": "Una solución para tus necesidades.",
-    "lead": "Compara los mercados de AssetFlow. Home está disponible; las otras columnas describen ediciones previstas.",
+    "lead": "Elige la edición que se adapte a tus necesidades. Home ya está disponible; Business, Fleet y Hospitality describen funciones previstas.",
     "market": "Mercado",
     "bestFor": "Ideal para",
     "assets": "Bienes gestionados",
@@ -519,6 +524,6 @@
     "businessCollaboration": "Previsto: roles y asignaciones del equipo",
     "fleetCollaboration": "Previsto: flujos de trabajo para equipos de flota",
     "hotelCollaboration": "Previsto: coordinación de personal y técnicos",
-    "scroll": "Desplázate para comparar todos los mercados"
+    "scroll": "Elige una edición para ver sus detalles."
   }
 }

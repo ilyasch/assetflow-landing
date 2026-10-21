@@ -55,8 +55,8 @@
     "title": "How AssetFlow works",
     "lead": "Your assets, their records, and a clearer next step. Explore what you can do with AssetFlow Home.",
     "chooseStep": "Choose a product step",
-    "previous": "Previous step",
-    "next": "Next step",
+    "previous": "Previous examples",
+    "next": "Next examples",
     "tabAsset": "Asset",
     "tabPlan": "Plan",
     "tabRecords": "Records",
@@ -418,9 +418,9 @@
     "asset": "Asset",
     "plan": "Maintenance plan",
     "records": "Records",
-    "vehicle": "Personal vehicle",
-    "vehicleMeta": "Family car · shared household",
-    "assetNote": "The details you need, in one place.",
+    "vehicle": "Family car",
+    "vehicleMeta": "Shared household · added 2020",
+    "assetNote": "Keep ownership details, documents and care history together.",
     "detailYear": "Year",
     "detailMileage": "Mileage",
     "detailDocs": "Documents",
@@ -485,14 +485,19 @@
     "estimateNote": "Sample time and parts estimates; actual needs and prices vary.",
     "serviceInvoice": "Service invoice",
     "warrantyCard": "Warranty card",
-    "inspectionPhoto": "Inspection photo"
+    "inspectionPhoto": "Inspection photo",
+    "vehiclePowerLabel": "Powertrain",
+    "vehiclePower": "Hybrid",
+    "vehicleServiceLabel": "Last service",
+    "vehicleService": "12 Aug 2025 · invoice saved",
+    "vehicleStatus": "In use"
   },
   "a11y": {
     "skip": "Skip to content"
   },
   "matrix": {
     "title": "A solution for your kind of ownership.",
-    "lead": "Compare the markets AssetFlow serves. Home is available now; the other columns describe planned editions.",
+    "lead": "Choose the edition that fits your ownership needs. Home is available now; Business, Fleet and Hospitality describe planned capabilities.",
     "market": "Market",
     "bestFor": "Best for",
     "assets": "Asset focus",
@@ -519,6 +524,6 @@
     "businessCollaboration": "Planned team roles & assignments",
     "fleetCollaboration": "Planned fleet-team workflows",
     "hotelCollaboration": "Planned staff & technician coordination",
-    "scroll": "Scroll to compare all markets"
+    "scroll": "Choose an edition to explore its details."
   }
 }

@@ -55,8 +55,8 @@
     "title": "Comment fonctionne AssetFlow",
     "lead": "Vos biens, leurs documents et une prochaine étape plus claire. Découvrez ce que vous pouvez faire avec AssetFlow Home.",
     "chooseStep": "Choisir une étape du produit",
-    "previous": "Étape précédente",
-    "next": "Étape suivante",
+    "previous": "Exemples précédents",
+    "next": "Exemples suivants",
     "tabAsset": "Bien",
     "tabPlan": "Plan",
     "tabRecords": "Documents",
@@ -418,9 +418,9 @@
     "asset": "Bien",
     "plan": "Plan d’entretien",
     "records": "Historique",
-    "vehicle": "Véhicule personnel",
-    "vehicleMeta": "Voiture familiale · foyer partagé",
-    "assetNote": "Les détails utiles, au même endroit.",
+    "vehicle": "Voiture familiale",
+    "vehicleMeta": "Foyer partagé · ajoutée en 2020",
+    "assetNote": "Réunissez les informations de propriété, les documents et l’historique d’entretien.",
     "detailYear": "Année",
     "detailMileage": "Kilométrage",
     "detailDocs": "Documents",
@@ -485,14 +485,19 @@
     "estimateNote": "Durées et prix des pièces donnés à titre d’exemple ; les besoins et tarifs réels peuvent varier.",
     "serviceInvoice": "Facture d’entretien",
     "warrantyCard": "Carte de garantie",
-    "inspectionPhoto": "Photo d’inspection"
+    "inspectionPhoto": "Photo d’inspection",
+    "vehiclePowerLabel": "Motorisation",
+    "vehiclePower": "Hybride",
+    "vehicleServiceLabel": "Dernier entretien",
+    "vehicleService": "12 août 2025 · facture enregistrée",
+    "vehicleStatus": "En service"
   },
   "a11y": {
     "skip": "Aller au contenu"
   },
   "matrix": {
     "title": "Une solution adaptée à vos besoins.",
-    "lead": "Comparez les marchés d’AssetFlow. Home est disponible ; les autres colonnes décrivent des éditions prévues.",
+    "lead": "Choisissez l’édition adaptée à vos besoins. Home est disponible ; Business, Fleet et Hospitality présentent des fonctionnalités prévues.",
     "market": "Marché",
     "bestFor": "Idéal pour",
     "assets": "Biens concernés",
@@ -519,6 +524,6 @@
     "businessCollaboration": "Prévu : rôles et affectations de l’équipe",
     "fleetCollaboration": "Prévu : processus des équipes de flotte",
     "hotelCollaboration": "Prévu : coordination du personnel et des techniciens",
-    "scroll": "Faites défiler pour comparer tous les marchés"
+    "scroll": "Choisissez une édition pour découvrir ses détails."
   }
 }
