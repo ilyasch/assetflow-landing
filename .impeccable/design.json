@@ -202,16 +202,6 @@
           "oklch(95% 0.1125 84.58)"
         ]
       },
-      "terracotta": {
-        "role": "secondary",
-        "displayName": "Terracotta",
-        "hex": "#a34a32"
-      },
-      "terracotta-soft": {
-        "role": "surface",
-        "displayName": "Soft terracotta",
-        "hex": "#f2dfd2"
-      },
       "sky": {
         "role": "surface",
         "displayName": "Pale sky",
@@ -240,6 +230,51 @@
           "oklch(84% 0.0131 141.81)",
           "oklch(95% 0.0131 141.81)"
         ]
+      },
+      "gold-soft": {
+        "role": "surface",
+        "displayName": "Pale gold",
+        "hex": "#fbf2d9"
+      },
+      "market-home": {
+        "role": "surface",
+        "displayName": "Home market",
+        "hex": "#e5eddf"
+      },
+      "market-business": {
+        "role": "surface",
+        "displayName": "Business market",
+        "hex": "#edf3f6"
+      },
+      "market-fleet": {
+        "role": "surface",
+        "displayName": "Fleet market",
+        "hex": "#f7f0d8"
+      },
+      "market-hospitality": {
+        "role": "surface",
+        "displayName": "Hospitality market",
+        "hex": "#edf1e9"
+      },
+      "market-home-selected": {
+        "role": "surface",
+        "displayName": "Selected home market",
+        "hex": "#d4e3cf"
+      },
+      "market-business-selected": {
+        "role": "surface",
+        "displayName": "Selected business market",
+        "hex": "#dcebf0"
+      },
+      "market-fleet-selected": {
+        "role": "surface",
+        "displayName": "Selected fleet market",
+        "hex": "#f1e4b9"
+      },
+      "market-hospitality-selected": {
+        "role": "surface",
+        "displayName": "Selected hospitality market",
+        "hex": "#dce8d6"
       }
     }
   },
@@ -301,9 +336,9 @@
   ],
   "narrative": {
     "northStar": "A vivid picture of what you own",
-    "overview": "The website combines AssetFlow's forest green and warm gold with terracotta, sky blue and sage. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. The product interface leads; one realistic vehicle photograph replaces the line-art drawing inside its illustrative asset view. Existing AssetFlow logos remain unchanged.\n\nFine rules and tonal fields organize most content. The ownership demonstration uses a deep-green rail, flexible data stage and colorful contextual panel; articles use semantic diagrams and open reading columns. Generated vehicle image provenance is recorded in `assets/IMAGE-SOURCES.md`. Surface strategy remains in `.impeccable/surfaces/home.md` and `.impeccable/surfaces/blog.md`.\n\nThe homepage uses a compact floating top bar, a sticky left section rail on wide screens, and a multi-column footer. A slow, restrained multicolor wash animates behind the opening section; the prefers-reduced-motion setting disables it.",
+    "overview": "The website combines AssetFlow's forest green and warm gold with sky blue and sage. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. The product interface leads; one realistic vehicle photograph replaces the line-art drawing inside its illustrative asset view. Existing AssetFlow logos remain unchanged.\n\nFine rules and tonal fields organize most content. The ownership demonstration uses a deep-green rail, flexible data stage and colorful contextual panel; articles use semantic diagrams and open reading columns. Generated vehicle image provenance is recorded in `assets/IMAGE-SOURCES.md`. Surface strategy remains in `.impeccable/surfaces/home.md` and `.impeccable/surfaces/blog.md`.\n\nThe homepage uses a compact floating top bar, a sticky left section rail on wide screens, and a multi-column footer. A slow, restrained multicolor wash animates behind the opening section; the prefers-reduced-motion setting disables it.",
     "keyCharacteristics": [
-      "Warm white, forest green and gold balanced with terracotta, sky blue and sage.",
+      "Warm white, forest green and gold balanced with sky blue and sage.",
       "Georgia display and Inter body; native Arabic typography.",
       "A clear product interface with realistic vehicle photography in its illustrative asset view.",
       "Solid pill actions, fine dividers and open sections with color fields.",

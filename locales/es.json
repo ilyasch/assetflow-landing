@@ -361,7 +361,13 @@
     "navigation": "Navegación principal",
     "billing": "Periodo de facturación",
     "solutions": "Soluciones",
-    "footerResources": "Recursos"
+    "footerResources": "Recursos",
+    "demoLead": "Descubre cómo se reúnen los datos, documentos y tareas de mantenimiento revisables de un bien.",
+    "contextAssetTitle": "Tu bien de un vistazo",
+    "contextAssetBody": "Guarda juntos el año, el kilometraje y los documentos para consultar fácilmente su historial.",
+    "contextPlanTitle": "Un plan que tú controlas",
+    "contextRecordsTitle": "Un registro con sus justificantes.",
+    "contextRecordsBody": "Guarda los servicios y sus documentos junto al bien para consultar qué ocurrió cuando lo necesites."
   },
   "a11y": {
     "skip": "Saltar al contenido"

@@ -361,7 +361,13 @@
     "navigation": "Navigation principale",
     "billing": "Période de facturation",
     "solutions": "Solutions",
-    "footerResources": "Ressources"
+    "footerResources": "Ressources",
+    "demoLead": "Découvrez comment les détails, documents et étapes d’entretien à vérifier se réunissent au même endroit.",
+    "contextAssetTitle": "Votre bien en un coup d’œil",
+    "contextAssetBody": "Gardez son année, son kilométrage et ses documents ensemble pour retrouver facilement son historique.",
+    "contextPlanTitle": "Un plan que vous maîtrisez",
+    "contextRecordsTitle": "Un historique et ses justificatifs.",
+    "contextRecordsBody": "Conservez interventions et justificatifs avec le bien pour retrouver facilement ce qui a été fait."
   },
   "a11y": {
     "skip": "Aller au contenu"

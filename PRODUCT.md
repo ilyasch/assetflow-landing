@@ -19,7 +19,7 @@ The homepage leads with Home and an illustrative ownership example: asset, maint
 The landing repository is a dependency-free static website, independent of the app, worker, database, and infrastructure repositories. Content supports English, Italian, German, Spanish, French, and Arabic, including RTL and Arabic-Indic numerals.
 
 ## Brand Commitments
-The website uses AssetFlow forest green and gold with a more vivid editorial palette of terracotta, sky blue and sage. Georgia headlines and local Inter body text remain; Arabic uses native Tahoma/Arial stacks, RTL layout and Arabic-Indic numerals. Preserve the existing AssetFlow logos. Lead with the ownership interface and keep realistic photography subordinate inside its illustrative asset view; never imply it is a live app screenshot or customer evidence. Clear, practical language shows the customer as the person in control.
+The website uses AssetFlow forest green and gold with a more vivid editorial palette of sky blue and sage. Georgia headlines and local Inter body text remain; Arabic uses native Tahoma/Arial stacks, RTL layout and Arabic-Indic numerals. Preserve the existing AssetFlow logos. Lead with the ownership interface and keep realistic photography subordinate inside its illustrative asset view; never imply it is a live app screenshot or customer evidence. Clear, practical language shows the customer as the person in control.
 
 ## Evidence on Hand
 The existing landing copy and product documentation establish Home workflows. Article scenarios and records are illustrative, not testimonials or shipped product screenshots. Do not invent quantified savings, compliance guarantees, recovered records, or maintenance intervals.

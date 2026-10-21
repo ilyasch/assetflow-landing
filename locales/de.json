@@ -361,7 +361,13 @@
     "navigation": "Hauptnavigation",
     "billing": "Abrechnungszeitraum",
     "solutions": "Lösungen",
-    "footerResources": "Ressourcen"
+    "footerResources": "Ressourcen",
+    "demoLead": "Sieh, wie Angaben, Dokumente und überprüfbare Wartungsschritte für einen Gegenstand an einem Ort zusammenkommen.",
+    "contextAssetTitle": "Dein Gegenstand im Überblick",
+    "contextAssetBody": "Jahr, Kilometerstand und Dokumente bleiben beisammen, damit du die Geschichte schnell nachvollziehen kannst.",
+    "contextPlanTitle": "Ein Plan, den du steuerst",
+    "contextRecordsTitle": "Ein Eintrag mit Belegen.",
+    "contextRecordsBody": "Bewahre Serviceeinträge und Belege beim Gegenstand auf, damit du jederzeit nachsehen kannst, was passiert ist."
   },
   "a11y": {
     "skip": "Zum Inhalt springen"

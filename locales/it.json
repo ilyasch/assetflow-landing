@@ -361,7 +361,13 @@
     "navigation": "Navigazione principale",
     "billing": "Periodo di fatturazione",
     "solutions": "Soluzioni",
-    "footerResources": "Risorse"
+    "footerResources": "Risorse",
+    "demoLead": "Scopri come dettagli, documenti e manutenzioni da verificare si riuniscono in un unico spazio.",
+    "contextAssetTitle": "Il tuo bene a colpo d’occhio",
+    "contextAssetBody": "Raccogli anno, chilometraggio e documenti: la storia del bene è sempre facile da consultare.",
+    "contextPlanTitle": "Un piano sotto il tuo controllo",
+    "contextRecordsTitle": "Una cronologia con le prove.",
+    "contextRecordsBody": "Conserva interventi e documenti insieme al bene, pronti quando vuoi ricostruire cosa è successo."
   },
   "a11y": {
     "skip": "Vai al contenuto"

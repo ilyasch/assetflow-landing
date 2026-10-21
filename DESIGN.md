@@ -10,8 +10,15 @@ colors:
   primary: "#186b5b"
   primary-dark: "#173c33"
   accent: "#f1c975"
-  terracotta: "#a34a32"
-  terracotta-soft: "#f2dfd2"
+  gold-soft: "#fbf2d9"
+  market-home: "#e5eddf"
+  market-business: "#edf3f6"
+  market-fleet: "#f7f0d8"
+  market-hospitality: "#edf1e9"
+  market-home-selected: "#d4e3cf"
+  market-business-selected: "#dcebf0"
+  market-fleet-selected: "#f1e4b9"
+  market-hospitality-selected: "#dce8d6"
   sky: "#dcebf0"
   sage: "#dce8d6"
   cobalt: "#416d92"
@@ -83,19 +90,19 @@ components:
 
 **Creative North Star: "A vivid picture of what you own"**
 
-The website combines AssetFlow's forest green and warm gold with terracotta, sky blue and sage. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. The product interface leads; one realistic asset photograph replaces the line-art vehicle drawing inside the sample view. Existing AssetFlow logos remain unchanged.
+The website combines AssetFlow's forest green and warm gold with sky blue and sage. Georgia headlines give ownership stories a human voice; local Inter keeps controls, supporting copy and records precise. The product interface leads; one realistic asset photograph replaces the line-art vehicle drawing inside the sample view. Existing AssetFlow logos remain unchanged.
 
 Fine rules and tonal fields organize most content. A single elevated ownership demonstration provides the homepage’s concentrated product detail; articles use semantic diagrams and open reading columns. Surface strategy remains in `.impeccable/surfaces/home.md` and `.impeccable/surfaces/blog.md`.
 
 **Key Characteristics:**
-- Warm white, forest green and gold, balanced with terracotta, sky blue and sage.
+- Warm white, forest green and gold, balanced with sky blue and sage.
 - Georgia display and Inter body; native Arabic typography.
 - A clear product interface with one realistic asset photograph inside its sample view.
 - Solid pill actions, fine dividers and open sections with color fields.
 
 ## Colors
 
-Warm white establishes the canvas; forest green carries text and action. Terracotta and sage split the hero; gold frames the photograph. Sky blue and terracotta distinguish story panels and market headings.
+Warm white establishes the canvas; forest green carries text and action. Sage and pale gold distinguish story panels; gold frames the photograph. Sky blue, sage and gold distinguish market columns.
 
 ### Primary
 - **Forest green:** links, emphasized headline words, hover actions and focus outlines.
@@ -132,7 +139,7 @@ Arabic switches both font roles to Tahoma, Arial, sans-serif, removes heading tr
 
 The centered wrapper is `min(100% - 112px, 1240px)`, expanding at `1500px` to `min(100% - 144px, 1360px)`. Insets become `32px` at `1100px`, `20px` at `620px`, and `16px` at `360px`. Sections use `108px` block padding, reducing to `80px` and then `65px`. These are observed layout values, not an invented global spacing scale.
 
-The homepage opens with a floating pill navigation and a clear left-aligned headline over a slow terracotta, sky and sage color wash. On wide screens, a fixed left section rail tracks Product, How it works, Pricing and Solutions; the content shifts to leave room. Below `1440px`, the rail gives way to the full-width layout. The wide product interface follows directly, with a deep-green rail, flexible stage, sky-blue context panel and a realistic vehicle photo inside the illustrative asset view. At `900px` the contextual column hides; at `620px` the demo rail becomes horizontal tabs above the stage and the header switches to its menu disclosure. Color-backed two-column chapters become a single reading sequence on mobile. Pricing is a divider-led four-column grid, becoming two columns at `900px`.
+The homepage opens with a floating pill navigation and a clear left-aligned headline over a slow gold, sky and sage color wash. On wide screens, a fixed left section rail tracks Product, How it works, Pricing and Solutions; the content shifts to leave room. Below `1440px`, the rail gives way to the full-width layout. The wide product interface follows directly, with a deep-green rail, flexible stage, sky-blue context panel and a realistic vehicle photo inside the illustrative asset view. At `900px` the contextual column hides; at `620px` the demo rail becomes horizontal tabs above the stage and the header switches to its menu disclosure. Color-backed two-column chapters become a single reading sequence on mobile. Pricing is a divider-led four-column grid, becoming two columns at `900px`.
 
 The market matrix preserves its semantic table and `950px` minimum width in an overflow region. Its labeled, keyboard-focusable region and scroll instruction support narrow screens; the instruction appears below `1014px`. Home receives a pale-green column and an available label. Business, Fleet and Hospitality retain explicit Coming Soon labels and planned capability wording.
 

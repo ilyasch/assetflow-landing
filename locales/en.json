@@ -361,7 +361,13 @@
     "navigation": "Main navigation",
     "billing": "Billing period",
     "solutions": "Solutions",
-    "footerResources": "Resources"
+    "footerResources": "Resources",
+    "demoLead": "See how one asset’s details, documents and reviewable maintenance steps come together in one place.",
+    "contextAssetTitle": "Your asset at a glance",
+    "contextAssetBody": "Keep practical details such as its year, mileage and documents together, so its story is easy to pick up.",
+    "contextPlanTitle": "A plan you control",
+    "contextRecordsTitle": "A record with its evidence.",
+    "contextRecordsBody": "Keep service records and supporting documents with the asset, ready when you need to check what happened."
   },
   "a11y": {
     "skip": "Skip to content"

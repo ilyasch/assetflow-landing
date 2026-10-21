@@ -97,8 +97,8 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="styles.css?v=4" />
-    <script defer src="main.js?v=4"></script>
+    <link rel="stylesheet" href="styles.css?v=5" />
+    <script defer src="main.js?v=5"></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
@@ -207,12 +207,18 @@
       <section id="product" class="product-section">
         <div class="wrap">
           <div class="demo-intro">
-            <h2>
-              <span data-i18n="site.demoTitle"
-                >A little context. A clearer next step.</span
-              >
-            </h2>
-            <p>
+            <div class="demo-intro-copy">
+              <h2>
+                <span data-i18n="site.demoTitle"
+                  >A little context. A clearer next step.</span
+                >
+              </h2>
+              <p class="demo-lead" data-i18n="site.demoLead">
+                See how one asset’s details, documents and reviewable maintenance
+                steps come together in one place.
+              </p>
+            </div>
+            <p class="demo-label">
               <span data-i18n="site.example"
                 >Illustrative example · sample data</span
               >
@@ -386,32 +392,74 @@
             </div>
             <aside class="demo-context">
               <div class="context-line"></div>
-              <p><span data-i18n="site.vehicle">2020 Toyota Corolla</span></p>
-              <h3>
-                <span data-i18n="site.recordNote"
-                  >A useful history, with the evidence to go with it.</span
-                >
-              </h3>
-              <ul class="file-list">
-                <li>
-                  <span class="file-type" aria-hidden="true">PDF</span
-                  ><span data-i18n="site.receipt">Purchase receipt</span>
-                </li>
-                <li>
-                  <span class="file-type" aria-hidden="true">PDF</span
-                  ><span data-i18n="site.manual">Owner’s manual</span>
-                </li>
-                <li>
-                  <span class="file-type" aria-hidden="true">PDF</span
-                  ><span data-i18n="site.insurance">Insurance policy</span>
-                </li>
-              </ul>
-              <p>
-                <span data-i18n="site.reviewNote"
-                  >You review every suggestion. Only you decide what becomes
-                  part of your plan.</span
-                >
-              </p>
+              <section data-demo-context="asset">
+                <p class="context-eyebrow" data-i18n="site.asset">Asset</p>
+                <h3 data-i18n="site.contextAssetTitle">
+                  The details stay with the asset.
+                </h3>
+                <p data-i18n="site.contextAssetBody">
+                  Keep its year, mileage and documents close to its ownership
+                  history.
+                </p>
+                <dl class="context-facts">
+                  <div>
+                    <dt data-i18n="site.detailYear">Year</dt>
+                    <dd>2020</dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="site.detailMileage">Mileage</dt>
+                    <dd><bdi>64,200 km</bdi></dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="site.detailDocs">Documents</dt>
+                    <dd>3</dd>
+                  </div>
+                </dl>
+              </section>
+              <section data-demo-context="plan">
+                <p class="context-eyebrow" data-i18n="site.plan">
+                  Maintenance plan
+                </p>
+                <h3 data-i18n="site.contextPlanTitle">
+                  A suggestion you can review.
+                </h3>
+                <p data-i18n="site.taskMeta">
+                  Check the manual and service history before choosing a date.
+                </p>
+                <p class="context-note" data-i18n="site.reviewNote">
+                  You review every suggestion. Only you decide what becomes part
+                  of your plan.
+                </p>
+              </section>
+              <section data-demo-context="records">
+                <p class="context-eyebrow" data-i18n="site.records">
+                  Records
+                </p>
+                <h3 data-i18n="site.contextRecordsTitle">
+                  A record with its evidence.
+                </h3>
+                <p data-i18n="site.recordMeta">
+                  12 August 2025 · service invoice
+                </p>
+                <ul class="file-list">
+                  <li>
+                    <span class="file-type" aria-hidden="true">PDF</span
+                    ><span data-i18n="site.receipt">Purchase receipt</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">PDF</span
+                    ><span data-i18n="site.manual">Owner’s manual</span>
+                  </li>
+                  <li>
+                    <span class="file-type" aria-hidden="true">PDF</span
+                    ><span data-i18n="site.insurance">Insurance policy</span>
+                  </li>
+                </ul>
+                <p class="context-note" data-i18n="site.contextRecordsBody">
+                  Keep receipts, manuals, insurance and completed work with the
+                  asset.
+                </p>
+              </section>
             </aside>
           </div>
         </div>
@@ -838,6 +886,50 @@
           <p id="matrix-scroll" class="matrix-scroll">
             <span data-i18n="matrix.scroll">Scroll to compare all markets</span>
           </p>
+          <div class="market-interaction" data-market-interaction>
+            <div
+              class="market-options"
+              role="group"
+              data-i18n-aria="matrix.market"
+            >
+              <button type="button" data-market="home" data-column="2" aria-pressed="false">
+                <span>AssetFlow Home</span>
+                <small data-i18n="editions.availableNow">Available Now</small>
+              </button>
+              <button type="button" data-market="business" data-column="3" aria-pressed="false">
+                <span>AssetFlow Business</span>
+                <small data-i18n="editions.comingSoon">Coming Soon</small>
+              </button>
+              <button type="button" data-market="fleet" data-column="4" aria-pressed="false">
+                <span>AssetFlow Fleet</span>
+                <small data-i18n="editions.comingSoon">Coming Soon</small>
+              </button>
+              <button type="button" data-market="hospitality" data-column="5" aria-pressed="false">
+                <span>AssetFlow Hospitality</span>
+                <small data-i18n="editions.comingSoon">Coming Soon</small>
+              </button>
+            </div>
+            <div class="market-spotlight" aria-live="polite">
+              <div>
+                <p class="market-status" data-market-status></p>
+                <h3 data-market-title></h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="matrix.bestFor">Best for</dt>
+                  <dd data-market-value="1"></dd>
+                </div>
+                <div>
+                  <dt data-i18n="matrix.assets">Asset focus</dt>
+                  <dd data-market-value="2"></dd>
+                </div>
+                <div>
+                  <dt data-i18n="matrix.maintenance">Maintenance approach</dt>
+                  <dd data-market-value="3"></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
           <div
             class="matrix-region"
             role="region"
