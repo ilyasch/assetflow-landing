@@ -418,9 +418,9 @@
     "asset": "Gegenstand",
     "plan": "Wartungsplan",
     "records": "Verlauf",
-    "vehicle": "Privatfahrzeug",
-    "vehicleMeta": "Familienauto · gemeinsamer Haushalt",
-    "assetNote": "Die wichtigen Details an einem Ort.",
+    "vehicle": "Familienauto",
+    "vehicleMeta": "Gemeinsamer Haushalt · seit 2020 erfasst",
+    "assetNote": "Alle Besitzdetails, Dokumente und Wartungsverläufe an einem Ort.",
     "detailYear": "Baujahr",
     "detailMileage": "Kilometerstand",
     "detailDocs": "Dokumente",
@@ -485,7 +485,12 @@
     "estimateNote": "Zeit- und Teilekosten sind Beispiele; tatsächlicher Bedarf und Preise können abweichen.",
     "serviceInvoice": "Wartungsrechnung",
     "warrantyCard": "Garantiekarte",
-    "inspectionPhoto": "Inspektionsfoto"
+    "inspectionPhoto": "Inspektionsfoto",
+    "vehiclePowerLabel": "Antrieb",
+    "vehiclePower": "Hybrid",
+    "vehicleServiceLabel": "Letzter Service",
+    "vehicleService": "12. Aug. 2025 · Rechnung gespeichert",
+    "vehicleStatus": "In Nutzung"
   },
   "a11y": {
     "skip": "Zum Inhalt springen"

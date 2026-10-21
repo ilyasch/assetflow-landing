@@ -418,9 +418,9 @@
     "asset": "Bene",
     "plan": "Piano di manutenzione",
     "records": "Storico",
-    "vehicle": "Veicolo personale",
-    "vehicleMeta": "Auto di famiglia · nucleo condiviso",
-    "assetNote": "I dettagli che ti servono, in un solo posto.",
+    "vehicle": "Auto di famiglia",
+    "vehicleMeta": "Nucleo condiviso · aggiunta nel 2020",
+    "assetNote": "Tieni insieme i dettagli di proprietà, i documenti e lo storico della manutenzione.",
     "detailYear": "Anno",
     "detailMileage": "Chilometraggio",
     "detailDocs": "Documenti",
@@ -485,7 +485,12 @@
     "estimateNote": "Tempi e costi dei ricambi sono esempi; esigenze e prezzi reali possono variare.",
     "serviceInvoice": "Fattura di manutenzione",
     "warrantyCard": "Scheda di garanzia",
-    "inspectionPhoto": "Foto di ispezione"
+    "inspectionPhoto": "Foto di ispezione",
+    "vehiclePowerLabel": "Alimentazione",
+    "vehiclePower": "Ibrida",
+    "vehicleServiceLabel": "Ultimo intervento",
+    "vehicleService": "12 ago 2025 · fattura salvata",
+    "vehicleStatus": "In uso"
   },
   "a11y": {
     "skip": "Vai al contenuto"

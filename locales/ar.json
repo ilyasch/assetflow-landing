@@ -418,9 +418,9 @@
     "asset": "الممتلك",
     "plan": "خطة الصيانة",
     "records": "السجل",
-    "vehicle": "مركبة شخصية",
-    "vehicleMeta": "سيارة العائلة · أسرة مشتركة",
-    "assetNote": "التفاصيل التي تحتاجها في مكان واحد.",
+    "vehicle": "سيارة العائلة",
+    "vehicleMeta": "ضمن المنزل المشترك · أُضيفت عام ٢٠٢٠",
+    "assetNote": "اجمع تفاصيل الملكية والوثائق وسجل الصيانة في مكان واحد.",
     "detailYear": "السنة",
     "detailMileage": "المسافة المقطوعة",
     "detailDocs": "الوثائق",
@@ -485,7 +485,12 @@
     "estimateNote": "الأوقات وتكاليف القطع أمثلة توضيحية؛ وقد تختلف الاحتياجات والأسعار الفعلية.",
     "serviceInvoice": "فاتورة صيانة",
     "warrantyCard": "بطاقة الضمان",
-    "inspectionPhoto": "صورة فحص"
+    "inspectionPhoto": "صورة فحص",
+    "vehiclePowerLabel": "نظام الدفع",
+    "vehiclePower": "هجينة",
+    "vehicleServiceLabel": "آخر صيانة",
+    "vehicleService": "١٢ أغسطس ٢٠٢٥ · الفاتورة محفوظة",
+    "vehicleStatus": "قيد الاستخدام"
   },
   "a11y": {
     "skip": "انتقل إلى المحتوى"

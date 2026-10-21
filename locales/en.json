@@ -418,9 +418,9 @@
     "asset": "Asset",
     "plan": "Maintenance plan",
     "records": "Records",
-    "vehicle": "Personal vehicle",
-    "vehicleMeta": "Family car · shared household",
-    "assetNote": "The details you need, in one place.",
+    "vehicle": "Family car",
+    "vehicleMeta": "Shared household · added 2020",
+    "assetNote": "Keep ownership details, documents and care history together.",
     "detailYear": "Year",
     "detailMileage": "Mileage",
     "detailDocs": "Documents",
@@ -485,7 +485,12 @@
     "estimateNote": "Sample time and parts estimates; actual needs and prices vary.",
     "serviceInvoice": "Service invoice",
     "warrantyCard": "Warranty card",
-    "inspectionPhoto": "Inspection photo"
+    "inspectionPhoto": "Inspection photo",
+    "vehiclePowerLabel": "Powertrain",
+    "vehiclePower": "Hybrid",
+    "vehicleServiceLabel": "Last service",
+    "vehicleService": "12 Aug 2025 · invoice saved",
+    "vehicleStatus": "In use"
   },
   "a11y": {
     "skip": "Skip to content"

@@ -291,33 +291,18 @@
                 class="demo-panel"
                 aria-labelledby="demo-tab-asset"
               >
-                <div class="vehicle-photo">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        /assets/vehicle-photo-320.webp 320w,
-                        /assets/vehicle-photo-360.webp 360w,
-                        /assets/vehicle-photo-480.webp 480w,
-                        /assets/vehicle-photo-560.webp 560w,
-                        /assets/vehicle-photo-668.webp 668w,
-                        /assets/vehicle-photo-800.webp 800w,
-                        /assets/vehicle-photo-1000.webp 1000w
-                      "
-                      sizes="(max-width: 360px) calc(100vw - 68px), (max-width: 620px) calc(100vw - 84px), (max-width: 900px) calc(100vw - 276px), (max-width: 1100px) calc(100vw - 516px), (max-width: 1352px) calc(100vw - 667px), (max-width: 1499px) 685px, min(calc(100vw - 699px), 805px)"
-                    />
-                    <img
-                      src="/assets/vehicle-photo.jpg"
-                      width="668"
-                      height="501"
-                      alt=""
-                      loading="eager"
-                      decoding="async"
-                    />
-                  </picture>
+                <div class="asset-record-heading">
+                  <span class="asset-record-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="m8 25 3-9a4 4 0 0 1 4-3h18a4 4 0 0 1 4 3l3 9v11h-4v-4H12v4H8V25Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                      <path d="M11 25h26M15 32h.01M33 32h.01" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                      <path d="m15 13 2 12m16-12-2 12" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                  </span>
+                  <span class="asset-record-status" data-i18n="site.vehicleStatus">In use</span>
                 </div>
                 <h3>
-                  <span data-i18n="site.vehicle">Personal vehicle</span>
+                  <span data-i18n="site.vehicle">Family car</span>
                 </h3>
                 <p>
                   <span data-i18n="site.vehicleMeta"
@@ -338,9 +323,19 @@
                     <dd>6</dd>
                   </div>
                 </dl>
+                <div class="asset-care-context">
+                  <div>
+                    <span class="asset-context-label" data-i18n="site.vehiclePowerLabel">Powertrain</span>
+                    <strong data-i18n="site.vehiclePower">Hybrid</strong>
+                  </div>
+                  <div>
+                    <span class="asset-context-label" data-i18n="site.vehicleServiceLabel">Last service</span>
+                    <strong data-i18n="site.vehicleService">12 Aug 2025 · invoice saved</strong>
+                  </div>
+                </div>
                 <p class="demo-footnote">
                   <span data-i18n="site.assetNote"
-                    >The details you need, in one place.</span
+                    >Keep ownership details, documents and care history together.</span
                   >
                 </p>
               </section>

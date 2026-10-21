@@ -418,9 +418,9 @@
     "asset": "Bien",
     "plan": "Plan de mantenimiento",
     "records": "Historial",
-    "vehicle": "Vehículo personal",
-    "vehicleMeta": "Coche familiar · hogar compartido",
-    "assetNote": "Los detalles que necesitas, en un solo lugar.",
+    "vehicle": "Coche familiar",
+    "vehicleMeta": "Hogar compartido · añadido en 2020",
+    "assetNote": "Reúne los datos de propiedad, los documentos y el historial de mantenimiento.",
     "detailYear": "Año",
     "detailMileage": "Kilometraje",
     "detailDocs": "Documentos",
@@ -485,7 +485,12 @@
     "estimateNote": "Los tiempos y costes son ejemplos; las necesidades y los precios reales pueden variar.",
     "serviceInvoice": "Factura de mantenimiento",
     "warrantyCard": "Tarjeta de garantía",
-    "inspectionPhoto": "Foto de inspección"
+    "inspectionPhoto": "Foto de inspección",
+    "vehiclePowerLabel": "Motorización",
+    "vehiclePower": "Híbrido",
+    "vehicleServiceLabel": "Último mantenimiento",
+    "vehicleService": "12 ago 2025 · factura guardada",
+    "vehicleStatus": "En uso"
   },
   "a11y": {
     "skip": "Saltar al contenido"

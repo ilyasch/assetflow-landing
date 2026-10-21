@@ -418,9 +418,9 @@
     "asset": "Bien",
     "plan": "Plan d’entretien",
     "records": "Historique",
-    "vehicle": "Véhicule personnel",
-    "vehicleMeta": "Voiture familiale · foyer partagé",
-    "assetNote": "Les détails utiles, au même endroit.",
+    "vehicle": "Voiture familiale",
+    "vehicleMeta": "Foyer partagé · ajoutée en 2020",
+    "assetNote": "Réunissez les informations de propriété, les documents et l’historique d’entretien.",
     "detailYear": "Année",
     "detailMileage": "Kilométrage",
     "detailDocs": "Documents",
@@ -485,7 +485,12 @@
     "estimateNote": "Durées et prix des pièces donnés à titre d’exemple ; les besoins et tarifs réels peuvent varier.",
     "serviceInvoice": "Facture d’entretien",
     "warrantyCard": "Carte de garantie",
-    "inspectionPhoto": "Photo d’inspection"
+    "inspectionPhoto": "Photo d’inspection",
+    "vehiclePowerLabel": "Motorisation",
+    "vehiclePower": "Hybride",
+    "vehicleServiceLabel": "Dernier entretien",
+    "vehicleService": "12 août 2025 · facture enregistrée",
+    "vehicleStatus": "En service"
   },
   "a11y": {
     "skip": "Aller au contenu"
