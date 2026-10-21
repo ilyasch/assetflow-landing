@@ -57,6 +57,16 @@ structure, canonical URLs, language alternates, JSON-LD, and sitemap coverage.
 CSS is minified as content-hashed production assets are created. The minifier
 is vendored with its license, so local packaging and CI need no extra package.
 Publish the complete `dist/` artifact rather than copying the source root.
+Vehicle photos use responsive WebP sources and a JPEG fallback under 150 KB.
+The ownership-demo photo loads eagerly because it can appear in the initial
+viewport, decodes asynchronously and keeps its existing reserved space. The
+three capability chapters use compact HTML examples without photography, with
+four examples in each horizontally scrollable row. Previous/next buttons,
+keyboard arrows, Home/End and touch scrolling support navigation, including RTL
+and reduced motion. Without JavaScript the native scroll regions remain usable.
+Packaging gives every photo a content-hashed `/static/` URL with the existing one-year immutable
+cache policy. The verifier checks image dimensions, `srcset` references, asset
+hashes and the JPEG size budget. Keep these guarantees when replacing photos.
 Article pages are readable without JavaScript;
 their language links navigate directly to equivalent translated pages.
 

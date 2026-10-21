@@ -273,16 +273,18 @@
                         /assets/vehicle-photo-480.webp 480w,
                         /assets/vehicle-photo-560.webp 560w,
                         /assets/vehicle-photo-668.webp 668w,
+                        /assets/vehicle-photo-800.webp 800w,
                         /assets/vehicle-photo-1000.webp 1000w
                       "
-                      sizes="(max-width: 620px) calc(100vw - 76px), (max-width: 900px) calc(100vw - 316px), (max-width: 1200px) calc(100vw - 564px), 668px"
+                      sizes="(max-width: 360px) calc(100vw - 68px), (max-width: 620px) calc(100vw - 84px), (max-width: 900px) calc(100vw - 276px), (max-width: 1100px) calc(100vw - 516px), (max-width: 1352px) calc(100vw - 667px), (max-width: 1499px) 685px, min(calc(100vw - 699px), 805px)"
                     />
                     <img
                       src="/assets/vehicle-photo.jpg"
                       width="668"
                       height="501"
                       alt=""
-                      loading="lazy"
+                      loading="eager"
+                      decoding="async"
                     />
                   </picture>
                 </div>
@@ -550,6 +552,173 @@
                   Start with something you own. Keep its key details together so you can find them when you need them.
                 </p>
               </div>
+              <div class="feature-controls" hidden>
+                <button type="button" data-feature-prev aria-controls="how-asset-examples" aria-describedby="how-asset-title" aria-label="Previous examples" data-i18n-aria="how.previous">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button" data-feature-next aria-controls="how-asset-examples" aria-describedby="how-asset-title" aria-label="Next examples" data-i18n-aria="how.next">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </header>
+            <div class="feature-grid" id="how-asset-examples" tabindex="0" role="region" aria-labelledby="how-asset-title">
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <ul class="feature-mini-categories">
+                    <li>
+                      <span data-i18n="categories.homeProperty">
+                        Home &amp; property
+                      </span>
+                    </li>
+                    <li>
+                      <span data-i18n="categories.electronics">
+                        Electronics
+                      </span>
+                    </li>
+                    <li>
+                      <span data-i18n="categories.vehicles">
+                        Vehicles
+                      </span>
+                    </li>
+                    <li>
+                      <span data-i18n="categories.furniture">
+                        Furniture
+                      </span>
+                    </li>
+                    <li>
+                      <span data-i18n="categories.appliances">
+                        Appliances
+                      </span>
+                    </li>
+                    <li>
+                      <span data-i18n="categories.other">
+                        Other
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="site.chapter1">
+                    Every thing has a place.
+                  </h4>
+                  <p data-i18n="categories.focus.other">
+                    Describe what you own, keep its useful records and choose the care you want to track.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <strong data-i18n="site.vehicle">
+                    Personal vehicle
+                  </strong>
+                  <dl class="feature-mini-facts">
+                    <div>
+                      <dt data-i18n="site.detailYear">
+                        Year
+                      </dt>
+                      <dd>
+                        2020
+                      </dd>
+                    </div>
+                    <div>
+                      <dt data-i18n="site.detailMileage">
+                        Mileage
+                      </dt>
+                      <dd>
+                        <bdi>
+                          64,200 km
+                        </bdi>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt data-i18n="site.detailDocs">
+                        Documents
+                      </dt>
+                      <dd>
+                        6
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.assetExampleTitle">
+                    Your asset at a glance
+                  </h4>
+                  <p data-i18n="how.assetExampleBody">
+                    The essentials in one place, from its year to its mileage.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <ul class="feature-mini-files">
+                    <li>
+                      <span aria-hidden="true">
+                        PDF
+                      </span>
+                      <span data-i18n="site.receipt">
+                        Purchase receipt
+                      </span>
+                    </li>
+                    <li>
+                      <span aria-hidden="true">
+                        PDF
+                      </span>
+                      <span data-i18n="site.manual">
+                        Owner’s manual
+                      </span>
+                    </li>
+                    <li>
+                      <span aria-hidden="true">
+                        PDF
+                      </span>
+                      <span data-i18n="site.insurance">
+                        Insurance policy
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.assetDetailTitle">
+                    Connected to its records
+                  </h4>
+                  <p data-i18n="how.assetDetailBody">
+                    Documents and completed work stay connected to the asset.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <strong data-i18n="household.board.members">
+                    Your household, together
+                  </strong>
+                  <div class="feature-mini-event">
+                    <span data-i18n="household.board.done">
+                      Car service recorded
+                    </span>
+                    <small data-i18n="household.board.doneDetail">
+                      Everyone can see what was done
+                    </small>
+                  </div>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="household.item1.title">
+                    Share one clear history
+                  </h4>
+                  <p data-i18n="household.item1.body">
+                    Household members can see shared assets, their service history, and the next maintenance tasks.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <footer class="feature-chapter-footer">
+              <p class="example-caption" data-i18n="site.example">
+                Illustrative example · sample data
+              </p>
               <div class="chapter-links">
                 <a href="#product" data-demo-target="asset">
                   <span data-i18n="how.assetLink">
@@ -562,231 +731,60 @@
                   </span>
                 </a>
               </div>
-            </header>
-            <div class="feature-grid">
-              <figure class="feature-example">
-                <div class="feature-preview">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        /assets/vehicle-photo-320.webp 320w,
-                        /assets/vehicle-photo-360.webp 360w,
-                        /assets/vehicle-photo-480.webp 480w,
-                        /assets/vehicle-photo-560.webp 560w,
-                        /assets/vehicle-photo-668.webp 668w,
-                        /assets/vehicle-photo-1000.webp 1000w
-                      "
-                      sizes="(max-width: 620px) calc(100vw - 88px), (max-width: 700px) calc(100vw - 160px), 526px"
-                    />
-                    <img
-                      class="feature-vehicle"
-                      src="/assets/vehicle-photo.jpg"
-                      width="668"
-                      height="501"
-                      alt=""
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="chapter-asset">
-                    <strong >
-                      <span data-i18n="site.vehicle">
-                        Personal vehicle
-                      </span>
-                    </strong >
-                    <p>
-                      <span data-i18n="site.vehicleMeta" >
-                        Family car · shared household
-                      </span >
-                    </p>
-                    <dl class="asset-details">
-                      <div>
-                        <dt>
-                          <span data-i18n="site.detailYear">
-                            Year
-                          </span>
-                        </dt>
-                        <dd>
-                          2020
-                        </dd>
-                      </div>
-                      <div>
-                        <dt >
-                          <span data-i18n="site.detailMileage">
-                            Mileage
-                          </span>
-                        </dt >
-                        <dd>
-                          <bdi>
-                            64,200 km
-                          </bdi>
-                        </dd>
-                      </div>
-                      <div>
-                        <dt >
-                          <span data-i18n="site.detailDocs">
-                            Documents
-                          </span>
-                        </dt >
-                        <dd>
-                          6
-                        </dd>
-                      </div>
-                    </dl>
-                  </div>
-                </div>
-                <figcaption>
-                  <h4 data-i18n="how.assetExampleTitle">
-                    Your asset at a glance
-                  </h4>
-                  <p data-i18n="how.assetExampleBody">
-                    The essentials in one place, from its year to its mileage.
-                  </p>
-                  <p data-i18n="site.example" class="example-caption">
-                    Illustrative example · sample data
-                  </p>
-                </figcaption>
-              </figure>
-              <figure class="feature-example">
-                <div class="feature-preview">
-                  <strong data-i18n="site.vehicle" class="preview-title">
-                    Personal vehicle
-                  </strong>
-                  <p data-i18n="site.vehicleMeta">
-                    Family car · shared household
-                  </p>
-                  <div class="feature-connected">
-                    <ul class="file-list">
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PDF
-                        </span>
-                        <span data-i18n="site.receipt">
-                          Purchase receipt
-                        </span>
-                      </li>
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PDF
-                        </span>
-                        <span data-i18n="site.manual">
-                          Owner’s manual
-                        </span>
-                      </li>
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PDF
-                        </span>
-                        <span data-i18n="site.insurance">
-                          Insurance policy
-                        </span>
-                      </li>
-                    </ul>
-                    <div class="record-entry">
-                      <span class="record-dot" aria-hidden="true">
-                      </span>
-                      <div>
-                        <strong data-i18n="site.recordTitle">
-                          Service recorded
-                        </strong>
-                        <p data-i18n="site.recordMeta">
-                          12 August 2025 · service invoice
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption>
-                  <h4 data-i18n="how.assetDetailTitle">
-                    Connected to its records
-                  </h4>
-                  <p data-i18n="how.assetDetailBody">
-                    Documents and completed work stay connected to the asset.
-                  </p>
-                  <p data-i18n="site.example" class="example-caption">
-                    Illustrative example · sample data
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
+            </footer>
           </article>
           <article id="how-records" class="feature-chapter feature-records" aria-labelledby="how-records-title">
             <header class="feature-chapter-heading">
               <div>
-                <h3 data-i18n="how.recordsTitle" id="how-records-title">Build its knowledge base</h3>
-                <p data-i18n="how.recordsBody">Connect documents and completed work to your asset. Use that knowledge to understand its history and review suggested next steps.</p>
+                <h3 data-i18n="how.recordsTitle" id="how-records-title">
+                  Build its knowledge base
+                </h3>
+                <p data-i18n="how.recordsBody">
+                  Connect documents and completed work to your asset. Use that knowledge to understand its history and review suggested next steps.
+                </p>
               </div>
-              <div class="chapter-links">
-                <a href="#records-library">
-                  <span data-i18n="how.recordsLink">Explore the knowledge base</span>
-                </a>
-                <a href="/blog/en/family-car-maintenance/" data-blog-article="family-car-maintenance">
-                  <span data-i18n="how.guideLink">
-                    Read the guide
-                  </span>
-                </a>
+              <div class="feature-controls" hidden>
+                <button type="button" data-feature-prev aria-controls="how-records-examples" aria-describedby="how-records-title" aria-label="Previous examples" data-i18n-aria="how.previous">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button" data-feature-next aria-controls="how-records-examples" aria-describedby="how-records-title" aria-label="Next examples" data-i18n-aria="how.next">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
               </div>
             </header>
-            <div class="feature-grid">
+            <div class="feature-grid" id="how-records-examples" tabindex="0" role="region" aria-labelledby="how-records-title">
               <figure class="feature-example">
-                <div class="feature-preview">
-                  <div class="chapter-record">
-                    <strong class="preview-title">
-                      <span data-i18n="site.records">
-                        Records
+                <div class="feature-mini">
+                  <ul class="feature-mini-files">
+                    <li>
+                      <span aria-hidden="true">
+                        PDF
                       </span>
-                    </strong>
-                    <ul class="file-list">
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PDF
-                        </span >
-                        <span data-i18n="site.receipt">
-                          Purchase receipt
-                        </span>
-                      </li>
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PDF
-                        </span >
-                        <span data-i18n="site.manual">
-                          Owner’s manual
-                        </span>
-                      </li>
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PDF
-                        </span >
-                        <span data-i18n="site.serviceInvoice">
-                          Service invoice
-                        </span>
-                      </li>
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          JPG
-                        </span >
-                        <span data-i18n="site.warrantyCard">
-                          Warranty card
-                        </span>
-                      </li>
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          DOCX
-                        </span >
-                        <span data-i18n="site.insurance">
-                          Insurance policy
-                        </span>
-                      </li>
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PNG
-                        </span >
-                        <span data-i18n="site.inspectionPhoto">
-                          Inspection photo
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
+                      <span data-i18n="site.manual">
+                        Owner’s manual
+                      </span>
+                    </li>
+                    <li>
+                      <span aria-hidden="true">
+                        PDF
+                      </span>
+                      <span data-i18n="site.serviceInvoice">
+                        Service invoice
+                      </span>
+                    </li>
+                    <li>
+                      <span aria-hidden="true">
+                        PDF
+                      </span>
+                      <span data-i18n="site.insurance">
+                        Insurance policy
+                      </span>
+                    </li>
+                  </ul>
                 </div>
                 <figcaption>
                   <h4 data-i18n="how.recordsExampleTitle">
@@ -795,61 +793,93 @@
                   <p data-i18n="how.recordsExampleBody">
                     Keep the manual, receipt and insurance with the right asset.
                   </p>
-                  <p data-i18n="site.example" class="example-caption">
-                    Illustrative example · sample data
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <div class="feature-mini-event">
+                    <strong data-i18n="site.recordTitle">
+                      Service recorded
+                    </strong>
+                    <p data-i18n="site.recordMeta">
+                      12 August 2025 · service invoice
+                    </p>
+                  </div>
+                  <span data-i18n="site.serviceInvoice" class="feature-source">
+                    Service invoice
+                  </span>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="site.recordTitle">
+                    Service recorded
+                  </h4>
+                  <p data-i18n="site.contextRecordsBody">
+                    Keep service records and supporting documents with the asset, ready when you need to check what happened.
                   </p>
                 </figcaption>
               </figure>
               <figure class="feature-example">
-                <div class="feature-preview">
-                  <strong data-i18n="site.vehicle" class="preview-title">
-                    Personal vehicle
-                  </strong>
-                  <div class="feature-history">
-                    <div class="record-entry">
-                      <span class="record-dot" aria-hidden="true">
-                      </span>
-                      <div>
-                        <strong data-i18n="site.recordTitle">
-                          Service recorded
-                        </strong>
-                        <p data-i18n="site.recordMeta">
-                          12 August 2025 · service invoice
-                        </p>
-                      </div>
-                    </div>
-                    <ul class="file-list">
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PDF
-                        </span>
-                        <span data-i18n="site.serviceInvoice">
-                          Service invoice
-                        </span>
-                      </li>
-                      <li>
-                        <span class="file-type" aria-hidden="true">
-                          PNG
-                        </span>
-                        <span data-i18n="site.inspectionPhoto">
-                          Inspection photo
-                        </span>
-                      </li>
-                    </ul>
+                <div class="feature-mini">
+                  <p data-i18n="how.assistantQuestion" class="feature-mini-question">
+                    What should I check before the next service?
+                  </p>
+                  <div class="feature-mini-sources">
+                    <span data-i18n="site.manual">
+                      Owner’s manual
+                    </span>
+                    <span data-i18n="site.serviceInvoice">
+                      Service invoice
+                    </span>
                   </div>
-                  <div class="knowledge-summary">
-<strong data-i18n="library.knowledge.understanding">Understand the history</strong><p data-i18n="library.knowledge.insight">The owner’s manual and recorded service provide context for the next maintenance review.</p></div>
-<div class="knowledge-suggestion"><strong data-i18n="library.knowledge.action">Suggested next step</strong><p data-i18n="library.knowledge.task">Review the next maintenance plan</p></div>
                 </div>
                 <figcaption>
-                  <h4 data-i18n="how.recordsDetailTitle">Suggested next step</h4>
-                  <p data-i18n="how.recordsDetailBody">Check the records and adjust the suggestion before adding a task.</p>
-                  <p data-i18n="site.example" class="example-caption">
-                    Illustrative example · sample data
+                  <h4 data-i18n="how.assistantExampleTitle">
+                    Ask in your own words
+                  </h4>
+                  <p data-i18n="flowAI.step1Body">
+                    Get answers from the manuals, invoices, notes, and completed work you have saved with an asset.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <strong data-i18n="library.knowledge.understanding">
+                    Understand the history
+                  </strong>
+                  <p data-i18n="library.knowledge.insight">
+                    The owner’s manual and recorded service provide context for the next maintenance review.
+                  </p>
+                  <span data-i18n="library.knowledge.task" class="feature-source">
+                    Review the next maintenance plan
+                  </span>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.recordsDetailTitle">
+                    Suggested next step
+                  </h4>
+                  <p data-i18n="how.recordsDetailBody">
+                    Check the records and adjust the suggestion before adding a task.
                   </p>
                 </figcaption>
               </figure>
             </div>
+            <footer class="feature-chapter-footer">
+              <p class="example-caption" data-i18n="site.example">
+                Illustrative example · sample data
+              </p>
+              <div class="chapter-links">
+                <a href="#records-library">
+                  <span data-i18n="how.recordsLink">
+                    Explore the knowledge base
+                  </span>
+                </a>
+                <a href="/blog/en/family-car-maintenance/" data-blog-article="family-car-maintenance">
+                  <span data-i18n="how.guideLink">
+                    Read the guide
+                  </span>
+                </a>
+              </div>
+            </footer>
           </article>
           <article id="how-plan" class="feature-chapter feature-plan" aria-labelledby="how-plan-title">
             <header class="feature-chapter-heading">
@@ -861,6 +891,183 @@
                   Prepare a maintenance draft from the context you have. Review the suggestions and choose what to confirm.
                 </p>
               </div>
+              <div class="feature-controls" hidden>
+                <button type="button" data-feature-prev aria-controls="how-plan-examples" aria-describedby="how-plan-title" aria-label="Previous examples" data-i18n-aria="how.previous">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button" data-feature-next aria-controls="how-plan-examples" aria-describedby="how-plan-title" aria-label="Next examples" data-i18n-aria="how.next">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </header>
+            <div class="feature-grid" id="how-plan-examples" tabindex="0" role="region" aria-labelledby="how-plan-title">
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <ul class="feature-mini-tasks">
+                    <li>
+                      <span data-i18n="site.taskOil">
+                        Oil and filter service
+                      </span>
+                      <small data-i18n="site.taskOilTime">
+                        About 45 min
+                      </small>
+                    </li>
+                    <li>
+                      <span data-i18n="site.taskCabin">
+                        Replace cabin air filter
+                      </span>
+                      <small data-i18n="site.taskCabinTime">
+                        About 20 min
+                      </small>
+                    </li>
+                    <li>
+                      <span data-i18n="site.taskTires">
+                        Check tire pressure and tread
+                      </span>
+                      <small data-i18n="site.taskTiresTime">
+                        About 15 min
+                      </small>
+                    </li>
+                  </ul>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.planExampleTitle">
+                    See the suggested work
+                  </h4>
+                  <p data-i18n="how.planExampleBody">
+                    Review tasks, time and parts estimates together.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <dl class="feature-mini-facts">
+                    <div>
+                      <dt data-i18n="site.purchaseOil">
+                        Engine oil · 5 L
+                      </dt>
+                      <dd data-i18n="site.purchaseOilPrice">
+                        €48
+                      </dd>
+                    </div>
+                    <div>
+                      <dt data-i18n="site.purchaseOilFilter">
+                        Oil filter
+                      </dt>
+                      <dd data-i18n="site.purchaseOilFilterPrice">
+                        €12
+                      </dd>
+                    </div>
+                    <div>
+                      <dt data-i18n="site.purchaseCabinFilter">
+                        Cabin air filter
+                      </dt>
+                      <dd data-i18n="site.purchaseCabinFilterPrice">
+                        €18
+                      </dd>
+                    </div>
+                  </dl>
+                  <div class="feature-mini-total">
+                    <span data-i18n="site.partsTotalLabel">
+                      Estimated parts total
+                    </span>
+                    <strong data-i18n="site.partsTotal">
+                      €78
+                    </strong>
+                  </div>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="site.shoppingListTitle">
+                    Example purchase list
+                  </h4>
+                  <p data-i18n="site.estimateNote">
+                    Sample time and parts estimates; actual needs and prices vary.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <ol class="feature-mini-review">
+                    <li>
+                      <span data-i18n="how.reviewRecords">
+                        Check the records
+                      </span>
+                    </li>
+                    <li>
+                      <span data-i18n="how.adjustDraft">
+                        Adjust the draft
+                      </span>
+                    </li>
+                    <li>
+                      <span data-i18n="how.confirmPlan">
+                        Confirm your plan
+                      </span>
+                    </li>
+                  </ol>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="how.planDetailTitle">
+                    You decide what to confirm
+                  </h4>
+                  <p data-i18n="how.planDetailBody">
+                    Check the records, adjust the draft, then confirm what fits.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="feature-example">
+                <div class="feature-mini">
+                  <strong data-i18n="smartPlan.calendar.personal">
+                    Your calendar
+                  </strong>
+                  <div class="feature-mini-calendar" aria-hidden="true">
+                    <span class="">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="has-task">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="has-task">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="has-task">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="">
+                    </span>
+                    <span class="">
+                    </span>
+                  </div>
+                </div>
+                <figcaption>
+                  <h4 data-i18n="smartPlan.calendar.title">
+                    Keep your maintenance schedule in sync
+                  </h4>
+                  <p data-i18n="site.calendar">
+                    Export confirmed tasks to your calendar. Connected calendar synchronization is planned.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <footer class="feature-chapter-footer">
+              <p class="example-caption" data-i18n="site.example">
+                Illustrative example · sample data
+              </p>
               <div class="chapter-links">
                 <a href="#product" data-demo-target="plan">
                   <span data-i18n="how.planLink">
@@ -873,128 +1080,10 @@
                   </span>
                 </a>
               </div>
-            </header>
-            <div class="feature-grid">
-              <figure class="feature-example">
-                <div class="feature-preview">
-                  <div class="chapter-plan">
-                    <span class="status-pill" >
-                      <span data-i18n="site.draft" >
-                        Suggested plan · review first
-                      </span >
-                    </span >
-                    <strong class="preview-title" data-i18n="site.planTasksTitle">
-                      Suggested maintenance tasks
-                    </strong>
-                    <ul class="mini-plan-list">
-                      <li>
-                        <span data-i18n="site.taskOil">
-                          Oil and filter service
-                        </span>
-                        <small data-i18n="site.taskOilTime">
-                          About 45 min
-                        </small>
-                      </li>
-                      <li>
-                        <span data-i18n="site.taskCabin">
-                          Replace cabin air filter
-                        </span>
-                        <small data-i18n="site.taskCabinTime">
-                          About 20 min
-                        </small>
-                      </li>
-                      <li>
-                        <span data-i18n="site.taskTires">
-                          Check tire pressure and tread
-                        </span>
-                        <small data-i18n="site.taskTiresTime">
-                          About 15 min
-                        </small>
-                      </li>
-                    </ul>
-                    <p class="mini-plan-total">
-                      <span data-i18n="site.partsTotalLabel">
-                        Estimated parts total
-                      </span>
-                      <bdi data-i18n="site.partsTotal">
-                        €78
-                      </bdi>
-                    </p>
-                    <p class="mini-plan-note" data-i18n="site.estimateNote">
-                      Sample time and parts estimates; actual needs and prices vary.
-                    </p>
-                    <div class="review-rule">
-                      <span data-i18n="site.reviewNote" >
-                        You review every suggestion. Only you decide what becomes part of your plan.
-                      </span >
-                    </div>
-                  </div>
-                </div>
-                <figcaption>
-                  <h4 data-i18n="how.planExampleTitle">
-                    See the suggested work
-                  </h4>
-                  <p data-i18n="how.planExampleBody">
-                    Review tasks, time and parts estimates together.
-                  </p>
-                  <p data-i18n="site.example" class="example-caption">
-                    Illustrative example · sample data
-                  </p>
-                </figcaption>
-              </figure>
-              <figure class="feature-example">
-                <div class="feature-preview">
-                  <ol class="feature-review-list">
-                    <li>
-                      <strong data-i18n="how.reviewRecords">
-                        Check the records
-                      </strong>
-                      <p data-i18n="site.taskMeta">
-                        Check the manual and service history before choosing a date.
-                      </p>
-                    </li>
-                    <li>
-                      <strong data-i18n="how.adjustDraft">
-                        Adjust the draft
-                      </strong>
-                      <p data-i18n="how.adjustDraftBody">
-                        Choose the tasks and details that fit your asset.
-                      </p>
-                    </li>
-                    <li>
-                      <strong data-i18n="how.confirmPlan">
-                        Confirm your plan
-                      </strong>
-                      <p data-i18n="site.reviewNote">
-                        You review every suggestion. Only you decide what becomes part of your plan.
-                      </p>
-                    </li>
-                  </ol>
-                  <a class="feature-demo-link" href="#product" data-demo-target="plan">
-                    <span data-i18n="site.review">
-                      Review plan
-                    </span>
-                  </a>
-                </div>
-                <figcaption>
-                  <h4 data-i18n="how.planDetailTitle">
-                    You decide what to confirm
-                  </h4>
-                  <p data-i18n="how.planDetailBody">
-                    Check the records, adjust the draft, then confirm what fits.
-                  </p>
-                  <p data-i18n="site.example" class="example-caption">
-                    Illustrative example · sample data
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-            <p data-i18n="site.calendar" class="section-note feature-calendar">
-              Export confirmed tasks to your calendar. Connected calendar synchronization is planned.
-            </p>
+            </footer>
           </article>
-        </div>
-      </section>
+          </div>
+          </section>
       <section id="examples" class="section useful-examples">
         <div class="wrap">
           <div class="section-heading">

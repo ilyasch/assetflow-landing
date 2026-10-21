@@ -8,6 +8,24 @@
         "value": "inter",
         "createdAt": "2026-10-14T09:40:12.767Z",
         "reason": "Agent: landing page CSS establishes Inter for body copy with Manrope for display; preserve the existing type system during spacing refinement"
+      },
+      {
+        "rule": "gray-on-color",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T21:00:16.544Z",
+        "reason": "User confirmed faster loading only; retain the incumbent green-tinted text on colored illustrative panels during this performance refinement"
+      },
+      {
+        "rule": "tiny-text",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T21:00:16.685Z",
+        "reason": "User confirmed faster loading only; retain existing compact labels in the illustrative product examples during this performance refinement"
       }
     ]
   },

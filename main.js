@@ -5,6 +5,7 @@
   var cache = {};
   var localeRequest = 0;
   var refreshMarketSpotlight = null;
+  var refreshFeatureTracks = null;
 
   function initialLocale() {
     var requested = new URLSearchParams(window.location.search).get("lang");
@@ -75,6 +76,7 @@
         document.documentElement.lang = locale;
         document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
         localizeDigits(locale);
+        if (refreshFeatureTracks) refreshFeatureTracks();
         document.querySelectorAll("[data-blog-index]").forEach(function (link) {
           link.href = "/blog/" + locale + "/";
         });
@@ -375,11 +377,72 @@
     select(buttons[0], false);
   }
 
+  function initFeatureTracks() {
+    var refreshers = [];
+    document.querySelectorAll(".feature-chapter").forEach(function (chapter) {
+      var track = chapter.querySelector(".feature-grid");
+      var controls = chapter.querySelector(".feature-controls");
+      var previous = controls.querySelector("[data-feature-prev]");
+      var next = controls.querySelector("[data-feature-next]");
+      function rtl() {
+        return document.documentElement.dir === "rtl";
+      }
+      function update() {
+        var bounds = track.getBoundingClientRect();
+        var first = track.firstElementChild.getBoundingClientRect();
+        var last = track.lastElementChild.getBoundingClientRect();
+        controls.hidden = track.scrollWidth <= track.clientWidth + 2;
+        previous.disabled = rtl()
+          ? first.right <= bounds.right + 5
+          : first.left >= bounds.left - 5;
+        next.disabled = rtl()
+          ? last.left >= bounds.left - 5
+          : last.right <= bounds.right + 5;
+      }
+      function move(direction) {
+        var distance = track.firstElementChild.getBoundingClientRect().width
+          + parseFloat(getComputedStyle(track).columnGap);
+        track.scrollBy({
+          left: distance * direction * (rtl() ? -1 : 1),
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? "auto" : "smooth",
+        });
+      }
+      previous.addEventListener("click", function () { move(-1); });
+      next.addEventListener("click", function () { move(1); });
+      track.addEventListener("scroll", update, { passive: true });
+      track.addEventListener("keydown", function (event) {
+        if (event.target !== track) return;
+        if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+          event.preventDefault();
+          move((event.key === "ArrowRight" ? 1 : -1) * (rtl() ? -1 : 1));
+        } else if (event.key === "Home" || event.key === "End") {
+          event.preventDefault();
+          track.scrollTo({
+            left: event.key === "Home" ? 0 : track.scrollWidth * (rtl() ? -1 : 1),
+            behavior: "auto",
+          });
+        }
+      });
+      window.addEventListener("resize", update);
+      if ("ResizeObserver" in window) new ResizeObserver(update).observe(track);
+      refreshers.push(function () {
+        track.scrollTo({left: 0, behavior: "auto"});
+        window.requestAnimationFrame(update);
+      });
+      update();
+    });
+    refreshFeatureTracks = function () {
+      refreshers.forEach(function (refresh) { refresh(); });
+    };
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initPricing();
     initDemo();
     initMarketMatrix();
     initSectionRail();
+    initFeatureTracks();
     document
       .getElementById("lang-picker")
       .addEventListener("change", function (event) {
