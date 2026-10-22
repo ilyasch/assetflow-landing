@@ -150,7 +150,7 @@
     var links = Array.from(document.querySelectorAll("[data-section-link]"));
     var main = document.getElementById("main");
     var hero = document.querySelector(".hero");
-    var desktopRail = window.matchMedia("(min-width: 1200px)");
+    var desktopRail = window.matchMedia("(min-width: 1024px)");
     var sections = links
       .map(function (link) {
         return document.querySelector(link.getAttribute("href"));

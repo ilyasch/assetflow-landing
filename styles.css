@@ -623,7 +623,7 @@ p {
 .section-rail {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .section-rail {
     position: fixed;
     z-index: 20;
@@ -632,7 +632,7 @@ p {
     transform: translateY(-50%);
     display: grid;
     gap: 5px;
-    width: 164px;
+    width: 140px;
     padding: 10px;
     border: 1px solid var(--color-border);
     border-radius: 16px;
@@ -669,8 +669,8 @@ p {
   }
   .section-rail a[aria-current="location"] { font-weight: 650; }
   main.has-section-rail.is-section-rail-active > section > .wrap {
-    width: calc(100% - 230px);
-    margin-inline-start: 198px;
+    width: min(calc(100% - 207px), 1600px);
+    margin-inline-start: max(175px, calc((100% - 1600px + 175px) / 2));
     margin-inline-end: auto;
   }
 }
@@ -1662,9 +1662,6 @@ p {
 @keyframes hero-hub-breathe {
   from { transform: scale(.98); }
   to { transform: scale(1.025); }
-}
-@media (max-width: 1439px) {
-  .section-rail { display: none; }
 }
 @media (min-width: 1500px) {
   .wrap {
