@@ -356,21 +356,25 @@
   },
   "contact": {
     "title": "Renseignez-vous sur une édition",
-    "lead": "Dites-nous ce que vous souhaitez savoir. Envoyez votre message ici et nous vous répondrons par e-mail.",
-    "editionLabel": "Édition",
-    "chooseEdition": "Choisir une édition",
+    "generalTitle": "Contacter AssetFlow",
+    "contactUs": "Nous contacter",
+    "heading": "Contact",
+    "lead": "Envoyez-nous votre question avec ce formulaire. Nous répondrons à l’adresse e-mail indiquée.",
+    "editionLabel": "Sujet",
+    "chooseEdition": "Choisir un sujet",
+    "general": "Question générale",
     "business": "Business",
     "fleet": "Fleet",
     "hospitality": "Hospitality",
     "emailLabel": "Votre adresse e-mail",
     "messageLabel": "Message",
     "send": "Envoyer le message",
-    "recipient": "Votre message sera envoyé à contact@myassetsflow.com. Nous répondrons à l'adresse indiquée.",
+    "recipient": "Votre message sera envoyé à notre équipe. Nous répondrons à l'adresse indiquée.",
     "close": "Fermer",
     "sending": "Envoi en cours…",
     "success": "Merci. Votre message a été envoyé.",
     "error": "Nous n'avons pas pu envoyer votre message. Réessayez ou utilisez le lien e-mail ci-dessous.",
-    "openEmail": "En cas d'échec, ouvrez un e-mail prérempli à contact@myassetsflow.com."
+    "openEmail": "En cas d'échec, ouvrez un brouillon d'e-mail prérempli."
   },
   "security": {
     "title": "Vos données restent protégées et sous votre contrôle",
@@ -420,11 +424,18 @@
   },
   "seo": {
     "title": "AssetFlow | Gestion des biens du foyer et entretien",
-    "description": "Organisez les biens du foyer, conservez reçus et manuels et créez des plans d’entretien avec rappels. Partagez leur historique avec AssetFlow Home."
+    "description": "Organisez les biens du foyer, conservez reçus et manuels et créez des plans d’entretien avec rappels. Partagez leur historique avec AssetFlow Home.",
+    "pricingTitle": "Tarifs AssetFlow Home | Offres pour le foyer",
+    "pricingDescription": "Comparez les offres Free, Plus, Pro et Max d’AssetFlow Home pour les biens et l’entretien du foyer.",
+    "solutionsTitle": "Éditions AssetFlow | Home, Business, Fleet et Hospitality",
+    "solutionsDescription": "Comparez AssetFlow Home aux éditions prévues Business, Fleet et Hospitality."
   },
   "site": {
     "product": "Produit",
     "how": "Comment ça marche",
+    "flowNav": "Flow AI",
+    "recordsNav": "Dossiers",
+    "householdNav": "Foyer",
     "start": "Commencer gratuitement",
     "see": "Découvrir le fonctionnement",
     "menu": "Menu",

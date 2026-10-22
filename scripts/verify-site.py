@@ -100,11 +100,26 @@ for path in articles:
     if loc == 'ar':
         assert '٠' in source or '١' in source or all(not c.isdigit() for c in ''.join(p.text))
 
+marketing_pages = {}
+for section in ('pricing', 'solutions'):
+    marketing_pages[section] = []
+    for loc in LOCALES:
+        path = SITE / section / loc / 'index.html'
+        page = pages[path]
+        assert sum(tag == 'h1' for tag, _ in page.nodes) == 1, path
+        assert any(tag == 'html' and attrs.get('lang') == loc and attrs.get('dir') == ('rtl' if loc == 'ar' else 'ltr') for tag, attrs in page.nodes), path
+        canonical = [attrs['href'] for tag, attrs in page.nodes if tag == 'link' and attrs.get('rel') == 'canonical']
+        assert canonical == [f'https://myassetsflow.com/{section}/{loc}/'], path
+        assert sum(tag == 'link' and attrs.get('hreflang') in LOCALES for tag, attrs in page.nodes) == 6, path
+        canonical_urls.update(canonical)
+        marketing_pages[section].append(page)
+
 sitemap = ET.parse(SITE / 'sitemap.xml')
 urls = {x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 index_urls = {f'https://myassetsflow.com/blog/{loc}/' for loc in LOCALES}
 docs_urls = {f'https://myassetsflow.com/docs/{loc}/' for loc in LOCALES} | {f'https://myassetsflow.com/docs/{loc}/{slug}/' for loc in LOCALES for slug in ('add-an-asset', 'organize-records', 'plan-maintenance')}
-assert urls == canonical_urls | index_urls | docs_urls | {'https://myassetsflow.com/'}, 'Sitemap and canonical pages differ'
+marketing_urls = {f'https://myassetsflow.com/{section}/{loc}/' for section in ('pricing', 'solutions') for loc in LOCALES}
+assert urls == canonical_urls | index_urls | docs_urls | marketing_urls | {'https://myassetsflow.com/'}, 'Sitemap and canonical pages differ'
 home = pages[SITE / 'index.html']
 photos = [(tag, attrs) for tag, attrs in home.nodes if 'vehicle-photo' in attrs.get('src', '') or 'vehicle-photo' in attrs.get('srcset', '')]
 for tag, attrs in photos:
@@ -117,9 +132,10 @@ keys = [a[attr] for _, a in home.nodes for attr in ('data-i18n', 'data-i18n-aria
 # Confirmed/reset states are translated dynamically, so check them as well.
 keys += ['site.confirmation', 'site.confirmed', 'site.draft']
 # The market comparison needs real row/column semantics and explicit availability.
-assert sum(t == 'th' and a.get('scope') == 'col' for t,a in home.nodes) == 5, 'Expected four market columns plus row labels'
-assert sum(t == 'th' and a.get('scope') == 'row' for t,a in home.nodes) == 5, 'Expected five market comparison rows'
-assert any(a.get('class') == 'matrix-region' and a.get('tabindex') == '0' and a.get('role') == 'region' and a.get('aria-labelledby') for _,a in home.nodes), 'Market matrix must support keyboard scrolling and have a name'
+solutions = pages[SITE / 'solutions/en/index.html']
+assert sum(t == 'th' and a.get('scope') == 'col' for t,a in solutions.nodes) == 5, 'Expected four market columns plus row labels'
+assert sum(t == 'th' and a.get('scope') == 'row' for t,a in solutions.nodes) == 5, 'Expected five market comparison rows'
+assert any(a.get('class') == 'matrix-region' and a.get('tabindex') == '0' and a.get('role') == 'region' and a.get('aria-labelledby') for _,a in solutions.nodes), 'Market matrix must support keyboard scrolling and have a name'
 
 for loc in LOCALES:
     catalog = json.loads((SITE / f'locales/{loc}.json').read_text())
@@ -128,6 +144,14 @@ for loc in LOCALES:
         for part in key.split('.'):
             value = value[part]
         assert isinstance(value,str) and value.strip(), (loc,key)
+    for section in ('pricing', 'solutions'):
+        page = pages[SITE / section / loc / 'index.html']
+        page_keys = [attrs[key] for _, attrs in page.nodes for key in ('data-i18n', 'data-i18n-aria') if key in attrs]
+        for key in page_keys:
+            value = catalog
+            for part in key.split('.'):
+                value = value[part]
+            assert isinstance(value, str) and value.strip(), (loc, section, key)
     index = pages[SITE / f'blog/{loc}/index.html']
     assert sum(t == 'h1' for t,_ in index.nodes) == 1, loc
     assert sum(t == 'a' and 'data-blog-id' in a for t,a in index.nodes) == 6, loc

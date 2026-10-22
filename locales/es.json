@@ -356,21 +356,25 @@
   },
   "contact": {
     "title": "Consulta sobre una edición",
-    "lead": "Cuéntanos qué te gustaría saber. Envía el mensaje aquí y te responderemos por correo electrónico.",
-    "editionLabel": "Edición",
-    "chooseEdition": "Elige una edición",
+    "generalTitle": "Contactar con AssetFlow",
+    "contactUs": "Contacto",
+    "heading": "Contacto",
+    "lead": "Envíanos tu pregunta con este formulario. Responderemos al correo electrónico que indiques.",
+    "editionLabel": "Tema",
+    "chooseEdition": "Elige un tema",
+    "general": "Pregunta general",
     "business": "Business",
     "fleet": "Fleet",
     "hospitality": "Hospitality",
     "emailLabel": "Tu correo electrónico",
     "messageLabel": "Mensaje",
     "send": "Enviar mensaje",
-    "recipient": "Tu mensaje se enviará a contact@myassetsflow.com. Responderemos al correo que indiques.",
+    "recipient": "Tu mensaje se enviará a nuestro equipo. Responderemos al correo que indiques.",
     "close": "Cerrar",
     "sending": "Enviando…",
     "success": "Gracias. Tu mensaje se ha enviado.",
     "error": "No se pudo enviar el mensaje. Inténtalo de nuevo o usa el enlace de correo de abajo.",
-    "openEmail": "Si falla el envío, abre un correo preparado para contact@myassetsflow.com."
+    "openEmail": "Si falla el envío, abre un borrador de correo."
   },
   "security": {
     "title": "Tus registros quedan protegidos y bajo tu control",
@@ -420,11 +424,18 @@
   },
   "seo": {
     "title": "AssetFlow | Gestión de bienes del hogar y mantenimiento",
-    "description": "Organiza los bienes del hogar, guarda recibos y manuales y crea planes de mantenimiento con recordatorios. Comparte su historial con AssetFlow Home."
+    "description": "Organiza los bienes del hogar, guarda recibos y manuales y crea planes de mantenimiento con recordatorios. Comparte su historial con AssetFlow Home.",
+    "pricingTitle": "Precios de AssetFlow Home | Planes para el hogar",
+    "pricingDescription": "Compara los planes Free, Plus, Pro y Max de AssetFlow Home para bienes y mantenimiento del hogar.",
+    "solutionsTitle": "Ediciones de AssetFlow | Home, Business, Fleet y Hospitality",
+    "solutionsDescription": "Compara AssetFlow Home con las ediciones previstas Business, Fleet y Hospitality."
   },
   "site": {
     "product": "Producto",
     "how": "Cómo funciona",
+    "flowNav": "Flow AI",
+    "recordsNav": "Registros",
+    "householdNav": "Hogar",
     "start": "Empieza gratis",
     "see": "Descubre cómo funciona",
     "menu": "Menú",

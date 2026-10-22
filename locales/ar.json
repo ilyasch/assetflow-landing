@@ -356,21 +356,25 @@
   },
   "contact": {
     "title": "استفسر عن أحد الإصدارات",
-    "lead": "أخبرنا بما تود معرفته. أرسل رسالتك هنا وسنرد على بريدك الإلكتروني.",
-    "editionLabel": "الإصدار",
-    "chooseEdition": "اختر إصدارًا",
+    "generalTitle": "تواصل مع AssetFlow",
+    "contactUs": "تواصل معنا",
+    "heading": "التواصل",
+    "lead": "أرسل سؤالك عبر هذا النموذج. سنرد على عنوان البريد الإلكتروني الذي تقدمه.",
+    "editionLabel": "الموضوع",
+    "chooseEdition": "اختر موضوعًا",
+    "general": "سؤال عام",
     "business": "Business",
     "fleet": "Fleet",
     "hospitality": "Hospitality",
     "emailLabel": "بريدك الإلكتروني",
     "messageLabel": "الرسالة",
     "send": "إرسال الرسالة",
-    "recipient": "ستُرسل رسالتك إلى contact@myassetsflow.com. سنرد على عنوان البريد الذي أدخلته.",
+    "recipient": "ستُرسل رسالتك إلى فريقنا. سنرد على عنوان البريد الذي أدخلته.",
     "close": "إغلاق",
     "sending": "جارٍ الإرسال…",
     "success": "شكرًا لك. تم إرسال رسالتك.",
     "error": "تعذر إرسال رسالتك. حاول مجددًا أو استخدم رابط البريد أدناه.",
-    "openEmail": "إذا تعذر الإرسال، افتح رسالة مُعدّة إلى contact@myassetsflow.com."
+    "openEmail": "إذا تعذر الإرسال، افتح مسودة بريد إلكتروني مُعدّة مسبقًا."
   },
   "security": {
     "title": "تبقى سجلاتك محمية وتحت سيطرتك",
@@ -420,11 +424,18 @@
   },
   "seo": {
     "title": "AssetFlow | إدارة ممتلكات المنزل وتذكيرات الصيانة",
-    "description": "نظّم ممتلكات المنزل واحفظ الإيصالات والأدلة وأنشئ خطط صيانة ذكية مع تذكيرات. شارك سجل ممتلكاتك مع أفراد الأسرة باستخدام AssetFlow Home."
+    "description": "نظّم ممتلكات المنزل واحفظ الإيصالات والأدلة وأنشئ خطط صيانة ذكية مع تذكيرات. شارك سجل ممتلكاتك مع أفراد الأسرة باستخدام AssetFlow Home.",
+    "pricingTitle": "أسعار AssetFlow Home | خطط للمنزل",
+    "pricingDescription": "قارن بين خطط Free وPlus وPro وMax من AssetFlow Home لممتلكات المنزل وصيانتها.",
+    "solutionsTitle": "إصدارات AssetFlow | Home وBusiness وFleet وHospitality",
+    "solutionsDescription": "قارن AssetFlow Home بالإصدارات المخطط لها Business وFleet وHospitality."
   },
   "site": {
     "product": "المنتج",
     "how": "كيف يعمل",
+    "flowNav": "Flow AI",
+    "recordsNav": "السجلات",
+    "householdNav": "الأسرة",
     "start": "ابدأ مجانًا",
     "see": "اكتشف كيف يعمل",
     "menu": "القائمة",

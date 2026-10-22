@@ -356,21 +356,25 @@
   },
   "contact": {
     "title": "Fragen Sie nach einer Edition",
-    "lead": "Teile uns mit, was du wissen möchtest. Sende deine Nachricht hier; wir antworten per E-Mail.",
-    "editionLabel": "Edition",
-    "chooseEdition": "Edition auswählen",
+    "generalTitle": "AssetFlow kontaktieren",
+    "contactUs": "Kontakt",
+    "heading": "Kontakt",
+    "lead": "Sende uns deine Frage über dieses Formular. Wir antworten an die angegebene E-Mail-Adresse.",
+    "editionLabel": "Thema",
+    "chooseEdition": "Thema auswählen",
+    "general": "Allgemeine Frage",
     "business": "Business",
     "fleet": "Fleet",
     "hospitality": "Hospitality",
     "emailLabel": "Ihre E-Mail-Adresse",
     "messageLabel": "Nachricht",
     "send": "Nachricht senden",
-    "recipient": "Deine Nachricht geht an contact@myassetsflow.com. Wir antworten an die angegebene E-Mail-Adresse.",
+    "recipient": "Deine Nachricht geht an unser Team. Wir antworten an die angegebene E-Mail-Adresse.",
     "close": "Schließen",
     "sending": "Wird gesendet…",
     "success": "Danke. Deine Nachricht wurde gesendet.",
     "error": "Deine Nachricht konnte nicht gesendet werden. Versuche es erneut oder nutze den E-Mail-Link unten.",
-    "openEmail": "Falls der Versand fehlschlägt, öffne eine vorausgefüllte E-Mail an contact@myassetsflow.com."
+    "openEmail": "Falls der Versand fehlschlägt, öffne einen vorausgefüllten E-Mail-Entwurf."
   },
   "security": {
     "title": "Deine Aufzeichnungen bleiben geschützt und unter deiner Kontrolle",
@@ -420,11 +424,18 @@
   },
   "seo": {
     "title": "AssetFlow | Haushaltsinventar und Wartungserinnerungen",
-    "description": "Organisiere Haushaltsgegenstände, bewahre Belege und Handbücher auf und erstelle Wartungspläne mit Erinnerungen. Teile die Historie mit AssetFlow Home."
+    "description": "Organisiere Haushaltsgegenstände, bewahre Belege und Handbücher auf und erstelle Wartungspläne mit Erinnerungen. Teile die Historie mit AssetFlow Home.",
+    "pricingTitle": "AssetFlow Home Preise | Tarife für den Haushalt",
+    "pricingDescription": "Vergleiche die Free-, Plus-, Pro- und Max-Tarife von AssetFlow Home für Haushaltsgegenstände und Wartung.",
+    "solutionsTitle": "AssetFlow Editionen | Home, Business, Fleet und Hospitality",
+    "solutionsDescription": "Vergleiche AssetFlow Home mit den geplanten Editionen Business, Fleet und Hospitality."
   },
   "site": {
     "product": "Produkt",
     "how": "So funktioniert’s",
+    "flowNav": "Flow AI",
+    "recordsNav": "Aufzeichnungen",
+    "householdNav": "Haushalt",
     "start": "Kostenlos starten",
     "see": "So funktioniert’s",
     "menu": "Menü",

@@ -27,9 +27,10 @@ project root so Wrangler can bundle it with the static deployment. The deploy
 job checks out the source alongside the packaged artifact. There is no
 application build step.
 
-## Edition enquiry email
+## Contact form email
 
-The localized edition enquiry form posts to the `/api/contact` Pages Function.
+The localized contact form posts to the `/api/contact` Pages Function. It
+supports general questions and edition enquiries.
 The Function validates the same-origin JSON submission and sends it through
 Resend to `contact@myassetsflow.com`, with the visitor's address as `Reply-To`.
 The existing Email Routing rule forwards that received message to its

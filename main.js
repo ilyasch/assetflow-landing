@@ -10,6 +10,8 @@
   function initialLocale() {
     var requested = new URLSearchParams(window.location.search).get("lang");
     if (LOCALES.indexOf(requested) !== -1) return requested;
+    var localizedPage = window.location.pathname.match(/^\/(pricing|solutions)\/([a-z]{2})\//);
+    if (localizedPage && LOCALES.indexOf(localizedPage[2]) !== -1) return localizedPage[2];
     try {
       var stored = localStorage.getItem(STORAGE_KEY);
       if (LOCALES.indexOf(stored) !== -1) return stored;
@@ -90,9 +92,23 @@
         document.querySelectorAll("[data-doc-article]").forEach(function (link) {
           link.href = "/docs/" + locale + "/" + link.dataset.docArticle + "/";
         });
+        document.querySelectorAll("[data-pricing-index]").forEach(function (link) {
+          link.href = "/pricing/" + locale + "/";
+        });
+        document.querySelectorAll("[data-solutions-index]").forEach(function (link) {
+          link.href = "/solutions/" + locale + "/";
+        });
+        document.querySelectorAll("[data-home-product]").forEach(function (link) {
+          link.href = "/?lang=" + locale + "#product";
+        });
+        if (document.body.dataset.localizedPage) {
+          window.history.replaceState(null, "", "/" + document.body.dataset.localizedPage + "/" + locale + "/");
+        }
         document.getElementById("lang-picker").value = locale;
         if (dict.seo) {
-          document.title = dict.seo.title;
+          var title = dict.seo[document.body.dataset.seoTitleKey || "title"] || dict.seo.title;
+          var description = dict.seo[document.body.dataset.seoDescriptionKey || "description"] || dict.seo.description;
+          document.title = title;
           [
             "description",
             "og:description",
@@ -104,10 +120,7 @@
               'meta[name="' + key + '"], meta[property="' + key + '"]',
             );
             if (meta)
-              meta.content =
-                key.indexOf("title") !== -1
-                  ? dict.seo.title
-                  : dict.seo.description;
+              meta.content = key.indexOf("title") !== -1 ? title : description;
           });
         }
         try {
@@ -126,7 +139,9 @@
   }
 
   function initPricing() {
-    document.querySelector(".pricing").classList.add("is-interactive");
+    var pricing = document.querySelector(".pricing");
+    if (!pricing) return;
+    pricing.classList.add("is-interactive");
     var buttons = document.querySelectorAll("[data-period]");
     buttons.forEach(function (button) {
       button.setAttribute(
@@ -210,6 +225,7 @@
 
   function initDemo() {
     var demo = document.querySelector(".ownership-demo");
+    if (!demo) return;
     var tabs = Array.from(demo.querySelectorAll("[data-demo]"));
     var panels = demo.querySelectorAll(".demo-panel");
     var tablist = demo.querySelector(".demo-tabs");
@@ -458,6 +474,7 @@
     var edition = form.elements.edition;
     var status = document.getElementById("contact-status");
     var mailtoLink = document.getElementById("contact-mailto-link");
+    var title = document.getElementById("contact-title");
     var submit = form.querySelector('[type="submit"]');
     var lastTrigger;
     var idempotencyKey = null;
@@ -466,7 +483,10 @@
     }
     function open(trigger) {
       lastTrigger = trigger;
-      edition.value = trigger.dataset.edition || "";
+      var general = trigger.hasAttribute("data-general-contact");
+      edition.value = general ? "General" : (trigger.dataset.edition || "");
+      title.dataset.i18n = general ? "contact.generalTitle" : "contact.title";
+      title.textContent = contactText(title.dataset.i18n, general ? "Contact AssetFlow" : "Ask about an edition");
       status.textContent = "";
       mailtoLink.hidden = true;
       delete status.dataset.i18n;
@@ -476,6 +496,10 @@
     }
     document.querySelectorAll("[data-contact-open]").forEach(function (trigger) {
       trigger.addEventListener("click", function () {
+        if (trigger.hasAttribute("data-general-contact")) {
+          open(trigger);
+          return;
+        }
         var market = document.querySelector("[data-market-interaction]");
         var selected = market && market.querySelector('[data-market][aria-pressed="true"]');
         if (selected && selected.dataset.market !== "home") {

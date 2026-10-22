@@ -36,7 +36,7 @@ Arabic. The public landing page switches languages through its selector.
 ## Pricing and access
 
 Free and paid Home plans are described on the
-[current pricing section](https://myassetsflow.com/#pricing). Active asset
+[current pricing page](https://myassetsflow.com/pricing/en/). Active asset
 allowances, AI credits, and household member seats vary by plan. Check the
 current page for prices and limits.
 

@@ -1,6 +1,6 @@
 const DESTINATION = "contact@myassetsflow.com";
 const DEFAULT_FROM = "AssetFlow <contact@myassetsflow.com>";
-const EDITIONS = new Set(["Business", "Fleet", "Hospitality"]);
+const EDITIONS = new Set(["General", "Business", "Fleet", "Hospitality"]);
 const attempts = new Map();
 
 function json(body, status = 200) {

@@ -14,7 +14,8 @@ and Arabic are supported through the website's language selector.
 
 - [Product overview](https://myassetsflow.com/index.md): Plain Markdown summary of the public landing page for AI assistants.
 - [Landing page](https://myassetsflow.com/): Current public features, edition availability, and pricing.
-- [Pricing](https://myassetsflow.com/#pricing): Current plan details and allowances; check this page rather than assuming prices.
+- [Pricing](https://myassetsflow.com/pricing/en/): Current plan details and allowances; check this page rather than assuming prices.
+- [Solutions](https://myassetsflow.com/solutions/en/): Localized comparison of Home, Business, Fleet and Hospitality editions.
 
 ## Application and policies
 

@@ -74,12 +74,16 @@ their language links navigate directly to equivalent translated pages.
 
 ## Local preview
 
-Because `main.js` fetches locale JSON files, open it through a local static
-server rather than a `file://` URL (browsers block `fetch` on `file://`):
+Build the publishable site first, then serve `dist/`. The package step generates
+the localized Pricing and Solutions routes there; serving the repository root
+skips those generated pages and leaves the untrimmed source homepage visible.
+Because `main.js` fetches locale JSON files, use a local static server rather
+than a `file://` URL (browsers block `fetch` on `file://`):
 
 ```bash
 cd assetflow-landing
-python3 -m http.server 8080
+bash scripts/package-site.sh
+python3 -m http.server 8080 --directory dist
 # then open http://localhost:8080
 ```
 

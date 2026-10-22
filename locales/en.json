@@ -356,21 +356,25 @@
   },
   "contact": {
     "title": "Ask about an edition",
-    "lead": "Tell us what you would like to know. Send your message here and we’ll reply to your email.",
-    "editionLabel": "Edition",
-    "chooseEdition": "Choose an edition",
+    "generalTitle": "Contact AssetFlow",
+    "contactUs": "Contact us",
+    "heading": "Contact",
+    "lead": "Send us your question using this form. We’ll reply to the email address you provide.",
+    "editionLabel": "Topic",
+    "chooseEdition": "Choose a topic",
+    "general": "General question",
     "business": "Business",
     "fleet": "Fleet",
     "hospitality": "Hospitality",
     "emailLabel": "Your email",
     "messageLabel": "Message",
     "send": "Send message",
-    "recipient": "Your message goes to contact@myassetsflow.com. We’ll reply to the email you provide.",
+    "recipient": "Your message goes to our team. We’ll reply to the email you provide.",
     "close": "Close",
     "sending": "Sending…",
     "success": "Thanks. Your message was sent.",
     "error": "We couldn’t send your message. Please try again or use the email link below.",
-    "openEmail": "If sending fails, open a prefilled email to contact@myassetsflow.com."
+    "openEmail": "If sending fails, open a prefilled email draft."
   },
   "security": {
     "title": "Your records stay protected and under your control",
@@ -420,11 +424,18 @@
   },
   "seo": {
     "title": "AssetFlow | Home Asset Management & Maintenance Reminders",
-    "description": "Organize household assets, keep receipts and manuals together, and create smart maintenance plans with reminders. Share ownership history with AssetFlow Home."
+    "description": "Organize household assets, keep receipts and manuals together, and create smart maintenance plans with reminders. Share ownership history with AssetFlow Home.",
+    "pricingTitle": "AssetFlow Home Pricing | Plans for Household Assets",
+    "pricingDescription": "Compare AssetFlow Home Free, Plus, Pro and Max plans for household assets and maintenance.",
+    "solutionsTitle": "AssetFlow Editions | Home, Business, Fleet & Hospitality",
+    "solutionsDescription": "Compare AssetFlow Home with planned Business, Fleet and Hospitality editions."
   },
   "site": {
     "product": "Product",
     "how": "How it works",
+    "flowNav": "Flow AI",
+    "recordsNav": "Records",
+    "householdNav": "Household",
     "start": "Start free",
     "see": "See how it works",
     "menu": "Menu",
