@@ -29,11 +29,19 @@ application build step.
 
 ## Edition enquiry email
 
-The localized edition enquiry form opens a prefilled `mailto:` draft addressed
-to `contact@myassetsflow.com` in the visitor's email app. The visitor reviews
-and sends the draft; the existing Email Routing rule can then forward the
-incoming message to its configured destination. This flow does not use a Pages
-Function or require Cloudflare Email Sending credentials.
+The localized edition enquiry form posts to the `/api/contact` Pages Function.
+The Function validates the same-origin JSON submission and sends it through
+Resend to `contact@myassetsflow.com`, with the visitor's address as `Reply-To`.
+The existing Email Routing rule forwards that received message to its
+configured destination. Resend's API key is only read by the Function and must
+be configured as the encrypted Pages secret `RESEND_API_KEY`; never expose it
+in browser JavaScript. The default sender is
+`AssetFlow <contact@myassetsflow.com>`, on the verified production Resend
+domain. The app's authentication mail continues to use its separate
+`auth.myassetsflow.app` domain. Optionally set the plain-text
+Pages variable `RESEND_FROM` to another sender on a verified Resend domain.
+If Resend is unavailable or not configured, the form provides a prefilled
+`mailto:` fallback.
 
 ## Verify before moving DNS
 

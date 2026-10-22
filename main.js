@@ -458,7 +458,9 @@
     var edition = form.elements.edition;
     var status = document.getElementById("contact-status");
     var mailtoLink = document.getElementById("contact-mailto-link");
+    var submit = form.querySelector('[type="submit"]');
     var lastTrigger;
+    var idempotencyKey = null;
     function contactText(key, fallbackText) {
       return valueAt(cache[document.documentElement.lang] || cache.en || {}, key) || fallbackText;
     }
@@ -489,17 +491,50 @@
     dialog.addEventListener("close", function () {
       if (lastTrigger) lastTrigger.focus();
     });
+    form.addEventListener("input", function () { idempotencyKey = null; });
+    form.addEventListener("change", function () { idempotencyKey = null; });
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       if (!form.reportValidity()) return;
+      if (!idempotencyKey) idempotencyKey = crypto.randomUUID();
       var subject = "AssetFlow " + edition.value.trim() + " enquiry";
       var body = "Edition: " + edition.value.trim() + "\nReply to: " + form.elements.email.value.trim() + "\n\n" + form.elements.message.value.trim();
       mailtoLink.href = "mailto:contact@myassetsflow.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-      status.dataset.i18n = "contact.mailtoNotice";
-      status.textContent = contactText("contact.mailtoNotice", "Your email app should open with a draft. Review and send it there.");
-      status.removeAttribute("data-state");
-      mailtoLink.hidden = false;
-      window.location.href = mailtoLink.href;
+      var values = {
+        edition: edition.value.trim(),
+        email: form.elements.email.value.trim(),
+        message: form.elements.message.value.trim(),
+        website: form.elements.website.value,
+      };
+      submit.disabled = true;
+      status.dataset.i18n = "contact.sending";
+      status.textContent = contactText("contact.sending", "Sending…");
+      status.dataset.state = "sending";
+      mailtoLink.hidden = true;
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Idempotency-Key": idempotencyKey },
+        body: JSON.stringify(values),
+      }).then(function (response) {
+        if (!response.ok) throw new Error("send failed");
+        status.dataset.i18n = "contact.success";
+        status.textContent = contactText("contact.success", "Thanks. Your message was sent.");
+        status.dataset.state = "success";
+        form.reset();
+        edition.value = values.edition;
+        idempotencyKey = null;
+        mailtoLink.hidden = true;
+      }).catch(function () {
+        var subject = "AssetFlow " + values.edition + " enquiry";
+        var body = "Edition: " + values.edition + "\nReply to: " + values.email + "\n\n" + values.message;
+        mailtoLink.href = "mailto:contact@myassetsflow.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        status.dataset.i18n = "contact.error";
+        status.textContent = contactText("contact.error", "We couldn’t send your message. Please try again or use the email link below.");
+        status.dataset.state = "error";
+        mailtoLink.hidden = false;
+      }).finally(function () {
+        submit.disabled = false;
+      });
     });
   }
 

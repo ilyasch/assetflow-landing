@@ -356,7 +356,7 @@
   },
   "contact": {
     "title": "Renseignez-vous sur une édition",
-    "lead": "Dites-nous ce que vous souhaitez savoir. Votre application de messagerie ouvrira un brouillon destiné à l'équipe AssetFlow.",
+    "lead": "Dites-nous ce que vous souhaitez savoir. Envoyez votre message ici et nous vous répondrons par e-mail.",
     "editionLabel": "Édition",
     "chooseEdition": "Choisir une édition",
     "business": "Business",
@@ -364,11 +364,13 @@
     "hospitality": "Hospitality",
     "emailLabel": "Votre adresse e-mail",
     "messageLabel": "Message",
-    "send": "Ouvrir la messagerie",
-    "recipient": "Votre application de messagerie ouvrira un brouillon pour contact@myassetsflow.com.",
+    "send": "Envoyer le message",
+    "recipient": "Votre message sera envoyé à contact@myassetsflow.com. Nous répondrons à l'adresse indiquée.",
     "close": "Fermer",
-    "mailtoNotice": "Votre application de messagerie devrait ouvrir un brouillon. Vérifiez-le puis envoyez-le depuis cette application.",
-    "openEmail": "Si rien ne s'est ouvert, ouvrez l'e-mail prérempli."
+    "sending": "Envoi en cours…",
+    "success": "Merci. Votre message a été envoyé.",
+    "error": "Nous n'avons pas pu envoyer votre message. Réessayez ou utilisez le lien e-mail ci-dessous.",
+    "openEmail": "En cas d'échec, ouvrez un e-mail prérempli à contact@myassetsflow.com."
   },
   "security": {
     "title": "Vos données restent protégées et sous votre contrôle",

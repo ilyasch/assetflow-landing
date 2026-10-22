@@ -356,7 +356,7 @@
   },
   "contact": {
     "title": "Consulta sobre una edición",
-    "lead": "Cuéntanos qué te gustaría saber. Tu aplicación de correo abrirá un borrador dirigido al equipo de AssetFlow.",
+    "lead": "Cuéntanos qué te gustaría saber. Envía el mensaje aquí y te responderemos por correo electrónico.",
     "editionLabel": "Edición",
     "chooseEdition": "Elige una edición",
     "business": "Business",
@@ -364,11 +364,13 @@
     "hospitality": "Hospitality",
     "emailLabel": "Tu correo electrónico",
     "messageLabel": "Mensaje",
-    "send": "Abrir aplicación de correo",
-    "recipient": "Tu aplicación de correo abrirá un borrador para contact@myassetsflow.com.",
+    "send": "Enviar mensaje",
+    "recipient": "Tu mensaje se enviará a contact@myassetsflow.com. Responderemos al correo que indiques.",
     "close": "Cerrar",
-    "mailtoNotice": "Tu aplicación de correo debería abrir un borrador. Revísalo y envíalo desde allí.",
-    "openEmail": "Si no se abrió, abre el correo ya preparado."
+    "sending": "Enviando…",
+    "success": "Gracias. Tu mensaje se ha enviado.",
+    "error": "No se pudo enviar el mensaje. Inténtalo de nuevo o usa el enlace de correo de abajo.",
+    "openEmail": "Si falla el envío, abre un correo preparado para contact@myassetsflow.com."
   },
   "security": {
     "title": "Tus registros quedan protegidos y bajo tu control",

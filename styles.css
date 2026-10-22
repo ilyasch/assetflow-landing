@@ -80,7 +80,10 @@ body {
 .contact-close svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
 .contact-submit { justify-self: start; margin-block-start: 4px; }
 .contact-status { min-height: 1.5em; color: var(--color-text); }
+.contact-status[data-state="error"] { color: #9c3328; }
+.contact-status[data-state="success"] { color: #145f4d; }
 .contact-recipient { font-size: .8rem; }
+.contact-trap { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 @media (max-width: 540px) { .contact-form { padding: 28px 20px; } .contact-submit { width: 100%; } }
 a {
   color: inherit;
