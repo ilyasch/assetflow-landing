@@ -669,7 +669,7 @@ p {
   }
   .section-rail a[aria-current="location"] { font-weight: 650; }
   main.has-section-rail.is-section-rail-active > section > .wrap {
-    width: min(calc(100% - 230px), 1280px);
+    width: calc(100% - 230px);
     margin-inline-start: 198px;
     margin-inline-end: auto;
   }
