@@ -4,7 +4,8 @@
     "editions": "Éditions",
     "homeFeatures": "Fonctions Home",
     "pricing": "Tarifs",
-    "blogs": "Blog"
+    "blogs": "Blog",
+    "docs": "Guides du produit"
   },
   "hero": {
     "headline": "Soyez la personne qui sait toujours ce qui doit être fait ensuite.",
@@ -351,7 +352,24 @@
       "feature4": "Gestion de flotte multi-tenant compatible télématique"
     },
     "b2bNote": "Les éditions B2B d'AssetFlow sont actuellement en aperçu privé et proposeront des grilles tarifaires verticales spécifiques.",
-    "contactLinkedIn": "Renseignez-vous sur une édition sur LinkedIn"
+    "contactEdition": "Renseignez-vous sur une édition"
+  },
+  "contact": {
+    "title": "Renseignez-vous sur une édition",
+    "lead": "Dites-nous ce que vous souhaitez savoir. Votre message sera envoyé à l’équipe AssetFlow.",
+    "editionLabel": "Édition",
+    "chooseEdition": "Choisir une édition",
+    "business": "Business",
+    "fleet": "Fleet",
+    "hospitality": "Hospitality",
+    "emailLabel": "Votre adresse e-mail",
+    "messageLabel": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours…",
+    "success": "Message envoyé. Nous vous répondrons.",
+    "error": "Le message n’a pas pu être envoyé. Réessayez.",
+    "recipient": "Envoyé à contact@myassetsflow.com",
+    "close": "Fermer"
   },
   "security": {
     "title": "Vos données restent protégées et sous votre contrôle",

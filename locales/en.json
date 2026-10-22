@@ -4,7 +4,8 @@
     "editions": "Editions",
     "homeFeatures": "Home Edition",
     "pricing": "Pricing",
-    "blogs": "Blog"
+    "blogs": "Blog",
+    "docs": "Product guides"
   },
   "hero": {
     "headline": "Be the person who always knows what your things need next.",
@@ -351,7 +352,24 @@
       "feature4": "Multi-tenant fleet management & telematics ready"
     },
     "b2bNote": "AssetFlow B2B editions are currently in private preview and will feature separate vertical pricing models and dedicated tenant provisioning.",
-    "contactLinkedIn": "Ask about an edition on LinkedIn"
+    "contactEdition": "Ask about an edition"
+  },
+  "contact": {
+    "title": "Ask about an edition",
+    "lead": "Tell us what you would like to know. Your message will go to the AssetFlow team.",
+    "editionLabel": "Edition",
+    "chooseEdition": "Choose an edition",
+    "business": "Business",
+    "fleet": "Fleet",
+    "hospitality": "Hospitality",
+    "emailLabel": "Your email",
+    "messageLabel": "Message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Message sent. We’ll be in touch.",
+    "error": "We couldn’t send your message. Please try again.",
+    "recipient": "Sent to contact@myassetsflow.com",
+    "close": "Close"
   },
   "security": {
     "title": "Your records stay protected and under your control",

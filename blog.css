@@ -14,6 +14,10 @@
 .blogs {
   scroll-margin-top: 110px;
 }
+.docs-list { max-width: 850px; margin: 0; padding: 0; list-style: none; border-block-start: 1px solid var(--color-border); }
+.docs-list li { padding-block: 26px; border-block-end: 1px solid var(--color-border); }
+.docs-list a { color: var(--color-text); font-family: var(--font-display); font-size: clamp(1.35rem, 2.5vw, 1.8rem); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+.docs-list p { max-width: 65ch; margin-block-start: 7px; }
 .blog-section-intro {
   max-width: 760px;
   margin-block-end: 42px;

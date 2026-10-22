@@ -4,7 +4,8 @@
     "editions": "الإصدارات",
     "homeFeatures": "ميزات Home",
     "pricing": "الأسعار",
-    "blogs": "المدونة"
+    "blogs": "المدونة",
+    "docs": "أدلة المنتج"
   },
   "hero": {
     "headline": "كن الشخص الذي يعرف دائمًا ما يحتاج إلى اهتمام بعد ذلك.",
@@ -351,7 +352,24 @@
       "feature4": "إدارة أساطيل متعددة المستأجرين مهيأة لأنظمة التتبع"
     },
     "b2bNote": "إصدارات AssetFlow للشركات متوفرة حالياً في مرحلة المعاينة الخاصة وستتضمن نماذج تسعير مخصصة لكل قطاع.",
-    "contactLinkedIn": "استفسر عن إحدى النسخ عبر LinkedIn"
+    "contactEdition": "استفسر عن إحدى الإصدارات"
+  },
+  "contact": {
+    "title": "استفسر عن أحد الإصدارات",
+    "lead": "أخبرنا بما تريد معرفته. ستصل رسالتك إلى فريق AssetFlow.",
+    "editionLabel": "الإصدار",
+    "chooseEdition": "اختر إصدارًا",
+    "business": "Business",
+    "fleet": "Fleet",
+    "hospitality": "Hospitality",
+    "emailLabel": "بريدك الإلكتروني",
+    "messageLabel": "الرسالة",
+    "send": "إرسال الرسالة",
+    "sending": "جارٍ الإرسال…",
+    "success": "تم إرسال الرسالة. سنتواصل معك.",
+    "error": "تعذر إرسال الرسالة. حاول مرة أخرى.",
+    "recipient": "تُرسل إلى contact@myassetsflow.com",
+    "close": "إغلاق"
   },
   "security": {
     "title": "تبقى سجلاتك محمية وتحت سيطرتك",

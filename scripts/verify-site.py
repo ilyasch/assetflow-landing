@@ -103,7 +103,8 @@ for path in articles:
 sitemap = ET.parse(SITE / 'sitemap.xml')
 urls = {x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 index_urls = {f'https://myassetsflow.com/blog/{loc}/' for loc in LOCALES}
-assert urls == canonical_urls | index_urls | {'https://myassetsflow.com/'}, 'Sitemap and canonical pages differ'
+docs_urls = {f'https://myassetsflow.com/docs/{loc}/' for loc in LOCALES} | {f'https://myassetsflow.com/docs/{loc}/{slug}/' for loc in LOCALES for slug in ('add-an-asset', 'organize-records', 'plan-maintenance')}
+assert urls == canonical_urls | index_urls | docs_urls | {'https://myassetsflow.com/'}, 'Sitemap and canonical pages differ'
 home = pages[SITE / 'index.html']
 photos = [(tag, attrs) for tag, attrs in home.nodes if 'vehicle-photo' in attrs.get('src', '') or 'vehicle-photo' in attrs.get('srcset', '')]
 for tag, attrs in photos:
@@ -135,5 +136,14 @@ for loc in LOCALES:
     assert canonical == [f'https://myassetsflow.com/blog/{loc}/'], loc
     content = json.loads((ROOT / f'content/blog/{loc}.json').read_text())
     assert catalog['nav']['blogs'] == content['ui']['blogs'], f'Stale header label: {loc}'
+    docs = pages[SITE / f'docs/{loc}/index.html']
+    assert sum(tag == 'a' and f'/docs/{loc}/' in attrs.get('href', '') and attrs['href'].rstrip('/').count('/') == 3 for tag, attrs in docs.nodes) == 3, f'Expected three product guides: {loc}'
+    assert any(tag == 'html' and attrs.get('lang') == loc and attrs.get('dir') == ('rtl' if loc == 'ar' else 'ltr') for tag, attrs in docs.nodes)
+    assert sum(tag == 'a' and attrs.get('hreflang') in LOCALES for tag, attrs in docs.nodes) == 6
+    for slug in ('add-an-asset', 'organize-records', 'plan-maintenance'):
+        doc = pages[SITE / f'docs/{loc}/{slug}/index.html']
+        assert sum(tag == 'h1' for tag, _ in doc.nodes) == 1
+        assert any(tag == 'html' and attrs.get('lang') == loc and attrs.get('dir') == ('rtl' if loc == 'ar' else 'ltr') for tag, attrs in doc.nodes)
+        assert len([attrs for tag, attrs in doc.nodes if tag == 'link' and attrs.get('hreflang') in LOCALES]) == 6
 assert 'blogs' not in home.ids, 'Homepage must contain only the Blog entry link, not article previews'
 print(f'Public artifact verified: {len(articles)} articles, {len(urls)} sitemap entries, {checked} local references, six locale catalogs.')

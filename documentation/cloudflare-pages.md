@@ -22,7 +22,30 @@ Pull requests validate JavaScript syntax, all six locale JSON files, and package
 the static assets without deployment credentials. Pushes to `main` deploy that
 same artifact to production. Manual runs deploy only when run from `main`.
 Only public files are copied to `dist/`; `.git`, documentation, scripts, and the
-GitHub Pages `CNAME` file are excluded. There is no application build step.
+GitHub Pages `CNAME` file are excluded. Pages Function source stays at the
+project root so Wrangler can bundle it with the static deployment. The deploy
+job checks out the source alongside the packaged artifact. There is no
+application build step.
+
+## Edition enquiry email
+
+The Pages Function at `/api/contact` sends edition enquiries through Cloudflare
+Email Service. Configure the following production Pages variables and secrets
+before expecting the form to send:
+
+- Variable `CF_ACCOUNT_ID`: the Cloudflare account ID.
+- Variable `CF_EMAIL_FROM`: a sender address on a domain onboarded for Email
+  Sending, such as `website@myassetsflow.com` after domain setup.
+- Secret `CF_EMAIL_API_TOKEN`: a Cloudflare API token with Email Sending
+  permission for the account.
+
+Email Routing receives and forwards mail; it does not by itself enable website
+sending. Email Sending is a separate service and the account must be entitled
+to send to `contact@myassetsflow.com`. Cloudflare currently allows sending to
+verified destination addresses on Free plans; arbitrary recipients require a
+Workers Paid plan. Verify the destination and sender in Cloudflare before the
+first hosted form acceptance check. The API token is read only by the Pages
+Function and is never included in the static site artifact.
 
 ## Verify before moving DNS
 

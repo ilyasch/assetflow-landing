@@ -11,6 +11,7 @@ for file in robots.txt sitemap.xml llms.txt index.md _headers _redirects 404.htm
   fi
 done
 python3 scripts/build-blog.py --output dist
+python3 scripts/build-docs.py --output dist
 node --check main.js
 python3 - <<'PY'
 import json

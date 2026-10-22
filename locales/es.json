@@ -4,7 +4,8 @@
     "editions": "Ediciones",
     "homeFeatures": "Funciones Home",
     "pricing": "Precios",
-    "blogs": "Blog"
+    "blogs": "Blog",
+    "docs": "Guías del producto"
   },
   "hero": {
     "headline": "Sé la persona que siempre sabe qué necesita atención.",
@@ -351,7 +352,24 @@
       "feature4": "Gestión de flotas multi-tenant lista para telemática"
     },
     "b2bNote": "Las ediciones B2B de AssetFlow están actualmente en vista previa privada y contarán con modelos de precios verticales dedicados.",
-    "contactLinkedIn": "Consulta sobre una edición en LinkedIn"
+    "contactEdition": "Consulta sobre una edición"
+  },
+  "contact": {
+    "title": "Consulta sobre una edición",
+    "lead": "Cuéntanos qué te gustaría saber. Tu mensaje llegará al equipo de AssetFlow.",
+    "editionLabel": "Edición",
+    "chooseEdition": "Elige una edición",
+    "business": "Business",
+    "fleet": "Fleet",
+    "hospitality": "Hospitality",
+    "emailLabel": "Tu correo electrónico",
+    "messageLabel": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": "Mensaje enviado. Nos pondremos en contacto.",
+    "error": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
+    "recipient": "Enviado a contact@myassetsflow.com",
+    "close": "Cerrar"
   },
   "security": {
     "title": "Tus registros quedan protegidos y bajo tu control",

@@ -121,6 +121,7 @@
           ><a data-i18n="site.how" href="#how-it-works">How it works</a
           ><a href="#editions" data-i18n="site.solutions">Solutions</a
           ><a data-i18n="nav.pricing" href="#pricing">Pricing</a
+          ><a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Product guides</a
           ><a data-i18n="nav.blogs" href="/blog/en/" data-blog-index>Blog</a>
         </nav>
         <div class="header-actions">
@@ -150,6 +151,7 @@
             ><a data-i18n="site.how" href="#how-it-works">How it works</a
             ><a href="#editions" data-i18n="site.solutions">Solutions</a
             ><a data-i18n="nav.pricing" href="#pricing">Pricing</a
+            ><a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Product guides</a
             ><a data-i18n="nav.blogs" href="/blog/en/" data-blog-index>Blog</a>
           </nav>
         </details>
@@ -705,7 +707,7 @@
                     Explore the asset overview
                   </span>
                 </a>
-                <a href="/blog/en/family-car-maintenance/" data-blog-article="family-car-maintenance">
+                <a href="/docs/en/add-an-asset/" data-doc-article="add-an-asset">
                   <span data-i18n="how.guideLink">
                     Read the guide
                   </span>
@@ -853,7 +855,7 @@
                     Explore the knowledge base
                   </span>
                 </a>
-                <a href="/blog/en/family-car-maintenance/" data-blog-article="family-car-maintenance">
+                <a href="/docs/en/organize-records/" data-doc-article="organize-records">
                   <span data-i18n="how.guideLink">
                     Read the guide
                   </span>
@@ -1054,7 +1056,7 @@
                     Explore smart plans
                   </span>
                 </a>
-                <a href="/blog/en/used-car-no-service-history/" data-blog-article="used-car-no-service-history">
+                <a href="/docs/en/plan-maintenance/" data-doc-article="plan-maintenance">
                   <span data-i18n="how.guideLink">
                     Read the guide
                   </span>
@@ -1582,7 +1584,7 @@
             </div>
             <div class="enterprise-pricing-actions">
               <a class="btn btn-outline" href="#editions" data-i18n="pricing.compareEditions">Compare planned editions</a>
-              <a class="btn btn-primary" href="https://www.linkedin.com/company/myassetsflow" target="_blank" rel="noopener noreferrer" data-i18n="pricing.contactLinkedIn">Ask about an edition on LinkedIn</a>
+              <button class="btn btn-primary" type="button" data-contact-open data-i18n="pricing.contactEdition">Ask about an edition</button>
             </div>
           </aside>
         </div>
@@ -1816,7 +1818,7 @@
           </div>
           <div class="market-actions" hidden>
             <a class="btn btn-primary" data-market-start href="https://myassetsflow.app" data-i18n="site.start">Start free</a>
-            <a class="btn btn-primary" data-market-contact href="https://www.linkedin.com/company/myassetsflow" target="_blank" rel="noopener noreferrer" data-i18n="pricing.contactLinkedIn" hidden>Ask about an edition on LinkedIn</a>
+            <button class="btn btn-primary" type="button" data-market-contact data-contact-open data-i18n="pricing.contactEdition" hidden>Ask about an edition</button>
           </div>
           <p class="visually-hidden" data-market-announcement aria-live="polite" aria-atomic="true"></p>
           </div>
@@ -1898,6 +1900,7 @@
         <section class="footer-group">
           <h2 data-i18n="site.footerResources">Resources</h2>
           <nav aria-label="Resources" data-i18n-aria="site.footerResources">
+            <a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Product guides</a>
             <a data-i18n="nav.blogs" href="/blog/en/" data-blog-index>Blog</a>
             <a
               data-i18n="security.privacyLink"
@@ -1921,5 +1924,27 @@
         © <span id="year">2026</span> AssetFlow
       </div>
     </footer>
+    <dialog class="contact-dialog" id="edition-contact" aria-labelledby="contact-title">
+      <form class="contact-form" id="edition-contact-form">
+        <button class="contact-close" type="button" data-contact-close aria-label="Close" data-i18n-aria="contact.close"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+        <h2 id="contact-title" data-i18n="contact.title">Ask about an edition</h2>
+        <p data-i18n="contact.lead">Tell us what you would like to know. Your message will go to the AssetFlow team.</p>
+        <label for="contact-edition" data-i18n="contact.editionLabel">Edition</label>
+        <select id="contact-edition" name="edition" required>
+          <option value="" data-i18n="contact.chooseEdition">Choose an edition</option>
+          <option value="Business" data-i18n="contact.business">Business</option>
+          <option value="Fleet" data-i18n="contact.fleet">Fleet</option>
+          <option value="Hospitality" data-i18n="contact.hospitality">Hospitality</option>
+        </select>
+        <label for="contact-email" data-i18n="contact.emailLabel">Your email</label>
+        <input id="contact-email" type="email" name="email" autocomplete="email" maxlength="254" required>
+        <label for="contact-message" data-i18n="contact.messageLabel">Message</label>
+        <textarea id="contact-message" name="message" rows="3" maxlength="4000" required></textarea>
+        <div class="contact-trap" aria-hidden="true"><label for="contact-website">Website</label><input id="contact-website" name="website" tabindex="-1" autocomplete="off"></div>
+        <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+        <button class="btn btn-primary contact-submit" type="submit" data-i18n="contact.send">Send message</button>
+        <p class="contact-recipient" data-i18n="contact.recipient">Sent to contact@myassetsflow.com</p>
+      </form>
+    </dialog>
   </body>
 </html>

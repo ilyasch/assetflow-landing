@@ -84,6 +84,12 @@
           link.href =
             "/blog/" + locale + "/" + link.dataset.blogArticle + "/";
         });
+        document.querySelectorAll("[data-doc-index]").forEach(function (link) {
+          link.href = "/docs/" + locale + "/";
+        });
+        document.querySelectorAll("[data-doc-article]").forEach(function (link) {
+          link.href = "/docs/" + locale + "/" + link.dataset.docArticle + "/";
+        });
         document.getElementById("lang-picker").value = locale;
         if (dict.seo) {
           document.title = dict.seo.title;
@@ -445,6 +451,70 @@
     };
   }
 
+  function initEditionContact() {
+    var dialog = document.getElementById("edition-contact");
+    var form = document.getElementById("edition-contact-form");
+    if (!dialog || !form) return;
+    var edition = form.elements.edition;
+    var status = document.getElementById("contact-status");
+    var submit = form.querySelector('[type="submit"]');
+    var lastTrigger;
+    function open(trigger) {
+      lastTrigger = trigger;
+      edition.value = trigger.dataset.edition || "";
+      status.textContent = "";
+      delete status.dataset.i18n;
+      status.removeAttribute("data-state");
+      dialog.showModal();
+      edition.focus();
+    }
+    document.querySelectorAll("[data-contact-open]").forEach(function (trigger) {
+      trigger.addEventListener("click", function () {
+        var market = document.querySelector("[data-market-interaction]");
+        var selected = market && market.querySelector('[data-market][aria-pressed="true"]');
+        if (selected && selected.dataset.market !== "home") {
+          trigger.dataset.edition = selected.dataset.market.charAt(0).toUpperCase() + selected.dataset.market.slice(1);
+        }
+        open(trigger);
+      });
+    });
+    dialog.querySelector("[data-contact-close]").addEventListener("click", function () { dialog.close(); });
+    dialog.addEventListener("click", function (event) {
+      if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener("close", function () {
+      if (lastTrigger) lastTrigger.focus();
+    });
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      submit.disabled = true;
+      status.dataset.i18n = "contact.sending";
+      status.textContent = "Sending…";
+      status.dataset.state = "sending";
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          edition: edition.value,
+          email: form.elements.email.value.trim(),
+          message: form.elements.message.value.trim(),
+          website: form.elements.website.value,
+        }),
+      }).then(function (response) {
+        if (!response.ok) throw new Error("send failed");
+        status.dataset.i18n = "contact.success";
+        status.textContent = "Message sent. We’ll be in touch.";
+        status.dataset.state = "success";
+        form.reset();
+      }).catch(function () {
+        status.dataset.i18n = "contact.error";
+        status.textContent = "We couldn’t send your message. Please try again.";
+        status.dataset.state = "error";
+      }).finally(function () { submit.disabled = false; });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initPricing();
     initDemo();
@@ -452,6 +522,7 @@
     initSectionRail();
     initHeroColor();
     initFeatureTracks();
+    initEditionContact();
     document
       .getElementById("lang-picker")
       .addEventListener("change", function (event) {

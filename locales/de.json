@@ -4,7 +4,8 @@
     "editions": "Editionen",
     "homeFeatures": "Home-Funktionen",
     "pricing": "Preise",
-    "blogs": "Blog"
+    "blogs": "Blog",
+    "docs": "Produktleitfäden"
   },
   "hero": {
     "headline": "Sei die Person, die immer weiß, was als Nächstes ansteht.",
@@ -351,7 +352,24 @@
       "feature4": "Multi-Tenant-Flottenmanagement bereit für Telematik"
     },
     "b2bNote": "Die AssetFlow B2B-Editionen befinden sich derzeit in der Preview-Phase und bieten vertikale Preismodelle mit separaten Mandanten.",
-    "contactLinkedIn": "Fragen Sie auf LinkedIn nach einer Edition"
+    "contactEdition": "Fragen Sie nach einer Edition"
+  },
+  "contact": {
+    "title": "Fragen Sie nach einer Edition",
+    "lead": "Teilen Sie uns mit, was Sie wissen möchten. Ihre Nachricht geht an das AssetFlow-Team.",
+    "editionLabel": "Edition",
+    "chooseEdition": "Edition auswählen",
+    "business": "Business",
+    "fleet": "Fleet",
+    "hospitality": "Hospitality",
+    "emailLabel": "Ihre E-Mail-Adresse",
+    "messageLabel": "Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet…",
+    "success": "Nachricht gesendet. Wir melden uns.",
+    "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    "recipient": "Gesendet an contact@myassetsflow.com",
+    "close": "Schließen"
   },
   "security": {
     "title": "Deine Aufzeichnungen bleiben geschützt und unter deiner Kontrolle",
