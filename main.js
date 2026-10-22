@@ -457,12 +457,16 @@
     if (!dialog || !form) return;
     var edition = form.elements.edition;
     var status = document.getElementById("contact-status");
-    var submit = form.querySelector('[type="submit"]');
+    var mailtoLink = document.getElementById("contact-mailto-link");
     var lastTrigger;
+    function contactText(key, fallbackText) {
+      return valueAt(cache[document.documentElement.lang] || cache.en || {}, key) || fallbackText;
+    }
     function open(trigger) {
       lastTrigger = trigger;
       edition.value = trigger.dataset.edition || "";
       status.textContent = "";
+      mailtoLink.hidden = true;
       delete status.dataset.i18n;
       status.removeAttribute("data-state");
       dialog.showModal();
@@ -488,30 +492,14 @@
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       if (!form.reportValidity()) return;
-      submit.disabled = true;
-      status.dataset.i18n = "contact.sending";
-      status.textContent = "Sending…";
-      status.dataset.state = "sending";
-      fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          edition: edition.value,
-          email: form.elements.email.value.trim(),
-          message: form.elements.message.value.trim(),
-          website: form.elements.website.value,
-        }),
-      }).then(function (response) {
-        if (!response.ok) throw new Error("send failed");
-        status.dataset.i18n = "contact.success";
-        status.textContent = "Message sent. We’ll be in touch.";
-        status.dataset.state = "success";
-        form.reset();
-      }).catch(function () {
-        status.dataset.i18n = "contact.error";
-        status.textContent = "We couldn’t send your message. Please try again.";
-        status.dataset.state = "error";
-      }).finally(function () { submit.disabled = false; });
+      var subject = "AssetFlow " + edition.value.trim() + " enquiry";
+      var body = "Edition: " + edition.value.trim() + "\nReply to: " + form.elements.email.value.trim() + "\n\n" + form.elements.message.value.trim();
+      mailtoLink.href = "mailto:contact@myassetsflow.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      status.dataset.i18n = "contact.mailtoNotice";
+      status.textContent = contactText("contact.mailtoNotice", "Your email app should open with a draft. Review and send it there.");
+      status.removeAttribute("data-state");
+      mailtoLink.hidden = false;
+      window.location.href = mailtoLink.href;
     });
   }
 

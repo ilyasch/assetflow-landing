@@ -1925,7 +1925,7 @@
       </div>
     </footer>
     <dialog class="contact-dialog" id="edition-contact" aria-labelledby="contact-title">
-      <form class="contact-form" id="edition-contact-form">
+      <form class="contact-form" id="edition-contact-form" action="mailto:contact@myassetsflow.com" method="post" enctype="text/plain">
         <button class="contact-close" type="button" data-contact-close aria-label="Close" data-i18n-aria="contact.close"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
         <h2 id="contact-title" data-i18n="contact.title">Ask about an edition</h2>
         <p data-i18n="contact.lead">Tell us what you would like to know. Your message will go to the AssetFlow team.</p>
@@ -1940,10 +1940,10 @@
         <input id="contact-email" type="email" name="email" autocomplete="email" maxlength="254" required>
         <label for="contact-message" data-i18n="contact.messageLabel">Message</label>
         <textarea id="contact-message" name="message" rows="3" maxlength="4000" required></textarea>
-        <div class="contact-trap" aria-hidden="true"><label for="contact-website">Website</label><input id="contact-website" name="website" tabindex="-1" autocomplete="off"></div>
         <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
-        <button class="btn btn-primary contact-submit" type="submit" data-i18n="contact.send">Send message</button>
-        <p class="contact-recipient" data-i18n="contact.recipient">Sent to contact@myassetsflow.com</p>
+        <a class="contact-status" id="contact-mailto-link" href="mailto:contact@myassetsflow.com" hidden data-i18n="contact.openEmail">Open a prefilled email to contact@myassetsflow.com</a>
+        <button class="btn btn-primary contact-submit" type="submit" data-i18n="contact.send">Open email app</button>
+        <p class="contact-recipient" data-i18n="contact.recipient">Your email app will open a draft to contact@myassetsflow.com.</p>
       </form>
     </dialog>
   </body>

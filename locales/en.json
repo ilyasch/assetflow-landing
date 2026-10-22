@@ -356,7 +356,7 @@
   },
   "contact": {
     "title": "Ask about an edition",
-    "lead": "Tell us what you would like to know. Your message will go to the AssetFlow team.",
+    "lead": "Tell us what you would like to know. Your email app will open a draft addressed to the AssetFlow team.",
     "editionLabel": "Edition",
     "chooseEdition": "Choose an edition",
     "business": "Business",
@@ -364,12 +364,11 @@
     "hospitality": "Hospitality",
     "emailLabel": "Your email",
     "messageLabel": "Message",
-    "send": "Send message",
-    "sending": "Sending…",
-    "success": "Message sent. We’ll be in touch.",
-    "error": "We couldn’t send your message. Please try again.",
-    "recipient": "Sent to contact@myassetsflow.com",
-    "close": "Close"
+    "send": "Open email app",
+    "recipient": "Your email app will open a draft to contact@myassetsflow.com.",
+    "close": "Close",
+    "mailtoNotice": "Your email app should open with a draft. Review and send it there.",
+    "openEmail": "If it did not open, open the prefilled email."
   },
   "security": {
     "title": "Your records stay protected and under your control",

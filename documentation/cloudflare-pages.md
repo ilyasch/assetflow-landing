@@ -29,23 +29,11 @@ application build step.
 
 ## Edition enquiry email
 
-The Pages Function at `/api/contact` sends edition enquiries through Cloudflare
-Email Service. Configure the following production Pages variables and secrets
-before expecting the form to send:
-
-- Variable `CF_ACCOUNT_ID`: the Cloudflare account ID.
-- Variable `CF_EMAIL_FROM`: a sender address on a domain onboarded for Email
-  Sending, such as `website@myassetsflow.com` after domain setup.
-- Secret `CF_EMAIL_API_TOKEN`: a Cloudflare API token with Email Sending
-  permission for the account.
-
-Email Routing receives and forwards mail; it does not by itself enable website
-sending. Email Sending is a separate service and the account must be entitled
-to send to `contact@myassetsflow.com`. Cloudflare currently allows sending to
-verified destination addresses on Free plans; arbitrary recipients require a
-Workers Paid plan. Verify the destination and sender in Cloudflare before the
-first hosted form acceptance check. The API token is read only by the Pages
-Function and is never included in the static site artifact.
+The localized edition enquiry form opens a prefilled `mailto:` draft addressed
+to `contact@myassetsflow.com` in the visitor's email app. The visitor reviews
+and sends the draft; the existing Email Routing rule can then forward the
+incoming message to its configured destination. This flow does not use a Pages
+Function or require Cloudflare Email Sending credentials.
 
 ## Verify before moving DNS
 

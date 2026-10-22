@@ -356,7 +356,7 @@
   },
   "contact": {
     "title": "Fragen Sie nach einer Edition",
-    "lead": "Teilen Sie uns mit, was Sie wissen möchten. Ihre Nachricht geht an das AssetFlow-Team.",
+    "lead": "Teile uns mit, was du wissen möchtest. Deine E-Mail-App öffnet einen Entwurf an das AssetFlow-Team.",
     "editionLabel": "Edition",
     "chooseEdition": "Edition auswählen",
     "business": "Business",
@@ -364,12 +364,11 @@
     "hospitality": "Hospitality",
     "emailLabel": "Ihre E-Mail-Adresse",
     "messageLabel": "Nachricht",
-    "send": "Nachricht senden",
-    "sending": "Wird gesendet…",
-    "success": "Nachricht gesendet. Wir melden uns.",
-    "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
-    "recipient": "Gesendet an contact@myassetsflow.com",
-    "close": "Schließen"
+    "send": "E-Mail-App öffnen",
+    "recipient": "Deine E-Mail-App öffnet einen Entwurf an contact@myassetsflow.com.",
+    "close": "Schließen",
+    "mailtoNotice": "Deine E-Mail-App sollte einen Entwurf öffnen. Prüfe ihn und sende ihn dort ab.",
+    "openEmail": "Falls sich nichts geöffnet hat, öffne die vorausgefüllte E-Mail."
   },
   "security": {
     "title": "Deine Aufzeichnungen bleiben geschützt und unter deiner Kontrolle",
