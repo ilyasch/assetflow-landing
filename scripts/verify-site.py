@@ -202,8 +202,7 @@ for loc in LOCALES:
     page = pages[path]
     catalog = json.loads((ROOT / f'locales/{loc}.json').read_text())
     assert any(t == 'a' and a.get('href') == f'/ai/{loc}/' for t,a in page.nodes), f'Missing AI navigation: {loc}'
-    assert catalog['aiPage']['heroIntegration'] in ''.join(page.text), f'Missing hero integration copy: {loc}'
-    assert any(t == 'p' and a.get('class') == 'hero-ai-integration' for t,a in page.nodes)
+    assert not any('hero-ai-integration' in a.get('class', '').split() for _,a in page.nodes), f'Removed hero integration paragraph returned: {loc}'
     assert any(t == 'html' and a.get('lang') == loc and a.get('dir') == ('rtl' if loc == 'ar' else 'ltr') for t,a in page.nodes)
     ai = pages[SITE / f'ai/{loc}/index.html']
     assert {'flow-ai', 'preferred-ai', 'ai-security', 'ai-agentic'} <= ai.ids

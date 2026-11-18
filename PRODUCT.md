@@ -50,8 +50,8 @@ review and has no call to action on the AI page. All content and static metadata
 support the six existing languages and Arabic RTL.
 
 
-The homepage hero also explains read-only AI integration for agentic work and
-links to the AI page. The desktop section rail starts when How AssetFlow works
+The homepage hero focuses on the core ownership message. AI remains accessible
+from navigation and the Flow AI demo. The desktop section rail starts when How AssetFlow works
 reaches the reading position below the fixed header; the hero and asset example
 keep their width when the rail appears. The AI hero links use four colored cards:
 Flow AI with the AssetFlow mark, connected tools, security and agentic workflows.
