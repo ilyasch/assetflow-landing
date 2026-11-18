@@ -579,7 +579,14 @@
     "flowDemoContextTitle": "Answers you can trace. Next steps you control.",
     "flowDemoContextBody": "Agents investigate your question, connect relevant evidence and prepare useful next steps. Check the references and decide which suggestions to confirm.",
     "nextFlow": "Ask Flow AI",
-    "flowDemoMode": "Agentic chat"
+    "flowDemoMode": "Agentic chat",
+    "vehicleTypeLabel": "Asset type",
+    "vehicleTypeValue": "Car",
+    "vehiclePurchaseLabel": "Purchased",
+    "vehiclePurchaseValue": "June 2020",
+    "vehiclePurchaseMileageLabel": "Mileage at purchase",
+    "vehicleReadingLabel": "Mileage recorded",
+    "vehicleReadingValue": "12 Aug 2025"
   },
   "a11y": {
     "skip": "Skip to content"

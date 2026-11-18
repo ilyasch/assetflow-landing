@@ -579,7 +579,14 @@
     "flowDemoContextTitle": "Nachvollziehbare Antworten. Nächste Schritte in deiner Hand.",
     "flowDemoContextBody": "Agenten untersuchen deine Frage, verknüpfen relevante Belege und bereiten nächste Schritte vor. Prüfe die Quellen und entscheide, welche Vorschläge du bestätigst.",
     "nextFlow": "Flow AI fragen",
-    "flowDemoMode": "Chat mit Agenten"
+    "flowDemoMode": "Chat mit Agenten",
+    "vehicleTypeLabel": "Objektart",
+    "vehicleTypeValue": "Auto",
+    "vehiclePurchaseLabel": "Gekauft",
+    "vehiclePurchaseValue": "Juni 2020",
+    "vehiclePurchaseMileageLabel": "Kilometerstand beim Kauf",
+    "vehicleReadingLabel": "Kilometerstand erfasst",
+    "vehicleReadingValue": "12. Aug. 2025"
   },
   "a11y": {
     "skip": "Zum Inhalt springen"

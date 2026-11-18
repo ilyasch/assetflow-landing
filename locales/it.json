@@ -579,7 +579,14 @@
     "flowDemoContextTitle": "Risposte verificabili. Prossimi passi sotto il tuo controllo.",
     "flowDemoContextBody": "Gli agenti approfondiscono la domanda, collegano le prove pertinenti e preparano i prossimi passi. Controlla le fonti e scegli quali proposte confermare.",
     "nextFlow": "Chiedi a Flow AI",
-    "flowDemoMode": "Chat con agenti"
+    "flowDemoMode": "Chat con agenti",
+    "vehicleTypeLabel": "Tipo di bene",
+    "vehicleTypeValue": "Auto",
+    "vehiclePurchaseLabel": "Acquisto",
+    "vehiclePurchaseValue": "Giugno 2020",
+    "vehiclePurchaseMileageLabel": "Chilometraggio all’acquisto",
+    "vehicleReadingLabel": "Chilometraggio registrato",
+    "vehicleReadingValue": "12 ago 2025"
   },
   "a11y": {
     "skip": "Vai al contenuto"

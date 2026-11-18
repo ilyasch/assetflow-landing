@@ -2765,3 +2765,9 @@ p {
 @media(min-width:1001px) {
  .market-interaction.is-interactive > .market-options { grid-row: 1 / 4; }
 }
+
+.asset-extra-details { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 20px; margin: 0; padding-block: 14px; border-block-end: 1px solid var(--color-border); }
+.asset-extra-details > div { min-width: 0; }
+.asset-extra-details dt { color: var(--color-muted); font-size: .76rem; line-height: 1.5; margin-block-end: 4px; }
+.asset-extra-details dd { margin: 0; color: var(--color-text); font-size: .84rem; font-weight: 550; line-height: 1.5; }
+@media(max-width:620px) { .asset-extra-details { gap: 12px; } .asset-extra-details dd { font-size: .8rem; } }

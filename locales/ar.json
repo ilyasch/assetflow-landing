@@ -579,7 +579,14 @@
     "flowDemoContextTitle": "إجابات قابلة للتتبع وخطوات تتحكم بها.",
     "flowDemoContextBody": "يبحث الوكلاء في سؤالك ويربطون الأدلة ذات الصلة ويجهزون الخطوات التالية. راجع المراجع واختر الاقتراحات التي تؤكدها.",
     "nextFlow": "اسأل Flow AI",
-    "flowDemoMode": "دردشة مع الوكلاء"
+    "flowDemoMode": "دردشة مع الوكلاء",
+    "vehicleTypeLabel": "نوع الأصل",
+    "vehicleTypeValue": "سيارة",
+    "vehiclePurchaseLabel": "تاريخ الشراء",
+    "vehiclePurchaseValue": "يونيو 2020",
+    "vehiclePurchaseMileageLabel": "المسافة عند الشراء",
+    "vehicleReadingLabel": "تاريخ تسجيل المسافة",
+    "vehicleReadingValue": "12 أغسطس 2025"
   },
   "a11y": {
     "skip": "انتقل إلى المحتوى"
