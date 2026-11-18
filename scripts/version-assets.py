@@ -22,6 +22,8 @@ css = (root / 'styles.css').read_text()
 assets = sorted((root / 'assets').glob('assetflow-wordmark*.webp'))
 assets += sorted((root / 'assets').glob('vehicle-photo*'))
 assets += sorted((root / 'assets/fonts').glob('*.woff2'))
+assets += sorted(path for path in (root / 'assets/guides').rglob('*') if path.is_file() and path.suffix in ('.webp', '.png', '.jpg'))
+assets += sorted(path for path in (root / "assets/brands").glob("*") if path.suffix in (".svg", ".png"))
 for path in assets:
     old = path.relative_to(root).as_posix()
     new = publish(path)

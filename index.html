@@ -118,9 +118,8 @@
           aria-label="Main navigation"
         >
           <a href="#product" data-home-product data-i18n="site.product">Product</a
-          ><a href="/pricing/en/" data-pricing-index data-i18n="nav.pricing">Pricing</a
-          ><a href="/solutions/en/" data-solutions-index data-i18n="site.solutions">Solutions</a
-          ><a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Product guides</a
+          ><a href="/ai/en/" data-ai-index data-i18n="aiPage.nav">AI</a
+          ><a href="/explore/en/" data-explore-index data-i18n="explorePage.nav">Find your fit</a><a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Guides</a
           ><a data-i18n="nav.blogs" href="/blog/en/" data-blog-index>Blog</a>
         </nav>
         <div class="header-actions">
@@ -148,14 +147,14 @@
           <nav data-i18n-aria="site.navigation" aria-label="Main navigation">
             <a data-i18n="site.product" href="#product">Product</a
             ><a data-i18n="site.how" href="#how-it-works">How it works</a
-            ><a href="/pricing/en/" data-pricing-index data-i18n="nav.pricing">Pricing</a
-            ><a href="/solutions/en/" data-solutions-index data-i18n="site.solutions">Solutions</a
-            ><a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Product guides</a
+            ><a href="/ai/en/" data-ai-index data-i18n="aiPage.nav">AI</a
+          ><a href="/explore/en/" data-explore-index data-i18n="explorePage.nav">Find your fit</a><a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Guides</a
             ><a data-i18n="nav.blogs" href="/blog/en/" data-blog-index>Blog</a>
           </nav>
         </details>
       </div>
     </header>
+    <noscript><nav class="static-language-links" data-i18n-aria="nav.languageLabel" aria-label="Language"><a href="/en/" lang="en">English</a><a href="/it/" lang="it">Italiano</a><a href="/de/" lang="de">Deutsch</a><a href="/es/" lang="es">Español</a><a href="/fr/" lang="fr">Français</a><a href="/ar/" lang="ar">العربية</a></nav></noscript>
     <main id="main" class="has-section-rail">
       <nav
         class="section-rail"
@@ -167,12 +166,10 @@
           ><span data-i18n="site.product">Product</span></a
         ><a href="#how-it-works" data-section-link
           ><span data-i18n="site.how">How it works</span></a
-        ><a href="#flow-ai" data-section-link
-          ><span data-i18n="site.flowNav">Flow AI</span></a
         ><a href="#records-library" data-section-link
-          ><span data-i18n="site.recordsNav">Records</span></a
+          ><span data-i18n="site.recordsNav">Library</span></a
         ><a href="#household" data-section-link
-          ><span data-i18n="site.householdNav">Household</span></a>
+          ><span data-i18n="site.householdNav">Household</span></a><a href="#security" data-section-link><span data-i18n="trust.nav">Security</span></a>
       </nav>
       <section class="hero">
         <div class="hero-color" aria-hidden="true"></div>
@@ -217,6 +214,7 @@
                 all together with AssetFlow Home.</span
               >
             </p>
+            <p class="hero-ai-integration"><span data-i18n="aiPage.heroIntegration">Connect My AssetsFlow to your preferred AI tools for agentic work: explore shared asset details, reason through tasks and prepare next steps with read-only access.</span> <a href="/ai/en/" data-ai-index data-i18n="aiPage.heroAiLink">Explore AI</a></p>
             <div class="hero-actions">
               <a
                 data-i18n="site.start"
@@ -244,20 +242,18 @@
                   >A little context. A clearer next step.</span
                 >
               </h2>
-              <p class="demo-lead" data-i18n="site.demoLead">
-                See how one asset’s details, documents and reviewable maintenance
-                steps come together in one place.
-              </p>
+              <p class="demo-lead" data-i18n="site.demoLead">Your assets. Five connected views. From the details to insights and useful next steps.</p>
             </div>
             <p class="demo-label">
               <span data-i18n="site.example"
-                >Illustrative example · sample data</span
+                >Illustrative example</span
               >
             </p>
           </div>
           <div class="ownership-demo">
             <div class="demo-sidebar">
               <span class="demo-wordmark">AssetFlow <span>Home</span></span>
+              <p class="demo-explore" data-i18n="site.demoExplore">Follow the bigger picture</p>
               <div class="demo-tabs">
                 <button
                   id="demo-tab-asset"
@@ -265,26 +261,28 @@
                   aria-controls="demo-asset"
                   type="button"
                 >
-                  <span data-i18n="site.asset">Asset</span></button
+                  <span class="demo-step" aria-hidden="true">01</span><span data-i18n="site.asset">Asset</span><span class="demo-tab-arrow" aria-hidden="true">↗</span></button
                 ><button
                   id="demo-tab-plan"
                   data-demo="plan"
                   aria-controls="demo-plan"
                   type="button"
                 >
-                  <span data-i18n="site.plan">Maintenance plan</span></button
+                  <span class="demo-step" aria-hidden="true">02</span><span data-i18n="site.plan">Smart plan</span><span class="demo-tab-arrow" aria-hidden="true">↗</span></button
                 ><button
                   id="demo-tab-records"
                   data-demo="records"
                   aria-controls="demo-records"
                   type="button"
                 >
-                  <span data-i18n="site.records">Records</span>
-                </button>
+                  <span class="demo-step" aria-hidden="true">03</span><span data-i18n="site.records">Library</span>
+                <span class="demo-tab-arrow" aria-hidden="true">↗</span></button>
+                <button id="demo-tab-insights" data-demo="insights" aria-controls="demo-insights" type="button"><span class="demo-step" aria-hidden="true">04</span><span data-i18n="site.costInsights">Cost Explorer</span><span class="demo-tab-arrow" aria-hidden="true">↗</span></button>
+<button id="demo-tab-flow" data-demo="flow" aria-controls="demo-flow" type="button"><span class="demo-step" aria-hidden="true">05</span><span>Flow AI</span><span class="demo-tab-arrow" aria-hidden="true">↗</span></button>
               </div>
               <p>
                 <span data-i18n="site.example"
-                  >Illustrative example · sample data</span
+                  >Illustrative example</span
                 >
               </p>
             </div>
@@ -338,6 +336,7 @@
                     >Keep ownership details, documents and care history together.</span
                   >
                 </p>
+              <button class="demo-next" type="button" data-demo-next="plan"><span data-i18n="site.nextPlan">See its smart plan</span><span aria-hidden="true"> →</span></button>
               </section>
               <section
                 id="demo-plan"
@@ -345,11 +344,14 @@
                 aria-labelledby="demo-tab-plan"
               >
                 <div class="panel-heading">
-                  <h3><span data-i18n="site.plan">Maintenance plan</span></h3>
+                  <h3><span data-i18n="site.plan">Smart plan</span></h3>
                   <span class="status-pill" data-i18n="site.draft"
                     >Suggested plan · review first</span
                   >
                 </div>
+                <p class="demo-panel-lead"><span data-i18n="site.planLead">Turn asset details and selected records into a smart draft. Generation time varies; you review the result.</span></p>
+                <p class="demo-editability" data-i18n="site.taskMeta">Edit the draft, adjust tasks and add extraordinary events, such as an unexpected repair.</p>
+                <div class="plan-detail-grid">
                 <div class="plan-sample-group">
                   <h4 class="sample-group-title" data-i18n="site.planTasksTitle">Suggested maintenance tasks</h4>
                   <ul class="plan-task-list">
@@ -368,16 +370,14 @@
                   <p class="purchase-total"><span data-i18n="site.partsTotalLabel">Estimated parts total</span><bdi data-i18n="site.partsTotal">€78</bdi></p>
                   <p class="estimate-note" data-i18n="site.estimateNote">Sample time and parts estimates; actual needs and prices vary.</p>
                 </div>
+                </div>
                 <button class="btn btn-primary demo-review" type="button">
                   <span data-i18n="site.review">Review plan</span>
                 </button>
                 <div class="review-detail" hidden>
                   <p>
                     <span data-i18n="site.reviewNote"
-                      >You review every suggestion. Only you decide what becomes
-                      part of your plan.</span
-                    >
-                  </p>
+                      >Review the suggestions and make them yours. Your confirmation puts the plan into action.</span></p>
                   <button class="btn btn-primary demo-confirm" type="button">
                     <span data-i18n="site.confirm">Confirm example plan</span>
                   </button>
@@ -392,35 +392,18 @@
                     synchronization is planned.</span
                   >
                 </p>
+              <button class="demo-next" type="button" data-demo-next="records"><span data-i18n="site.nextLibrary">Look inside its library</span><span aria-hidden="true"> →</span></button>
               </section>
               <section
                 id="demo-records"
                 class="demo-panel"
                 aria-labelledby="demo-tab-records"
               >
-                <h3><span data-i18n="site.records">Records</span></h3>
-                <div class="record-entry">
-                  <span class="record-dot" aria-hidden="true"></span>
-                  <div>
-                    <h4>
-                      <span data-i18n="site.recordTitle">Service recorded</span>
-                    </h4>
-                    <p>
-                      <span data-i18n="site.recordMeta"
-                        >12 August 2025 · service invoice</span
-                      >
-                    </p>
-                  </div>
-                </div>
+                <h3><span data-i18n="site.records">Library</span></h3>
+                <p class="demo-panel-lead" data-i18n="site.libraryLead">Understand your documents. Review the insights. Confirm what becomes part of your asset’s knowledge.</p>
+                <p class="library-privacy"><span data-i18n="site.libraryPrivacy">Private files. Controlled access. Files are checked before AI processing; you choose what to share.</span></p>
+                <div class="library-finding"><span class="finding-label"><span data-i18n="site.findingLabel">Example finding · awaiting your review</span></span><strong><span data-i18n="site.findingTitle">Last service: 12 August 2025</span></strong><small><span data-i18n="site.findingSource">Source: service invoice · PDF</span></small><p><span data-i18n="site.findingReview">Proposed knowledge update. Nothing changes until you confirm.</span></p></div>
                 <ul class="file-list">
-                  <li>
-                    <span class="file-type" aria-hidden="true">PDF</span
-                    ><span data-i18n="site.receipt">Purchase receipt</span>
-                  </li>
-                  <li>
-                    <span class="file-type" aria-hidden="true">PDF</span
-                    ><span data-i18n="site.manual">Owner’s manual</span>
-                  </li>
                   <li>
                     <span class="file-type" aria-hidden="true">PDF</span
                     ><span data-i18n="site.serviceInvoice">Service invoice</span>
@@ -440,10 +423,21 @@
                 </ul>
                 <p class="demo-footnote">
                   <span data-i18n="site.recordNote"
-                    >A useful history, with the evidence to go with it.</span
-                  >
-                </p>
+                    >Different formats. One connected library. AI processing depends on the file type and scan status.</span></p>
+              <button class="demo-next" type="button" data-demo-next="insights"><span data-i18n="site.nextInsights">Explore your costs</span><span aria-hidden="true"> →</span></button>
               </section>
+<section id="demo-insights" class="demo-panel" aria-labelledby="demo-tab-insights">
+<h3><span data-i18n="site.costInsights">Cost Explorer</span></h3><p class="demo-panel-lead"><span data-i18n="site.costLead">Spot recurring repairs. Understand costs. Plan ahead.</span></p>
+<div class="cost-summary"><div><span><span data-i18n="site.costActual">Spent</span></span><strong><bdi dir="ltr">€960</bdi></strong><small><span data-i18n="site.costHistory">Past 12 months</span></small></div><div class="cost-summary-future"><span><span data-i18n="site.costFuture">Estimated</span></span><strong><bdi dir="ltr">€240–€400</bdi></strong><small><span data-i18n="site.costHorizon">3-month outlook</span></small></div></div><div class="cost-chart-grid"><figure class="cost-chart"><figcaption><span data-i18n="site.costByAsset">Spending by asset</span></figcaption><dl class="cost-bars"><div><dt><span data-i18n="site.vehicle">Family car</span></dt><dd><bdi dir="ltr">€540</bdi><span class="cost-bar-track" aria-hidden="true"><span style="--bar-size:100%"></span></span></dd></div><div><dt><span data-i18n="site.costHome">Home</span></dt><dd><bdi dir="ltr">€300</bdi><span class="cost-bar-track" aria-hidden="true"><span style="--bar-size:55.56%"></span></span></dd></div><div><dt><span data-i18n="site.costLaptop">Laptop</span></dt><dd><bdi dir="ltr">€120</bdi><span class="cost-bar-track" aria-hidden="true"><span style="--bar-size:22.22%"></span></span></dd></div></dl><p class="cost-takeaway"><span data-i18n="site.costAssetTakeaway">The car accounts for 56% of recorded spending.</span></p></figure><figure class="cost-chart cost-repairs"><figcaption><span data-i18n="site.costRepairFrequency">Repairs by asset</span></figcaption><dl class="cost-bars"><div><dt><span data-i18n="site.vehicle">Family car</span></dt><dd><span data-i18n="site.costRepairCar">4 repairs</span><span class="cost-bar-track" aria-hidden="true"><span style="--bar-size:100%"></span></span></dd></div><div><dt><span data-i18n="site.costHome">Home</span></dt><dd><span data-i18n="site.costRepairHome">2 repairs</span><span class="cost-bar-track" aria-hidden="true"><span style="--bar-size:50%"></span></span></dd></div><div><dt><span data-i18n="site.costLaptop">Laptop</span></dt><dd><span data-i18n="site.costRepairLaptop">1 repair</span><span class="cost-bar-track" aria-hidden="true"><span style="--bar-size:25%"></span></span></dd></div></dl><p class="cost-takeaway"><span data-i18n="site.costRepairTakeaway">The car needed the most repairs in the past 12 months.</span></p></figure></div><figure class="cost-chart cost-forecast"><figcaption><span data-i18n="site.costForecast">Upcoming cost forecast</span><small><span data-i18n="site.costRange">Estimated range</span></small></figcaption><dl class="cost-range-rows"><div><dt><span data-i18n="site.costMonth1">This month</span></dt><dd><span class="cost-range-track" aria-hidden="true"><span style="--range-low:62.5%;--range-high:100%"></span></span><bdi dir="ltr">€100–€160</bdi></dd></div><div><dt><span data-i18n="site.costMonth2">Next month</span></dt><dd><span class="cost-range-track" aria-hidden="true"><span style="--range-low:37.5%;--range-high:62.5%"></span></span><bdi dir="ltr">€60–€100</bdi></dd></div><div><dt><span data-i18n="site.costMonth3">Month 3</span></dt><dd><span class="cost-range-track" aria-hidden="true"><span style="--range-low:50%;--range-high:87.5%"></span></span><bdi dir="ltr">€80–€140</bdi></dd></div></dl><p class="cost-takeaway"><span data-i18n="site.costForecastTakeaway">Compare upcoming months before scheduling more work.</span></p></figure><button class="demo-next" type="button" data-demo-next="flow"><span data-i18n="site.nextFlow">Ask Flow AI</span><span aria-hidden="true"> →</span></button></section>
+<section id="demo-flow" class="demo-panel" aria-labelledby="demo-tab-flow">
+<div class="flow-demo-heading"><h3>Flow AI</h3><span data-i18n="site.flowDemoMode">Agentic chat</span></div><p class="demo-panel-lead"><span data-i18n="site.flowDemoLead">Ask, investigate and prepare the next step. Flow AI uses your documents and, when available, official web manuals matched to your model.</span></p>
+<figure class="flow-demo-chat"><figcaption data-i18n="site.example">Illustrative example</figcaption>
+<blockquote class="flow-demo-question"><span data-i18n="site.flowDemoQuestion">Does my car need servicing before our next trip? Prepare a checklist.</span></blockquote>
+<div class="flow-demo-answer"><strong>Flow AI</strong><p><span data-i18n="site.flowDemoAnswer">Your invoice records the last service on 12 August 2025 [1]. Compare the mileage and elapsed time with your model’s official service schedule [2] before deciding what is due.</span></p></div>
+<div class="flow-demo-sources"><span class="flow-demo-source-label"><span data-i18n="site.flowDemoSourceLabel">Example references</span></span><ol><li><span data-i18n="site.flowDemoSource1">Service invoice · your Library</span></li><li><span data-i18n="site.flowDemoSource2">Manufacturer manual · official website</span></li></ol></div>
+<div class="flow-demo-proposal"><strong><span data-i18n="site.flowDemoNext">Next step: prepare a service checklist</span></strong><span><span data-i18n="site.flowDemoReview">A proposal for you to review, adjust and confirm.</span></span></div></figure>
+<div class="flow-demo-prompts"><h4><span data-i18n="site.flowDemoOther">Other questions worth asking</span></h4><ul><li><span data-i18n="site.flowDemoWarranty">Is my washing machine repair still covered by its warranty?</span></li><li><span data-i18n="site.flowDemoRepairs">Which asset keeps needing repairs, and what has it cost?</span></li></ul></div>
+<a class="flow-demo-link" href="/ai/en/" data-ai-index><span data-i18n="site.flowDemoLink">Explore Flow AI and connected assistants</span><span aria-hidden="true"> →</span></a></section>
             </div>
             <aside class="demo-context">
               <div class="context-line"></div>
@@ -458,35 +452,18 @@
                 </p>
               </section>
               <section data-demo-context="plan">
-                <p class="context-eyebrow" data-i18n="site.plan">
-                  Maintenance plan
-                </p>
-                <h3 data-i18n="site.contextPlanTitle">
-                  A suggestion you can review.
-                </h3>
-                <p data-i18n="site.taskMeta">
-                  Check the manual and service history before choosing a date.
-                </p>
-                <p class="context-note" data-i18n="site.reviewNote">
-                  You review every suggestion. Only you decide what becomes part
-                  of your plan.
-                </p>
+                <p class="context-eyebrow" data-i18n="site.plan">Smart plan</p>
+                <h3 data-i18n="site.contextPlanTitle">Intelligence, with room for real life</h3>
+                <p data-i18n="site.taskMeta">Edit the draft, adjust tasks and add extraordinary events, such as an unexpected repair.</p>
+                <p class="context-note" data-i18n="site.reviewNote">Review the suggestions and make them yours. Your confirmation puts the plan into action.</p>
               </section>
               <section data-demo-context="records">
-                <p class="context-eyebrow" data-i18n="site.records">
-                  Records
-                </p>
-                <h3 data-i18n="site.contextRecordsTitle">
-                  A record with its evidence.
-                </h3>
-                <p data-i18n="site.recordMeta">
-                  12 August 2025 · service invoice
-                </p>
-                <p class="context-note" data-i18n="site.contextRecordsBody">
-                  Keep receipts, manuals, insurance and completed work with the
-                  asset.
-                </p>
+                <p class="context-eyebrow" data-i18n="site.records">Library</p>
+                <h3 data-i18n="site.contextRecordsTitle">From files to understanding</h3>
+                <p class="context-note" data-i18n="site.contextRecordsBody">Find insights in supported documents and propose updates to your asset’s knowledge. You review and confirm every update.</p>
               </section>
+<section data-demo-context="insights"><p class="context-eyebrow"><span data-i18n="site.costInsights">Cost Explorer</span></p><h3><span data-i18n="site.costContextTitle">Understand the past. Prepare for what’s next.</span></h3><p><span data-i18n="site.costContextBody">See which assets need repeated repairs, compare recorded spending and anticipate costs from approved plans.</span></p></section>
+<section data-demo-context="flow"><p class="context-eyebrow">Flow AI</p><h3><span data-i18n="site.flowDemoContextTitle">Answers you can trace. Next steps you control.</span></h3><p><span data-i18n="site.flowDemoContextBody">Agents investigate your question, connect relevant evidence and prepare useful next steps. Check the references and decide which suggestions to confirm.</span></p></section>
             </aside>
           </div>
         </div>
@@ -552,33 +529,43 @@
               <figure class="feature-example">
                 <div class="feature-mini">
                   <ul class="feature-mini-categories">
-                    <li>
-                      <span data-i18n="categories.homeProperty">
-                        Home &amp; property
+                    <li class="category-homeProperty"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"/>
+                </svg></span><span data-i18n="categories.homeProperty">
+                        Home and property
                       </span>
                     </li>
-                    <li>
-                      <span data-i18n="categories.electronics">
+                    <li class="category-electronics"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="4" width="18" height="13" rx="2"/>
+                  <path d="M8 21h8M12 17v4M7 8h5"/>
+                </svg></span><span data-i18n="categories.electronics">
                         Electronics
                       </span>
                     </li>
-                    <li>
-                      <span data-i18n="categories.vehicles">
+                    <li class="category-vehicles"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m5 7 2-4h10l2 4 2 3v8H3v-8l2-3ZM5 7h14M6 12h2M16 12h2M3 16h18M5 18v3M19 18v3"/>
+                </svg></span><span data-i18n="categories.vehicles">
                         Vehicles
                       </span>
                     </li>
-                    <li>
-                      <span data-i18n="categories.furniture">
+                    <li class="category-furniture"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M6 11V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6M5 11h14a2 2 0 0 1 2 2v4H3v-4a2 2 0 0 1 2-2ZM6 17v4M18 17v4M3 14h18"/>
+                </svg></span><span data-i18n="categories.furniture">
                         Furniture
                       </span>
                     </li>
-                    <li>
-                      <span data-i18n="categories.appliances">
+                    <li class="category-appliances"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="4" y="2" width="16" height="20" rx="2"/>
+                  <path d="M4 7h16M7 4.5h.01M10 4.5h.01"/>
+                  <circle cx="12" cy="14" r="4"/>
+                  <path d="M8 14c2 2 6-2 8 0"/>
+                </svg></span><span data-i18n="categories.appliances">
                         Appliances
                       </span>
                     </li>
-                    <li>
-                      <span data-i18n="categories.other">
+                    <li class="category-other"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m3 7 9-4 9 4-9 4-9-4ZM3 7v10l9 4 9-4V7M12 11v10M7 5l10 4"/>
+                </svg></span><span data-i18n="categories.other">
                         Other
                       </span>
                     </li>
@@ -700,7 +687,7 @@
             </div>
             <footer class="feature-chapter-footer">
               <p class="example-caption" data-i18n="site.example">
-                Illustrative example · sample data
+                Illustrative example
               </p>
               <div class="chapter-links">
                 <a href="#product" data-demo-target="asset">
@@ -796,9 +783,7 @@
                   <h4 data-i18n="site.recordTitle">
                     Service recorded
                   </h4>
-                  <p data-i18n="site.contextRecordsBody">
-                    Keep service records and supporting documents with the asset, ready when you need to check what happened.
-                  </p>
+                  <p data-i18n="site.contextRecordsBody">Find insights in supported documents and propose updates to your asset’s knowledge. You review and confirm every update.</p>
                 </figcaption>
               </figure>
               <figure class="feature-example">
@@ -848,7 +833,7 @@
             </div>
             <footer class="feature-chapter-footer">
               <p class="example-caption" data-i18n="site.example">
-                Illustrative example · sample data
+                Illustrative example
               </p>
               <div class="chapter-links">
                 <a href="#records-library">
@@ -1049,7 +1034,7 @@
             </div>
             <footer class="feature-chapter-footer">
               <p class="example-caption" data-i18n="site.example">
-                Illustrative example · sample data
+                Illustrative example
               </p>
               <div class="chapter-links">
                 <a href="#product" data-demo-target="plan">
@@ -1085,6 +1070,10 @@
           </div>
         </div>
       </section>
+      <!-- marketing-page:ai:start -->
+      <section class="section ai-hero" aria-labelledby="ai-title"><div class="wrap">
+<p class="eyebrow" data-i18n="aiPage.eyebrow">Intelligence, with you in control</p><h1 id="ai-title" data-i18n="preferredAI.title">Your preferred AI. Your assets, organized.</h1><p class="section-lead" data-i18n="aiPage.lead">Work with Flow AI inside My AssetsFlow, or bring your organized asset information to a compatible assistant. Understand your records, investigate what matters and prepare your next step.</p>
+<nav class="ai-page-links" aria-labelledby="ai-title"><a class="ai-nav-card ai-nav-card--flow" href="#flow-ai"><span class="ai-nav-icon"><img src="/assets/favicon.svg" width="32" height="32" alt="" aria-hidden="true"></span><span class="ai-nav-copy"><strong data-i18n="flowAI.assistantName">Flow AI</strong><small data-i18n="aiPage.flowNavDetail">Intelligence from your records</small></span><span class="ai-nav-arrow" aria-hidden="true">↗</span></a><a class="ai-nav-card ai-nav-card--connect" href="#preferred-ai"><span class="ai-nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 15 6-6M7 14l-2 2a3.5 3.5 0 0 0 5 5l4-4a3.5 3.5 0 0 0 0-5M17 10l2-2a3.5 3.5 0 0 0-5-5l-4 4a3.5 3.5 0 0 0 0 5"/></svg></span><span class="ai-nav-copy"><strong data-i18n="aiPage.toolsNav">Your AI tools</strong><small data-i18n="aiPage.toolsNavDetail">ChatGPT · Claude · Remote MCP</small></span><span class="ai-nav-arrow" aria-hidden="true">↗</span></a><a class="ai-nav-card ai-nav-card--security" href="#ai-security"><span class="ai-nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"/><path d="m8 12 3 3 5-6"/></svg></span><span class="ai-nav-copy"><strong data-i18n="aiPage.securityNav">Security &amp; control</strong><small data-i18n="aiPage.securityNavDetail">Approve, select and revoke</small></span><span class="ai-nav-arrow" aria-hidden="true">↗</span></a><a class="ai-nav-card ai-nav-card--agent" href="#ai-agentic"><span class="ai-nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M9 6h9v9M3 18h8m-3-3 3 3-3 3"/></svg></span><span class="ai-nav-copy"><strong data-i18n="aiPage.agentNav">Agentic workflows</strong><small data-i18n="aiPage.agentNavDetail">Investigate, prepare and review</small></span><span class="ai-nav-arrow" aria-hidden="true">↗</span></a></nav></div></section>
       <section id="flow-ai" class="section flow-ai-section">
         <div class="wrap">
           <div class="section-heading">
@@ -1120,6 +1109,18 @@
           <p class="section-note" data-i18n="flowAI.note">Flow AI suggestions are based on the information available in your records. You stay in control of every action.</p>
         </div>
       </section>
+      <section id="preferred-ai" class="section preferred-ai-section" aria-labelledby="preferred-ai-title">
+        <div class="wrap">
+          <div class="section-heading"><p class="eyebrow" data-i18n="preferredAI.eyebrow">You control access</p><h2 id="preferred-ai-title" data-i18n="aiPage.integrationTitle">Bring your preferred assistant</h2><p class="section-lead" data-i18n="preferredAI.lead">Keep using your assistants and agents while My AssetsFlow keeps your asset information organized. Connect an assistant such as ChatGPT or Claude to the assets you choose.</p></div>
+<figure class="ai-connection-map"><figcaption  data-i18n="aiStory.mapCaption">From your assets to your assistant</figcaption><div class="ai-connection-track"><div class="ai-context-card"><img src="/assets/favicon.svg" width="40" height="40" alt="" aria-hidden="true"><strong  data-i18n="preferredAI.assets">Your organized assets</strong><span  data-i18n="aiStory.context">Organized asset context</span></div><div class="ai-connection-bridge"><span class="ai-scope-seal"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 11 4v9c0 7-11 13-11 13S5 23 5 16V7zM10 16l4 4 8-9"/></svg><strong  data-i18n="aiStory.scope">You choose the scope</strong></span><span class="ai-bridge-line" aria-hidden="true"></span><div class="ai-protocol"><img src="/assets/brands/mcp.svg" width="268" height="39" alt="Model Context Protocol (MCP)" loading="lazy" decoding="async"><span  data-i18n="aiStory.protocolCaption">The connection standard</span></div></div><div class="ai-provider-cards"><div class="ai-provider-card"><img src="/assets/brands/chatgpt.svg" width="76" height="76" alt="" aria-hidden="true" loading="lazy" decoding="async"><strong>ChatGPT</strong></div><div class="ai-provider-card"><img src="/assets/brands/claude.png" width="48" height="48" alt="" aria-hidden="true" loading="lazy" decoding="async"><strong>Claude</strong></div><div class="ai-provider-card"><img src="/assets/brands/mistral.svg" width="64" height="46" alt="" aria-hidden="true" loading="lazy" decoding="async"><strong>Mistral Vibe</strong></div><div class="ai-provider-card"><svg class="ai-tool-symbol" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="22" rx="4"/><path d="m9 12 5 4-5 4m9 0h5"/></svg><strong>Codex CLI</strong></div><div class="ai-provider-card ai-custom-provider"><svg class="ai-tool-symbol" viewBox="0 0 32 32" aria-hidden="true"><rect x="11" y="3" width="10" height="8" rx="2"/><rect x="2" y="21" width="10" height="8" rx="2"/><rect x="20" y="21" width="10" height="8" rx="2"/><path d="M16 11v5M7 21v-5h18v5"/></svg><div><strong data-i18n="aiStory.customTools">Custom AI tools</strong><small data-i18n="aiStory.customClient">Your own assistant or agent, with a compatible remote MCP client.</small></div></div><p data-i18n="aiStory.toolExamples">Examples of AI tools · availability varies by provider and account</p></div></div></figure>
+          <div class="preferred-ai-details"><p data-i18n="preferredAI.controls">Approve the connection explicitly. Share selected assets and their related tasks with read-only access. Revoke access whenever you choose.</p><p data-i18n="preferredAI.compatibility">Remote MCP tools connect your records to compatible assistants. Availability depends on the provider, account plan and workspace settings; each connection needs verification.</p></div>
+          <p class="section-note" data-i18n="preferredAI.privacy">Information shared with an assistant is subject to that provider’s policies. Revoking access stops future reads; it does not erase information already shared.</p>
+        </div>
+      </section>
+
+<section id="ai-security" class="section ai-security" aria-labelledby="ai-security-title"><div class="wrap"><div class="ai-control-layout"><div class="ai-control-intro"><p class="eyebrow" data-i18n="preferredAI.eyebrow">You control access</p><h2 id="ai-security-title" data-i18n="aiPage.securityTitle">Your assets. Your permissions. Your call.</h2><p class="section-lead" data-i18n="aiPage.securityLead">You decide what is shared, which connection to approve and which proposed actions to accept.</p><div class="ai-control-promise"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 11 4v9c0 7-11 13-11 13S5 23 5 16V7zM10 16l4 4 8-9"/></svg><span  data-i18n="aiStory.scope">You choose the scope</span></div></div><figure class="ai-control-panel"><figcaption  data-i18n="aiStory.controlCaption">Illustrative sharing choices · not live settings</figcaption><div class="ai-control-heading"><span class="ai-control-shield"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 11 4v9c0 7-11 13-11 13S5 23 5 16V7zM10 16l4 4 8-9"/></svg></span><h3  data-i18n="aiStory.controlTitle">Your sharing boundary</h3></div><ul class="ai-access-list"><li class="ai-access-row"><span class="ai-asset-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m6 13 3-7h14l3 7M4 13h24v11H4zM7 24v3m18-3v3M7 18h4m10 0h4"/></svg></span><strong  data-i18n="aiStory.car">Family car</strong><span class="ai-access-status"><span aria-hidden="true">✓</span><span  data-i18n="aiStory.shared">Shared</span></span></li><li class="ai-access-row"><span class="ai-asset-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 6h18v15H7zM3 25h26l-4-4H7z"/></svg></span><strong  data-i18n="aiStory.laptop">Personal laptop</strong><span class="ai-access-status"><span aria-hidden="true">✓</span><span  data-i18n="aiStory.shared">Shared</span></span></li><li class="ai-access-row is-private"><span class="ai-asset-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m3 15 13-11 13 11M7 12v16h18V12M13 28V18h6v10"/></svg></span><strong  data-i18n="aiStory.home">Home</strong><span class="ai-access-status"><span aria-hidden="true">−</span><span  data-i18n="aiStory.notShared">Not shared</span></span></li></ul><dl class="ai-access-permissions"><div><dt  data-i18n="aiStory.permission">Permission</dt><dd  data-i18n="aiStory.readOnly">Read-only</dd></div><div><dt  data-i18n="aiStory.connection">Connection</dt><dd  data-i18n="aiStory.revoke">You can revoke access</dd></div></dl><p class="ai-control-foot" data-i18n="aiStory.controlFoot">Your asset choices apply to every connected assistant. Revocation stops future reads.</p></figure></div><div class="ai-security-grid"><article><h3  data-i18n="aiPage.approvalTitle">Explicit approval</h3><p  data-i18n="aiPage.approvalBody">Review the assistant’s identity and requested access before you authorize a connection. Revoke access from your connection settings.</p></article><article><h3  data-i18n="aiPage.selectionTitle">Selected assets</h3><p  data-i18n="aiPage.selectionBody">Choose the assets that connected assistants can read. Sharing includes related tasks and applies to all your connected assistants, including assets you enable later.</p></article><article><h3  data-i18n="aiPage.readTitle">Read-only connections</h3><p  data-i18n="aiPage.readBody">External assistants read approved structured asset details and tasks. The connector does not change records, import files or carry out maintenance. Imports and writes are planned.</p></article><article><h3  data-i18n="aiPage.privacyTitle">Your information, your decision</h3><p  data-i18n="aiPage.privacyBody">Documents, private notes and location are outside the connector. Asset names and task text may still contain personal information. Shared information follows the assistant provider’s policies; revocation does not erase past disclosures.</p></article></div></div></section>
+<section id="ai-agentic" class="section ai-agentic" aria-labelledby="ai-agentic-title"><div class="wrap"><div class="ai-workflow-layout"><div class="ai-workflow-intro"><h2 id="ai-agentic-title" data-i18n="aiPage.agentTitle">Agentic work. Reviewable steps.</h2><p class="section-lead" data-i18n="aiPage.agentLead">Move from a question to a useful next step. Flow AI brings context and proposed actions together, while you keep control of what becomes part of your records.</p><ol class="ai-agentic-steps"><li><span aria-hidden="true">01</span><div><h3  data-i18n="aiPage.step1Title">Ask and investigate</h3><p  data-i18n="aiPage.step1Body">Ask about the information you have saved. Flow AI finds relevant records and highlights details or gaps worth checking.</p></div></li><li><span aria-hidden="true">02</span><div><h3  data-i18n="aiPage.step2Title">Prepare the next step</h3><p  data-i18n="aiPage.step2Body">Use the findings to prepare suggested actions, tasks or a smart maintenance plan. Review the evidence and adjust the proposal.</p></div></li><li><span aria-hidden="true">03</span><div><h3  data-i18n="aiPage.step3Title">Review and decide</h3><p  data-i18n="aiPage.step3Body">Choose what to confirm. Keep suggestions separate from recorded facts and completed work. External assistants keep read-only access through the connector.</p></div></li></ol></div><figure class="ai-workflow-story"><figcaption  data-i18n="aiStory.workflowCaption">Illustrative Flow AI workflow · sample records</figcaption><div class="ai-workflow-question"><span class="ai-story-number" aria-hidden="true">01</span><p  data-i18n="aiStory.question">What should I check before my car’s next service?</p></div><div class="ai-workflow-context"><span class="ai-asset-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m6 13 3-7h14l3 7M4 13h24v11H4zM7 24v3m18-3v3M7 18h4m10 0h4"/></svg></span><div><strong  data-i18n="aiStory.car">Family car</strong><span  data-i18n="aiStory.record">Recorded service history</span></div><span class="ai-context-dot" aria-hidden="true"></span></div><div class="ai-workflow-draft"><div class="ai-draft-heading"><img src="/assets/favicon.svg" width="32" height="32" alt="" aria-hidden="true"><span class="ai-story-number" aria-hidden="true">02</span><span data-i18n="aiStory.draftLabel">Proposed next step</span></div><h3  data-i18n="aiStory.draftTitle">Review upcoming maintenance</h3><ul><li><span aria-hidden="true">□</span><span  data-i18n="aiStory.check1">Check the recorded mileage</span></li><li><span aria-hidden="true">□</span><span  data-i18n="aiStory.check2">Review the saved service history</span></li><li><span aria-hidden="true">□</span><span  data-i18n="aiStory.check3">Adjust the suggested task</span></li></ul></div><div class="ai-workflow-decision"><span class="ai-story-number" aria-hidden="true">03</span><div><span  data-i18n="aiStory.awaiting">Awaiting your review</span><strong  data-i18n="aiStory.decision">You choose what to confirm</strong></div><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 11 4v9c0 7-11 13-11 13S5 23 5 16V7zM10 16l4 4 8-9"/></svg></div></figure></div><p class="section-note" data-i18n="aiPage.note">AI works from the available records. Check its answers and proposed actions; it does not replace an inspection or professional advice.</p></div></section>
+      <!-- marketing-page:ai:end -->
       <section id="records-library" class="section product-detail-section">
         <div class="wrap">
           <div class="section-heading">
@@ -1241,7 +1242,7 @@
                 </li>
               </ul>
               <p data-i18n="site.example" class="household-example-label">
-                Illustrative example · sample data
+                Illustrative example
               </p>
             </div>
           </div>
@@ -1293,119 +1294,12 @@
           </p>
         </div>
       </section>
-      <section id="asset-categories" class="section asset-categories" aria-labelledby="categories-title">
-        <div class="wrap">
-          <div class="section-heading">
-            <h2 data-i18n="categories.differentTitle" id="categories-title">
-              Different things. Different kinds of care.
-            </h2>
-            <p data-i18n="categories.lead" class="section-lead">
-              Your home, car and laptop need different information and different care. AssetFlow uses each asset’s category and type to help you build a relevant record and review a plan that fits.
-            </p>
-          </div>
-          <div class="category-grid">
-            <article class="category-item category-homeProperty">
-              <div class="category-glyph">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                  <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"/>
-                </svg>
-              </div>
-              <div>
-                <h3 data-i18n="categories.homeProperty">
-                  Home &amp; property
-                </h3>
-                <p data-i18n="categories.focus.homeProperty">
-                  Property details, insurance and home responsibilities, with the records that explain them.
-                </p>
-              </div>
-            </article>
-            <article class="category-item category-electronics">
-              <div class="category-glyph">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                  <rect x="3" y="4" width="18" height="13" rx="2"/>
-                  <path d="M8 21h8M12 17v4M7 8h5"/>
-                </svg>
-              </div>
-              <div>
-                <h3 data-i18n="categories.electronics">
-                  Electronics
-                </h3>
-                <p data-i18n="categories.focus.electronics">
-                  Device details, warranty information and backup checks for the devices that hold your data.
-                </p>
-              </div>
-            </article>
-            <article class="category-item category-vehicles">
-              <div class="category-glyph">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                  <path d="m5 7 2-4h10l2 4 2 3v8H3v-8l2-3ZM5 7h14M6 12h2M16 12h2M3 16h18M5 18v3M19 18v3"/>
-                </svg>
-              </div>
-              <div>
-                <h3 data-i18n="categories.vehicles">
-                  Vehicles
-                </h3>
-                <p data-i18n="categories.focus.vehicles">
-                  Mileage, energy type and service history give your next maintenance plan the right context.
-                </p>
-              </div>
-            </article>
-            <article class="category-item category-furniture">
-              <div class="category-glyph">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                  <path d="M6 11V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6M5 11h14a2 2 0 0 1 2 2v4H3v-4a2 2 0 0 1 2-2ZM6 17v4M18 17v4M3 14h18"/>
-                </svg>
-              </div>
-              <div>
-                <h3 data-i18n="categories.furniture">
-                  Furniture
-                </h3>
-                <p data-i18n="categories.focus.furniture">
-                  Material, condition and indoor or outdoor use help you choose relevant care.
-                </p>
-              </div>
-            </article>
-            <article class="category-item category-appliances">
-              <div class="category-glyph">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                  <rect x="4" y="2" width="16" height="20" rx="2"/>
-                  <path d="M4 7h16M7 4.5h.01M10 4.5h.01"/>
-                  <circle cx="12" cy="14" r="4"/>
-                  <path d="M8 14c2 2 6-2 8 0"/>
-                </svg>
-              </div>
-              <div>
-                <h3 data-i18n="categories.appliances">
-                  Appliances
-                </h3>
-                <p data-i18n="categories.focus.appliances">
-                  The appliance type, model and warranty give context for cleaning, servicing and recurring care.
-                </p>
-              </div>
-            </article>
-            <article class="category-item category-other">
-              <div class="category-glyph">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                  <path d="m3 7 9-4 9 4-9 4-9-4ZM3 7v10l9 4 9-4V7M12 11v10M7 5l10 4"/>
-                </svg>
-              </div>
-              <div>
-                <h3 data-i18n="categories.other">
-                  Other
-                </h3>
-                <p data-i18n="categories.focus.other">
-                  Describe what you own, keep its useful records and choose the care you want to track.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+
       <!-- marketing-page:pricing:start -->
       <section id="pricing" class="section pricing">
         <div class="wrap">
-          <h2 data-i18n="pricing.title">
-            Choose the plan that fits your needs
+          <p class="eyebrow explore-section-step" data-i18n="explorePage.planStep">02 · Choose your Home plan</p><h2 data-i18n="explorePage.pricingTitle">
+            Choose your Home plan.
           </h2>
           <p class="section-lead" data-i18n="site.pricingLead">
             These plans are for AssetFlow Home. Business, Fleet and Hospitality are coming soon, with pricing tailored to each organization.
@@ -1585,7 +1479,7 @@
               <p data-i18n="pricing.enterpriseBody">Enterprise editions are planned with pricing and packages tailored to each type of operation.</p>
             </div>
             <div class="enterprise-pricing-actions">
-              <a class="btn btn-outline" href="/solutions/en/" data-solutions-index data-i18n="pricing.compareEditions">Compare planned editions</a>
+              <a class="btn btn-outline" href="/explore/en/#editions" data-solutions-index data-i18n="pricing.compareEditions">Compare planned editions</a>
               <button class="btn btn-primary" type="button" data-contact-open data-i18n="pricing.contactEdition">Ask about an edition</button>
             </div>
           </aside>
@@ -1595,10 +1489,10 @@
       <!-- marketing-page:solutions:start -->
       <section id="editions" class="section future-section">
         <div class="wrap">
-          <div class="section-heading">
+          <p class="eyebrow explore-section-step" data-i18n="explorePage.editionStep">01 · Choose your edition</p><div class="section-heading">
             <h2>
-              <span data-i18n="matrix.title"
-                >A solution for your kind of ownership.</span
+              <span data-i18n="explorePage.editionTitle"
+                >What do you want to organize?</span
               >
             </h2>
             <p>
@@ -1606,7 +1500,7 @@
               >
             </p>
           </div>
-          <p id="matrix-scroll" class="matrix-scroll" data-i18n="matrix.scroll" hidden>Choose an edition to explore its details.</p>
+          <p id="matrix-scroll" class="matrix-scroll" data-i18n="explorePage.editionHint" hidden>Select an edition to see who it’s for and what it offers.</p>
           <div class="market-interaction" data-market-interaction data-market="home">
             <div
               class="market-options"
@@ -1820,8 +1714,25 @@
               </tbody>
             </table>
           </div>
+<section id="asset-categories" class="home-category-overview" data-home-categories aria-labelledby="categories-title"><h3 id="categories-title" data-i18n="categories.differentTitle">Different things. Different kinds of care.</h3><div class="home-category-grid"><article class="category-homeProperty"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"/>
+                </svg></span><div><h4 data-i18n="categories.homeProperty">Home and property</h4><p data-i18n="categories.focus.homeProperty">Property details, insurance and home responsibilities, with the records that explain them.</p></div></article><article class="category-electronics"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="4" width="18" height="13" rx="2"/>
+                  <path d="M8 21h8M12 17v4M7 8h5"/>
+                </svg></span><div><h4 data-i18n="categories.electronics">Electronics</h4><p data-i18n="categories.focus.electronics">Device details, warranty information and backup checks for the devices that hold your data.</p></div></article><article class="category-vehicles"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m5 7 2-4h10l2 4 2 3v8H3v-8l2-3ZM5 7h14M6 12h2M16 12h2M3 16h18M5 18v3M19 18v3"/>
+                </svg></span><div><h4 data-i18n="categories.vehicles">Vehicles</h4><p data-i18n="categories.focus.vehicles">Mileage, energy type and service history give your next maintenance plan the right context.</p></div></article><article class="category-furniture"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M6 11V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6M5 11h14a2 2 0 0 1 2 2v4H3v-4a2 2 0 0 1 2-2ZM6 17v4M18 17v4M3 14h18"/>
+                </svg></span><div><h4 data-i18n="categories.furniture">Furniture</h4><p data-i18n="categories.focus.furniture">Material, condition and indoor or outdoor use help you choose relevant care.</p></div></article><article class="category-appliances"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="4" y="2" width="16" height="20" rx="2"/>
+                  <path d="M4 7h16M7 4.5h.01M10 4.5h.01"/>
+                  <circle cx="12" cy="14" r="4"/>
+                  <path d="M8 14c2 2 6-2 8 0"/>
+                </svg></span><div><h4 data-i18n="categories.appliances">Appliances</h4><p data-i18n="categories.focus.appliances">The appliance type, model and warranty give context for cleaning, servicing and recurring care.</p></div></article><article class="category-other"><span class="mini-category-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m3 7 9-4 9 4-9 4-9-4ZM3 7v10l9 4 9-4V7M12 11v10M7 5l10 4"/>
+                </svg></span><div><h4 data-i18n="categories.other">Other</h4><p data-i18n="categories.focus.other">Describe what you own, keep its useful records and choose the care you want to track.</p></div></article></div></section>
           <div class="market-actions" hidden>
-            <a class="btn btn-primary" data-market-start href="https://myassetsflow.app" data-i18n="site.start">Start free</a>
+            <a class="btn btn-primary" data-market-start href="#pricing" data-i18n="explorePage.homePlansAction">See Home plans</a>
             <button class="btn btn-primary" type="button" data-market-contact data-contact-open data-i18n="pricing.contactEdition" hidden>Ask about an edition</button>
           </div>
           <p class="visually-hidden" data-market-announcement aria-live="polite" aria-atomic="true"></p>
@@ -1829,27 +1740,7 @@
         </div>
       </section>
       <!-- marketing-page:solutions:end -->
-      <section class="section control-section">
-        <div class="wrap control-layout">
-          <h2>
-            <span data-i18n="site.controlTitle"
-              >Your records. Your decisions.</span
-            >
-          </h2>
-          <div>
-            <p class="section-lead">
-              <span data-i18n="site.controlBody"
-                >Keep ownership information together, review AI suggestions
-                before confirming them, and choose what to share with your
-                household.</span
-              >
-            </p>
-            <a href="https://myassetsflow.app/privacy"
-              ><span data-i18n="security.privacyLink">Privacy policy</span></a
-            >
-          </div>
-        </div>
-      </section>
+      <section id="security" class="section trust-section" aria-labelledby="trust-title"><div class="wrap"><p class="trust-eyebrow"><span data-i18n="trust.eyebrow">Security and ownership</span></p><div class="trust-heading"><h2 id="trust-title"><span data-i18n="trust.title">Your assets. Your control.</span></h2><p><span data-i18n="trust.lead">Choose who sees your assets, review what AI proposes, and manage your information from your account.</span></p></div><div class="trust-controls"><article><span class="trust-control-number" aria-hidden="true">01</span><div><h3><span data-i18n="trust.sharingTitle">Choose private or shared</span></h3><p><span data-i18n="trust.sharingBody">Decide which assets household members can access. Private assets stay outside their shared view.</span></p></div></article><article><span class="trust-control-number" aria-hidden="true">02</span><div><h3><span data-i18n="trust.contextTitle">Keep private context separate</span></h3><p><span data-i18n="trust.contextBody">Private document retrieval and public web research run separately. Web research uses a redacted question.</span></p></div></article><article><span class="trust-control-number" aria-hidden="true">03</span><div><h3><span data-i18n="trust.reviewTitle">Review before saving</span></h3><p><span data-i18n="trust.reviewBody">AI suggestions are drafts. Check their references, adjust the details and confirm the changes you want.</span></p></div></article><article><span class="trust-control-number" aria-hidden="true">04</span><div><h3><span data-i18n="trust.connectorTitle">Approve assistant access</span></h3><p><span data-i18n="trust.connectorBody">Connect explicitly, share selected assets with read-only access and revoke future access at any time. Revocation does not erase information already shared.</span></p></div></article></div><div class="trust-details"><article><h3><span data-i18n="trust.rightsTitle">Manage your information</span></h3><p><span data-i18n="trust.rightsBody">Manage data export and account deletion in Settings. Information shared with an external assistant follows that provider’s policies.</span></p><a href="https://myassetsflow.app/privacy" data-i18n="security.privacyLink">Privacy policy</a></article><article class="trust-ai-act"><h3><span data-i18n="trust.actTitle">EU AI Act: transparency</span></h3><p><span data-i18n="trust.actBody">The EU AI Act sets transparency duties for AI interactions. Flow AI is identified as AI and presents suggestions for your review.</span></p><a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations" hreflang="en"><span data-i18n="trust.actLink">EU transparency guidance (English)</span></a></article></div><a class="trust-ai-link" href="/ai/en/" data-ai-index><span data-i18n="trust.aiLink">Explore AI controls</span><span aria-hidden="true"> →</span></a></div></section>
       <section class="section closing">
         <div class="wrap">
           <h2>
@@ -1894,13 +1785,14 @@
           <nav aria-label="Product" data-i18n-aria="site.product">
             <a href="#product" data-i18n="site.product">Product</a>
             <a href="#how-it-works" data-i18n="site.how">How it works</a>
-            <a href="/pricing/en/" data-pricing-index data-i18n="nav.pricing">Pricing</a>
+            <a href="/ai/en/" data-ai-index data-i18n="aiPage.nav">AI</a
+          ><a href="/explore/en/#pricing" data-pricing-index data-i18n="nav.pricing">Pricing</a>
           </nav>
         </section>
         <section class="footer-group">
           <h2 data-i18n="site.solutions">Solutions</h2>
           <nav aria-label="Solutions" data-i18n-aria="site.solutions">
-            <a href="/solutions/en/" data-solutions-index data-i18n="site.solutions">Solutions</a>
+            <a href="/explore/en/#editions" data-solutions-index data-i18n="site.solutions">Solutions</a>
           </nav>
         </section>
         <section class="footer-group">
@@ -1912,7 +1804,7 @@
         <section class="footer-group">
           <h2 data-i18n="site.footerResources">Resources</h2>
           <nav aria-label="Resources" data-i18n-aria="site.footerResources">
-            <a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Product guides</a>
+            <a data-i18n="nav.docs" href="/docs/en/" data-doc-index>Guides</a>
             <a data-i18n="nav.blogs" href="/blog/en/" data-blog-index>Blog</a>
             <a
               data-i18n="security.privacyLink"

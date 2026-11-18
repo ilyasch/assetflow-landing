@@ -59,7 +59,8 @@ def preview(article, locale, ui, featured=False):
 
 def render_index(locale, data):
     ui, articles = data['ui'], data['articles']
-    home = f'/?lang={locale}'
+    catalog = json.loads((ROOT / f"locales/{locale}.json").read_text())
+    home = f'/{locale}/'
     current = ' aria-current="page"'
     languages = ''.join(f'<a href="/blog/{loc}/" lang="{loc}" hreflang="{loc}"{current if loc == locale else ""}>{NAMES[loc]}</a>' for loc in LOCALES)
     alternates = ''.join(f'<link rel="alternate" hreflang="{loc}" href="{SITE}/blog/{loc}/">' for loc in LOCALES)
@@ -70,7 +71,7 @@ def render_index(locale, data):
 <link rel="canonical" href="{SITE}/blog/{locale}/">{alternates}<link rel="alternate" hreflang="x-default" href="{SITE}/blog/en/">
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(ui['sectionLead'])}"><meta property="og:url" content="{SITE}/blog/{locale}/"><meta property="og:image" content="{SITE}/assets/social-preview.png"><meta property="og:image:alt" content="AssetFlow"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(ui['sectionLead'])}"><meta name="twitter:image" content="{SITE}/assets/social-preview.png">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=2"><link rel="stylesheet" href="/blog.css?v=1"></head>
-<body class="article-page blog-index"><a class="skip-link" href="#main">{esc(ui['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><a class="article-back" href="{home}">AssetFlow Home</a><details class="article-language"><summary>{NAMES[locale]}</summary><nav aria-label="{esc(ui['language'])}">{languages}</nav></details>{start_link(locale)}</div></header>
+<body class="article-page blog-index"><a class="skip-link" href="#main">{esc(ui['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><nav class="editorial-links" aria-label="{esc(catalog["site"]["navigation"])}"><a href="{home}">AssetFlow</a><a href="/docs/{locale}/">{esc(catalog["nav"]["docs"])}</a></nav><details class="article-language"><summary>{NAMES[locale]}</summary><nav aria-label="{esc(ui['language'])}">{languages}</nav></details>{start_link(locale)}</div></header>
 <main id="main"><section class="section blogs" aria-labelledby="blogs-title"><div class="wrap"><div class="blog-section-intro"><h1 id="blogs-title">{esc(ui['sectionTitle'])}</h1><p class="section-lead">{esc(ui['sectionLead'])}</p></div>{cards}</div></section></main>
 <footer class="site-footer"><div class="wrap footer-inner"><p>© AssetFlow</p><p class="legal-links"><a href="https://myassetsflow.app/privacy">{esc(ui['privacy'])}</a><a href="https://myassetsflow.app/terms">{esc(ui['terms'])}</a></p></div></footer></body></html>'''
 

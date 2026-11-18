@@ -28,6 +28,9 @@
     <loc>https://myassetsflow.com/blog/en/family-car-maintenance/</loc>
   </url>
   <url>
+    <loc>https://myassetsflow.com/blog/en/flow-ai-from-records-to-next-steps/</loc>
+  </url>
+  <url>
     <loc>https://myassetsflow.com/blog/en/factory-maintenance/</loc>
   </url>
   <url>
@@ -41,6 +44,9 @@
   </url>
   <url>
     <loc>https://myassetsflow.com/blog/it/family-car-maintenance/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/blog/it/flow-ai-from-records-to-next-steps/</loc>
   </url>
   <url>
     <loc>https://myassetsflow.com/blog/it/factory-maintenance/</loc>
@@ -58,6 +64,9 @@
     <loc>https://myassetsflow.com/blog/de/family-car-maintenance/</loc>
   </url>
   <url>
+    <loc>https://myassetsflow.com/blog/de/flow-ai-from-records-to-next-steps/</loc>
+  </url>
+  <url>
     <loc>https://myassetsflow.com/blog/de/factory-maintenance/</loc>
   </url>
   <url>
@@ -71,6 +80,9 @@
   </url>
   <url>
     <loc>https://myassetsflow.com/blog/es/family-car-maintenance/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/blog/es/flow-ai-from-records-to-next-steps/</loc>
   </url>
   <url>
     <loc>https://myassetsflow.com/blog/es/factory-maintenance/</loc>
@@ -88,6 +100,9 @@
     <loc>https://myassetsflow.com/blog/fr/family-car-maintenance/</loc>
   </url>
   <url>
+    <loc>https://myassetsflow.com/blog/fr/flow-ai-from-records-to-next-steps/</loc>
+  </url>
+  <url>
     <loc>https://myassetsflow.com/blog/fr/factory-maintenance/</loc>
   </url>
   <url>
@@ -103,6 +118,9 @@
     <loc>https://myassetsflow.com/blog/ar/family-car-maintenance/</loc>
   </url>
   <url>
+    <loc>https://myassetsflow.com/blog/ar/flow-ai-from-records-to-next-steps/</loc>
+  </url>
+  <url>
     <loc>https://myassetsflow.com/blog/ar/factory-maintenance/</loc>
   </url>
   <url>
@@ -115,21 +133,6 @@
     <loc>https://myassetsflow.com/docs/en/</loc>
   </url>
   <url>
-    <loc>https://myassetsflow.com/docs/it/</loc>
-  </url>
-  <url>
-    <loc>https://myassetsflow.com/docs/de/</loc>
-  </url>
-  <url>
-    <loc>https://myassetsflow.com/docs/es/</loc>
-  </url>
-  <url>
-    <loc>https://myassetsflow.com/docs/fr/</loc>
-  </url>
-  <url>
-    <loc>https://myassetsflow.com/docs/ar/</loc>
-  </url>
-  <url>
     <loc>https://myassetsflow.com/docs/en/add-an-asset/</loc>
   </url>
   <url>
@@ -137,6 +140,12 @@
   </url>
   <url>
     <loc>https://myassetsflow.com/docs/en/plan-maintenance/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/docs/en/connect-your-ai-assistant/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/docs/it/</loc>
   </url>
   <url>
     <loc>https://myassetsflow.com/docs/it/add-an-asset/</loc>
@@ -148,6 +157,12 @@
     <loc>https://myassetsflow.com/docs/it/plan-maintenance/</loc>
   </url>
   <url>
+    <loc>https://myassetsflow.com/docs/it/connect-your-ai-assistant/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/docs/de/</loc>
+  </url>
+  <url>
     <loc>https://myassetsflow.com/docs/de/add-an-asset/</loc>
   </url>
   <url>
@@ -155,6 +170,12 @@
   </url>
   <url>
     <loc>https://myassetsflow.com/docs/de/plan-maintenance/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/docs/de/connect-your-ai-assistant/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/docs/es/</loc>
   </url>
   <url>
     <loc>https://myassetsflow.com/docs/es/add-an-asset/</loc>
@@ -166,6 +187,12 @@
     <loc>https://myassetsflow.com/docs/es/plan-maintenance/</loc>
   </url>
   <url>
+    <loc>https://myassetsflow.com/docs/es/connect-your-ai-assistant/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/docs/fr/</loc>
+  </url>
+  <url>
     <loc>https://myassetsflow.com/docs/fr/add-an-asset/</loc>
   </url>
   <url>
@@ -175,6 +202,12 @@
     <loc>https://myassetsflow.com/docs/fr/plan-maintenance/</loc>
   </url>
   <url>
+    <loc>https://myassetsflow.com/docs/fr/connect-your-ai-assistant/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/docs/ar/</loc>
+  </url>
+  <url>
     <loc>https://myassetsflow.com/docs/ar/add-an-asset/</loc>
   </url>
   <url>
@@ -182,5 +215,62 @@
   </url>
   <url>
     <loc>https://myassetsflow.com/docs/ar/plan-maintenance/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/docs/ar/connect-your-ai-assistant/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/explore/en/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/explore/it/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/explore/de/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/explore/es/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/explore/fr/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/explore/ar/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/ai/en/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/ai/it/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/ai/de/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/ai/es/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/ai/fr/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/ai/ar/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/en/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/it/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/de/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/es/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/fr/</loc>
+  </url>
+  <url>
+    <loc>https://myassetsflow.com/ar/</loc>
   </url>
 </urlset>
