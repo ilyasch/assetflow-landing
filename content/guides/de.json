@@ -1,0 +1,166 @@
+{
+  "slug": "connect-your-ai-assistant",
+  "title": "Deinen KI-Assistenten verbinden",
+  "description": "Lies ausgewählte Assetangaben und zugehörige Aufgaben mit deinem Assistenten. Du genehmigst den Zugriff und verwaltest die Freigabe in My AssetsFlow.",
+  "sections": [
+    {
+      "title": "Vor dem Verbinden",
+      "body": "Verwende ein Konto, das Freigaben für das Asset oder den Haushalt verwalten darf. Halte dein Assistentenkonto bereit. Nutze nur den öffentlichen HTTPS-MCP-Endpunkt und die Anleitung von My AssetsFlow für dein Konto. Ersetze ihn weder durch eine Entwicklungsadresse noch durch die App-Startseite. Tarife, Organisationsregeln und Remote-MCP-Unterstützung unterscheiden sich."
+    },
+    {
+      "title": "Assets freigeben",
+      "body": "Öffne ein vorhandenes Asset zur Bearbeitung, prüfe die Freigabe für verbundene Assistenten und speichere. Prüfe jedes Asset vor der Genehmigung. Die Freigabe gilt für alle verbundenen Assistenten, auch für später aktivierte Assets; sie wird nicht je Assistent ausgewählt. Aufgabentitel und Checklisten können persönliche Angaben enthalten.",
+      "screenshots": [
+        {
+          "alt": "Asseteditor mit aktiver Assistentenfreigabe für das synthetische Asset Test QA.",
+          "caption": "Prüfe die Freigabe jedes Assets. Echte DEV-Aufnahme vom 18. November 2026; synthetisches Asset; ohne Kontonavigation zugeschnitten.",
+          "uiLanguage": "Aufnahmesprache: Englisch.",
+          "width": 704,
+          "height": 335,
+          "sources": [
+            {
+              "src": "/assets/guides/asset-sharing-352.jpg",
+              "width": 352
+            },
+            {
+              "src": "/assets/guides/asset-sharing-704.jpg",
+              "width": 704
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verbinden und genehmigen",
+      "body": "Füge beim Assistenten eine Remote-MCP-Verbindung mit dem bereitgestellten Endpunkt hinzu. Wähle die dokumentierte OAuth-Anmeldung. Prüfe auf der My AssetsFlow-Zustimmungsseite die Identität des Assistenten und den Lesezugriff, bevor du ausdrücklich zustimmst. Kehre zum Assistenten zurück und prüfe die erkannten Tools. Füge niemals Passwörter, Tokens oder Schlüssel in Chats ein. Fehlen Angaben oder Anmeldeoptionen, wende dich an den Support."
+    },
+    {
+      "title": "Fragen zu deinen Daten stellen",
+      "body": "Aktiviere den Connector in einer neuen Unterhaltung und probiere diese Fragen. Antworten beruhen auf erfassten Angaben und Aufgaben, nicht auf Live-Prüfungen. Lass fehlende Angaben benennen statt erraten. Bei kalender- oder nutzungsbasierten Terminen können Restwerte unbekannt sein; erfasste Messwerte sind keine Live-Telemetrie.",
+      "examples": [
+        "Liste meine freigegebenen Assets auf",
+        "Welche Wartungsaufgaben stehen demnächst an?",
+        "Fasse die erfassten Angaben zu meinem Auto zusammen."
+      ]
+    },
+    {
+      "title": "Freigegebene Assets ändern",
+      "body": "Bearbeite das Asset, ändere die Assistentenfreigabe und speichere. Eine deaktivierte Freigabe stoppt neue Abrufe des Assets und seiner Aufgaben. Neu freigegebene Assets stehen allen verbundenen Assistenten zur Verfügung. Frage in einer neuen Unterhaltung erneut, damit frühere Chatangaben nicht als aktuelle Daten gelten."
+    },
+    {
+      "title": "Zugriff trennen oder erneuern",
+      "body": "Suche unter Einstellungen → Externe KI-Verbindungen den Assistenten, wähle Trennen und bestätige. Trenne oder entferne die Verbindung auch beim Assistenten. Der Widerruf stoppt künftigen Zugriff, löscht aber keine beim Anbieter gespeicherten Daten. Starte eine abgelaufene Verbindung beim Assistenten neu und prüfe die Zustimmung erneut."
+    },
+    {
+      "title": "ChatGPT im Web",
+      "body": "Für ChatGPT web nennt OpenAI Business und Enterprise/Edu mit Arbeitsbereichsberechtigungen sowie benutzerdefinierte Pro-Verbindungen mit Lese-/Abrufrechten. Setze Plus oder Free nicht voraus.",
+      "notice": "Anleitung unvollständig: Anbieterverbindung und Screenshots müssen noch geprüft werden.",
+      "links": [
+        [
+          "ChatGPT web",
+          "https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt"
+        ]
+      ],
+      "steps": [
+        "Öffne in der aktuellen Oberfläche Plugins → + → Add custom MCP server, trage Namen und bereitgestellten HTTPS-Endpunkt ein und richte OAuth ein.",
+        "Prüfe den Hinweis, erstelle das Plugin und prüfe die Tools.",
+        "Wähle es in einem neuen Chat über @.",
+        "Ältere Konten zeigen eventuell Settings → Apps → Create.",
+        "Eine Administratorfreigabe kann nötig sein.",
+        "Der My AssetsFlow-Ablauf und Screenshots sind noch ungeprüft."
+      ]
+    },
+    {
+      "title": "Claude im Web",
+      "body": "Für Claude web nennt Anthropic Free (ein eigener Connector), Pro, Max, Ultra, Team und Enterprise. In verwalteten Arbeitsbereichen müssen Eigentümer oder berechtigte Administratoren Connectoren hinzufügen.",
+      "notice": "Anleitung unvollständig: Anbieterverbindung und Screenshots müssen noch geprüft werden.",
+      "links": [
+        [
+          "Claude web",
+          "https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp"
+        ]
+      ],
+      "steps": [
+        "Öffne Customize → Connectors und füge einen eigenen Web-Connector hinzu.",
+        "Trage Namen und vollständigen Endpunkt ein, prüfe die Authentifizierung und melde dich über OAuth an.",
+        "Verwende nur die von My AssetsFlow dokumentierte Clientidentität.",
+        "Aktiviere den verbundenen Eintrag im Chatmenü + unter Connectors.",
+        "My AssetsFlow-Anmeldeoptionen, abgeschlossener Ablauf und Screenshots müssen noch geprüft werden."
+      ]
+    },
+    {
+      "title": "Mistral Le Chat / Vibe im Web",
+      "body": "Mistral nennt Le Chat jetzt „Vibe“; nutze Work im Web unter chat.mistral.ai. Die MCP-Anleitung verlangt Administratorrechte; bei Free, Pro und Student ist der Kontoinhaber standardmäßig Administrator.",
+      "notice": "Anleitung unvollständig: Anbieterverbindung und Screenshots müssen noch geprüft werden.",
+      "links": [
+        [
+          "Mistral Le Chat / Vibe",
+          "https://docs.mistral.ai/vibe/work/web/connectors/mcp-connectors"
+        ]
+      ],
+      "steps": [
+        "Öffne Connectors → + Add Connector → Custom MCP Connector.",
+        "Nutze einen Namen ohne Leerzeichen, etwa myassetsflow, und den vollständigen Endpunkt.",
+        "Wähle Connect und durchlaufe die erkannte OAuth-Anmeldung.",
+        "Aktiviere den Connector unter + oder / → Tools.",
+        "Kontoverfügbarkeit, My AssetsFlow-Anmeldung und Screenshots sind noch ungeprüft."
+      ]
+    },
+    {
+      "title": "Codex CLI",
+      "body": "Nutze eine installierte, angemeldete Codex CLI mit Streamable HTTP und OAuth. Organisationsregeln können MCP einschränken. Modellzugriff erfordert ein geeignetes ChatGPT-Konto oder unterstützte API-Abrechnung, unabhängig von der My AssetsFlow-Genehmigung. OpenAI bietet Codex in allen ChatGPT-Tarifen einschließlich Free und Go mit tarifabhängigen Limits. CLI-Zugriff und Codex Cloud haben unterschiedliche Verfügbarkeit.",
+      "notice": "Anleitung unvollständig: Anbieterverbindung und Screenshots müssen noch geprüft werden.",
+      "links": [
+        [
+          "Codex CLI",
+          "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+        ]
+      ],
+      "code": "codex mcp add myassetsflow --url \"MCP_ENDPOINT\"\ncodex mcp login myassetsflow\ncodex mcp list",
+      "codeCaption": "Befehlsvorlagen: MCP_ENDPOINT durch den von My AssetsFlow bereitgestellten Endpunkt ersetzen.",
+      "steps": [
+        "Ersetze MCP_ENDPOINT in den Befehlsvorlagen durch den bereitgestellten Endpunkt; es ist keine echte URL.",
+        "Prüfe die Browserzustimmung und die Tools mit /mcp in einer CLI-Sitzung.",
+        "Falls ein vorregistrierter OAuth-Client nötig ist, fordere die genaue Anleitung an und rate keine ID.",
+        "Lokale Hilfe mit Version 0.169.0 geprüft.",
+        "Anmeldung, Toolantworten und Screenshots sind unvollständig; diese Anleitung richtet keine Verbindung ein."
+      ],
+      "cleanupCode": "codex mcp logout myassetsflow\ncodex mcp remove myassetsflow",
+      "cleanupCaption": "In Codex CLI trennen"
+    },
+    {
+      "title": "Probleme beheben",
+      "body": "Fehlen Verbindungseinstellungen, prüfe die genaue Web- oder CLI-Oberfläche, Tarif und Administratorrechte. Bei Anmeldefehlern prüfe den Endpunkt und das My AssetsFlow-Konto und starte die Anmeldung neu. Wende dich bei weiteren Fehlern an den Support und umgehe keine Zustimmung. Fehlen Assets, prüfe Freigabe, aktiven Status, Konto und Haushaltsrechte und fordere eine neue Liste an. Erneuere abgelaufene Verbindungen beim Assistenten. Trenne unerwünschte Einträge in beiden Diensten."
+    },
+    {
+      "title": "Was der Connector nicht bereitstellt",
+      "body": "Der Connector liest freigegebene strukturierte Assetfelder und Aufgaben. Dokumentinhalte, private Notizen, Standort, Seriennummern, Versicherungsdetails sowie private Betreuungs- und Zahlungsdaten bleiben ausgeschlossen. Titel und Checklisten können persönliche Angaben enthalten; prüfe sie vor der Freigabe. Anlegen und Ändern von Assets oder Aufgaben, Dateiimporte und andere Schreibzugriffe sind geplant. Für übermittelte Daten gelten die Anbieterregeln einschließlich Speicherung und Training. Trennen löscht keine vergangenen Unterhaltungen."
+    },
+    {
+      "title": "Offizielle Anleitungen",
+      "body": "Anbieteranleitungen am 18. November 2026 geprüft. Die Quellen belegen Anforderungen, keine erfolgreiche My AssetsFlow-Verbindung. Die Anleitungen bleiben unvollständig, bis DEV-Abläufe und sichere Screenshots geprüft wurden.",
+      "links": [
+        [
+          "ChatGPT web",
+          "https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt"
+        ],
+        [
+          "Claude web",
+          "https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp"
+        ],
+        [
+          "Mistral Le Chat / Vibe",
+          "https://docs.mistral.ai/vibe/work/web/connectors/mcp-connectors"
+        ],
+        [
+          "Codex CLI",
+          "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+        ],
+        [
+          "Codex",
+          "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan"
+        ]
+      ]
+    }
+  ]
+}

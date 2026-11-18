@@ -10,7 +10,9 @@
   function initialLocale() {
     var requested = new URLSearchParams(window.location.search).get("lang");
     if (LOCALES.indexOf(requested) !== -1) return requested;
-    var localizedPage = window.location.pathname.match(/^\/(pricing|solutions)\/([a-z]{2})\//);
+    var staticHomeLocale = window.location.pathname.match(/^\/([a-z]{2})\/$/);
+    if (staticHomeLocale && LOCALES.indexOf(staticHomeLocale[1]) !== -1) return staticHomeLocale[1];
+    var localizedPage = window.location.pathname.match(/^\/(pricing|solutions|ai|explore)\/([a-z]{2})\//);
     if (localizedPage && LOCALES.indexOf(localizedPage[2]) !== -1) return localizedPage[2];
     try {
       var stored = localStorage.getItem(STORAGE_KEY);
@@ -69,6 +71,10 @@
 
   function setLocale(locale) {
     if (LOCALES.indexOf(locale) === -1) locale = "en";
+    if ((document.body.hasAttribute("data-static-home") || (document.body.dataset.localizedPage === "ai" || document.body.dataset.localizedPage === "explore")) && document.documentElement.lang !== locale) {
+      window.location.assign((document.body.dataset.localizedPage ? "/" + document.body.dataset.localizedPage + "/" : "/") + locale + "/" + window.location.hash);
+      return Promise.resolve();
+    }
     var request = ++localeRequest;
     return loadLocale(locale)
       .then(function (dict) {
@@ -92,17 +98,23 @@
         document.querySelectorAll("[data-doc-article]").forEach(function (link) {
           link.href = "/docs/" + locale + "/" + link.dataset.docArticle + "/";
         });
+        document.querySelectorAll("[data-ai-index]").forEach(function (link) {
+          link.href = "/ai/" + locale + "/";
+        });
+        document.querySelectorAll("[data-explore-index]").forEach(function (link) {
+          link.href = "/explore/" + locale + "/";
+        });
         document.querySelectorAll("[data-pricing-index]").forEach(function (link) {
-          link.href = "/pricing/" + locale + "/";
+          link.href = "/explore/" + locale + "/#pricing";
         });
         document.querySelectorAll("[data-solutions-index]").forEach(function (link) {
-          link.href = "/solutions/" + locale + "/";
+          link.href = "/explore/" + locale + "/#editions";
         });
         document.querySelectorAll("[data-home-product]").forEach(function (link) {
           link.href = "/?lang=" + locale + "#product";
         });
         if (document.body.dataset.localizedPage) {
-          window.history.replaceState(null, "", "/" + document.body.dataset.localizedPage + "/" + locale + "/");
+          window.history.replaceState(null, "", "/" + document.body.dataset.localizedPage + "/" + locale + "/" + window.location.hash);
         }
         document.getElementById("lang-picker").value = locale;
         if (dict.seo) {
@@ -170,7 +182,8 @@
   function initSectionRail() {
     var links = Array.from(document.querySelectorAll("[data-section-link]"));
     var main = document.getElementById("main");
-    var hero = document.querySelector(".hero");
+    var howSection = document.getElementById("how-it-works");
+    var siteHeader = document.querySelector(".site-header");
     var desktopRail = window.matchMedia("(min-width: 1024px)");
     var sections = links
       .map(function (link) {
@@ -191,8 +204,11 @@
           link.setAttribute("aria-current", "location");
         else link.removeAttribute("aria-current");
       });
-      var heroHeight = hero ? hero.offsetHeight : 0;
-      var railActive = desktopRail.matches && window.scrollY >= heroHeight - 96;
+      var headerBottom = siteHeader ? siteHeader.getBoundingClientRect().bottom : 0;
+      var railStart = Math.max(headerBottom + 16,
+        parseFloat(window.getComputedStyle(document.documentElement).scrollPaddingTop) || 0);
+      var railActive = desktopRail.matches && howSection &&
+        howSection.getBoundingClientRect().top <= railStart + 1;
       var classNames = main.className
         .split(/\s+/)
         .filter(function (name) {
@@ -214,11 +230,11 @@
     window.addEventListener("resize", scheduleUpdate);
     window.addEventListener("hashchange", scheduleUpdate);
     window.addEventListener("pageshow", scheduleUpdate);
-    if (hero && "IntersectionObserver" in window) {
-      var heroObserver = new IntersectionObserver(scheduleUpdate, {
+    if (howSection && "IntersectionObserver" in window) {
+      var howObserver = new IntersectionObserver(scheduleUpdate, {
         rootMargin: "-96px 0px 0px 0px",
       });
-      heroObserver.observe(hero);
+      howObserver.observe(howSection);
     }
     window.requestAnimationFrame(updateCurrent);
   }
@@ -291,6 +307,12 @@
           return tab.dataset.demo === link.dataset.demoTarget;
         });
         if (target) select(target, true);
+      });
+    });
+    demo.querySelectorAll("[data-demo-next]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var tab = tabs.find(function (item) { return item.dataset.demo === button.dataset.demoNext; });
+        if (tab) select(tab, true);
       });
     });
     panels.forEach(function (panel) {
@@ -370,6 +392,8 @@
         });
       });
       section.dataset.market = button.dataset.market;
+      var homeCategories = section.querySelector("[data-home-categories]");
+      if (homeCategories) homeCategories.hidden = button.dataset.market !== "home";
       section.querySelector("[data-market-start]").hidden = button.dataset.market !== "home";
       section.querySelector("[data-market-contact]").hidden = button.dataset.market === "home";
       section.querySelector("[data-market-announcement]").textContent =

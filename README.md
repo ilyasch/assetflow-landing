@@ -7,7 +7,7 @@ acts as the portfolio hub for the AssetFlow platform across its four editions:
 - **AssetFlow Hospitality**: Specialized hotel and resort operations (hotels, resorts, aparthotels, accommodations) with multi-property oversight (Coming Soon).
 - **AssetFlow Fleet**: Specialized vehicle and equipment operations (car rentals, delivery vans, corporate cars, trucks, machinery fleets) with interval tracking (Coming Soon).
 
-It contains an explicitly illustrative, local-only ownership demonstration. It has no real app screens, sign-up forms, dashboards, or authenticated data; those live in the separate `AssetFlow` app repo.
+It contains an explicitly illustrative, local-only ownership demonstration. The product guide includes a reviewed real DEV sharing-control screenshot with synthetic data. It has no sign-up forms, dashboards, or authenticated runtime; those live in the separate `AssetFlow` app repo.
 
 This repository is intentionally independent from the other AssetFlow repos
 (`AssetFlow`, `assetflow-worker`, `assetflow-infrastructure`,
@@ -26,7 +26,7 @@ The homepage pairs a bold headline and color wash with a colorful, explicitly il
 
 The hero pairs a slow color wash behind the top-right navigation with a small animated asset-care constellation: a tracked asset card connected to document, upcoming-care and service-history icons. The decorative inline SVG mirrors in RTL, hides on narrow screens to keep the copy clear, and all motion stops for reduced-motion preferences. No image, video or animation-library download is added.
 
-The example has Asset, Maintenance plan and Records tabs. The maintenance tab lets visitors review, confirm and reset a sample task; nothing is sent to a server or saved. With JavaScript disabled, all three panels remain readable and inert controls are hidden. Pricing defaults to monthly. No package manager or framework is required.
+The example has Asset, Maintenance plan and Records tabs. The maintenance tab lets visitors review, confirm and reset a sample task; nothing is sent to a server or saved. With JavaScript disabled, all five panels remain readable and inert controls are hidden. Pricing defaults to monthly. No package manager or framework is required.
 
 ## Visual blog guides
 
@@ -75,7 +75,7 @@ their language links navigate directly to equivalent translated pages.
 ## Local preview
 
 Build the publishable site first, then serve `dist/`. The package step generates
-the localized Pricing and Solutions routes there; serving the repository root
+the localized AI and Find your fit routes there; serving the repository root
 skips those generated pages and leaves the untrimmed source homepage visible.
 Because `main.js` fetches locale JSON files, use a local static server rather
 than a `file://` URL (browsers block `fetch` on `file://`):
@@ -219,3 +219,50 @@ Pages steps above.
 DNS management stays at GoDaddy for this domain; there is no Cloudflare
 migration involved (that setup is specific to `myassetsflow.app`, the actual
 product domain, and is owned by `assetflow-infrastructure`).
+
+
+## Preferred assistants and connection guide
+
+The dedicated `/ai/{locale}/` page brings together Flow AI, connections to
+external assistants, concrete security controls and reviewable agentic work.
+The homepage header, mobile menu and footer link to it; the two full AI sections
+are rendered only on that page. Connector messaging is in present tense.
+The setup guide remains a deferred draft with no AI-page setup link.
+Rich guide draft content lives in
+`content/guides/{en,it,de,es,fr,ar}.json`; `scripts/build-docs.py` renders named
+sections, ordered steps, examples, source links, code and responsive screenshots.
+Existing concise guides retain their current format. Provider UI labels stay in
+their original language so people can find the exact controls.
+
+Every screenshot needs translated `alt`, `caption` and `uiLanguage` strings,
+reserved dimensions and at least two local `sources` variants. Record provenance
+in `assets/guides/SOURCES.md`. Packaging hashes public screenshot assets, and the
+site verifier checks their references. Do not use fabricated screens, secrets,
+private records or DEV endpoint values as public connection instructions.
+
+Homepage copies at `/en/`, `/it/`, `/de/`, `/es/`, `/fr/` and `/ar/` are localized
+at build time, including the feature link and metadata. Without JavaScript the
+homepage exposes native language links. Product guides have no scripts; their
+language links navigate to the equivalent article. The root homepage keeps its
+existing behavior. These are static landing routes, with no app API changes.
+
+Run `bash scripts/package-site.sh` after any content or screenshot change.
+See [verification and remaining captures](documentation/preferred-ai-verification.md)
+for provider evidence and the unfinished account journeys. Product messaging is
+in present tense; this change does not establish provider acceptance or change
+connector configuration, rollout status or publication approval.
+
+
+## Solutions and pricing in one page
+
+`/explore/{locale}/` is **Find your fit**: solutions first, then Home pricing.
+The existing edition comparison and monthly/annual controls are preserved.
+The generator retains static redirects from old solutions/pricing pages, and
+`_redirects` supplies the corresponding hosted 301s. Each language has its own
+canonical, equivalent-language links and a sitemap entry for the combined page.
+
+The AI page now includes three visual explanations: original provider/protocol
+marks, an illustrative sharing boundary and a sample question-to-review workflow.
+All illustration labels are localized. Brand sources are recorded in
+`assets/brands/SOURCES.md`; these assets are bundled and content-addressed, with
+no browser calls to provider websites. The setup guide remains deferred.

@@ -10,7 +10,10 @@ LOCALES = ("en", "it", "de", "es", "fr", "ar")
 SITE = "https://myassetsflow.com"
 LANG_NAMES = {"en": "English", "it": "Italiano", "de": "Deutsch", "es": "Español", "fr": "Français", "ar": "العربية"}
 
-# Each guide has a title, short introduction, and three practical steps.
+BREADCRUMBS = {"en": "Breadcrumb", "it": "Percorso", "de": "Brotkrumennavigation", "es": "Ruta de navegación", "fr": "Fil d’Ariane", "ar": "مسار التنقل"}
+SLUGS = ("add-an-asset", "organize-records", "plan-maintenance", "connect-your-ai-assistant")
+
+# Legacy guides retain their concise step format; richer guides use named sections.
 DATA = {
 "en": {
 "ui": ["Product guides", "Clear guides to adding assets, organizing records, and planning maintenance in AssetFlow Home.", "Read guide", "All product guides", "In this guide", "Home", "Blog", "Start free", "Skip to content", "Product guide", "Language"],
@@ -60,22 +63,54 @@ def esc(value):
     return html.escape(value, quote=True)
 
 
+def sections(guide):
+    return [step if isinstance(step, dict) else {"title": step[0], "body": step[1]} for step in guide[2]]
+
+
+def render_section(step, index):
+    parts = [f'<section id="step-{index+1}"><h2>{esc(step["title"])}</h2>']
+    if step.get("notice"):
+        parts.append(f'<p class="guide-notice">{esc(step["notice"])}</p>')
+    parts.append(f'<p>{esc(step["body"])}</p>')
+    if step.get("steps"):
+        parts.append('<ol class="guide-steps">' + ''.join(f'<li>{esc(item)}</li>' for item in step["steps"]) + '</ol>')
+    if step.get("examples"):
+        parts.append('<ul class="guide-examples">' + ''.join(f'<li><q>{esc(example)}</q></li>' for example in step["examples"]) + '</ul>')
+    if step.get("code"):
+        parts.append(f'<p>{esc(step["codeCaption"])}</p><pre dir="ltr"><code>{esc(step["code"])}</code></pre>')
+    if step.get("cleanupCode"):
+        parts.append(f'<h3>{esc(step["cleanupCaption"])}</h3><pre dir="ltr"><code>{esc(step["cleanupCode"])}</code></pre>')
+    for shot in step.get("screenshots", []):
+        # Only reviewed local screenshots belong in public content. No remote loads or DEV addresses.
+        sources = shot["sources"]
+        assert sources and all(src["src"].startswith("/assets/guides/") and ".." not in src["src"] for src in sources)
+        assert shot["alt"] and shot["caption"] and shot["uiLanguage"]
+        srcset = ", ".join(f'{esc(src["src"])} {int(src["width"])}w' for src in sources)
+        parts.append(f'<figure class="guide-screenshot"><img src="{esc(sources[-1]["src"])}" srcset="{srcset}" sizes="(max-width: 760px) calc(100vw - 40px), 760px" width="{int(shot["width"])}" height="{int(shot["height"])}" loading="lazy" decoding="async" alt="{esc(shot["alt"])}"><figcaption>{esc(shot["caption"])} <span>{esc(shot["uiLanguage"])}</span></figcaption></figure>')
+    if step.get("links"):
+        assert all(url.startswith("https://") for _, url in step["links"])
+        parts.append('<ul class="guide-sources">' + ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for label,url in step["links"]) + '</ul>')
+    parts.append('</section>')
+    return ''.join(parts)
+
+
 def render(locale, data):
     ui = data["ui"]
-    guides = data["guides"]
+    catalog = json.loads((ROOT / "locales" / f"{locale}.json").read_text())
+    extra = json.loads((ROOT / "content/guides" / f"{locale}.json").read_text())
+    guides = data["guides"] + [[extra["title"], extra["description"], extra["sections"]]]
     rtl = locale == "ar"
-    home = f"/?lang={locale}"
-    links = "".join(f'<li><a href="/docs/{locale}/{slug}/">{esc(guide[0])}</a><p>{esc(guide[1])}</p></li>' for slug, guide in zip(("add-an-asset", "organize-records", "plan-maintenance"), guides))
+    home = f"/{locale}/"
+    links = "".join(f'<li><a href="/docs/{locale}/{slug}/">{esc(guide[0])}</a><p>{esc(guide[1])}</p></li>' for slug, guide in zip(SLUGS, guides))
     def language_menu(slug=""):
         options = "".join(f'<a href="/docs/{other}/{slug}" lang="{other}" hreflang="{other}"{" aria-current=page" if other == locale else ""}>{name}</a>' for other, name in LANG_NAMES.items())
         return f'<details class="article-language"><summary>{LANG_NAMES[locale]}</summary><nav aria-label="{esc(ui[10])}">{options}</nav></details>'
     def language_alternates(slug=""):
         return "".join(f'<link rel="alternate" hreflang="{other}" href="{SITE}/docs/{other}/{slug}">' for other in LANG_NAMES)
     pages = []
-    for slug, guide in zip(("add-an-asset", "organize-records", "plan-maintenance"), guides):
-        steps = "".join(f'<section><h2>{esc(step[0])}</h2><p>{esc(step[1])}</p></section>' for step in guide[2])
-        pages.append((slug, f'''<!doctype html><html lang="{locale}" dir="{'rtl' if rtl else 'ltr'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(guide[0])} | AssetFlow</title><meta name="description" content="{esc(guide[1])}"><link rel="canonical" href="{SITE}/docs/{locale}/{slug}/">{language_alternates(slug + "/")}<link rel="stylesheet" href="/styles.css?v=10"><link rel="stylesheet" href="/blog.css?v=1"></head><body class="article-page"><a class="skip-link" href="#main">{esc(ui[8])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><a class="article-back" href="/docs/{locale}/">{esc(ui[3])}</a><a class="article-back" href="/blog/{locale}/">{esc(ui[6])}</a>{language_menu(slug + "/")}<a class="btn btn-primary" href="https://myassetsflow.app">{esc(ui[7])}</a></div></header><main id="main"><div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{home}">AssetFlow</a><span aria-hidden="true">/</span><a href="/docs/{locale}/">{esc(ui[0])}</a><span aria-hidden="true">/</span><span>{esc(guide[0])}</span></nav><header class="article-hero"><h1>{esc(guide[0])}</h1><p class="article-deck">{esc(guide[1])}</p><p class="article-status">AssetFlow {esc(ui[5])} · {esc(ui[9])}</p></header><div class="article-layout"><aside class="article-toc"><details open><summary>{esc(ui[4])}</summary><nav aria-label="{esc(ui[4])}"><ol>{''.join(f'<li><a href="#step-{i+1}">{esc(step[0])}</a></li>' for i,step in enumerate(guide[2]))}</ol></nav></details></aside><article class="article-body">{''.join(f'<section id="step-{i+1}"><h2>{esc(step[0])}</h2><p>{esc(step[1])}</p></section>' for i,step in enumerate(guide[2]))}<nav class="article-related"><h2>{esc(ui[3])}</h2><ul>{''.join(f'<li><a href="/docs/{locale}/{other_slug}/">{esc(other[0])}</a></li>' for other_slug,other in zip(("add-an-asset","organize-records","plan-maintenance"),guides) if other[0] != guide[0])}</ul><a href="/docs/{locale}/">{esc(ui[3])}</a></nav></article></div></div></main><footer class="site-footer"><div class="wrap footer-inner"><p>© AssetFlow</p><p class="legal-links"><a href="/blog/{locale}/">{esc(ui[6])}</a></p></div></footer></body></html>'''))
-    index = f'''<!doctype html><html lang="{locale}" dir="{'rtl' if rtl else 'ltr'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(ui[0])} | AssetFlow</title><meta name="description" content="{esc(ui[1])}"><link rel="canonical" href="{SITE}/docs/{locale}/">{language_alternates()}<link rel="stylesheet" href="/styles.css?v=10"><link rel="stylesheet" href="/blog.css?v=1"></head><body class="article-page blog-index"><a class="skip-link" href="#main">{esc(ui[8])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><a class="article-back" href="/blog/{locale}/">{esc(ui[6])}</a>{language_menu()}<a class="btn btn-primary" href="https://myassetsflow.app">{esc(ui[7])}</a></div></header><main id="main"><section class="section blogs" aria-labelledby="docs-title"><div class="wrap"><div class="blog-section-intro"><h1 id="docs-title">{esc(ui[0])}</h1><p class="section-lead">{esc(ui[1])}</p></div><ol class="docs-list">{links}</ol></div></section></main><footer class="site-footer"><div class="wrap footer-inner"><p>© AssetFlow</p><p class="legal-links"><a href="/blog/{locale}/">{esc(ui[6])}</a></p></div></footer></body></html>'''
+    for slug, guide in zip(SLUGS, guides):
+        pages.append((slug, f'''<!doctype html><html lang="{locale}" dir="{'rtl' if rtl else 'ltr'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(guide[0])} | AssetFlow</title><meta name="description" content="{esc(guide[1])}"><link rel="canonical" href="{SITE}/docs/{locale}/{slug}/">{language_alternates(slug + "/")}<link rel="alternate" hreflang="x-default" href="{SITE}/docs/en/{slug}/"><meta property="og:type" content="article"><meta property="og:title" content="{esc(guide[0])}"><meta property="og:description" content="{esc(guide[1])}"><meta property="og:url" content="{SITE}/docs/{locale}/{slug}/"><link rel="stylesheet" href="/styles.css?v=10"><link rel="stylesheet" href="/blog.css?v=1"></head><body class="article-page product-guide"><a class="skip-link" href="#main">{esc(ui[8])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><a class="article-back" href="/docs/{locale}/">{esc(ui[3])}</a><a class="article-back" href="/blog/{locale}/">{esc(ui[6])}</a>{language_menu(slug + "/")}<a class="btn btn-primary" href="https://myassetsflow.app">{esc(ui[7])}</a></div></header><main id="main"><div class="wrap"><nav class="breadcrumbs" aria-label="{esc(BREADCRUMBS[locale])}"><a href="{home}">AssetFlow</a><span aria-hidden="true">/</span><a href="/docs/{locale}/">{esc(ui[0])}</a><span aria-hidden="true">/</span><span>{esc(guide[0])}</span></nav><header class="article-hero"><h1>{esc(guide[0])}</h1><p class="article-deck">{esc(guide[1])}</p><p class="article-status">AssetFlow {esc(ui[5])} · {esc(ui[9])}</p></header><div class="article-layout"><aside class="article-toc"><details open><summary>{esc(ui[4])}</summary><nav aria-label="{esc(ui[4])}"><ol>{''.join(f'<li><a href="#step-{i+1}">{esc(step["title"])}</a></li>' for i,step in enumerate(sections(guide)))}</ol></nav></details></aside><article class="article-body">{''.join(render_section(step, i) for i,step in enumerate(sections(guide)))}<nav class="article-related"><h2>{esc(ui[3])}</h2><ul>{''.join(f'<li><a href="/docs/{locale}/{other_slug}/">{esc(other[0])}</a></li>' for other_slug,other in zip(SLUGS,guides) if other[0] != guide[0])}</ul><a href="/docs/{locale}/">{esc(ui[3])}</a></nav></article></div></div></main><footer class="site-footer"><div class="wrap footer-inner"><p>© AssetFlow</p><p class="legal-links"><a href="/blog/{locale}/">{esc(ui[6])}</a></p></div></footer></body></html>'''))
+    index = f'''<!doctype html><html lang="{locale}" dir="{'rtl' if rtl else 'ltr'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(ui[0])} | AssetFlow</title><meta name="description" content="{esc(ui[1])}"><link rel="canonical" href="{SITE}/docs/{locale}/">{language_alternates()}<link rel="stylesheet" href="/styles.css?v=10"><link rel="stylesheet" href="/blog.css?v=1"></head><body class="article-page blog-index"><a class="skip-link" href="#main">{esc(ui[8])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{home}"><img class="brand-wordmark" src="/assets/assetflow-wordmark-217.webp" width="217" height="72" alt="AssetFlow"></a><nav class="editorial-links" aria-label="{esc(catalog["site"]["navigation"])}"><a href="{home}">AssetFlow</a><a href="/blog/{locale}/">{esc(ui[6])}</a></nav>{language_menu()}<a class="btn btn-primary" href="https://myassetsflow.app">{esc(ui[7])}</a></div></header><main id="main"><section class="section blogs" aria-labelledby="docs-title"><div class="wrap"><div class="blog-section-intro"><h1 id="docs-title">{esc(ui[0])}</h1><p class="section-lead">{esc(ui[1])}</p></div><ol class="docs-list">{links}</ol></div></section></main><footer class="site-footer"><div class="wrap footer-inner"><p>© AssetFlow</p><p class="legal-links"><a href="/blog/{locale}/">{esc(ui[6])}</a></p></div></footer></body></html>'''
     return index, pages
 
 
@@ -89,7 +124,7 @@ def build(output, sitemap_only=False):
     existing = {node.find(f"{{{namespace}}}loc").text for node in root.findall(f"{{{namespace}}}url")}
     for locale in LOCALES:
         data = DATA[locale]
-        slugs = ("add-an-asset", "organize-records", "plan-maintenance")
+        slugs = SLUGS
         urls = [f"{SITE}/docs/{locale}/"] + [f"{SITE}/docs/{locale}/{slug}/" for slug in slugs]
         if not sitemap_only:
             index, pages = render(locale, data)

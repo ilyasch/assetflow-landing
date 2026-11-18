@@ -101,7 +101,7 @@ for path in articles:
         assert '٠' in source or '١' in source or all(not c.isdigit() for c in ''.join(p.text))
 
 marketing_pages = {}
-for section in ('pricing', 'solutions'):
+for section in ('explore', 'ai'):
     marketing_pages[section] = []
     for loc in LOCALES:
         path = SITE / section / loc / 'index.html'
@@ -117,9 +117,9 @@ for section in ('pricing', 'solutions'):
 sitemap = ET.parse(SITE / 'sitemap.xml')
 urls = {x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 index_urls = {f'https://myassetsflow.com/blog/{loc}/' for loc in LOCALES}
-docs_urls = {f'https://myassetsflow.com/docs/{loc}/' for loc in LOCALES} | {f'https://myassetsflow.com/docs/{loc}/{slug}/' for loc in LOCALES for slug in ('add-an-asset', 'organize-records', 'plan-maintenance')}
-marketing_urls = {f'https://myassetsflow.com/{section}/{loc}/' for section in ('pricing', 'solutions') for loc in LOCALES}
-assert urls == canonical_urls | index_urls | docs_urls | marketing_urls | {'https://myassetsflow.com/'}, 'Sitemap and canonical pages differ'
+docs_urls = {f'https://myassetsflow.com/docs/{loc}/' for loc in LOCALES} | {f'https://myassetsflow.com/docs/{loc}/{slug}/' for loc in LOCALES for slug in ('add-an-asset', 'organize-records', 'plan-maintenance', 'connect-your-ai-assistant')}
+marketing_urls = {f'https://myassetsflow.com/{section}/{loc}/' for section in ('explore', 'ai') for loc in LOCALES}
+assert urls == canonical_urls | index_urls | docs_urls | marketing_urls | {f'https://myassetsflow.com/{loc}/' for loc in LOCALES} | {'https://myassetsflow.com/'}, 'Sitemap and canonical pages differ'
 home = pages[SITE / 'index.html']
 photos = [(tag, attrs) for tag, attrs in home.nodes if 'vehicle-photo' in attrs.get('src', '') or 'vehicle-photo' in attrs.get('srcset', '')]
 for tag, attrs in photos:
@@ -132,7 +132,7 @@ keys = [a[attr] for _, a in home.nodes for attr in ('data-i18n', 'data-i18n-aria
 # Confirmed/reset states are translated dynamically, so check them as well.
 keys += ['site.confirmation', 'site.confirmed', 'site.draft']
 # The market comparison needs real row/column semantics and explicit availability.
-solutions = pages[SITE / 'solutions/en/index.html']
+solutions = pages[SITE / 'explore/en/index.html']
 assert sum(t == 'th' and a.get('scope') == 'col' for t,a in solutions.nodes) == 5, 'Expected four market columns plus row labels'
 assert sum(t == 'th' and a.get('scope') == 'row' for t,a in solutions.nodes) == 5, 'Expected five market comparison rows'
 assert any(a.get('class') == 'matrix-region' and a.get('tabindex') == '0' and a.get('role') == 'region' and a.get('aria-labelledby') for _,a in solutions.nodes), 'Market matrix must support keyboard scrolling and have a name'
@@ -144,7 +144,7 @@ for loc in LOCALES:
         for part in key.split('.'):
             value = value[part]
         assert isinstance(value,str) and value.strip(), (loc,key)
-    for section in ('pricing', 'solutions'):
+    for section in ('explore', 'ai'):
         page = pages[SITE / section / loc / 'index.html']
         page_keys = [attrs[key] for _, attrs in page.nodes for key in ('data-i18n', 'data-i18n-aria') if key in attrs]
         for key in page_keys:
@@ -161,13 +161,91 @@ for loc in LOCALES:
     content = json.loads((ROOT / f'content/blog/{loc}.json').read_text())
     assert catalog['nav']['blogs'] == content['ui']['blogs'], f'Stale header label: {loc}'
     docs = pages[SITE / f'docs/{loc}/index.html']
-    assert sum(tag == 'a' and f'/docs/{loc}/' in attrs.get('href', '') and attrs['href'].rstrip('/').count('/') == 3 for tag, attrs in docs.nodes) == 3, f'Expected three product guides: {loc}'
+    assert any(t == 'a' and a.get('href') == f'/{loc}/' for t,a in docs.nodes), f'Missing guides-to-home link: {loc}'
+    assert any(t == 'a' and a.get('href') == f'/docs/{loc}/' for t,a in index.nodes), f'Missing blog-to-guides link: {loc}'
+    assert sum(tag == 'a' and f'/docs/{loc}/' in attrs.get('href', '') and attrs['href'].rstrip('/').count('/') == 3 for tag, attrs in docs.nodes) == 4, f'Expected four product guides: {loc}'
     assert any(tag == 'html' and attrs.get('lang') == loc and attrs.get('dir') == ('rtl' if loc == 'ar' else 'ltr') for tag, attrs in docs.nodes)
     assert sum(tag == 'a' and attrs.get('hreflang') in LOCALES for tag, attrs in docs.nodes) == 6
-    for slug in ('add-an-asset', 'organize-records', 'plan-maintenance'):
+    for slug in ('add-an-asset', 'organize-records', 'plan-maintenance', 'connect-your-ai-assistant'):
         doc = pages[SITE / f'docs/{loc}/{slug}/index.html']
         assert sum(tag == 'h1' for tag, _ in doc.nodes) == 1
         assert any(tag == 'html' and attrs.get('lang') == loc and attrs.get('dir') == ('rtl' if loc == 'ar' else 'ltr') for tag, attrs in doc.nodes)
         assert len([attrs for tag, attrs in doc.nodes if tag == 'link' and attrs.get('hreflang') in LOCALES]) == 6
+# Rich connector guides must remain complete, localized static documents.
+for loc in LOCALES:
+    path = SITE / f'docs/{loc}/connect-your-ai-assistant/index.html'
+    page = pages[path]
+    source = path.read_text()
+    content = json.loads((ROOT / f'content/guides/{loc}.json').read_text())
+    assert len(content['sections']) == 13, f'Missing connector section: {loc}'
+    assert len(content['sections'][3]['examples']) == 3, f'Missing prompts: {loc}'
+    assert all(content['sections'][i].get('notice') for i in range(6, 10)), f'Missing verification status: {loc}'
+    assert not any(tag == 'script' for tag, _ in page.nodes), f'Guide must work without JavaScript: {loc}'
+    assert [a['href'] for t,a in page.nodes if t == 'link' and a.get('rel') == 'canonical'] == [f'https://myassetsflow.com/docs/{loc}/connect-your-ai-assistant/']
+    assert [a['href'] for t,a in page.nodes if t == 'link' and a.get('hreflang') == 'x-default'] == ['https://myassetsflow.com/docs/en/connect-your-ai-assistant/']
+    assert any(t == 'meta' and a.get('name') == 'description' and a.get('content') == content['description'] for t,a in page.nodes)
+    assert any(t == 'meta' and a.get('property') == 'og:title' and a.get('content') == content['title'] for t,a in page.nodes)
+    for other in LOCALES:
+        assert any(t == 'a' and a.get('href') == f'/docs/{other}/connect-your-ai-assistant/' and a.get('hreflang') == other for t,a in page.nodes), f'Wrong equivalent language link: {loc}/{other}'
+    assert not re.search(r'https?://[^\s<>"\']*(?:localhost|mcp-dev|run\.app|dev\.myassetsflow)', source), f'Non-production connection value: {loc}'
+    for section in content['sections']:
+        assert section['title'] and section['body']
+        for shot in section.get('screenshots', []):
+            assert shot['alt'] and shot['caption'] and shot['uiLanguage']
+            assert len(shot['sources']) >= 2 and shot['width'] > 0 and shot['height'] > 0
+            for variant in shot['sources']:
+                assert (ROOT / variant['src'].lstrip('/')).is_file(), f'Missing source screenshot: {variant}'
+    screenshots = [a for t,a in page.nodes if t == 'img' and a.get('class') != 'brand-wordmark']
+    assert screenshots and all(a.get('alt') and a.get('srcset') and a.get('sizes') and a.get('loading') == 'lazy' for a in screenshots), f'Incomplete responsive screenshots: {loc}'
+for loc in LOCALES:
+    path = SITE / loc / 'index.html'
+    page = pages[path]
+    catalog = json.loads((ROOT / f'locales/{loc}.json').read_text())
+    assert any(t == 'a' and a.get('href') == f'/ai/{loc}/' for t,a in page.nodes), f'Missing AI navigation: {loc}'
+    assert catalog['aiPage']['heroIntegration'] in ''.join(page.text), f'Missing hero integration copy: {loc}'
+    assert any(t == 'p' and a.get('class') == 'hero-ai-integration' for t,a in page.nodes)
+    assert any(t == 'html' and a.get('lang') == loc and a.get('dir') == ('rtl' if loc == 'ar' else 'ltr') for t,a in page.nodes)
+    ai = pages[SITE / f'ai/{loc}/index.html']
+    assert {'flow-ai', 'preferred-ai', 'ai-security', 'ai-agentic'} <= ai.ids
+    assert sum(t == 'a' and 'ai-nav-card' in a.get('class', '').split() for t,a in ai.nodes) == 4, f'Missing AI navigation cards: {loc}'
+    assert not any(t == 'a' and a.get('data-doc-article') == 'connect-your-ai-assistant' for t,a in ai.nodes), 'AI setup guide deferred'
+    for key in ('lead', 'securityTitle', 'agentTitle', 'approvalBody', 'readBody'):
+        assert catalog['aiPage'][key] in (SITE / f'ai/{loc}/index.html').read_text()
+    assert catalog['preferredAI']['title'] in (SITE / f'ai/{loc}/index.html').read_text()
+    assert not {'flow-ai', 'preferred-ai'} & page.ids, f'AI sections must move off Home: {loc}'
+    assert [a['href'] for t,a in page.nodes if t == 'link' and a.get('rel') == 'canonical'] == [f'https://myassetsflow.com/{loc}/']
+    assert [a['href'] for t,a in page.nodes if t == 'link' and a.get('hreflang') == 'x-default'] == ['https://myassetsflow.com/']
+    assert len([a for t,a in page.nodes if t == 'link' and a.get('hreflang') in LOCALES]) == 6
+assert not {'flow-ai', 'preferred-ai'} & home.ids, 'AI sections must live on the AI page'
+assert not any(t == 'a' and a.get('data-doc-article') == 'connect-your-ai-assistant' for t,a in home.nodes), 'Guide CTA deferred until guide review'
 assert 'blogs' not in home.ids, 'Homepage must contain only the Blog entry link, not article previews'
+
+
+for loc in LOCALES:
+    path = SITE / f'explore/{loc}/index.html'
+    source = path.read_text()
+    assert source.index('id="editions"') < source.index('id="pricing"'), f'Solutions must precede pricing: {loc}'
+    assert sum(t == 'a' and a.get('href') in ('#editions', '#pricing') for t,a in pages[path].nodes) >= 3
+    assert any(t == 'a' and 'data-market-start' in a and a.get('href') == '#pricing' for t,a in pages[path].nodes), f'Home selection should lead to plans: {loc}'
+    for old, anchor in (('pricing', 'pricing'), ('solutions', 'editions')):
+        redirect = pages[SITE / f'{old}/{loc}/index.html']
+        assert any(t == 'meta' and a.get('http-equiv') == 'refresh' and a.get('content') == f'0;url=/explore/{loc}/#{anchor}' for t,a in redirect.nodes)
+
+for loc in LOCALES:
+    ai = pages[SITE / f'ai/{loc}/index.html']
+    source = (SITE / f'ai/{loc}/index.html').read_text()
+    for mark in ('chatgpt.', 'claude.', 'mcp.', 'mistral.'):
+        assert any(t == 'img' and mark in a.get('src', '') for t,a in ai.nodes), f'Missing official logo {mark}: {loc}'
+    assert sum(t == 'div' and 'ai-provider-card' in a.get('class', '').split() for t,a in ai.nodes) == 5, f'Missing AI tool examples: {loc}'
+    assert any(t == 'figure' and a.get('class') == 'ai-control-panel' for t,a in ai.nodes)
+    assert any(t == 'figure' and a.get('class') == 'ai-workflow-story' for t,a in ai.nodes)
+    assert source.count('class="ai-access-row') == 3, f'Missing sharing illustration: {loc}'
+    for class_name in ('ai-control-panel', 'ai-workflow-story'):
+        fragment = source.split(f'class="{class_name}"', 1)[1].split('</figure>', 1)[0]
+        assert '<button' not in fragment and '<input' not in fragment, f'Illustration must not imply live account controls: {loc}'
+
+
+for path in (ROOT / 'assets/brands').glob('*.svg'):
+    mark = path.read_text().lower()
+    assert not re.search(r'<script|<foreignobject|\bonload=|\bhref=', mark), f'Unexpected active SVG content: {path}'
 print(f'Public artifact verified: {len(articles)} articles, {len(urls)} sitemap entries, {checked} local references, six locale catalogs.')
